@@ -1,0 +1,2901 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1.8cm,bmargin=4cm,lmargin=1.5cm,rmargin=2cm}
+\usepackage{enumitem}
+\usepackage{amstext}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{graphicx}
+\doublespacing
+
+
+\usepackage{enumitem}
+\setenumerate[1]{label=\textbf{\arabic*}}
+\setenumerate[2]{label=\textbf{(\alph*)}}
+\setenumerate[3]{label=\textbf{(\roman*)}}
+\setlist[enumerate]{align=right}
+
+\setcounter{page}{2}
+
+%for upright integrals
+\usepackage[integrals]{wasysym}
+
+%to be used in conjunction with fancyfoot for last page
+\usepackage{zref-totpages}
+
+%fancyhrd settings
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancypagestyle{laststyle}
+{
+   \fancyhf{}
+   \chead{\thepage}
+   \fancyfoot[L]{\copyright NJC }
+   \fancyfoot[R]{\textbf{END}} %Put this in the last page
+}
+
+%%centering page number
+\chead{\thepage}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%%footer settings, different footer for ODD and EVEN pages, also for the LASTPAGE
+\fancyfoot[LO]{\copyright NJC\hfill \textbf{[Turn Over}}
+\fancyfoot[LE]{\copyright NJC }
+
+%%shameless self-plug BRW
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+9597 NYJC 2021
+\end_layout
+
+\begin_layout Subsection
+Paper 2
+\end_layout
+
+\begin_layout Enumerate
+Name your Jupyter Notebook as
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\family typewriter
+TASK1_<your name>.ipynb
+\end_layout
+
+\begin_layout Standard
+The file, 
+\family typewriter
+COURSE_INTAKE_BY_YEAR.csv
+\family default
+, holds details of the yearly intake numbers of each course in a local polytechn
+ic for the years 2016 to 2021.
+ 
+\end_layout
+
+\begin_layout Standard
+The first row of the file contains the header of each field.
+ Each subsequent row contains data pertaining to the fields in the order
+ listed below:
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+year
+\family default
+ – year of admission 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+school
+\family default
+ – name of the school offering a particular course in the polytechnic 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+course
+\family default
+ – name of course offering 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+intake
+\family default
+ – student intake for a particular course in a particular year of admission
+\end_layout
+
+\begin_layout Standard
+The task is to extract information on the total intake of each course for
+ the years 2016 to 2021.
+\end_layout
+
+\begin_layout Standard
+For each of the sub-tasks, add a comment statement, at the beginning of
+ the code using the hash symbol '#', to indicate the sub-task the program
+ code belongs to, for example: 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\noindent
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top" width="77text%">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+In[1]:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+# Task 1.1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+Program code
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Output :
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Subsubsection*
+\noindent
+Task 1.1
+\end_layout
+
+\begin_layout Plain Layout
+Write program code to: 
+\end_layout
+
+\begin_layout Itemize
+Read in the data from 
+\family typewriter
+COURSE_INTAKE_BY_YEAR.csv
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Place the first row of data into a list 
+\family typewriter
+header
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Place all the subsequent rows of data into a nested list of records, 
+\family typewriter
+intake_data
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Subsubsection*
+Task 1.2
+\end_layout
+
+\begin_layout Plain Layout
+Write program code to: 
+\end_layout
+
+\begin_layout Itemize
+Create 
+\family typewriter
+course_offering
+\family default
+, a 1-dimensional array, that contains all of the 71 different courses (without
+ duplicates) offered by the polytechnic for the years 2016 to 2021.
+ 
+\end_layout
+
+\begin_layout Itemize
+Display the array 
+\family typewriter
+course_offering
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3] 
+\end_layout
+
+\begin_layout Plain Layout
+Write additional program code to:
+\end_layout
+
+\begin_layout Itemize
+Create 
+\family typewriter
+course_total
+\family default
+, a 1-dimensional array of 71 tuples in the format 
+\family typewriter
+(course, total)
+\family default
+, where 
+\family typewriter
+course
+\family default
+ is the name of course offering and total is the corresponding total intake
+ of students for the course offering from years 2016 to 2021.
+ 
+\end_layout
+
+\begin_layout Itemize
+Display the array 
+\family typewriter
+course_total
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Subsubsection*
+Task 1.3 
+\end_layout
+
+\begin_layout Plain Layout
+Write program code to implement a function 
+\family typewriter
+merge_sort(array)
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+The function will:
+\end_layout
+
+\begin_layout Itemize
+Use the merge sort algorithm to sort the data in the array 
+\family typewriter
+course_total
+\family default
+ from Task 1.2 in ascending order of 
+\family typewriter
+total
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Return the sorted version of the array 
+\family typewriter
+course_total
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Display the sorted version of the array 
+\family typewriter
+course_total
+\family default
+.
+\begin_inset space \hfill{}
+\end_inset
+
+ [8]
+\end_layout
+
+\begin_layout Plain Layout
+Output the data in the sorted version of the array 
+\family typewriter
+course_total
+\family default
+ to the file 
+\family typewriter
+COURSE_INTAKE_TOTAL.csv.
+
+\family default
+ Use the following headers as the first row in the order listed below:
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+COURSE
+\family default
+ – name of course offering 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+TOTAL
+\family default
+ – total intake of students for a particular course in years 2016 to 2021.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Subsubsection*
+Task 1.4
+\end_layout
+
+\begin_layout Plain Layout
+Write program code to implement a function 
+\family typewriter
+merge_sort_descending(array)
+\family default
+, which is a modification of the 
+\family typewriter
+merge_sort(array)
+\family default
+ function in 
+\series bold
+Task 1.3
+\series default
+, to sort the data in the array 
+\family typewriter
+course_total
+\family default
+ from 
+\series bold
+Task 1.2
+\series default
+ in descending order of total.
+ The function will:
+\end_layout
+
+\begin_layout Itemize
+Return the sorted version (in descending order) of the array 
+\family typewriter
+course_total
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Display the sorted version (in descending order) of the array 
+\family typewriter
+course_total
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2] 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Name your Jupyter Notebook as
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\family typewriter
+TASK2_<your name>.ipynb
+\end_layout
+
+\begin_layout Standard
+The file, 
+\family typewriter
+AIRPORT_CODES.CSV
+\family default
+, holds details of the IATA code (3-letter code to identify an airport)
+ and its corresponding airport name.
+ Your task is to implement a hash table to enable a program to do searching
+ quickly.
+\end_layout
+
+\begin_layout Standard
+The hash function to generate a hash is as follows:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+FUNCTION GeneratePosition(iata_code : STRING) : INTEGER
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+Set HashTotal to 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+FOR each Character in iata_code 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+Get the ASCII code for Character 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+Add the result to the HashTotal
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+Calculate Position as HashTotal MOD Tablesize
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+RETURN Position
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For each of the sub-tasks, add a comment statement, at the beginning of
+ the code using the hash symbol '#', to indicate the sub-task the program
+ code belongs to, for example: 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\noindent
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top" width="77text%">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+In[1]:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+# Task 2.1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+Program code
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Output :
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Subsubsection*
+Task 2.1 
+\end_layout
+
+\begin_layout Plain Layout
+Write program code to:
+\end_layout
+
+\begin_layout Itemize
+Implement the hash function, 
+\family typewriter
+GeneratePosition(iata_code)
+\family default
+ where 
+\family typewriter
+iata_code
+\family default
+ is a 3-letter code, and generate a position in the hash table where the
+ code and airport name is to be stored.
+ 
+\end_layout
+
+\begin_layout Itemize
+Use a table size of 500.
+ 
+\end_layout
+
+\begin_layout Itemize
+Write additional code for your program to allow you to test the implementation
+ of this function.
+ 
+\end_layout
+
+\begin_layout Itemize
+Run and show the output for 
+\family typewriter
+iata_code 'DUR'
+\family default
+ and 
+\family typewriter
+'RDU'
+\family default
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Subsubsection*
+Task 2.2
+\end_layout
+
+\begin_layout Plain Layout
+The given algorithm results in a collision when the IATA codes are an anagram
+ of each other.
+ 
+\end_layout
+
+\begin_layout Itemize
+Amend 
+\family typewriter
+GeneratePosition(iata_code)
+\family default
+ so that anagrams will not hash to the same position.
+\end_layout
+
+\begin_layout Plain Layout
+Write program code to:
+\end_layout
+
+\begin_layout Itemize
+Read in the data from 
+\family typewriter
+AIRPORT_CODES.CSV
+\family default
+, and construct a hash table of size 500 using 
+\family typewriter
+GeneratePosition(iata_code)
+\family default
+ to calculate the position to insert each record.
+ 
+\end_layout
+
+\begin_layout Itemize
+Implement a function 
+\family typewriter
+InsertRecord(hashtable, record)
+\family default
+ that will insert the record into your hash table.
+ Use linear probing to handle any collision cases.
+ Ensure that your program can handle both an end-of-table and full table
+ conditions.
+ Give appropriate error messages in the event the record is not able to
+ be inserted.
+ 
+\end_layout
+
+\begin_layout Itemize
+Create a procedure called 
+\family typewriter
+DisplayValues(hashtable)
+\family default
+ that will loop through the given hash table and display the index, iata_code
+ and airport name for every record where the iata_code is present.
+ Ensure your procedure uses headings to identify the data displayed.
+ A sample output (partial) is shown below:
+\end_layout
+
+\begin_deeper
+\begin_layout Plain Layout
+\noindent
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+Index IATA Airport Name 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+0 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+DMK 
+\begin_inset space ~
+\end_inset
+
+Don Mueang International Airport 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+1 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+DMM 
+\begin_inset space ~
+\end_inset
+
+King Fahd International Airport 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+2 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+DOH 
+\begin_inset space ~
+\end_inset
+
+Hamad International Airport 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+3 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+DOV 
+\begin_inset space ~
+\end_inset
+
+Dover Air Force Base 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+4 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+DPS 
+\begin_inset space ~
+\end_inset
+
+Ngurah Rai (Bali) International Airport 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+5 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+DQM 
+\begin_inset space ~
+\end_inset
+
+Duqm International Airport 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+…
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Use 
+\family typewriter
+DisplayValues
+\family default
+ to display the contents of your hash table showing the output.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+[14]
+\end_layout
+
+\begin_layout Subsubsection*
+Task 2.3
+\end_layout
+
+\begin_layout Plain Layout
+Write a function 
+\family typewriter
+SearchName(hashtable, iata_code)
+\family default
+ to:
+\end_layout
+
+\begin_layout Itemize
+Output the index, iata_code and name if a record is found in the hash table.
+ 
+\end_layout
+
+\begin_layout Itemize
+If the record is not found, then the program will report that the name is
+ 
+\family typewriter
+"Not Found."
+\family default
+.
+\end_layout
+
+\begin_layout Plain Layout
+Run your program showing the result of the following searches:
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+SearchName(hashtable,"ASB") 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+SearchName(hashtable,"BNE") 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+SearchName(hashtable,"ZZZ")
+\family default
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Plain Layout
+Save your program code and output for Task 2 as 
+\family typewriter
+TASK2_<your name>.ipynb 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Name your Jupyter Notebook as 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\family typewriter
+TASK3_<your name>.ipynb 
+\end_layout
+
+\begin_layout Standard
+The task is to 
+\end_layout
+
+\begin_layout Itemize
+Implement a customer and a queue class.
+ 
+\end_layout
+
+\begin_layout Itemize
+Implement a counter class.
+ 
+\end_layout
+
+\begin_layout Itemize
+Simulate a 30 min situation at the bank.
+ 
+\end_layout
+
+\begin_layout Itemize
+Modify classes to implement a priority queue.
+ 
+\end_layout
+
+\begin_layout Standard
+In order to implement Safety Management Measures, a certain bank wants to
+ monitor the number of customers waiting in a queue at one of its branches
+ from 1200 to 1230 hours.
+ 
+\end_layout
+
+\begin_layout Standard
+All times in this question, 
+\family typewriter
+time
+\family default
+, is implemented as integers, representing minutes after 1200 hours.
+ For example, 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+time = 0
+\family default
+ corresponds to 1200 hours 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+time = 1
+\family default
+ corresponds to 1201 hours and so on.
+ 
+\end_layout
+
+\begin_layout Standard
+You may assume that time will only take values from 0 to 30, inclusive.
+ 
+\end_layout
+
+\begin_layout Standard
+For each of the sub-tasks, add a comment statement, at the beginning of
+ the code using the hash symbol '#', to indicate the sub-task the program
+ code belongs to, for example: 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\noindent
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top" width="77text%">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+In[1]:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+# Task 3.1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+Program code
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Output :
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Subsubsection*
+Task 3.1 
+\end_layout
+
+\begin_layout Plain Layout
+The programmer is tasked to model the queue using Object-Oriented Programming
+ (OOP).
+ 
+\end_layout
+
+\begin_layout Plain Layout
+The class 
+\family typewriter
+Customer
+\family default
+ will store the following data: 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+name: STRING
+\family default
+, name of customer 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+time_join: INTEGER
+\family default
+, the number of minutes after 1200 hours that the customer joins the queue
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+service_duration: INTEGER
+\family default
+, the number of minutes that the customer needs to be served.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+next
+\family default
+ pointer pointing to the next customer in the queue.
+ If there is no one behind the current customer, next pointer is set to
+ None 
+\end_layout
+
+\begin_layout Plain Layout
+The 
+\family typewriter
+Queue
+\family default
+ class will store the following data: 
+\end_layout
+
+\begin_layout Itemize
+Linked list of data items.
+ 
+\end_layout
+
+\begin_layout Itemize
+Head pointer, pointing to the first element in the linked list.
+ 
+\end_layout
+
+\begin_layout Itemize
+Tail pointer, pointing to the last element in linked list.
+\end_layout
+
+\begin_layout Plain Layout
+In addition, the 
+\family typewriter
+Queue
+\family default
+ class will also have the following methods: 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+enqueue(data)
+\family default
+ creates a Customer instance based on the data, and appends it to the queue.
+ data will be a list of the format 
+\end_layout
+
+\begin_deeper
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\family typewriter
+[<Customer Name>, <time_join>, < service_duration>] 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\family typewriter
+dequeue()
+\family default
+ returns and removes the next customer in the queue 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+display()
+\family default
+ displays the queue contents in a row, in order from head to tail 
+\end_layout
+
+\begin_layout Plain Layout
+Write program code for the classes 
+\family typewriter
+Customer
+\family default
+ and 
+\family typewriter
+Queue
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[5] 
+\end_layout
+
+\begin_layout Subsubsection*
+Task 3.2 
+\end_layout
+
+\begin_layout Plain Layout
+A program is to be written to model a bank teller counter using the class
+ 
+\family typewriter
+Counter
+\family default
+, which is designed as follows: 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 25col%
+\end_inset
+
+
+\family typewriter
+Counter
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+counter_number : INTEGER
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+serving : CUSTOMER.
+ Default set to None
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+time_finished : INTEGER.
+ Default set to 0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+constructor(number : STTRING, serving : CUSTOMER, time_finished : INTEGER)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+is_available() : BOOLEAN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+serve(queue : QUEUE, time : INTEGER)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+finish_serving(time : INTEGER)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+status() : STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+is_available()
+\family default
+ returns 
+\family typewriter
+True
+\family default
+ if the counter is not serving any customer and returns False otherwise.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+serve(queue, time)
+\family default
+ serves the next customer in 
+\family typewriter
+queue
+\family default
+.
+ While a counter is serving a customer, it will update its 
+\family typewriter
+serving
+\family default
+ and time_
+\family typewriter
+finished
+\family default
+ attributes.
+ The 
+\family typewriter
+time_finished
+\family default
+ attribute is set to be the sum of 
+\family typewriter
+time
+\family default
+ and the customer’s 
+\family typewriter
+duration_service
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+finish_serving(time)
+\family default
+ checks its 
+\family typewriter
+time_finished
+\family default
+ attribute against 
+\family typewriter
+time
+\family default
+.
+ If 
+\family typewriter
+time_finished
+\family default
+ equals to 
+\family typewriter
+time
+\family default
+, this method will update the 
+\family typewriter
+serving
+\family default
+ attributes.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+status()
+\family default
+ returns the current status of the counter.
+ If the counter is available, it will return the following message: 
+\end_layout
+
+\begin_deeper
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\family typewriter
+Counter <counter number> is available.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+If the counter is not available it will return the following message: 
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\family typewriter
+Counter <counter number> is serving <customer name>.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Plain Layout
+Write program code for the class Counter.
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\begin_layout Subsubsection*
+Task 3.3 
+\end_layout
+
+\begin_layout Plain Layout
+There are thirteen lists defined in the text file 
+\family typewriter
+CUSTOMER_LIST.txt
+\family default
+.
+\end_layout
+
+\begin_layout Plain Layout
+Each list is in the format: 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\family typewriter
+[<Customer Name>, <time_join>, < service_duration>] 
+\end_layout
+
+\begin_layout Plain Layout
+The objects are arranged in chronological order of when the corresponding
+ customer joined the queue.
+\end_layout
+
+\begin_layout Plain Layout
+Write a function 
+\family typewriter
+task_3()
+\family default
+ to: 
+\end_layout
+
+\begin_layout Itemize
+Create an instance of 
+\family typewriter
+Queue
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Create two instances of 
+\family typewriter
+Counter
+\family default
+, 
+\family typewriter
+counter1
+\family default
+ and 
+\family typewriter
+counter2
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Create a loop to simulate the queuing situation from 1200 to 1230 inclusive.
+ 
+\end_layout
+
+\begin_layout Itemize
+Simulate each of the thirteen objects in the text file 
+\family typewriter
+CUSTOMER_LIST.txt
+\family default
+ joining the queue when the time equals to the customer’s 
+\family typewriter
+time_join
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Simulate counters serving the next customer in the queue when they are available.
+ 
+\end_layout
+
+\begin_layout Itemize
+At every minute, 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+display the status of each counter.
+ 
+\end_layout
+
+\begin_layout Itemize
+display the names of the customers currently in the queue.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+For example, the first three displays could be 
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+At 1200, Counter 1 is available.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Counter 2 is available.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Queue is empty.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+At 1201, 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Counter 1 is serving Dara.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Counter 2 is available.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Queue is empty.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+At 1202, 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Counter 1 is serving Dara.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Counter 2 is serving Dia.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Corrine
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+Task 3.4 
+\end_layout
+
+\begin_layout Plain Layout
+In order to create a more inclusive society, certain customers, such as
+ the elderly or the handicapped are given priority to be served first ahead
+ of the other customers.
+ This will serve to shorten the waiting time in queue for these customers.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+The superclass Customer is used to implement a subclass 
+\family typewriter
+Customer2
+\family default
+.
+ The subclass will have one more property,
+\family typewriter
+ priority
+\family default
+.
+ The constructor method should take in the parameters 
+\family typewriter
+name
+\family default
+, 
+\family typewriter
+time_join
+\family default
+, 
+\family typewriter
+service_duration
+\family default
+, and 
+\family typewriter
+priority
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+When a priority customer joins the queue, he or she will be inserted at
+ the position just in front of the first non-priority customer.
+ This will ensure that the priority customers are served first, in the order
+ that they join the queue.
+ Otherwise, a non-priority customer will join the queue at the back of the
+ queue.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+The superclass 
+\family typewriter
+Queue
+\family default
+ is used to implement a subclass 
+\family typewriter
+Queue2
+\family default
+.
+ The 
+\family typewriter
+enqueue(data)
+\family default
+ method should implement the queuing of customers described above and should
+ override the superclass 
+\family typewriter
+enqueue
+\family default
+ method.
+ 
+\family typewriter
+data
+\family default
+ is a list in the following format 
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\family typewriter
+[<Customer Name>, <time_join>, < service_duration>, <priority>] 
+\end_layout
+
+\begin_layout Plain Layout
+Write program code for the subclasses 
+\family typewriter
+Customer2
+\family default
+ and 
+\family typewriter
+Queue2
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+Use appropriate inheritance and polymorphism in your designs.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Subsubsection*
+Task 3.1
+\end_layout
+
+\begin_layout Plain Layout
+The programmer is tasked to model the queue using Object-Oriented Programming
+ (OOP).
+\end_layout
+
+\begin_layout Plain Layout
+The class 
+\family typewriter
+Customer
+\family default
+ will store the following data:
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+name: STRING
+\family default
+, name of customer
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+time_join: INTEGER
+\family default
+, the number of minutes after 1200 hours that the customer joins the queue
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+service_duration: INTEGER
+\family default
+, the number of minutes that the customer needs to be served.
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+next
+\family default
+ pointer pointing to the next customer in the queue.
+ If there is no one behind the current customer, next pointer is set to
+ None
+\end_layout
+
+\begin_layout Plain Layout
+The 
+\family typewriter
+Queue
+\family default
+ class will store the following data:
+\end_layout
+
+\begin_layout Itemize
+Linked list of data items.
+\end_layout
+
+\begin_layout Itemize
+Head pointer, pointing to the first element in the linked list.
+\end_layout
+
+\begin_layout Itemize
+Tail pointer, pointing to the last element in linked list.
+\end_layout
+
+\begin_layout Plain Layout
+In addition, the 
+\family typewriter
+Queue
+\family default
+ class will also have the following methods:
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+enqueue(data)
+\family default
+ creates a Customer instance based on the data, and appends it to the queue.
+ data will be a list of the format
+\end_layout
+
+\begin_deeper
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\family typewriter
+[<Customer Name>, <time_join>, < service_duration>]
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\family typewriter
+dequeue()
+\family default
+ returns and removes the next customer in the queue
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+display()
+\family default
+ displays the queue contents in a row, in order from head to tail
+\end_layout
+
+\begin_layout Plain Layout
+Write program code for the classes 
+\family typewriter
+Customer
+\family default
+ and 
+\family typewriter
+Queue
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[5]
+\end_layout
+
+\begin_layout Subsubsection*
+Task 3.2
+\end_layout
+
+\begin_layout Plain Layout
+A program is to be written to model a bank teller counter using the class
+ 
+\family typewriter
+Counter
+\family default
+, which is designed as follows:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 25col%
+\end_inset
+
+
+\family typewriter
+Counter
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+counter_number : INTEGER
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+serving : CUSTOMER.
+ Default set to None
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+time_finished : INTEGER.
+ Default set to 0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+constructor(number : STTRING, serving : CUSTOMER, time_finished : INTEGER)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+is_available() : BOOLEAN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+serve(queue : QUEUE, time : INTEGER)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+finish_serving(time : INTEGER)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+status() : STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+is_available()
+\family default
+ returns 
+\family typewriter
+True
+\family default
+ if the counter is not serving any customer and returns False otherwise.
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+serve(queue, time)
+\family default
+ serves the next customer in 
+\family typewriter
+queue
+\family default
+.
+ While a counter is serving a customer, it will update its 
+\family typewriter
+serving
+\family default
+ and time_
+\family typewriter
+finished
+\family default
+ attributes.
+ The 
+\family typewriter
+time_finished
+\family default
+ attribute is set to be the sum of 
+\family typewriter
+time
+\family default
+ and the customer’s 
+\family typewriter
+duration_service
+\family default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+finish_serving(time)
+\family default
+ checks its 
+\family typewriter
+time_finished
+\family default
+ attribute against 
+\family typewriter
+time
+\family default
+.
+ If 
+\family typewriter
+time_finished
+\family default
+ equals to 
+\family typewriter
+time
+\family default
+, this method will update the 
+\family typewriter
+serving
+\family default
+ attributes.
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+status()
+\family default
+ returns the current status of the counter.
+ If the counter is available, it will return the following message:
+\end_layout
+
+\begin_deeper
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\family typewriter
+Counter <counter number> is available.
+\end_layout
+
+\begin_layout Plain Layout
+If the counter is not available it will return the following message:
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\family typewriter
+Counter <counter number> is serving <customer name>.
+\end_layout
+
+\end_deeper
+\begin_layout Plain Layout
+Write program code for the class Counter.
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\begin_layout Subsubsection*
+Task 3.3
+\end_layout
+
+\begin_layout Plain Layout
+There are thirteen lists defined in the text file 
+\family typewriter
+CUSTOMER_LIST.txt
+\family default
+.
+\end_layout
+
+\begin_layout Plain Layout
+Each list is in the format:
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\family typewriter
+[<Customer Name>, <time_join>, < service_duration>]
+\end_layout
+
+\begin_layout Plain Layout
+The objects are arranged in chronological order of when the corresponding
+ customer joined the queue.
+\end_layout
+
+\begin_layout Plain Layout
+Write a function 
+\family typewriter
+task_3()
+\family default
+ to:
+\end_layout
+
+\begin_layout Itemize
+Create an instance of 
+\family typewriter
+Queue
+\family default
+.
+\end_layout
+
+\begin_layout Itemize
+Create two instances of 
+\family typewriter
+Counter
+\family default
+, 
+\family typewriter
+counter1
+\family default
+ and 
+\family typewriter
+counter2
+\family default
+.
+\end_layout
+
+\begin_layout Itemize
+Create a loop to simulate the queuing situation from 1200 to 1230 inclusive.
+\end_layout
+
+\begin_layout Itemize
+Simulate each of the thirteen objects in the text file 
+\family typewriter
+CUSTOMER_LIST.txt
+\family default
+ joining the queue when the time equals to the customer’s 
+\family typewriter
+time_join
+\family default
+.
+\end_layout
+
+\begin_layout Itemize
+Simulate counters serving the next customer in the queue when they are available.
+\end_layout
+
+\begin_layout Itemize
+At every minute,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+display the status of each counter.
+\end_layout
+
+\begin_layout Itemize
+display the names of the customers currently in the queue.
+\end_layout
+
+\begin_layout Plain Layout
+For example, the first three displays could be
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+At 1200, Counter 1 is available.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Counter 2 is available.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Queue is empty.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+At 1201,
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Counter 1 is serving Dara.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Counter 2 is available.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Queue is empty.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+At 1202,
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Counter 1 is serving Dara.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Counter 2 is serving Dia.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Corrine
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+Task 3.4
+\end_layout
+
+\begin_layout Plain Layout
+In order to create a more inclusive society, certain customers, such as
+ the elderly or the handicapped are given priority to be served first ahead
+ of the other customers.
+ This will serve to shorten the waiting time in queue for these customers.
+\end_layout
+
+\begin_layout Plain Layout
+The superclass Customer is used to implement a subclass 
+\family typewriter
+Customer2
+\family default
+.
+ The subclass will have one more property,
+\family typewriter
+ priority
+\family default
+.
+ The constructor method should take in the parameters 
+\family typewriter
+name
+\family default
+, 
+\family typewriter
+time_join
+\family default
+, 
+\family typewriter
+service_duration
+\family default
+, and 
+\family typewriter
+priority
+\family default
+.
+\end_layout
+
+\begin_layout Plain Layout
+When a priority customer joins the queue, he or she will be inserted at
+ the position just in front of the first non-priority customer.
+ This will ensure that the priority customers are served first, in the order
+ that they join the queue.
+ Otherwise, a non-priority customer will join the queue at the back of the
+ queue.
+\end_layout
+
+\begin_layout Plain Layout
+The superclass 
+\family typewriter
+Queue
+\family default
+ is used to implement a subclass 
+\family typewriter
+Queue2
+\family default
+.
+ The 
+\family typewriter
+enqueue(data)
+\family default
+ method should implement the queuing of customers described above and should
+ override the superclass 
+\family typewriter
+enqueue
+\family default
+ method.
+ 
+\family typewriter
+data
+\family default
+ is a list in the following format
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\family typewriter
+[<Customer Name>, <time_join>, < service_duration>, <priority>]
+\end_layout
+
+\begin_layout Plain Layout
+Write program code for the subclasses 
+\family typewriter
+Customer2
+\family default
+ and 
+\family typewriter
+Queue2
+\family default
+.
+\end_layout
+
+\begin_layout Plain Layout
+Use appropriate inheritance and polymorphism in your designs.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

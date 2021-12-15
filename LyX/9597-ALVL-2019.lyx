@@ -1,0 +1,4125 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+9597 ALVL 2019
+\end_layout
+
+\begin_layout Subsection
+Paper 1
+\end_layout
+
+\begin_layout Enumerate
+A text file, 
+\family typewriter
+TIDES.TXT
+\family default
+.
+ contains the low and high tide information for a coastal location tor each
+ day of a month.
+ Each line contains tab-delimited data that shows the date, the time.
+ whether the tide is high or low and the tide height in metres.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Each line is in the format: 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\family typewriter
+YYYY-MM-DD
+\backslash
+tHH:mm
+\backslash
+tTIDE
+\backslash
+tHEIGHT
+\backslash
+n 
+\end_layout
+
+\begin_layout Itemize
+The date is in the term YYYY-MM-DD, for example.
+ 2019-08-03 is 3rd August.
+ 2019 
+\end_layout
+
+\begin_layout Itemize
+The time is in the form HH:mm, for example.
+ 13:47 
+\end_layout
+
+\begin_layout Itemize
+TIDE is either HIGH or LOW 
+\end_layout
+
+\begin_layout Itemize
+HEIGHT is a positive number shown to one decimal place 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+
+\backslash
+t
+\family default
+ represents the tab character
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+
+\backslash
+n
+\family default
+ represents the newline character 
+\end_layout
+
+\begin_layout Standard
+The text file is stored in ascending order of date and time.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Subsubsection*
+\noindent
+Task 1.1
+\end_layout
+
+\begin_layout Plain Layout
+Write program code to:
+\end_layout
+
+\begin_layout Itemize
+read the tide data from a text file
+\end_layout
+
+\begin_layout Itemize
+find the highest high tide and print this value
+\end_layout
+
+\begin_layout Itemize
+find the lowest low tide and print this value.
+\end_layout
+
+\begin_layout Plain Layout
+Use 
+\family typewriter
+TIDES.TXT
+\family default
+ to test your program code.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Evidence 1
+\end_layout
+
+\begin_layout Plain Layout
+Your program code.
+\end_layout
+
+\begin_layout Plain Layout
+Screenshot of your output.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[9] 
+\end_layout
+
+\begin_layout Subsubsection*
+Task 1.2
+\end_layout
+
+\begin_layout Plain Layout
+The tidal range is the difference between the heights of successive tides;
+ from a high tide to the following low tide or from a low tide to the following
+ high tide.
+\end_layout
+
+\begin_layout Plain Layout
+Amend your program code to:
+\end_layout
+
+\begin_layout Itemize
+output the largest tidal range and the date on which the second tide occurs
+\end_layout
+
+\begin_layout Itemize
+output the smallest tidal range and the date on which the second tide occurs.
+\end_layout
+
+\begin_layout Plain Layout
+Use 
+\family typewriter
+TIDES.TXT
+\family default
+ to test your program code.
+\end_layout
+
+\begin_layout Subsubsection*
+Evidence 2
+\end_layout
+
+\begin_layout Plain Layout
+Your program code.
+\end_layout
+
+\begin_layout Plain Layout
+Screenshot of your output.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[9]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Characters are numerically encoded using ASCII codes.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+'A' has the denary value 65; ‘B' has the denary value 66 and so on.
+\end_layout
+
+\begin_layout Itemize
+'a' has the denary value 97; 'b' has the denary value 98 and so on.
+\end_layout
+
+\begin_layout Standard
+The ROT-13 encoding function replaces a letter with the letter that is 13
+ positions after it in the alphabet.
+ Characters that are not letters remain unchanged.
+ .
+\end_layout
+
+\begin_layout Standard
+The function wraps around from the end of the alphabet back to the beginning.
+ The case of the coded letter should match the case of the original letter.
+\end_layout
+
+\begin_layout Standard
+For example:
+\end_layout
+
+\begin_layout Itemize
+'A' is replaced with 'N'; 'a' is replaced with 'n'
+\end_layout
+
+\begin_layout Itemize
+'B' is replaced with '0‘; 'b' is replaced with 'o' 
+\end_layout
+
+\begin_layout Itemize
+'Z' is replaced with 'M'; 'z‘ is replaced with 'm'
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Subsubsection*
+\noindent
+Task 2.1
+\end_layout
+
+\begin_layout Plain Layout
+Write program code that:
+\end_layout
+
+\begin_layout Itemize
+reads a string of characters as input
+\end_layout
+
+\begin_layout Itemize
+encodes the string in ROT-13 form
+\end_layout
+
+\begin_layout Itemize
+outputs the encoded string.
+\end_layout
+
+\begin_layout Plain Layout
+Run the program 
+\series bold
+three
+\series default
+ times with the inputs: 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+This is a word.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+ALL &&&& CAPITALS 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+UpperCamelCase12()
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Evidence 3
+\end_layout
+
+\begin_layout Plain Layout
+Your program code.
+\end_layout
+
+\begin_layout Plain Layout
+Screenshots of your outputs.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[9]
+\end_layout
+
+\begin_layout Subsubsection*
+Task 2.2
+\end_layout
+
+\begin_layout Plain Layout
+A string is encoded using ROT-13.
+ The resulting string is then encoded using ROT-13.
+ The output of the second encoding should be identical to the original string.
+\end_layout
+
+\begin_layout Plain Layout
+Amend your program code to apply HOT-13 twice, in the method described.
+ Show that the resulting string is identical to the original string.
+\end_layout
+
+\begin_layout Subsubsection*
+Evidence 4
+\end_layout
+
+\begin_layout Plain Layout
+Your program code.
+\end_layout
+
+\begin_layout Plain Layout
+Screenshot of the output from one of the given inputs.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A program is to be written to implement a to-do list using object-oriented
+ programming (OOP).
+ The list shows tasks that need to be done.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Each task is given a category and a description.
+\end_layout
+
+\begin_layout Standard
+The base class will be called 
+\family typewriter
+ToDo
+\family default
+ and is designed as follows: 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \hspace{}
+\length 25col%
+\end_inset
+
+ToDo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+category : STRING 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+description : STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+constructor(c : STRING, d : STRING) 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+set_category(s : STRING)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+set_description(s : STRING) 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+get_category() : STRING 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+get:_description() : STRING 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+summary() : STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\family typewriter
+summary()
+\family default
+ method returns the category and description as a single string.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Subsubsection*
+\noindent
+Task 3.1
+\end_layout
+
+\begin_layout Plain Layout
+Write program code to define the class 
+\family typewriter
+ToDo
+\family default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Evidence 5
+\end_layout
+
+\begin_layout Plain Layout
+Your program code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[5]
+\end_layout
+
+\begin_layout Plain Layout
+Tasks should be sorted alphabetically by category.
+ Within each category.
+ tasks should be sorted alphabetically by description.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+A task to be added to the list is compared to the tasks already in the list
+ to determine its correct position in the list.
+ If the list is empty.
+ it is added to the beginning of the list.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+This comparison will use an additional member method,
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\family typewriter
+compare_with(td : ToDo) : INTEGER 
+\end_layout
+
+\begin_layout Plain Layout
+This function compares the instance (the item in the list) and the 
+\family typewriter
+ToDo
+\family default
+ object passed to it, returning one of three values:
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+
+\family default
+-1 if the instance is before the given 
+\family typewriter
+ToDo
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+
+\family default
+0 if the two are equal
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+
+\family default
++1 if the instance is after the given 
+\family typewriter
+ToDo
+\end_layout
+
+\begin_layout Subsubsection*
+Task 3.2
+\end_layout
+
+\begin_layout Plain Layout
+There are four objects defined in the text file 
+\family typewriter
+TASK3_2.TXT
+\family default
+.
+\end_layout
+
+\begin_layout Plain Layout
+Write program code to:
+\end_layout
+
+\begin_layout Itemize
+implement the 
+\family typewriter
+compare_with()
+\family default
+ method
+\end_layout
+
+\begin_layout Itemize
+create an empty list of 
+\family typewriter
+ToDo
+\family default
+ objects
+\end_layout
+
+\begin_layout Itemize
+add each of the four objects in the text file 
+\family typewriter
+TASK3_2.TXT
+\family default
+ to its appropriate place in the list
+\end_layout
+
+\begin_layout Itemize
+printout the list contents using the 
+\family typewriter
+summary()
+\family default
+ method.
+\end_layout
+
+\begin_layout Subsubsection*
+Evidence 6
+\end_layout
+
+\begin_layout Plain Layout
+Your program code.
+\end_layout
+
+\begin_layout Plain Layout
+Screenshot of test run.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[13]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The to-do list can have items with extra information.
+ One such item has a date by which the task should be completed.
+ 
+\end_layout
+
+\begin_layout Standard
+The 
+\family typewriter
+DatedToDo
+\family default
+ class inherits from the 
+\family typewriter
+ToDo
+\family default
+ class, extending it to have a 
+\family typewriter
+due_date
+\family default
+.
+ designed as follows: 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 25col%
+\end_inset
+
+DatedToDo : ToDo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+due_date : DATE
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+constructor(dt : DATE, 0 : STRING, d : STRING)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+set_due_date(d : DATE)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+get_due_date() : DATE 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\family typewriter
+DatedToDo
+\family default
+ class should extend the 
+\family typewriter
+compare_with()
+\family default
+ method to ensure that tasks are ordered by ascending 
+\family typewriter
+due_date
+\family default
+, and then by the ordering used by the base 
+\family typewriter
+compare_with()
+\family default
+ method.
+ The 
+\family typewriter
+summary()
+\family default
+ method should also be extended to return the 
+\family typewriter
+due_date
+\family default
+ and the return values of the base 
+\family typewriter
+summary()
+\family default
+ method.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Subsubsection*
+\noindent
+Task 3.3
+\end_layout
+
+\begin_layout Plain Layout
+There are seven objects defined in the text file 
+\family typewriter
+TASK3_3.TXT
+\family default
+.
+\end_layout
+
+\begin_layout Plain Layout
+Amend your program code to:
+\end_layout
+
+\begin_layout Itemize
+implement the 
+\family typewriter
+DatedToDo
+\family default
+ class, with 
+\family typewriter
+constructor
+\family default
+, 
+\family typewriter
+get_due_date
+\family default
+ and 
+\family typewriter
+set_due_date
+\end_layout
+
+\begin_layout Itemize
+implement the extended 
+\family typewriter
+compare_with()
+\family default
+ method
+\end_layout
+
+\begin_layout Itemize
+implement the extended 
+\family typewriter
+summary()
+\family default
+ method
+\end_layout
+
+\begin_layout Itemize
+ensure all seven objects in the text file 
+\family typewriter
+TASK3_3.TXT
+\family default
+ are added to the list
+\end_layout
+
+\begin_layout Itemize
+print out the list contents using the 
+\family typewriter
+summary()
+\family default
+ method.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Evidence 7
+\end_layout
+
+\begin_layout Plain Layout
+Your program code.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+Screenshot of the test run.
+\begin_inset space \hfill{}
+\end_inset
+
+[5]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+When a task in the to-do list has been completed, it should be removed.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Subsubsection*
+\noindent
+Task 3.4
+\end_layout
+
+\begin_layout Plain Layout
+There are four completed tasks defined in the text file 
+\family typewriter
+TASK3_4.TXT
+\family default
+.
+\end_layout
+
+\begin_layout Plain Layout
+If any of the four tasks exists in the list, it should be removed.
+\end_layout
+
+\begin_layout Plain Layout
+Amend your program to: 
+\end_layout
+
+\begin_layout Itemize
+recreate the list of seven tasks from Task 3.3
+\end_layout
+
+\begin_layout Itemize
+check if each of the four completed tasks in the text file 
+\family typewriter
+TASK3_4.TXT
+\family default
+ exists in the list and: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+remove it from the list if it does or 
+\end_layout
+
+\begin_layout Itemize
+print a warning message it the completed task does not exist
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+print out the list after all four objects have been processed.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Evidence 8
+\end_layout
+
+\begin_layout Plain Layout
+Your amended code.
+\end_layout
+
+\begin_layout Plain Layout
+Screenshot of the test run.
+\begin_inset space \hfill{}
+\end_inset
+
+[10]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A stack is used to store characters.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Subsubsection*
+\noindent
+Task 4.1
+\end_layout
+
+\begin_layout Plain Layout
+Write program code to implement the stack and the operations specified.
+\end_layout
+
+\begin_layout Plain Layout
+Your code should allow operations to: 
+\end_layout
+
+\begin_layout Itemize
+push an item on to the stack
+\end_layout
+
+\begin_layout Itemize
+pop an item off the stack
+\end_layout
+
+\begin_layout Itemize
+determine the size of the stack.
+ A size of zero indicates that the stack is empty.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Evidence 9
+\end_layout
+
+\begin_layout Plain Layout
+Your program code for the stack.
+\begin_inset space \hfill{}
+\end_inset
+
+[10]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The stack is to be used to identify it an arithmetic expression is balanced.
+ 
+\end_layout
+
+\begin_layout Standard
+An expression is balanced if each opening bracket has a corresponding closing
+ bracket.
+ 
+\end_layout
+
+\begin_layout Standard
+Different pairs of brackets can be used.
+ These are: [], () or {}.
+ 
+\end_layout
+
+\begin_layout Standard
+This is an example of an expression that is balanced.
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+([8-1]/(5*7)) 
+\end_layout
+
+\begin_layout Standard
+This is an example of an expression that is not balanced.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+[(8-1]/(5*7)) 
+\end_layout
+
+\begin_layout Standard
+Note the change in the order of the first two open bracket symbols.
+ The first closing bracket should be a closing bracket ')' to match the
+ previous opening bracket ‘('.
+ 
+\end_layout
+
+\begin_layout Standard
+Note that an expression is not balanced if the order of the brackets is
+ incorrect, even if there are the same number of opening and closing brackets
+ of each bracket type.
+ 
+\end_layout
+
+\begin_layout Standard
+An expression is checked by iterating over it: 
+\end_layout
+
+\begin_layout Itemize
+if a non-bracket symbol is found, continue to the next character.
+ 
+\end_layout
+
+\begin_layout Itemize
+If an opening symbol is found, push it on to the stack and continue to the
+ next character.
+ 
+\end_layout
+
+\begin_layout Itemize
+If a closing bracket is encountered: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+If the stack is empty, return an error (because there is no corresponding
+ opening bracket) 
+\end_layout
+
+\begin_layout Itemize
+else pop the symbol from the top of the stack and compare it to the current
+ closing symbol to see if they make a matching pair 
+\end_layout
+
+\begin_layout Itemize
+If they do match continue to the next character 
+\end_layout
+
+\begin_layout Itemize
+else return an error (pairs of brackets must match).
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+When the last symbol is encountered: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+return an error if the stack is not empty (too many opening symbols) 
+\end_layout
+
+\begin_layout Itemize
+else return a success message.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Subsubsection*
+\noindent
+Task 4.2
+\end_layout
+
+\begin_layout Plain Layout
+Add 
+\series bold
+five
+\series default
+ other suitable test cases and a reason for choosing each test case.
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 5col%
+\end_inset
+
+
+\series bold
+Test case 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Reason for choice
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Expected value
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+([8-1]/(5*7)) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Provided
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Succeeds
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+[(8-1]/(5*7)) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Provided
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fails
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Succeeds
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Succeeds
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fails
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fails
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fails
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Evidence 10
+\end_layout
+
+\begin_layout Plain Layout
+The completed table with all seven test cases and a reason for choosing
+ each test case.
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\begin_layout Subsubsection*
+\noindent
+Task 4.3
+\end_layout
+
+\begin_layout Plain Layout
+Write program code that checks expressions using the given algorithm.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+Use all 
+\series bold
+seven
+\series default
+ test cases to verify It.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Evidence 11
+\end_layout
+
+\begin_layout Plain Layout
+Your program code for the stack.
+\end_layout
+
+\begin_layout Plain Layout
+Screenshots for each test data run.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[19]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Paper 2
+\end_layout
+
+\begin_layout Enumerate
+Pharmacists working in a group of pharmacies, dispense medicine to patients
+ who present to them a prescription written by a doctor.
+ A new system is to be built to allow a doctor to send prescription data
+ electronically to a pharmacy of the patient's choice.
+ Patients will either collect the medicine, or have the pharmacy deliver
+ it to them.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+A project proposal is written and sent to doctors and pharmacy staff, inviting
+ each to respond within a given time.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Give a reason why the project proposal is sent to: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Doctors 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Enumerate
+Pharmacy staff 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+The responses from the doctors and pharmacy staff are reviewed.
+ Invitations are sent to doctors to find out whether they are willing to
+ take part in a pilot scheme.
+ The project proposal is sent to prospective software developers.
+ Some of the activities involved in the project are listed in the following
+ table.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Label
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 25col%
+\end_inset
+
+Activity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Duration(Weeks)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Send project proposal 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Send project proposal to pharmacy staff
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Discuss all the responses from A and B.
+ and revise the proposal if 2 required
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Send project proposal to prospective software developers
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+E
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Invite doctors to be part of a pilot scheme
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Request quotations of cost and development time from software developers
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+G
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Select a software developer 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Draw a Gantt chart for the activities labelled 
+\series bold
+A
+\series default
+ to 
+\series bold
+G
+\series default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\begin_layout Enumerate
+State the estimated time taken to complete activities 
+\series bold
+A
+\series default
+ to 
+\series bold
+G
+\series default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+In activities 
+\series bold
+A
+\series default
+ and 
+\series bold
+B
+\series default
+, doctors and pharmacy staff identified ethical and security issues that
+ would need to be addressed.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(c)
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Describe one security issue.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+Describe one ethical issue.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+In activity 
+\series bold
+F
+\series default
+, quotations are received from software developers.
+ The lowest cost is from a developer who works alone, but demonstrates a
+ number of successful projects.
+ Other software developers that employ many staff submit more expensive
+ quotations.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(d)
+\end_layout
+
+\end_inset
+
+Explain why the group of pharmacies may decide against the single developer.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Standard
+An analyst from the chosen software developer reviews the current system.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(e)
+\end_layout
+
+\end_inset
+
+Give 
+\series bold
+four
+\series default
+ methods available to the analyst to find out how a system operates.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Standard
+The analyst proposes that the doctors and pharmacy staff interact with a
+ web-based system.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(f)
+\end_layout
+
+\end_inset
+
+tate the software that will be needed on the devices used by the doctors
+ and pharmacy staff.
+ other than the operating system.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Standard
+The alternative to a web-based system would be to write and install purpose-buil
+t application software for each computer used by a doctor or member of the
+ pharmacy staff.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(g)
+\end_layout
+
+\end_inset
+
+Describe 
+\series bold
+two
+\series default
+ advantages to the software developer of a web-based solution over purpose-
+ built software running on each user's computer.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Standard
+Doctors may wish to write prescriptions when they visit patients in their
+ own home.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(h)
+\end_layout
+
+\end_inset
+
+Explain 
+\series bold
+one
+\series default
+ benefit of a web-based solution in this situation.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Standard
+The computers used by the doctors and pharmacy staff are clients of the
+ server operated by the pharmacy.
+ Some validation is provided by client-side scripting.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(i)
+\end_layout
+
+\end_inset
+
+Give 
+\series bold
+two
+\series default
+ advantages of using this type of scripting.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Standard
+The new system is designed.
+ coded and tested as a number of modules.
+ A tester performing black-box testing on a module would need its specification.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(j)
+\end_layout
+
+\end_inset
+
+Explain why the tester would not need access to the source code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(k)
+\end_layout
+
+\end_inset
+
+Explain why someone designing a test strategy for white box testing would
+ need access to the source code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(l)
+\end_layout
+
+\end_inset
+
+Alpha testing is performed on the system.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Explain the purpose of alpha testing.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(m)
+\end_layout
+
+\end_inset
+
+The group of pharmacies is responsible for the security and integrity of
+ the stored data.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Give 
+\series bold
+two 
+\series default
+methods that could be used to ensure security of the stored data.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+Give 
+\series bold
+two
+\series default
+ methods that could be used to ensure the integrity of the stored data.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(n)
+\end_layout
+
+\end_inset
+
+The group considers using either the cloud or its own server to store data
+ needed by the proposed system.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Give 
+\series bold
+one
+\series default
+ advantage and 
+\series bold
+one
+\series default
+ disadvantage of storing the data in the cloud.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+A bakery bakes bread and cakes to sell in its own shop and to other shops
+ throughout a city.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Its drivers visit every shop each day, delivering that day’s order and collectin
+g the order for the next day.
+ 
+\end_layout
+
+\begin_layout Standard
+Order forms are pre-printed with the name of each shop and every item that
+ the bakery bakes.
+ The manager of each shop writes onto the form the quantity of each item
+ required.
+ When the drivers return to the bakery.
+ the data from the order forms are collated to give the bakers the total
+ of each item to bake.
+ 
+\end_layout
+
+\begin_layout Standard
+Copies of the order forms are made and used as delivery notes for the next
+ day’s deliveries.
+ The accounts department use the original order forms to prepare a weekly
+ invoice for each shop.
+\end_layout
+
+\begin_layout Standard
+The bakery wants the shops to submit their orders online.
+ 
+\end_layout
+
+\begin_layout Standard
+A program is needed to determine the number of each item needed and produce
+ the weekly invoice for each shop.
+\end_layout
+
+\begin_layout Standard
+The new program will use a relational database with three tables: Product,
+ Shop and Order.
+ 
+\end_layout
+
+\begin_layout Standard
+Each product has a description.
+ price.
+ and a unique product ID number.
+ 
+\end_layout
+
+\begin_layout Standard
+Each shop has a name.
+ an address, telephone number.
+ manager's name, and a unique shop iD number.
+ 
+\end_layout
+
+\begin_layout Standard
+Each order has a product lD, a quantity, a shop ID and a date for delivery.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Draw an Entity-Relationship (E-R) diagram showing the three tables and the
+ relationships between them.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[5]
+\end_layout
+
+\begin_layout Enumerate
+A table description can be expressed as: 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\family typewriter
+TableName (
+\bar under
+Attribute1
+\bar default
+, Attribute2, Attribute3, ...) 
+\end_layout
+
+\begin_layout Standard
+The primary key is indicated by underlining one or more attributes.
+ 
+\end_layout
+
+\begin_layout Standard
+Write table descriptions for the three tables.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+The bakery can change the price of an item at any time.
+ Validation ensures that the new price is within specified limits and is
+ more likely to be correct.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(c)
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Explain why this could still result in incorrect weekly invoices, assuming
+ that the new price input is correct.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+Describe changes to the database and draw a modified E-R diagram to ensure
+ correct invoices are created.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+A programmer is asked to write a program to store names in alphabetical
+ order.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The program needs to:
+\end_layout
+
+\begin_layout Itemize
+add and remove names
+\end_layout
+
+\begin_layout Itemize
+search for the presence of a specific name
+\end_layout
+
+\begin_layout Itemize
+output all the names in alphabetical order.
+ 
+\end_layout
+
+\begin_layout Standard
+The programmer considers two options: an array and a linked list.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Explain why an array allows for more efficient searching.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+State why this advantage becomes more significant as the number of names
+ becomes much larger.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Give 
+\series bold
+one
+\series default
+ disadvantage of using an 
+\series bold
+array
+\series default
+ to store the names in alphabetical order.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+Give 
+\series bold
+one
+\series default
+ advantage of using a 
+\series bold
+linked list
+\series default
+ to store the names in alphabetical order.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+A third option is to store the names in a binary tree.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(c)
+\end_layout
+
+\end_inset
+
+Explain how a binary tree provides some of the advantages of both an array
+ and a linked list when storing sorted data.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(d)
+\end_layout
+
+\end_inset
+
+State why a binary tree may need to be re-created with exactly the same
+ data items.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A company operates a multi-storey car park.
+ All parking bays are identified by a letter.
+ indicating the floor.
+ and a number indicating the position of the bay on that floor (for example.
+ C34 indicates bay 34 on floor C).
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The entrance to the car park is controlled by a barrier.
+ Before the barrier lifts to allow a car to enter, the driver must press
+ a button to indicate if they need a standard bay or a special bay.
+ 
+\end_layout
+
+\begin_layout Standard
+Special bay users must present a card to a card reader at the barrier.
+ 
+\end_layout
+
+\begin_layout Standard
+The car park has an additional third type of bay that has a charging point
+ for electric vehicles.
+ The hourly rate for these bays is not the same as standard bays.
+ The cost of using this type of bay additionally depends on the cost of
+ the electricity used.
+ This is monitored by the charging device and stored.
+\end_layout
+
+\begin_layout Standard
+A camera captures the vehicle registration number.
+ A ticket is printed showing:
+\end_layout
+
+\begin_layout Itemize
+current time
+\end_layout
+
+\begin_layout Itemize
+vehicle registration number 
+\end_layout
+
+\begin_layout Itemize
+floor letter 
+\end_layout
+
+\begin_layout Itemize
+position number of a suitable bay where the car must be parked 
+\end_layout
+
+\begin_layout Itemize
+the card number for the special bay, if a card had been presented at the
+ barrier.
+ 
+\end_layout
+
+\begin_layout Standard
+When the driver takes the ticket from the printer.
+ the entrance barrier lifts.
+ Before a car is allowed to leave, the ticket must be presented and a charge
+ paid.
+ The charge is determined by the length of stay and type of bay.
+ The hourly rate for a standard bay is not the same as that for a special
+ bay.
+ As a car approaches the exit barrier a camera captures the vehicle registration.
+ The barrier only lifts if the charge for this vehicle has been paid.
+ 
+\end_layout
+
+\begin_layout Standard
+This system is to be implemented using object-oriented programming (OOP).
+ 
+\end_layout
+
+\begin_layout Standard
+The base class PARKING_BAY has a property to store whether or not a bay
+ is occupied.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Draw a class diagram, showing:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+any derived classes and inheritance from the base class
+\end_layout
+
+\begin_layout Itemize
+the properties needed in the base, and any derived classes
+\end_layout
+
+\begin_layout Itemize
+suitable methods to support the system with at least one getter and one
+ setter method.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[8]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Add a class, CAR_PARK.
+ thathas properties to store:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+a list of all bays
+\end_layout
+
+\begin_layout Itemize
+the number of unoccupied bays.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Explain why polymorphism is useful in object-oriented programming.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+Explain the purpose of making the attributes of an object private.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The function 
+\family typewriter
+z
+\family default
+ takes three integer parameters, 
+\family typewriter
+low
+\family default
+, 
+\family typewriter
+high
+\family default
+, 
+\family typewriter
+seek
+\family default
+ and returns an integer value.
+ It operates on the values in the elements of the array 
+\family typewriter
+A
+\family default
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+01 FUNCTION Z(low, high, seek, A) RETURNS INTEGER 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+02 
+\begin_inset space \qquad{}
+\end_inset
+
+IF low > high THEN 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+03 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+RETURN —1 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+04 
+\begin_inset space \qquad{}
+\end_inset
+
+ENDIF 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+05 
+\begin_inset space \qquad{}
+\end_inset
+
+mid <- low + INT( (high — low) /2)
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+06 
+\begin_inset space \qquad{}
+\end_inset
+
+IF seek = A[mid] THEN
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+07 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+RETURN mid 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+08 
+\begin_inset space \qquad{}
+\end_inset
+
+ELSE 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+09 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+IF seek < A[mid] THEN 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+10 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+RETURN Z(low, mid - 1, seek, A) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+11 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+ELSE 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+12 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+RETURN Z(mid + 1, high, seek, A) .
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+13 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+ENDIF 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+14 
+\begin_inset space \qquad{}
+\end_inset
+
+ENDIF 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+15 ENDFUNCTION
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+State what lines 
+\family typewriter
+10
+\family default
+ and 
+\family typewriter
+12
+\family default
+ tell you about the function.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Enumerate
+State the purpose for the 
+\family typewriter
+RETURN
+\family default
+ statements in lines 
+\family typewriter
+03
+\family default
+ and 
+\family typewriter
+07
+\family default
+ of function 
+\family typewriter
+z
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [1]
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+The values in each of the eight elements of the array 
+\family typewriter
+A
+\family default
+ are:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="9">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Element
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Value
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+96
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+101
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+412
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+500
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Copy and then complete the trace table for the instruction: 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\family typewriter
+OUTPUT z(0, 7, 103, A)
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="7">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Function call
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+low
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+high
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+seek
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+mid
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+A[mid]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+OUTPUT
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+103
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Function 
+\family typewriter
+z
+\family default
+ can return two different types of value.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Explain what these represent.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The number of elements in array 
+\family typewriter
+A
+\family default
+ may be very large.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Explain why a programmer might prefer to use an iterative approach rather
+ than the one used in function 
+\family typewriter
+z
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Data communication networks can use circuit switching or packet switching.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Give 
+\series bold
+two
+\series default
+ advantages of packet switching over circuit switching.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+Give 
+\series bold
+one
+\series default
+ advantage of circuit switching over packet switching.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+State 
+\series bold
+one
+\series default
+ reason for using either a parity check or a checksum.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Enumerate
+Give 
+\series bold
+one
+\series default
+ example of an error that a parity check cannot detect.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Switches and routers are common devices used in networking.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Explain the most significant differences between a switch and a router.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Explain the purpose of a bridge in a network.
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Enumerate
+A local area network (LAN) can be set up as either client-server or peer-to-peer.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Give 
+\series bold
+two
+\series default
+ advantages in storing shared data on a client-server network rather than
+ on a peer-to-peer network.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
