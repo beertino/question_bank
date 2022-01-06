@@ -18,5 +18,5 @@ CREATE TABLE "KioskBento" (
 	"KioskID"	INTEGER,
 	"BentoName"	TEXT,
 	"SellPrice"	NUMERIC,
-	PRIMARY KEY("KioskID")
+	PRIMARY KEY("KioskID","BentoName")
 );
