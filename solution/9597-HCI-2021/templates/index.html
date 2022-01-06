@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Log</h1>
+        <table>
+            <TR>
+                <TH>Sender</TH>
+                <TH>AccessDate</TH>
+                <TH>AppType</TH>
+                <TH>Status</TH>
+            <TR>
+            {% for log in servicelog %}
+            <TR>
+                <TD class="sender">{{log[1]}}</TD>
+                <TD class="access_date">{{log[2]}}</TD>
+                <TD class="apptype">{{log[4]}}</TD>
+                <TD class="status">{{log[3]}}</TD>                
+            </TR>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
