@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1> All Products at {{location}}</h1>
+        <table>
+            <TR>
+                <TH>Bento Name</TH>
+                <TH>Price</TH>
+            <TR>
+            {% for product in products %}
+            <TR>
+                <TD class="bento_name">{{product[0]}}</TD>
+                <TD class="price">{{product[1]}}</TD>
+            </TR>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
