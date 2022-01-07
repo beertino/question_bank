@@ -11,15 +11,13 @@
         <h1> All Products at {{location}}</h1>
         <table>
             <TR>
-                <TH>Product Name</TH>
-                <TH>Ingredients</TH>
-                <TH>Contains Alcohol</TH>
+                <TH>Bento Name</TH>
+                <TH>Price</TH>
             <TR>
             {% for product in products %}
             <TR>
-                <TD class="product_name">{{product[0]}}</TD>
-                <TD class="ingredients">{{product[1]}}</TD>
-                <TD class="alcohol">{{product[2]}}</TD>
+                <TD class="bento_name">{{product[0]}}</TD>
+                <TD class="price">{{product[1]}}</TD>
             </TR>
             {% endfor %}
         </table>
