@@ -358,6 +358,7 @@
     "\t\"OpEndHr\"\tTEXT,\n",
     "\tPRIMARY KEY(\"PointID\" AUTOINCREMENT)\n",
     ");"
+	]
    ]
   }
  ],
