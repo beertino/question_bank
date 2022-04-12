@@ -4839,12 +4839,24 @@ Task 4.1
 \begin_layout Plain Layout
 Create a program design that will declare, initialise and display the example
  puzzle shown.
- This design will: ' make use of top-down design ' include the data structure
- to represent the puzzle as a grid - initialise the grid using the values
- shown ° make use of appropriate procedures and/or functions.
- Evldence 13 Task 4.2 .
- Evldence 14 Evidence 15 Screenshot of the displayed grid.
- [1] 
+ This design will: 
+\end_layout
+
+\begin_layout Itemize
+make use of top-down design 
+\end_layout
+
+\begin_layout Itemize
+include the data structure to represent the puzzle as a grid 
+\end_layout
+
+\begin_layout Itemize
+initialise the grid using the values shown
+\end_layout
+
+\begin_layout Itemize
+make use of appropriate procedures and/or functions.
+ 
 \end_layout
 
 \begin_layout Subsubsection*
@@ -6191,7 +6203,7 @@ two
 \end_deeper
 \end_deeper
 \begin_layout Enumerate
-6 A computer company has several offices throughout the country, each with
+A computer company has several offices throughout the country, each with
  several salespersons.
  A record of the sales made by each salesperson has been set up using a
  relational database.

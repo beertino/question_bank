@@ -1,0 +1,1404 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+9597 ALVL 2017
+\end_layout
+
+\begin_layout Subsection
+Paper 1
+\end_layout
+
+\begin_layout Enumerate
+A one-dimensional array 
+\family typewriter
+X
+\family default
+ will be used to record the timings of the participating teams racing in
+ a 200 metres dragon boat race event.
+ Five dragon boat teams will compete in the event, and the timing (in seconds)
+ of each team will be captured as records in 
+\family typewriter
+X
+\family default
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Index
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Timing, seconds
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+58.61 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+49.01 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+48.54 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+59.32 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+49.78
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+A segment of the pseudocode to perform bubble sort is given below.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Line 1: flag TRUE Line 2: WHILE flag = TRUE DO Line 3: flag FALSE Line 4:
+ FOR i = 1 to N //N is the size of array X Line 5: IF X[i] > X[i+1] Line
+ 6: THEN Line 7: SWAP(X[i], X[i+1])//swaps value of items Line 8: flag TRUE
+ Line 9: ENDIF Line 10: NEXT i Line 11: ENDWHILE
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+FUNCTION CalCheckDigit(Number AS STRING, Total AS INTEGER) RETURNS STRING
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+IF LENGTH(Number) > 1 THEN
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+Digit <- INTEGER(LBFT(Number,1))
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+// Calculate ISBN, an example of how the function is called.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+// Second parameter is always 0.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+ISBN = CalCheckDigit("184146208",0)
+\end_layout
+
+\end_inset
+
+ An error is detected in the pseudocode above.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Identify the error by stating the line number, and the type of error.
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Enumerate
+Without changing the order and the types of constructs used, rectify the
+ error in (a).
+ [1] 
+\end_layout
+
+\begin_layout Enumerate
+Using the race timings of the dragon boat event given above, use a trace
+ table to illustrate that the amended algorithm works.
+ [3] 
+\end_layout
+
+\begin_layout Enumerate
+Describe the worst case scenario, and state the worst case time complexity
+ for performing the bubble sort using the algorithm given above.
+ [2] 
+\end_layout
+
+\begin_layout Enumerate
+In the worst case scenario, state the total number of comparisons made by
+ the bubble sort algorithm if 10 lanes are used.
+ [1]   
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+2 Every sales transaction made in JPJC supermarket is stored as a record
+ in a serial file for auditing purposes.
+ At the end of each day, a copy of the daily serial file, sorted by transaction
+ amount in descending order will be archived into the main database.
+ (a) State what is meant by a serial file? [1] (b) Explain how an archive
+ file is different from a backup file, and describe how a backup file for
+ sales transactions can be created for JPJC supermarket.
+ [2] Merge sort algorithm is used to arrange the sales transaction records
+ by ordering them in descending order of transaction amounts.
+ The algorithm will first read all the daily unsorted sales transactions
+ into A, a fixed size array of records with index starting from 1.
+ Then, mergesort will be applied to sort A.
+ The pseudocode for mergesort is given below, PROCEDURE mergesort(A: ARRAY
+ of RECORDS, x, y: INTEGERS) IF x < y THEN m x + ((y - x) DIV 2) //DIV performs
+ integer division mergesort(A, x, m) mergesort(A, m + 1, y) merge(A, x,
+ m, y) ENDIF ENDPROCEDURE //---main program--- mergesort(A, x, y) Given
+ that array A = [39.10, 17.50, 35.40, 42.68, 8.90, 35.40], and merge(A, x, m,
+ y) will sort and combine elements of A[x:m], and A[m+1:y] into A[x:y] in
+ descending order.
+ (c) State the values of x, and y when mergesort is called in the main program.
+ [2] (d) State the total number of times mergesort and merge are called
+ in the entire program.
+ [2]   The following diagram shows an incomplete trace tree diagram of the
+ array of sales transaction records represented by its sales amount.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+(e) Draw and complete the trace tree diagram above by applying merge sort
+ to the unsorted array of records A.
+ [4] (f) The time complexity for merge sort is O(Nlog2N).
+ Explain why this time complexity is applicable to the best, average and
+ worst case scenarios.
+ [1] 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+3 (a) State what is meant by a recursive algorithm? (b) Explain the difference
+ between an iterative algorithm and a recursive algorithm.
+ (c) Design a recursive algorithm SumOfCubes(n) using pseudocode, that returns
+ the integer value of series 13 + 23 + 33 + … + (n-1)3 + n3, where n = 1,
+ 2, 3,… (d) Explain what will happen when the value of n gets too large.
+ [2] [2]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+[3] [1] 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+4 The elections department of a town wishes to store the records of its
+ voters in a linked list.
+ The stored records are first ordered by the voter’s age (in years), followed
+ by voter’s name in alphabetical order.
+ The voters list is maintained with the record of the youngest voter at
+ the start of the list.
+ (a) Explain why the sequence of nodes in a linked list does not always
+ reflect how the data is stored in the memory of the computer.
+ [2]   Head g Free 8 The following shows the linked list data that is stored
+ in the memory of the computer: Age Name Link 1 35 Tim Tan 3 2 23 Annie
+ Hao a 3 45 Bob Boon 6 4 24 Lester Moh b 5 18 Ari Bello c 6 52 Helen How
+ 0 7 23 Cindy Ku d 8 55 Charles Chu 1 9 53 Mimi Lee e 10 40 Jenny Tsai f
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Two linked lists are kept to manage the actual data, and the free spaces.
+ When a new item is added, a node is taken from the head of the free space
+ list, and when a node is deleted, the deleted node will be returned to
+ the tail of the free space list.
+ (b) Given that Ari Bello is the youngest voter, state the values of a,
+ b, c, d, e, f, and g.
+ [4] (c) Draw the linked list diagram to show its state right after each
+ of the following successive operations: (i) Insert 18 years old, Ahmad
+ Ali.
+ (ii) Delete 23 years old, Cindy Ku.
+ (iii) Insert 37 years old, Tania Tan.
+ 
+\end_layout
+
+\begin_layout Standard
+[6] (d) Describe one advantage and one disadvantage of using a linked list
+ over a static array.
+ [2] 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+5 The stack is a first in last out data structure where the items are inserted
+ to and deleted from the top of the stack.
+ The items of the stack are globally stored in a fixed length array S of
+ size 20.
+ A stack pointer sp points to the top item in the stack, and is initialised
+ to 0.
+ The three basic methods of the stack are:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+PUSH(X) //inserts X as new item on the top of STACK S POP() //removes and
+ returns item at the top of STACK S.
+ PEEK() //returns value of the item on top of STACK S without removing it.
+ (a) Write the pseudocode for the algorithms PUSH(X), POP(), and PEEK().
+\end_layout
+
+\begin_layout Standard
+The precedence order of the operators from highest to lowest is as follows:
+ 1.
+ Parenthesis 2.
+ '^' 3.
+ '*' or '/' with equivalent level of priority 4.
+ '+' or '-' with equivalent level of priority
+\end_layout
+
+\begin_layout Standard
+The pseudocode below shows a stack-based function InfixToPostfix that converts
+ and returns an input expression represented in infix notation to its postfix
+ form.
+\end_layout
+
+\begin_layout Standard
+FUNCTION InfixToPostfix(infix: STRING) RETURNS postfix Scan through infix
+ expression one token at a time from leftmost.
+ Initialise empty STACK S Initialise empty STRING postfix FOR token read
+ from infix item by item CASE of token: operand: postfix postfix + token
+ '(': PUSH(token) ')': REPEAT postfix postfix + POP() UNTIL POP() = '('
+ operator: WHILE S not empty IF token = '(' THEN BREAK ENDIF IF PEEK() is
+ higher or equal precedence than token THEN postfix postfix + POP() ENDIF
+ ENDWHILE PUSH(token) END CASE NEXT token REPEAT postfix postfix + POP()
+ UNTIL S is empty RETURN postfix ENDFUNCTION 
+\end_layout
+
+\begin_layout Standard
+(b) Complete the trace table given below for InfixToPostfix("A/(B-C)*D^E").
+ token Description STRING postfix Stack, S A Appends to postfix "A" empty
+ / Push to S "A" / ( Push to S "A" /,( … …………… …………… …………… 
+\end_layout
+
+\begin_layout Standard
+[5]
+\end_layout
+
+\begin_layout Standard
+[4] (c) Show, with the aid of diagrams, how the computer uses a stack to
+ directly evaluate the value of the postfix expression 895-/12+*4-.
+ [3] 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+6 Traversal was performed on the binary tree given below.
+ (a) List the nodes, in the order, that are visited for, (i) in-order traversal,
+ (ii) pre-order traversal, and (iii) post-order traversal.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+(b) A binary search tree is considered as an ordered binary tree where the
+ key values of nodes in the left sub-tree are less than the value of its
+ parent (root) node's key, and key values of nodes in the right sub-tree
+ are greater than the value of its parent (root) node’s key.
+ (i) Explain how a recursive algorithm can be used to locate a node with
+ key value search_key by returning TRUE when search_key is found, and FALSE
+ otherwise.
+ (ii) State one advantage of using binary search tree as data structure
+ over linked list, and describe a situation that would negate this advantage.
+ 
+\end_layout
+
+\begin_layout Standard
+[1] [1] [1]
+\end_layout
+
+\begin_layout Standard
+[4]
+\end_layout
+
+\begin_layout Standard
+[2]   
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+7 Car owners who wish to purchase or renew their insurance policy with XYZ
+ Motor Insurance are required to accumulate not more than 6 demerit points
+ in their driving records.
+ Under this demerit points system, a driver who clocks up more than 20 demerit
+ points will have his/her driving license revoked, thus denying the person
+ from driving and from purchasing any vehicle insurance.
+ Drivers who have not made any insurance claims for the past 3 years can
+ get 2 demerit points off, and current employees of XYZ Motor Insurance
+ can get 1 demerit point deducted.
+ In addition, drivers awarded with certificate of merit can get 1 demerit
+ point off as well.
+ XYZ Motor Insurance only allows drivers to receive a maximum deduction
+ of 3 demerit points per year.
+ Draw a decision table to reflect the eligibility of car owners who wish
+ to purchase or renew a car insurance policy with XYZ Motor Insurance.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+[5] 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+8 A company currently uses a computerised flat file to keep track of the
+ monthly claims submitted by its employee, and has decided to use a relational
+ database to store and manage the claims submitted by the employees instead.
+ The following table shows the details of the computerised flat file.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Claims ID Item Description Staff ID Staff Name Department Amount 2818 Phone
+ charger P212 John Lee Production $53.23 3291 Car Transport S281 Chan, Molly
+ Sales $31.40 3998 Meal, Lunch O323 Omar Hairi Operations $7.20 4820 AAA Batteries
+ E493 Muthu K.
+ Engineering $10.17 6322 Hard Drive 3TB A550 Jervois F.
+ Accounts $27.99 7384 Medical M438 Zudin B Ali Marketing $48.00 ….
+ ….
+ ….
+ ….
+ ….
+ 
+\end_layout
+
+\begin_layout Standard
+(a) State and justify one reason made by the company to migrate its claims
+ information from the existing flat file system to a relational database
+ management system.
+ [2] (b) State two other fields which would be useful for the company to
+ capture.
+ [2] (c) Given that the every claim is associated with one item, write the
+ table descriptions of the relational database in first normal form and
+ second normal form.
+ You are to include the fields in (b).
+ 
+\end_layout
+
+\begin_layout Standard
+[4] 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+9 (a) What is the denary value of hexadecimal ABCD? [2] (b) An integer variable
+ of size 4 bytes is used to keep track of the number of commuters who travel
+ to work from Jurong bus interchange.
+ State the maximum number of commuters this variable can keep track.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+[3] 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+10 A program written using object-oriented programming has point, circle,
+ and cone as its defined classes.
+ The following diagram below shows the attributes and methods of the class
+ point.
+ point Properties: PROTECTED: x-value: REAL y-value: REAL Methods: PUBLIC:
+ constructor() getCoordinates(): TUPLE setCoordinates(x, y: REAL) 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+(a) Draw an inheritance diagram for all the three classes defined in the
+ program.
+ [4] (b) Explain the differences between (i) private and protected attributes/
+ methods of a class, (ii) an object and a class.
+ [2] [2] 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+11 A clinic manages patients’ medical and financial records through an Internet-
+based information management portal.
+ Due to several security incidents related to unintended disclosure of patients’
+ information, the clinic’s management has decided to migrate the portal
+ to a local area network (LAN) that consists only four computers and one
+ printer.
+ Information of patients’ medical and financial records can only be accessed
+ by authorised staff on one of the four computers.
+ (a) Describe the meaning of the term local area network (LAN).
+ (b) Explain why ring networks today rarely use physical layout of a ring?
+ (c) Describe the functions of a multi-station access unit used in a Token
+ Ring network.
+ (d) Describe how token passing enables a computer to send data to the printer
+ in this Token Ring network.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+[2] [2] [3]
+\end_layout
+
+\begin_layout Standard
+[3] 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+9597 ALVL 201X TEMPLATE
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell multirow="3" alignment="center" valignment="middle" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+In[1]:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+# Task 1.1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Program Code
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+In[2]:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+# Task 1.2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Program Code
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+In[3]:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+# Task 1.3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Program Code
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Output:
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Subsubsection*
+\noindent
+Task X.X
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Evidence X
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+FUNCTION CalCheckDigit(Number AS STRING, Total AS INTEGER) RETURNS STRING
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+IF LENGTH(Number) > 1 THEN
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+Digit <- INTEGER(LBFT(Number,1))
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+// Calculate ISBN, an example of how the function is called.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+// Second parameter is always 0.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+ISBN = CalCheckDigit("184146208",0)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Class: Connection Node
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Attributes
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \hspace{}
+\length 1col%
+\end_inset
+
+
+\family default
+Identifier
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \hspace{}
+\length 1col%
+\end_inset
+
+
+\family default
+Data Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \hspace{}
+\length 5col%
+\end_inset
+
+
+\family default
+Description
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+DataValue
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+STRING
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The node data
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+LeftChild
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+INTEGER
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The left node pointer
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+RightChild
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+INTEGER
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The right node pointer
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \hspace{}
+\length 25col%
+\end_inset
+
+ToDo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+category : STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+description : STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+constructor(c : STRING, d : STRING)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+set_category(s : STRING)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+set_description(s : STRING)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+get_category() : STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+get:_description() : STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+summary() : STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename static/img/9597-SPECIMENT-P2-Q6.png
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+ 
+\end_layout
+
+\end_body
+\end_document
