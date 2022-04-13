@@ -1115,7 +1115,7 @@ two
 \begin_inset space \hfill{}
 \end_inset
 
-[2] 
+[2]
 \end_layout
 
 \end_deeper
@@ -1123,6 +1123,1893 @@ two
 Paper 1
 \end_layout
 
+\begin_layout Enumerate
+The file 
+\family typewriter
+COVID19.TXT
+\family default
+ stores the cumulative total number of confirmed covid-19 cases in Singapore
+ from 14 April 2020 till 15 May 2020.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+A sample record is: 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+1704
+\family default
+, 
+\family typewriter
+5050 
+\end_layout
+
+\begin_layout Standard
+This means that as of 17 April 2020, a cumulative total of 5050 confirmed
+ covid-19 cases were reported.
+ 
+\end_layout
+
+\begin_layout Standard
+The task is to determine the dates with the highest and lowest number of
+ the confirmed new covid-19 cases in Singapore and the longest ascending
+ streak during the period.
+\end_layout
+
+\begin_layout Standard
+Note: You cannot use the built-in 
+\family typewriter
+sort()
+\family default
+, 
+\family typewriter
+min()
+\family default
+ and 
+\family typewriter
+max()
+\family default
+ functions.
+\end_layout
+
+\begin_layout Subsection*
+Task 1.1 
+\end_layout
+
+\begin_layout Standard
+Write program code to: 
+\end_layout
+
+\begin_layout Itemize
+read the data from the text file 
+\end_layout
+
+\begin_layout Itemize
+calculate the number of new covid-19 cases per day (from 15 April 2020 to
+ 15 May 2020) 
+\end_layout
+
+\begin_layout Itemize
+output the dates with the highest and lowest numbers of new covid-19 cases,
+ excluding the first day on 14 April 2020.
+ 
+\end_layout
+
+\begin_layout Itemize
+If more than one dates exists with the highest/lowest number of new covid-19
+ cases, all dates are reported.
+\end_layout
+
+\begin_layout Subsubsection*
+Sample output:
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Highest # cases (1426) is on 20 April 2020 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Lowest # cases (447) is on 15 April 2020, 2 May 2020
+\family default
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[9]
+\end_layout
+
+\begin_layout Subsection*
+Task 1.2 
+\end_layout
+
+\begin_layout Standard
+Write program code to:
+\end_layout
+
+\begin_layout Itemize
+Determine the ascending streak of new covid-19 cases 
+\end_layout
+
+\begin_layout Itemize
+output the longest ascending streak of new cases across the period from
+ 15 April 2020 to 15 May 2020 inclusive.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="18" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Date
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cumulative Total Cases
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+New Cases
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1404
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3252
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1504
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3699
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+447
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2-day ascending streak
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1604
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4427
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+728
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1704
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5050
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+623
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2-day ascending streak
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1804
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5992
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+942
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1904
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6588
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+596
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0305
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18205
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+657
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0305
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18778
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+573
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3-day ascending streak
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0305
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19410
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+632
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0305
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20198
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+788
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0305
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20939
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+741
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1205
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24671
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+884
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1305
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25346
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+675
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3-day ascending streak
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1405
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26098
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+752
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1505
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26891
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+793
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+Sample output:
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Longest ascending streak is 3 days
+\family default
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The file 
+\family typewriter
+COUNTRY1.TXT
+\family default
+ stores a list of country names.
+\end_layout
+
+\begin_deeper
+\begin_layout Subsection*
+Task 2.1 
+\end_layout
+
+\begin_layout Standard
+Using the country name, a hash address is calculated from a hashing function
+ as follows: 
+\end_layout
+
+\begin_layout Itemize
+the ASCII code is calculated for each character (in lowercase) within the
+ country name 
+\end_layout
+
+\begin_layout Itemize
+the total of ASCII values is calculated 
+\end_layout
+
+\begin_layout Itemize
+the total is divided by 30 and the remainder is the hash address for this
+ country 
+\end_layout
+
+\begin_layout Standard
+For example, the hash address for 
+\family typewriter
+Brazil
+\family default
+ is 14 
+\end_layout
+
+\begin_layout Standard
+Write program code for the hashing function using the following specification
+ 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+FUNCTION HashKey (Country: STRING): INTEGER 
+\end_layout
+
+\begin_layout Standard
+This function has a single parameter 
+\family typewriter
+Country
+\family default
+ and returns the hash address as an integer.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Subsection*
+Task 2.2 
+\end_layout
+
+\begin_layout Standard
+The hash table is implemented as a list with 30 elements.
+ Elements are written to and read from the hash table using the above hash
+ function with the country name as the input parameter.
+ 
+\end_layout
+
+\begin_layout Standard
+Write program code which does the following: 
+\end_layout
+
+\begin_layout Itemize
+Read all country names from 
+\family typewriter
+COUNTRY1.TXT
+\family default
+ 
+\end_layout
+
+\begin_layout Itemize
+Use the function 
+\family typewriter
+HashKey
+\family default
+ to calculate the hash address for each country 
+\end_layout
+
+\begin_layout Itemize
+Store each country name in the hash table 
+\end_layout
+
+\begin_layout Standard
+You must ensure that when a collision occurs, your program design will deal
+ with this situation by searching sequentially from the calculated hash
+ address for an empty location and storing the country name at this empty
+ location.
+ The program will generate an error message if the hash table is full.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[7]
+\end_layout
+
+\begin_layout Subsection*
+Task 2.3 
+\end_layout
+
+\begin_layout Standard
+Write program code for a procedure SearchCountry using the following specificati
+on 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+PROCEDURE SearchCountry (Country: STRING, HashTable: LIST)
+\end_layout
+
+\begin_layout Standard
+This procedure has two parameters, 
+\family typewriter
+Country
+\family default
+ and 
+\family typewriter
+HashTable
+\family default
+, and does the following: 
+\end_layout
+
+\begin_layout Itemize
+Calculate the hash address for the country 
+\end_layout
+
+\begin_layout Itemize
+Locate the country name in the hash table 
+\end_layout
+
+\begin_layout Itemize
+Report whether or not this country name was found.
+ If found, also output the address of the hash table where the country was
+ found.
+ 
+\end_layout
+
+\begin_layout Standard
+You must ensure that your program can deal with collision when searching.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\begin_layout Standard
+Devise a set of 
+\series bold
+three
+\series default
+ test cases with the country to be used.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\begin_layout Subsection*
+Task 2.4 
+\end_layout
+
+\begin_layout Standard
+The file 
+\family typewriter
+COUNTRY2.TXT
+\family default
+ stores a list of countries with their corresponding numbers of confirmed
+ cases and death cases of COVID19 pandemic on May 16, 2020.
+ 
+\end_layout
+
+\begin_layout Standard
+Each record has the following format: 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\family typewriter
+<country>,<no.
+ of confirmed cases>,<no.
+ of death case> 
+\end_layout
+
+\begin_layout Standard
+A sample record is 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\family typewriter
+Brazil, 233142, 15633 
+\end_layout
+
+\begin_layout Standard
+Death rate for each country is calculated as the number of death cases /
+ the number of confirmed cases.
+ This rate is output as a percentage to 1 decimal place.
+ For the example above, the death rate of Brazil is 
+\begin_inset Formula $15633/233142=6.7\%$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Write program code which does the following: 
+\end_layout
+
+\begin_layout Itemize
+Read the data from 
+\family typewriter
+COUNTRY2.TXT 
+\end_layout
+
+\begin_layout Itemize
+Implement 
+\series bold
+bubble sort
+\series default
+ to arrange the countries from highest to lowest death rate 
+\end_layout
+
+\begin_layout Itemize
+Generate a text file 
+\family typewriter
+RATE.TXT
+\family default
+ to display the list of countries and their death rate.
+ Each record has the format 
+\family typewriter
+<country>, <death rate>
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+If two countries have the same death rate, their order in the list does
+ not matter.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[9]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A bakery currently keeps records on paper of all its products it sells in
+ the shop.
+ It decided to trial a database to manage its products.
+ It is expected that the database should be normalized.
+ The following information of the bakery is recorded: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\family typewriter
+ProductCode
+\family default
+ – Unique code of the item 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+Name
+\family default
+ – Name of the item 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+Type
+\family default
+ – The type of product – 
+\family typewriter
+'Cake'
+\family default
+, 
+\family typewriter
+'Loaf'
+\family default
+, 
+\family typewriter
+'Bun'
+\family default
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+Location
+\family default
+ – The location at which the product is made – 
+\family typewriter
+'North'
+\family default
+, 
+\family typewriter
+'South'
+\family default
+, 
+\family typewriter
+'East'
+\family default
+, 
+\family typewriter
+'West'
+\family default
+ Kitchen 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+Price
+\family default
+ – The selling price of the product 
+\end_layout
+
+\begin_layout Standard
+For cakes, the following additional information is recorded: 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+ServingSize
+\family default
+ – the estimated number of servings per cake 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+Shape
+\family default
+ – Shape of the cake – 
+\family typewriter
+'Square'
+\family default
+, 
+\family typewriter
+'Circle'
+\family default
+, 
+\family typewriter
+'Roll'
+\family default
+ 
+\end_layout
+
+\begin_layout Standard
+For loaves, the following additional information is recorded: 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+Weight
+\family default
+ – weight of loaf in gram 
+\end_layout
+
+\begin_layout Standard
+For buns, the following additional information is recorded:
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+PiecesPerPackage
+\family default
+ – number of pieces per package
+\end_layout
+
+\begin_layout Standard
+The information is to be stored in four different tables: 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Product 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Cake 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Loaf 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Bun
+\end_layout
+
+\begin_layout Subsection*
+Task 3.1 
+\end_layout
+
+\begin_layout Standard
+Create a SQL file named 
+\family typewriter
+Task3_1_<your_name>_<centre number>_<index number>.sql
+\family default
+ to show the SQL code to create the database 
+\family typewriter
+bakery.db
+\family default
+ with the four tables.
+ The table, 
+\family typewriter
+Product
+\family default
+, must use the 
+\family typewriter
+ProductCode
+\family default
+ as its 
+\series bold
+primary key
+\series default
+.
+ The other tables must refer to the 
+\family typewriter
+ProductCode
+\family default
+ as a 
+\series bold
+foreign key
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+Save your SQL code as 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Task3_1_<your_name>_<centre number>_<index number>.sql
+\family default
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Subsection*
+Task 3.2 
+\end_layout
+
+\begin_layout Standard
+The files 
+\family typewriter
+CAKES.TXT
+\family default
+, 
+\family typewriter
+LOAVES.TXT
+\family default
+ and 
+\family typewriter
+BUNS.TXT
+\family default
+ contain information about the bakery’s cakes, loaves and buns respectively
+ for insertion into the bakery database.
+ Each row in the three files is a comma-separated list of information about
+ a single product.
+ 
+\end_layout
+
+\begin_layout Standard
+For 
+\family typewriter
+CAKES.TXT
+\family default
+, the information about each cake is given in the following order: 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\family typewriter
+ProductCode, Name, Location, Price, ServingSize, Shape 
+\end_layout
+
+\begin_layout Standard
+For 
+\family typewriter
+LOAVES.TXT
+\family default
+, the information about each loaf is given in the following order: 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\family typewriter
+ProductCode, Name, Location, Price, Weight 
+\end_layout
+
+\begin_layout Standard
+For 
+\family typewriter
+BUNS.TXT
+\family default
+, the information about each bun is given in the following order:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\family typewriter
+ProductCode, Name, Location, Price, PiecesPerPackage
+\end_layout
+
+\begin_layout Standard
+Write a Python program to insert all information from the three files into
+ the bakery database, bakery.db.
+ Run the program.
+ 
+\end_layout
+
+\begin_layout Standard
+Save your program code as 
+\family typewriter
+Task3_2_<your_name>_<centre number>_<index number>.py
+\family default
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\begin_layout Subsection*
+Task 3.3 
+\end_layout
+
+\begin_layout Standard
+Write SQL code to show the 
+\family typewriter
+ProductCode
+\family default
+, 
+\family typewriter
+Name
+\family default
+, 
+\family typewriter
+Location
+\family default
+, 
+\family typewriter
+Price
+\family default
+ and the 
+\family typewriter
+ServingSize
+\family default
+ of each cake with 
+\family typewriter
+'Circle'
+\family default
+ Shape.
+ Run the query.
+ 
+\end_layout
+
+\begin_layout Standard
+Save this code as 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Task3_3_<your_name>_<centre number>_<index number>.sql 
+\family default
+
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Subsection*
+Task 3.4 
+\end_layout
+
+\begin_layout Standard
+The bakery wants to filter the products by 
+\family typewriter
+Location
+\family default
+ and display the results in a web browser.
+ 
+\end_layout
+
+\begin_layout Standard
+Write a Python program and the necessary files to create a web application
+ that: 
+\end_layout
+
+\begin_layout Itemize
+receives a 
+\family typewriter
+Location
+\family default
+ string from a HTML form, then 
+\end_layout
+
+\begin_layout Itemize
+creates and returns a HTML document that enables the web browser to display
+ a table tabulating the details of the product based on the 
+\family typewriter
+Location
+\family default
+ in ascending order of 
+\family typewriter
+Price
+\family default
+.
+ The table will display the following columns: 
+\family typewriter
+Name
+\family default
+, 
+\family typewriter
+Type
+\family default
+, 
+\family typewriter
+Price
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+Save your Python program as 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Task3_4_<your_name>_<centre number>_<index number>.py 
+\end_layout
+
+\begin_layout Standard
+with any additional files/sub-folders as needed in a folder named Task3_4_<your_
+name>_<centre number>_<index number>
+\end_layout
+
+\begin_layout Standard
+Run the web application.
+ Save the output of the program when 
+\family typewriter
+'North'
+\family default
+ is entered as the 
+\family typewriter
+Location
+\family default
+ as 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Task3_4_<your_name>_<centre number>_<index number>.html
+\family default
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[10]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A programmer is writing a program to manipulate different data structures
+ using Object-Oriented Programming.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The superclass, 
+\family typewriter
+LinkedStructure
+\family default
+, will store the following data:
+\end_layout
+
+\begin_layout Itemize
+A linear linked list of data items held in an 
+\series bold
+array
+\series default
+ of size 10.
+ Array index starts at 1.
+ 
+\end_layout
+
+\begin_layout Itemize
+Head pointer, pointing to the first element in the linked list 
+\end_layout
+
+\begin_layout Itemize
+Tail pointer, pointing to the last element in the linked list 
+\end_layout
+
+\begin_layout Itemize
+Free pointer, pointing to the first element in the free list
+\end_layout
+
+\begin_layout Standard
+The diagram shows the linked structure after four items have been added
+ and the unused nodes are linked together.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+<INSERT_IMAGE_HERE>
+\end_layout
+
+\begin_layout Standard
+This superclass has the following methods:
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+Initialise()
+\family default
+ method sets up an empty linked list.
+ Should link all nodes to form the free list.
+ Initialise values for head pointer, tail pointer and free pointer 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+Add(item)
+\family default
+ appends the parameter into its correct 
+\series bold
+alphabetical
+\series default
+ order in the linked list.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+Remove(item)
+\family default
+ removes the parameter from the ordered linked list 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+Display()
+\family default
+ displays the data items in the linked list in alphabetical order 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+PrintStructure()
+\family default
+ displays the current state of all pointers and the array contents in index
+ order 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+IsEmpty()
+\family default
+ tests for empty linked list 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+IsFull()
+\family default
+ tests for no unused nodes
+\end_layout
+
+\begin_layout Standard
+The superclass is used to implement a linear queue.
+ 
+\end_layout
+
+\begin_layout Standard
+The subclass 
+\family typewriter
+Queue
+\family default
+ has the following methods:
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+Add(item)
+\family default
+ appends the parameter to the queue and overrides the 
+\family typewriter
+LinkedStructure
+\family default
+ add method .
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+Remove()
+\family default
+ returns and removes the next item in the queue
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+Display()
+\family default
+ method should display the queue contents in order (e.g.
+ the earliest added item first) and should override the 
+\family typewriter
+LinkedStructure
+\family default
+ display method.
+ 
+\end_layout
+
+\begin_layout Standard
+Each method updates its appropriate pointers, and produces suitable errors
+ (or returns different values) to indicate if the actions are not possible,
+ e.g.
+ if the structure is empty.
+ 
+\end_layout
+
+\begin_layout Standard
+For each of the sub-tasks, add a comment statement, at the beginning of
+ the code using the hash symbol ‘#’, to indicate the sub-task the program
+ code belongs to, for example:
+\end_layout
+
+\begin_layout Subsection*
+Task 4.1 
+\end_layout
+
+\begin_layout Standard
+Write program code for the superclass 
+\family typewriter
+LinkedStructure
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[20]
+\end_layout
+
+\begin_layout Subsection*
+Task 4.2
+\end_layout
+
+\begin_layout Standard
+Write program code to:
+\end_layout
+
+\begin_layout Itemize
+create a 
+\family typewriter
+LinkedStructure
+\family default
+ object 
+\end_layout
+
+\begin_layout Itemize
+add the following three data items in the order shown to the ordered linked
+ list 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+
+\family typewriter
+Japan, Singapore, China 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+output all pointers and array contents using the 
+\family typewriter
+PrintStructure()
+\family default
+ method after adding the items 
+\end_layout
+
+\begin_layout Itemize
+output the current contents of the linked list using the 
+\family typewriter
+Display()
+\family default
+ method 
+\end_layout
+
+\begin_layout Itemize
+remove two data items 
+\family typewriter
+China
+\family default
+, 
+\family typewriter
+Japan
+\family default
+ in that order from the linked list 
+\end_layout
+
+\begin_layout Itemize
+output all pointers and array contents using the 
+\family typewriter
+PrintStructure()
+\family default
+ method after the removal of the items.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [5]
+\end_layout
+
+\begin_layout Subsection*
+Task 4.3
+\end_layout
+
+\begin_layout Standard
+Write program code for the subclass Queue.
+\end_layout
+
+\begin_layout Standard
+Use appropriate inheritance and polymorphism in your designs.
+ [5]
+\end_layout
+
+\begin_layout Subsection*
+Task 4.4
+\end_layout
+
+\begin_layout Standard
+The file QUEUE.TXT stores data to test your program.
+\end_layout
+
+\begin_layout Standard
+Write program code to:
+\end_layout
+
+\begin_layout Standard
+• create a new queue and add the data in the file QUEUE.TXT to the queue
+ • output the current contents of the queue • remove and output two items
+ from the queue • output all pointers and the array contents of the queue
+ after the removal of the items.
+\end_layout
+
+\begin_layout Standard
+All outputs should have appropriate messages to indicate what they are showing.
+ [3]
+\end_layout
+
+\begin_layout Standard
+Download your program code and output for Task 4 as TASK4_<your_name>_<centre
+ number>_<index number>.ipynb 
+\end_layout
+
+\end_deeper
 \begin_layout Section
 9597 ALVL 201X TEMPLATE
 \end_layout
