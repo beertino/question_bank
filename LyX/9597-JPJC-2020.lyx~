@@ -3466,385 +3466,1363 @@ Describe how token passing enables a computer to send data to the printer
 \end_layout
 
 \begin_layout Enumerate
-A programmer is writing a program to implement a role-playing computer game
- using Object-Oriented Programming (OOP).
+Jurong Pioneer Primary School uses buses to transport students to school.
+ There are six bus routes labelled 
+\family typewriter
+A
+\family default
+ to 
+\family typewriter
+F
+\family default
+.
+ A survey was conducted to analyse the punctuality statistics of these buses
+ over a four-week period.
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-The players have to collect food items.
- A food item has the following attributes:
-\end_layout
-
-\begin_layout Itemize
-
+The data from the survey is stored in the file 
 \family typewriter
-name : STRING 
-\end_layout
-
-\begin_layout Itemize
-
-\family typewriter
-value : INTEGER
+SURVEY.TXT
+\family default
+.
+ The format of the data in the file is: 
 \end_layout
 
 \begin_layout Standard
-and the following methods:
-\end_layout
-
-\begin_layout Itemize
+\noindent
+\align center
 
 \family typewriter
-get_name() 
-\end_layout
-
-\begin_layout Itemize
-
-\family typewriter
-get_value()
-\end_layout
-
-\begin_layout Standard
-A player takes on the role of a person.
- A person has the following attributes:
-\end_layout
-
-\begin_layout Itemize
-
-\family typewriter
-name : STRING 
-\end_layout
-
-\begin_layout Itemize
-
-\family typewriter
-health : INTEGER
+<Day>,<A>,<B>,<C>,<D>,<E>,<F>
 \family default
- which is initialised at a value of 
-\family typewriter
-100
-\end_layout
-
-\begin_layout Itemize
-
-\family typewriter
-strength : INTEGER
-\family default
- which is initialised at a value of 
-\family typewriter
-100
-\end_layout
-
-\begin_layout Standard
-and the following methods:
-\end_layout
-
-\begin_layout Itemize
-
-\family typewriter
-get_name() 
-\end_layout
-
-\begin_layout Itemize
-
-\family typewriter
-get_health() 
-\end_layout
-
-\begin_layout Itemize
-
-\family typewriter
-get_strength() 
-\end_layout
-
-\begin_layout Itemize
-
-\family typewriter
-eat(food)
-\family default
- adds the value of the food to the strength.
- The code should display the player’s new strength.
  
 \end_layout
 
-\begin_layout Itemize
-
-\family typewriter
-attack(opponent)
-\end_layout
-
 \begin_layout Standard
-For the 
-\family typewriter
-attack
-\family default
- method, 
-\family typewriter
-opponent
-\family default
- is another person.
-\end_layout
-
-\begin_layout Itemize
-A random integer 
-\family typewriter
-r
-\family default
- between 
-\family typewriter
-1
-\family default
- and 
-\family typewriter
-10
-\family default
- (inclusive) is generated.
+Positive numbers represent minutes early, negative numbers represent minutes
+ late and 0 represents the bus having been on time.
  
 \end_layout
 
-\begin_layout Itemize
-If the player’s 
-\family typewriter
-strength
-\family default
- is less than 
-\family typewriter
-r
-\family default
-, then the player does not have enough strength to attack and there is no
- change to 
-\family typewriter
-opponent
-\family default
-’s 
-\family typewriter
-health
-\family default
-.
- 
-\end_layout
-
-\begin_layout Itemize
-If the player’s 
-\family typewriter
-strength
-\family default
- is at least 
-\family typewriter
-r
-\family default
-, then the attack is successful and 
-\family typewriter
-opponent
-\family default
-’s 
-\family typewriter
-health
-\family default
- is decreased by 
-\family typewriter
-r
-\family default
-.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-If opponent’s health is now negative, then opponent has been defeated.
- 
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-The player’s 
-\family typewriter
-strength
-\family default
- is decreased by r.
+\begin_layout Subsection*
+Task 1.1 
 \end_layout
 
 \begin_layout Standard
-There are two subclasses of the 
-\family typewriter
-Person
-\family default
- class – 
-\family typewriter
-Healer
-\family default
- and the 
-\family typewriter
-Warrior
-\family default
-.
-\end_layout
-
-\begin_layout Standard
-Healer has one additional method:
+Write the program code that: 
 \end_layout
 
 \begin_layout Itemize
-
+reads the entire contents of 
 \family typewriter
-heal(patient)
-\end_layout
-
-\begin_layout Standard
- 
-\end_layout
-
-\begin_layout Standard
-For the 
-\family typewriter
-heal
+SURVEY.TXT
 \family default
- method, 
+ into an appropriate data structure called 
 \family typewriter
-patient
+Records
 \family default
- is another person.
+, and 
 \end_layout
 
 \begin_layout Itemize
-A random integer 
+displays the contents of 
 \family typewriter
-r
+Records
 \family default
- between 
-\family typewriter
-1
-\family default
- and 
-\family typewriter
-10
-\family default
- (inclusive) is generated.
- 
-\end_layout
-
-\begin_layout Itemize
-If the player’s 
-\family typewriter
-strength
-\family default
- is less than 
-\family typewriter
-r
-\family default
-, then the player does not have enough strength to heal and there is no
- change to 
-\family typewriter
-patient
-\family default
-’s 
-\family typewriter
-health
-\family default
-.
- 
-\end_layout
-
-\begin_layout Itemize
-If the player’s 
-\family typewriter
-strength
-\family default
- is at least 
-\family typewriter
-r
-\family default
-, then the healing is successful and 
-\family typewriter
-patient
-\family default
-’s 
-\family typewriter
-health
-\family default
- is increased by 
-\family typewriter
-r
-\family default
-, up to a maximum of 
-\family typewriter
-100
-\family default
-.
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-Warrior
-\family default
-’s 
-\family typewriter
-attack
-\family default
- method is twice as effective, meaning that if the player has enough strength
- to attack, 
-\family typewriter
-opponent
-\family default
-’s 
-\family typewriter
-health
-\family default
- is decreased by 
-\family typewriter
-2*r
-\family default
-, while the player’s 
-\family typewriter
-strength
-\family default
- is decreased by 
-\family typewriter
-r
-\family default
-.
-\end_layout
-
-\begin_layout Subsubsection*
-Task 1.1
-\end_layout
-
-\begin_layout Standard
-Write program code to define the class 
-\family typewriter
-Food
-\family default
-.
+ in neat columns.
  
 \begin_inset space \hfill{}
 \end_inset
 
-[3]
+[4]
 \end_layout
 
-\begin_layout Subsubsection*
-Task 1.2
-\end_layout
-
-\begin_layout Standard
-Write program code to define the class 
-\family typewriter
-Person
-\family default
-.
+\begin_layout Subsection*
+Task 1.2 
 \end_layout
 
 \begin_layout Standard
-The code should display appropriate messages about the outcome of 
+Extend your program so that the following statistics for the four-week period
+ may be calculated and output: 
+\end_layout
+
+\begin_layout Itemize
+the number of late arrivals for each bus route,
+\end_layout
+
+\begin_layout Itemize
+the average number of minutes late for each bus route, using only data from
+ days on which it was late, and 
+\end_layout
+
+\begin_layout Itemize
+the bus route(s) with the highest number of days late.
+ 
+\end_layout
+
+\begin_layout Standard
+All the results should be displayed with appropriate annotation.
+ The following is an example run of the program: 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+<INSERT_IMAGE_HERE> 
+\begin_inset space \hfill{}
+\end_inset
+
+[8]
+\end_layout
+
+\begin_layout Subsection*
+Task 1.3
+\end_layout
+
+\begin_layout Standard
+Additional code is to be written for the user to input a specific day, for
+ example: 
 \family typewriter
-attack
+Fri3
 \family default
-, including the new value of opponent’s 
+, to be used for the analysis of data.
+ Find and display how many buses were late on this day and for each late
+ bus, display the route label and how late the bus was on this day.
+ 
+\end_layout
+
+\begin_layout Standard
+Test your code using the following test data: 
+\end_layout
+
+\begin_layout Standard
+
 \family typewriter
-health
+Tue1
+\family default
+ 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Thu2
+\family default
+ 
+\end_layout
+
+\begin_layout Standard
+Download your program code for Task 1 as 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+TASK1_<your class>_<your name>.ipynb
+\family default
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+In linear queue data structure, elements are inserted until the queue becomes
+ full.
+ However, after the queue becomes full, new elements cannot be inserted
+ until all the existing elements are removed from the queue.
+ Although there are empty spaces in the queue, they remain unused.
+ This is a disadvantage of a linear queue.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+After inserting all the elements into a linear queue: 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+“John”
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+“Amy” 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+“Chetan” 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+“Xin Xin” 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+“Evan”
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\overset{\uparrow}{\text{Front}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\overset{\uparrow}{\text{Rear}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Linear queue is still considered full after elements have been dequeued:
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+“John”
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+“Amy”
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+“Chetan”
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+“Xin Xin”
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+“Evan”
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\overset{\uparrow}{\text{Front}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\overset{\uparrow}{\text{Rear}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To overcome this disadvantage, a circular queue data structure may be implemente
+d.
+ The next element added to the queue will be stored at index 0 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+<INSERT_IMAGE_HERE> 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="14" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Queue
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Attributes
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \hspace{}
+\length 1col%
+\end_inset
+
+
+\family default
+Identifier
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \hspace{}
+\length 1col%
+\end_inset
+
+
+\family default
+Data Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \hspace{}
+\length 5col%
+\end_inset
+
+
+\family default
+Description
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Items
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+ARRAY[0:4] OF STRING
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Stores the elements of queue
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Front
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+INTEGER
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Index of the first item added to the queue.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Rear
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+INTEGER
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Index of the last item added to the queue.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Methods
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Identifier
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Constructor()
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Instantiates a 
+\family typewriter
+Queue
+\family default
+ object.
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+IsEmpty()
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Returns 
+\family typewriter
+TRUE
+\family default
+ if the queue is empty and 
+\family typewriter
+FALSE
+\family default
+ otherwise.
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+IsFull()
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Returns 
+\family typewriter
+TRUE
+\family default
+ if the queue is full and 
+\family typewriter
+FALSE
+\family default
+ otherwise.
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Enqueue(STRING)
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inserts a new item to the queue.
+ Displays a suitable message if the queue is full.
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Dequeue():STRING
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Returns the item removed from the queue or “
+\family typewriter
+NONE
+\family default
+” if the queue is empty.
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Display()
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Outputs items from the front to the rear of the queue.
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+CircularQueue
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Methods
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Identifier
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Constructor()
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Instantiates a 
+\family typewriter
+CircularQueue
+\family default
+ object.
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+IsFull()
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Returns 
+\family typewriter
+TRUE
+\family default
+ if the queue is full and 
+\family typewriter
+FALSE
+\family default
+ otherwise.Overrides the method in parent class.
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Enqueue(STRING)
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inserts a new item to the queue.
+ Displays a suitable message if the queue is full.Overrides the method in
+ parent class.
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Dequeue():STRING
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Returns the item removed from the queue or “
+\family typewriter
+NONE
+\family default
+” if the queue is empty.Overrides the method in parent class.
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Display()
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Outputs items from the front to the rear of the queue.Overrides the method
+ in parent class.
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Task 2.1
+\end_layout
+
+\begin_layout Standard
+Implement the classes 
+\family typewriter
+Queue
+\family default
+ and 
+\family typewriter
+CircularQueue
+\family default
+ with object-oriented programming.
+ The first item added to an empty queue is stored at index 0.
+ The attributes of each object is reinitialised when the queue becomes empty.
+\begin_inset space \hfill{}
+\end_inset
+
+ [20] 
+\end_layout
+
+\begin_layout Subsection*
+Task 2.2 
+\end_layout
+
+\begin_layout Standard
+There are two printers in the General Office.
+ One of the printers implements a linear queue while the other implements
+ a circular queue.
+ 
+\end_layout
+
+\begin_layout Standard
+Write the code to instantiate a 
+\family typewriter
+Queue
+\family default
+ object and a 
+\family typewriter
+CircularQueue
+\family default
+ object.
+ Test your code, on both queues, using the following steps: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+i.
+\end_layout
+
+\end_inset
+
+ Enqueue five users in the order given in the diagram.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+ii.
+\end_layout
+
+\end_inset
+
+ Dequeue twice.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+iii.
+\end_layout
+
+\end_inset
+
+ Enqueue “Mohan”.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+iv.
+\end_layout
+
+\end_inset
+
+ Display the queue.
+ 
+\end_layout
+
+\begin_layout Standard
+Download your program code for Task 2 as 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+TASK2_<your class>_<your name>.ipynb
+\family default
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The library in Jurong Pioneer Primary School uses a hybrid data structure
+ to keep track of its inventory.
+ Each record in the hash table stores a simple list 
+\family typewriter
+[<Category>, <Binary Search Tree object>]
 \family default
 .
+ Each node in the Binary Search Tree (BST) stores the ISBN number and title
+ of a book.
+ The nodes in each BST share the same book category and are sorted, in ascending
+ order, according to their ISBN numbers.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Subsection*
+Task 3.1 
+\end_layout
+
+\begin_layout Standard
+Write the object-oriented code for the 
+\family typewriter
+BST
+\family default
+ and 
+\family typewriter
+BSTNode
+\family default
+ classes described above.
  
 \begin_inset space \hfill{}
 \end_inset
@@ -3852,30 +4830,292 @@ health
 [10]
 \end_layout
 
-\begin_layout Subsubsection*
-Task 1.3
+\begin_layout Standard
+A checksum is applied to determine the Hash Value for each 
+\family typewriter
+<Category>
+\family default
+, where the ASCII value of each character in the title is multiplied by
+ its position in the 
+\family typewriter
+<Category>
+\family default
+ string (starting from left to right), and then summed.
+ 
 \end_layout
 
 \begin_layout Standard
-Use appropriate inheritance to write program code to define the class 
-\family typewriter
-Healer
-\family default
+For example, given the category “classics”, the summed value would thus
+ be: 
+\begin_inset Formula $99\times1+108\times2+97\times3+115\times4+115\times5+105\times6+99\times7+115\times8=3884$
+\end_inset
+
 .
 \end_layout
 
 \begin_layout Standard
-The code should display appropriate messages about the outcome of 
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $(3884\mod19)+1=9$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A weighted modulus 19 operation is then applied and 1 is added to the remainder
+ to determine the final Hash Value.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 3.2 
+\end_layout
+
+\begin_layout Standard
+Write the code for the function 
 \family typewriter
-heal
+CalcHash(my_string)
 \family default
-, including the new value of 
+, which takes in a string argument and returns its resultant Hash Value.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Subsection*
+Task 3.3 
+\end_layout
+
+\begin_layout Standard
+Write the code to declare and initialise 
 \family typewriter
-patient
+HashTable
 \family default
-’s 
+, an empty hash table array that may store up to 19 records.
+ [2] 
+\end_layout
+
+\begin_layout Subsection*
+Task 3.4 
+\end_layout
+
+\begin_layout Standard
+
 \family typewriter
-health
+CATEGORIES.TXT
+\family default
+ is a text file containing the book categories.
+ Read the entire contents of 
+\family typewriter
+CATEGORIES.TXT
+\family default
+ and update the records in the hash table.
+ Collisions are handled using 
+\series bold
+linear probing
+\series default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+BOOKS.TXT
+\family default
+ holds the details of books in the library.
+ The format of the data in the file is: 
+\family typewriter
+<Category>
+\family default
+,
+\family typewriter
+ <ISBN>
+\family default
+,
+\family typewriter
+ <Title>
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 3.5 
+\end_layout
+
+\begin_layout Standard
+Write program code to: 
+\end_layout
+
+\begin_layout Itemize
+read the lines from the file, 
+\end_layout
+
+\begin_layout Itemize
+extract the 
+\family typewriter
+<Category>
+\family default
+, 
+\family typewriter
+<ISBN>
+\family default
+ and 
+\family typewriter
+<Title>
+\family default
+ values, and 
+\end_layout
+
+\begin_layout Itemize
+add each book to the BST of its category.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\begin_layout Subsection*
+Task 3.6 
+\end_layout
+
+\begin_layout Standard
+Write the code to display the ISBN and title of each book belonging to 
+\family typewriter
+“classics”
+\family default
+ category.
+ The output is sorted according to the ISBN numbers.
+ Ensure your output uses headings to identify the data displayed.
+ 
+\end_layout
+
+\begin_layout Standard
+Download your program code for Task 3 as 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+TASK3_<your class>_<your name>.ipynb
+\family default
+
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A computer company has several offices throughout Singapore, each with several
+ salespersons.
+ Each salesperson is assigned to one office only.
+ A record of the sales made by each salesperson has been set up using a
+ relational database.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The following tables hold the data: 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+CUSTOMER (
+\bar under
+CustomerID
+\bar default
+, CustomerName, Email, Telephone) 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+OFFICE (
+\bar under
+OfficeID
+\bar default
+, PostalCode, Telephone) 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+SALE (
+\bar under
+SalesPersonID*
+\bar default
+, 
+\bar under
+CustomerID*
+\bar default
+, 
+\bar under
+SaleDate
+\bar default
+, Amount) 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+SALESPERSON (
+\bar under
+SalesPersonID
+\bar default
+, SalesPersonName, OfficeID*) 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Note
+\series default
+: Underlined field indicates primary key.
+ Asterisk (*) indicates a foreign key.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 4.1 
+\end_layout
+
+\begin_layout Standard
+Write the SQL code to create the four tables in the database named 
+\family typewriter
+computercompany.db
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Save the SQL file as 
+\family typewriter
+TASK4_1_<your class>_<your name>.sql
 \family default
 .
  
@@ -3885,659 +5125,385 @@ health
 [4]
 \end_layout
 
-\begin_layout Subsubsection*
-Task 1.4
+\begin_layout Subsection*
+Task 4.2 
 \end_layout
 
 \begin_layout Standard
-Use appropriate inheritance and polymorphism to write program code to define
- the class 
+The files 
 \family typewriter
-Warrior
+CUSTOMER.CSV
+\family default
+, 
+\family typewriter
+OFFICE.CSV
+\family default
+, 
+\family typewriter
+SALE.CSV
+\family default
+ and 
+\family typewriter
+SALESPERSON.CSV
+\family default
+ contain information exported by their spreadsheets files.
+ Write Python code to migrate them to the database.
+ 
+\end_layout
+
+\begin_layout Standard
+Save your Python code as 
+\family typewriter
+TASK4_2_<your class>_<your name>.py
 \family default
 .
  
 \begin_inset space \hfill{}
 \end_inset
 
-[2]
+ [6]
+\end_layout
+
+\begin_layout Subsection*
+Task 4.3 
 \end_layout
 
 \begin_layout Standard
-Test your code with the following steps in order:
-\end_layout
-
-\begin_layout Itemize
-Create a 
+Write SQL code to show the 
 \family typewriter
-Food
+SaleDate
 \family default
- item with name 
+, 
 \family typewriter
-'Cheese'
+SalesPersonName
 \family default
- and value 
+, 
 \family typewriter
-10
+CustomerName
 \family default
-.
- 
-\end_layout
-
-\begin_layout Itemize
-Create a 
+ and 
 \family typewriter
-Warrior
+Amount
 \family default
- with 
+ of all sale transactions performed at the office with ID 
 \family typewriter
-name
-\family default
- 
-\family typewriter
-'Sam'
+1
 \family default
 .
  
-\end_layout
-
-\begin_layout Itemize
-Create a 
-\family typewriter
-Healer
-\family default
- with name 
-\family typewriter
-'Alex'
-\family default
-.
- 
-\end_layout
-
-\begin_layout Itemize
-Create a 
-\family typewriter
-Person
-\family default
- with name 
-\family typewriter
-'Jan'
-\family default
-.
- 
-\end_layout
-
-\begin_layout Itemize
-
-\family typewriter
-'Jan'
-\family default
- attacks 
-\family typewriter
-'Sam'
-\family default
-.
- 
-\end_layout
-
-\begin_layout Itemize
-
-\family typewriter
-'Sam'
-\family default
- attacks 
-\family typewriter
-'Jan'
-\family default
-.
- 
-\end_layout
-
-\begin_layout Itemize
-
-\family typewriter
-'Alex'
-\family default
- heals 
-\family typewriter
-'Jan'
-\family default
-.
- 
-\end_layout
-
-\begin_layout Itemize
-
-\family typewriter
-'Sam'
-\family default
- eats 
-\family typewriter
-'Cheese'
-\family default
-.
 \end_layout
 
 \begin_layout Standard
-Download your program code and output for Task 1 as 
+Save the SQL file as 
 \family typewriter
-TASK1_<your name>_<centre number>_<index number>.ipynb
+TASK4_3_<your class>_<your name>.sql
 \family default
+.
  
 \begin_inset space \hfill{}
 \end_inset
 
-[3]
+ [4]
 \end_layout
 
-\end_deeper
+\begin_layout Subsection*
+Task 4.4 
+\end_layout
+
+\begin_layout Standard
+A report is produced to show the top salesperson in each office each month.
+ 
+\end_layout
+
+\begin_layout Standard
+Write Python code to: 
+\end_layout
+
 \begin_layout Enumerate
-An 
-\begin_inset Formula $\mathtt{n\times n}$
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+i.
+\end_layout
+
 \end_inset
 
- chessboard consists of an 
-\begin_inset Formula $\mathtt{n\times n}$
-\end_inset
-
- grid of small squares.
- For this task, the squares are numbered using a coordinate system as a
- tuple of two integers.
- The first integer is the column number, starting from 
+ generate a web form that allows a user to enter the month (
 \family typewriter
 1
 \family default
- at the left, and the second integer is the row number, starting from 
+ to 
 \family typewriter
-1
+12
 \family default
- at the bottom.
+) and year, 
 \end_layout
 
-\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+ii.
+\end_layout
+
+\end_inset
+
+ use the data submitted by the web form to query the database, and 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+iii.
+\end_layout
+
+\end_inset
+
+ return a HTML page with the report displayed.
+ 
+\end_layout
+
 \begin_layout Standard
-A chess knight is a piece that occupies a square, and can then move to another
- square according to one of the following rules:
-\end_layout
-
-\begin_layout Itemize
-moving two squares horizontally and then one square vertically in either
- direction, or 
-\end_layout
-
-\begin_layout Itemize
-moving two squares vertically and then one square horizontally in either
- direction.
-\end_layout
-
-\begin_layout Standard
-See the diagram below for examples.
+The following is a sample report for March, 2020.
+ 
 \end_layout
 
 \begin_layout Standard
 \noindent
 \align center
-<INSERT_IMAGE_HERE>
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Top Performers in March 2020
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Office ID
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Salesperson
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Total Amount S$
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Low Kok Kheong
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7880
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mindy Tan
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6935
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Monish Chandr
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10700
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-The knight at 
+Office ID Salesperson Total Amount S$ 1 2 3 a [Turn over 8 
+\end_layout
+
+\begin_layout Standard
+Save your Python program as 
 \family typewriter
-(2,1)
+TASK4_4_<your class>_<your name>.py
 \family default
- can move to 
+ with any additional files/ sub-folders as needed in a zipped folder named
+ 
+\end_layout
+
+\begin_layout Standard
+
 \family typewriter
-(1,3)
+Task4_<your class>_<your name>.zip
 \family default
-, 
+.
+\begin_inset space \hfill{}
+\end_inset
+
+ [12]
+\end_layout
+
+\begin_layout Subsection*
+Task 4.5 
+\end_layout
+
+\begin_layout Standard
+Deploy the web app on your local host and enter the following data: 
+\end_layout
+
+\begin_layout Enumerate
+month – 
 \family typewriter
-(3,3)
+8
 \family default
- or 
+, and 
+\end_layout
+
+\begin_layout Enumerate
+year – 
 \family typewriter
-(4,2)
+2020
 \family default
 .
  
 \end_layout
 
 \begin_layout Standard
-The knight at 
+Save the screenshot of table generated as 
+\end_layout
+
+\begin_layout Standard
+
 \family typewriter
-(6,7)
-\family default
- can move to 
-\family typewriter
-(4,6)
-\family default
-, 
-\family typewriter
-(4,8)
-\family default
-, 
-\family typewriter
-(5,5)
-\family default
-, 
-\family typewriter
-(7,5)
-\family default
-, 
-\family typewriter
-(8,6)
-\family default
- or 
-\family typewriter
-(8,8)
+TASK4_5_<your class>_<your name>.jpg
 \family default
 .
-\end_layout
-
-\begin_layout Standard
-Only the starting and ending squares of the knight’s move are counted as
- being visited by the knight, and not the squares that the knight passes
- over while moving.
-\end_layout
-
-\begin_layout Standard
-A knight’s tour is a sequence of moves that a chess knight makes on a chessboard
-, so that it visits every square of the chessboard exactly once.
- It does not need to return to its starting square.
-\end_layout
-
-\begin_layout Subsubsection*
-Task 2.1
-\end_layout
-
-\begin_layout Standard
-For a given value of 
-\family typewriter
-n
-\family default
- and a list of squares, write program code to determine if the list is a
- knight’s tour of an 
-\begin_inset Formula $\mathtt{n\times n}$
-\end_inset
-
- chessboard.
-\end_layout
-
-\begin_layout Standard
-Test your code using the values
-\family typewriter
- 
-\begin_inset Formula $\mathtt{n=7}$
-\end_inset
-
-
-\family default
- and the list of squares given in the files: 
-\end_layout
-
-\begin_layout Itemize
-
-\family typewriter
-TASK2TOUR.txt
-\family default
-, which is a valid tour; 
-\end_layout
-
-\begin_layout Itemize
-
-\family typewriter
-TASK2NOTOUR.txt
-\family default
-, which is not a valid tour.
  
 \begin_inset space \hfill{}
 \end_inset
 
-[10]
-\end_layout
-
-\begin_layout Standard
-An algorithm to generate a knight’s tour needs to keep track of the squares
- already visited, so that the knight does not visit them a second time during
- the tour.
-\end_layout
-
-\begin_layout Subsubsection*
-Task 2.2
-\end_layout
-
-\begin_layout Standard
-Suppose the knight is currently on square square, and a list of squares
- already visited by the knight is given in 
-\family typewriter
-lis
-\family default
-.
-\end_layout
-
-\begin_layout Standard
-Write a function 
-\family typewriter
-available(square,lis)
-\family default
- that returns a list of squares which the knight can visit on its next move
- from 
-\family typewriter
-square
-\family default
-, and are not currently in 
-\family typewriter
-lis
-\family default
-.
- These are the squares available to the knight as it tries to complete the
- tour.
-\end_layout
-
-\begin_layout Standard
-The output should be given in lexicographic order, that is, with the column
- numbers in ascending order, and, among the squares with the same column
- number, with the row numbers in ascending order.
- [6]
-\end_layout
-
-\begin_layout Subsubsection*
-Task 2.3
-\end_layout
-
-\begin_layout Standard
-The knight starts at (1,1), the bottom left square, of an 8 × 8 chessboard.
-\end_layout
-
-\begin_layout Standard
-From each square, the knight moves to the available square from which it
- has the smallest number of available squares after that.
- If there is a tie, the square which comes first in lexicographic order
- is chosen.
-\end_layout
-
-\begin_layout Standard
-Write program code to generate the knight’s tour as a list of squares in
- the order they are visited.
-\end_layout
-
-\begin_layout Standard
-Download your program code and output for Task 2 as TASK2_<your name>_<centre
- number>_<index number>.ipynb [9]
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-  3 A text file INVENTORY.txt contains the inventory data for a certain electroni
-cs store.
- Each line in the file contains tab-delimited data that shows the product
- name, product type, purchase price, selling price and quantity available.
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-Each line is in the format
-\end_layout
-
-\begin_layout Standard
-Name
-\backslash
-tType
-\backslash
-tPurchase_Price
-\backslash
-tSelling_Price
-\backslash
-tQuantity
-\end_layout
-
-\begin_layout Standard
-where 
-\backslash
-t represents the tab character.
-\end_layout
-
-\begin_layout Standard
-Task 3.1 
-\end_layout
-
-\begin_layout Standard
-Write program code to:
-\end_layout
-
-\begin_layout Standard
-• Read the inventory data from the text file; • Find the average selling
- price of products belonging to the Laptop product type and display this
- value; • Count the number of products in each product type and store it
- in appropriate data structure called TypeCount; • Display the product type
- with the greatest number of products.
- If there is a tie, display all of the product types with the greatest number
- of products.
-\end_layout
-
-\begin_layout Standard
-Download your program code and output for Task 3.1 as TASK3_1_<your name>_<centre
- number>_<index number>.ipynb [6]
-\end_layout
-
-\begin_layout Standard
-Task 3.2 
-\end_layout
-
-\begin_layout Standard
-The profit margin of each product can be calculated by the following equation:
-\end_layout
-
-\begin_layout Standard
-Profit margin = selling price – purchase price.
-\end_layout
-
-\begin_layout Standard
-Write program code to:
-\end_layout
-
-\begin_layout Standard
-• Calculate and display the total profit the store could make if all products
- are sold; • Sort the inventory data using a Merge sort algorithm in descending
- order of profit margin; • Display the sorted inventory data in the format
- given below.
-\end_layout
-
-\begin_layout Standard
-Product Product Type Profit Margin ThinkingPad 14 Computer 300 Bapple 8
- Phone 450
-\end_layout
-
-\begin_layout Standard
-Download your program code and output for Task 3.2 as TASK3_2_<your name>_<centre
- number>_<index number>.ipynb [9]
-\end_layout
-
-\begin_layout Standard
-  Task 3.3
-\end_layout
-
-\begin_layout Standard
-A store manager decided to make some changes to INVENTORY.txt and saved it
- as INVENTORY_SERIAL.txt.
- Each line in the updated file contains tab-delimited data that shows the
- serial number, product name, product type, purchase price, selling price
- and quantity available.
-\end_layout
-
-\begin_layout Standard
-Each line is in the format:
-\end_layout
-
-\begin_layout Standard
-Serial_No
-\backslash
-tName
-\backslash
-tType
-\backslash
-tPurchase_Price
-\backslash
-tSelling_Price
-\backslash
-tQuantity
-\end_layout
-
-\begin_layout Standard
-where 
-\backslash
-t represents the tab character.
-\end_layout
-
-\begin_layout Standard
-Write program code to insert the data from INVENTORY_SERIAL.txt into a NoSQL
- database OUTLETS under the collection GEM.
-\end_layout
-
-\begin_layout Standard
-Download your program code for Task 3.3 as TASK3_3_<your name>_<centre number>_<i
-ndex number>.py [5]
-\end_layout
-
-\begin_layout Standard
-Task 3.4
-\end_layout
-
-\begin_layout Standard
-The database administrator wants to validate that the store manager did
- not make any errors when he edited the text file.
- Write program code to check that the database conforms to the below specificati
-ons:
-\end_layout
-
-\begin_layout Standard
-• Serial_No consists of one digit followed by two letters, followed by one
- digit (e.g.
- 1AB7); • Name consists of only letters, digits and spaces; • Quantity is
- a positive integer.
- Any document that has an error should be removed from the database.
- You may assume data fields not specified above are error free.
- Display the documents that were removed.
-\end_layout
-
-\begin_layout Standard
-Download your program code for Task 3.4 as TASK3_4_<your name>_<centre number>_<i
-ndex number>.py [5]
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-4 A company keeps records of the employees working for it.
- The following are the information stored in the company’s database:
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-• Employee_name – name of the employee • Employee_ID – unique ID number
- allocated to each employee • Job_type – type of job the employee is employed
- for ('Sales' or 'Tech_support') • Date_of_employment – date the employee
- joined the company • Service_status – whether the employee is still in
- service ('True' means the employee is still in the company, 'False' means
- the employee has left the company) For sales employees, the following extra
- information is recorded:
-\end_layout
-
-\begin_layout Standard
-• Total_sales – the amount of sales in dollars made by the employee For
- tech support employees, the following extra information is recorded:
-\end_layout
-
-\begin_layout Standard
-• Bugs_resolved – the total number of bugs the employee has resolved The
- database is expected to be normalised and stored in three different tables:
-\end_layout
-
-\begin_layout Standard
-Employee Sales Tech_support
-\end_layout
-
-\begin_layout Standard
-Task 4.1
-\end_layout
-
-\begin_layout Standard
-Create an SQL file called TASK4_1_<your name>_<centre number>_<index number>.sql
- to show the SQL code to create the database records.db with the three tables.
- Primary keys and foreign keys should be defined where appropriate.
-\end_layout
-
-\begin_layout Standard
-Save your SQL code as TASK4_1_<your name>_<centre number>_<index number>.sql
- [5]
-\end_layout
-
-\begin_layout Standard
-Task 4.2 The files SALES.txt and TECH_SUPPORT.txt contain information regarding
- the sales and tech support employees respectively.
- The information should be inserted into the database.
-\end_layout
-
-\begin_layout Standard
-For SALES.txt, information is given in the following order: Employee_ID,Employee_
-name,Date_of_Employment,Service_status,Total_Sales
-\end_layout
-
-\begin_layout Standard
-For TECH_SUPPORT.txt, information is given in the following order: Employee_ID,Em
-ployee_name,Date_of_Employment,Service_status,Bugs_resolved
-\end_layout
-
-\begin_layout Standard
-Write a python program to insert all information from the two files into
- the records database, records.db.
- Run the program.
-\end_layout
-
-\begin_layout Standard
-Save your program code as TASK4_2_<your name>_<centre number>_<index number>.py
- [5]
-\end_layout
-
-\begin_layout Standard
-  Task 4.3
-\end_layout
-
-\begin_layout Standard
-The company wants to filter the employees by Service_status and display
- the results in a web browser.
-\end_layout
-
-\begin_layout Standard
-Write a Python program and the necessary files to create a web application
- that:
-\end_layout
-
-\begin_layout Standard
-• receives a Service_status string from a HTML form, then • creates and
- returns a HTML document that enables the web browser to display either
-\end_layout
-
-\begin_layout Standard
-o an ordered list of employees that are still in service, or o an ordered
- list of employees that are no longer in service,
-\end_layout
-
-\begin_layout Standard
-depending on the Service_status string entered by the user.
-\end_layout
-
-\begin_layout Standard
-The list should be sorted in alphabetical order.
-\end_layout
-
-\begin_layout Standard
-Save your Python program as TASK4_3_<your name>_<centre number>_<index number>.py
- with any additional files / sub-folders as needed in a folder named TASK4_3_<yo
-ur name>_<centre number>_<index number>
-\end_layout
-
-\begin_layout Standard
-Run the web application.
- Save the output of the program when 'TRUE' is entered as the 
+ [2]
 \end_layout
 
 \end_deeper
