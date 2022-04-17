@@ -1,7 +1,0 @@
-history
-fantasy
-classics
-dystopian
-thriller
-science fiction
-computer science
