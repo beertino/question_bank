@@ -89,6 +89,569 @@
 Paper 1
 \end_layout
 
+\begin_layout Enumerate
+The file 
+\family typewriter
+IOI19.TXT
+\family default
+ stores the scoreboard of the 31st International Olympiad in Informatics
+ (IOI) held in Baku, Azerbaijan from 4 to 11 August 2019.
+ The first line contains the header with contestant's rank, name, team (country)
+, and overall score.
+ The remaining lines contain the corresponding data.
+ IOI 2019 eventually awarded 28 Gold, 54 Silver and 81 Bronze medals.
+ A country typically sends up to 4 contestants to participate in IOI.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Subsection*
+Task 1.1 
+\end_layout
+
+\begin_layout Standard
+Determine the top 3 teams in the competition and display their country names
+ as well as the number of Gold, Silver and Bronze medals attained.
+ Teams which are tied will be ordered by their country names in alphabetical
+ order and will share the same rank.
+ 
+\end_layout
+
+\begin_layout Standard
+Sample output: 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Top 3 teams: 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+1 ABC 4G 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+2 DEF 3G1S 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+2 GHI 3G1S 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+4 JKL 2G1S1B 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+4 MNO 2G1S1B 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 1 
+\end_layout
+
+\begin_layout Standard
+Program code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[9]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 2 
+\end_layout
+
+\begin_layout Standard
+Screenshot.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [1]
+\end_layout
+
+\begin_layout Subsection*
+Task 1.2 
+\end_layout
+
+\begin_layout Standard
+Write program code to prompt a user to enter a team name and display the
+ results of its participants.
+ Participants who did not receive a medal will be denoted with 
+\family typewriter
+P
+\family default
+.
+ The program will terminate when a user enters the text string 
+\family typewriter
+'ZZZ'
+\family default
+ (without the quotes).
+ 
+\end_layout
+
+\begin_layout Standard
+Sample interaction: 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Enter team: SGP 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Eu-Shaun Leong G 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Lee Jeffrey Chun Hean S 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Benson Zhan Li Lin B 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Daniel Zhenghao Choo P 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Enter team: ZZZ 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Bye 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 3
+\end_layout
+
+\begin_layout Standard
+Program code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 4 
+\end_layout
+
+\begin_layout Standard
+Screenshot.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Dubbed first of its kind globally, the Singapore Quick Response Code (SGQR)
+ is an infrastructure-light technology that will help to simplify QR e-payments
+ in Singapore for both consumers and merchants.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The SGQR is based on the QR Code Specification for Payment System - Merchant-Pre
+sented Mode standard issued by EMVCo, which has the benefits of international
+ interoperability, multi-tenancy of QR schemes and non-sensitive data presented
+ for payments.
+ 
+\end_layout
+
+\begin_layout Standard
+According to the specification, the parsed SGQR text string contains data
+ items, with each data item adhering to the following structure: id, length,
+ value.
+ Two such data items are highlighted in bold in the following diagram: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+000201
+\series default
+01021126810011SG.COM.NETS01231198500 065G99123123590002111 11686614000308686614019
+908604108C251800007SG.SGQR01121809072DD85C020701.000103060790270402010502060604000
+00708201809155204581253037025802SG5912SOBAEXPRESS6009Singapore
+\series bold
+630457B3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Thus for the first data item 
+\family typewriter
+\series bold
+000201
+\family default
+\series default
+, 
+\family typewriter
+00
+\family default
+ is the id, 
+\family typewriter
+02
+\family default
+ is the length, and 
+\family typewriter
+01
+\family default
+ is the value.
+ 
+\end_layout
+
+\begin_layout Standard
+And for the last data item 
+\family typewriter
+\series bold
+630457B3
+\family default
+\series default
+, 
+\family typewriter
+63
+\family default
+ is the id, 
+\family typewriter
+04
+\family default
+ is the length, and 
+\family typewriter
+57B3
+\family default
+ is the value.
+ 
+\end_layout
+
+\begin_layout Standard
+The value 
+\family typewriter
+57B3
+\family default
+ is also a hexdecimal number to verify the integrity of the SGQR data.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 2.1 
+\end_layout
+
+\begin_layout Standard
+Write program code to extract the last data item of the SGQR stored in 
+\family typewriter
+SGQR.TXT
+\family default
+.
+ For the example above, it will be the data item with id 63 and length 4
+ i.e.
+ 630457B3.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 5 
+\end_layout
+
+\begin_layout Standard
+Program code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 6 
+\end_layout
+
+\begin_layout Standard
+Screenshot.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [1]
+\end_layout
+
+\begin_layout Subsection*
+Task 2.2 
+\end_layout
+
+\begin_layout Standard
+Write a 
+\family typewriter
+hex2oct
+\family default
+ function which takes in a hexadecimal number string and returns its equivalent
+ octal number string.
+ For example 
+\family typewriter
+hex2oct('A')
+\family default
+ returns 
+\family typewriter
+'12'
+\family default
+.
+ You may not use Python's built in 
+\family typewriter
+int(num, 8)
+\family default
+, 
+\family typewriter
+int(num, 16)
+\family default
+, 
+\family typewriter
+bin()
+\family default
+, 
+\family typewriter
+oct()
+\family default
+ or 
+\family typewriter
+hex()
+\family default
+ functions.
+ Use the hexadecimal number string 
+\family typewriter
+'4F63A'
+\family default
+ to to test your program code.
+ 
+\end_layout
+
+\begin_layout Standard
+Hint: One hexadecimal digit can be expressed as four binary digits and one
+ octal digit can be expressed as three binary digits.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 7 
+\end_layout
+
+\begin_layout Standard
+Program code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[5]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 8 
+\end_layout
+
+\begin_layout Standard
+Screenshot.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Subsection*
+Task 2.3 
+\end_layout
+
+\begin_layout Standard
+Write program code to perform input validation for a hexadecimal number
+ string.
+ Test your program with suitable test data.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 9 
+\end_layout
+
+\begin_layout Standard
+Program code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 10 
+\end_layout
+
+\begin_layout Standard
+Screenshots.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+From 2021 onwards, the Primary School Leaving Exam (PSLE) will be scored
+ with wider bands, replacing the current T-scores.
+ Each subject will be scored using 8 bands known as Achievement Levels (AL),
+ with AL 1 being the best score and AL 8 being the lowest score.
+ The student’s PSLE Score will be the sum of the four subject scores.
+ The PSLE Score will range from 4 (best) to 32.
+ Secondary 1 posting will continue to be based on academic merit, using
+ the PSLE Score.
+ Each student will submit a list of 6 schools in order of preference.
+ If two students with the same score are being considered for the last place
+ in a school, the following tie-breakers will be used: ● Citizenship - priority
+ given to Singapore Citizens (SC), then Singapore Permanent Residents (PR),
+ then International Students (IS) ● Choice order of schools - priority given
+ to the student who indicates a certain school as a higher choice ● Computerised
+ balloting The file PSLE21.txt contains the application information of 400
+ Primary 6 students of a primary school with the following structure: <StudentID
+>,<EnglishLanguageMark>,<MathematicsMark>,<ScienceMark>,<M otherTongueLangueMark
+>,<Citizenship>,<SchoolChoice1>,<SchoolChoice2> ,<SchoolChoice3> You may
+ assume that in this school all students study subjects at the standard
+ level.
+ Also, all of them have made up their mind to only apply to 3 schools of
+ their choice.
+ If a student is unable to get admission to a school of their choice, they
+ will be posted to SchoolD.
+ It is decided to process and store the following application information
+ about the student in 4 linked lists.
+ Each linked list pertain to the vacancy positions of the 4 schools.
+ Schools A, B and C have 120, 150 and 80 available places.
+ The data to be stored in each linked list node include: PSLE score, student
+ ID, citizenship and the 3 school choices.
+ Task 3.1 Write program code to read in and store the contents of the file
+ PSLE21.txt in a dictionary students with key StudentID and value the computed
+ PSLE score, citizenship and three school choices.
+ Display the first 10 dictionary entries in students.
+ Evidence 11 Program code.
+ [6] Evidence 12 Screenshot for first 10 dictionary entries in students.
+ [1] Task 3.2 Using OOP where appropriate, write program code to declare
+ and initialise the necessary classes.
+ Insert the 400 students from the students dictionary in Task 3.1 to the
+ appropriate linked lists in your main program driver code.
+ Evidence 13 Program code.
+ [16] Evidence 14 Screenshots for the first 5 entries in each linked list.
+ [4] Task 3.3 Students P351 and P365 who were previously Singapore Permanent
+ Residents (PR) have successfully become Singapore Citizens (SC).
+ Write the necessary program code to update their citizenship status and
+ new secondary 1 posting order.
+ Evidence 15 Program code.
+ [5] Evidence 16 Screenshots.
+ [2] Task 3.4 Student P286 has decided to emigrate to another country with
+ his/her parents.
+ Write the necessary program code to remove him/her from his/her existing
+ allocation and perform the necessary adjustments to fill up the vacancy.
+ Evidence 17 Program code.
+ [5] Evidence 18 Screenshot.
+ [1] 
+\end_layout
+
+\begin_layout Enumerate
+4.
+ The Viola-Jones object detection algorithm, named after two computer vision
+ researchers Paul Viola and Michael Jones, uses integral images to detect
+ the presence of facial features in an image efficiently.
+ An integral image (also known as a summed-area table) is the name of both
+ a data structure and an algorithm used to obtain this data structure.
+ It uses a quick and efficient way to calculate the sum of pixel values
+ in a rectangular part of an image.
+ In an integral image, the value of each point is the sum of all pixels
+ above and to the left, including the target pixel: The integral image can
+ be calculated in a single pass over the original image.
+ This reduces summing the pixel intensities within a rectangle into only
+ three operations with four numbers, regardless of rectangle size: The sum
+ of pixels in the rectangle ABCD can be derived from the values of points
+ A, B, C, and D, using the formula D - B - C + A.
+ It is easier to understand this formula visually: Note that subtracting
+ both B and C means that the area defined with A has been subtracted twice,
+ so we need to add it back again.
+ Thus D - B - C + A = 113 - 50 - 42 + 20 = 41.
+ Task 4.1 Write an integral_image() function which reads in the data from
+ the file IMAGE1.IN into a 2D array and computes and outputs the integral
+ image to a file IMAGE1.OUT using the algorithm described above, and also
+ displays the result of D - B - C + A to the screen.
+ Evidence 19 Program code.
+ [13] Evidence 20 Screenshots of IMAGE1.OUT and output of D - B - C + A.
+ [2] Task 4.2 Write a magic() function which is a generalisation of your
+ integral_image() function which will work for any m * n rectangular 2D
+ array and any rectangle ABCD.
+ Programmatically randomise your image with suitable values (m, n >= 8)
+ in IMAGE2.IN and work your magic on this pseudo-randomly generated file
+ to produce IMAGE2.OUT and the updated computed value of D - B - C + A.
+ Evidence 21 Program code.
+ [13] Evidence 22 Screenshots of IMAGE2.OUT and output of D - B - C + A.
+ [2]
+\end_layout
+
 \begin_layout Section
 9597 ALVL 201X TEMPLATE
 \end_layout
