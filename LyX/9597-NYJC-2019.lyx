@@ -533,39 +533,115 @@ The sequence of commands
 \end_layout
 
 \begin_layout Standard
-Create a new tree 
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Create a new tree
 \end_layout
 
-\begin_layout Standard
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 Add to tree (15) 
 \end_layout
 
-\begin_layout Standard
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 Add to tree (10) 
 \end_layout
 
-\begin_layout Standard
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 Add to tree (20) 
 \end_layout
 
-\begin_layout Standard
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 Add to tree (8) 
 \end_layout
 
-\begin_layout Standard
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 Add to tree (12) 
 \end_layout
 
-\begin_layout Standard
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 Add to tree (18) 
 \end_layout
 
-\begin_layout Standard
-Add to tree (25) 
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Add to tree (25)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 would create the following binary tree: 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+<INSERT_IMAGE_HERE>
 \end_layout
 
 \begin_layout Standard
@@ -574,6 +650,7 @@ The program to implement this ADT will use the classes Tree and Node designed
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="1">
 <features tabularvalignment="middle">
@@ -734,73 +811,114 @@ insert(key : INTEGER)
 
 \end_inset
 
-Tree root : Node constructor() add(newItem) printTreeInOrder()
+
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection*
 Task 3.1 
 \end_layout
 
 \begin_layout Standard
-Write program code to define the classes Tree and Node.
+Write program code to define the classes 
+\family typewriter
+Tree
+\family default
+ and 
+\family typewriter
+Node
+\family default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection*
 Evidence 8: 
 \end_layout
 
 \begin_layout Standard
 Your program code.
- [16] 
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[16]
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection*
 Task 3.2 
 \end_layout
 
 \begin_layout Itemize
-Write program code for a procedure CreateTreefromArray that accepts an array
- of unsorted unique integers passed in via a parameter.
+Write program code for a procedure 
+\family typewriter
+CreateTreefromArray
+\family default
+ that accepts an array of unsorted unique integers passed in via a parameter.
  
 \end_layout
 
 \begin_layout Itemize
 The procedure will read each integer in the array and construct a binary
- tree using your classes Tree and Node.
+ tree using your classes 
+\family typewriter
+Tree
+\family default
+ and 
+\family typewriter
+Node
+\family default
+.
  
 \end_layout
 
 \begin_layout Itemize
-Call printTreeInOrder to display the output (numbers shown will always be
- sorted).
+Call 
+\family typewriter
+printTreeInOrder
+\family default
+ to display the output (numbers shown will always be sorted).
  
 \end_layout
 
 \begin_layout Itemize
-Test your program by copying the input data found in BST.txt into your code.
- Node key : INTEGER left : Node right : Node constructor() insert(key :
- INTEGER) 5 2019 H2 Computing 9597/01 
+Test your program by copying the input data found in 
+\family typewriter
+BST.txt
+\family default
+ into your code.
+ 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection*
 Evidence 9: 
 \end_layout
 
 \begin_layout Standard
-Your CreateTreefromArray program code.
- [4]
+Your 
+\family typewriter
+CreateTreefromArray
+\family default
+ program code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection*
 Evidence 10: 
 \end_layout
 
 \begin_layout Standard
 A screenshot of the output.
- [2] 
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection*
 Task 3.3
 \end_layout
 
@@ -814,35 +932,109 @@ For instance, the sequence of commands
 \end_layout
 
 \begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 Create a new tree 
 \end_layout
 
-\begin_layout Standard
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 Add to tree (8) 
 \end_layout
 
-\begin_layout Standard
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 Add to tree (10) 
 \end_layout
 
-\begin_layout Standard
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 Add to tree (12) 
 \end_layout
 
-\begin_layout Standard
-Add to tree (15) 
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Add to tree (15)
 \end_layout
 
-\begin_layout Standard
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 Add to tree (18) 
 \end_layout
 
-\begin_layout Standard
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 Add to tree (20)
 \end_layout
 
-\begin_layout Standard
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 Add to tree (25)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Standard
@@ -850,114 +1042,1003 @@ will result in a tree that looks as follows:
 \end_layout
 
 \begin_layout Standard
-Amend procedure CreateTreefromArray so that the created tree from any input
- array of integers will be balanced where the number of items on the left
- and right subtree will roughly be divided equally (Hint: input array must
- first be sorted).
+\noindent
+\align center
+<INSERT_IMAGE_HERE>
 \end_layout
 
 \begin_layout Standard
+Amend procedure 
+\family typewriter
+CreateTreefromArray
+\family default
+ so that the created tree from any input array of integers will be balanced
+ where the number of items on the left and right subtree will roughly be
+ divided equally (Hint: input array must first be sorted).
+\end_layout
+
+\begin_layout Subsection*
 Evidence 11: 
 \end_layout
 
 \begin_layout Standard
 Your amended program code.
- [6] 
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection*
 Task 3.4 
 \end_layout
 
 \begin_layout Standard
-Create a function FindKthSmallest that returns the kth smallest element
- in your binary tree.
- If k = 5 the kth smallest element will be 18.
+Create a function 
+\family typewriter
+FindKthSmallest
+\family default
+ that returns the 
+\begin_inset Formula $k$
+\end_inset
+
+th smallest element in your binary tree.
+ If 
+\begin_inset Formula $k=5$
+\end_inset
+
+ the 
+\begin_inset Formula $k$
+\end_inset
+
+th smallest element will be 18.
  Your function should not need to use extra space (e.g.
  creating a new array) to solve the problem other than using a temp variable(s).
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection*
 Evidence 12: 
 \end_layout
 
 \begin_layout Standard
-Your program code for FindKthSmallest.
- [4] 
+Your program code for 
+\family typewriter
+FindKthSmallest
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection*
 Evidence 13:
 \end_layout
 
 \begin_layout Standard
 Produce a screenshot showing the retrieval of the 5th smallest element from
  the tree created earlier.
- [2] 
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-4 To encrypt a message, a keyword cipher is used.
+To encrypt a message, a keyword cipher is used.
  It is a form of monoalphabetic substitution where a keyword is used as
  the key.
  The key is used to determine the letter matchings of the cipher alphabet
  to the plain alphabet.
  Repeating letters in the key is removed.
- For instance, if the key used is 'SECRET', the cipher alphabet generated
- will be as follows: Plain text: A B C D E F G H I J K L M N O P Q R S T
- U V W X Y Z Cipher Alphabet: S E C R T A B D F G H I J K L M N O P Q U
- V W X Y Z After the key’s unique letters is used up, the rest of the ciphertext
- letters are used in alphabetical order, excluding those already used in
- the key.
- Thus, to encode the word ‘Attack’, ‘A’ is replaced with 'S', 't' is replaced
- with 'Q', and so on giving the encrypted word as 'SQQSCH'.
- Task 4.1 Write program code for a function to generate an array of the cipher
- alphabet given a key.
- FUNCTION Cipher (NewAlphabet : ARRAY, Key : STRING) The function has two
- parameters and returns the NewAlphabet array with the correct cipher alphabet
- based on the Key parameter.
- Evidence 14: Your program code.
- [6] Task 4.2 Write driver code that asks the user to enter a key that contains
- only letters, calls function Cipher and displays the cipher alphabet (all
- in uppercase) in one line.
+ For instance, if the key used is 
+\family typewriter
+'SECRET'
+\family default
+, the cipher alphabet generated will be as follows: 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="27">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Plain text:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+E
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+G
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+H
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+I
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+J
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+M
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+N
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+O
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+P
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Q
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+R
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+S
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+U
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+W
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Y
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Z
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cipher Alphabet:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+S
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+E
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+R
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+G
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+H
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+I
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+J
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+M
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+N
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+O
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+P
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Q
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+U
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+W
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Y
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Z
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After the key’s unique letters is used up, the rest of the ciphertext letters
+ are used in alphabetical order, excluding those already used in the key.
+ Thus, to encode the word ‘
+\family typewriter
+Attack
+\family default
+’, ‘
+\family typewriter
+A
+\family default
+’ is replaced with 
+\family typewriter
+'S'
+\family default
+, 
+\family typewriter
+'t'
+\family default
+ is replaced with 
+\family typewriter
+'Q'
+\family default
+, and so on giving the encrypted word as 
+\family typewriter
+'SQQSCH'
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 4.1 
+\end_layout
+
+\begin_layout Standard
+Write program code for a function to generate an array of the cipher alphabet
+ given a key.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\family typewriter
+FUNCTION Cipher (NewAlphabet : ARRAY, Key : STRING) 
+\end_layout
+
+\begin_layout Standard
+The function has two parameters and returns the 
+\family typewriter
+NewAlphabet
+\family default
+ array with the correct cipher alphabet based on the 
+\family typewriter
+Key
+\family default
+ parameter.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 14:
+\end_layout
+
+\begin_layout Standard
+Your program code.
+ [6] 
+\end_layout
+
+\begin_layout Subsection*
+Task 4.2 
+\end_layout
+
+\begin_layout Standard
+Write driver code that asks the user to enter a key that contains only letters,
+ calls function Cipher and displays the cipher alphabet (all in uppercase)
+ in one line.
  Do appropriate data validation on the input key.
- Evidence 15: Your program code.
- [3] Task 4.3 Design three suitable test cases and provide screenshot evidence
- for your testing.
- Evidence 16: Annotated screenshots for each test data run.
- [3] Task 4.4 Develop your program further to display the following menu:
- 1.
- Encode a message 2.
- Decode a message 3.
- -1 to Quit Implement the menu options to allow a line of text to be encoded
- or decoded.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 15: 
+\end_layout
+
+\begin_layout Standard
+Your program code.
+ [3] 
+\end_layout
+
+\begin_layout Subsection*
+Task 4.3 
+\end_layout
+
+\begin_layout Standard
+Design three suitable test cases and provide screenshot evidence for your
+ testing.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 16: 
+\end_layout
+
+\begin_layout Standard
+Annotated screenshots for each test data run.
+ [3] 
+\end_layout
+
+\begin_layout Subsection*
+Task 4.4 
+\end_layout
+
+\begin_layout Standard
+Develop your program further to display the following menu: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+1.
+\end_layout
+
+\end_inset
+
+ Encode a message
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+2.
+\end_layout
+
+\end_inset
+
+ Decode a message 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+3.
+\end_layout
+
+\end_inset
+
+ -1 to Quit
+\end_layout
+
+\begin_layout Standard
+Implement the menu options to allow a line of text to be encoded or decoded.
  For each option, ask for the cipher key and the message that is to be encoded
  or decoded.
- Test your program with the key 'TOPSECRET' and the message 'I will score
- A for Computing'.
- Evidence 17: Your program code.
- [10] Evidence 18: Screenshot(s) showing your output.
- [2] 7 2019 H2 Computing 9597/01 Task 4.5 Frequency analysis is a common
- method used by code breakers to break monoalphabetic substitution ciphers.
+ Test your program with the key 
+\family typewriter
+'TOPSECRET'
+\family default
+ and the message 
+\family typewriter
+'I will score A for Computing
+\family default
+'.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 17: 
+\end_layout
+
+\begin_layout Standard
+Your program code.
+ [10]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 18: 
+\end_layout
+
+\begin_layout Standard
+Screenshot(s) showing your output.
+ [2]
+\end_layout
+
+\begin_layout Subsection*
+Task 4.5 
+\end_layout
+
+\begin_layout Standard
+Frequency analysis is a common method used by code breakers to break monoalphabe
+tic substitution ciphers.
  The first step is to analyse the coded message and construct a frequency
  table of all the letters appearing in the coded message.
- Write a program that reads the content from the file INTERCEPT.txt.
+ 
+\end_layout
+
+\begin_layout Standard
+Write a program that reads the content from the file 
+\family typewriter
+INTERCEPT.txt
+\family default
+.
  The text in this file contains a coded message.
  Construct a frequency table (ignore punctuation marks) as follows using
- a suitable data structure: Ciphertext Letter: A B C D E F G H I J K L M
- N O P Q R S T U V W X Y Z Frequency: 5 2 ......
- Your program will then display the table sorted by descending order showing
+ a suitable data structure: 
+\end_layout
+
+\begin_layout Standard
+Ciphertext Letter: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+\end_layout
+
+\begin_layout Standard
+Frequency: 5 2 ......
+ 
+\end_layout
+
+\begin_layout Standard
+Your program will then display the table sorted by descending order showing
  the most used letter and its frequency first followed by the next highest
  and so on.
- Partial sample output: Ciphertext Letter: S O G.....
- Frequency: 88 85 67.....
- Evidence 19: Your program code.
- [7] Evidence 20: Screenshot of output.
+\end_layout
+
+\begin_layout Standard
+Partial sample output: 
+\end_layout
+
+\begin_layout Standard
+Ciphertext Letter: S O G.....
+\end_layout
+
+\begin_layout Standard
+Frequency: 88 85 67.....
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 19: 
+\end_layout
+
+\begin_layout Standard
+Your program code.
+ [7] 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 20: 
+\end_layout
+
+\begin_layout Standard
+Screenshot of output.
  [1]
 \end_layout
 
+\end_deeper
 \begin_layout Section
 9597 ALVL 201X TEMPLATE
 \end_layout
