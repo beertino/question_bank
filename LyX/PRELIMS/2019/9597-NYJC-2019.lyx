@@ -1845,7 +1845,11 @@ Evidence 14:
 
 \begin_layout Standard
 Your program code.
- [6] 
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [6]
 \end_layout
 
 \begin_layout Subsection*
@@ -1866,7 +1870,11 @@ Evidence 15:
 
 \begin_layout Standard
 Your program code.
- [3] 
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
 \end_layout
 
 \begin_layout Subsection*
@@ -1885,7 +1893,11 @@ Evidence 16:
 
 \begin_layout Standard
 Annotated screenshots for each test data run.
- [3] 
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
 \end_layout
 
 \begin_layout Subsection*
@@ -1914,12 +1926,11 @@ status open
 status open
 
 \begin_layout Plain Layout
-2
+2.
 \end_layout
 
 \end_inset
 
-.
  Decode a message 
 \end_layout
 
@@ -1940,8 +1951,15 @@ status open
 Implement the menu options to allow a line of text to be encoded or decoded.
  For each option, ask for the cipher key and the message that is to be encoded
  or decoded.
- Test your program with the key 'TOPSECRET' and the message 'I will score
- A for Computing'.
+ Test your program with the key 
+\family typewriter
+'TOPSECRET'
+\family default
+ and the message 
+\family typewriter
+'I will score A for Computing
+\family default
+'.
  
 \end_layout
 
@@ -1951,7 +1969,11 @@ Evidence 17:
 
 \begin_layout Standard
 Your program code.
- [10]
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[10]
 \end_layout
 
 \begin_layout Subsection*
@@ -1960,7 +1982,11 @@ Evidence 18:
 
 \begin_layout Standard
 Screenshot(s) showing your output.
- [2]
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
 \end_layout
 
 \begin_layout Subsection*
@@ -1976,19 +2002,601 @@ tic substitution ciphers.
 \end_layout
 
 \begin_layout Standard
-Write a program that reads the content from the file INTERCEPT.txt.
+Write a program that reads the content from the file 
+\family typewriter
+INTERCEPT.txt
+\family default
+.
  The text in this file contains a coded message.
  Construct a frequency table (ignore punctuation marks) as follows using
  a suitable data structure: 
 \end_layout
 
 \begin_layout Standard
-Ciphertext Letter: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="27">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ciphertext Letter:
 \end_layout
 
-\begin_layout Standard
-Frequency: 5 2 ......
- 
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+E
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+G
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+H
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+I
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+J
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+M
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+N
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+O
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+P
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Q
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+R
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+S
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+U
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+W
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Y
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Z
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Frequency:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2002,12 +2610,133 @@ Partial sample output:
 \end_layout
 
 \begin_layout Standard
-Ciphertext Letter: S O G.....
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="5">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ciphertext Letter:
 \end_layout
 
-\begin_layout Standard
-Frequency: 88 85 67.....
- 
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+S
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+O
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+G
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset Formula $\cdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Frequency:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+88
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+85
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+67
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
@@ -2016,7 +2745,11 @@ Evidence 19:
 
 \begin_layout Standard
 Your program code.
- [7] 
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [7]
 \end_layout
 
 \begin_layout Subsection*
@@ -2025,7 +2758,557 @@ Evidence 20:
 
 \begin_layout Standard
 Screenshot of output.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Paper 2
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Database management systems are aimed at solving a number of problems associated
+ with traditional file-based systems.
+ Describe three such problems and explain how they are solved by database
+ management systems.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [6]
+\end_layout
+
+\begin_layout Enumerate
+A national car hire company uses a relational database.
+ Cars are available for hire from a large number of depots around the country.
+ Two entities (or records) are CARS-FOR-HIRE and DEPOTS.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Suggest four attributes (or fields) associated with the entity CARS-FOR-HIRE.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Enumerate
+Draw a diagram showing the relationship between the entities CARS-FOR-HIRE
+ and DEPOTS.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Enumerate
+State one other entity which is related to either or both of the original
+ entities.
+ Describe the relationship(s).
+ Suggest an attribute for this entity.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+A stack is to be implemented using an array of 20 elements.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Describe an algorithm to remove an item from a stack and place it in a variable
+ 
+\family typewriter
+x
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Enumerate
+With the aid of examples, explain what nested functions or nested subroutines
+ are.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\begin_layout Enumerate
+Explain with the aid of diagrams or otherwise, how a stack can be used by
+ the operating system to process “nested functions” or “nested subroutines”.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[5]
+\end_layout
+
+\begin_layout Enumerate
+Outline the data attributes and member functions for a class stack abstract
+ data type.
+ You need not go into details as to how they will be implemented.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A large national electrical appliances company maintains an extensive inventory
+ of appliances for sale in a country.
+ The company has twelve specialised retail stores targeting the needs of
+ different market segments.
+ Six of these stores are housed in a large mall in the capital, but the
+ other six are in different cities in the country.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The six stores in the capital are linked using a LAN, while the other six
+ are linked via a WAN.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Explain the difference between a LAN and a WAN.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Enumerate
+Wireless technology has become more popular in recent years.
+ Describe two reasons why the company will not replace its LAN network with
+ a wireless one.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\begin_layout Enumerate
+Discuss two security threats faced by the company’s LAN and measures that
+ can be put in place to reduce these threats.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [6]
+\end_layout
+
+\begin_layout Standard
+The company is thinking of allowing all its sales personnel access to this
+ inventory.
+ It can store this data on an intranet or cloud storage.
+ Discuss the relative merits and demerits of these two options.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A company has decided to offer an in-house credit system by issuing privileged
+ customers an in-house credit-card which allows customers to charge their
+ purchases from the stores to the card, up to the customers’ credit limits.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+During a sales promotion, the store offers a discount of 15% if a customer’s
+ total purchase is greater or equal to $200 but less than $500.
+ A discount of 20% is given if the customer’s total purchase is greater
+ or equal to $500.
+ For customers who had exceeded their credit limits, the supervisor’s approval
+ is required.
+ Create a decision table or tree to represent the above conditions and actions.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[5]
+\end_layout
+
+\begin_layout Enumerate
+In order to protect the privacy of data, many countries have passed legislation
+ to address this issue.
+ Describe any 3 features of the Personal Data Protection Act in Singapore
+ that aims to do this.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+When a customer orders goods over the phone, the cashier will record the
+ order in an order form containing the items ordered and quantity, customer
+ address, delivery date and time and the amount payable.
+ A copy of this form will be given to the storeman who will pick the goods
+ and generate a delivery order (DO).
+ The DO will be given to the delivery man who will deliver the goods.
+ The customer on collecting the goods will sign on the DO and return a signed
+ copy to the delivery man.
+ On his return, the delivery man will give the DO to the accounts department
+ who will generate an invoice.
+ Invoices are kept in a file until the next day where they will be mailed
+ to the customers.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Draw a data flow diagram of the above processes.
+\begin_inset space \hfill{}
+\end_inset
+
+ [8] 
+\end_layout
+
+\begin_layout Enumerate
+Goods in the warehouse are divided into 2 main categories – Kitchen appliances
+ (e.g.
+ kettle, toasters and ovens) and Entertainment products (e.g.
+ LCD television, mp3 players and gaming consoles).
+ Each item has an item name, description, unit price and quantity on hand.
+ Kitchen appliances have an item weight, packing volume and colour.
+ Entertainment products have a serial number, country of manufacture and
+ recommended retail price.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Draw a class diagram of the above showing inheritance, their private attributes
+ and public methods.
+\begin_inset space \hfill{}
+\end_inset
+
+ [6]
+\end_layout
+
+\begin_layout Enumerate
+What is the purpose of a public method?
+\begin_inset space \hfill{}
+\end_inset
+
  [1]
+\end_layout
+
+\begin_layout Enumerate
+What is the difference between a class and an object?
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+In relation to the diagram in part (b), explain the terms: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Encapsulation; 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+Inheritance;
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Enumerate
+Data hiding; 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+Polymorphism.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+A linked list ADT with the following incomplete specification is given as
+ follows:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+LList
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+head : Node
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+constructor()
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+addNode(s : Node)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+findmiddle(l : llist)-> INTEGER
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Node
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+data : INTEGER
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+nextPtr : Node
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+constructor()
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+setData(s : INTEGER)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+setnextPtr(x : Node)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+getData(): INTEGER 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Explain the main difference between an array and a linked list data structure.
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Enumerate
+Using pseudo code, write an algorithm to implement 
+\family typewriter
+findmiddle
+\family default
+ that will return the data in the middle of the linked list in one pass.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[7]
+\end_layout
+
+\begin_layout Enumerate
+State two applications of a linked list.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+State two other common methods (including parameters) that should be included
+ in the 
+\family typewriter
+LList
+\family default
+ specification.
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
 \end_layout
 
 \end_deeper
