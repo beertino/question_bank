@@ -1,1 +1,0 @@
-SELECT Count(DISTINCT Race) FROM Cultural;
