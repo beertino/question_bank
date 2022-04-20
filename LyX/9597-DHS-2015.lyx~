@@ -1,0 +1,2832 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+9597 ALVL 2017
+\end_layout
+
+\begin_layout Subsection
+Paper 1
+\end_layout
+
+\begin_layout Enumerate
+The coming General Election will see 28481 voters in the MacPherson Single
+ Member Constituency (SMC) voting for their Member of Parliament (MP).
+ The data file 
+\family typewriter
+ELECTION.txt
+\family default
+ contains the simulated voting results, with A, B, C and V representing
+ votes for the political parties National Solidarity Party, People Action
+ Party and Workers' Party, as well as void votes respectively.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Subsection*
+Task 1.1
+\end_layout
+
+\begin_layout Standard
+Determine the winner and the voting statistics (correct to 1 decimal place)
+ for this SMC.
+ Your output should look like the following: 
+\end_layout
+
+\begin_layout Standard
+Sample output: 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+Results for the Electoral Division of MacPherson 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+PAP 58.7%
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+WP 37.5%
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+NSP 2.6% 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Void 1.2%
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Winner is PAP 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Evidence 1 
+\end_layout
+
+\begin_layout Standard
+Program code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[7]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 2
+\end_layout
+
+\begin_layout Standard
+Screenshot.
+\begin_inset space \hfill{}
+\end_inset
+
+ [1]
+\end_layout
+
+\begin_layout Subsection*
+Task 1.2
+\end_layout
+
+\begin_layout Standard
+In the event of a tie, the parties tied will enter into a revoting exercise.
+ For example, if there is a tie between PAP and WP, return the message "
+\family typewriter
+Revote between PAP and WP
+\family default
+".
+ 
+\end_layout
+
+\begin_layout Standard
+Write program code to generate a text file 
+\family typewriter
+TIE.txt
+\family default
+ with approximately 3% void votes, 7% votes for NSP and a tie between PAP
+ and WP.
+ Test your program with your generated 
+\family typewriter
+TIE.txt
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 3 
+\end_layout
+
+\begin_layout Standard
+Program code.
+\begin_inset space \hfill{}
+\end_inset
+
+ [6]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 4 
+\end_layout
+
+\begin_layout Standard
+Screenshot.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+You are provided with the registration dates and email addresses of participants
+ who registered for an event in the text file 
+\family typewriter
+PARTICIPANTS.txt
+\family default
+.
+ Unfortunately, some participants registered more than once.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Subsection*
+Task 2.1 
+\end_layout
+
+\begin_layout Standard
+Write program code to remove duplicate entries and generate the final participan
+t list in alphabetical email order.
+ If a participant registered more than once, take the last registered record
+ as the final entry.
+ Return also a count of duplicate entries removed.
+ 
+\end_layout
+
+\begin_layout Standard
+Sample output:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+ali@yahoo.com,03-05-2015
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+dave@savetheworld.org,05-05-2015 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+james007@bond.uk,07-05-2015
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+limahseng@gmail.com,01-05-2015 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+mary_ong@m1.com.sg,05-05-2015 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+zorro@outlook.com,30-04-2015 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+3 duplicate entries removed.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Evidence 5 
+\end_layout
+
+\begin_layout Standard
+Program code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 6 
+\end_layout
+
+\begin_layout Standard
+Screenshot.
+\begin_inset space \hfill{}
+\end_inset
+
+ [1]
+\end_layout
+
+\begin_layout Subsection*
+Task 2.2 
+\end_layout
+
+\begin_layout Standard
+Some email addresses may be entered wrongly.
+ Using first principles, write a Boolean function 
+\family typewriter
+Valid_Email(email)
+\family default
+ to determine if an email address is valid.
+ Design test cases to thoroughly test the working of your function code.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 7 
+\end_layout
+
+\begin_layout Standard
+Program code.
+\begin_inset space \hfill{}
+\end_inset
+
+ [6]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 8
+\end_layout
+
+\begin_layout Standard
+Test data with purpose and corresponding screenshots.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+International Standard Book Number (ISBN) is a unique number assigned to
+ each edition of a book.
+ It has two formats: ISBN-10 and ISBN-13.
+ The former is used before 1 Jan 2007 and the latter after that.
+ Examples of valid ISBNs are 020103803X and 978-1-284-05591-7.
+ The last digit is the check digit and is computed as follows:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+ISBN check digit (10 digits) - mod 11 algorithm
+\series default
+ 
+\end_layout
+
+\begin_layout Itemize
+Each digit starting from left to right is assigned a weight from 1 to 9.
+ Each digit is multiplied by its position weight.
+ The sum of products modulo 11 gives a remainder between 0 and 10.
+ If the remainder is 10, the check digit is the roman numeral X, else the
+ check digit is the remainder.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Example ISBN-10: 0-07-063546-3 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $(0\times1)+(0\times2)+(7\times3)+(0\times4)+(6\times5)+(3\times6)+(5\times7)+(4\times8)+(6\times9)=190$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $190\mod11=3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Hence 3 is the check digit.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+ISBN check digit (13 digits) - mod 10 algorithm
+\end_layout
+
+\begin_layout Itemize
+Each digit starting from the left to right is multiplied by 1 or 3 alternatively.
+ The sum of the products modulo 10 gives a remainder between 0 to 9.
+ If the remainder is nonzero, subtract this from 10 to get the check digit,
+ else the check digit is 0.
+ 
+\end_layout
+
+\begin_layout Itemize
+Example ISBN-13: 978-0-07-063546-3 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $1\times9+3\times7+1\times8+3\times0+1\times0+3\times7+1\times0+3\times6+1\times3+3\times5+1\times4+3\times6=117$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $117\mod10=7$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $10-7=3$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Hence 3 is the check digit.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 3.1
+\end_layout
+
+\begin_layout Standard
+Write a function 
+\family typewriter
+ISBN_Check_Digit(isbn)
+\family default
+ which generates the check digit for a given ISBN-10 or ISBN-13 number.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 9 
+\end_layout
+
+\begin_layout Standard
+Program code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[5]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 10 
+\end_layout
+
+\begin_layout Standard
+Screenshots (1 for ISBN-10 and 1 for ISBN-13)
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Subsection*
+Task 3.2 
+\end_layout
+
+\begin_layout Standard
+Write a function 
+\family typewriter
+Valid_ISBN(isbn)
+\family default
+ which calls your 
+\family typewriter
+ISBN_Check_Digit(isbn)
+\family default
+ function in Task 3.1 to determine if a given ISBN-10 or ISBN-13 number is
+ valid.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 11 
+\end_layout
+
+\begin_layout Standard
+Program code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 12 
+\end_layout
+
+\begin_layout Standard
+Screenshots for appropriately generated ISBN-10 and ISBN-13 numbers.
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Standard
+An ISBN-10 number can be converted to its ISBN-13 equivalent by prefixing
+ '978' to the ISBN-10 number and then calculating the check digit using
+ the ISBN-13 algorithm.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 3.3 
+\end_layout
+
+\begin_layout Standard
+Write a function 
+\family typewriter
+ISBN10_To_ISBN13(isbn)
+\family default
+ to convert an ISBN-10 number to its ISBN13 equivalent.
+\end_layout
+
+\begin_layout Subsection*
+Evidence 13 
+\end_layout
+
+\begin_layout Standard
+Program code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 14 
+\end_layout
+
+\begin_layout Standard
+Screenshot of output for ISBN-10 number 1904467520.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Subsection*
+Task 3.4
+\end_layout
+
+\begin_layout Standard
+Write a function 
+\family typewriter
+ISBN13_To_ISBN10(isbn)
+\family default
+ to convert an ISBN-13 number to its ISBN10 equivalent.
+\end_layout
+
+\begin_layout Subsection*
+Evidence 15 
+\end_layout
+
+\begin_layout Standard
+Program code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 16 
+\end_layout
+
+\begin_layout Standard
+Screenshot of output for ISBN-13 number 9780748740468.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [1]
+\end_layout
+
+\begin_layout Standard
+A small library wishes to store its book collection details using a random
+ file organisation.
+ It currently holds 200 books but wishes to expand its collection by about
+ 10% every year.
+ To resolve collisions, it decides to use double hashing which minimises
+ clustering.
+ For a start, assume that this file organisation will be maintained for
+ 3 years.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 3.5 
+\end_layout
+
+\begin_layout Standard
+Devise and implement a suitable double hashing strategy 
+\family typewriter
+Hash_Key(isbn)
+\family default
+.
+ Annotate your strategy using program comments.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 17
+\end_layout
+
+\begin_layout Standard
+Program code with comments.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[5]
+\end_layout
+
+\begin_layout Subsection*
+Task 3.6
+\end_layout
+
+\begin_layout Standard
+Write program code to generate an appropriate number of ISBNs to the random
+ text file 
+\family typewriter
+LIBRARY.txt
+\family default
+ which will cater to the library's collection growth over 3 years.
+ Include 
+\family typewriter
+Insert_Book(isbn)
+\family default
+ and 
+\family typewriter
+Lookup_Book(isbn)
+\family default
+ functions to insert a book and lookup a book respectively.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 18
+\end_layout
+
+\begin_layout Standard
+Program code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [8]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 19 
+\end_layout
+
+\begin_layout Standard
+Screenshots showing the insertion and lookup of one non-collided record
+ and one collided record.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 20 
+\end_layout
+
+\begin_layout Standard
+Separate printout of 
+\family typewriter
+LIBRARY.txt
+\family default
+ after insertion of all generated records.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+You are tasked to maintain a binary search tree for optimal search efficiency.
+ Each node of the binary search tree contains a unique identifier (productid)
+ and a reference to a linked list which holds individual order details for
+ that product.
+ For simplicity, orderid will suffice.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Subsection*
+Task 4.1 
+\end_layout
+
+\begin_layout Standard
+Using object-oriented programming, implement the above binary search tree
+ with its associated class methods (
+\family typewriter
+insert()
+\family default
+, 
+\family typewriter
+search()
+\family default
+ and 
+\family typewriter
+inorder()
+\family default
+).
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 21
+\end_layout
+
+\begin_layout Standard
+Program code for binary search tree with 8 products inserted, 3 of which
+ has at least 2 orders.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[8]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 22
+\end_layout
+
+\begin_layout Standard
+Screenshot of output of inorder traversal (product and order information).
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Subsection*
+Task 4.2 
+\end_layout
+
+\begin_layout Standard
+Write a support class method most_popular() to determine the best selling
+ product(s).
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 23 
+\end_layout
+
+\begin_layout Standard
+Program code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 24 
+\end_layout
+
+\begin_layout Standard
+Screenshot.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Subsection*
+Task 4.3 
+\end_layout
+
+\begin_layout Standard
+A product is no longer available.
+ Write a class method delete() to remove this node from the binary search
+ tree, accounting for all possible cases.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 25 
+\end_layout
+
+\begin_layout Standard
+Program code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [5]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 26 
+\end_layout
+
+\begin_layout Standard
+Screenshots.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\begin_layout Subsection*
+Task 4.4 
+\end_layout
+
+\begin_layout Standard
+After a series of insertion and deletion, the binary search tree may become
+ unbalanced and this requires reorganisation to maintain optimal search
+ efficiency.
+ Write functions 
+\family typewriter
+is_balanced()
+\family default
+ to test if a binary search tree is balanced, and 
+\family typewriter
+reorg()
+\family default
+ to reorganise an unbalanced binary search tree.
+ Include appropriate annotation.
+\end_layout
+
+\begin_layout Subsection*
+Evidence 27 
+\end_layout
+
+\begin_layout Standard
+Program code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[7]
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Paper 1
+\end_layout
+
+\begin_layout Enumerate
+A young family decides to purchase a new car.
+ The following precedence table shows the constituent activities with their
+ preceding activities and durations.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="16" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Preceding Activity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Duration (days) 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Decide feasibility of purchase
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Find buyer for existing car
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Decide on possible models
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Investigate decided models
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Discuss with knowledgeable friends
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Get information from dealers
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+G
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Put together all information
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D, E, F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Shortlist three options
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+G
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Test drive shortlisted options
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+J
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Get finance information
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Confirm car model
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I, J
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Compare dealers and choose one
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Decide on colour
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+N
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Test drive chosen model
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+O
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Buy new car
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B, M, N
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Discuss how the family can conduct a feasibility study for the purchase.
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\begin_layout Enumerate
+Construct a PERT chart for this project.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Enumerate
+State the critical path and the total time required for the project.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+Name a floating task and state its role in the project.
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Enumerate
+Explain the significance of dummy activities in this project.
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\begin_layout Enumerate
+Construct the corresponding Gantt chart for the project.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+Why should one derive the PERT chart before the Gantt chart?
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+How does a Gantt chart help in the project?
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\begin_layout Enumerate
+Suggest two reasons why activity M requires 4 days.
+ What can be done to speed this up?
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\begin_layout Enumerate
+In activity E, the family decides to use a cross-platform mobile messaging
+ app which allows users to exchange messages without having to pay for SMS.
+ Communication with its network of knowledgeable friends requires the use
+ of TCP/IP sockets.
+ What is a TCP/IP socket and how does it help in network communication?
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+A number of activities require the use of an Internet search engine.
+ Explain how an Internet search engine works and how cloud computing is
+ used in implementing an Internet search engine.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[8]
+\end_layout
+
+\begin_layout Enumerate
+After the car purchase, the family decides to share their experience using
+ either a personal blog post or a social network post to benefit other potential
+ car buyers.
+ Compare the relative pros and cons of using these approaches.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+In a social network, each user has a public profile name and can make zero
+ or more posts.
+ Each post contains a message and can be liked by the poster and/or other
+ users.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Draw an E-R diagram that shows the tables and the relationships between
+ them.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+Design a normalised relational database schema.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\begin_layout Enumerate
+Using your answer in (b), explain the concepts of 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+primary key 
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Enumerate
+composite key 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+foreign key 
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Some game tournament such as badminton, bridge, chess, Pokemon, Scabble,
+ and many eSports employ the Swiss system of play, in which players are
+ not eliminated after each round and are paired with players with the same
+ number of wins or as close as possible.
+ The following shows an example of a 16-player Scrabble tournament.
+ Assume that all games have a winner and there are no draws.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+First round pairing is by random draw i.e there will be 8 random pairs.
+ After round 1, there will be a group of 8 players with a score of 1 (win),
+ and a group of 8 players with a score of 0 (loss).
+ 
+\end_layout
+
+\begin_layout Standard
+For the second round, players in each scoring group will be paired against
+ each other – 1’s versus 1’s and 0’s versus 0’s.
+\end_layout
+
+\begin_layout Standard
+After round 2, there will be three scoring groups: 
+\end_layout
+
+\begin_layout Itemize
+4 players who have won both games and have 2 points 
+\end_layout
+
+\begin_layout Itemize
+8 players who have won a game and lost a game and have 1 point
+\end_layout
+
+\begin_layout Itemize
+4 players who have lost both games and have no points.
+ 
+\end_layout
+
+\begin_layout Standard
+Again, for the third round, players are paired with players in their scoring
+ group.
+ After round 3, the typical scoring groups will be: 
+\end_layout
+
+\begin_layout Itemize
+2 players who have won 3 games (3 points) 
+\end_layout
+
+\begin_layout Itemize
+6 players with 2 wins (2 points) 
+\end_layout
+
+\begin_layout Itemize
+6 players with 1 win (1 point) 
+\end_layout
+
+\begin_layout Itemize
+2 players with no wins (0 points) 
+\end_layout
+
+\begin_layout Standard
+For the fourth (and in this case final) round, the process repeats, and
+ players are matched with others in their scoring group.
+ Note that there are only 2 players who have won all of their games so far
+ – they will be matched against each other for the "championship" game.
+ After the final round, we will have something that looks like this: 
+\end_layout
+
+\begin_layout Itemize
+1 player with 4 points – the winner! 
+\end_layout
+
+\begin_layout Itemize
+4 players with 3 points – tied for second place
+\end_layout
+
+\begin_layout Itemize
+6 players with 2 points 
+\end_layout
+
+\begin_layout Itemize
+4 players with 1 point 
+\end_layout
+
+\begin_layout Itemize
+1 player with 0 points 
+\end_layout
+
+\begin_layout Standard
+The Swiss system produces a clear winner in just a few rounds, no one is
+ eliminated and almost everyone wins at least one game, but there are many
+ ties to deal with.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Propose and justify a suitable data structure to store and initialise the
+ player names, intermediate and final opponents, points and results of the
+ 16-player tournament.
+ You may denote the players' names with the alphabets A – P.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\begin_layout Enumerate
+Devise an algorithm to update the data structure in (a) and determine the
+ final ranks of the players.
+ Players who are tied will have their names output in alphabetical order.
+ The next rank after 2 is 3.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[7] 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A durian specialty business sells its different breeds of durians via two
+ modes currently: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+phone order via calling in to its sales hotline
+\end_layout
+
+\begin_layout Itemize
+web order via making an online order on its website 
+\end_layout
+
+\begin_layout Standard
+For phone order, a sales agent will record the order details (breed, quantity,
+ customer name and phone number).
+ Payment terms will be cash on collection only.
+ For web order, the customer will register for an account using his/her
+ email address and select the breed and quantity, and enter his/her phone
+ number.
+ Payment terms will be either cash on collection or by entering credit card
+ details upon checkout.
+\end_layout
+
+\begin_layout Enumerate
+Using suitable examples from this context, explain the concepts of
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+validation 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+verification 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Draw a UML class diagram to show the relationship between the different
+ types of orders.
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Enumerate
+Using suitable examples, explain the concepts of 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+encapsulation 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+inheritance
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Enumerate
+polymorphism 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+To cater to an aging population and elderly who face difficulty using smartphone
+s, it is proposed that an SMS application be developed to allow elderly
+ to order durians using SMS.
+ Design and justify a suitable user interface and workflow.
+ Assume that the SMS sales number is 88387426 (88DURIAN).
+ [3] 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+You have taken over the following program module A in an unnamed programming
+ language written by an unnamed intern (who did not take A-level Computing)
+ to determine the number of markers and their consecutive labels to be positione
+d on a newly completed highway.
+ X is the length of the highway in kilometres.
+ Makers should be spaced 500 metres apart from one another.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+1 FUNCTION A(X : REAL) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+2 FOR I FROM ONE TO X/500 DO 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+3 PRINT(I) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+4 PRINT("NUMBER OF MARKERS = " + X /500) 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+How can you improve on the programming style for the above program module?
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+Identify and correct the errors in the above program.
+ Explain the different types of errors identified.
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\begin_layout Enumerate
+Design and justify suitable black box and white box tests for the above
+ program module.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The following figure shows a Scrabble game board.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Propose and justify
+\end_layout
+
+\begin_layout Enumerate
+an efficient data structure to store the letter point values 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+an efficient data structure to store the game board 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+an efficient algorithm to compute the score of a word 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\end_deeper
+\begin_layout Section
+9597 ALVL 201X TEMPLATE
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell multirow="3" alignment="center" valignment="middle" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+In[1]:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+# Task 1.1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Program Code
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+In[2]:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+# Task 1.2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Program Code
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+In[3]:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+# Task 1.3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Program Code
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Output:
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Subsubsection*
+\noindent
+Task X.X
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Evidence X
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+FUNCTION CalCheckDigit(Number AS STRING, Total AS INTEGER) RETURNS STRING
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+IF LENGTH(Number) > 1 THEN
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+Digit <- INTEGER(LBFT(Number,1))
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+// Calculate ISBN, an example of how the function is called.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+// Second parameter is always 0.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+ISBN = CalCheckDigit("184146208",0)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Class: Connection Node
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Attributes
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \hspace{}
+\length 1col%
+\end_inset
+
+
+\family default
+Identifier
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \hspace{}
+\length 1col%
+\end_inset
+
+
+\family default
+Data Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \hspace{}
+\length 5col%
+\end_inset
+
+
+\family default
+Description
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+DataValue
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+STRING
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The node data
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+LeftChild
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+INTEGER
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The left node pointer
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+RightChild
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+INTEGER
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The right node pointer
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \hspace{}
+\length 25col%
+\end_inset
+
+ToDo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+category : STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+description : STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+constructor(c : STRING, d : STRING)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+set_category(s : STRING)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+set_description(s : STRING)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+get_category() : STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+get:_description() : STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+summary() : STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+<INSERT_IMAGE_HERE>
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+ 
+\end_layout
+
+\end_body
+\end_document
