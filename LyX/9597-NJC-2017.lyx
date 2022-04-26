@@ -2461,9 +2461,13 @@ code reuse
 Evidence 14
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 The program code to for the above mentioned functions.
- [12] 
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[12]
 \end_layout
 
 \begin_layout Subsection*
@@ -2471,10 +2475,13 @@ Task 4.4
 \end_layout
 
 \begin_layout Standard
-Write code to modify the insert(book_title, person_borrowing) function such
- that it prints the amount of additional probing that is required on any
- insertion – i.e., prints the number of iterative steps that linear probing
- was required to perform in order to find an insertion point.
+Write code to modify the 
+\family typewriter
+insert(book_title, person_borrowing)
+\family default
+ function such that it prints the amount of additional probing that is required
+ on any insertion – i.e., prints the number of iterative steps that linear
+ probing was required to perform in order to find an insertion point.
  
 \end_layout
 
@@ -2482,8 +2489,12 @@ Write code to modify the insert(book_title, person_borrowing) function such
 Evidence 15 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 The program code to that is required to make the above mentioned modification.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
  [3]
 \end_layout
 
