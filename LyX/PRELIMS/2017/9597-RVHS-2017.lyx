@@ -3417,17 +3417,6 @@ status open
 <INSERT_IMAGE_HERE>
 \end_layout
 
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename static/img/9597-SPECIMENT-P2-Q6.png
-	width 50page%
-
-\end_inset
-
-
-\end_layout
-
 \end_deeper
 \begin_layout Enumerate
 \begin_inset ERT

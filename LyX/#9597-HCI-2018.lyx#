@@ -90,68 +90,472 @@ Paper 1
 \end_layout
 
 \begin_layout Enumerate
-Results management For this task, you are required to read the text file
- “
-\series bold
-overall_grades.txt
-\series default
-” which contains the subject grades of the first and second semester examination
- of 50 students.
+A programmer is writing a treasure island game to be played on the computer.
+ 
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-The format of the text file is as follow: 
-\family typewriter
-<name>;<subject1>:<grade1>,<grade2>;<subject2>:<grade1>,<grade 2>;<subject3>:<gr
-ade1>,<grade2>,…etc;
-\backslash
-n 
-\end_layout
-
-\begin_layout Standard
-For example: 
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-Rufus Schuck;EL:C,B;CL:C,C;Math:C,E;Bio:B,F; 
-\end_layout
-
-\begin_layout Standard
-Student Rufus Schuck takes 4 subjects.
- They are English (EL), Chinese (CL), Math (Math) and Biology (Bio).
- His 1st and 2nd semester grades for English is C and B respectively.
+The island is a rectangular grid, 30 squares by 10 squares.
+ Each square of the island is represented by an element in a 2D array.
+ The top left square of the island is represented by the array element [0,
+ 0].
  
 \end_layout
 
+\begin_layout Standard
+There are 30 squares across and 10 squares down.
+ 
+\end_layout
+
+\begin_layout Standard
+The computer will: 
+\end_layout
+
+\begin_layout Itemize
+generate three random locations where treasure will be buried 
+\end_layout
+
+\begin_layout Itemize
+prompt the player for the location of one square where the player choose
+ to dig
+\end_layout
+
+\begin_layout Itemize
+display the contents of the array by outputting for each square: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+'.' for only sand in this square 
+\end_layout
+
+\begin_layout Itemize
+'T' for treasure still hidden in sand 
+\end_layout
+
+\begin_layout Itemize
+'X' for a hole dug where treasure was found
+\end_layout
+
+\begin_layout Itemize
+'O' for a hole dug where no treasure was found.
+ 
+\end_layout
+
+\begin_layout Standard
+Here is an example display after the player has chosen to dig at location
+ [9, 3]: 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+.
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+.
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+.
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+.
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+.
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ T .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+.
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+.
+ .
+ .
+ T .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+.
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+.
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+.
+ .
+ .
+ X .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The game is to be implemented using object oriented programming.
+ 
+\end_layout
+
+\begin_layout Standard
+The programmer has designed the class IslandClass.
+ The identifier table for this class is: Identifier Data Type Description
+ Grid ARRAY[0:9, 0:29] OF CHAR 2D array to represent the squares of the
+ island Constructor() instantiates an object of class IslandClass and initialise
+s all squares to sand HideTreasure() generates a pair of random numbers
+ used as the grid location of treasure and marks the square with 'T' DigHole(Row
+, Column) takes as parameter a valid grid location and marks the square
+ with 'X' or 'O' as appropriate Page 3 of 12 GetSquare(Row, Column) CHAR
+ takes as parameter a valid grid location and returns the grid value for
+ that square from the IslandClass object DisplayGrid() shows the current
+ grid data.
+ DisplayGrid should make use of the getter method GetSquare of the IslandClass
+ class
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 Task 1.1 
 \end_layout
 
 \begin_layout Standard
-Write the program code for the function process_data() which reads the text
- file “
-\series bold
-overall_grades.txt
-\series default
-” and returns a dictionary which has the following format.
- 
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-{'Rufus Schuck': {'EL': ['C', 'B'], 'CL': ['C', 'C'], 'Math': ['C', 'E'],
- 'Bio': ['B', 'F']}, ...} 
-\end_layout
-
-\begin_layout Standard
-The returned dictionary uses the name of student as key and another dictionary
- as its return value.
- This “another” dictionary then uses the subjects and a list containing
- the grades of the 1st and 2nd semesters as its key and value respectively.
+Write program code for the class IslandClass including the Constructor,
+ GetSquare and DisplayGrid methods.
+ The code should follow the specification given.
+ The value to represent sand should be declared as a constant.
+ Do not attempt to write the methods HideTreasure or DigHole at this stage.
  
 \end_layout
 
@@ -160,8 +564,7 @@ Evidence 1
 \end_layout
 
 \begin_layout Standard
-The program code for the function process_data().
- [4] 
+Program code for Task 1.1 [5]
 \end_layout
 
 \begin_layout Subsection*
@@ -169,30 +572,28 @@ Task 1.2
 \end_layout
 
 \begin_layout Standard
-Write a function have_n_improvement(n) which takes in an integer n and returns
- a list of student names who have improvement in exactly n subject(s).
- Using the example in Task 1.1, 'Rufus Schuck' shows improvement in only
- English.
- So, if n is 1, 'Rufus Schuck' must be included in the student name list.
- 
+Write program code for the HideTreasure method.
+ Your method should check that the random location generated does not already
+ contain treasure.
+ The value to represent treasure should be declared as a constant.
 \end_layout
 
 \begin_layout Subsection*
-Evidence 2
+Evidence 2 
 \end_layout
 
 \begin_layout Standard
-The program code for the function have_n_improvement(n).
- [3] 
+Your program code for Task 1.2 [3] 
 \end_layout
 
 \begin_layout Subsection*
-Task 1.3 
+Task 1.3
 \end_layout
 
 \begin_layout Standard
-Write a function have_improvement_in_all_subjs() which returns a list of
- student names who have improvement in all his/her subjects.
+Write a main program to: create an IslandClass object generate three random
+ locations where treasures will be buried your program will then call the
+ DisplayGrid method.
  
 \end_layout
 
@@ -201,21 +602,7 @@ Evidence 3
 \end_layout
 
 \begin_layout Standard
-The program code for the function have_improvement_in_all_subjs(n).
- [3] Page 3 of 14 2017 Y6 H2 computing Prelim Paper 1 
-\end_layout
-
-\begin_layout Subsection*
-Task 1.4 
-\end_layout
-
-\begin_layout Standard
-Write a function count_combi(combi) which takes a list of subjects combi
- as input and returns the total number of students who take the subject
- combination in combi.
- Take note that students who take more subjects than what is indicated in
- combi are included.
- For example: >>> count_combi(['EL', 'MATH']) >>> 50 
+The program code for Task 1.3 [3] 
 \end_layout
 
 \begin_layout Subsection*
@@ -223,319 +610,876 @@ Evidence 4
 \end_layout
 
 \begin_layout Standard
-The program code for the function count_combi(n).
- [4] 
+Screenshot showing the output from running the program in Task 1.3 [1] 
+\end_layout
+
+\begin_layout Subsection*
+Task 1.4 
 \end_layout
 
 \begin_layout Standard
+Write program code for the DigHole method.
+ This method takes two integers as parameters.
+ These parameters form a valid grid location.
+ The location is marked with 'X' or 'O' as appropriate.
+ The values to represent treasure, found treasure and hole should be declared
+ as constants.
+\end_layout
+
+\begin_layout Subsection*
+Evidence 5
+\end_layout
+
+\begin_layout Standard
+Program code for Task 1.4.
+ [3] 
+\end_layout
+
+\begin_layout Subsection*
 Task 1.5
 \end_layout
 
 \begin_layout Standard
-Using your solution in Task 1.4, find the total number of students who take
- "Chem" and "Bio" but not "Physics".
- Evidence 5 The program code to find what is required in Task 1.5.
- [2]
+Add code to the main program in Task 1.3.
+ The program is to: prompt the player for a location to dig validate the
+ user input call the DigHole method and then the DisplayGrid method.
+ 
 \end_layout
 
-\begin_layout Standard
-Task 1.6 
-\end_layout
-
-\begin_layout Standard
-Write a function calculate_GPA(name)which takes a string name as input and
- calculates the GPA of the student indicated by name.
- The points for each grade are as follow: {'A':5, 'B':4, 'C':3, 'D':2, 'E':1,
- 'F':0} The 1 st and 2nd semester grades in the data has the same weightages.
- To calculate GPA, • Find the average points achieved of each subject.
- o e.g.
- if a student gets C and D in "CL", his average points for "CL" is 3 + 2
- = 2.5 • Add up the average points of each subject • Divide the total by
- the number subjects the student takes o e.g.
- 'Claudette Bode': {'EL': ['C', 'D'], 'CL': ['D', 'A'], 'Math': ['A', 'D'],
- 'Phy': ['A', 'D'], 'Bio': ['D', 'C']}, o [(3 + 2)/2 + (2 + 5)/2 + (5 +
- 2)/2 + (2 + 5)/2 + (2 + 3)/2]/5 = 3.1 • GPA for 'Claudette Bode' is 3.1 
-\end_layout
-
-\begin_layout Standard
+\begin_layout Subsection*
 Evidence 6 
 \end_layout
 
 \begin_layout Standard
-The program code for the function calculate_GPA(name).
- [4] 
+The program code.
+ [3] 
+\end_layout
+
+\begin_layout Subsection*
+Task 1.6 
+\end_layout
+
+\begin_layout Standard
+Run the program by inputting a location where: the treasure is not found
+ the treasure is found.
+\end_layout
+
+\begin_layout Subsection*
+Evidence 7 
+\end_layout
+
+\begin_layout Standard
+Screenshot evidence similar to that shown which shows: 
+\end_layout
+
+\begin_layout Itemize
+The player has chosen to dig at location [2, 25] where no treasure was found
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .T .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ O.
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .T .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .T .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ 
+\end_layout
+
+\begin_layout Itemize
+The player has chosen to dig at location [5, 3] where treasure was found
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ T.
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ T.
+ .
+ .
+ .
+ .
+ .
+ .
+ X.
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ [2] Page 5 of 12
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-Missing phone number digits Your friend (Mary) made an oversea friend (Jenny)
- yesterday while she was studying in the regional library.
- To remain in contact, Jenny gave Marry her phone number and told Mary that
- it is also a valid 10 digits International Standard Book Number (ISBN).
- After Jenny had left, Mary accidentally punched a few holes on the phone
- number while she was arranging her notes using the library’s hole puncher
- machine.
- It was too difficult for Mary to recover the lost pieces of paper.
- So, Mary decided to look for you to recover the missing digits instead.
- Below is the picture of the paper.
- To recover the missing digits, you need to understand how ISBN-10 works.
- The steps to check for a valid ISBN-10 is as follow: 1.
- Each of the digits of the ISBN-10 is first multiplied by a number in a
- sequence from 10 to 1 (Take note that the last digit of the ISBN-10 can
- be ‘X’ which holds a value of 10).
+The International Bank Account Number (IBAN) is an international bank account
+ identification standard used in many countries.
+ It uses modulo arithmetic to perform validation.
+ The IBAN consists of up to 34 alphanumeric characters, as follows: country
+ code – two letters check digits – two digits, and basic bank account number
+ – up to 30 alphanumeric characters that are countryspecific An example
+ of an IBAN in the United Kingdom Great Britain which is 22 characters is
+ GB82WEST12345698765432 (GB - country code, 82 - check digits) The following
+ is the IBAN check digits generation algorithm: 1.
+ Initialize the two check digits by 00 (e.g.
+ GB00WEST12345698765432).
  2.
- All the 10 digits are then added up together.
+ Move the four initial characters to the end of the string (e.g.
+ WEST12345698765432GB00).
  3.
- If the sum is divisible by 11, it is a valid ISBN-10, else it is invalid.
- For example, to check if ‘997150233X’ is a valid ISBM-10: Step 1 and 2
- (9x10) + (9x9) + (7x8) + (1x7) + (5x6) + (0x5) + (2x4) + (3x3) + (3x2)
- + (Xx1) = (9x10) + (9x9) + (7x8) + (1x7) + (5x6) + (0x5) + (2x4) + (3x3)
- + (3x2) + (10x1) = 297 Step 3 297 is a multiple of 11.
- Therefore, ‘997150233X’ is a valid ISBN-10.
- Task 2.1 Write a function is_valid_ISBN10(isbn10) which takes a string isbn10
- as input and returns True if isdn10 is a valid ISBN-10 and False otherwise.
- You are to validate the input string isbn10 and print to terminal the issue
- related to the isbn10 string.
- The possible issues to be printed to terminal includes: • ISBN-10 must
- only have 10 digits.
- • ISBN-10 can only contain numbers and the character 'X'.
- • 'X' can only be found at the last digit of isbn10.
- • Wrong check digit.
- • Valid ISBN-10.
- Evidence 7 The program code for the function is_valid_ISBN10(isbn10).
- [6] 8 1 7 5 3 5 9 9 8 6 Page 5 of 14 2017 Y6 H2 computing Prelim Paper
- 1 Task 2.2 Write a function possible_ISBN(isbn) which takes a query string
- isbn10 as input and returns a list of possible ISBN-10.
- The query string isbn10 has 3 missing digits replaced with a '?' and they
- can be at any positions of the query string.
- For example, >>> possible_ISBN("9971??23?X") >>> ['997100237X', '997102232X',
- '997103235X', '997104238X', '997105230X', '997106233X', '997107236X', '99710823
-9X', '997109231X', '997110234X', '997111237X', '997113232X', '997114235X',
- '997115238X', '997116230X', '997117233X', '997118236X', '997119239X', '99712023
-1X', '997121234X', '997122237X', '997124232X', '997125235X', '997126238X',
- '997127230X', '997128233X', '997129236X', '997130239X', '997131231X', '99713223
-4X', '997133237X', '997135232X', '997136235X', '997137238X', '997138230X',
- '997139233X', '997140236X', '997141239X', '997142231X', '997143234X', '99714423
-7X', '997146232X', '997147235X', '997148238X', '997149230X', '997150233X',
- '997151236X', '997152239X', '997153231X', '997154234X', '997155237X', '99715723
-2X', '997158235X', '997159238X', '997160230X', '997161233X', '997162236X',
- '997163239X', '997164231X', '997165234X', '997166237X', '997168232X', '99716923
-5X', '997170238X', '997171230X', '997172233X', '997173236X', '997174239X',
- '997175231X', '997176234X', '997177237X', '997179232X', '997180235X', '99718123
-8X', '997182230X', '997183233X', '997184236X', '997185239X', '997186231X',
- '997187234X', '997188237X', '997190232X', '997191235X', '997192238X', '99719323
-0X', '997194233X', '997195236X', '997196239X', '997197231X', '997198234X',
- '997199237X'] Evidence 8 The program code for the function possible_ISBN(isbn).
- [6] Task 2.3 Examine the missing numbers in the paper closely and eliminate
- impossible digit choices.
- For example, the three missing digits cannot be ‘1’ as the three missing
- digits in the paper have round edges at the top.
- Modify your solution in Task 2.2 and suggest these possible ISBN-10 to Mary.
- Evidence 9 The screenshot of the suggested possible ISBN-10 that you will
- give to Mary.
- [2] Page 6 of 14 2017 Y6 H2 computing Prelim Paper 1 Task 2.4 Write a menu
- to help other to generate possible ISBN-10.
- The menu should have the following functions.
- Menu A) Input a ISBN-10 query string B) Display all possible ISBN-10 C)
- Quit You should validate user inputs and call for re-entry when an invalid
- option is given.
- Evidence 10 Program code for the procedure menu().
- [6] Page 7 of 14 2017 Y6 H2 computing Prelim Paper 1 
-\end_layout
-
-\begin_layout Enumerate
-Unsorted Linked List The classes Node and LinkedList is partially implemented
- for you according to the specification given below.
- The attribute start of class LinkedList stores the first node instance
- of the linked list.
- If the linked list has no node, start has the value of None.
- Functions in bold are not implemented.
- Node LinkedList -data : STRING -next : Node -start : Node +constructor()
- +set_data(data) +get_data() +set_next(node) +get_next() +__str__() +constructor
-() +set_start(node) +get_start() +insert_data(data) +transfer(linkedlist)
- +delete_pos(pos) +display() Task 3 Implement the following LinkedList class
- functions according to its specification given: • +insert_data(node) •
- +transfer(llist) • +delete_pos(pos) Function Specification insert_data(data)
- This function takes a string data as input and uses its value to create
- a new Node instance.
- The new Node instance is then inserted as the first node of the linked
- list.
- transfer(llist) This function takes a LinkedList instance llist as input
- and transfers all its Node instances in the same order to the LinkedList
- instance that calls for this function.
- For example: A:'boy'->'man'->'woman' B:'girl'->'baby' >>> A.transfer(B)
- A: 'boy'->'man'->'woman'->'girl'->'baby' B: None delete_pos(pos) This function
- takes in an integer pos as input and deletes the node at position pos.
- Take note that the first node of the linked list is position 1.
- For example: A:'boy'->'man'->'woman' >>> A.
- delete_pos(2) A:'boy'->'woman' Page 8 of 14 2017 Y6 H2 computing Prelim
- Paper 1 Evidence 11 Program code for: • insert_data(node) [3] • transfer(linked
-list) [3] • delete_pos() [4] Page 9 of 14 2017 Y6 H2 computing Prelim Paper
- 1 
-\end_layout
-
-\begin_layout Enumerate
-Sorting Algorithms The pseudocode procedure below is given a list of integers
- in random order, the procedure then outputs a sorted list in ascending
- order.
- 1.
- FUNCTION Merge_Sort (ARRAY: arr) 2.
- n = SIZE(arr) 3.
- IF n < 2: 4.
- RETURN arr 5.
- END IF 6.
- left = Merge_Sort(PARTITION(arr, 0, n DIV 2)) 7.
- right = Merge_Sort(PARTITION(arr, n DIV 2, n)) 8.
- RETURN Merge(left, right) 9.
- END FUNCTION 10.
- 11.
- FUNCTION Merge (ARRAY: left, LIST: right) 12.
- DECLARE results: ARRAY[SIZE(left) + SIZE(right)] 13.
- DECLARE i, j, index : INTEGER 14.
- i, j, index = 0, 0, 0 15.
- WHILE i < SIZE(left) and j < SIZE(right) 16.
- IF left[i] < right[j]: 17.
- results[index] = left[i] 18.
- i = i + 1 19.
- ELSE: 20.
- results[index] = right[j] 21.
- j = j + 1 22.
- END IF 23.
- index = index + 1 24.
- END WHILE 25.
- WHILE i < SIZE(left) 26.
- results[index] = left[i] 27.
- i = i + 1 28.
- index = index + 1 29.
- END WHILE 30.
- WHILE j < SIZE(right) 31.
- results[index] = right[j] 32.
- j = j + 1 33.
- index = index + 1 34.
- END WHILE 35.
- RETURN results 36.
- END FUNCTION Page 10 of 14 2017 Y6 H2 computing Prelim Paper 1 Task 4.1
- Write program code to implement the given procedure.
- Execute the function using the following list as the parameter.
- [1, 15, 2, 4, 3, 9, 7, 10] Evidence 12 Program Code.
- Screenshot showing the output.
- [6] Evidence 13 Analyze and state the time complexity of the algorithm
- in big O notation.
- [1] Task 4.2 Bubble sort is a common sorting algorithm, below is an implementati
-on of in-place bubble sort using recursion.
- There are three missing lines in the pseudocode, indicated as A, B and
- C.
- 1.
- PROCEDURE Bubble_Sort (ARRAY: arr, INTEGER: n) 2.
- IF _______A_______: 3.
- RETURN 4.
- END IF 5.
+ Replace each alphabet in the string with two digits, using the mapping
+ A = 10, B = 11, C = 12, .
+ .
+ .
+ .
+ .
+ , Z = 35 (i.e.
+ ASCII value of uppercase letters - 55) (e.g.
+ 3214282912345698765432161100).
+ 4.
+ Convert the string to an integer.
+ 5.
+ Calculate the remainder of dividing this number by 97 (e.g.
+ 3214282912345698765432161100 mod 97 = 16).
  6.
- FOR i FROM 0 TO (n-1): 7.
- IF _______B_______: 8.
- temp = arr[i] 9.
- arr[i] = arr[i+1] 10.
- arr[i+1] = temp 11.
- END IF 12.
- END FOR 13.
- 14.
- _______C_______ 15.
- END PROCEDURE Execute the procedure to sort the following list.
- [1, 15, 2, 4, 3, 9, 7, 10] Evidence 14 Complete the missing lines A, B
- and C.
- [3] Insert a counting mechanism to count the number of comparisons made,
- and return the value as an integer.
- Implement the new recursive bubble sort.
- Evidence 15 Program Code.
- Screenshot showing the output of the sorted list and count value.
- [4] Page 11 of 14 2017 Y6 H2 computing Prelim Paper 1 Evidence 16 Analyze
- and state the time complexity of the algorithm in big O notation.
- [1] Task 4.3 Due to the nature of bubble sort, if no swaps are observed
- in a given iteration, then there is no need for the next iteration.
- Implement the improved bubble sort.
- Execute the function to sort the following list.
- [1, 15, 2, 4, 3, 9, 7, 10] Evidence 17 Program Code.
- Screenshot showing the output of the sorted list and count value.
- [3] Page 12 of 14 2017 Y6 H2 computing Prelim Paper 1 5.
- Grocery Store Manager The grocery shop in the neighborhood ask your help
- to create an application to manage the grocery store.
- First, you are tasked to work on an object-oriented solution to store all
- the grocery details.
- The title of the grocery item, cost, price and stock of each grocery is
- recorded.
- Besides the normal groceries, the shop identifies three unique types of
- grocery too, namely: • Electrical Appliance: there is a need to indicate
- the power of the product to understand its energy consumption rate.
- • Cigarette: it is important to track the nicotine content of various kinds
- of cigarette.
- • Alcohol: there are distinct types of alcohols such as wine or beer.
- Below is an UML class diagram for your reference.
- Grocery - title: string - cost: float - price: float - stock: integer +
- Grocery(title: string, cost: float, price: float, stock: integer) + set_title(n
-ew_title:string) + set_cost(new_cost) + set_price(new_price) + get_title():
- string + get_cost(): float + get_price(): float + get_stock(): float +
- update_stock(change_in_stock: integer) + calculate_final_price(): float
- + __str__(): string ElectricalAppliance Cigarette Alcohol - title: string
- - cost: float - price: float - stock: integer - power: float - title: string
- - cost: float - price: float - stock: integer - nicotine_content: float
- - title: string - cost: float - price: float - stock: integer - type: string
- + ElectricalAppliance(title: string, cost: float, price: float, stock:
- integer, power: float) + get_power(): float + calculate_final_price():
- float + Cigarette(title: string, cost: float, price: float, stock: integer,
- nicotine_content: float) + get_nicotine_content(): float + calculate_final_pric
-e(): float + Alcohol (title: string, cost: float, price: float, stock: integer,
- type: string) + get_type(): string + calculate_final_price(): float Page
- 13 of 14 2017 Y6 H2 computing Prelim Paper 1 Task 5.1 Implement the classes
- of Grocery, ElectricalAppliance, Cigarette and Alcohol with object-oriented
- programming.
- Evidence 18 Program Code for four classes.
- [7] Task 5.2 In country S, purchasing all groceries will incur a 7% Goods
- and Services Tax(GST).
- To promote healthy living, additional tax have been imposed to cigarettes
- and alcohols: • Cigarette: additional 60% tax • Wines: additional 50% tax
- • Beers: additional 20% tax For example: the price of one packet of “Yun
- Yan” cigarette is $23.00, the final price can be calculated by: $23.00 x
- 160% x 107% = $39.38 In addition, to support the “save energy movement”,
- all electrical appliance with a power less than or equals to 10Watt was
- set to be sold at 80% of its original price.
- Implement the function calculate_final_price() which includes the above
- mentioned tax and promotion into consideration.
- Implement the __str__() function which returns a string in the following
- format (You may refer to the test_function_5_1() to understand the formatting):
- Title | Cost | Price | Stock | Final Price For example, Yun Yan’s cost
- is $16.50, price is set at $23.00, the current stock is 4 and final price
- is $39.38.
- The __str__() function should return the following string: Yun Yan | $
- 16.50 | $ 23.00 | 4 | $ 39.38 Evidence 19 Program Code for calculate_final_price()
- and __str__().
- Screenshot showing output of test_function_5_1().
- [6] Page 14 of 14 2017 Y6 H2 computing Prelim Paper 1 Task 5.3 Implement
- a class StoreManager which keep track of a list of grocery items, curr_item_lis
-t.
- The StoreManager should have the following class functions: Function Descriptio
-n sell_item(sold_item) sold_item is a tuple containing 2 elements: the title
- of the item and the quantity sold.
- You may assume the title of item is always valid and the quantity sold
- is always smaller than the current stock.
- The function should decrease the current stock of the sold items.
- Upon completion, it should print out a string containing the following
- information: Title | Unit Price | Quantity Sold | Subtotal The function
- should return a float containing the sub_total value.
- sell_items(sold_item _list) sold_item_list is a list of tuples; each tuple
- containing the item title and quantity sold.
- The function should print out a table displaying information for all sold
- items in the following format: Title | Unit Price | Quantity Sold | Subtotal
- The summary should end with a line indicating the overall total value of
- items sold in this transaction.
- stock_check() When this function is called, it should check the list of
- all grocery items and print out a summary of items with current stock value
- below 5.
- This indicates the need for stocking up these items soon.
- A summary table should be printed in the following format: Title | Unit
- Cost | Quantity Left Evidence 20 Program Code for class functions of StoreManag
-er class: • sell_item [3] • sell_items [2] • stock_check [2] Screenshot
- showing output of test_function_5_2().
- [2]
+ Subtract the remainder from 98 to give the two check digits (e.g.
+ check digits = 98 - 16 = 82).
+ If the result is a single digit number, pad it with a leading 0 to make
+ a two-digit number.
+ Task 2.1 Write program code for the CheckDigits function using the following
+ specification.
+ FUNCTION CheckDigits (IBAN : STRING) : STRING The function has a single
+ string parameter IBAN and returns a two-digit string result.
+ Use the sample data provided in the text file IBANS.txt and paste this into
+ your program code.
+ Evidence 8 Your program code.
+ [6] Evidence 9 One screenshot verifying that your program generates the
+ correct check digits for the data in IBANS.txt.
+ [1] Page 6 of 12 An IBAN is validated by converting it into an integer
+ and performing a basic mod-97 operation on it.
+ If the IBAN is valid, the remainder equals 1.
+ The algorithm of IBAN validation is as follows: 1.
+ Move the four initial characters to the end of the string (For the IBAN
+ GB82WEST12345698765432 e.g.
+ WEST12345698765432GB82).
+ 2.
+ Replace each letter in the string with two digits, thereby expanding the
+ string, where A = 10, B = 11, C = 12, .
+ .
+ .
+ .
+ .
+ , Z = 35 (e.g.
+ 3214282912345698765432161182).
+ 3.
+ Interpret the string as a decimal integer and compute the remainder of
+ that number on division by 97 (e.g.
+ 3214282912345698765432161182 mod 97 = 1).
+ If the remainder is 1, the check digit test is passed and the IBAN might
+ be valid.
+ Task 2.2 Write a Boolean function ValidateIBAN to determine if a given IBAN
+ is valid.
+ This function should have a parameter which allows it to be used for any
+ IBAN.
+ Evidence 10 Your ValidateIBAN program code.
+ [2] Task 2.3 A TRANSACTIONS.txt file contains transaction details of customers
+ of a bank.
+ Each transaction record takes up one line and has three data fields: customer
+ IBAN, transaction mode (W - withdrawal or D - deposit) and transaction
+ amount.
+ Write a procedure CheckIBAN to read in the IBANs in TRANSACTIONS.txt and
+ display on the screen: If an IBAN is valid, the valid IBAN followed by
+ “OK”.
+ If an IBAN is invalid, the invalid IBAN followed by “Invalid.
+ Expected check digits: ??”, where ?? represents the computed check digits.
+ For an invalid IBAN, update the record in TRANSACTIONS.txt with the expected
+ computed check digits.
+ Evidence 11 Your CheckIBAN program code.
+ [7] Evidence 12 One screenshot showing the output and contents of TRANSACTIONS.t
+xt from running the program.
+ [2] Page 7 of 12 Task 2.4 A master file ACCOUNTS.txt contains the customer
+ IBANs, names and current balances.
+ Write a procedure UpdateBalance to update the current balances of the customers
+ in ACCOUNTS.txt from TRANSACTIONS.txt.
+ At the end of the process, your program will output the message: x records
+ updated.
+ Evidence 13 Your program code for the procedure UpdateBalance.
+ [8] Evidence 14 One screenshot showing the program output and contents
+ of ACCOUNTS.txt from running the program.
+ [2] Page 8 of 12
+\end_layout
+
+\begin_layout Enumerate
+A linked list Abstract Data Type (ADT) has the following operations defined:
+ • Create() -- creates an empty linked list; • Insert(item, p) -- inserts
+ new value, item, into linked list so that it is at position p in the linked
+ list.
+ Assume that the linked list contains at least (p - 1) items before the
+ insertion.
+ • Delete(p) -- deletes the item at position p in the linked list; • Length()
+ -- returns the number of items in the linked list; • IsEmpty() -- returns
+ true if linked list is empty; • IsFull() – returns true if linked list
+ is full; The linked list is implemented by the use of a collection of nodes
+ that have two parts: the item data and a pointer to the next item in the
+ list.
+ In addition there is a Start pointer which points to the first item in
+ the list.
+ The unused nodes are linked and the first unused node is the position where
+ the next new data item is to be stored.
+ Node removed from the linked list should be returned to NextFree list.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Start 3 3 Ben 4 4 Ken 1 1 Ali 0
+\end_layout
+
+\begin_layout Standard
+NextFree 2 2 5 5 6 .
+ .
+ .
+ .
+ 9 10 10 0
+\end_layout
+
+\begin_layout Standard
+The diagram shows the linked list after the following sequence of commands
+ have been executed.
+ Create() Insert('Ali', 1) Insert('Jack', 1) Insert('Ben',2) Delete(1) Insert('J
+ane', 2) Insert('Ken', 3) Delete(2) Page 9 of 12 The program to implement
+ this ADT will use the classes ListNode and LinkedList as follows: ListNode
+ Name : STRING Pointer : INTEGER Constructor() SetName(Name:STRING) SetPointer(P
+ointer:INTEGER) GetName():STRING GetPointer():INTEGER LinkedList Node :
+ ARRAY [1..10] OF ListNode Start : INTEGER NextFree : INTEGER Constructor()
+ Insert (name: STRING, position: INTEGER) Delete (position: INTEGER) Length
+ (): INTEGER IsEmpty(): BOOLEAN IsFull() : BOOLEAN Task 3.1 Write program
+ code to define the classes ListNode and LinkedList.
+ Evidence 15 Program code for the ListNode and LinkedList classes.
+ [18] Task 3.2 A method Display()is to be added, which displays the value
+ of Start, the value of NextFree and the contents of Node array in index
+ order.
+ Write program code to implement this method.
+ Evidence 16 Your program code for Task 3.2.
+ [4] Task 3.3 Write code to create a LinkedList object in the main program.
+ Paste the sequence of commands in COMMANDS.txt into your program code.
+ Your program will then call the Display method.
+ Page 10 of 12 Execute your program to test it.
+ Evidence 17 Screenshot showing the output from running the program in Task
+ 3.3.
+ [2] A linear queue is implemented using the LinkedList class as a super
+ class.
+ The subclass Queue has the following methods: Enqueue(item) -- inserts
+ item at the rear of the queue; Dequeue() -- deletes the item at the front
+ of the queue; Display() -- displays the contents of the queue using the
+ format given below.
+\end_layout
+
+\begin_layout Standard
+Task 3.4 Write program code for the subclass Queue.
+ Use appropriate inheritance and polymorphism in your design.
+ Evidence 18 Your program code for Task 3.4.
+ [5] Task 3.5 Write program code to: create a new queue and add the data
+ in the file NAMES.txt to the queue remove two items from the queue display
+ final contents of the queue Evidence 19 Your program code for Task 3.5.
+ [2] Evidence 20 Screenshot showing the output from running the program
+ in Task 3.5.
+ [1]
+\end_layout
+
+\begin_layout Standard
+Steven Front Celine Tom Ryan Rear Number in queue: 4 Page 11 of 12 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The Romans had their own system of number representation which used a sequence
+ of upper case letter characters to represent a number.
+ We shall consider the denary number 1 to 20 only.
+ The following letters represent each of the values shown: A number is always
+ written with the smallest number of characters, with the letters in sequence
+ starting with the character with the largest value.
+ For example, 6 is written VI (not IIIIII) The exceptions to this sequence
+ are as follows: one less than 5 -- which is written as IV one less than
+ ten -- which is written as IX ten less than fifty -- which is written as
+ XL Task 4.1 Write program code with the following specification: Input a
+ denary integer number in the range 1 to 20 Validate the input Calculate
+ the Roman numeral representation (write this code as a function) Output
+ the Roman number.
+ Evidence 21 Your program code.
+ [6] Task 4.2 Draw up a list of three suitable tests and provide screenshot
+ evidence for your testing.
+ Evidence 22 Annotated screenshots for each test data run.
+ [3] Task 4.3 Write additional program code with appropriate data validation
+ for the following specification: Input two Roman numeral numbers between
+ 1 and 20 Ouput the sum of the numbers as a Roman numeral number.
+ Evidence 23 Your program code.
+ [8] Roman Numeral Represents I One V Five X Ten L Fifty Page 12 of 12 Task
+ 4.4 Draw up a list of three suitable tests and provide screenshot evidence
+ for your testing.
+ Evidence 24 Annotated screenshots for each test data run.
+ [3]
 \end_layout
 
 \begin_layout Section
