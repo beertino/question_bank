@@ -89,49 +89,162 @@
 Paper 1
 \end_layout
 
+\begin_layout Enumerate
+Results management For this task, you are required to read the text file
+ “
+\series bold
+overall_grades.txt
+\series default
+” which contains the subject grades of the first and second semester examination
+ of 50 students.
+\end_layout
+
+\begin_deeper
 \begin_layout Standard
-1.
- Results management For this task, you are required to read the text file
- “overall_grades.txt” which contains the subject grades of the first and
- second semester examination of 50 students.
- The format of the text file is as follow: <name>;<subject1>:<grade1>,<grade2>;<
-subject2>:<grade1>,<grade 2>;<subject3>:<grade1>,<grade2>,…etc;
+The format of the text file is as follow: 
+\family typewriter
+<name>;<subject1>:<grade1>,<grade2>;<subject2>:<grade1>,<grade 2>;<subject3>:<gr
+ade1>,<grade2>,…etc;
 \backslash
-n For example: Rufus Schuck;EL:C,B;CL:C,C;Math:C,E;Bio:B,F; Student Rufus
- Schuck takes 4 subjects.
+n 
+\end_layout
+
+\begin_layout Standard
+For example: 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Rufus Schuck;EL:C,B;CL:C,C;Math:C,E;Bio:B,F; 
+\end_layout
+
+\begin_layout Standard
+Student Rufus Schuck takes 4 subjects.
  They are English (EL), Chinese (CL), Math (Math) and Biology (Bio).
  His 1st and 2nd semester grades for English is C and B respectively.
- Task 1.1 Write the program code for the function process_data() which reads
- the text file “overall_grades.txt” and returns a dictionary which has the
- following format.
- {'Rufus Schuck': {'EL': ['C', 'B'], 'CL': ['C', 'C'], 'Math': ['C', 'E'],
- 'Bio': ['B', 'F']}, ...} The returned dictionary uses the name of student
- as key and another dictionary as its return value.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 1.1 
+\end_layout
+
+\begin_layout Standard
+Write the program code for the function process_data() which reads the text
+ file “
+\series bold
+overall_grades.txt
+\series default
+” and returns a dictionary which has the following format.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+{'Rufus Schuck': {'EL': ['C', 'B'], 'CL': ['C', 'C'], 'Math': ['C', 'E'],
+ 'Bio': ['B', 'F']}, ...} 
+\end_layout
+
+\begin_layout Standard
+The returned dictionary uses the name of student as key and another dictionary
+ as its return value.
  This “another” dictionary then uses the subjects and a list containing
  the grades of the 1st and 2nd semesters as its key and value respectively.
- Evidence 1 The program code for the function process_data().
- [4] Task 1.2 Write a function have_n_improvement(n) which takes in an integer
- n and returns a list of student names who have improvement in exactly n
- subject(s).
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 1 
+\end_layout
+
+\begin_layout Standard
+The program code for the function process_data().
+ [4] 
+\end_layout
+
+\begin_layout Subsection*
+Task 1.2
+\end_layout
+
+\begin_layout Standard
+Write a function have_n_improvement(n) which takes in an integer n and returns
+ a list of student names who have improvement in exactly n subject(s).
  Using the example in Task 1.1, 'Rufus Schuck' shows improvement in only
  English.
  So, if n is 1, 'Rufus Schuck' must be included in the student name list.
- Evidence 2 The program code for the function have_n_improvement(n).
- [3] Task 1.3 Write a function have_improvement_in_all_subjs() which returns
- a list of student names who have improvement in all his/her subjects.
- Evidence 3 The program code for the function have_improvement_in_all_subjs(n).
- [3] Page 3 of 14 2017 Y6 H2 computing Prelim Paper 1 Task 1.4 Write a function
- count_combi(combi) which takes a list of subjects combi as input and returns
- the total number of students who take the subject combination in combi.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 2
+\end_layout
+
+\begin_layout Standard
+The program code for the function have_n_improvement(n).
+ [3] 
+\end_layout
+
+\begin_layout Subsection*
+Task 1.3 
+\end_layout
+
+\begin_layout Standard
+Write a function have_improvement_in_all_subjs() which returns a list of
+ student names who have improvement in all his/her subjects.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 3
+\end_layout
+
+\begin_layout Standard
+The program code for the function have_improvement_in_all_subjs(n).
+ [3] Page 3 of 14 2017 Y6 H2 computing Prelim Paper 1 
+\end_layout
+
+\begin_layout Subsection*
+Task 1.4 
+\end_layout
+
+\begin_layout Standard
+Write a function count_combi(combi) which takes a list of subjects combi
+ as input and returns the total number of students who take the subject
+ combination in combi.
  Take note that students who take more subjects than what is indicated in
  combi are included.
- For example: >>> count_combi(['EL', 'MATH']) >>> 50 Evidence 4 The program
- code for the function count_combi(n).
- [4] Task 1.5 Using your solution in Task 1.4, find the total number of students
- who take "Chem" and "Bio" but not "Physics".
+ For example: >>> count_combi(['EL', 'MATH']) >>> 50 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 4 
+\end_layout
+
+\begin_layout Standard
+The program code for the function count_combi(n).
+ [4] 
+\end_layout
+
+\begin_layout Standard
+Task 1.5
+\end_layout
+
+\begin_layout Standard
+Using your solution in Task 1.4, find the total number of students who take
+ "Chem" and "Bio" but not "Physics".
  Evidence 5 The program code to find what is required in Task 1.5.
- [2] Task 1.6 Write a function calculate_GPA(name)which takes a string name
- as input and calculates the GPA of the student indicated by name.
+ [2]
+\end_layout
+
+\begin_layout Standard
+Task 1.6 
+\end_layout
+
+\begin_layout Standard
+Write a function calculate_GPA(name)which takes a string name as input and
+ calculates the GPA of the student indicated by name.
  The points for each grade are as follow: {'A':5, 'B':4, 'C':3, 'D':2, 'E':1,
  'F':0} The 1 st and 2nd semester grades in the data has the same weightages.
  To calculate GPA, • Find the average points achieved of each subject.
@@ -141,10 +254,21 @@ n For example: Rufus Schuck;EL:C,B;CL:C,C;Math:C,E;Bio:B,F; Student Rufus
  the number subjects the student takes o e.g.
  'Claudette Bode': {'EL': ['C', 'D'], 'CL': ['D', 'A'], 'Math': ['A', 'D'],
  'Phy': ['A', 'D'], 'Bio': ['D', 'C']}, o [(3 + 2)/2 + (2 + 5)/2 + (5 +
- 2)/2 + (2 + 5)/2 + (2 + 3)/2]/5 = 3.1 • GPA for 'Claudette Bode' is 3.1 Evidence
- 6 The program code for the function calculate_GPA(name).
- [4] Page 4 of 14 2017 Y6 H2 computing Prelim Paper 1 2.
- Missing phone number digits Your friend (Mary) made an oversea friend (Jenny)
+ 2)/2 + (2 + 5)/2 + (2 + 3)/2]/5 = 3.1 • GPA for 'Claudette Bode' is 3.1 
+\end_layout
+
+\begin_layout Standard
+Evidence 6 
+\end_layout
+
+\begin_layout Standard
+The program code for the function calculate_GPA(name).
+ [4] 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Missing phone number digits Your friend (Mary) made an oversea friend (Jenny)
  yesterday while she was studying in the regional library.
  To remain in contact, Jenny gave Marry her phone number and told Mary that
  it is also a valid 10 digits International Standard Book Number (ISBN).
@@ -216,8 +340,11 @@ n For example: Rufus Schuck;EL:C,B;CL:C,C;Math:C,E;Bio:B,F; Student Rufus
  Quit You should validate user inputs and call for re-entry when an invalid
  option is given.
  Evidence 10 Program code for the procedure menu().
- [6] Page 7 of 14 2017 Y6 H2 computing Prelim Paper 1 3.
- Unsorted Linked List The classes Node and LinkedList is partially implemented
+ [6] Page 7 of 14 2017 Y6 H2 computing Prelim Paper 1 
+\end_layout
+
+\begin_layout Enumerate
+Unsorted Linked List The classes Node and LinkedList is partially implemented
  for you according to the specification given below.
  The attribute start of class LinkedList stores the first node instance
  of the linked list.
@@ -244,8 +371,11 @@ n For example: Rufus Schuck;EL:C,B;CL:C,C;Math:C,E;Bio:B,F; Student Rufus
  delete_pos(2) A:'boy'->'woman' Page 8 of 14 2017 Y6 H2 computing Prelim
  Paper 1 Evidence 11 Program code for: • insert_data(node) [3] • transfer(linked
 list) [3] • delete_pos() [4] Page 9 of 14 2017 Y6 H2 computing Prelim Paper
- 1 4.
- Sorting Algorithms The pseudocode procedure below is given a list of integers
+ 1 
+\end_layout
+
+\begin_layout Enumerate
+Sorting Algorithms The pseudocode procedure below is given a list of integers
  in random order, the procedure then outputs a sorted list in ascending
  order.
  1.
