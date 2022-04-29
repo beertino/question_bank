@@ -90,12 +90,18 @@ Paper 1
 \end_layout
 
 \begin_layout Enumerate
-The text file 
+A web log, 
 \family typewriter
-TEMPERATURE.txt
+WEBLOG.txt
 \family default
- contains the mean daily temperature from January 1982 to June 2017.
- Each line of record is in the format 
+, keeps track of the date and time the server is being accessed, as well
+ as the client that accessed it.
+ The client is identified by either the host name or internet address.
+ The format of 
+\family typewriter
+WEBLOG.txt
+\family default
+ is as follows: 
 \end_layout
 
 \begin_deeper
@@ -104,18 +110,211 @@ TEMPERATURE.txt
 \align center
 
 \family typewriter
-<year>-<month> <mean daily temperature> 
+<host name>|<DD/MMM/YYYY:HH:MM:SS> 
 \end_layout
 
 \begin_layout Standard
-For examples, 
+\noindent
+\align center
+
+\series bold
+or 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
 \family typewriter
-1982-01 29.8
+<internet address>|<DD/MMM/YYYY:HH:MM:SS>
 \family default
- and 
+ 
+\end_layout
+
+\begin_layout Standard
+Below is a sample of 
 \family typewriter
-2017-06 31.6
+WEBLOG.txt
 \family default
+: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+199.72.81.55|01/Jul/2018:08:00:01 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+jurongjc.moe.edu.sg|01/Jul/2018:09:08:06 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+199.120.110.21|01/Jul/2018:11:30:09 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+trioon.com|01/Jul/2018:11:45:58 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A client address (host name or internet address) can appear in 
+\family typewriter
+WEBLOG.txt
+\family default
+ multiple times.
+ Similarly, the date it accessed the server can be duplicated because it
+ can access the server more than once in a day.
+ 
+\end_layout
+
+\begin_layout Standard
+A summary report, 
+\family typewriter
+SUMMARYREPORT.txt
+\family default
+, is to be generated to list the unique clients (hosts name/internet address)
+ and their corresponding dates.
+ Below is a sample of 
+\family typewriter
+SUMMARYREPORT.txt
+\family default
+: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+199.72.81.55
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+ 01/Jul/2018,03/Jul/2018,04/Jul/2018 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+jurongjc.moe.edu.sg 01/Jul/2018,02/Jul/2018,03/Jul/2018 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+trioon.com 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+01/Jul/2018,05/Jul/2018
+\end_layout
+
+\end_inset
+
  
 \end_layout
 
@@ -124,280 +323,34 @@ Task 1.1
 \end_layout
 
 \begin_layout Standard
-Write program code that will 
-\end_layout
-
-\begin_layout Itemize
-read the data from the text file, 
-\end_layout
-
-\begin_layout Itemize
-calculate the average of all the available monthly temperatures by year,
- by totalling up the temperatures for each month of that year and divided
- by the number of months, 
-\end_layout
-
-\begin_layout Itemize
-output the average temperature for that year (from 1982 to 2017), in 3 decimal
- places.
-\end_layout
-
-\begin_layout Itemize
-Use the following format: 
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\noindent
-\align center
-
+Write a procedure 
 \family typewriter
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+readLog()
+\family default
+ to read 
 \family typewriter
-Year
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Average temperature
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-1982
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-31.442
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-1983
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-31.750
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset Formula $\vdots$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset Formula $\vdots$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset Formula $\vdots$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset Formula $\vdots$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-2017
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-31.217 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
+WEBLOG.txt
+\family default
+.
+ Use suitable data structure(s), and prepare the log information to create
  
+\family typewriter
+SUMMARYREPORT.txt
+\family default
+.
 \end_layout
 
-\end_deeper
 \begin_layout Subsection*
 Evidence 1: 
 \end_layout
 
 \begin_layout Standard
-Program code for Task 1.1.
-\begin_inset space \hfill{}
-\end_inset
-
- [9]
-\end_layout
-
-\begin_layout Subsection*
-Evidence 2: 
-\end_layout
-
-\begin_layout Standard
-Screenshot of running program.
-\begin_inset space \hfill{}
-\end_inset
-
- [1]
+Your 
+\family typewriter
+readLog()
+\family default
+ procedure code.
+ [6] 
 \end_layout
 
 \begin_layout Subsection*
@@ -405,13 +358,24 @@ Task 1.2
 \end_layout
 
 \begin_layout Standard
-Sort by temperature and output the average temperature by year, in ascending
- order of temperature.
- If temperatures are the same, then display the later year before the earlier
- year.
- For example, if year 2017 and 1989 have the same temperature, then display
- 2017 before 1989.
- 
+Write a procedure 
+\family typewriter
+processLog()
+\family default
+ to generate 
+\family typewriter
+SUMMARYREPORT.txt
+\family default
+.
+\end_layout
+
+\begin_layout Subsection*
+Evidence 2: 
+\end_layout
+
+\begin_layout Standard
+Your processLog() procedure code.
+ [4] 
 \end_layout
 
 \begin_layout Subsection*
@@ -419,1469 +383,200 @@ Evidence 3:
 \end_layout
 
 \begin_layout Standard
-Program code for Task 1.2.
- 
-\begin_inset space \hfill{}
-\end_inset
-
-[7]
+Screenshot of SUMMARYREPORT.txt after running the program.
+ [1]
 \end_layout
 
 \begin_layout Subsection*
-Evidence 4: 
+Task 1.3 
 \end_layout
 
 \begin_layout Standard
-Screenshot of running program.
- 
-\begin_inset space \hfill{}
-\end_inset
-
-[1]
+Add code to your Task 1.2 program to display the highest number of days the
+ server was accessed by any client, and the corresponding client(s).
+ Below is a sample of screen output: >>> Highest frequency (days): 3 >>>
+ Accessed by: >>> 199.72.81.55 >>> jurongjc.moe.edu.sg Evidence 4: Your program
+ code for Task 1.3.
+ [4] Evidence 5: Screenshot of the program output.
+ [1] 4 
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-A circular queue is to be implemented with a fixed size array of n elements,
- indexed from 
-\family typewriter
-0
-\family default
- to 
-\family typewriter
-(n – 1)
-\family default
-.
+The data file COUNTRIES.txt contains a list of country names.
+ Task 2.1 Write program code to store country names in COUNTRIES.txt into
+ an array, sort them in descending order using insertion sort and output
+ the sorted sequence.
+ Evidence 6: Program code for Task 2.1 [7] Evidence 7: Screenshot of the
+ program output.
+ [1] Task 2.2 Write program code to store country names in COUNTRIES.txt into
+ an array, sort them in ascending order using quicksort and output the sorted
+ sequence.
+ You may use the pseudocode in QUICKSORT.txt.
+ Do note the pseudocode is incomplete.
+ You will have to fill in the missing codes A, B, C, D, E, F, G, H.
+ Evidence 8: Program code for Task 2.2 [8] Task 2.3 Write additional code
+ to count and display the total number of comparisons made in completing
+ the quicksort process.
+ Evidence 9: Program code for Task 2.3 to highlight the additional code by
+ using bold and italics.
+ [3] Evidence 10: Screenshot of running Task 2.3.
+ [1] 5 [Turn over 
 \end_layout
 
-\begin_deeper
-\begin_layout Subsection*
-Task 2.1 
-\end_layout
-
-\begin_layout Standard
-Following good programming practice, write program code for procedures 
-\end_layout
-
-\begin_layout Itemize
-
-\family typewriter
-setup_queue
-\family default
- to set up circular queue which allows user to input the value of 
-\family typewriter
-n
-\family default
-, 
-\end_layout
-
-\begin_layout Itemize
-
-\family typewriter
-enqueue
-\family default
- to add an element to the queue,
-\end_layout
-
-\begin_layout Itemize
-
-\family typewriter
-dequeue
-\family default
- to remove an element from the queue.
- 
-\end_layout
-
-\begin_layout Subsection*
-Evidence 5: 
-\end_layout
-
-\begin_layout Standard
-Program code for Task 2.1 for 
-\family typewriter
-setup_queue
-\family default
-, 
-\family typewriter
-enqueue
-\family default
-, 
-\family typewriter
-dequeue
-\family default
-.
- 
-\begin_inset space \hfill{}
-\end_inset
-
-[12]
-\end_layout
-
-\begin_layout Subsection*
-Task 2.2 
-\end_layout
-
-\begin_layout Standard
-Write program code for a main procedure to display a menu with these options:
- 
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="1">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top">
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-1.
- Set up queue
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-2.
- Add to queue
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-3.
- Remove from queue
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-4.
- Display queue 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-5.
- Exit
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Write additional code to implement menu options 1, 2 and 3 using procedures
- from Task 2.1.
- 
-\end_layout
-
-\begin_layout Standard
-Also write code to implement 
-\end_layout
-
-\begin_layout Itemize
-option 4 to display the contents of the queue and its pointers as shown
- in diagram below, 
-\end_layout
-
-\begin_layout Itemize
-option 5 to exit program.
- 
-\end_layout
-
-\begin_layout Standard
-The diagram shows the result of option 4 to display contents of queue and
- pointers for 
-\family typewriter
-n=5
-\family default
- with 3 items 
-\family typewriter
-'fig'
-\family default
-, 
-\family typewriter
-'lemon'
-\family default
- and 
-\family typewriter
-'cane'
-\family default
- in the queue:
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="8" columns="3">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top">
-<column alignment="left" valignment="top">
-<column alignment="left" valignment="top">
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Queue
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-fig
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-<- Front pointer
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-lemon
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-cane
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-<- Rear pointer
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="1" alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Number in queue: 3
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Subsection*
-Evidence 6:
-\end_layout
-
-\begin_layout Standard
-Program code for Task 2.2 for main procedure, display queue and exit program.
- 
-\begin_inset space \hfill{}
-\end_inset
-
-[8]
-\end_layout
-
-\begin_layout Subsection*
-Task 2.3 
-\end_layout
-
-\begin_layout Standard
-Test run your program from using the following input: 
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="1">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top">
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Test run 1
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-- 
-\family typewriter
-n = 8
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-- Add 5 words to queue in order:
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-'Mary', 'had', 'a', 'little', 'lamb'
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-- Display queue
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="1">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top">
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Test run 2
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-- 
-\family typewriter
-n = 3
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-- Add 4 words to queue in order:
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-'The', 'quick', 'brown', 'fox'
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-- Remove from queue
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-- Display queue
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-Evidence 7 
-\end_layout
-
-\begin_layout Standard
-Screenshots of test runs 1 and 2.
- 
-\begin_inset space \hfill{}
-\end_inset
-
-[2]
-\end_layout
-
-\end_deeper
 \begin_layout Enumerate
-A linked list of nodes is used to store data for a college.
- The data include name of student and exam mark.
- 
+The class Node has the following properties and methods: Task 3.1 Write program
+ code for the class Node.
+ Evidence 11: Program code for Task 3.1.
+ [4] Class: Node Identifier Description data : String Data stored at the
+ node.
+ left : INTEGER Points to the left child of the node.
+ Implement 0 as NULL value.
+ right : INTEGER Points to the right child of the node.
+ Implement 0 as NULL value.
+ Methods Constructor() Initialises an instance of Node.
+ set_data(data : String) Modifier method for data.
+ get_data() : String Accessor method for data.
+ set_left(index : INTEGER) Modifier method for left.
+ get_left() : INTEGER Accessor method for left.
+ set_right(index : INTEGER) Modifier method for right.
+ get_right() : INTEGER Accessor method for right.
+ 6 The class BinarySearchTree has the following properties and methods:
+ Class: BinarySearchTree Identifier Description root : INTEGER Points to
+ the root of binary search tree.
+ Implement 0 as NULL value.
+ nodes : ARRAY[31] OF Node The array index starts at 1 and the dataset (i.e.:
+ binary search tree) has a maximum of 31 Node objects.
+ nextFree : INTEGER Index for the next unused node.
+ Methods Constructor() Initialises the root, nextFree and nodes of BinarySearchT
+ree.
+ addNode(data : String) Inserts new node into binary search tree.
+ The data of each parent node is larger than the data of its left child.
+ set_root(index : INTEGER) Modifier method for root.
+ get_root() : INTEGER Accessor method for root.
+ searchNode(item : String) : BOOLEAN Searches if item is stored in one of
+ the nodes of the binary search tree.
+ Returns TRUE if found and FALSE otherwise.
+ inOrderTraversal(root : INTEGER) Displays the data of each node stored
+ in the binary search tree when traversed using an inorder algorithm.
+ For example: Binary Search Tree Display Output Earth Moon Sun balance()
+ : BinarySearchTree Traverses the binary search tree to return a new balanced
+ binary search tree.
+ A recursive algorithm is required.
+ Moon Earth Sun 7 [Turn over Task 3.2 Write program code for the class BinarySear
+chTree.
+ You may assume space will not be reused should any node be deleted and
+ the binary search tree will not be full.
+ Evidence 12: Program code for Task 3.2.
+ [18] 8 The class HashTable has the following properties and methods: Task
+ 3.3 Write program code for the class HashTable.
+ Evidence 13: Program code for Task 3.3.
+ [4] Class: HashTable Identifier Description size : INTEGER Number of items
+ in the hash table array.
+ hashTableArray : ARRAY[size] OF BinarySearchTree An array storing BinarySearchT
+ree objects from indices 0 to size -1.
+ Methods Constructor(size : INTEGER) Initialises the size and hashTableArray
+ of HashTable.
+ hash(key : String) : INTEGER A hashing function that calculates the address
+ of the hash table.
+ Takes key, a String, as an argument.
+ The last six characters in key are digits.
+ Sums each of the first three digits, divides the total by size and returns
+ the remainder.
+ For example, where size is 5: hash(“111JalanTenteram322111”) >>> 2 hash(“23Pasi
+rRisAve4520021”) >>> 2 9 [Turn over ACE OF CODERS PTE LTD would like to
+ conduct a lucky draw.
+ Each customer is entitled to submit one entry.
+ All customer data entered is stored in the text file CUSTOMERDATA.txt.
+ The format of the text file is as follows: <CUSTOMER NAME> <CONTACT NUMBER>|<AD
+DRESS> Below is a sample of CUSTOMERDATA.txt: Felicia Lee Si Ying 98635610|19Jala
+nTenteram322019 Yap Chee How 67767515|23TohTuckDrive608023 Christy Lopez
+ 92233123|507WestCoastRoad120507 There will be five lucky draw winners.
+ The company has identified five regions in Singapore and would like to
+ pick one winner from each region.
+ The hashing function from Task 3.3 will categorise an address in one of
+ the five regions.
+ Task 3.4 Using the classes programmed previously, code a main program that
+ repeatedly: displays the following menu: 1.
+ Prepare hash table 2.
+ Generate winners 3.
+ Search for entry calls an appropriate procedure depending on the user’s
+ choice When implementing the choices, take note of the following: 1.
+ Prepare hash table User inputs suitable size of hash table to be initialised.
+ Reads customer data from CUSTOMERDATA.txt.
+ Uses address as key and customer name, contact number as value.
+ Stores the customer names, contact numbers into the hash table.
+ 2.
+ Generate winners Randomly select one winner from each binary search tree
+ in the hash table.
+ Display their names and contact numbers.
+ 3.
+ Search for entry Staff of the company may not enter the lucky draw.
+ Displays whether the staff name and contact number entered by user exists
+ in the hash table.
+ Evidence 14: Program code for Task 3.4.
+ [10] 10 Task 3.5 Run your program.
+ Complete choice 1 before searching the following.
+ >>> Sandra Chelvan 92233123 >>> Haz Awang 87767888 >>> Seah Hon Hui 91144000
+ Evidence 15: Screenshot of running Task 3.5.
+ [2]
 \end_layout
 
-\begin_deeper
-\begin_layout Standard
-The linked list Abstract Data Type (ADT) has commands to create a new linked
- list, add data items to the list and display the list.
- 
-\end_layout
-
-\begin_layout Standard
-The program to implement this ADT will use the classes 
-\family typewriter
-Node
-\family default
- and 
-\family typewriter
-LinkedList
-\family default
- as follows: 
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="11" columns="1">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top">
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \hspace{}
-\length 25col%
-\end_inset
-
-Node
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-name : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-mark : INTEGER
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-nextPtr : INTEGER
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-constructor()
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-setName(name : STRING)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-setMark(mark : INTEGER) 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-setNextPtr(ptr : INTEGER)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-getName() : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-getMark() : INTEGER
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-getNextPtr() : INTEGER
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="1">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top">
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \hspace{}
-\length 25col%
-\end_inset
-
-LinkedList
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-nodes : ARRAY OF Node
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-head : INTEGER
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-constructor()
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-addInOrder(name, mark)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-print() 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In the 
-\family typewriter
-Node
-\family default
- class, 
-\family typewriter
-name
-\family default
- and 
-\family typewriter
-mark
-\family default
- store a student’s name and exam mark respectively, while 
-\family typewriter
-nextPtr
-\family default
- is a pointer to the next node.
- 
-\end_layout
-
-\begin_layout Standard
-In the 
-\family typewriter
-LinkedList
-\family default
- class, 
-\family typewriter
-head
-\family default
- is a pointer to the first node in the linked list.
- When the linked list has no data, 
-\family typewriter
-head
-\family default
- will be set to –1.
-\end_layout
-
-\begin_layout Standard
-Data added to the linked list will be stored in alphabetical order of name.
- 
-\end_layout
-
-\begin_layout Standard
-The print method will output for each node, in array order, the data and
- pointer of each node.
- Page 6 
-\end_layout
-
-\begin_layout Subsection*
-Task 3.1
-\end_layout
-
-\begin_layout Standard
-Write program code to define the classes 
-\family typewriter
-Node
-\family default
- and 
-\family typewriter
-LinkedList
-\family default
-.
-\end_layout
-
-\begin_layout Subsection*
-Evidence 8: 
-\end_layout
-
-\begin_layout Standard
-Program code for Task 3.1.
- 
-\begin_inset space \hfill{}
-\end_inset
-
- [20]
-\end_layout
-
-\begin_layout Subsection*
-Task 3.2 
-\end_layout
-
-\begin_layout Standard
-Write code to create a linked list object in the main program, read from
- data file 
-\family typewriter
-COLLEGE.txt
-\family default
- and add in all the data items, and print the array contents.
- The file contains name and mark of each student in the following format:
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align center
-
-\family typewriter
-<name>|<mark>
-\end_layout
-
-\begin_layout Standard
-Sample record: 
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align center
-
-\family typewriter
-Jenny Tan|49
-\end_layout
-
-\begin_layout Subsection*
-Evidence 9 
-\end_layout
-
-\begin_layout Standard
-Program code for Task 3.2.
- Screenshot of running Task 3.2.
- 
-\begin_inset space \hfill{}
-\end_inset
-
- [5]
-\end_layout
-
-\begin_layout Subsection*
-Task 3.3 
-\end_layout
-
-\begin_layout Standard
-Write code for a method 
-\family typewriter
-countNodes
-\family default
- to count the number of nodes used for the data in the linked list.
- 
-\end_layout
-
-\begin_layout Subsection*
-Evidence 10:
-\end_layout
-
-\begin_layout Standard
-Program code for Task 3.3 countNodes.
- 
-\begin_inset space \hfill{}
-\end_inset
-
-[3]
-\end_layout
-
-\begin_layout Subsection*
-Task 3.4 
-\end_layout
-
-\begin_layout Standard
-Another method 
-\family typewriter
-sortByMark
-\family default
- is to be added to the 
-\family typewriter
-LinkedList
-\family default
- class to sort the linked list in descending order of exam mark.
-\end_layout
-
-\begin_layout Standard
-Write program code to implement this method.
-\end_layout
-
-\begin_layout Standard
-Test your program code by sorting the linked list from Task 3.2 in descending
- order of mark.
- Page 7 
-\end_layout
-
-\begin_layout Subsection*
-Evidence 11 
-\end_layout
-
-\begin_layout Standard
-Program code for Task 3.4 
-\family typewriter
-sortByMark
-\family default
-.
-\end_layout
-
-\begin_layout Standard
-Screenshot of running Task 3.4 
-\family typewriter
-sortByMark
-\family default
-.
- 
-\begin_inset space \hfill{}
-\end_inset
-
- [8]
-\end_layout
-
-\begin_layout Subsection*
-Task 3.5 
-\end_layout
-
-\begin_layout Standard
-Write another method 
-\family typewriter
-displayByMark
-\family default
- to display the list of students in descending order of mark by traversing
- the sorted linked list from Task 3.4.
- 
-\end_layout
-
-\begin_layout Subsection*
-Evidence 12 
-\end_layout
-
-\begin_layout Standard
-Program code for Task 3.5 
-\family typewriter
-displayByMark
-\family default
-.
- 
-\begin_inset space \hfill{}
-\end_inset
-
-[4]
-\end_layout
-
-\end_deeper
 \begin_layout Enumerate
-Perform binary addition of positive numbers.
- 
+Rock Paper Scissors is a well-known hand game played between two players,
+ whom we shall call P1 and P2.
+ For each round, each player simultaneously forms one of three signs with
+ an outstretched hand.
+ Rock (represented by "0"), scissors (represented by "2") and paper (represented
+ by "5").
+ Program get_round_winner(p1_hand, p2_hand) that decides who wins from the
+ hand signs of P1 and P2.
+ If P1 wins, the function returns 1.
+ If P2 wins, the function returns 2.
+ If the game is a draw, the function returns 0.
+ Sample Execution: get_round_winner ("2", "5") # scissors vs paper - P1
+ wins >>> 1 get_round_winner ("2", "0") # scissors vs rock - P2 wins >>>
+ 2 get_round_winner ("2", "2") # scissors vs scissors - Draw >>> 0 Task
+ 4.1 Write program code for the function get_round_winner.
+ Evidence 16: Program code for Task 4.1.
+ [4] 11 [Turn over P1 and P2 played a game of Rock Paper Scissors over a
+ few rounds.
+ The winner is the player who wins more rounds than he losses.
+ A draw occurs if there is no winner.
+ The hand signs of each player for the game are represented as a string
+ of "0", "2" and "5".
+ For example, "205" represents playing scissors in the first round, rock
+ in the second, and paper in the third.
+ Program get_game_winner(p1_hands, p2_hands) that decides who wins the game
+ from a sequence of hand signs from P1 and P2.
+ If P1 wins, return 1, if P2 wins, return 2, if the game is a draw, return
+ 0.
+ You must use get_round_winner.
+ You may assume that p1_hands and p2_hands are strings of the same length
+ containing only "0", "2" and "5".
+ Sample Execution: get_game_winner ("", "") #no hand played, game ends in
+ a draw >>> 0 get_game_winner ("205", "520") #P1 wins all 3 rounds, P1 wins
+ >>> 1 get_game_winner ("22222", "50505") #P1 wins >>> 1 get_game_winner
+ ("2050", "0255") #P2 wins >>> 2 get_game_winner ("52025", "52025") #Draw
+ >>> 0 Task 4.2 Write program code for the function get_game_winner.
+ Evidence 17: Program code for Task 4.2.
+ [6] 12 P1 and P2 would like a more interesting interface where rows and
+ columns display the game played.
+ Each game has four rounds and the overall result (“P1 wins”, “P2 wins”
+ or “Draw”) will be displayed when the game is over.
+ Here is a sample screenshot of the first turns taken by player.
+ Task 4.3 Write program code for the game described.
+ Implement using modularity and 2D array.
+ Include function validate() to ensure the player chooses 0, 2 or 5.
+ Prompt the player to re-enter if input is invalid.
+ Evidence 18: Program code for Task 4.3.
+ [10] Evidence 19: Design four appropriate test cases for the program.
+ Present them in a table format.
+ [4] Evidence 20: Run your program and produce screenshots for a game which
+ ends in a draw and another game which P1 wins.
+ [2]
 \end_layout
 
-\begin_deeper
-\begin_layout Subsection*
-Task 4.1 
-\end_layout
-
-\begin_layout Standard
-Write program code for a function that takes two binary numbers and returns
- the result after addition of these two binary numbers.
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align center
-
-\family typewriter
-FUNCTION addBinary(bin1, bin2: STRING) RETURN result: STRING 
-\end_layout
-
-\begin_layout Subsection*
-Evidence 13 
-\end_layout
-
-\begin_layout Standard
-Program code for Task 4.1 
-\family typewriter
-addBinary
-\family default
-.
- 
-\begin_inset space \hfill{}
-\end_inset
-
-[10]
-\end_layout
-
-\begin_layout Subsection*
-Task 4.2
-\end_layout
-
-\begin_layout Standard
-Write a main procedure that 
-\end_layout
-
-\begin_layout Itemize
-repeatedly ask user to input binary numbers until user input ‘
-\family typewriter
-XXX
-\family default
-’ to exit program; 
-\end_layout
-
-\begin_layout Itemize
-perform validation of binary numbers; 
-\end_layout
-
-\begin_layout Itemize
-add these binary numbers using the function 
-\family typewriter
-addBinary
-\family default
-; 
-\end_layout
-
-\begin_layout Itemize
-output result of these addition.
- 
-\end_layout
-
-\begin_layout Standard
-Sample output: 
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="1">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top">
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Enter binary number 1 (XXX to exit) : 1
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Enter binary number 2 (XXX to exit) : 10
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Enter binary number 3 (XXX to exit) : XXX
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Result is 11 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-Evidence 14 
-\end_layout
-
-\begin_layout Standard
-Program code for Task 4.2 main procedure.
- 
-\begin_inset space \hfill{}
-\end_inset
-
- [8]
-\end_layout
-
-\begin_layout Subsection*
-Evidence 15 
-\end_layout
-
-\begin_layout Standard
-Screenshot of running program with user input of the following six binary
- numbers in order: 
-\family typewriter
-1000
-\family default
-, 
-\family typewriter
-1010
-\family default
-, 
-\family typewriter
-1100
-\family default
-, 
-\family typewriter
-0101
-\family default
-, 
-\family typewriter
-1111
-\family default
-, 
-\family typewriter
-0011
-\family default
-.
- 
-\begin_inset space \hfill{}
-\end_inset
-
-[2]
-\end_layout
-
-\begin_layout Standard
-These binary numbers can be found in the file 
-\family typewriter
-BITS.txt
-\family default
-.
-\end_layout
-
-\end_deeper
 \begin_layout Section
 9597 ALVL 201X TEMPLATE
 \end_layout

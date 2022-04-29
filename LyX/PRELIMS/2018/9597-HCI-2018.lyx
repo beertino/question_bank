@@ -187,352 +187,61 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
+..............................
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
+..............................
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
+..............................
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
+..............................
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- T .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- 
+..................T...........
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
+..............................
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- T .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- 
+...T..........................
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- 
+..............................
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- 
+..............................
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- X .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
+...X..........................
 \end_layout
 
 \end_inset
@@ -1074,354 +783,68 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
+..............................
  
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- T .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
+....T.........................
  
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- O .
- .
- .
- .
+.........................O....
  
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
+..............................
  
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- T .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
+..........T...................
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- T .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
+..............................
  
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
+..................T...........
  
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
+..............................
+ 
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- 
+..............................
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+..............................
 \end_layout
 
 \end_inset
@@ -1458,356 +881,61 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- 
+..............................
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- 
+..............................
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- T .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
+...............T..............
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- 
+..............................
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- T .
- .
- .
- .
- 
+.........................T....
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- X .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- 
+...X..........................
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- 
+..............................
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- 
+..............................
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
+..............................
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- 
+..............................
 \end_layout
 
 \end_inset
@@ -3587,160 +2715,1099 @@ status open
 
 \begin_deeper
 \begin_layout Enumerate
-(b) (c) (d) A local area network can be set up as either client-server or
- peer-to-peer.
- (i) State where data are stored on a client-server network and why? (ii)
- State where data are stored on a peer-to-peer network and why? (iii) In
- your opinion, what is the key benefit of a client-server network over peer-tope
-er network.
+A local area network can be set up as either client-server or peer-to-peer.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+State where data are stored on a client-server network and why?
+\begin_inset space \hfill{}
+\end_inset
+
+ [1]
+\end_layout
+
+\begin_layout Enumerate
+State where data are stored on a peer-to-peer network and why?
+\begin_inset space \hfill{}
+\end_inset
+
+ [1]
+\end_layout
+
+\begin_layout Enumerate
+In your opinion, what is the key benefit of a client-server network over
+ peer-topeer network.
  Justify.
- (iv) In your opinion, what is the main drawback of a client-server network
- compared to a peer-to-peer network.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+In your opinion, what is the main drawback of a client-server network compared
+ to a peer-to-peer network.
  Justify.
- A 60 Megabyte file is transferred over a network to a printer in 10 seconds.
- Calculate the transfer rate, in kilobytes per second, used to transfer
- this file.
- Show all of your working.
- [1 MB = 1024 KB] Explain how DHCP operates in a network? Switches and routers
- are both connecting devices.
- (i) What are the purposes of having connecting device in a network? (ii)
- What are the differences between them? [1] [1] [2] [2] [2] [3] [2] [2]
- Page 2 of 8
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-(a) (b) (c) What are the characteristics of a voice-user interface? What
- are the strengths and weaknesses of a voice-user interface in comparison
- to a graphical user-interface? One of the 8 golden rules for interface
- design is the element of consistency.
- (i) Explain the importance of consistency in designing a user interface.
- (ii) Is consistency still important in the newer user-interfaces (eg.
- voice, gesture)? Why is this so? (iii) Voice User interfaces gaining popularity
- with the readily availablity of devices like Echo and iphone.
+A 60 Megabyte file is transferred over a network to a printer in 10 seconds.
+ Calculate the transfer rate, in kilobytes per second, used to transfer
+ this file.
+ Show all of your working.
+ [1 MB = 1024 KB] 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+Explain how DHCP operates in a network? 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+Switches and routers are both connecting devices.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+What are the purposes of having connecting device in a network? 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+What are the differences between them?
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+What are the characteristics of a voice-user interface?
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Enumerate
+What are the strengths and weaknesses of a voice-user interface in comparison
+ to a graphical user-interface?
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\begin_layout Enumerate
+One of the 8 golden rules for interface design is the element of consistency.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Explain the importance of consistency in designing a user interface.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Enumerate
+Is consistency still important in the newer user-interfaces (eg.
+ voice, gesture)? Why is this so? 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+Voice User interfaces gaining popularity with the readily availablity of
+ devices like Echo and iphone.
  What do you think are some of the key design elements that are vital to
  an effective user experience when using such devices? Explain your answers.
- [2] [4] [4] [2] [3] 
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Explain what is meant by the following terms and give an example for each
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Candidate key 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
 \end_layout
 
 \begin_layout Enumerate
-(a) (b) Explain what is meant by the following terms and give an example
- for each (i) Candidate key (ii) Secondary key (iii) Foreign key The school’s
- Robotics club is looking at designing a relational database to keep track
- of members participation and achievements.
+Secondary key 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+Foreign key 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The school’s Robotics club is looking at designing a relational database
+ to keep track of members participation and achievements.
  Proposed a relational database design for this purpose.
- (i) Give the table descriptions in shorthand notations.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Give the table descriptions in shorthand notations.
  Explain the purpose of all your tables.
  Highlight the necessary details needed in your design.
- (ii) Draw the entity-relationship model for your design.
- [2] [2] [2] [6] [3] Page 3 of 8 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
 \end_layout
 
 \begin_layout Enumerate
-(a) (b) An apartment block in a city consists of a large number of apartments.
+(ii) Draw the entity-relationship model for your design.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+An apartment block in a city consists of a large number of apartments.
  Each of the residents of the apartments has their information stored in
  a file.
- The records in the file are to be sorted into alphabetical order of the
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The records in the file are to be sorted into alphabetical order of the
  resident’s name.
- Using the following list of names as an example, show how the records can
+ 
+\end_layout
+
+\begin_layout Enumerate
+Using the following list of names as an example, show how the records can
  be sorted into alphabetical order using an insertion sort.
- GRA, CHR, DAV, SAR, TOM, KAT Residents sometimes make requests for maintenance
- on their apartments.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+GRA, CHR, DAV, SAR, TOM, KAT
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Residents sometimes make requests for maintenance on their apartments.
  Each request is given a priority number ranging from 1, for failure of
  the air conditioning, to 10, for a dripping tap.
  Each request is stored in a linked list in order of priorities.
  Jobs with equal priority are stored in order of the date that they have
  been submitted.
- Describe an algorithm to insert a new job into the list.
- [4] [6] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Describe an algorithm to insert a new job into the list.
+\begin_inset space \hfill{}
+\end_inset
+
+ [6]
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Explain the difference between an iterative solution and a recursive solution
+ to a problem.
+ [2]
 \end_layout
 
 \begin_layout Enumerate
-(a) (b) Explain the difference between an iterative solution and a recursive
- solution to a problem.
- The program RADIX_CONVERT, listed below, calls a recursive procedure, OUT.
- Note that x DIV y gives the integral part of the quotient when x is divided
- by y, and x MOD y gives the remainder.
- Program RADIX_CONVERT declare integers a, b input a, b OUT (a, b) print
- a, b End RADIX_CONVERT Procedure OUT (x, y) declare integers a, b a = x
- DIV y b = x MOD y if a > 0 then OUT (a, y) print (b) end OUT (i) Draw a
- diagram to trace the execution of the program, RADIX_CONVERT with values
- 46 and 3 as input for a and b respectively.
+The program 
+\family typewriter
+RADIX_CONVERT
+\family default
+, listed below, calls a recursive procedure, 
+\family typewriter
+OUT
+\family default
+.
+ Note that 
+\family typewriter
+x DIV y
+\family default
+ gives the integral part of the quotient when x is divided by 
+\family typewriter
+y
+\family default
+, and 
+\family typewriter
+x MOD y
+\family default
+ gives the remainder.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+Program RADIX_CONVERT 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+declare integers a, b 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+input a, b
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+OUT (a, b) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print a, b 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+End RADIX_CONVERT
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Procedure OUT (x, y) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+declare integers a, b
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+a = x DIV y
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+b = x MOD y 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+if a > 0 then OUT (a, y)
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print (b) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+end OUT
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Draw a diagram to trace the execution of the program, 
+\family typewriter
+RADIX_CONVERT
+\family default
+ with values 46 and 3 as input for 
+\family typewriter
+a
+\family default
+ and 
+\family typewriter
+b
+\family default
+ respectively.
  Show clearly the order of call and return, and the change in values of
- a and b.
- (ii) Write down, in the correct order, all the values printed.
- (iii) What does RADIX_CONVERT accomplish? [2] [4] [2] [2] Page 4 of 8 
+ 
+\family typewriter
+a
+\family default
+ and 
+\family typewriter
+b
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
 \end_layout
 
 \begin_layout Enumerate
-(a) Carrie Car, a car accessories shop wants to sell its products through
- the internet.
+Write down, in the correct order, all the values printed.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+What does 
+\family typewriter
+RADIX_CONVERT
+\family default
+ accomplish? 
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Carrie Car, a car accessories shop wants to sell its products through the
+ internet.
  A software house has been engaged to supply the computerised solution.
  The project manager has drawn up a list of activities and their likely
  duration.
- Activity Description Weeks to complete A Write requirement specification
- 5 B Produce program design 5 C Write module code 15 D Module testing 10
- E Integration testing 5 F Alpha testing 3 G Install software and acceptance
- testing 5 H Write end user training guide 5 J Write technical documentation
- 10 K End user training 4 L Sign off final system 1 The project manager
- decides to construct a Program Evaluation Review Technique (PERT) chart
- from this data.
- (i) Complete the PERT chart.
- (ii) State the critical path and elapsed time for this project.
- (iii) State the earliest and late start for activity J.
- [3] [2] [2] Page 5 of 8 (b) (c) (d) The systems analyst from the team gathered
- the following requirements: • A customer can place an order either by telephone
- or via the internet • The order will be placed in a file to be dealt with
- by the warehouse staff • An email acknowledgement of the order will be
- sent to the customer • After completion of the order the customer details
- will be stored in a customer file List details of the data stores required,
- and draw the data flow diagram for the solution.
- Various procedures are written.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Activity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Weeks to complete
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Write requirement specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Produce program design
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Write module code
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Module testing
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Integration testing
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Alpha testing
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+G
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Install software and acceptance testing 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Write end user training guide
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+J
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Write technical documentation 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+End user training 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sign off final system 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The project manager decides to construct a Program Evaluation Review Technique
+ (PERT) chart from this data.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Complete the PERT chart.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\begin_layout Enumerate
+State the critical path and elapsed time for this project.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Enumerate
+State the earliest and late start for activity J.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The systems analyst from the team gathered the following requirements: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A customer can place an order either by telephone or via the internet 
+\end_layout
+
+\begin_layout Itemize
+The order will be placed in a file to be dealt with by the warehouse staff
+\end_layout
+
+\begin_layout Itemize
+An email acknowledgement of the order will be sent to the customer 
+\end_layout
+
+\begin_layout Itemize
+After completion of the order the customer details will be stored in a customer
+ file
+\end_layout
+
+\begin_layout Standard
+List details of the data stores required, and draw the data flow diagram
+ for the solution.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Various procedures are written.
  One of the procedures is written to look up the customer record in the
  customer file.
  The procedure then adds the value of the current order to the total ordered
  by the customer this year.
  This determines whether or not a discount is payable.
- Parameters can be passed to a procedure by using pass-by-value or pass-by-refer
-ence.
- Explain the two methods and highlight the difference.
- Using the scenario above, give an example of each to illustrate the difference.
- Besides car accessories, Carrie Car also sells car insurance.
- Customers can insure their car using one of two methods: • Method A: by
- using the Internet or • Method B: by using the telephone to talk to a sales
- representative.
- (i) For method A, describe how the car registration could be validated.
- (ii) For method B, describe how the car registration could be verified.
- (iii) Explain the difference between data validation and data verification.
- [6] [6] [1] [1] [2] Page 6 of 8 (e) The rules that are used when deciding
- whether to offer insurance to customers and whether to offer discounts
- are as follows: • If the customer has been refused insurance by another
- company and their car is over 10 years old then insurance is refused.
- • If the customer has been refused insurance by another company and their
- car is not more than 10 years old then insurance without any discount is
- available.
- • If the customer has not been refused insurance by another company and
- their car is over 10 years old then insurance without any discount is available.
- • If the customer has not been refused insurance by another company and
- their car is less than 10 years old and they have made not more than three
- claims previously then insurance with a discount is available.
- (i) Create a decision table showing all the possible outcomes and results.
- (ii) Simplify your decision table by removing redundancies.
- [7] 
+ 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+Parameters can be passed to a procedure by using pass-by-value or pass-by-refere
+nce.
+ Explain the two methods and highlight the difference.
+ Using the scenario above, give an example of each to illustrate the difference.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Besides car accessories, Carrie Car also sells car insurance.
+ Customers can insure their car using one of two methods: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Method A: by using the Internet or 
+\end_layout
+
+\begin_layout Itemize
+Method B: by using the telephone to talk to a sales representative.
+\end_layout
+
+\begin_layout Enumerate
+For method A, describe how the car registration could be validated.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Enumerate
+For method B, describe how the car registration could be verified.
+\begin_inset space \hfill{}
+\end_inset
+
+ [1]
+\end_layout
+
+\begin_layout Enumerate
+Explain the difference between data validation and data verification.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The rules that are used when deciding whether to offer insurance to customers
+ and whether to offer discounts are as follows: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+If the customer has been refused insurance by another company and their
+ car is over 10 years old then insurance is refused.
+ 
+\end_layout
+
+\begin_layout Itemize
+If the customer has been refused insurance by another company and their
+ car is not more than 10 years old then insurance without any discount is
+ available.
+ 
+\end_layout
+
+\begin_layout Itemize
+If the customer has not been refused insurance by another company and their
+ car is over 10 years old then insurance without any discount is available.
+ 
+\end_layout
+
+\begin_layout Itemize
+If the customer has not been refused insurance by another company and their
+ car is less than 10 years old and they have made not more than three claims
+ previously then insurance with a discount is available.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Create a decision table showing all the possible outcomes and results.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Simplify your decision table by removing redundancies.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[7]
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Enumerate
 The elements of an array are numbered 0 to MAX.
  It is wished to copy all the data items stored in that part of the array
  between START and FINISH to a different position in the array, the item
  at START moving to NEWSTART.
- Describe in detail an algorithm to accomplish this.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Describe in detail an algorithm to accomplish this.
  You may assume that no items will be moved beyond the range of the array,
  but remember that the copying may be in either direction, and that the
  new position may overlap the old.
- [5]
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[5]
 \end_layout
 
+\end_deeper
 \begin_layout Section
 9597 ALVL 201X TEMPLATE
 \end_layout
@@ -4456,17 +4523,6 @@ status open
 \noindent
 \align center
 <INSERT_IMAGE_HERE>
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename static/img/9597-SPECIMENT-P2-Q6.png
-	width 50page%
-
-\end_inset
-
-
 \end_layout
 
 \end_deeper
