@@ -6400,6 +6400,8 @@ ListToSort
 \end_layout
 
 \begin_layout Standard
+\noindent
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="18" columns="5">
 <features tabularvalignment="middle">
@@ -6413,6 +6415,8 @@ ListToSort
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Call number
 \end_layout
 
@@ -6422,6 +6426,8 @@ Call number
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 S
 \end_layout
 
@@ -6431,6 +6437,8 @@ S
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 E
 \end_layout
 
@@ -6440,6 +6448,8 @@ E
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 M
 \end_layout
 
@@ -6449,6 +6459,8 @@ M
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 List returned
 \end_layout
 
