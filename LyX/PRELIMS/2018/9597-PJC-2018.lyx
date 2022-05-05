@@ -12530,12 +12530,56 @@ Draw a decision table and simplify it by removing redundancies.
 \end_deeper
 \begin_layout Enumerate
 The following list of numbers is to be sorted in ascending order.
- 98, 12, 23, 8, 74, 30, 62 (a) Show the list of numbers after each pass
- by performing (i) a bubble sort, [3] (ii) an insertion sort.
- [3] (b) By comparing how the bubble and insertion sort work, explain which
- one is a faster sort.
+ 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+
+\family typewriter
+98, 12, 23, 8, 74, 30, 62 
+\end_layout
+
+\begin_layout Enumerate
+Show the list of numbers 
+\series bold
+after each pass
+\series default
+ by performing
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+a bubble sort, 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+an insertion sort.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+By comparing how the bubble and insertion sort work, explain which one is
+ a faster sort.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\end_deeper
 \begin_layout Section
 9597 ALVL 201X TEMPLATE
 \end_layout
