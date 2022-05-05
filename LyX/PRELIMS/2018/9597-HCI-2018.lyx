@@ -188,63 +188,54 @@ status open
 
 \family typewriter
 ..............................
- 
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
 ..............................
- 
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
 ..............................
- 
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
 ..............................
- 
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
 ..................T...........
- 
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
 ..............................
- 
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
 ...T..........................
- 
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
 ..............................
- 
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
 ..............................
- 
 \end_layout
 
 \begin_layout Plain Layout
@@ -827,18 +818,21 @@ status open
 
 \family typewriter
 ..............................
+ 
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
 ..................T...........
+ 
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
 ..............................
+ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -887,356 +881,86 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
+..............................
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+..............................
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+...............T..............
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+..............................
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+.........................T....
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+...X..........................
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+..............................
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+1.
+\end_layout
+
+\end_inset
+
+ Initialize the two check digits by 
+\family typewriter
+..............................
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+2.
+\end_layout
+
+\end_inset
+
+ Move the four initial characters to the end of the string (e.g.
  
+\family typewriter
+..............................
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
 
-\family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- 
+\begin_layout Plain Layout
+3.
 \end_layout
 
-\begin_layout Plain Layout
-
 \family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- T .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- T .
- .
- .
- .
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-.
- .
- .
- X .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-.
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- .
- 
+..............................
 \end_layout
 
 \end_inset
@@ -3022,7 +2746,7 @@ A local area network can be set up as either client-server or peer-to-peer.
 
 \begin_deeper
 \begin_layout Enumerate
-State where data are stored on a client-server network and why? 
+State where data are stored on a client-server network and why?
 \begin_inset space \hfill{}
 \end_inset
 
@@ -3052,37 +2776,32 @@ In your opinion, what is the key benefit of a client-server network over
 In your opinion, what is the main drawback of a client-server network compared
  to a peer-to-peer network.
  Justify.
+ 
 \begin_inset space \hfill{}
 \end_inset
 
- [2]
+[2]
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 A 60 Megabyte file is transferred over a network to a printer in 10 seconds.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-Calculate the transfer rate, in kilobytes per second, used to transfer this
- file.
+ Calculate the transfer rate, in kilobytes per second, used to transfer
+ this file.
  Show all of your working.
- [1 MB = 1024 KB]
+ [1 MB = 1024 KB] 
 \begin_inset space \hfill{}
 \end_inset
 
- [2]
+[2]
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
-Explain how DHCP operates in a network?
+Explain how DHCP operates in a network? 
 \begin_inset space \hfill{}
 \end_inset
 
- [3]
+[3]
 \end_layout
 
 \begin_layout Enumerate
@@ -3092,7 +2811,7 @@ Switches and routers are both connecting devices.
 
 \begin_deeper
 \begin_layout Enumerate
-What are the purposes of having connecting device in a network?
+What are the purposes of having connecting device in a network? 
 \begin_inset space \hfill{}
 \end_inset
 
@@ -3138,21 +2857,21 @@ What are the strengths and weaknesses of a voice-user interface in comparison
 \begin_inset space \hfill{}
 \end_inset
 
-[4]
+ [4]
 \end_layout
 
 \begin_layout Enumerate
 One of the 8 golden rules for interface design is the element of consistency.
- 
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
 Explain the importance of consistency in designing a user interface.
+ 
 \begin_inset space \hfill{}
 \end_inset
 
- [4]
+[4]
 \end_layout
 
 \begin_layout Enumerate
@@ -3169,7 +2888,6 @@ Voice User interfaces gaining popularity with the readily availablity of
  devices like Echo and iphone.
  What do you think are some of the key design elements that are vital to
  an effective user experience when using such devices? Explain your answers.
- 
 \begin_inset space \hfill{}
 \end_inset
 
@@ -3200,7 +2918,7 @@ Explain what is meant by the following terms and give an example for each
 
 \begin_deeper
 \begin_layout Enumerate
-Candidate key
+Candidate key 
 \begin_inset space \hfill{}
 \end_inset
 
@@ -3208,11 +2926,11 @@ Candidate key
 \end_layout
 
 \begin_layout Enumerate
-Secondary key
+Secondary key 
 \begin_inset space \hfill{}
 \end_inset
 
- [2]
+[2]
 \end_layout
 
 \begin_layout Enumerate
@@ -3228,7 +2946,6 @@ Foreign key
 The school’s Robotics club is looking at designing a relational database
  to keep track of members participation and achievements.
  Proposed a relational database design for this purpose.
- 
 \end_layout
 
 \begin_deeper
@@ -3239,11 +2956,11 @@ Give the table descriptions in shorthand notations.
 \begin_inset space \hfill{}
 \end_inset
 
- [6]
+[6]
 \end_layout
 
 \begin_layout Enumerate
-Draw the entity-relationship model for your design.
+(ii) Draw the entity-relationship model for your design.
  
 \begin_inset space \hfill{}
 \end_inset
@@ -3257,12 +2974,16 @@ Draw the entity-relationship model for your design.
 An apartment block in a city consists of a large number of apartments.
  Each of the residents of the apartments has their information stored in
  a file.
- The records in the file are to be sorted into alphabetical order of the
- resident’s name.
  
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+The records in the file are to be sorted into alphabetical order of the
+ resident’s name.
+ 
+\end_layout
+
 \begin_layout Enumerate
 Using the following list of names as an example, show how the records can
  be sorted into alphabetical order using an insertion sort.
@@ -3271,11 +2992,11 @@ Using the following list of names as an example, show how the records can
 
 \begin_deeper
 \begin_layout Standard
-GRA, CHR, DAV, SAR, TOM, KAT 
+GRA, CHR, DAV, SAR, TOM, KAT
 \begin_inset space \hfill{}
 \end_inset
 
-[4] 
+ [4]
 \end_layout
 
 \end_deeper
@@ -3286,27 +3007,25 @@ Residents sometimes make requests for maintenance on their apartments.
  Each request is stored in a linked list in order of priorities.
  Jobs with equal priority are stored in order of the date that they have
  been submitted.
- Describe an algorithm to insert a new job into the list.
- 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Describe an algorithm to insert a new job into the list.
 \begin_inset space \hfill{}
 \end_inset
 
-[6] 
+ [6]
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 \begin_inset ERT
 status open
 
-\begin_layout Plain Layout
 
 {}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -3317,7 +3036,14 @@ Explain the difference between an iterative solution and a recursive solution
 \begin_inset space \hfill{}
 \end_inset
 
-[2]
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Explain the difference between an iterative solution and a recursive solution
+ to a problem.
+ [2]
 \end_layout
 
 \begin_layout Enumerate
@@ -3334,11 +3060,7 @@ OUT
 \family typewriter
 x DIV y
 \family default
- gives the integral part of the quotient when 
-\family typewriter
-x
-\family default
- is divided by 
+ gives the integral part of the quotient when x is divided by 
 \family typewriter
 y
 \family default
@@ -3347,6 +3069,7 @@ y
 x MOD y
 \family default
  gives the remainder.
+ 
 \end_layout
 
 \begin_deeper
@@ -3390,7 +3113,7 @@ declare integers a, b
 \begin_inset space \qquad{}
 \end_inset
 
-input a, b 
+input a, b
 \end_layout
 
 \begin_layout Plain Layout
@@ -3399,7 +3122,7 @@ input a, b
 \begin_inset space \qquad{}
 \end_inset
 
-OUT (a, b)
+OUT (a, b) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -3414,20 +3137,13 @@ print a, b
 \begin_layout Plain Layout
 
 \family typewriter
-End RADIX_CONVERT 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace bigskip
-\end_inset
-
-
+End RADIX_CONVERT
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-Procedure OUT (x, y)
+Procedure OUT (x, y) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -3436,7 +3152,7 @@ Procedure OUT (x, y)
 \begin_inset space \qquad{}
 \end_inset
 
-declare integers a, b 
+declare integers a, b
 \end_layout
 
 \begin_layout Plain Layout
@@ -3463,7 +3179,7 @@ b = x MOD y
 \begin_inset space \qquad{}
 \end_inset
 
-if a > 0 then OUT (a, y) 
+if a > 0 then OUT (a, y)
 \end_layout
 
 \begin_layout Plain Layout
@@ -3478,7 +3194,7 @@ print (b)
 \begin_layout Plain Layout
 
 \family typewriter
-end OUT 
+end OUT
 \end_layout
 
 \end_inset
@@ -3514,7 +3230,7 @@ b
 \begin_inset space \hfill{}
 \end_inset
 
-[4]
+ [4]
 \end_layout
 
 \begin_layout Enumerate
@@ -3535,7 +3251,7 @@ RADIX_CONVERT
 \begin_inset space \hfill{}
 \end_inset
 
-[2]
+ [2]
 \end_layout
 
 \end_deeper
@@ -3556,14 +3272,16 @@ Carrie Car, a car accessories shop wants to sell its products through the
 \begin_inset Tabular
 <lyxtabular version="3" rows="12" columns="3">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
 <column alignment="left" valignment="top">
 <column alignment="center" valignment="top">
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Activity
 \end_layout
 
@@ -3573,6 +3291,8 @@ Activity
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Description
 \end_layout
 
@@ -3582,14 +3302,16 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-Weeks to complete 
+
+\series bold
+Weeks to complete
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3618,7 +3340,7 @@ Write requirement specification
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3647,7 +3369,7 @@ Produce program design
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3676,7 +3398,7 @@ Write module code
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3705,7 +3427,7 @@ Module testing
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3734,7 +3456,7 @@ Integration testing
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3763,7 +3485,7 @@ Alpha testing
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3776,7 +3498,7 @@ G
 \begin_inset Text
 
 \begin_layout Plain Layout
-Install software and acceptance testing
+Install software and acceptance testing 
 \end_layout
 
 \end_inset
@@ -3792,7 +3514,7 @@ Install software and acceptance testing
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3821,7 +3543,7 @@ Write end user training guide
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3834,7 +3556,7 @@ J
 \begin_inset Text
 
 \begin_layout Plain Layout
-Write technical documentation
+Write technical documentation 
 \end_layout
 
 \end_inset
@@ -3850,7 +3572,7 @@ Write technical documentation
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3879,11 +3601,20 @@ End user training
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sign off final system 
 \end_layout
 
 \end_inset
@@ -3917,23 +3648,16 @@ Sign off final system
 \begin_layout Enumerate
 The project manager decides to construct a Program Evaluation Review Technique
  (PERT) chart from this data.
- 
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-\noindent
-\align center
-<INSERT_IMAGE_HERE>
-\end_layout
-
 \begin_layout Enumerate
 Complete the PERT chart.
  
 \begin_inset space \hfill{}
 \end_inset
 
-[3]
+ [3]
 \end_layout
 
 \begin_layout Enumerate
@@ -3942,7 +3666,7 @@ State the critical path and elapsed time for this project.
 \begin_inset space \hfill{}
 \end_inset
 
-[2]
+ [2]
 \end_layout
 
 \begin_layout Enumerate
@@ -3964,9 +3688,9 @@ The systems analyst from the team gathered the following requirements:
 A customer can place an order either by telephone or via the internet 
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 The order will be placed in a file to be dealt with by the warehouse staff
- 
 \end_layout
 
 \begin_layout Itemize
@@ -3975,7 +3699,7 @@ An email acknowledgement of the order will be sent to the customer
 
 \begin_layout Itemize
 After completion of the order the customer details will be stored in a customer
- file 
+ file
 \end_layout
 
 \begin_layout Standard
@@ -3985,7 +3709,7 @@ List details of the data stores required, and draw the data flow diagram
 \begin_inset space \hfill{}
 \end_inset
 
-[6] 
+[6]
 \end_layout
 
 \end_deeper
@@ -4025,7 +3749,6 @@ Method A: by using the Internet or
 
 \begin_layout Itemize
 Method B: by using the telephone to talk to a sales representative.
- 
 \end_layout
 
 \begin_layout Enumerate
@@ -4039,11 +3762,10 @@ For method A, describe how the car registration could be validated.
 
 \begin_layout Enumerate
 For method B, describe how the car registration could be verified.
- 
 \begin_inset space \hfill{}
 \end_inset
 
-[1]
+ [1]
 \end_layout
 
 \begin_layout Enumerate
@@ -4065,12 +3787,14 @@ The rules that are used when deciding whether to offer insurance to customers
 \begin_layout Itemize
 If the customer has been refused insurance by another company and their
  car is over 10 years old then insurance is refused.
+ 
 \end_layout
 
 \begin_layout Itemize
 If the customer has been refused insurance by another company and their
  car is not more than 10 years old then insurance without any discount is
  available.
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -4083,18 +3807,21 @@ If the customer has not been refused insurance by another company and their
 If the customer has not been refused insurance by another company and their
  car is less than 10 years old and they have made not more than three claims
  previously then insurance with a discount is available.
+ 
 \end_layout
 
 \begin_layout Enumerate
 Create a decision table showing all the possible outcomes and results.
+ 
 \end_layout
 
 \begin_layout Enumerate
 Simplify your decision table by removing redundancies.
+ 
 \begin_inset space \hfill{}
 \end_inset
 
- [7]
+[7]
 \end_layout
 
 \end_deeper
@@ -4104,6 +3831,7 @@ The elements of an array are numbered 0 to MAX.
  It is wished to copy all the data items stored in that part of the array
  between START and FINISH to a different position in the array, the item
  at START moving to NEWSTART.
+ 
 \end_layout
 
 \begin_deeper

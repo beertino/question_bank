@@ -90,9 +90,16 @@ Paper 1
 \end_layout
 
 \begin_layout Enumerate
-Accumulative Season Scores For the first task, you are required to read
- the text file “T1_gamescore.txt” which contains the accumulative scores
- of a group of players from an online game over 12 seasons.
+
+\series bold
+Accumulative Season Scores 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+For the first task, you are required to read the text file “T1_gamescore.txt”
+ which contains the accumulative scores of a group of players from an online
+ game over 12 seasons.
  The format of a line of the text file is as follow: <player1_name>,<class_1>:<s
 s1>,<ss2>,<ss3>,<ss4>,<ss5>,<ss6>,< ss7>,<ss8>,<ss9>,<ss10>,<ss11>,<ss12>
 \backslash
@@ -101,7 +108,15 @@ n E.g.
 2,130725 The above line represents the player Rufus plays the class priest
  and his 12 accumulative seasonal scores are 4255, 17366, 22616, 31889,
  49634, 58847, 78112, 86631, 94924, 106955, 125372 and 130725 respectively.
- Task 1.1 – Read the file Implement the procedure readfile.
+ 
+\end_layout
+
+\begin_layout Standard
+Task 1.1 – Read the file 
+\end_layout
+
+\begin_layout Standard
+Implement the procedure readfile.
  It reads the file “T1_gamescore.txt” and returns a list of lists as below.
  >>> results = readfile() >>> results [['Rufus', 'priest', 4255, 13111,
  5250, 9273, 17745, 9213, 19265, 8519, 8293, 12031, 18417, 5353], ['Ione
@@ -110,18 +125,49 @@ n E.g.
  16084, 14960, 11879, 16545, 10247, 5617, 7345, 0]] Take note that the returned
  scores in the lists are not accumulative scores but the actual season scores.
  It can be computed by: n th season score = nth – (n – 1)th accumulative
- season score Evidence 1 Program code of procedure readfile.
- [6] Page 3 of 14 2018 Y6 H2 Computing Prelim Paper 1 Task 1.2 – Count Class
- Using the data from “T1_gamescore.txt”, implement the function count_class.
+ season score 
+\end_layout
+
+\begin_layout Standard
+Evidence 1 
+\end_layout
+
+\begin_layout Standard
+Program code of procedure readfile.
+ [6] 
+\end_layout
+
+\begin_layout Standard
+Task 1.2 – Count Class 
+\end_layout
+
+\begin_layout Standard
+Using the data from “T1_gamescore.txt”, implement the function count_class.
  It takes in the string clss as parameter and returns an integer which contains
  the number of players who play the class indicated by clss.
  For example: >>> count_class("warrior") 57 This means that the number of
  players who play the class warrior is 57.
  Evidence 2 Program code of function count_class.
- [2] Evidence 3 Screenshot of the output of the following code.
+ [2]
+\end_layout
+
+\begin_layout Standard
+Evidence 3 
+\end_layout
+
+\begin_layout Standard
+Screenshot of the output of the following code.
  [1] for clss in ["warrior", "mage", "priest"]: print("Number of " + clss
- + ":" + str(count_class(clss))) Task 1.3 – Top Class by Season Using the
- data from “T1_gamescore.txt”, implement the function top_class_by_season.
+ + ":" + str(count_class(clss))) 
+\end_layout
+
+\begin_layout Standard
+Task 1.3 – Top Class by Season 
+\end_layout
+
+\begin_layout Standard
+Using the data from “T1_gamescore.txt”, implement the function top_class_by_seaso
+n.
  It takes in the integer season as parameter and returns a string which
  contains the class which holds the highest average score of the season.
  (Code with the assumption that you do not know how many and what the classes
@@ -132,9 +178,16 @@ n E.g.
  top_class_by_season.
  [6] Evidence 5 Screenshot of the output of the following code.
  [1] for i in range(1, 13): print("Top class in season " + str(i) + ":")
- print(top_class_by_season(i)) Page 4 of 14 2018 Y6 H2 Computing Prelim
- Paper 1 Task 1.4 – Top n Players by Season Using the data from “T1_gamescore.txt”
-, implement the function top_n_players_by_season.
+ print(top_class_by_season(i)) 
+\end_layout
+
+\begin_layout Standard
+Task 1.4 – Top n Players by Season 
+\end_layout
+
+\begin_layout Standard
+Using the data from “T1_gamescore.txt”, implement the function top_n_players_by_s
+eason.
  It takes in the integers n and season as parameters and returns a list
  of strings which contains names of the top n players.
  >>> top_n_players_by_season(3, 2) ['bumpkintiger', 'diamondagile', 'milkshakess
@@ -142,16 +195,48 @@ ulky'] >>> top_n_players_by_season(10, 4) ['Carolann Kintner', 'lewdsterpub',
  'fabindustry', 'eggfun', 'fellradial', 'Grazyna Kitzman', 'chapteridentical',
  'chubbysourdough', 'palmears', 'leardfluttering'] Evidence 6 Program code
  of function top_n_players_by_season.
- [5] Evidence 7 Screenshot of the list of names of the top 20 players in
- season 9.
- [1] Task 1.5 – Stagnant Players Using the data from “T1_gamescore.txt”, implement
- the function find_stagnant_players which returns a list of strings which
- contains names of the players who did not play in at least 1 season.
- Evidence 8 Program code of function find_stagnant_players.
- [2] Evidence 9 Screenshot of the output of program.
- [1] Page 5 of 14 2018 Y6 H2 Computing Prelim Paper 1
+ [5] 
 \end_layout
 
+\begin_layout Standard
+Evidence 7 
+\end_layout
+
+\begin_layout Standard
+Screenshot of the list of names of the top 20 players in season 9.
+ [1] 
+\end_layout
+
+\begin_layout Standard
+Task 1.5 – Stagnant Players 
+\end_layout
+
+\begin_layout Standard
+Using the data from “T1_gamescore.txt”, implement the function find_stagnant_play
+ers which returns a list of strings which contains names of the players
+ who did not play in at least 1 season.
+ 
+\end_layout
+
+\begin_layout Standard
+Evidence 8 
+\end_layout
+
+\begin_layout Standard
+Program code of function find_stagnant_players.
+ [2] 
+\end_layout
+
+\begin_layout Standard
+Evidence 9 
+\end_layout
+
+\begin_layout Standard
+Screenshot of the output of program.
+ [1] 
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Health Workshops To promote healthy lifestyle, a local company decided to
  sponsor its 500 employees up to 3 health workshops of their choice.
