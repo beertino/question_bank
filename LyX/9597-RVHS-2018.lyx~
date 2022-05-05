@@ -97,202 +97,1335 @@ Accumulative Season Scores
 
 \begin_deeper
 \begin_layout Standard
-For the first task, you are required to read the text file “T1_gamescore.txt”
- which contains the accumulative scores of a group of players from an online
+For the first task, you are required to read the text file “
+\emph on
+T1_gamescore.txt
+\emph default
+” which contains the accumulative scores of a group of players from an online
  game over 12 seasons.
- The format of a line of the text file is as follow: <player1_name>,<class_1>:<s
-s1>,<ss2>,<ss3>,<ss4>,<ss5>,<ss6>,< ss7>,<ss8>,<ss9>,<ss10>,<ss11>,<ss12>
-\backslash
-n E.g.
- Rufus,priest:4255,17366,22616,31889,49634,58847,78112,86631,94 924,106955,12537
-2,130725 The above line represents the player Rufus plays the class priest
- and his 12 accumulative seasonal scores are 4255, 17366, 22616, 31889,
- 49634, 58847, 78112, 86631, 94924, 106955, 125372 and 130725 respectively.
  
 \end_layout
 
 \begin_layout Standard
+The format of a line of the text file is as follow: 
+\family typewriter
+<player1_name>,<class_1>:<ss1>,<ss2>,<ss3>,<ss4>,<ss5>,<ss6>,< ss7>,<ss8>,<ss9>,
+<ss10>,<ss11>,<ss12>
+\backslash
+n 
+\end_layout
+
+\begin_layout Standard
+E.g.
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Rufus,priest:4255,17366,22616,31889,49634,58847,78112,86631,94 924,106955,125372
+,130725 
+\end_layout
+
+\begin_layout Standard
+The above line represents the player 
+\family typewriter
+Rufus
+\family default
+ plays the class 
+\family typewriter
+priest
+\family default
+ and his 12 accumulative seasonal scores are 
+\family typewriter
+4255, 17366, 22616, 31889, 49634, 58847, 78112, 86631, 94924, 106955, 125372
+\family default
+ and 
+\family typewriter
+130725
+\family default
+ respectively.
+ 
+\end_layout
+
+\begin_layout Subsection*
 Task 1.1 – Read the file 
 \end_layout
 
 \begin_layout Standard
 Implement the procedure readfile.
  It reads the file “T1_gamescore.txt” and returns a list of lists as below.
- >>> results = readfile() >>> results [['Rufus', 'priest', 4255, 13111,
- 5250, 9273, 17745, 9213, 19265, 8519, 8293, 12031, 18417, 5353], ['Ione
- Wolfe', 'warrior', 2827, 17757, 3612, 6818, 11772, 9161, 4393, 10469, 10567,
- 15424, 7307, 10014],……,['Carola Tegeler', 'rogue', 6407, 14795, 0, 5004,
- 16084, 14960, 11879, 16545, 10247, 5617, 7345, 0]] Take note that the returned
- scores in the lists are not accumulative scores but the actual season scores.
- It can be computed by: n th season score = nth – (n – 1)th accumulative
- season score 
+ 
 \end_layout
 
 \begin_layout Standard
+\noindent
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> results = readfile() 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> results [['Rufus', 'priest', 4255, 13111, 5250, 9273, 17745, 9213, 19265,
+ 8519, 8293, 12031, 18417, 5353], ['Ione Wolfe', 'warrior', 2827, 17757,
+ 3612, 6818, 11772, 9161, 4393, 10469, 10567, 15424, 7307, 10014],……,['Carola
+ Tegeler', 'rogue', 6407, 14795, 0, 5004, 16084, 14960, 11879, 16545, 10247,
+ 5617, 7345, 0]] 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Take note that the returned scores in the lists are not accumulative scores
+ but the actual season scores.
+ It can be computed by: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n$
+\end_inset
+
+th season score = 
+\begin_inset Formula $n$
+\end_inset
+
+th – 
+\begin_inset Formula $(n-1)$
+\end_inset
+
+th accumulative season score 
+\end_layout
+
+\begin_layout Subsection*
 Evidence 1 
 \end_layout
 
 \begin_layout Standard
-Program code of procedure readfile.
- [6] 
+Program code of procedure 
+\family typewriter
+readfile
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6] 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection*
 Task 1.2 – Count Class 
 \end_layout
 
 \begin_layout Standard
-Using the data from “T1_gamescore.txt”, implement the function count_class.
- It takes in the string clss as parameter and returns an integer which contains
- the number of players who play the class indicated by clss.
- For example: >>> count_class("warrior") 57 This means that the number of
- players who play the class warrior is 57.
- Evidence 2 Program code of function count_class.
- [2]
+Using the data from “
+\emph on
+T1_gamescore.txt
+\emph default
+”, implement the function 
+\family typewriter
+count_class
+\family default
+.
+ It takes in the string 
+\family typewriter
+clss
+\family default
+ as parameter and returns an integer which contains the number of players
+ who play the class indicated by 
+\family typewriter
+clss
+\family default
+.
+ For example:
 \end_layout
 
 \begin_layout Standard
+\noindent
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> count_class("warrior") 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+57
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+This means that the number of players who play the class warrior is 57.
+ Evidence 2 
+\end_layout
+
+\begin_layout Standard
+Program code of function 
+\family typewriter
+count_class
+\family default
+.
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Subsection*
 Evidence 3 
 \end_layout
 
 \begin_layout Standard
 Screenshot of the output of the following code.
- [1] for clss in ["warrior", "mage", "priest"]: print("Number of " + clss
- + ":" + str(count_class(clss))) 
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+for clss in ["warrior", "mage", "priest"]: 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print("Number of " + clss + ":" + str(count_class(clss))) 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
 Task 1.3 – Top Class by Season 
 \end_layout
 
 \begin_layout Standard
-Using the data from “T1_gamescore.txt”, implement the function top_class_by_seaso
-n.
- It takes in the integer season as parameter and returns a string which
- contains the class which holds the highest average score of the season.
+Using the data from “
+\emph on
+T1_gamescore.txt
+\emph default
+”, implement the function 
+\family typewriter
+top_class_by_season
+\family default
+.
+ It takes in the integer 
+\family typewriter
+season
+\family default
+ as parameter and returns a string which contains the class which holds
+ the highest average score of the season.
  (Code with the assumption that you do not know how many and what the classes
- are available in this game.) The average score of the season of a class
- is calculated by summing up all the scores of the players who play the
- class divided by the total number of players who play the same class.
- >>> top_class_by_season (6) " priest" Evidence 4 Program code of function
- top_class_by_season.
- [6] Evidence 5 Screenshot of the output of the following code.
- [1] for i in range(1, 13): print("Top class in season " + str(i) + ":")
- print(top_class_by_season(i)) 
+ are available in this game.) 
 \end_layout
 
 \begin_layout Standard
+The average score of the season of a class is calculated by summing up all
+ the scores of the players who play the class divided by the total number
+ of players who play the same class.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> top_class_by_season (6) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+"priest" 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Evidence 4
+\end_layout
+
+\begin_layout Standard
+Program code of function 
+\family typewriter
+top_class_by_season
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 5 
+\end_layout
+
+\begin_layout Standard
+Screenshot of the output of the following code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+for i in range(1, 13): 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print("Top class in season " + str(i) + ":") 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print(top_class_by_season(i)) 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
 Task 1.4 – Top n Players by Season 
 \end_layout
 
 \begin_layout Standard
-Using the data from “T1_gamescore.txt”, implement the function top_n_players_by_s
-eason.
- It takes in the integers n and season as parameters and returns a list
- of strings which contains names of the top n players.
- >>> top_n_players_by_season(3, 2) ['bumpkintiger', 'diamondagile', 'milkshakess
-ulky'] >>> top_n_players_by_season(10, 4) ['Carolann Kintner', 'lewdsterpub',
- 'fabindustry', 'eggfun', 'fellradial', 'Grazyna Kitzman', 'chapteridentical',
- 'chubbysourdough', 'palmears', 'leardfluttering'] Evidence 6 Program code
- of function top_n_players_by_season.
- [5] 
+Using the data from “
+\emph on
+T1_gamescore.txt
+\emph default
+”, implement the function 
+\family typewriter
+top_n_players_by_season
+\family default
+.
+ It takes in the integers 
+\family typewriter
+n
+\family default
+ and season as parameters and returns a list of strings which contains names
+ of the top 
+\family typewriter
+n
+\family default
+ players.
+ 
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> top_n_players_by_season(3, 2) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+['bumpkintiger', 'diamondagile', 'milkshakessulky'] 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> top_n_players_by_season(10, 4) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+['Carolann Kintner', 'lewdsterpub', 'fabindustry', 'eggfun', 'fellradial',
+ 'Grazyna Kitzman', 'chapteridentical', 'chubbysourdough', 'palmears', 'leardflu
+ttering'] 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Evidence 6 
+\end_layout
+
+\begin_layout Standard
+Program code of function 
+\family typewriter
+top_n_players_by_season
+\family default
+.
+\begin_inset space \hfill{}
+\end_inset
+
+ [5]
+\end_layout
+
+\begin_layout Subsection*
 Evidence 7 
 \end_layout
 
 \begin_layout Standard
 Screenshot of the list of names of the top 20 players in season 9.
- [1] 
+\begin_inset space \hfill{}
+\end_inset
+
+ [1]
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection*
 Task 1.5 – Stagnant Players 
 \end_layout
 
 \begin_layout Standard
-Using the data from “T1_gamescore.txt”, implement the function find_stagnant_play
-ers which returns a list of strings which contains names of the players
- who did not play in at least 1 season.
+Using the data from “
+\emph on
+T1_gamescore.txt
+\emph default
+”, implement the function 
+\family typewriter
+find_stagnant_players
+\family default
+ which returns a list of strings which contains names of the players who
+ did not play in at least 1 season.
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection*
 Evidence 8 
 \end_layout
 
 \begin_layout Standard
-Program code of function find_stagnant_players.
- [2] 
+Program code of function 
+\family typewriter
+find_stagnant_players
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection*
 Evidence 9 
 \end_layout
 
 \begin_layout Standard
 Screenshot of the output of program.
- [1] 
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-Health Workshops To promote healthy lifestyle, a local company decided to
- sponsor its 500 employees up to 3 health workshops of their choice.
+Health Workshops 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+To promote healthy lifestyle, a local company decided to sponsor its 500
+ employees up to 3 health workshops of their choice.
  The company decides to maintain this piece of information using a binary
- search tree (BST) with each node contains a string called employeeID which
- is used as the key of the BST, and an array structure called workshops
+ search tree (BST) with each node contains a string called 
+\family typewriter
+employeeID
+\family default
+ which is used as the key of the BST, and an array structure called workshops
  to store the name(s) and cost(s) of the health workshop(s) chosen by the
  employee.
- Task 2.1 Implement the BST structure and perform insertion using the 8-character
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 2.1
+\end_layout
+
+\begin_layout Standard
+Implement the BST structure and perform insertion using the 8-character
  employee ID as key.
  During the insertion process, the employee’s respective health workshop(s)
  information must also be stored in the node.
  The information of the employees and their chosen workshops can be found
- in “T2_healthworkshops.txt” and its format is as follow: <employeeID>-[<workshop
-Name1>,<cost1>][<workshopName2>,<cost2>] For example: 5175590R-[Yoga With
- Yoyo,60][Decoding The Nutrition Label,55] This means that the employee
- with employeeID 5175590R has chosen “Yoga With Yoyo” and “Decoding The
- Nutrition Label” workshops and the cost of these 2 workshops are $60 and
- $55 respectively.
- The BST structure must be able to handle up to 500 nodes.
+ in “
+\emph on
+T2_healthworkshops.txt
+\emph default
+” and its format is as follow: 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+<employeeID>-[<workshopName1>,<cost1> [<workshopName2>,<cost2>] 
+\end_layout
+
+\begin_layout Standard
+For example: 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+5175590R-[Yoga With Yoyo,60][Decoding The Nutrition Label,55] 
+\end_layout
+
+\begin_layout Standard
+This means that the employee with 
+\family typewriter
+employeeID
+\family default
+ 5175590R has chosen “Yoga With Yoyo” and “Decoding The Nutrition Label”
+ workshops and the cost of these 2 workshops are $60 and $55 respectively.
+ 
+\end_layout
+
+\begin_layout Standard
+The BST structure must be able to handle up to 500 nodes.
  You need to implement the following functions.
- Functions Description Marks createBST() This function creates a BST, reads
- the file “T2_workshops.txt”, perform insertion of data and returns a BST
- structure.
- 15 inOrderTraversal() This procedure outputs all employee IDs from the
- BST in-order.
- 2 findWorkshopsById (employeeID) This function returns a list of names
- of all the workshops chosen by the employee with employee ID as employeeID.
- 3 findIdsByWorkshop (workshopName) This function returns a list of employee
- IDs of employees who have chosen the workshop indicated by the string workshopN
-ame.
- 2 findTotalCost() This function returns the cost of all the workshops chosen
- by all the employees in the company as an integer.
- 2 Evidence 10 Program code for Task 2.1.
- [24] Evidence 11 Page 6 of 14 2018 Y6 H2 Computing Prelim Paper 1 Screenshot
- the output of the following code.
- [1] def test1(): b1 = createBST() print(b1.findTotalCost()) print(b1.findWorkshop
-sById("1001278B")) print(b1.findWorkshopsById("1019563R")) print(b1.findWorkshopsB
-yId("3161202Y")) print(b1.findWorkshopsById("5095845H")) print(b1.findWorkshopsByI
-d("9965997Y")) print(b1.findWorkshopsById("9998622F")) print(b1.findIdsByWorkshop(
-'Diabetes 101')) print(b1.findIdsByWorkshop('The Truth About Carbs')) print(b1.fin
-dIdsByWorkshop('Nutrition Nuts And Bolts')) print(b1.findIdsByWorkshop('Yoga
- With Yoyo') test1() Task 2.2 Write a menu which has the following options.
- 1) Read file to generate BST 2) Find workshop(s) by user ID.
- 3) Find user ID(s) by workshop.
- 4) Display users in order.
- 5) Total cost.
- 6) Quit.
- The validation of the employee ID follows the rules below: • The last of
- employee ID is the check code.
- • The algorithm to generate the check code is as follows: o Obtain the
- weighted sum of the 7 digits using the weights <2,7,6,5,4,3,2> o Find the
- remainder of the weighted sum when divided by 17 o Look the check code
- up in the table below.
- 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 A B C D E F G H J M N Q R S T
- Y Z Below is an example of how the menu works.
+ 
+\end_layout
+
+\begin_layout Itemize
+Functions
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\family typewriter
+createBST()
+\family default
+ This function creates a BST, reads the file “
+\emph on
+T2_workshops.txt
+\emph default
+”, perform insertion of data and returns a BST structure.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[5]
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+inOrderTraversal()
+\family default
+ This procedure outputs all employee IDs from the BST in-order.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+findWorkshopsById (employeeID)
+\family default
+ This function returns a list of names of all the workshops chosen by the
+ employee with employee ID as 
+\family typewriter
+employeeID
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+findIdsByWorkshop (workshopName)
+\family default
+ This function returns a list of employee IDs of employees who have chosen
+ the workshop indicated by the string 
+\family typewriter
+workshopName
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+findTotalCost()
+\family default
+ This function returns the cost of all the workshops chosen by all the employees
+ in the company as an integer.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Evidence 10
+\end_layout
+
+\begin_layout Standard
+Program code for Task 2.1.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[24]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 11 
+\end_layout
+
+\begin_layout Standard
+Screenshot the output of the following code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+def test1(): 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+b1 = createBST() 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print(b1.findTotalCost()) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print(b1.findWorkshopsById("1001278B")) 
+\begin_inset space \qquad{}
+\end_inset
+
+print(b1.findWorkshopsById("1019563R")) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print(b1.findWorkshopsById("3161202Y"))
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print(b1.findWorkshopsById("5095845H"))
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print(b1.findWorkshopsById("9965997Y"))
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print(b1.findWorkshopsById("9998622F")) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print(b1.findIdsByWorkshop('Diabetes 101')) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print(b1.findIdsByWorkshop('The Truth About Carbs')) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print(b1.findIdsByWorkshop('Nutrition Nuts And Bolts'))
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print(b1.findIdsByWorkshop('Yoga With Yoyo')
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+test1() 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Task 2.2 
+\end_layout
+
+\begin_layout Standard
+Write a menu which has the following options.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+1) Read file to generate BST 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+2) Find workshop(s) by user ID.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+3) Find user ID(s) by workshop.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+4) Display users in order.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+5) Total cost.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+6) Quit.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The validation of the employee ID follows the rules below: 
+\end_layout
+
+\begin_layout Itemize
+The last of employee ID is the check code.
+ 
+\end_layout
+
+\begin_layout Itemize
+The algorithm to generate the check code is as follows:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Obtain the weighted sum of the 7 digits using the weights <2,7,6,5,4,3,2>
+ 
+\end_layout
+
+\begin_layout Itemize
+Find the remainder of the weighted sum when divided by 17 
+\end_layout
+
+\begin_layout Itemize
+Look the check code up in the table below.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="17">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 A B C D E F G H J M N Q R S T Y
+ Z Below is an example of how the menu works.
  >>>menu() 1) Read file to generate BST 2) Find workshop(s) by user ID.
  3) Find user ID(s) by workshop.
  4) Display users in order.
@@ -333,11 +1466,20 @@ dIdsByWorkshop('Nutrition Nuts And Bolts')) print(b1.findIdsByWorkshop('Yoga
  5) Total cost.
  6) Quit.
  Choose an action: 6 Quit.
- Evidence 12 Page 8 of 14 2018 Y6 H2 Computing Prelim Paper 1 Program code
- of menu with full input validations.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Evidence 12 
+\end_layout
+
+\begin_layout Standard
+Program code of menu with full input validations.
  [10] 
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
 Cards Party A deck of French playing cards is the most common deck of playing
  cards used today.

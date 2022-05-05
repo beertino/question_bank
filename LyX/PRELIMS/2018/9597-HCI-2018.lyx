@@ -920,19 +920,44 @@ status open
 ..............................
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
 
+\begin_layout Plain Layout
+1.
+\end_layout
+
+\end_inset
+
+ Initialize the two check digits by 
 \family typewriter
 ..............................
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
 
+\begin_layout Plain Layout
+2.
+\end_layout
+
+\end_inset
+
+ Move the four initial characters to the end of the string (e.g.
+ 
 \family typewriter
 ..............................
 \end_layout
 
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
 \begin_layout Plain Layout
+3.
+\end_layout
 
 \family typewriter
 ..............................
@@ -2999,11 +3024,16 @@ Describe an algorithm to insert a new job into the list.
 \begin_inset ERT
 status open
 
-\begin_layout Plain Layout
 
 {}
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Explain the difference between an iterative solution and a recursive solution
+ to a problem.
+ 
+\begin_inset space \hfill{}
 \end_inset
 
 
@@ -3589,6 +3619,15 @@ Sign off final system
 
 \end_inset
 </cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sign off final system
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -3649,6 +3688,7 @@ The systems analyst from the team gathered the following requirements:
 A customer can place an order either by telephone or via the internet 
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 The order will be placed in a file to be dealt with by the warehouse staff
 \end_layout
