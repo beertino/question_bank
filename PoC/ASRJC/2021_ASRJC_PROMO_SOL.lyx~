@@ -1,0 +1,3812 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1.8cm,bmargin=4cm,lmargin=1.5cm,rmargin=2cm}
+\usepackage{enumitem}
+\usepackage{amstext}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{graphicx}
+\doublespacing
+
+
+\usepackage{enumitem}
+\setenumerate[1]{label=\textbf{\arabic*}}
+\setenumerate[2]{label=\textbf{(\alph*)}}
+\setenumerate[3]{label=\textbf{(\roman*)}}
+\setlist[enumerate]{align=right}
+
+\setcounter{page}{2}
+
+%for upright integrals
+\usepackage[integrals]{wasysym}
+
+%to be used in conjunction with fancyfoot for last page
+\usepackage{zref-totpages}
+
+%fancyhrd settings
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancypagestyle{laststyle}
+{
+   \fancyhf{}
+   \chead{\thepage}
+   \fancyfoot[L]{\copyright NJC }
+   \fancyfoot[R]{\textbf{END}} %Put \thispagestyle{laststyle} in the last page
+}
+
+%%centering page number
+\chead{\thepage}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%%footer settings, different footer for ODD and EVEN pages, also for the LASTPAGE
+\fancyfoot[LO]{\copyright NJC\hfill \textbf{[Turn Over}}
+\fancyfoot[LE]{\copyright NJC }
+
+%%shameless self-plug BRW
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Enumerate
+
+\backslash
+[
+\backslash
+begin{align} & {{y}^{2}}=
+\backslash
+sin x+
+\backslash
+cos x 
+\backslash
+
+\backslash
+ & 2y
+\backslash
+frac{
+\backslash
+text{d}y}{
+\backslash
+text{d}x}=
+\backslash
+cos x-
+\backslash
+sin x 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}
+\backslash
+] 
+\backslash
+[2{{
+\backslash
+left( 
+\backslash
+frac{
+\backslash
+text{d}y}{
+\backslash
+text{d}x} 
+\backslash
+right)}^{2}}+2y
+\backslash
+frac{{{
+\backslash
+text{d}}^{2}}y}{
+\backslash
+text{d}{{x}^{2}}}=-
+\backslash
+sin x-
+\backslash
+cos x
+\backslash
+] 
+\backslash
+[2{{
+\backslash
+left( 
+\backslash
+frac{
+\backslash
+text{d}y}{
+\backslash
+text{d}x} 
+\backslash
+right)}^{2}}+2y
+\backslash
+frac{{{
+\backslash
+text{d}}^{2}}y}{
+\backslash
+text{d}{{x}^{2}}}=-{{y}^{2}}
+\backslash
+] 
+\backslash
+[4
+\backslash
+frac{
+\backslash
+text{d}y}{
+\backslash
+text{d}x}
+\backslash
+frac{{{
+\backslash
+text{d}}^{2}}y}{
+\backslash
+text{d}{{x}^{2}}}+2y
+\backslash
+frac{{{
+\backslash
+text{d}}^{3}}y}{
+\backslash
+text{d}{{x}^{3}}}+2
+\backslash
+frac{
+\backslash
+text{d}y}{
+\backslash
+text{d}x}
+\backslash
+frac{{{
+\backslash
+text{d}}^{2}}y}{
+\backslash
+text{d}{{x}^{2}}}=-2y
+\backslash
+frac{
+\backslash
+text{d}y}{
+\backslash
+text{d}x}
+\backslash
+] 
+\backslash
+[y
+\backslash
+frac{{{
+\backslash
+text{d}}^{3}}y}{
+\backslash
+text{d}{{x}^{3}}}+3
+\backslash
+frac{
+\backslash
+text{d}y}{
+\backslash
+text{d}x}
+\backslash
+frac{{{
+\backslash
+text{d}}^{2}}y}{
+\backslash
+text{d}{{x}^{2}}}+y
+\backslash
+frac{
+\backslash
+text{d}y}{
+\backslash
+text{d}x}=0
+\backslash
+] A = 3 
+\end_layout
+
+\begin_layout Enumerate
+
+\backslash
+[
+\backslash
+begin{align} & y=
+\backslash
+text{f}
+\backslash
+left( x 
+\backslash
+right)=
+\backslash
+frac{3}{{{x}^{2}}+2} 
+\backslash
+
+\backslash
+ & 
+\backslash
+text{ }
+\backslash
+downarrow 
+\backslash
+text{after }A
+\backslash
+left( 
+\backslash
+text{replace }x
+\backslash
+text{ by }x+1 
+\backslash
+right) 
+\backslash
+
+\backslash
+ & y=
+\backslash
+text{f}
+\backslash
+left( x+1 
+\backslash
+right) 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}
+\backslash
+] 
+\backslash
+[
+\backslash
+begin{align} & 
+\backslash
+text{ }
+\backslash
+downarrow 
+\backslash
+text{after }B
+\backslash
+left( 
+\backslash
+text{replace }x
+\backslash
+text{ by }3x 
+\backslash
+right) 
+\backslash
+
+\backslash
+ & y=
+\backslash
+text{f}
+\backslash
+left( 3x+1 
+\backslash
+right) 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}
+\backslash
+] 
+\backslash
+[
+\backslash
+begin{align} & 
+\backslash
+text{ }
+\backslash
+downarrow 
+\backslash
+text{after }C
+\backslash
+left( 
+\backslash
+text{replace }x
+\backslash
+text{ by }-x 
+\backslash
+right) 
+\backslash
+
+\backslash
+ & y=
+\backslash
+text{f}
+\backslash
+left( -3x+1 
+\backslash
+right) 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}
+\backslash
+] $y=
+\backslash
+text{f}
+\backslash
+left( -3x+1 
+\backslash
+right)=
+\backslash
+frac{3}{{{
+\backslash
+left( -3x+1 
+\backslash
+right)}^{2}}+2}$ $=
+\backslash
+frac{3}{9{{x}^{2}}-6x+3}$ $y=
+\backslash
+frac{1}{3{{x}^{2}}-2x+1}$ 
+\end_layout
+
+\begin_layout Enumerate
+(a) 
+\backslash
+[
+\backslash
+int{{{x}^{2}}{{
+\backslash
+tan }^{-1}}
+\backslash
+left( 2x 
+\backslash
+right)
+\backslash
+text{ }}
+\backslash
+text{d}x=
+\backslash
+frac{{{x}^{3}}}{3}{{
+\backslash
+tan }^{-1}}
+\backslash
+left( 2x 
+\backslash
+right)-
+\backslash
+int{
+\backslash
+left( 
+\backslash
+frac{{{x}^{3}}}{3} 
+\backslash
+right)
+\backslash
+left( 
+\backslash
+frac{2}{1+4{{x}^{2}}} 
+\backslash
+right)
+\backslash
+text{ }}
+\backslash
+text{d}x
+\backslash
+] 
+\backslash
+[=
+\backslash
+frac{{{x}^{3}}}{3}{{
+\backslash
+tan }^{-1}}
+\backslash
+left( 2x 
+\backslash
+right)-
+\backslash
+frac{2}{3}
+\backslash
+int{
+\backslash
+left( 
+\backslash
+frac{1}{4}x-
+\backslash
+frac{x}{4
+\backslash
+left( 1+4{{x}^{2}} 
+\backslash
+right)} 
+\backslash
+right)
+\backslash
+text{ }}
+\backslash
+text{d}x
+\backslash
+] 
+\backslash
+[=
+\backslash
+frac{{{x}^{3}}}{3}{{
+\backslash
+tan }^{-1}}
+\backslash
+left( 2x 
+\backslash
+right)-
+\backslash
+frac{1}{12}{{x}^{2}}+
+\backslash
+frac{1}{6}
+\backslash
+int{
+\backslash
+frac{x}{1+4{{x}^{2}}}
+\backslash
+text{ }}
+\backslash
+text{d}x
+\backslash
+] 
+\backslash
+[=
+\backslash
+frac{{{x}^{3}}}{3}{{
+\backslash
+tan }^{-1}}
+\backslash
+left( 2x 
+\backslash
+right)-
+\backslash
+frac{1}{12}{{x}^{2}}+
+\backslash
+frac{1}{48}
+\backslash
+int{
+\backslash
+frac{8x}{1+4{{x}^{2}}}
+\backslash
+text{ }}
+\backslash
+text{d}x
+\backslash
+] 
+\backslash
+[=
+\backslash
+frac{{{x}^{3}}}{3}{{
+\backslash
+tan }^{-1}}
+\backslash
+left( 2x 
+\backslash
+right)-
+\backslash
+frac{1}{12}{{x}^{2}}+
+\backslash
+frac{1}{48}
+\backslash
+ln 
+\backslash
+left( 1+4{{x}^{2}} 
+\backslash
+right)+c
+\backslash
+] (b) 
+\backslash
+[
+\backslash
+int{
+\backslash
+frac{x}{
+\backslash
+sqrt{8-2x-{{x}^{2}}}}
+\backslash
+text{ }}
+\backslash
+text{d}x=-
+\backslash
+frac{1}{2}
+\backslash
+int{
+\backslash
+frac{-2x-2}{
+\backslash
+sqrt{8-2x-{{x}^{2}}}}
+\backslash
+text{ }}
+\backslash
+text{d}x-
+\backslash
+int{
+\backslash
+frac{1}{
+\backslash
+sqrt{8-2x-{{x}^{2}}}}
+\backslash
+text{ }}
+\backslash
+text{d}x
+\backslash
+] 
+\backslash
+[=-
+\backslash
+sqrt{8-2x-{{x}^{2}}}-
+\backslash
+int{
+\backslash
+frac{1}{
+\backslash
+sqrt{9-{{
+\backslash
+left( x+1 
+\backslash
+right)}^{2}}}}
+\backslash
+text{ }}
+\backslash
+text{d}x
+\backslash
+] 
+\backslash
+[=-
+\backslash
+sqrt{8-2x-{{x}^{2}}}-{{
+\backslash
+sin }^{-1}}
+\backslash
+left( 
+\backslash
+frac{x+1}{3} 
+\backslash
+right)+c
+\backslash
+] 
+\end_layout
+
+\begin_layout Enumerate
+(i) ${{y}^{3}}-2x{{y}^{2}}+3{{x}^{2}}-3=0$ Differentiate with respect to
+ x: $3{{y}^{2}}
+\backslash
+frac{
+\backslash
+text{d}y}{
+\backslash
+text{d}x}-(2{{y}^{2}}+4xy
+\backslash
+frac{
+\backslash
+text{d}y}{
+\backslash
+text{d}x})+6x=0$ 
+\backslash
+[
+\backslash
+begin{align} & (3{{y}^{2}}-4xy)
+\backslash
+frac{
+\backslash
+text{d}y}{
+\backslash
+text{d}x}=2{{y}^{2}}-6x 
+\backslash
+
+\backslash
+ & 
+\backslash
+frac{
+\backslash
+text{d}y}{
+\backslash
+text{d}x}=
+\backslash
+frac{2{{y}^{2}}-6x}{3{{y}^{2}}-4xy} 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}
+\backslash
+] (ii) Gradient of tangent to curve at P(2, 3) =
+\backslash
+[
+\backslash
+frac{2{{(3)}^{2}}-6(2)}{3{{(3)}^{2}}-4(2)(3)}=2
+\backslash
+] Gradient of normal to curve at P = $-
+\backslash
+frac{1}{2}$ Equation of normal at P: $
+\backslash
+begin{align} & y-3=-
+\backslash
+tfrac{1}{2}(x-2) 
+\backslash
+
+\backslash
+ & 
+\backslash
+Rightarrow y=-
+\backslash
+tfrac{1}{2}x+4 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}$ (iii) When x = 0, normal cuts y-axis at A(0, 4); C: ${{y}^{3}}-2x{{y
+}^{2}}+3{{x}^{2}}-3=0$ When x = 0, ${{y}^{3}}$= 3 y = $
+\backslash
+sqrt[3]{3}$ C meets y-axis at R(0, $
+\backslash
+sqrt[3]{3}$).
+ Area of triangle APR = $
+\backslash
+frac{1}{2}
+\backslash
+times 2
+\backslash
+times (4-
+\backslash
+sqrt[3]{3})$ = $4-
+\backslash
+sqrt[3]{3}$ where a = 4, b = 3
+\end_layout
+
+\begin_layout Enumerate
+(a) <INSERT_IMAGE_HERE> (b) <INSERT_IMAGE_HERE>
+\end_layout
+
+\begin_layout Enumerate
+(i) 
+\backslash
+[
+\backslash
+begin{align} & {{
+\backslash
+text{R}}_{
+\backslash
+text{g}}}=
+\backslash
+left( 1,8 
+\backslash
+right]
+\backslash
+text{ }{{
+\backslash
+text{D}}_{
+\backslash
+text{f}}}=
+\backslash
+mathbb{R} 
+\backslash
+
+\backslash
+ & 
+\backslash
+text{Since }{{
+\backslash
+text{R}}_{
+\backslash
+text{g}}}
+\backslash
+subseteq {{
+\backslash
+text{D}}_{
+\backslash
+text{f}}},
+\backslash
+text{ fg exists}
+\backslash
+text{.} 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}
+\backslash
+] 
+\backslash
+[
+\backslash
+text{f}
+\backslash
+left( x 
+\backslash
+right)=-{{
+\backslash
+left( x-
+\backslash
+frac{5}{2} 
+\backslash
+right)}^{2}}+
+\backslash
+frac{49}{4}
+\backslash
+] 
+\backslash
+[
+\backslash
+text{f}
+\backslash
+left( 8 
+\backslash
+right)=-{{
+\backslash
+left( 8-
+\backslash
+frac{5}{2} 
+\backslash
+right)}^{2}}+
+\backslash
+frac{49}{4}=-18
+\backslash
+] 
+\backslash
+[
+\backslash
+begin{align} & 
+\backslash
+left[ 0,
+\backslash
+infty 
+\backslash
+right)
+\backslash
+xrightarrow[
+\backslash
+text{g}]{}
+\backslash
+left( 1,8 
+\backslash
+right]
+\backslash
+xrightarrow[
+\backslash
+text{f}]{}
+\backslash
+left[ -18,
+\backslash
+frac{49}{4} 
+\backslash
+right] 
+\backslash
+
+\backslash
+ & 
+\backslash
+therefore {{
+\backslash
+text{R}}_{
+\backslash
+text{fg}}}=
+\backslash
+left[ -18,
+\backslash
+frac{49}{4} 
+\backslash
+right] 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}
+\backslash
+] (ii) 
+\backslash
+[
+\backslash
+text{Let }y=-{{
+\backslash
+left( x-
+\backslash
+frac{
+\backslash
+lambda }{2} 
+\backslash
+right)}^{2}}+
+\backslash
+left( 6+
+\backslash
+frac{{{
+\backslash
+lambda }^{2}}}{4} 
+\backslash
+right)
+\backslash
+] 
+\backslash
+[
+\backslash
+begin{align} & 
+\backslash
+text{ }x=
+\backslash
+frac{
+\backslash
+lambda }{2}
+\backslash
+pm 
+\backslash
+sqrt{6+
+\backslash
+frac{{{
+\backslash
+lambda }^{2}}}{4}-y} 
+\backslash
+
+\backslash
+ & 
+\backslash
+therefore x=
+\backslash
+frac{
+\backslash
+lambda }{2}-
+\backslash
+sqrt{6+
+\backslash
+frac{{{
+\backslash
+lambda }^{2}}}{4}-y}
+\backslash
+left( 
+\backslash
+because x
+\backslash
+le 
+\backslash
+frac{
+\backslash
+lambda }{2} 
+\backslash
+right) 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}
+\backslash
+] 
+\backslash
+[{{
+\backslash
+text{f}}^{-1}}:x
+\backslash
+mapsto 
+\backslash
+frac{
+\backslash
+lambda }{2}-
+\backslash
+sqrt{6+
+\backslash
+frac{{{
+\backslash
+lambda }^{2}}}{4}-x},
+\backslash
+,
+\backslash
+,
+\backslash
+,
+\backslash
+,
+\backslash
+,x
+\backslash
+in 
+\backslash
+text{ }
+\backslash
+mathbb{R},
+\backslash
+text{ }x
+\backslash
+le 6+
+\backslash
+frac{{{
+\backslash
+lambda }^{2}}}{4}
+\backslash
+] 
+\end_layout
+
+\begin_layout Enumerate
+(a)
+\backslash
+[
+\backslash
+frac{
+\backslash
+text{d}}{
+\backslash
+text{d}x}
+\backslash
+left( {{
+\backslash
+tan }^{3}}x 
+\backslash
+right)=3{{
+\backslash
+tan }^{2}}x
+\backslash
+text{ se}{{
+\backslash
+text{c}}^{2}}x
+\backslash
+] 
+\backslash
+[
+\backslash
+int{
+\backslash
+text{se}{{
+\backslash
+text{c}}^{4}}x
+\backslash
+text{ }}
+\backslash
+text{d}x=
+\backslash
+int{
+\backslash
+text{se}{{
+\backslash
+text{c}}^{2}}x
+\backslash
+left( 1+{{
+\backslash
+tan }^{2}}x 
+\backslash
+right)
+\backslash
+text{ }}
+\backslash
+text{d}x
+\backslash
+] 
+\backslash
+[=
+\backslash
+int{
+\backslash
+left( 
+\backslash
+text{se}{{
+\backslash
+text{c}}^{2}}x+
+\backslash
+text{se}{{
+\backslash
+text{c}}^{2}}x{{
+\backslash
+tan }^{2}}x 
+\backslash
+right)
+\backslash
+text{ }}
+\backslash
+text{d}x
+\backslash
+] 
+\backslash
+[=
+\backslash
+tan x+
+\backslash
+frac{1}{3}{{
+\backslash
+tan }^{3}}x+c
+\backslash
+] (b) 
+\backslash
+[
+\backslash
+int{
+\backslash
+sin x
+\backslash
+left( 
+\backslash
+sin x+
+\backslash
+sin 3x 
+\backslash
+right)
+\backslash
+text{ }}
+\backslash
+text{d}x=
+\backslash
+int{
+\backslash
+left( {{
+\backslash
+sin }^{2}}x+
+\backslash
+sin x
+\backslash
+sin 3x 
+\backslash
+right)
+\backslash
+text{ }}
+\backslash
+text{d}x
+\backslash
+] 
+\backslash
+[=
+\backslash
+int{
+\backslash
+left( 
+\backslash
+frac{1-
+\backslash
+cos 2x}{2}-
+\backslash
+frac{
+\backslash
+cos 4x-
+\backslash
+cos 2x}{2} 
+\backslash
+right)
+\backslash
+text{ }}
+\backslash
+text{d}x
+\backslash
+] 
+\backslash
+[
+\backslash
+begin{align} & =
+\backslash
+int{
+\backslash
+left( 
+\backslash
+frac{1-
+\backslash
+cos 4x}{2} 
+\backslash
+right)
+\backslash
+text{ }}
+\backslash
+text{d}x 
+\backslash
+
+\backslash
+ & =
+\backslash
+frac{1}{2}x-
+\backslash
+frac{
+\backslash
+sin 4x}{8}+c 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}
+\backslash
+] (c) 
+\backslash
+[
+\backslash
+int_{0}^{p}{x
+\backslash
+left| 2-x 
+\backslash
+right|}
+\backslash
+text{ d}x=
+\backslash
+int_{0}^{2}{x
+\backslash
+left( 2-x 
+\backslash
+right)}
+\backslash
+text{ d}x+
+\backslash
+int_{2}^{p}{x
+\backslash
+left( x-2 
+\backslash
+right)}
+\backslash
+text{ d}x
+\backslash
+] 
+\backslash
+[
+\backslash
+begin{align} & =
+\backslash
+left[ {{x}^{2}}-
+\backslash
+frac{{{x}^{3}}}{3} 
+\backslash
+right]_{0}^{2}+
+\backslash
+left[ 
+\backslash
+frac{{{x}^{3}}}{3}-{{x}^{2}} 
+\backslash
+right]_{2}^{p} 
+\backslash
+
+\backslash
+ & =4-
+\backslash
+frac{8}{3}+
+\backslash
+frac{{{p}^{3}}}{3}-{{p}^{2}}-
+\backslash
+left( 
+\backslash
+frac{8}{3}-4 
+\backslash
+right) 
+\backslash
+
+\backslash
+ & =
+\backslash
+frac{8}{3}+
+\backslash
+frac{{{p}^{3}}}{3}-{{p}^{2}} 
+\backslash
+end{align}
+\backslash
+] 
+\end_layout
+
+\begin_layout Enumerate
+(i) By Ratio Theorem, 
+\backslash
+[
+\backslash
+begin{align} & 
+\backslash
+text{a}=
+\backslash
+frac{3
+\backslash
+text{c}+2
+\backslash
+text{b}}{5}
+\backslash
+text{ } 
+\backslash
+
+\backslash
+ & 
+\backslash
+Rightarrow 
+\backslash
+text{c}=
+\backslash
+frac{5
+\backslash
+text{a}-2
+\backslash
+text{b}}{3} 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}
+\backslash
+] (ii) $
+\backslash
+mathbf{c}
+\backslash
+cdot 
+\backslash
+mathbf{b}=0$ 
+\backslash
+[
+\backslash
+frac{5
+\backslash
+text{a}-2
+\backslash
+text{b}}{3}
+\backslash
+cdot 
+\backslash
+text{b}=0
+\backslash
+] 
+\backslash
+[
+\backslash
+frac{5
+\backslash
+text{a}
+\backslash
+cdot 
+\backslash
+text{b}}{3}=
+\backslash
+frac{2
+\backslash
+text{b}
+\backslash
+cdot 
+\backslash
+text{b}}{3}
+\backslash
+] 
+\backslash
+[
+\backslash
+text{a}
+\backslash
+cdot 
+\backslash
+text{b}=
+\backslash
+frac{2}{5}{{
+\backslash
+left| 
+\backslash
+text{b} 
+\backslash
+right|}^{2}}
+\backslash
+] (iii) Area 
+\backslash
+[=
+\backslash
+frac{1}{2}
+\backslash
+left| 
+\backslash
+overrightarrow{BP}
+\backslash
+times 
+\backslash
+overrightarrow{BC} 
+\backslash
+right|
+\backslash
+] 
+\backslash
+[=
+\backslash
+frac{1}{2}
+\backslash
+left| 
+\backslash
+left[ 
+\backslash
+text{b}-
+\backslash
+left( -
+\backslash
+text{b} 
+\backslash
+right) 
+\backslash
+right]
+\backslash
+times 
+\backslash
+left[ 
+\backslash
+frac{5
+\backslash
+text{a}-2
+\backslash
+text{b}}{3}-
+\backslash
+text{b} 
+\backslash
+right] 
+\backslash
+right|
+\backslash
+] 
+\backslash
+[=
+\backslash
+frac{1}{2}
+\backslash
+left| 2
+\backslash
+text{b}
+\backslash
+times 
+\backslash
+left( 
+\backslash
+frac{5
+\backslash
+text{a}}{3}-
+\backslash
+frac{5
+\backslash
+text{b}}{3} 
+\backslash
+right) 
+\backslash
+right|
+\backslash
+] 
+\backslash
+[=
+\backslash
+frac{5}{3}
+\backslash
+left| 
+\backslash
+text{b}
+\backslash
+times 
+\backslash
+left( 
+\backslash
+text{a}-
+\backslash
+text{b} 
+\backslash
+right) 
+\backslash
+right|
+\backslash
+] 
+\backslash
+[=
+\backslash
+frac{5}{3}
+\backslash
+left| 
+\backslash
+text{b}
+\backslash
+times 
+\backslash
+text{a} 
+\backslash
+right|
+\backslash
+left( 
+\backslash
+because 
+\backslash
+text{b}
+\backslash
+times 
+\backslash
+text{b}=
+\backslash
+text{0} 
+\backslash
+right)
+\backslash
+] 
+\backslash
+[=
+\backslash
+frac{5}{3}
+\backslash
+left| -
+\backslash
+text{a}
+\backslash
+times 
+\backslash
+text{b} 
+\backslash
+right|=
+\backslash
+frac{5}{3}
+\backslash
+left| 
+\backslash
+text{a}
+\backslash
+times 
+\backslash
+text{b} 
+\backslash
+right|
+\backslash
+left( 
+\backslash
+because 
+\backslash
+text{a}
+\backslash
+times 
+\backslash
+text{b}=-
+\backslash
+text{b}
+\backslash
+times 
+\backslash
+text{a} 
+\backslash
+right)
+\backslash
+] OR Area 
+\backslash
+[=
+\backslash
+frac{1}{2}
+\backslash
+left| 
+\backslash
+overrightarrow{PC}
+\backslash
+times 
+\backslash
+overrightarrow{BC} 
+\backslash
+right|
+\backslash
+] 
+\backslash
+[=
+\backslash
+frac{1}{2}
+\backslash
+left| 
+\backslash
+left[ 
+\backslash
+frac{5
+\backslash
+text{a}-2
+\backslash
+text{b}}{3}-
+\backslash
+left( -
+\backslash
+text{b} 
+\backslash
+right) 
+\backslash
+right]
+\backslash
+times 
+\backslash
+left[ 
+\backslash
+frac{5
+\backslash
+text{a}-2
+\backslash
+text{b}}{3}-
+\backslash
+text{b} 
+\backslash
+right] 
+\backslash
+right|
+\backslash
+] 
+\backslash
+[=
+\backslash
+frac{1}{2}
+\backslash
+left| 
+\backslash
+frac{5
+\backslash
+text{a}+
+\backslash
+text{b}}{3}
+\backslash
+times 
+\backslash
+frac{5}{3}
+\backslash
+left( 
+\backslash
+text{a}-
+\backslash
+text{b} 
+\backslash
+right) 
+\backslash
+right|
+\backslash
+] 
+\backslash
+[=
+\backslash
+frac{5}{18}
+\backslash
+left| 5
+\backslash
+text{a}
+\backslash
+times 
+\backslash
+text{a}-5
+\backslash
+text{a}
+\backslash
+times 
+\backslash
+text{b}+
+\backslash
+text{b}
+\backslash
+times 
+\backslash
+text{a}-
+\backslash
+text{b}
+\backslash
+times 
+\backslash
+text{b} 
+\backslash
+right|
+\backslash
+] 
+\backslash
+[=
+\backslash
+frac{5}{18}
+\backslash
+left| -5
+\backslash
+text{a}
+\backslash
+times 
+\backslash
+text{b}-
+\backslash
+text{a}
+\backslash
+times 
+\backslash
+text{b} 
+\backslash
+right|
+\backslash
+]
+\backslash
+[
+\backslash
+left( 
+\backslash
+because 
+\backslash
+text{a}
+\backslash
+times 
+\backslash
+text{a}=
+\backslash
+text{0 }
+\backslash
+mathbf{and}
+\backslash
+text{ b}
+\backslash
+times 
+\backslash
+text{b}=
+\backslash
+text{0} 
+\backslash
+right)
+\backslash
+] 
+\backslash
+[=
+\backslash
+frac{5}{3}
+\backslash
+left| 
+\backslash
+text{a}
+\backslash
+times 
+\backslash
+text{b} 
+\backslash
+right|
+\backslash
+] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+(iv) Since F is on the line AB, 
+\backslash
+[
+\backslash
+overrightarrow{OF}=
+\backslash
+text{a}+
+\backslash
+lambda 
+\backslash
+left( 
+\backslash
+text{b}-
+\backslash
+text{a} 
+\backslash
+right)
+\backslash
+] for some $
+\backslash
+lambda 
+\backslash
+in 
+\backslash
+mathbb{R}$ 
+\backslash
+[
+\backslash
+overrightarrow{PF}
+\backslash
+cdot 
+\backslash
+overrightarrow{AB}=0
+\backslash
+] 
+\backslash
+[
+\backslash
+left[ 
+\backslash
+text{a}+
+\backslash
+lambda 
+\backslash
+left( 
+\backslash
+text{b}-
+\backslash
+text{a} 
+\backslash
+right)-
+\backslash
+left( -
+\backslash
+text{b} 
+\backslash
+right) 
+\backslash
+right]
+\backslash
+bullet 
+\backslash
+left( 
+\backslash
+text{b}-
+\backslash
+text{a} 
+\backslash
+right)=0
+\backslash
+] 
+\backslash
+[
+\backslash
+left[ 
+\backslash
+left( 1-
+\backslash
+lambda 
+\backslash
+right)
+\backslash
+text{a}+
+\backslash
+left( 1+
+\backslash
+lambda 
+\backslash
+right)
+\backslash
+text{b} 
+\backslash
+right]
+\backslash
+bullet 
+\backslash
+left( 
+\backslash
+text{b}-
+\backslash
+text{a} 
+\backslash
+right)=0
+\backslash
+] 
+\backslash
+[
+\backslash
+left( 
+\backslash
+lambda -1 
+\backslash
+right){{
+\backslash
+left| 
+\backslash
+text{a} 
+\backslash
+right|}^{2}}+
+\backslash
+left( 1+
+\backslash
+lambda 
+\backslash
+right){{
+\backslash
+left| 
+\backslash
+text{b} 
+\backslash
+right|}^{2}}+
+\backslash
+left( 1-
+\backslash
+lambda 
+\backslash
+right)
+\backslash
+text{a}
+\backslash
+bullet 
+\backslash
+text{b}-
+\backslash
+left( 1+
+\backslash
+lambda 
+\backslash
+right)
+\backslash
+text{a}
+\backslash
+bullet 
+\backslash
+text{b}=0
+\backslash
+] 
+\backslash
+[
+\backslash
+left( 
+\backslash
+lambda -1 
+\backslash
+right)
+\backslash
+frac{7}{25}{{
+\backslash
+left| 
+\backslash
+text{b} 
+\backslash
+right|}^{2}}+
+\backslash
+left( 1+
+\backslash
+lambda 
+\backslash
+right){{
+\backslash
+left| 
+\backslash
+text{b} 
+\backslash
+right|}^{2}}-2
+\backslash
+lambda 
+\backslash
+left( 
+\backslash
+frac{2}{5}{{
+\backslash
+left| 
+\backslash
+text{b} 
+\backslash
+right|}^{2}} 
+\backslash
+right)=0
+\backslash
+] 
+\backslash
+[
+\backslash
+left( 
+\backslash
+frac{7}{25}
+\backslash
+lambda -
+\backslash
+frac{7}{25}+1+
+\backslash
+lambda -
+\backslash
+frac{4}{5}
+\backslash
+lambda 
+\backslash
+right){{
+\backslash
+left| 
+\backslash
+text{b} 
+\backslash
+right|}^{2}}=0
+\backslash
+] 
+\backslash
+[
+\backslash
+frac{12}{25}
+\backslash
+lambda +
+\backslash
+frac{18}{25}=0
+\backslash
+] 
+\backslash
+[
+\backslash
+left( 
+\backslash
+because 
+\backslash
+text{b }
+\backslash
+mathbf{is}
+\backslash
+text{ }
+\backslash
+mathbf{a}
+\backslash
+text{ }
+\backslash
+mathbf{non zero vector} 
+\backslash
+right)
+\backslash
+] 
+\backslash
+[
+\backslash
+lambda =-
+\backslash
+frac{3}{2}
+\backslash
+] 
+\backslash
+[
+\backslash
+overrightarrow{OF}=
+\backslash
+text{a}-
+\backslash
+frac{3}{2}
+\backslash
+left( 
+\backslash
+text{b}-
+\backslash
+text{a} 
+\backslash
+right)=
+\backslash
+frac{5
+\backslash
+text{a}-3
+\backslash
+text{b}}{2}
+\backslash
+] 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+(ai) Since 
+\backslash
+[x=2
+\backslash
+] is a vertical asymptote, $s=4$ 
+\backslash
+[
+\backslash
+text{At the point }(0,
+\backslash
+tfrac{1}{2})
+\backslash
+text{ }
+\backslash
+frac{4{{(0)}^{2}}+p(0)-q}{{{(0)}^{2}}-4}=
+\backslash
+frac{1}{2}
+\backslash
+] $
+\backslash
+therefore q=2$ (ii) When y = 1, $1=
+\backslash
+frac{4{{x}^{2}}+px-2}{{{x}^{2}}-4}$ ${{x}^{2}}-4=4{{x}^{2}}+px-2$ $3{{x}^{2}}+px
++2=0$ Since y = 1 is a tangent to C, Discriminant = 0 ${{p}^{2}}-4
+\backslash
+left( 3 
+\backslash
+right)
+\backslash
+left( 2 
+\backslash
+right)=0$ $p=-2
+\backslash
+sqrt{6}
+\backslash
+left( 
+\backslash
+because p<0 
+\backslash
+right)$ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+(bi)
+\end_layout
+
+\begin_layout Standard
+(bii) 
+\backslash
+[
+\backslash
+begin{align} & 10{{(x+2)}^{2}}=3
+\backslash
+left( 10-{{
+\backslash
+left( 
+\backslash
+frac{4{{x}^{2}}+4x+1}{{{x}^{2}}-1} 
+\backslash
+right)}^{2}} 
+\backslash
+right) 
+\backslash
+
+\backslash
+ & 10{{(x+2)}^{2}}+3{{
+\backslash
+left( 
+\backslash
+frac{4{{x}^{2}}+4x+1}{{{x}^{2}}-1} 
+\backslash
+right)}^{2}}=30 
+\backslash
+
+\backslash
+ & 
+\backslash
+frac{{{(x+2)}^{2}}}{3}+
+\backslash
+frac{{{
+\backslash
+left( 
+\backslash
+frac{4{{x}^{2}}+4x+1}{{{x}^{2}}-1} 
+\backslash
+right)}^{2}}}{10}=1 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}
+\backslash
+] The equation of the additional curve is 
+\backslash
+[
+\backslash
+frac{{{(x+2)}^{2}}}{3}+
+\backslash
+frac{{{y}^{2}}}{10}=1
+\backslash
+] 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+(ai) Height of cylinder = $
+\backslash
+sqrt{{{8}^{2}}-{{x}^{2}}}$$
+\backslash
+times 2$ = 2$
+\backslash
+sqrt{{{8}^{2}}-{{x}^{2}}}$ $
+\backslash
+begin{align} & S=2
+\backslash
+pi rh 
+\backslash
+
+\backslash
+ & 
+\backslash
+,
+\backslash
+,
+\backslash
+,
+\backslash
+,
+\backslash
+,=2
+\backslash
+pi 
+\backslash
+times 
+\backslash
+left( 
+\backslash
+frac{x}{2} 
+\backslash
+right)
+\backslash
+times 2
+\backslash
+sqrt{64-{{x}^{2}}} 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}$ $S$= $2
+\backslash
+pi x
+\backslash
+sqrt{64-{{x}^{2}}}$ c (shown) (ii)
+\backslash
+[
+\backslash
+frac{
+\backslash
+text{d}S}{
+\backslash
+text{d}x}=2
+\backslash
+pi 
+\backslash
+sqrt{64-{{x}^{2}}}+2
+\backslash
+pi x
+\backslash
+left( 
+\backslash
+frac{-2x}{2
+\backslash
+sqrt{64-{{x}^{2}}}} 
+\backslash
+right)
+\backslash
+] = 
+\backslash
+[2
+\backslash
+pi 
+\backslash
+sqrt{64-{{x}^{2}}}-
+\backslash
+frac{2
+\backslash
+pi {{x}^{2}}}{
+\backslash
+sqrt{64-{{x}^{2}}}}
+\backslash
+] = $
+\backslash
+frac{4
+\backslash
+pi (32-{{x}^{2}})}{
+\backslash
+sqrt{64-{{x}^{2}}}}$ For stationary point, 
+\backslash
+[
+\backslash
+frac{
+\backslash
+text{d}S}{
+\backslash
+text{d}x}
+\backslash
+]= 0 
+\backslash
+[
+\backslash
+frac{4
+\backslash
+pi (32-{{x}^{2}})}{
+\backslash
+sqrt{64-{{x}^{2}}}}=0
+\backslash
+] $x=
+\backslash
+sqrt{32}=4
+\backslash
+sqrt{2}$ (since x > 0) x : 2$
+\backslash
+sqrt{64-{{x}^{2}}}$= 1 : k $
+\backslash
+sqrt{32}$: 2$
+\backslash
+sqrt{32}$ = 1 : k k = 2 First derivative test: x $
+\backslash
+sqrt{32}{{
+\backslash
+,}^{-}}$ $
+\backslash
+sqrt{32}$ $
+\backslash
+sqrt{32}{{
+\backslash
+,}^{+}}$ $
+\backslash
+frac{
+\backslash
+text{d}S}{
+\backslash
+text{d}x}=
+\backslash
+frac{4
+\backslash
+pi (32-{{x}^{2}})}{
+\backslash
+sqrt{64-{{x}^{2}}}}$ $
+\backslash
+frac{(+)}{(+)}=(+)$ 0 $
+\backslash
+frac{(-)}{(+)}=(-)$ $
+\backslash
+frac{{}}{{}}$ Shape 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+$
+\backslash
+therefore $ S is maximum when x = $4
+\backslash
+sqrt{2}$.
+ Second derivative test: 
+\backslash
+[
+\backslash
+frac{{{
+\backslash
+text{d}}^{2}}S}{
+\backslash
+text{d}{{x}^{2}}}=
+\backslash
+frac{
+\backslash
+text{d}
+\backslash
+left( 
+\backslash
+frac{4
+\backslash
+pi (32-{{x}^{2}})}{
+\backslash
+sqrt{64-{{x}^{2}}}} 
+\backslash
+right)}{
+\backslash
+text{d}x}=
+\backslash
+frac{4
+\backslash
+pi [
+\backslash
+sqrt{64-{{x}^{2}}})(-2x)-(32-{{x}^{2}})
+\backslash
+frac{1}{2}{{
+\backslash
+left( 64-{{x}^{2}} 
+\backslash
+right)}^{-
+\backslash
+tfrac{1}{2}}}(-2x)]}{64-{{x}^{2}}}
+\backslash
+] = $
+\backslash
+frac{4
+\backslash
+pi (-x)[2(64-{{x}^{2}})-
+\backslash
+left( 32-{{x}^{2}} 
+\backslash
+right)]}{{{(64-{{x}^{2}})}^{3/2}}}=
+\backslash
+frac{4
+\backslash
+pi x({{x}^{2}}-96)}{{{(64-{{x}^{2}})}^{3/2}}}$ When $x=4
+\backslash
+sqrt{2},$ 
+\backslash
+[
+\backslash
+frac{{{
+\backslash
+text{d}}^{2}}S}{
+\backslash
+text{d}{{x}^{2}}}=
+\backslash
+]$-8
+\backslash
+pi $ < 0 S is maximum when $x=4
+\backslash
+sqrt{2}$.
+ Max S = $2
+\backslash
+pi 
+\backslash
+left( 4
+\backslash
+sqrt{2} 
+\backslash
+right)
+\backslash
+sqrt{64-32}=64
+\backslash
+pi 
+\backslash
+text{ c}{{
+\backslash
+text{m}}^{2}}$ (b) $y=2{{
+\backslash
+sin }^{-1}}(3x),
+\backslash
+,
+\backslash
+,
+\backslash
+,
+\backslash
+,-
+\backslash
+frac{1}{3}
+\backslash
+le x
+\backslash
+le 
+\backslash
+frac{1}{3}.$ 
+\backslash
+[
+\backslash
+frac{
+\backslash
+text{d}y}{
+\backslash
+text{d}x}=
+\backslash
+frac{2(3)}{
+\backslash
+sqrt{1-9{{x}^{2}}}}=
+\backslash
+frac{6}{
+\backslash
+sqrt{1-9{{x}^{2}}}}
+\backslash
+] $y=2{{
+\backslash
+sin }^{-1}}(3x)$ $
+\backslash
+sin 
+\backslash
+frac{y}{2}=(3x)$ When $y$=$
+\backslash
+frac{
+\backslash
+pi }{3}$, 3x = sin$
+\backslash
+frac{
+\backslash
+pi }{6}$= $
+\backslash
+frac{1}{2}$ x = $
+\backslash
+frac{1}{6}$ 
+\backslash
+[
+\backslash
+frac{
+\backslash
+text{d}x}{
+\backslash
+text{d}t}=
+\backslash
+frac{
+\backslash
+text{d}x}{
+\backslash
+text{d}y}
+\backslash
+times 
+\backslash
+frac{
+\backslash
+text{d}y}{
+\backslash
+text{d}t}
+\backslash
+] = $
+\backslash
+frac{
+\backslash
+sqrt{1-9{{x}^{2}}}}{6}
+\backslash
+times (-2)$ = $
+\backslash
+frac{
+\backslash
+sqrt{1-9{{
+\backslash
+left( 
+\backslash
+frac{1}{6} 
+\backslash
+right)}^{2}}}}{6}
+\backslash
+times (-2)$ 
+\backslash
+[
+\backslash
+frac{
+\backslash
+text{d}x}{
+\backslash
+text{d}t}=-
+\backslash
+frac{
+\backslash
+sqrt{3}}{2}
+\backslash
+times 
+\backslash
+frac{1}{6}
+\backslash
+times (-2)=-
+\backslash
+frac{
+\backslash
+sqrt{3}}{6}
+\backslash
+]units/s 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+(a)(i) Year / n Outstanding amount at the end of year 2025 1 
+\backslash
+[
+\backslash
+begin{align} & 
+\backslash
+left[ 40000-12
+\backslash
+left( 550 
+\backslash
+right) 
+\backslash
+right]1.04 
+\backslash
+
+\backslash
+ & =40000
+\backslash
+left( 1.04 
+\backslash
+right)-12
+\backslash
+left( 550 
+\backslash
+right)
+\backslash
+left( 1.04 
+\backslash
+right) 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}
+\backslash
+] 2026 2 
+\backslash
+[
+\backslash
+begin{align} & 
+\backslash
+left[ 40000
+\backslash
+left( 1.04 
+\backslash
+right)-12
+\backslash
+left( 550 
+\backslash
+right)
+\backslash
+left( 1.04 
+\backslash
+right)-12
+\backslash
+left( 550 
+\backslash
+right) 
+\backslash
+right]1.04 
+\backslash
+
+\backslash
+ & =40000{{
+\backslash
+left( 1.04 
+\backslash
+right)}^{2}}-12
+\backslash
+left( 550 
+\backslash
+right){{
+\backslash
+left( 1.04 
+\backslash
+right)}^{2}}-12
+\backslash
+left( 550 
+\backslash
+right)
+\backslash
+left( 1.04 
+\backslash
+right) 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}
+\backslash
+] 2027 3 
+\backslash
+[
+\backslash
+begin{align} & 
+\backslash
+left[ 40000{{
+\backslash
+left( 1.04 
+\backslash
+right)}^{2}}-12
+\backslash
+left( 550 
+\backslash
+right){{
+\backslash
+left( 1.04 
+\backslash
+right)}^{2}}-12
+\backslash
+left( 550 
+\backslash
+right)
+\backslash
+left( 1.04 
+\backslash
+right)-12(550) 
+\backslash
+right]1.04 
+\backslash
+
+\backslash
+ & =40000{{
+\backslash
+left( 1.04 
+\backslash
+right)}^{3}}-12
+\backslash
+left( 550 
+\backslash
+right){{
+\backslash
+left( 1.04 
+\backslash
+right)}^{3}}-12
+\backslash
+left( 550 
+\backslash
+right){{
+\backslash
+left( 1.04 
+\backslash
+right)}^{2}}-12
+\backslash
+left( 550 
+\backslash
+right)
+\backslash
+left( 1.04 
+\backslash
+right) 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}
+\backslash
+] …
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Amt owe at the end of n years = 
+\backslash
+[40000{{
+\backslash
+left( 1.04 
+\backslash
+right)}^{n}}-12
+\backslash
+left( 550 
+\backslash
+right){{
+\backslash
+left( 1.04 
+\backslash
+right)}^{n}}-12
+\backslash
+left( 550 
+\backslash
+right){{
+\backslash
+left( 1.04 
+\backslash
+right)}^{n-1}}-
+\backslash
+cdots -12
+\backslash
+left( 550 
+\backslash
+right)
+\backslash
+left( 1.04 
+\backslash
+right)
+\backslash
+] 
+\backslash
+[
+\backslash
+begin{align} & =40000{{
+\backslash
+left( 1.04 
+\backslash
+right)}^{n}}-12
+\backslash
+left( 550 
+\backslash
+right)
+\backslash
+left[ 1.04+
+\backslash
+cdots +{{1.04}^{n}} 
+\backslash
+right] 
+\backslash
+
+\backslash
+ & =40000{{
+\backslash
+left( 1.04 
+\backslash
+right)}^{n}}-171600
+\backslash
+left( {{1.04}^{n}}-1 
+\backslash
+right) 
+\backslash
+
+\backslash
+ & =171600-131600{{
+\backslash
+left( 1.04 
+\backslash
+right)}^{n}} 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}
+\backslash
+] (ii) At the end of 2030, n = 6 Outstanding amount at end of 2030 
+\backslash
+[
+\backslash
+begin{align} & =171600-131600{{
+\backslash
+left( 1.04 
+\backslash
+right)}^{6}} 
+\backslash
+
+\backslash
+ & =5084.02>0 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}
+\backslash
+] She will not be able to finish repaying the loan by the end of 2030.
+ 
+\end_layout
+
+\begin_layout Standard
+(iii) Let m be the monthly loan repayment.
+ To utilise fully the loan repayment period, n = 15 
+\backslash
+[40000{{
+\backslash
+left( 1.04 
+\backslash
+right)}^{15}}-12m
+\backslash
+left[ 
+\backslash
+frac{1.04
+\backslash
+left( {{1.04}^{15}}-1 
+\backslash
+right)}{1.04-1} 
+\backslash
+right]
+\backslash
+le 0
+\backslash
+] 
+\backslash
+[m
+\backslash
+ge 
+\backslash
+frac{40000{{
+\backslash
+left( 1.04 
+\backslash
+right)}^{15}}}{12}
+\backslash
+left[ 
+\backslash
+frac{0.04}{1.04
+\backslash
+left( {{1.04}^{15}}-1 
+\backslash
+right)} 
+\backslash
+right]=288.27276
+\backslash
+] $
+\backslash
+therefore $ Minimum monthly repayment = $288.28 
+\end_layout
+
+\begin_layout Standard
+(b)(i) n Amount at end of month
+\end_layout
+
+\begin_layout Standard
+1 $200+
+\backslash
+left( 
+\backslash
+frac{d}{100} 
+\backslash
+right)
+\backslash
+left( 200 
+\backslash
+right)=200+2d$ 2 $200+2d+2d=200+2d
+\backslash
+left( 2 
+\backslash
+right)$ 3 $200+2d
+\backslash
+left( 3 
+\backslash
+right)$ .
+ .
+ n $200+2d
+\backslash
+left( n 
+\backslash
+right)$
+\end_layout
+
+\begin_layout Standard
+At end of 2022, n = 14 $
+\backslash
+begin{align} & 
+\backslash
+text{Interest }=2d
+\backslash
+left( 14 
+\backslash
+right) 
+\backslash
+
+\backslash
+ & =28d 
+\backslash
+end{align}$ 
+\end_layout
+
+\begin_layout Standard
+(b)(ii) n Amount at start of month Amount at end of month 1 $200$ $200+2d$
+ 2 $
+\backslash
+begin{align} & 200+2d+200 
+\backslash
+
+\backslash
+ & =2
+\backslash
+left( 200 
+\backslash
+right)+2d 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}$ $
+\backslash
+begin{align} & 2
+\backslash
+left( 200 
+\backslash
+right)+2d+2d(2) 
+\backslash
+
+\backslash
+ & =2
+\backslash
+left( 200 
+\backslash
+right)+2d(1+2) 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}$ 3 $
+\backslash
+begin{align} & 2
+\backslash
+left( 200 
+\backslash
+right)+2d(1+2)+200 
+\backslash
+
+\backslash
+ & =3
+\backslash
+left( 200 
+\backslash
+right)+2d(1+2) 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}$ $
+\backslash
+begin{align} & 3
+\backslash
+left( 200 
+\backslash
+right)+2d(1+2)+2d(3) 
+\backslash
+
+\backslash
+ & =3
+\backslash
+left( 200 
+\backslash
+right)+2d(1+2+3) 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}$ ..
+ … … n … $
+\backslash
+begin{align} & n
+\backslash
+left( 200 
+\backslash
+right)+2d(1+2+
+\backslash
+cdots +n) 
+\backslash
+
+\backslash
+ & =200n+2d
+\backslash
+left[ 
+\backslash
+frac{n}{2}
+\backslash
+left( 1+n 
+\backslash
+right) 
+\backslash
+right] 
+\backslash
+
+\backslash
+ & =200n+dn
+\backslash
+left( 1+n 
+\backslash
+right) 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}$
+\end_layout
+
+\begin_layout Standard
+$200
+\backslash
+left( 36 
+\backslash
+right)+d
+\backslash
+left( 36 
+\backslash
+right)
+\backslash
+left( 1+36 
+\backslash
+right)>10000$ $d>2.1021$ $
+\backslash
+therefore $ Least d = 2.11 (3sf) 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let F be the foot of perpendicular from A to the plane p1.
+ 
+\backslash
+[{{
+\backslash
+ell }_{AF}}:
+\backslash
+text{r}=
+\backslash
+left( 
+\backslash
+begin{matrix} 0 
+\backslash
+
+\backslash
+ -1 
+\backslash
+
+\backslash
+ 2 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right)+
+\backslash
+lambda 
+\backslash
+left( 
+\backslash
+begin{matrix} 1 
+\backslash
+
+\backslash
+ -1 
+\backslash
+
+\backslash
+ 0 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right),
+\backslash
+lambda 
+\backslash
+in 
+\backslash
+mathbb{R}
+\backslash
+] Since F lies on line AF 
+\backslash
+[
+\backslash
+overrightarrow{OF}=
+\backslash
+left( 
+\backslash
+begin{matrix} 0 
+\backslash
+
+\backslash
+ -1 
+\backslash
+
+\backslash
+ 2 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right)+
+\backslash
+lambda 
+\backslash
+left( 
+\backslash
+begin{matrix} 1 
+\backslash
+
+\backslash
+ -1 
+\backslash
+
+\backslash
+ 0 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right)
+\backslash
+] for some 
+\backslash
+[
+\backslash
+lambda 
+\backslash
+in 
+\backslash
+mathbb{R}
+\backslash
+] As F is also on the plane p1, 
+\backslash
+[
+\backslash
+left( 
+\backslash
+begin{matrix} 
+\backslash
+lambda 
+\backslash
+
+\backslash
+ -1-
+\backslash
+lambda 
+\backslash
+
+\backslash
+ 2 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right).
+\backslash
+left( 
+\backslash
+begin{matrix} 1 
+\backslash
+
+\backslash
+ -1 
+\backslash
+
+\backslash
+ 0 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right)=3
+\backslash
+] 
+\backslash
+[
+\backslash
+begin{align} & 
+\backslash
+lambda +1+
+\backslash
+lambda =3 
+\backslash
+
+\backslash
+ & 
+\backslash
+lambda =1 
+\backslash
+
+\backslash
+ 
+\backslash
+end{align}
+\backslash
+] 
+\backslash
+[
+\backslash
+overrightarrow{OF}=
+\backslash
+left( 
+\backslash
+begin{matrix} 1 
+\backslash
+
+\backslash
+ -2 
+\backslash
+
+\backslash
+ 2 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right)
+\backslash
+] (ii) Let 
+\backslash
+[
+\backslash
+theta 
+\backslash
+]be the acute angle between the plane p1 and the line l.
+ 
+\backslash
+[
+\backslash
+sin 
+\backslash
+theta =
+\backslash
+frac{
+\backslash
+left| 
+\backslash
+left( 
+\backslash
+begin{matrix} 1 
+\backslash
+
+\backslash
+ -1 
+\backslash
+
+\backslash
+ 0 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right)
+\backslash
+bullet 
+\backslash
+left( 
+\backslash
+begin{matrix} 0 
+\backslash
+
+\backslash
+ 1 
+\backslash
+
+\backslash
+ 1 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right) 
+\backslash
+right|}{
+\backslash
+sqrt{2}
+\backslash
+sqrt{2}}
+\backslash
+] 
+\backslash
+[
+\backslash
+theta ={{30}^{
+\backslash
+circ }}
+\backslash
+] (iii) Let point D and E be 
+\backslash
+[
+\backslash
+left( 0,-1,2 
+\backslash
+right)
+\backslash
+]and 
+\backslash
+[
+\backslash
+left( 3,0,0 
+\backslash
+right)
+\backslash
+]respectively.
+ 
+\backslash
+[
+\backslash
+frac{
+\backslash
+left| 
+\backslash
+overrightarrow{BE}
+\backslash
+bullet {{{
+\backslash
+underset{
+\backslash
+scriptscriptstyle
+\backslash
+thicksim}{n}}}_{1}} 
+\backslash
+right|}{
+\backslash
+left| {{{
+\backslash
+underset{
+\backslash
+scriptscriptstyle
+\backslash
+thicksim}{n}}}_{1}} 
+\backslash
+right|}=
+\backslash
+frac{
+\backslash
+left| 
+\backslash
+overrightarrow{BD}
+\backslash
+times {{{
+\backslash
+underset{
+\backslash
+scriptscriptstyle
+\backslash
+thicksim}{d}}}_{
+\backslash
+ell }} 
+\backslash
+right|}{
+\backslash
+left| {{{
+\backslash
+underset{
+\backslash
+scriptscriptstyle
+\backslash
+thicksim}{d}}}_{
+\backslash
+ell }} 
+\backslash
+right|}
+\backslash
+] 
+\backslash
+[
+\backslash
+frac{
+\backslash
+left| 
+\backslash
+left( 
+\backslash
+begin{matrix} 3+
+\backslash
+alpha 
+\backslash
+
+\backslash
+ -2 
+\backslash
+
+\backslash
+ -
+\backslash
+alpha 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right)
+\backslash
+bullet 
+\backslash
+left( 
+\backslash
+begin{matrix} 1 
+\backslash
+
+\backslash
+ -1 
+\backslash
+
+\backslash
+ 0 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right) 
+\backslash
+right|}{
+\backslash
+sqrt{2}}=
+\backslash
+frac{
+\backslash
+left| 
+\backslash
+left( 
+\backslash
+begin{matrix} 
+\backslash
+alpha 
+\backslash
+
+\backslash
+ -3 
+\backslash
+
+\backslash
+ 2-
+\backslash
+alpha 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right)
+\backslash
+times 
+\backslash
+left( 
+\backslash
+begin{matrix} 0 
+\backslash
+
+\backslash
+ 1 
+\backslash
+
+\backslash
+ 1 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right) 
+\backslash
+right|}{
+\backslash
+sqrt{2}}
+\backslash
+] 
+\backslash
+[
+\backslash
+left| 3+
+\backslash
+alpha +2 
+\backslash
+right|=
+\backslash
+left| 
+\backslash
+left( 
+\backslash
+begin{matrix} 
+\backslash
+alpha -5 
+\backslash
+
+\backslash
+ -
+\backslash
+alpha 
+\backslash
+
+\backslash
+ 
+\backslash
+alpha 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right) 
+\backslash
+right|
+\backslash
+] 
+\backslash
+[
+\backslash
+left| 
+\backslash
+alpha +5 
+\backslash
+right|=
+\backslash
+sqrt{2{{
+\backslash
+alpha }^{2}}+{{
+\backslash
+left( 
+\backslash
+alpha -5 
+\backslash
+right)}^{2}}}
+\backslash
+] 
+\backslash
+[{{
+\backslash
+alpha }^{2}}+10
+\backslash
+alpha +25=3{{
+\backslash
+alpha }^{2}}-10
+\backslash
+alpha +25
+\backslash
+] 
+\backslash
+[
+\backslash
+alpha 
+\backslash
+left( 
+\backslash
+alpha -10 
+\backslash
+right)=0
+\backslash
+] 
+\backslash
+[
+\backslash
+therefore 
+\backslash
+alpha =0
+\backslash
+text{ }
+\backslash
+mathrm{or }10
+\backslash
+] (iv) 
+\backslash
+[
+\backslash
+left( 
+\backslash
+begin{matrix} 4 
+\backslash
+
+\backslash
+ 1 
+\backslash
+
+\backslash
+ 
+\backslash
+beta 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right)
+\backslash
+bullet 
+\backslash
+left( 
+\backslash
+begin{matrix} 1 
+\backslash
+
+\backslash
+ -1 
+\backslash
+
+\backslash
+ 0 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right)=4
+\backslash
+left( 1 
+\backslash
+right)+1
+\backslash
+left( -1 
+\backslash
+right)+
+\backslash
+beta 
+\backslash
+left( 0 
+\backslash
+right)=3
+\backslash
+] And 
+\backslash
+[
+\backslash
+left( 
+\backslash
+begin{matrix} 4 
+\backslash
+
+\backslash
+ 1 
+\backslash
+
+\backslash
+ 
+\backslash
+beta 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right)
+\backslash
+bullet 
+\backslash
+left( 
+\backslash
+begin{matrix} 1 
+\backslash
+
+\backslash
+ 1 
+\backslash
+
+\backslash
+ -1 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right)=4
+\backslash
+left( 1 
+\backslash
+right)+1
+\backslash
+left( 1 
+\backslash
+right)+
+\backslash
+beta 
+\backslash
+left( -1 
+\backslash
+right)=5-
+\backslash
+beta 
+\backslash
+] Hence C lies on both p1 and p2.
+ 
+\backslash
+[
+\backslash
+left( 
+\backslash
+begin{matrix} 1 
+\backslash
+
+\backslash
+ -1 
+\backslash
+
+\backslash
+ 0 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right)
+\backslash
+times 
+\backslash
+left( 
+\backslash
+begin{matrix} 1 
+\backslash
+
+\backslash
+ 1 
+\backslash
+
+\backslash
+ -1 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right)=
+\backslash
+left( 
+\backslash
+begin{matrix} 1 
+\backslash
+
+\backslash
+ 1 
+\backslash
+
+\backslash
+ 2 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right)
+\backslash
+] Eqn of the line of intersection is 
+\backslash
+[
+\backslash
+text{r}=
+\backslash
+left( 
+\backslash
+begin{matrix} 4 
+\backslash
+
+\backslash
+ 1 
+\backslash
+
+\backslash
+ 
+\backslash
+beta 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right)+
+\backslash
+gamma 
+\backslash
+left( 
+\backslash
+begin{matrix} 1 
+\backslash
+
+\backslash
+ 1 
+\backslash
+
+\backslash
+ 2 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right),
+\backslash
+gamma 
+\backslash
+in 
+\backslash
+mathbb{R}
+\backslash
+] 
+\end_layout
+
+\end_body
+\end_document

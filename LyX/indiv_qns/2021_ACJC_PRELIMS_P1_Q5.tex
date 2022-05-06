@@ -1,0 +1,100 @@
+\item \textbf{{[}ACJC/PRELIM/9569/2021/P1/Q5{]} }
+
+A gym organises various classes and runs a loyalty membership programme
+with four tiers: Bronze, Silver, Gold and Diamond 
+
+Upon joining, each member is given a unique membership number and
+starts with a Bronze membership. Each member can sign up for multiple
+classes at a reduced rate based on the membership tier.
+
+Each class has a unique class name. Some classes are offered at three
+different levels: Beginner, Intermediate and Advanced
+
+Each instructor is identified with a unique three-character code and
+can take one or more classes.
+
+A relational database is to be created to store data about members,
+employees and classes.
+
+Part of the table \texttt{MEMBER}, which is a first attempt at the
+database design, is shown below. 
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+MemberNo  & MemberName  & MemberTier  & ClassName & InstCode\tabularnewline
+\hline 
+\multirow{3}{*}{5 } & \multirow{3}{*}{Lindy White} & \multirow{3}{*}{Silver } & Body Pump  & WAY \tabularnewline
+\cline{4-5} \cline{5-5} 
+ &  &  & Yoga (Beginner)  & DAV \tabularnewline
+\cline{4-5} \cline{5-5} 
+ &  &  & Zumba & ROG\tabularnewline
+\hline 
+\dots{}  & \dots{}  & \dots{}  & \dots{}  & ...\tabularnewline
+\hline 
+78  & Derek Davis  & Bronze  & Muay Thai (Beginner)  & CHA \tabularnewline
+\hline 
+\dots{} & \dots{}  & \dots{} \dots{} \dots{}  & \dots{}  & ...\tabularnewline
+\hline 
+\multirow{4}{*}{132} & \multirow{4}{*}{John Chua } & \multirow{4}{*}{Diamond } & Circuits (Intermediate)  & JON \tabularnewline
+\cline{4-5} \cline{5-5} 
+ &  &  & Muay Thai (Intermediate)  & LEX \tabularnewline
+\cline{4-5} \cline{5-5} 
+ &  &  & Yoga (Advanced) & DAV \tabularnewline
+\cline{4-5} \cline{5-5} 
+ &  &  & Zumba & ROG\tabularnewline
+\hline 
+\dots{}  & \dots{} & \dots{}  & \dots{}  & \dots{}\tabularnewline
+\hline 
+\end{tabular}
+\begin{enumerate}
+\item The table \texttt{MEMBER} is not normalised.
+\begin{enumerate}
+\item Describe \textbf{one} potential issue that may be encountered when
+the data are maintained in such a non-normalised table. \hfill{}{[}1{]}
+\item Explain why the table is not in first normal form (1NF). \hfill{}{[}1{]}
+\end{enumerate}
+\item A second attempt at the database design gives rise to two tables:
+
+\texttt{MEMBER(MemberNo, MemberName, MemberTier)}
+
+\texttt{MEMBERCLASSES(MemberNo, ClassName, Instructor)}
+
+The primary keys are not shown. 
+\begin{enumerate}
+\item State what is meant by a \textbf{primary key}. \hfill{}{[}1{]}
+\item By referring to the relationship between the tables \texttt{MEMBER}
+and \texttt{MEMBERCLASSES}, state how the relationship is implemented.\hfill{}
+{[}2{]}
+\item Write an SQL query to create the table MEMBER with the appropriate
+constraints.\hfill{} {[}4{]}
+\end{enumerate}
+\item Another attempt at the database design needs to be made to ensure
+that all the tables are in third normal form (3NF). 
+
+In addition, the following data need to be recorded in the database:
+\begin{itemize}
+\item the date on which each member signs up for the gym membership; 
+\item the attendance of each member in any classes taken;
+\item the original fee, i.e. before discount, of each class; 
+\item the name and the salary of each instructor. 
+\end{itemize}
+\begin{enumerate}
+\item State the total number of 3NF tables required and give their names.
+\hfill{}{[}1{]}
+\item Draw the Entity-Relationship (E-R) diagram to show the 3NF tables
+and the relationships between them. \hfill{}{[}4{]}
+\item A table description can be written as:
+
+\texttt{TableName(}\texttt{\uline{Attribute1}}\texttt{, Attribute2{*},
+Attribute3, ...) }
+
+The primary key is indicated by underlining one or more attributes.
+Foreign keys are indicated by using a dashed underline/asterisk. 
+
+Using the information provided, write table descriptions for all the
+3NF tables you identified in \textbf{(c)(i)}.\hfill{} {[}8{]}
+\end{enumerate}
+\item Making backups and archives are performed to prevent the loss of data.
+
+Explain the difference between a backup and an archive.\hfill{} {[}2{]}
+\end{enumerate}

@@ -1,0 +1,77 @@
+\item {}
+\begin{enumerate}
+\item[(i)]  {}
+
+$\begin{array}{cc}
+U_{n} & >6550\\
+3000+\left(n-1\right)100 & >6550\\
+n & >36.5
+\end{array}$
+
+$\therefore37^{\text{th}}$ month
+\item[(ii)]  {}
+
+\begin{align*}
+S_{n} & =\frac{n}{2}\left[6000+\left(n-1\right)100\right]\\
+ & =\frac{n}{2}\left[6000+\left(n-1\right)100\right]\\
+ & \ge200,000
+\end{align*}
+
+\uline{Method 1} 
+
+By GC, 
+
+When $n=40$, $y=198,000<200,000$ 
+
+When $n=41$,$y=205,000>200,000$
+
+\uline{Method 2} 
+
+\begin{align*}
+\frac{n}{2}\left[6000+\left(n-1\right)100\right] & \ge200,000\\
+100{{n}^{2}}+5900n-400,000 & \ge0\\
+\left(n-40.287\right)\left(n+99.287\right) & \ge0\\
+n & \le-99.3\text{ (rej) or }n\ge40.3
+\end{align*}
+ $\therefore41\text{ months}$
+
+$S_{40}=\frac{40}{2}\left[6000+\left(40-1\right)100\right]=\$198,000$
+
+$\$200,000-\$198,000=\$2000$
+\item[(iii)]  {}
+
+\begin{tabular}{|c|c|}
+\hline 
+$n$ & End of the month\tabularnewline
+\hline 
+\hline 
+1 & $1.003\left(500000-x\right)$\tabularnewline
+\hline 
+2 & $1.003^{2}\left(500000-x\right)-\left(1.003\right)x$\tabularnewline
+\hline 
+3 & $1.003^{3}\left(500000-x\right)-\left(1.003\right)^{2}x-\left(1.003\right)x$\tabularnewline
+\hline 
+$\vdots$ & $\vdots$\tabularnewline
+\hline 
+n & \tabularnewline
+\hline 
+\end{tabular}
+
+At the end of the $n$th month, the outstanding amount would be 
+
+$\begin{array}{cc}
+ & 1.003^{n}\left(500000-x\right)-\left(1.003\right)^{n-1}x-...-\left(1.003\right)x\\
+= & 1.003^{n}\left(500000\right)-\left(1.003^{n}\right)x-...-\left(1.003\right)x\\
+= & 1.003^{n}\left(500000\right)-x\left[1.003+1.003^{2}+...+1.003^{n}\right]\\
+= & 1.003^{n}\left(500000\right)-x\left[\frac{1.003\left(1.003^{n}-1\right)}{1.003-1}\right]\\
+= & 1.003^{n}\left(500000\right)-\frac{1003}{3}x\left(1.003^{n}-1\right)
+\end{array}$
+
+$\therefore A=500000,B=\frac{1003}{3}$
+\item[(iv)]  $1.003^{96}\left(500000\right)-\frac{1003}{3}x\left(1.003^{96}-1\right)=0$
+
+Using GC, $x=\$5984.09$. 
+\item[(v)]  Total paid: $\$5984.09\times12\times8=\$574,472.64$
+
+Interest: $\$574,472.64-\$500,000=\$74,472.64$
+\end{enumerate}
