@@ -1,0 +1,68 @@
+\item \textbf{{[}PJC/PRELIM/9597/2018/P1/Q10{]} }
+
+A dataset of fruit names is to be stored in a binary search tree. 
+
+The names of the fruits are inserted into the tree in the order shown: 
+\noindent \begin{center}
+\texttt{Papaya, Mango, Durian, Strawberry, Orange, Rambutan, Watermelon}
+\par\end{center}
+\begin{enumerate}
+\item Draw the binary search tree. \hfill{} {[}3{]}
+\end{enumerate}
+The binary tree is implemented using these identifiers. 
+\noindent \begin{center}
+\begin{tabular}{|c|c|c|}
+\hline 
+\textbf{Variable} & \textbf{Data Type} & \textbf{Description}\tabularnewline
+\hline 
+\texttt{RootPtr} & \texttt{INTEGER} & Array subscript of the root of tree\tabularnewline
+\hline 
+\texttt{Fruit} & \texttt{ARRAY {[}1..100{]} of STRING} & Array of fruit names\tabularnewline
+\hline 
+\texttt{LeftPtr} & \texttt{ARRAY {[}1..100{]} of INTEGER} & Array of left pointer values\tabularnewline
+\hline 
+\texttt{RightPtr} & \texttt{ARRAY {[}1..100{]} of INTEGER} & Array of right pointer values \tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+\begin{enumerate}
+\item[(b)]  Draw a diagram to show the contents of the binary tree in array
+form and the root pointer variable for the fruits inserted in \textbf{(a)}
+above. \hfill{}{[}3{]}
+\item[(c)]  The pseudocode shows an algorithm to search for a particular fruit
+in the binary tree. Additional variables \texttt{SearchFruit}, \texttt{IsFound},
+and \texttt{Current} are used. 
+
+\noindent\fbox{\begin{minipage}[t]{1\columnwidth - 2\fboxsep - 2\fboxrule}%
+\texttt{\textbf{INPUT}}\texttt{ SearchFruit }
+
+\texttt{IsFound \textleftarrow{} False }
+
+\texttt{Current \textleftarrow{} RootPtr }
+
+\texttt{\textbf{REPEAT}}\texttt{ }
+
+\texttt{\qquad{}}%
+\fbox{\begin{minipage}[t]{0.4\columnwidth}%
+
+\subsubsection*{\texttt{... ... ...}}
+
+\subsubsection*{\texttt{... ... ...}}
+
+\subsubsection*{\texttt{... ... ...}}%
+\end{minipage}}
+
+\texttt{\textbf{UNTIL}}\texttt{ Current = 0 }\texttt{\textbf{OR}}\texttt{
+IsFound = }\texttt{\textbf{TRUE}}\texttt{ }
+
+\texttt{\textbf{IF}}\texttt{ IsFound = False }\texttt{\textbf{THEN}}\texttt{ }
+
+\texttt{\qquad{}}\texttt{\textbf{OUTPUT}}\texttt{ SearchFruit \textquotedbl Not
+found\textquotedbl{} }
+
+\texttt{\textbf{ENDIF}}\texttt{ }%
+\end{minipage}}
+
+Complete the algorithm in the \texttt{\textbf{REPEAT-UNTIL}} loop
+by writing the missing lines. \hfill{}{[}6{]}
+\end{enumerate}

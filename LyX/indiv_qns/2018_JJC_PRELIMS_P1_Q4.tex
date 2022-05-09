@@ -1,0 +1,165 @@
+\item \textbf{{[}JJC/PRELIM/9597/2018/P1/Q4{]} }
+
+Rock Paper Scissors is a well-known hand game played between two players,
+whom we shall call P1 and P2. For each round, each player simultaneously
+forms one of three signs with an outstretched hand. Rock (represented
+by \textquotedbl 0\textquotedbl ), scissors (represented by \textquotedbl 2\textquotedbl )
+and paper (represented by \textquotedbl 5\textquotedbl ).
+
+Program \texttt{get\_round\_winner(p1\_hand, p2\_hand)} that decides
+who wins from the hand signs of P1 and P2. If P1 wins, the function
+returns 1. If P2 wins, the function returns 2. If the game is a draw,
+the function returns 0.
+
+Sample Execution:
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{get\_round\_winner (\textquotedbl 2\textquotedbl , \textquotedbl 5\textquotedbl )
+\# scissors vs paper - P1 wins}
+
+\texttt{>\textcompwordmark >\textcompwordmark > 1}
+
+\texttt{get\_round\_winner (\textquotedbl 2\textquotedbl , \textquotedbl 0\textquotedbl )
+\# scissors vs rock - P2 wins }
+
+\texttt{>\textcompwordmark >\textcompwordmark > 2 }
+
+\texttt{get\_round\_winner (\textquotedbl 2\textquotedbl , \textquotedbl 2\textquotedbl )
+\# scissors vs scissors - Draw}
+
+\texttt{>\textcompwordmark >\textcompwordmark > 0}%
+\end{minipage}
+
+\subsection*{Task 4.1 }
+
+Write program code for the function\texttt{ get\_round\_winner}.
+
+\subsection*{Evidence 16: }
+
+Program code for \textbf{Task 4.1}.\hfill{} {[}4{]}
+
+P1 and P2 played a game of Rock Paper Scissors over a few rounds.
+The winner is the player who wins more rounds than he losses. A draw
+occurs if there is no winner. The hand signs of each player for the
+game are represented as a string of \textquotedbl 0\textquotedbl ,
+\textquotedbl 2\textquotedbl{} and \textquotedbl 5\textquotedbl .
+For example, \textquotedbl 205\textquotedbl{} represents playing
+scissors in the first round, rock in the second, and paper in the
+third. 
+
+Program \texttt{get\_game\_winner(p1\_hands, p2\_hands)} that decides
+who wins the game from a sequence of hand signs from P1 and P2. If
+P1 wins, return 1, if P2 wins, return 2, if the game is a draw, return
+0. You must use \texttt{get\_round\_winner}. You may assume that \texttt{p1\_hands}
+and \texttt{p2\_hands} are strings of the same length containing only
+\textquotedbl 0\textquotedbl , \textquotedbl 2\textquotedbl{} and
+\textquotedbl 5\textquotedbl . 
+
+Sample Execution:
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{get\_game\_winner (\textquotedbl\textquotedbl , \textquotedbl\textquotedbl )
+\#no hand played, game ends in a draw}
+
+\texttt{>\textcompwordmark >\textcompwordmark > 0}
+
+\texttt{get\_game\_winner (\textquotedbl 205\textquotedbl , \textquotedbl 520\textquotedbl )
+\#P1 wins all 3 rounds, P1 wins }
+
+\texttt{>\textcompwordmark >\textcompwordmark > 1 }
+
+\texttt{get\_game\_winner (\textquotedbl 22222\textquotedbl , \textquotedbl 50505\textquotedbl )
+\#P1 wins}
+
+\texttt{>\textcompwordmark >\textcompwordmark > 1 }
+
+\texttt{get\_game\_winner (\textquotedbl 2050\textquotedbl , \textquotedbl 0255\textquotedbl )
+\#P2 wins }
+
+\texttt{>\textcompwordmark >\textcompwordmark > 2 }
+
+\texttt{get\_game\_winner (\textquotedbl 52025\textquotedbl , \textquotedbl 52025\textquotedbl )
+\#Draw }
+
+\texttt{>\textcompwordmark >\textcompwordmark > 0 }%
+\end{minipage}
+
+\subsection*{Task 4.2 }
+
+Write program code for the function \texttt{get\_game\_winner}. 
+
+\subsection*{Evidence 17: }
+
+Program code for Task 4.2. \hfill{}{[}6{]}
+
+P1 and P2 would like a more interesting interface where rows and columns
+display the game played. \textbf{Each game has four rounds} and the
+\textbf{overall result} (\textquotedblleft P1 wins\textquotedblright ,
+\textquotedblleft P2 wins\textquotedblright{} or \textquotedblleft Draw\textquotedblright )
+\textbf{will be displayed when the game is over}. 
+
+Here is a sample screenshot of the first turns taken by player. 
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{Round ~~~~~~~P1 ~~~~~~~P2 ~~~~~~~Round
+Winner}
+
+\texttt{1 ~~~~~~~~~~~- ~~~~~~~~- ~~~~~~~~- }
+
+\texttt{2 ~~~~~~~~~~~- ~~~~~~~~- ~~~~~~~~- }
+
+\texttt{3 ~~~~~~~~~~~- ~~~~~~~~- ~~~~~~~~- }
+
+\texttt{4 ~~~~~~~~~~~- ~~~~~~~~- ~~~~~~~~- }
+
+\texttt{Player's 1 turn.}
+
+\texttt{Enter Rock (0), Paper (5) or Scissors (2): 2}
+
+\texttt{Round ~~~~~~~P1 ~~~~~~~P2 ~~~~~~~Round
+Winner}
+
+\texttt{1 ~~~~~~~~~~~S ~~~~~~~~- ~~~~~~~~- }
+
+\texttt{2 ~~~~~~~~~~~- ~~~~~~~~- ~~~~~~~~- }
+
+\texttt{3 ~~~~~~~~~~~- ~~~~~~~~- ~~~~~~~~- }
+
+\texttt{4 ~~~~~~~~~~~- ~~~~~~~~- ~~~~~~~~- }
+
+\texttt{Player's 2 turn.}
+
+\texttt{Enter Rock (0), Paper (5) or Scissors (2): 0}
+
+\texttt{Round ~~~~~~~P1 ~~~~~~~P2 ~~~~~~~Round
+Winner}
+
+\texttt{1 ~~~~~~~~~~~S ~~~~~~~~R ~~~~~~~~P2 }
+
+\texttt{2 ~~~~~~~~~~~- ~~~~~~~~- ~~~~~~~~- }
+
+\texttt{3 ~~~~~~~~~~~- ~~~~~~~~- ~~~~~~~~- }
+
+\texttt{4 ~~~~~~~~~~~- ~~~~~~~~- ~~~~~~~~- }%
+\end{minipage}
+
+\subsection*{Task 4.3 }
+
+Write program code for the game described. Implement using \textbf{modularity}
+and\textbf{ 2D array}. Include function \texttt{validate()} to ensure
+the player chooses \texttt{0}, \texttt{2} or \texttt{5}. Prompt the
+player to re-enter if input is invalid. 
+
+\subsection*{Evidence 18: }
+
+Program code for Task 4.3.\hfill{} {[}10{]}
+
+\subsection*{Evidence 19: }
+
+Design four appropriate test cases for the program. Present them in
+a table format. \hfill{}{[}4{]}
+
+\subsection*{Evidence 20: }
+
+Run your program and produce screenshots for a game which ends in
+a draw and another game which P1 wins.\hfill{} {[}2{]}

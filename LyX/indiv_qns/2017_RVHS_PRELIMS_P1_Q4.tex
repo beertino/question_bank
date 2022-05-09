@@ -1,0 +1,172 @@
+\item \textbf{{[}RVHS/PRELIM/9597/2017/P1/Q4{]} }
+
+\textbf{Sorting Algorithms }
+
+The pseudocode procedure below is given a list of integers in random
+order, the procedure then outputs a sorted list in ascending order. 
+
+\noindent\fbox{\begin{minipage}[t]{1\columnwidth - 2\fboxsep - 2\fboxrule}%
+\texttt{01. FUNCTION Merge\_Sort (ARRAY: arr) }
+
+\texttt{02. \qquad{}n = SIZE(arr) }
+
+\texttt{03. \qquad{}IF n < 2: }
+
+\texttt{04. \qquad{}\qquad{}RETURN arr }
+
+\texttt{05. \qquad{}END IF }
+
+\texttt{06. \qquad{}left = Merge\_Sort(PARTITION(arr, 0, n DIV 2)) }
+
+\texttt{07. \qquad{}right = Merge\_Sort(PARTITION(arr, n DIV 2, n)) }
+
+\texttt{08. \qquad{}RETURN Merge(left, right) }
+
+\texttt{09. END FUNCTION }
+
+\texttt{10.}
+
+\texttt{11. FUNCTION Merge (ARRAY: left, LIST: right) }
+
+\texttt{12. \qquad{}DECLARE results: ARRAY{[}SIZE(left) + SIZE(right){]} }
+
+\texttt{13. \qquad{}DECLARE i, j, index : INTEGER }
+
+\texttt{14. \qquad{}i, j, index = 0, 0, 0 }
+
+\texttt{15. \qquad{}WHILE i < SIZE(left) and j < SIZE(right)}
+
+\texttt{16. \qquad{}\qquad{}IF left{[}i{]} < right{[}j{]}:}
+
+\texttt{17. \qquad{}\qquad{}\qquad{}results{[}index{]} = left{[}i{]} }
+
+\texttt{18. \qquad{}\qquad{}\qquad{}i = i + 1}
+
+\texttt{19. \qquad{}\qquad{}ELSE: }
+
+\texttt{20. \qquad{}\qquad{}\qquad{}results{[}index{]} = right{[}j{]}}
+
+\texttt{21. \qquad{}\qquad{}\qquad{}j = j + 1}
+
+\texttt{22. \qquad{}\qquad{}END IF }
+
+\texttt{23. \qquad{}\qquad{}index = index + 1 }
+
+\texttt{24. \qquad{}END WHILE}
+
+\texttt{25. \qquad{}WHILE i < SIZE(left)}
+
+\texttt{26. \qquad{}\qquad{}results{[}index{]} = left{[}i{]} }
+
+\texttt{27. \qquad{}\qquad{}i = i + 1}
+
+\texttt{28. \qquad{}\qquad{}index = index + 1 }
+
+\texttt{29. \qquad{}END WHILE}
+
+\texttt{30. \qquad{}WHILE j < SIZE(right) }
+
+\texttt{31. \qquad{}\qquad{}results{[}index{]} = right{[}j{]} }
+
+\texttt{32. \qquad{}\qquad{}j = j + 1 }
+
+\texttt{33. \qquad{}\qquad{}index = index + 1 }
+
+\texttt{34. \qquad{}END WHILE}
+
+\texttt{35. \qquad{}RETURN results}
+
+\texttt{36. END FUNCTION }%
+\end{minipage}}
+
+\subsection*{Task 4.1 }
+
+Write program code to implement the given procedure. Execute the function
+using the following list as the parameter. 
+
+\texttt{{[}1, 15, 2, 4, 3, 9, 7, 10{]}} 
+
+\subsection*{Evidence 12 }
+
+Program Code. Screenshot showing the output. \hfill{}{[}6{]}
+
+\subsection*{Evidence 13}
+
+Analyze and state the time complexity of the algorithm in big $O$
+notation.\hfill{} {[}1{]}
+
+\subsection*{Task 4.2 }
+
+Bubble sort is a common sorting algorithm, below is an implementation
+of in-place bubble sort using recursion. There are three missing lines
+in the pseudocode, indicated as \texttt{A}, \texttt{B} and \texttt{C}. 
+
+\noindent\fbox{\begin{minipage}[t]{1\columnwidth - 2\fboxsep - 2\fboxrule}%
+\texttt{01. PROCEDURE Bubble\_Sort (ARRAY: arr, INTEGER: n) }
+
+\texttt{02. \qquad{}IF \_\_\_\_\_\_\_A\_\_\_\_\_\_\_:}
+
+\texttt{03. \qquad{}\qquad{}RETURN }
+
+\texttt{04. \qquad{}END IF }
+
+\texttt{05. }
+
+\texttt{06. \qquad{}FOR i FROM 0 TO (n-1): }
+
+\texttt{07. \qquad{}\qquad{}IF \_\_\_\_\_\_\_B\_\_\_\_\_\_\_: }
+
+\texttt{08. \qquad{}\qquad{}\qquad{}temp = arr{[}i{]} }
+
+\texttt{09. \qquad{}\qquad{}\qquad{}arr{[}i{]} = arr{[}i+1{]} }
+
+\texttt{10. \qquad{}\qquad{}\qquad{}arr{[}i+1{]} = temp }
+
+\texttt{11. \qquad{}\qquad{}END IF }
+
+\texttt{12. \qquad{}END FOR }
+
+\texttt{13.}
+
+\texttt{14. \qquad{}\_\_\_\_\_\_\_C\_\_\_\_\_\_\_ }
+
+\texttt{15. END PROCEDURE }%
+\end{minipage}}
+
+Execute the procedure to sort the following list. \texttt{{[}1, 15,
+2, 4, 3, 9, 7, 10{]} }
+
+\subsection*{Evidence 14}
+
+Complete the missing lines \texttt{A}, \texttt{B} and \texttt{C}.
+\hfill{}{[}3{]}
+
+Insert a counting mechanism to count the number of comparisons made,
+and return the value as an integer. Implement the new recursive bubble
+sort. 
+
+\subsection*{Evidence 15}
+
+Program Code. 
+
+Screenshot showing the output of the sorted list and count value.
+\hfill{}{[}4{]}
+
+\subsection*{Evidence 16 }
+
+Analyze and state the time complexity of the algorithm in big $O$
+notation. \hfill{} {[}1{]}
+
+\subsection*{Task 4.3}
+
+Due to the nature of bubble sort, if no swaps are observed in a given
+iteration, then there is no need for the next iteration. Implement
+the improved bubble sort. Execute the function to sort the following
+list.
+
+\texttt{{[}1, 15, 2, 4, 3, 9, 7, 10{]}}
+
+\subsection*{Evidence 17}
+
+Program Code. Screenshot showing the output of the sorted list and
+count value. \hfill{}{[}3{]}

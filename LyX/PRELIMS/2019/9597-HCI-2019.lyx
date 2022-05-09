@@ -81,21 +81,23 @@
 
 \begin_body
 
-\begin_layout Section
-9597 ALVL 2017
-\end_layout
-
-\begin_layout Subsection
-Paper 1
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \begin_layout Enumerate
+
+\series bold
+[HCI/PRELIM/9597/2019/P1/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 The manager of a private carpark wants to process the daily data of people
  using the carpark.
  The carpark is open from 8am to 11pm and the carpark charge is as follows:
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
 Before 5pm: $1.50 per hour or part thereof 
 \end_layout
@@ -269,15 +271,25 @@ CHARGE.txt
  [3]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[HCI/PRELIM/9597/2019/P1/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 When a list of integers has repeated numbers, the searching and sorting
  algorithms can be different.
  The task is to perform an insertion sort before a binary search is executed.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Subsection*
 Task 2.1 
 \end_layout
@@ -403,13 +415,23 @@ Annotated screenshots for each test data run.
 [3]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[HCI/PRELIM/9597/2019/P1/Q3] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 The examinations department of a school needs to keep long-term records
  of the overall examination achievements of its students.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 Students at the school have two main choices.
  Firstly, they can take a variety of subjects and achieve an Academic Diploma.
@@ -493,9 +515,14 @@ The program design for a solution to this problem is to be implemented with
 \end_layout
 
 \begin_layout Standard
-\noindent
 \align center
-<INSERT_IMAGE_HERE>
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-HCI-2019-P1-Q4-1.png
+	width 50page%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
@@ -1533,15 +1560,25 @@ Screenshot of the output produced.
  [2]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[HCI/PRELIM/9597/2019/P1/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A game maintains the player IDs and their scores in an ordered linked list.
  The player with the highest score is stored at the first node while the
  player with the lowest score is stored at the last node.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 The program to implement the linked list abstract data type will use two
  classes, 
@@ -1930,9 +1967,14 @@ The following diagram shows an example of a linked list object.
 \end_layout
 
 \begin_layout Standard
-\noindent
 \align center
-<INSERT_IMAGE_HERE>
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-HCI-2019-P1-Q4-1.png
+	width 50page%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
@@ -2141,9 +2183,14 @@ B321
 \end_layout
 
 \begin_layout Standard
-\noindent
 \align center
-<INSERT_IMAGE_HERE>
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-HCI-2019-P1-Q4-1.png
+	width 50page%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
@@ -2587,12 +2634,19 @@ ReverseTraversal
 [2]
 \end_layout
 
-\end_deeper
-\begin_layout Subsection
-Paper 1
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
+
+\series bold
+[HCI/PRELIM/9597/2019/P2/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A bookshop wishes to expand its business from a brick and mortar shop to
  allow for online sales.
  A software company has been engaged by the bookshop to develop the online
@@ -2600,7 +2654,6 @@ A bookshop wishes to expand its business from a brick and mortar shop to
  
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 The analyst decides to adopt a top-down approach to the design.
  What are the advantages of using top-down design to solve complex problems?
@@ -3076,8 +3129,19 @@ one
  [1]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[HCI/PRELIM/9597/2019/P2/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Customers can view a catalogue of books and order from its website.
  Payment is made by the customer forwarding their credit card details, which
  are processed immediately.
@@ -3086,7 +3150,6 @@ ity of items before packing lists are produced and sent to the packing departmen
 t.
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 Draw a data flow diagram to explain the flow of data through this system.
 \begin_inset space \hfill{}
@@ -3117,19 +3180,15 @@ two
 [2]
 \end_layout
 
-\end_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
-\end_inset
+\end_deeper
+\begin_layout Enumerate
 
-
+\series bold
+[HCI/PRELIM/9597/2019/P2/Q3] 
 \end_layout
 
 \begin_deeper
@@ -3163,14 +3222,24 @@ two
  [2]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[HCI/PRELIM/9597/2019/P2/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Sing Airline Company uses a website to provide ticket purchasing services
  to customers.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 Customers are required to fill up a form with their name, passport number,
  hand phone number and flight information.
@@ -3242,8 +3311,7 @@ one
 \end_layout
 
 \begin_layout Enumerate
-(e) The company’s staff handbook must include rules and regulations for
- IT staff.
+The company’s staff handbook must include rules and regulations for IT staff.
  Suggest 
 \series bold
 two
@@ -3256,13 +3324,23 @@ two
  [2]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[HCI/PRELIM/9597/2019/P2/Q5] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Below is the manner in which the school library will process its overdue
  list:
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
 If a book is overdue then a reminder letter would normally be sent.
 \end_layout
@@ -3303,13 +3381,23 @@ Simplify your decision table by removing redundancies.
 [2]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[HCI/PRELIM/9597/2019/P2/Q6] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A company manages subscriptions to thirty different magazines.
  Customers can subscribe to receive one or more of the magazines.
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
 Each magazine has a category such as Gardening or Current Affairs.
  
@@ -3392,8 +3480,19 @@ part (c)
 [6]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[HCI/PRELIM/9597/2019/P2/Q7] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 The algebraic expression 
 \family typewriter
 X = 2 * A + B
@@ -3401,11 +3500,15 @@ X = 2 * A + B
  could be held in a binary tree as:
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
-\noindent
 \align center
-<INSERT_IMAGE_HERE>
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-HCI-2019-P2-Q7.png
+	width 50page%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3904,8 +4007,19 @@ part
 [3]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[HCI/PRELIM/9597/2019/P2/Q8] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Using the following numbers as an example, show how the numbers can be sorted
  in ascending order using a 
 \series bold
@@ -3916,7 +4030,6 @@ quick sort
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \noindent
 \align center
@@ -3929,725 +4042,11 @@ quick sort
 \begin_inset space \hfill{}
 \end_inset
 
-[7] 
-\end_layout
-
-\end_deeper
-\begin_layout Section
-9597 ALVL 201X TEMPLATE
+[7]
 \end_layout
 
 \begin_layout Standard
-\noindent
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="7" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="left" valignment="top">
-<row>
-<cell multirow="3" alignment="center" valignment="middle" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-In[1]:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-# Task 1.1
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Program Code
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multirow="3" alignment="center" valignment="middle" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-In[2]:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-# Task 1.2
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Program Code
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multirow="3" alignment="center" valignment="middle" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-In[3]:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-# Task 1.3
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Program Code
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Output:
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Subsubsection*
-\noindent
-Task X.X
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset space \hfill{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-
-\series bold
-Evidence X
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-
-\family typewriter
-FUNCTION CalCheckDigit(Number AS STRING, Total AS INTEGER) RETURNS STRING
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \qquad{}
-\end_inset
-
-IF LENGTH(Number) > 1 THEN
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-Digit <- INTEGER(LBFT(Number,1))
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-// Calculate ISBN, an example of how the function is called.
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-// Second parameter is always 0.
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-ISBN = CalCheckDigit("184146208",0)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="3">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top">
-<column alignment="left" valignment="top">
-<column alignment="left" valignment="top">
-<row>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Class: Connection Node
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Attributes
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \hspace{}
-\length 1col%
-\end_inset
-
-
-\family default
-Identifier
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \hspace{}
-\length 1col%
-\end_inset
-
-
-\family default
-Data Type
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \hspace{}
-\length 5col%
-\end_inset
-
-
-\family default
-Description
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-DataValue
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-STRING
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The node data
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-LeftChild
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-INTEGER
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The left node pointer
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-RightChild
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-INTEGER
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The right node pointer
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="9" columns="1">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top">
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \hspace{}
-\length 25col%
-\end_inset
-
-ToDo
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-category : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-description : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-constructor(c : STRING, d : STRING)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-set_category(s : STRING)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-set_description(s : STRING)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-get_category() : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-get:_description() : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-summary() : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\noindent
-\align center
-<INSERT_IMAGE_HERE>
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper

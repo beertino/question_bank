@@ -1,0 +1,33 @@
+\item \textbf{{[}HCI/PRELIM/9569/2021/P1/Q2{]}}
+
+Merge Sort is a Divide and Conquer algorithm. It divides the unsorted
+array \texttt{A{[}low..high{]}} into two halves, calls itself for
+the two halves, until each half is of length 1. It then merges the
+two sorted halves. An algorithm for Merge Sort is given below. 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{PROCEDURE MergeSort(A, low, high) }
+
+\texttt{\qquad{}IF low < high }
+
+\texttt{\qquad{}\qquad{}mid \textleftarrow{} (low + high) DIV 2 }
+
+\texttt{\qquad{}\qquad{}MergeSort(A, low, mid) }
+
+\texttt{\qquad{}\qquad{}MergeSort(A, mid+1, high) }
+
+\texttt{\qquad{}\qquad{}Merge(A, low, mid, high) }
+
+\texttt{\qquad{}ENDIF }
+
+\texttt{ENDPROCEDURE }%
+\end{minipage}
+\begin{enumerate}
+\item Write in \textbf{pseudocode}, an algorithm for the merge procedure,
+\texttt{Merge(A, low, mid, high)} that is called by the \texttt{MergeSort}
+algorithm. The merge procedure should merge the sorted subarrays in
+\texttt{A{[}low..mid{]}} and \texttt{A{[}mid+1..high{]}} into a single
+sorted subarray in \texttt{A{[}low..high{]}}. \hfill{}{[}6{]}
+\item Give and justify the time complexity of Merge Sort. \hfill{}{[}2{]}
+\end{enumerate}

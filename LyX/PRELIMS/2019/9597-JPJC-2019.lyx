@@ -81,15 +81,18 @@
 
 \begin_body
 
-\begin_layout Section
-9597 ALVL 2017
-\end_layout
-
-\begin_layout Subsection
-Paper 1
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \begin_layout Enumerate
+
+\series bold
+[JPJC/PRELIM/9597/2019/P1/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 The file 
 \family typewriter
 VISITORS.txt
@@ -98,7 +101,6 @@ VISITORS.txt
  Each line of the text file is in the following format: 
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \noindent
 \align center
@@ -356,8 +358,19 @@ four
 [4]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[JPJC/PRELIM/9597/2019/P1/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 The incomplete pseudocode function below takes in an array as input.
  The array will then be sorted in ascending order and the results will be
  returned.
@@ -365,7 +378,6 @@ The incomplete pseudocode function below takes in an array as input.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \noindent
 \begin_inset Box Frameless
@@ -618,8 +630,19 @@ Screenshot of running both sorting functions with number of comparisons
  [4]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[JPJC/PRELIM/9597/2019/P1/Q3] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 JP Medical Centre uses a priority queue to register patients who visit for
  medical attention.
  Upon registration at the medical centre, each patient will be assigned
@@ -628,7 +651,6 @@ JP Medical Centre uses a priority queue to register patients who visit for
  queue, whereas the minor cases are added to the bottom of the queue.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 A priority queue is an extension of queue with the following properties.
 \end_layout
@@ -2125,14 +2147,17 @@ the elements ‘ben’, ‘jenny’, ‘ken’, ‘wayne’, ‘harry’ in the 
 the unused nodes linked together
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
-\noindent
 \align center
-<INSERT_IMAGE_HERE>
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-JPJC-2019-P1-Q3-1.png
+	width 65page%
+
+\end_inset
+
+
 \end_layout
 
-\end_deeper
 \begin_layout Subsection*
 Task 3.1 
 \end_layout
@@ -2559,14 +2584,24 @@ Screenshot for testing your program in task 3.5.
  [2]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[JPJC/PRELIM/9597/2019/P1/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 You are to write a computer program to test the validity of classic Sudoku
  puzzles.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 The classic Sudoku puzzle involves a grid of 81 squares.
  The grid is divided into nine blocks, each containing nine squares.
@@ -2583,6 +2618,17 @@ A
 
  classic Sudoku puzzle can be represented using a two-dimensional array.
  An example of this puzzle is:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-JPJC-2019-P1-Q4-1.png
+	width 50page%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2964,18 +3010,24 @@ Evidence 15:
  [5]
 \end_layout
 
-\end_deeper
-\begin_layout Subsection
-Paper 2
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
+
+\series bold
+[JPJC/PRELIM/9597/2019/P2/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Furniture retailer XFurniture is currently using a manual, paper-based ordering
  system.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 The customer visits the show room and informs the salesperson his/her furniture
  selection.
@@ -4149,13 +4201,23 @@ status open
  [4]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[JPJC/PRELIM/9597/2019/P2/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A project’s software development life cycle includes analysis, design, developme
 nt, testing, implementation, and evaluation stages.
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 Describe the following testing strategies that might be carried out during
  a software development project, and explain how each type of the testing
@@ -4189,19 +4251,15 @@ State two methods that could be used to implement a newly developed system.
 [4]
 \end_layout
 
-\end_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
-\end_inset
+\end_deeper
+\begin_layout Enumerate
 
-
+\series bold
+[JPJC/PRELIM/9597/2019/P2/Q3] 
 \end_layout
 
 \begin_deeper
@@ -4863,18 +4921,33 @@ BinarySearch
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[JPJC/PRELIM/9597/2019/P2/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Object-oriented programming is used to store and process data for a company’s
  payroll.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
-\noindent
 \align center
-<INSERT_IMAGE_HERE>
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-JPJC-2019-P2-Q4-1.png
+	width 50page%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -4902,8 +4975,19 @@ inheritance, and how it promotes software reusability.
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[JPJC/PRELIM/9597/2019/P2/Q5] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 With reference to 
 \series bold
 Question 1
@@ -4911,7 +4995,6 @@ Question 1
 , a server–based ordering system will be implemented in XFurniture.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 Local Area Network (LAN) will be used for the staff and customers.
 \end_layout
@@ -5024,19 +5107,30 @@ three
 \end_layout
 
 \begin_layout Standard
- 
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-A reservation form used for booking JP Hotel rooms is shown:
+
+\series bold
+[JPJC/PRELIM/9597/2019/P2/Q6] 
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-\noindent
+A reservation form used for booking JP Hotel rooms is shown:
+\end_layout
+
+\begin_layout Standard
 \align center
-<INSERT_IMAGE_HERE>
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-JPJC-2019-P2-Q6-1.png
+	width 50page%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5140,19 +5234,15 @@ Simplify your decision table by removing redundancies.
 \end_layout
 
 \end_deeper
-\end_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
-\end_inset
+\end_deeper
+\begin_layout Enumerate
 
- 
+\series bold
+[JPJC/PRELIM/9597/2019/P2/Q7] 
 \end_layout
 
 \begin_deeper
@@ -5220,14 +5310,24 @@ two
  [2]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[JPJC/PRELIM/9597/2019/P2/Q8] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 An Abstract Data Type (ADT) is a type (or class) for objects whose behavior
  is defined by a set of value and a set of operations.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 A linked list ADT has the following operations defined:
 \end_layout
@@ -5408,6 +5508,17 @@ Assume a node with the following structure:
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-JPJC-2019-P2-Q8-1.png
+	width 25page%
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 Complete the algorithm to implement the 'Delete' operation: 
 \begin_inset space \hfill{}
@@ -5681,8 +5792,19 @@ Delete item from a queue.
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[JPJC/PRELIM/9597/2019/P2/Q9] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A binary search tree is stored as an array of records.
  Each record represents a node and consists of the data and a left pointer
  and a right pointer.
@@ -5690,7 +5812,6 @@ A binary search tree is stored as an array of records.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 The array is called 
 \family typewriter
@@ -6455,728 +6576,10 @@ Write an algorithm for a pre-order traversal of the binary search tree.
 [4]
 \end_layout
 
-\end_deeper
-\begin_layout Section
-9597 ALVL 201X TEMPLATE
-\end_layout
-
 \begin_layout Standard
-\noindent
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="7" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="left" valignment="top">
-<row>
-<cell multirow="3" alignment="center" valignment="middle" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-In[1]:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-# Task 1.1
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Program Code
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multirow="3" alignment="center" valignment="middle" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-In[2]:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-# Task 1.2
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Program Code
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multirow="3" alignment="center" valignment="middle" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-In[3]:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-# Task 1.3
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Program Code
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Output:
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Subsubsection*
-\noindent
-Task X.X
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset space \hfill{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-
-\series bold
-Evidence X
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-
-\family typewriter
-FUNCTION CalCheckDigit(Number AS STRING, Total AS INTEGER) RETURNS STRING
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \qquad{}
-\end_inset
-
-IF LENGTH(Number) > 1 THEN
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-Digit <- INTEGER(LBFT(Number,1))
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-// Calculate ISBN, an example of how the function is called.
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-// Second parameter is always 0.
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-ISBN = CalCheckDigit("184146208",0)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="3">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top">
-<column alignment="left" valignment="top">
-<column alignment="left" valignment="top">
-<row>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Class: Connection Node
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Attributes
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \hspace{}
-\length 1col%
-\end_inset
-
-
-\family default
-Identifier
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \hspace{}
-\length 1col%
-\end_inset
-
-
-\family default
-Data Type
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \hspace{}
-\length 5col%
-\end_inset
-
-
-\family default
-Description
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-DataValue
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-STRING
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The node data
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-LeftChild
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-INTEGER
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The left node pointer
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-RightChild
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-INTEGER
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The right node pointer
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="9" columns="1">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top">
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \hspace{}
-\length 25col%
-\end_inset
-
-ToDo
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-category : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-description : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-constructor(c : STRING, d : STRING)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-set_category(s : STRING)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-set_description(s : STRING)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-get_category() : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-get:_description() : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-summary() : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\noindent
-\align center
-<INSERT_IMAGE_HERE>
-\end_layout
-
-\end_deeper
-\begin_layout Standard
- 
-\end_layout
-
 \end_body
 \end_document

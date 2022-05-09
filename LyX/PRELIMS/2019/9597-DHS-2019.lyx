@@ -81,15 +81,18 @@
 
 \begin_body
 
-\begin_layout Section
-9597 ALVL 2017
-\end_layout
-
-\begin_layout Subsection
-Paper 1
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \begin_layout Enumerate
+
+\series bold
+[DHS/PRELIM/9597/2019/P1/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 The file 
 \family typewriter
 IOI19.TXT
@@ -104,7 +107,6 @@ IOI19.TXT
  
 \end_layout
 
-\begin_deeper
 \begin_layout Subsection*
 Task 1.1 
 \end_layout
@@ -275,15 +277,25 @@ Screenshot.
 [1]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[DHS/PRELIM/9597/2019/P1/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Dubbed first of its kind globally, the Singapore Quick Response Code (SGQR)
  is an infrastructure-light technology that will help to simplify QR e-payments
  in Singapore for both consumers and merchants.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 The SGQR is based on the QR Code Specification for Payment System - Merchant-Pre
 sented Mode standard issued by EMVCo, which has the benefits of international
@@ -300,9 +312,14 @@ According to the specification, the parsed SGQR text string contains data
 \end_layout
 
 \begin_layout Standard
-\noindent
 \align center
-<INSERT_IMAGE_HERE>
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-DHS-2019-P1-Q2.png
+	width 50page%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -520,14 +537,24 @@ Screenshots.
 [2]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[DHS/PRELIM/9597/2019/P1/Q3] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 From 2021 onwards, the Primary School Leaving Exam (PSLE) will be scored
  with wider bands, replacing the current T-scores.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 Each subject will be scored using 8 bands known as Achievement Levels (AL),
  with AL 1 being the best score and AL 8 being the lowest score.
@@ -537,9 +564,14 @@ Each subject will be scored using 8 bands known as Achievement Levels (AL),
 \end_layout
 
 \begin_layout Standard
-\noindent
 \align center
-<INSERT_IMAGE_HERE>
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-DHS-2019-P1-Q3.png
+	width 50page%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -787,15 +819,25 @@ Screenshot.
  [1]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[DHS/PRELIM/9597/2019/P1/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 The Viola-Jones object detection algorithm, named after two computer vision
  researchers Paul Viola and Michael Jones, uses integral images to detect
  the presence of facial features in an image efficiently.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 An integral image (also known as a summed-area table) is the name of both
  a data structure and an algorithm used to obtain this data structure.
@@ -810,9 +852,14 @@ In an integral image, the value of each point is the sum of all pixels above
 \end_layout
 
 \begin_layout Standard
-\noindent
 \align center
-<INSERT_IMAGE_HERE>
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-DHS-2019-P1-Q4-1.png
+	width 50page%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -823,9 +870,14 @@ The integral image can be calculated in a single pass over the original
 \end_layout
 
 \begin_layout Standard
-\noindent
 \align center
-<INSERT_IMAGE_HERE>
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-DHS-2019-P1-Q4-2.png
+	width 25page%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -854,9 +906,14 @@ Thus
 \end_layout
 
 \begin_layout Standard
-\noindent
 \align center
-<INSERT_IMAGE_HERE>
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-DHS-2019-P1-Q4-3.png
+	width 50page%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
@@ -993,18 +1050,24 @@ IMAGE2.OUT
 [2]
 \end_layout
 
-\end_deeper
-\begin_layout Subsection
-Paper 2
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
+
+\series bold
+[DHS/PRELIM/9597/2019/P2/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 The following Gantt chart shows the key tasks involved in a data science
  project for a product recommendation engine based on customers' past purchase
  patterns.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \noindent
 \align center
@@ -4708,15 +4771,25 @@ The following shows sample interaction snippets of an interactive exploratory
 \end_layout
 
 \begin_layout Standard
-\noindent
 \align center
-<INSERT_IMAGE_HERE> 
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-DHS-2019-P2-Q1-1.png
+	width 65page%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\noindent
 \align center
-<INSERT_IMAGE_HERE>
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-DHS-2019-P2-Q1-2.png
+	width 65page%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -4834,20 +4907,16 @@ If the baud rate of the line is 900 baud what is the bit rate for the voltage
  [1]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \end_deeper
 \begin_layout Enumerate
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-{}
-\end_layout
-
-\end_inset
-
-
+\series bold
+[DHS/PRELIM/9597/2019/P2/Q2] 
 \end_layout
 
 \begin_deeper
@@ -4880,19 +4949,15 @@ MultiplyNotMe
  [5]
 \end_layout
 
-\end_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
-\end_inset
+\end_deeper
+\begin_layout Enumerate
 
-
+\series bold
+[DHS/PRELIM/9597/2019/P2/Q3] 
 \end_layout
 
 \begin_deeper
@@ -4926,12 +4991,22 @@ MakeBalancedBST
 [5]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
-Blackjack is a two-player card game whose rules are as follows:
+
+\series bold
+[DHS/PRELIM/9597/2019/P2/Q4] 
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+Blackjack is a two-player card game whose rules are as follows:
+\end_layout
+
 \begin_layout Itemize
 The player and then the dealer are each given two cards.
  
@@ -4989,8 +5064,19 @@ Evaluate the efficiency of your algorithm for part (b).
 [3]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[DHS/PRELIM/9597/2019/P2/Q5] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A role playing game (RPG) uses object-oriented programming (OOP) to store
  its game characters' data.
  A character, either a hero or a monster, has a name, health, magic points
@@ -5007,7 +5093,6 @@ display()
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 The game also has a special type of character, a dragon, which also has
  additional data 
@@ -5063,8 +5148,19 @@ Using suitable examples, explain why OOP is a preferred programming paradigm
  [2]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[DHS/PRELIM/9597/2019/P2/Q6] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 BuildingBloCS is Singapore's first/only/largest by Computing students for
  Computing students and beyond national Computing education outreach programme.
  In 2019, it comprises a series of workshops, talks, games, projects showcase,
@@ -5073,7 +5169,6 @@ BuildingBloCS is Singapore's first/only/largest by Computing students for
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 The organisers would like to apply what they learned in Computing to manage
  workshop information using a relational database.
@@ -5154,736 +5249,13 @@ There are some fields with missing or null values.
 \begin_inset space \hfill{}
 \end_inset
 
-[3] 
+[3]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
-\begin_layout Section
-9597 ALVL 201X TEMPLATE
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="7" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="left" valignment="top">
-<row>
-<cell multirow="3" alignment="center" valignment="middle" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-In[1]:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-# Task 1.1
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Program Code
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multirow="3" alignment="center" valignment="middle" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-In[2]:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-# Task 1.2
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Program Code
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multirow="3" alignment="center" valignment="middle" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-In[3]:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-# Task 1.3
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Program Code
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Output:
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Subsubsection*
-\noindent
-Task X.X
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset space \hfill{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-
-\series bold
-Evidence X
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-
-\family typewriter
-FUNCTION CalCheckDigit(Number AS STRING, Total AS INTEGER) RETURNS STRING
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \qquad{}
-\end_inset
-
-IF LENGTH(Number) > 1 THEN
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-Digit <- INTEGER(LBFT(Number,1))
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-// Calculate ISBN, an example of how the function is called.
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-// Second parameter is always 0.
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-ISBN = CalCheckDigit("184146208",0)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="3">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top">
-<column alignment="left" valignment="top">
-<column alignment="left" valignment="top">
-<row>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Class: Connection Node
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Attributes
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \hspace{}
-\length 1col%
-\end_inset
-
-
-\family default
-Identifier
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \hspace{}
-\length 1col%
-\end_inset
-
-
-\family default
-Data Type
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \hspace{}
-\length 5col%
-\end_inset
-
-
-\family default
-Description
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-DataValue
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-STRING
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The node data
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-LeftChild
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-INTEGER
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The left node pointer
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-RightChild
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-INTEGER
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The right node pointer
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="9" columns="1">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top">
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \hspace{}
-\length 25col%
-\end_inset
-
-ToDo
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-category : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-description : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-constructor(c : STRING, d : STRING)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-set_category(s : STRING)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-set_description(s : STRING)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-get_category() : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-get:_description() : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-summary() : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\noindent
-\align center
-<INSERT_IMAGE_HERE>
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
- 
-\end_layout
-
 \end_body
 \end_document

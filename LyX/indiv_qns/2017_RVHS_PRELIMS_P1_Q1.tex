@@ -1,0 +1,128 @@
+\item \textbf{{[}RVHS/PRELIM/9597/2017/P1/Q1{]} }
+
+\textbf{Results management }
+
+For this task, you are required to read the text file \textquotedblleft \textbf{overall\_grades.txt}\textquotedblright{}
+which contains the subject grades of the first and second semester
+examination of 50 students.
+
+The format of the text file is as follow: \texttt{<name>;<subject1>:<grade1>,<grade2>;<subject2>:<grade1>,<grade
+2>;<subject3>:<grade1>,<grade2>,\dots etc;\textbackslash n }
+
+For example: 
+
+\texttt{Rufus Schuck;EL:C,B;CL:C,C;Math:C,E;Bio:B,F; }
+
+Student Rufus Schuck takes 4 subjects. They are English (EL), Chinese
+(CL), Math (Math) and Biology (Bio). His 1st and 2nd semester grades
+for English is C and B respectively. 
+
+\subsection*{Task 1.1 }
+
+Write the program code for the function process\_data() which reads
+the text file \textquotedblleft \textbf{overall\_grades.txt}\textquotedblright{}
+and returns a dictionary which has the following format. 
+
+\texttt{\{'Rufus Schuck': \{'EL': {[}'C', 'B'{]}, 'CL': {[}'C', 'C'{]},
+'Math': {[}'C', 'E'{]}, 'Bio': {[}'B', 'F'{]}\}, ...\} }
+
+The returned dictionary uses the name of student as key and another
+dictionary as its return value. This \textquotedblleft another\textquotedblright{}
+dictionary then uses the subjects and a list containing the grades
+of the 1st and 2nd semesters as its key and value respectively. 
+
+\subsection*{Evidence 1 }
+
+The program code for the function \texttt{process\_data()}. \hfill{}{[}4{]}
+
+\subsection*{Task 1.2}
+
+Write a function \texttt{have\_n\_improvement(n)} which takes in an
+integer \texttt{n} and returns a list of student names who have improvement
+in exactly \texttt{n} subject(s). Using the example in Task 1.1, '\texttt{Rufus
+Schuck}' shows improvement in only English. So, if \texttt{n} is 1,
+'\texttt{Rufus Schuck}' must be included in the student name list. 
+
+\subsection*{Evidence 2}
+
+The program code for the function \texttt{have\_n\_improvement(n)}.\hfill{}
+{[}3{]}
+
+\subsection*{Task 1.3 }
+
+Write a function \texttt{have\_improvement\_in\_all\_subjs()} which
+returns a list of student names who have improvement in all his/her
+subjects. 
+
+\subsection*{Evidence 3}
+
+The program code for the function have\_improvement\_in\_all\_subjs(n).\hfill{}
+{[}3{]}
+
+\subsection*{Task 1.4 }
+
+Write a function \texttt{count\_combi(combi)} which takes a list of
+subjects \texttt{combi} as input and returns the total number of students
+who take the subject combination in \texttt{combi}. Take note that
+students who take more subjects than what is indicated in \texttt{combi}
+are included. 
+
+For example:
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{>\textcompwordmark >\textcompwordmark > count\_combi({[}'EL',
+'MATH'{]}) }
+
+\texttt{>\textcompwordmark >\textcompwordmark > 50 }%
+\end{minipage}
+
+\subsection*{Evidence 4 }
+
+The program code for the function \texttt{count\_combi(n)}. \hfill{}{[}4{]}
+
+\subsection*{Task 1.5}
+
+Using your solution in Task 1.4, find the total number of students
+who take \textquotedbl Chem\textquotedbl{} and \textquotedbl Bio\textquotedbl{}
+but not \textquotedbl Physics\textquotedbl . 
+
+\subsection*{Evidence 5 }
+
+The program code to find what is required in Task 1.5. \hfill{}{[}2{]}
+
+\subsection*{Task 1.6 }
+
+Write a function \texttt{calculate\_GPA(name)} which takes a string
+\texttt{name} as input and calculates the GPA of the student indicated
+by \texttt{name}. 
+
+The points for each grade are as follow: 
+
+\texttt{\{'A':5, 'B':4, 'C':3, 'D':2, 'E':1, 'F':0\} }
+
+The 1 st and 2nd semester grades in the data has the same weightages. 
+
+To calculate GPA,
+\begin{itemize}
+\item Find the average points achieved of each subject.
+\begin{itemize}
+\item e.g. if a student gets C and D in \textquotedbl CL\textquotedbl ,
+his average points for \textquotedbl CL\textquotedbl{} is 3 + 2 =
+2.5 
+\end{itemize}
+\item Add up the average points of each subject 
+\item Divide the total by the number subjects the student takes 
+\begin{itemize}
+\item e.g. \texttt{'Claudette Bode': \{'EL': {[}'C', 'D'{]}, 'CL': {[}'D',
+'A'{]}, 'Math': {[}'A', 'D'{]}, 'Phy': {[}'A', 'D'{]}, 'Bio': {[}'D',
+'C'{]}\}}, 
+\item \texttt{{[}(3 + 2)/2 + (2 + 5)/2 + (5 + 2)/2 + (2 + 5)/2 + (2 + 3)/2{]}/5
+= 3.1}
+\end{itemize}
+\item GPA for '\texttt{Claudette Bode}' is 3.1 
+\end{itemize}
+
+\subsection*{Evidence 6 }
+
+The program code for the function \texttt{calculate\_GPA(name)}.\hfill{}
+{[}4{]}

@@ -1,0 +1,112 @@
+\item \textbf{{[}NYJC/PRELIM/9569/2021/P2/Q3{]} }
+
+Name your Jupyter Notebook as 
+
+\texttt{TASK3\_<your name>\_<centre number>\_<index number>.ipynb }
+
+The task is to write a function that takes a sequence of characters
+representing a colour, and translates the colour into a different
+number base. 
+
+8-bit colours are represented with three numbers, indicating the level
+of the colours red (R), green (G), and blue (B) respectively. Each
+number is an integer from 0 to 255. 255 represents the fully saturated
+colour, while 0 represents zero saturation (black).
+
+In HTML, these colours may be represented using hex code as well.
+In hex code, the R, G, and B values are converted to hexadecimal.
+Hex codes begin with the symbol \textquoteleft \#\textquoteright{}
+followed by the three R, G, and B hexadecimal values. 
+
+For example, the hex code \#0A0B0C represents a colour with RGB values
+10, 11, and 12 respectively. 
+
+For each of the sub-tasks, add a comment statement, at the beginning
+of the code using the hash symbol \textquoteleft \#\textquoteright ,
+to indicate the sub-task the program code belongs to, for example: 
+\noindent \begin{center}
+\begin{tabular}{c|l|}
+\cline{2-2} 
+\multirow{2}{*}{\texttt{In{[}1{]}:}} & \texttt{\# Task 3.1}\tabularnewline
+ & \texttt{Program Code}\tabularnewline
+\cline{2-2} 
+\multicolumn{1}{c}{} & \multicolumn{1}{l}{\texttt{Output:}}\tabularnewline
+\end{tabular}
+\par\end{center}
+
+\subsubsection*{Task 3.1 }
+
+Write a function called \texttt{task3\_1(hex)} that: 
+\begin{itemize}
+\item takes \texttt{hex}, a string representing a hex code, beginning with
+a \textquoteleft \#\textquoteright{} symbol followed by three valid
+hexadecimal values between 00 and FF 
+\item returns and displays either: 
+\begin{itemize}
+\item a 3-integer tuple representing RGB values 
+
+or 
+\item the error message, \textquotedbl\texttt{invalid data}\textquotedbl{}
+\hfill{}{[}5{]}
+\end{itemize}
+\end{itemize}
+Test the function fully with suitable test data. 
+
+For example, 
+
+\texttt{task3\_1(\textquotedbl\#FFFFFF\textquotedbl ) }
+
+should return and display \texttt{(255, 255, 255)}\hfill{} {[}3{]}
+
+\subsubsection*{Task 3.2 }
+
+Some image programs do not represent colours using 8-bit integers.
+Instead, they represent them as a normalised float value. In this
+representation, a value of 1.0 represents the fully saturated colour
+and a value of 0 represents zero saturation (black). 
+
+Write a second function \texttt{task3\_2(rgb)} that: 
+\begin{itemize}
+\item takes a 3-integer tuple rgb representing RGB values 
+\item returns and displays either: 
+\begin{itemize}
+\item a 3-float tuple representing normalised RGB 
+
+or 
+\item the error message, \textquotedbl invalid data\textquotedbl{} \hfill{}{[}5{]}
+\end{itemize}
+\end{itemize}
+Test the function fully with suitable test data. 
+
+For example, 
+
+\texttt{task3\_2((128, 128, 128))} 
+
+should return and display\texttt{ (0.50196, 0.50196, 0.50196) }
+
+\texttt{task3\_2((255, 255, 255)) }
+
+should return and display\texttt{ (1.0, 1.0, 1.0)}\hfill{} {[}3{]}
+
+\subsubsection*{Task 3.3 }
+
+Image filters are functions that take in image data and change the
+RGB values of its colours according to an algorithm. The algorithm
+for converting an image to grayscale calculates the average of the
+RGB values and sets the R, G, and B values to this average. 
+
+Write a third function \texttt{task3\_3(hex)} that:
+\begin{itemize}
+\item takes hex, a string representing a hex code 
+\item returns and displays a 3-float tuple representing normalised RGB of
+the colour converted to grayscale \hfill{}{[}4{]}
+\end{itemize}
+Test the function fully with \textbf{two} suitable values.
+
+For example, 
+
+\texttt{task3\_3(\textquotedbl\#FF8000\textquotedbl ) }
+
+should return and display \texttt{(0.5, 0.5, 0.5)}\hfill{} {[}2{]}
+
+Save your Jupyter Notebook for Task 3.

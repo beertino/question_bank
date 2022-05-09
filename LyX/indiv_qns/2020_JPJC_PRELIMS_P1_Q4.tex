@@ -1,0 +1,62 @@
+\item \textbf{{[}JPJC/PRELIM/9569/2020/P1/Q4{]} }
+
+The elections department of a town wishes to store the records of
+its voters in a linked list. The stored records are first ordered
+by the voter\textquoteright s age (in years), followed by voter\textquoteright s
+name in alphabetical order. The voters list is maintained with the
+record of the youngest voter at the start of the list. 
+\begin{enumerate}
+\item Explain why the sequence of nodes in a linked list does not always
+reflect how the data is stored in the memory of the computer. {[}2{]}
+\quad{} 
+
+\begin{tabular}{c|c|c|c|}
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{\textbf{Age}} & \multicolumn{1}{c}{\textbf{Name}} & \multicolumn{1}{c}{\textbf{Link}}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\textbf{1} & \texttt{35} & \texttt{Tim Tan} & \texttt{3}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\textbf{2} & \texttt{23} & \texttt{Annie Hao} & \texttt{a}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\textbf{3} & \texttt{45} & \texttt{Bob Boon} & \texttt{6}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\textbf{4} & \texttt{24} & \texttt{Lester Moh} & \texttt{b}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\textbf{5} & \texttt{18} & \texttt{Ari Bello} & \texttt{c}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\textbf{6} & \texttt{52} & \texttt{Helen How} & \texttt{0}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\textbf{7} & \texttt{23} & \texttt{Cindy Ku} & \texttt{d}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\textbf{8} & \texttt{55} & \texttt{Charles Chu} & \texttt{1}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\textbf{9} & \texttt{53} & \texttt{Mimi Lee} & \texttt{e}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\textbf{10} & \texttt{40} & \texttt{Jenny Tsai} & \texttt{f}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\end{tabular}%
+\begin{tabular}{|c|c|}
+\hline 
+\textbf{Head} & \texttt{g}\tabularnewline
+\hline 
+\textbf{Free} & \texttt{8}\tabularnewline
+\hline 
+\end{tabular}
+\end{enumerate}
+Two linked lists are kept to manage the actual data, and the free
+spaces. When a new item is added, a node is taken from the head of
+the free space list, and when a node is deleted, the deleted node
+will be returned to the tail of the free space list. 
+\begin{enumerate}
+\item[(b)]  Given that \texttt{Ari Bello} is the youngest voter, state the values
+of \texttt{a}, \texttt{b}, \texttt{c}, \texttt{d}, \texttt{e}, \texttt{f},
+and \texttt{g}. \hfill{}{[}4{]}
+\item[(c)]  Draw the \textbf{linked list diagram} to show its state right after
+each of the following successive operations: 
+\begin{enumerate}
+\item Insert \texttt{18} years old, \texttt{Ahmad Ali}. 
+\item Delete \texttt{23} years old, \texttt{Cindy Ku}. 
+\item Insert \texttt{37} years old, \texttt{Tania Tan}. \hfill{}{[}6{]}
+\end{enumerate}
+\item[(d)]  Describe \textbf{one} advantage and \textbf{one} disadvantage of
+using a linked list over a static array. \hfill{}{[}2{]}
+\end{enumerate}

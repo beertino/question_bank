@@ -1,0 +1,2107 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+[DHS/PRELIM/9597/2016/P1/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+In Olympic diving, scoring is done by a panel comprising a minimum of 3
+ judges.
+ The highest and lowest scores are dropped to eliminate the extremes.
+ The raw score is computed by summing the middle scores.
+ The raw score is then multiplied by the level of difficulty to give the
+ total score.
+ 
+\end_layout
+
+\begin_layout Standard
+Sample scoring for a 5-judges panel: Scores: 
+\end_layout
+
+\begin_layout Standard
+6.5, 6, 6.5, 6, 5.5 
+\end_layout
+
+\begin_layout Standard
+Lowest (5.5) and highest (6.5) scores dropped 
+\end_layout
+
+\begin_layout Standard
+Raw Score = 18.5 (6.5 + 6 + 6) 
+\end_layout
+
+\begin_layout Standard
+Total Score = Score (18.5) x Difficulty Level (1.5) = 27.75 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+DIVE1.TXT
+\family default
+ contains the countries, difficulty levels and 5-judges scores for a diving
+ competition.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 1.1 
+\end_layout
+
+\begin_layout Standard
+Write program code to determine the podium winners of the competition.
+ Your program should output the medal (Gold, Silver, Bronze), country name
+ and the total score (to 2 decimal places).
+ 
+\end_layout
+
+\begin_layout Standard
+Sample output:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+Gold: China 45.90 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Silver: Malaysia 39.20
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Bronze: United States 36.00 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Evidence 1: 
+\end_layout
+
+\begin_layout Standard
+Program code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[5]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 2: 
+\end_layout
+
+\begin_layout Standard
+Screenshot of output.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Standard
+In most international competitions with more than five judges, the 3/5 method
+ is used.
+ The middle 5 numbers are added and then multiplied by the difficulty of
+ the dive and then multiplied again by 0.6.
+ 
+\family typewriter
+DIVE2.TXT
+\family default
+ contains the countries, difficulty levels and 9-judges scores for a diving
+ competition.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 1.2 
+\end_layout
+
+\begin_layout Standard
+Write program code to determine the podium winners of the competition.
+ Your program should output the medal (Gold, Silver, Bronze), country name
+ as well as the total score (to 2 decimal places).
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 3: 
+\end_layout
+
+\begin_layout Standard
+Program code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[8]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 4: 
+\end_layout
+
+\begin_layout Standard
+Screenshot of output.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[DHS/PRELIM/9597/2016/P1/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Quicksort is an efficient sorting algorithm to order values in an array.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 2.1 
+\end_layout
+
+\begin_layout Standard
+Write a recursive quicksort method to sort the values in the text file 
+\family typewriter
+DATA.TXT
+\family default
+ in descending order.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 5: 
+\end_layout
+
+\begin_layout Standard
+Program code for Task 2.1.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 6:
+\end_layout
+
+\begin_layout Standard
+Screenshot of output.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Subsection*
+Task 2.2 
+\end_layout
+
+\begin_layout Standard
+Using a suitable data structure, convert the recursive quicksort in Task
+ 2.1 to one using iteration.
+ Confirm the correctness of your iterative quicksort on the data set used
+ in Task 2.1 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 7:
+\end_layout
+
+\begin_layout Standard
+Program code for Task 2.2.
+\begin_inset space \hfill{}
+\end_inset
+
+[8]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 8: 
+\end_layout
+
+\begin_layout Standard
+Screenshot of output.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[DHS/PRELIM/9597/2016/P1/Q3] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+A Pokemon Go fan who nicknames himself Pokeboy wishes to manage his Pokemon
+ collection using a binary search tree.
+ Each binary search tree node stores the name together with the numbers
+ of that particular Pokemon and candies collected, as well as a reference
+ to a linked list.
+ Each linked list node stores the combat power (CP) of a Pokemon.
+ The binary search tree is organised in ascending Pokemon name order.
+ Each linked list is organised in descending order of CP.
+ For ease of reference, we shall name this composite data structure Poketree.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 3.1 
+\end_layout
+
+\begin_layout Standard
+Using object-oriented programming, construct appropriate classes to initialise,
+ insert and display the contents of the Poketree.
+ In your main driver program, write code to initialise a Poketree with the
+ first Pokemon collected which is randomly generated from the contents in
+ the file 
+\family typewriter
+POKEMONS.TXT
+\family default
+ as well as a randomly generated CP in the range 10 to 200 inclusive.
+ When a Pokemon is caught, 3 candies of that kind are also added to the
+ candies count of the Poketree binary search tree node.
+\end_layout
+
+\begin_layout Subsection*
+Evidence 9: 
+\end_layout
+
+\begin_layout Standard
+Program code for class definition, initialisation and display methods.
+\begin_inset space \hfill{}
+\end_inset
+
+ [7]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 10:
+\end_layout
+
+\begin_layout Standard
+Screenshot output to show contents of Poketree with first Pokemon inserted.
+\begin_inset space \hfill{}
+\end_inset
+
+ [1]
+\end_layout
+
+\begin_layout Subsection*
+Task 3.2 
+\end_layout
+
+\begin_layout Standard
+Write a class method 
+\family typewriter
+insert()
+\family default
+ and the necessary main driver program code to insert another 23 randomly
+ generated Pokemons and their corresponding CPs into the Poketree.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 11: 
+\end_layout
+
+\begin_layout Standard
+Program code for Task 3.2.
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 12:
+\end_layout
+
+\begin_layout Standard
+Screenshot to show updated contents of Poketree.
+\begin_inset space \hfill{}
+\end_inset
+
+ [1]
+\end_layout
+
+\begin_layout Standard
+Apart from collecting Pokemons, one can also evolve Pokemons.
+ When a new Pokemon is evolved, its previous incarnation is deleted from
+ the Poketree and its new incarnation either inserted (if its kind is not
+ previously collected) or updated (if its kind is previously collected)
+ to the Poketree.
+ Evolving also requires a set amount and type of Pokemon candy.
+ If there is insufficient Pokemon candies, Pokeboy's preferred action is
+ to exchange (i.e.
+ delete) existing Pokemons of the same species for candies, starting from
+ the Pokemon with the lowest CP.
+ Each Pokemon can be exchanged for one candy.
+ Pokeboy also wishes to keep at least 2 Pokemons of the same species in
+ his collection (well he is a Pokemon fan).
+ The text file 
+\family typewriter
+CANDIES.TXT
+\family default
+ contains the candies requirement for evolvement.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 3.3 
+\end_layout
+
+\begin_layout Standard
+Write a Boolean class method 
+\family typewriter
+can_evolve(pokemon)
+\family default
+ to determine if a particular Pokemon can evolve by Pokeboy's preference.
+ A Pokemon can evolve if there are sufficient candies or it is possible
+ to exchange candies, leaving a minimum of 2 Pokemons of that species.
+\end_layout
+
+\begin_layout Standard
+Write a class method evolve(pokemon) which will evolve a Pokemon using 
+\family typewriter
+can_evolve(pokemon)
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Add necessary class method(s) and main driver program code to evolve all
+ evolvable Pokemons.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 13: 
+\end_layout
+
+\begin_layout Standard
+Program code for Task 3.3.
+\begin_inset space \hfill{}
+\end_inset
+
+ [7]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 14:
+\end_layout
+
+\begin_layout Standard
+Screenshot(s) to show evolution.
+\begin_inset space \hfill{}
+\end_inset
+
+ [1]
+\end_layout
+
+\begin_layout Subsection*
+Task 3.4 
+\end_layout
+
+\begin_layout Standard
+Write a class method 
+\family typewriter
+most_poke()
+\family default
+ to output the frequency and most collected Pokemon(s) collected by Pokeboy.
+ 
+\end_layout
+
+\begin_layout Standard
+Add necessary program code to exercise 
+\family typewriter
+most_poke()
+\family default
+.
+\end_layout
+
+\begin_layout Subsection*
+Evidence 15: 
+\end_layout
+
+\begin_layout Standard
+Program code for Task 3.4.
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 16:
+\end_layout
+
+\begin_layout Standard
+Screenshot for Task 3.4.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Subsection*
+Task 3.5
+\end_layout
+
+\begin_layout Standard
+Pokeboy aspires to join the Catch Them All club.
+ The Catch Them All club is a group of elites who have managed to catch
+ every species of Pokemon at least once.
+ Write a class method 
+\family typewriter
+catch_them_all()
+\family default
+ to either output the message "Welcome to the club! You have caught them
+ all!" or output the number and remaining Pokemon names yet to be caught.
+\end_layout
+
+\begin_layout Standard
+Add necessary program code to exercise 
+\family typewriter
+catch_them_all()
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 17:
+\end_layout
+
+\begin_layout Standard
+Program code for Task 3.5.
+\begin_inset space \hfill{}
+\end_inset
+
+ [6]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 18: 
+\end_layout
+
+\begin_layout Standard
+Screenshot for annotated test cases.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Subsection*
+Task 3.6 
+\end_layout
+
+\begin_layout Standard
+After some time, it becomes necessary to reorganise the binary search tree
+ to ensure optimal search performance.
+ Write program code to rebalance the binary search tree and include as comments
+ your strategy to do this.
+ You should output the roots and heights of the old and new binary search
+ trees.
+\end_layout
+
+\begin_layout Subsection*
+Evidence 19:
+\end_layout
+
+\begin_layout Standard
+Program code for Task 3.6.
+\begin_inset space \hfill{}
+\end_inset
+
+ [5]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 20:
+\end_layout
+
+\begin_layout Standard
+Screenshot.
+\begin_inset space \hfill{}
+\end_inset
+
+ [1]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[DHS/PRELIM/9597/2016/P1/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+A magic index in an array A is defined to be an index such that 
+\family typewriter
+A[i] = i
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 4.1 
+\end_layout
+
+\begin_layout Standard
+Given a sorted array of distinct integers, write a brute force iterative
+ method 
+\family typewriter
+magic_index(A)
+\family default
+ to find a magic index if one exists.
+ If a magic index does not exist, return -1.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 21: 
+\end_layout
+
+\begin_layout Standard
+Function code for 
+\family typewriter
+magic_index(A)
+\family default
+ and relevant driver code.
+\begin_inset space \hfill{}
+\end_inset
+
+ [5]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 22: 
+\end_layout
+
+\begin_layout Standard
+Screenshot of output.
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Subsection*
+Task 4.2 
+\end_layout
+
+\begin_layout Standard
+Write an efficient recursive method 
+\family typewriter
+magic_index_duplicates(A)
+\family default
+ to find a magic index for an array containing non-distinct values.
+ If a magic index does not exist, return -1.
+\end_layout
+
+\begin_layout Subsection*
+Evidence 23: 
+\end_layout
+
+\begin_layout Standard
+Function code for 
+\family typewriter
+magic_index_duplicates(A)
+\family default
+ and relevant driver code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [6]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 24:
+\end_layout
+
+\begin_layout Standard
+Screenshot of output.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Standard
+A child is running up a staircase with n steps and can hop either 1, 2 or
+ 3 steps at a time.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 4.3 
+\end_layout
+
+\begin_layout Standard
+Write a brute force recursive method to count how many possible ways the
+ child can run up the stairs.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 25: 
+\end_layout
+
+\begin_layout Standard
+Function code and relevant driver code.
+\begin_inset space \hfill{}
+\end_inset
+
+ [5]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 26: 
+\end_layout
+
+\begin_layout Standard
+Screenshot of output.
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Subsection*
+Task 4.4 
+\end_layout
+
+\begin_layout Standard
+Optimise your brute force recursive solution in Task 4.3 by eliminating unnecessa
+ry recomputations.
+\end_layout
+
+\begin_layout Subsection*
+Evidence 27: 
+\end_layout
+
+\begin_layout Standard
+Function code and relevant driver code.
+\begin_inset space \hfill{}
+\end_inset
+
+ [6]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 28:
+\end_layout
+
+\begin_layout Standard
+Screenshots showing annotated test cases.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[DHS/PRELIM/9597/2016/P2/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+GovBuy is a Government Digital Services initiative that helps government
+ employees buy microservices (small pieces of software that can be deployed
+ independently), software libraries, non-critical bug fixes or even customised
+ hardware from independent contractors.
+ 
+\end_layout
+
+\begin_layout Standard
+The platform allows government employees to post a task.
+ Anyone can bid to take on the task during the bidding period.
+ The reverse auction starts at $5,000 and the lowest bid wins.
+\end_layout
+
+\begin_layout Standard
+The winner works on the task and submits completed code to the team.
+ If the code meets the acceptance criteria before the deadline, the winner
+ is sent a cheque for the work.
+\end_layout
+
+\begin_layout Standard
+The current prototype platform is a web interface:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-DHS-2016-P2-Q1-1.png
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The agency in charge wishes to develop mobile native versions of the platform
+ for Android and iOS.
+ The following diagram shows the expected workflow.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-DHS-2016-P2-Q1-2.png
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Create a PERT chart from the above workflow diagram.
+ You may assume the following durations from the activity table below.
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Phase
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Duration (weeks)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gather and document requirements
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+UI and workflow design and approval
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Design and architect
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Build (coding)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Testing and validation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Customer QA and approval
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+G
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Prepare and submit to Google Play Store
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Prepare and submit to Apple App Store
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Apple approval
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+From the PERT chart, state the critical path and the minimum project completion
+ time.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+Describe two benefits which can be gained by producing a PERT chart.
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Enumerate
+Describe and give an example of a dependent activity.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+Describe and give an example of a concurrent activity.
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The project manager decides he needs another diagrammatic tool to monitor
+ the project progress.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Create a Gantt chart for the project.
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\begin_layout Enumerate
+Explain how the Gantt chart can help the developers in carrying out their
+ work.
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Describe two activities to mark the closure of the project.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Enumerate
+Cybersecurity is of paramount concern when it comes to government web services.
+ Using suitable examples, explain the following cybersecurity exploits and
+ suggest how they can be mitigated.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Cross site scripting 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+Code injection 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+Denial of service attack 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The platform will be hosted using cloud computing.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Explain why the cloud is a suitable hosting platform.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+Use suitable example to illustrate the concepts of IaaS, PaaS and SaaS.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+What ethical considerations should bidders bear in mind when bidding for
+ tasks on an open source platform such as GitHub?
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[DHS/PRELIM/9597/2016/P2/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The current GovBuy prototype supports two types of reverse auctions: a standard
+ reverse auction and a sealed bid auction.
+ 
+\end_layout
+
+\begin_layout Standard
+A standard reverse auction is one where bids begin at $5,000.
+ The lowest possible bid is $1, and an auction automatically ends once a
+ $1 bid has been submitted.
+ Bidders are allowed to submit multiple bids throughout the duration of
+ the auction.
+ Bidders will see whether they are the winning bidder after submitting a
+ bid, and will have an opportunity to submit a lower bid if the auction
+ is still running.
+ The GitHub user names of participating bidders are hidden during the auction.
+ At the end of the auction, all bidders' GitHub accounts and bid amounts
+ will be unsealed and posted on the GovBuy platform.
+ A sealed bid auction is a type of reverse auction.
+ Each bidder is allowed to submit only one bid in an auction.
+ Once a bid is submitted, the bidder may not submit a second bid for the
+ same auction.
+ The lowest bidder at the conclusion of the auction will still win the auction.
+ In the event that one or more bidders have the same bid amount, the bidder
+ who was first to submit the lowest bid amount will win the auction.
+ All bids will stay sealed until the end of the auction.
+ A bidder will not know the amounts other bidders have bidded on the auction,
+ or how many bids have been submitted.
+ At the end of the auction, all bidders' GitHub accounts and bid amounts
+ will be unsealed and posted on the GovBuy platform.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Illustrate the types of reverse auctions in a class UML diagram.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[5]
+\end_layout
+
+\begin_layout Enumerate
+Using your illustration, explain the following OOP concepts: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+encapsulation 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+inheritance 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+polymorphism 
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[DHS/PRELIM/9597/2016/P2/Q3]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The following code shows the program 
+\family typewriter
+mystery1
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+epsilon = 0.01 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+step = epsilon ** 2
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+num_guesses = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+ans = 0.0 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+while abs(ans ** 2 - x) >= epsilon and ans * ans <= x: 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+ans += step 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+num_guesses += 1 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+print("#Guesses =", num_guesses) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+print("Answer =", ans) 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Running the program with 
+\family typewriter
+x = 25
+\family default
+ gives the following output: 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+#Guesses = 49990 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Answer = 4.999000000001688
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+What do you think is the purpose of the program 
+\family typewriter
+mystery1
+\family default
+? 
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Enumerate
+Comment on the efficiency of program mystery1.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+An alternative version, program 
+\family typewriter
+mystery2
+\family default
+ is provided as follows.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+epsilon = 0.01
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+num_guesses = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+low = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+high = x
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+ans = (high + low) / 2 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+while abs(ans ** 2 - x) >= epsilon:
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+num_guesses += 1 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+if ans ** 2 < x: 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+low = ans 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+else: 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+high = ans
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+ans = (high + low) / 2
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+print("#Guesses =", num_guesses)
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+print("Answer =", ans) 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Running the program with 
+\family typewriter
+x = 25
+\family default
+ gives the following output:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+#Guesses = 13 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Answer = 5.00030517578125 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Comment on the efficiency of program 
+\family typewriter
+mystery2
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+For 
+\family typewriter
+x = 123456
+\family default
+, 
+\family typewriter
+mystery1
+\family default
+ gives the following output: 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+#Guesses = 3513631
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Answer = 351.36309998343665
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Justify a reasonable estimate for the number of guesses for 
+\family typewriter
+mystery2
+\family default
+ for 
+\family typewriter
+x = 123456
+\family default
+? 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[DHS/PRELIM/9597/2016/P2/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Given a list of integers, the task is to find the number with the highest
+ occurrence.
+ Describe and devise an algorithm for this task using:
+\end_layout
+
+\begin_layout Enumerate
+array 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Enumerate
+binary search tree 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Enumerate
+hash table / dictionary
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[DHS/PRELIM/9597/2016/P2/Q5] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+In ASCII, the decimal representation of the uppercase letter 'A' is 65.
+ Uppercase letters precede their lowercase equivalents with the offset amount
+ 32.
+\end_layout
+
+\begin_layout Enumerate
+Determine the decimal representation of the lowercase letter 'g'.
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Enumerate
+State the range of ASCII in decimal.
+\begin_inset space \hfill{}
+\end_inset
+
+ [1]
+\end_layout
+
+\begin_layout Enumerate
+In Unicode, the legal range of codepoints is U+0000 through U+10FFFF.
+ How many potential characters can be represented in decimal? 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+Devise an algorithm utilising a stack to convert a non-negative integer
+ from decimal to hexadecimal.
+\begin_inset space \hfill{}
+\end_inset
+
+ [5]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[DHS/PRELIM/9597/2016/P2/Q6] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+HonestBee is an end-to-end online grocery ordering and delivery service.
+ When a customer makes orders from a grocery store, a concierge shopper
+ handpicks the best products, and a delivery bee brings the groceries to
+ the customer's doorstep.
+ The following online cart page shows the current order of a customer: 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-DHS-2016-P2-Q6-1.png
+	width 60page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the event that the item is out of stock, the customer can also opt for
+ 3 options: 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-DHS-2016-P2-Q6-2.png
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Produce a normalised relational database schema showing the table specifications.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[8]
+\end_layout
+
+\begin_layout Enumerate
+Draw an ER diagram illustrating the entities and their relationships.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+Using suitable examples from this context, explain the concepts of
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+primary key (for the Customer table) 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+composite key 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+foreign key 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Orders below $30 is charged a delivery fee of $10, else delivery fee is
+ waived.
+ Some orders may incur a concierge fee for special instructions.
+ Where should fields such as delivery fee and concierge fee be stored? Why?
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

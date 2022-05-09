@@ -1,0 +1,4058 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+[HCI/PRELIM/9597/2019/P1/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The manager of a private carpark wants to process the daily data of people
+ using the carpark.
+ The carpark is open from 8am to 11pm and the carpark charge is as follows:
+\end_layout
+
+\begin_layout Itemize
+Before 5pm: $1.50 per hour or part thereof 
+\end_layout
+
+\begin_layout Itemize
+After 5pm, $3.00 per entry regardless of the duration
+\end_layout
+
+\begin_layout Standard
+However, if a car enters before 5pm and leaves after 5pm, the charge involves
+ both rules.
+ For example, if the car stays in the carpark from 2.45pm to 6.30pm, it is
+ broken down to 2 hours 15 minutes before 5pm and 1 hour 30 minutes after
+ 5pm.
+ Hence the charge will be $1.50 * 3 + $3.00 = $7.50.
+ 
+\end_layout
+
+\begin_layout Standard
+Each day the carpark electronic system generates a file
+\family typewriter
+ CARPARK.txt
+\family default
+.
+ Each record in the file has the following format:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\family typewriter
+<CARPLATE NUMBER>,<START TIME>,<END TIME>
+\end_layout
+
+\begin_layout Standard
+For example, 
+\family typewriter
+SLX2315A,0940,1415
+\family default
+ means that a car with car plate number SLX2315A entered the carpark at
+ 9.40am and left at 2.15pm.
+ 
+\end_layout
+
+\begin_layout Standard
+You are 
+\series bold
+not
+\series default
+ allowed to use any built-in functions for time processing.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 1.1 
+\end_layout
+
+\begin_layout Standard
+Write program code for the 
+\family typewriter
+Price
+\family default
+ function using the following specification:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\family typewriter
+FUNCTION Price (start: STRING, end: STRING) : FLOAT
+\end_layout
+
+\begin_layout Standard
+The function has two string parameters 
+\family typewriter
+start
+\family default
+, 
+\family typewriter
+end
+\family default
+ which refers to the start and end time when the car parked.
+ The function returns the carpark charge as a float.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 1 
+\end_layout
+
+\begin_layout Standard
+Your program code.
+\begin_inset space \hfill{}
+\end_inset
+
+ [5]
+\end_layout
+
+\begin_layout Subsection*
+Task 1.2 
+\end_layout
+
+\begin_layout Standard
+Write a program code to perform the following task for the manager:
+\end_layout
+
+\begin_layout Itemize
+Read data from 
+\family typewriter
+CARPARK.txt 
+\end_layout
+
+\begin_layout Itemize
+Write all the car plate numbers and corresponding carpark charges to another
+ file 
+\family typewriter
+CHARGE.txt
+\family default
+, in the following format: 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+
+\family typewriter
+<CARPLATE NUMBER>,<CARPARK CHARGE>
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\family typewriter
+<CARPLATE NUMBER>,<CARPARK CHARGE>
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Output the total charges for the day
+\end_layout
+
+\begin_layout Subsection*
+Evidence 2 
+\end_layout
+
+\begin_layout Standard
+Your program code.
+\begin_inset space \hfill{}
+\end_inset
+
+ [7]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 3
+\end_layout
+
+\begin_layout Standard
+One screenshot showing the program output and contents of 
+\family typewriter
+CHARGE.txt
+\family default
+ from running the program.
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[HCI/PRELIM/9597/2019/P1/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+When a list of integers has repeated numbers, the searching and sorting
+ algorithms can be different.
+ The task is to perform an insertion sort before a binary search is executed.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 2.1 
+\end_layout
+
+\begin_layout Standard
+Write the program code for a procedure to implement insertion sort in ascending
+ order.
+ The input parameter is a list of integers which may have repeated numbers.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 4
+\end_layout
+
+\begin_layout Standard
+Your program code.
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\begin_layout Subsection*
+Task 2.2 
+\end_layout
+
+\begin_layout Standard
+Write the program code for a procedure to implement binary search for a
+ targeted integer.
+ The input parameter is an ordered list of integers which may have repeated
+ numbers.
+ The procedure outputs all the indices at which the target appears, or 
+\family typewriter
+−1
+\family default
+ if the target is not found.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 5 
+\end_layout
+
+\begin_layout Standard
+Your program code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[9]
+\end_layout
+
+\begin_layout Subsection*
+Task 2.3 
+\end_layout
+
+\begin_layout Standard
+The file 
+\family typewriter
+NUMBERS.txt
+\family default
+ contains one integer at each line.
+ Write a program that uses the procedures in previous tasks and performs
+ the following task: 
+\end_layout
+
+\begin_layout Itemize
+Reads the text file 
+\family typewriter
+NUMBERS.txt
+\family default
+, 
+\end_layout
+
+\begin_layout Itemize
+Perform insertion sort, and outputs the list of integers in a row, 
+\end_layout
+
+\begin_layout Itemize
+Prompts the user to provide a target to be searched, 
+\end_layout
+
+\begin_layout Itemize
+Perform a binary search and output an appropriate message
+\end_layout
+
+\begin_layout Subsection*
+Evidence 6 
+\end_layout
+
+\begin_layout Standard
+Your program code.
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\begin_layout Subsection*
+Task 2.4 
+\end_layout
+
+\begin_layout Standard
+Draw up 
+\series bold
+three
+\series default
+ suitable tests and provide screenshot evidence for your testing.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 7 
+\end_layout
+
+\begin_layout Standard
+Annotated screenshots for each test data run.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[HCI/PRELIM/9597/2019/P1/Q3] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The examinations department of a school needs to keep long-term records
+ of the overall examination achievements of its students.
+\end_layout
+
+\begin_layout Standard
+Students at the school have two main choices.
+ Firstly, they can take a variety of subjects and achieve an Academic Diploma.
+ A diploma gives them the opportunity to go to university.
+ Secondly they can achieve a Skills Certificate where they focus on one
+ particular area (such as IT).
+ This gives them the necessary skills to start a career in their chosen
+ area.
+\end_layout
+
+\begin_layout Standard
+The examinations department decides to store the following data:
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+StudID
+\family default
+ is used to uniquely identify a particular student and is six digits.
+ The first four digits represent the year that the student started at the
+ school and the last two digits are used to make the 
+\family typewriter
+StudID
+\family default
+ unique e.g.
+ 201804.
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+Name
+\family default
+ is the name of the student and is at most 30 characters.
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+StudType
+\family default
+ is the type of student and can have the values ‘D’ or ‘S’.
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+SkillArea
+\family default
+ is text and gives the area that the student acquired skills in.
+ It can have one of three values: ‘IT’, ‘Business’ or ‘Accountancy’.
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+NoOfSub
+\family default
+ is the number of subjects studied by those taking the Diploma.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+Result
+\family default
+ is a single character and is used to indicate the overall grade awarded.
+ For those students who took the Skills Certificate the grades could be
+ Distinction (D), Merit (M), Pass (P) or Fail (F).
+ For those who took the Diploma the grade could be one of the letters A
+ to F.
+ Grade A to E are passes.
+ Grade F is a fail.
+\end_layout
+
+\begin_layout Standard
+The program design for a solution to this problem is to be implemented with
+ object-oriented programming with the following three classes:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-HCI-2019-P1-Q4-1.png
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Task 3.1 
+\end_layout
+
+\begin_layout Standard
+Write program code to define the classes 
+\family typewriter
+Student
+\family default
+, 
+\family typewriter
+Diploma
+\family default
+ and 
+\family typewriter
+SkillsCert
+\family default
+.
+\end_layout
+
+\begin_layout Subsection*
+Evidence 8
+\end_layout
+
+\begin_layout Standard
+Program code for the three classes in Task 3.1.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\begin_layout Standard
+Assume that a file, 
+\family typewriter
+STUDENT.txt
+\family default
+, which contains details of each student, has been created for you.
+ The format of each student record is as follows: 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\family typewriter
+<StudID>|<Name>|<StudType>|<SkillArea>|<NoOfSub>|<Result>
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+SkillArea
+\family default
+ would have the value ‘Diploma’ if the student is taking a Diploma.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+NoOfSub
+\family default
+ would have the value 0 for those taking the Skills Certificate.
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+Result
+\family default
+ is left blank initially.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 3.2 
+\end_layout
+
+\begin_layout Standard
+Write a module, 
+\family typewriter
+ENTER_RESULT
+\family default
+, which, when called, will ask the user for a particular 
+\family typewriter
+StudID
+\family default
+ whose result is to be entered.
+ Using the student ID that has been input, the corresponding student record
+ will be located in 
+\family typewriter
+STUDENT.txt
+\family default
+.
+ The student data will be displayed to the user.
+ The user will be allowed to enter the result for the student.
+ The amended record will be stored back in 
+\family typewriter
+STUDENT.txt
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The student ID and result that have been input should be validated.
+ 
+\end_layout
+
+\begin_layout Standard
+If the 
+\family typewriter
+StudID
+\family default
+ does not exist, the user will be given an appropriate message.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+You are expected to make use of the classes you designed in Task 3.1
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+Run the program 
+\series bold
+three
+\series default
+ times.
+ Use the following data input, and produce a screenshot for each.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+StudID
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Result
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+201701
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+A
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+201801
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+B
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+201901
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+M
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Evidence 9
+\end_layout
+
+\begin_layout Standard
+Program code for Task 3.2 
+\begin_inset space \hfill{}
+\end_inset
+
+[8]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 10 
+\end_layout
+
+\begin_layout Standard
+Three screenshots showing the test runs and final contents of 
+\family typewriter
+STUDENT.txt
+\family default
+ to show evidence that successful updates have been carried out.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Subsection*
+Task 3.3
+\end_layout
+
+\begin_layout Standard
+Implement code as specified below.
+\end_layout
+
+\begin_layout Standard
+A report should be generated and displayed which will list the students
+ whose result has still not been entered into the 
+\family typewriter
+STUDENT.txt
+\family default
+ file.
+ The report will list, for each different starting year: 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+StudID
+\family default
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+Name
+\family default
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+StudType
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+SkillArea
+\family default
+ or 
+\family typewriter
+NoOfSub
+\family default
+ depending upon the value of 
+\family typewriter
+StudType
+\family default
+ 
+\end_layout
+
+\begin_layout Standard
+In addition the number of each student type for each year will also be output.
+\end_layout
+
+\begin_layout Standard
+A sample output is shown below.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="4">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Year: 2017
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+201715
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FLoo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+201708
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BLang
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+201710
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LArms
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IT
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Diplomas:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Skills:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Year: 2018
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+201813
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FJean
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+201817
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ABright
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Diplomas:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Skills:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Year: 2019
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+201905
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Alfie
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Business
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+201903
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GKoh
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Diplomas:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Skills:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Evidence 11 
+\end_layout
+
+\begin_layout Standard
+Program code for Task 3.3.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[8]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 12 
+\end_layout
+
+\begin_layout Standard
+Screenshot of the output produced.
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[HCI/PRELIM/9597/2019/P1/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+A game maintains the player IDs and their scores in an ordered linked list.
+ The player with the highest score is stored at the first node while the
+ player with the lowest score is stored at the last node.
+ 
+\end_layout
+
+\begin_layout Standard
+The program to implement the linked list abstract data type will use two
+ classes, 
+\family typewriter
+ListNode
+\family default
+ and 
+\family typewriter
+LinkedList
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The 
+\family typewriter
+ListNode
+\family default
+ class has the following properties:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \hspace{}
+\length 1col%
+\end_inset
+
+
+\family default
+Identifier
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \hspace{}
+\length 1col%
+\end_inset
+
+
+\family default
+Data Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \hspace{}
+\length 5col%
+\end_inset
+
+
+\family default
+Description
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+ID
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+STRING
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The ID of the player.
+ All IDs are unique and have the format 
+\family typewriter
+L999
+\family default
+ where 
+\family typewriter
+L
+\family default
+ is any uppercase letter and 
+\family typewriter
+9
+\family default
+ is a digit.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Score
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+INTEGER
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The score of the player.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Ptr
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+INTEGER
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The pointer to the next node.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\family typewriter
+LinkedList
+\family default
+ class has the following properties: 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \hspace{}
+\length 1col%
+\end_inset
+
+
+\family default
+Identifier
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \hspace{}
+\length 1col%
+\end_inset
+
+
+\family default
+Data Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \hspace{}
+\length 5col%
+\end_inset
+
+
+\family default
+Description
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Node
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+ARRAY[1..20] OF ListNode
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1-D array stores the nodes that make the ordered linked list.
+ The unused nodes are linked together into a free list.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+HeadPtr
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+INTEGER
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pointer to the first node in the ordered list.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+FreePtr
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+INTEGER
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pointer to the first node in the free list.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The following diagram shows an example of a linked list object.
+ This example list consists of three nodes, linked in descending order of
+ the game scores.
+ The unused nodes are linked to form a free list.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-HCI-2019-P1-Q4-1.png
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Task 4.1
+\end_layout
+
+\begin_layout Standard
+Write program code for the classes 
+\family typewriter
+ListNode
+\family default
+ and 
+\family typewriter
+Linkedlist
+\family default
+ to declare all the required variables and create the initial empty linked
+ list which contains all 20 nodes.
+\end_layout
+
+\begin_layout Standard
+Add statement(s) to initialise the empty ordered linked list.
+\end_layout
+
+\begin_layout Subsection*
+Evidence 13 
+\end_layout
+
+\begin_layout Standard
+Your program code for Task 4.1.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\begin_layout Subsection*
+Task 4.2 
+\end_layout
+
+\begin_layout Standard
+Write code to implement a method 
+\family typewriter
+AddInOrder
+\family default
+ that will add a new node with player’s ID and score into the ordered linked
+ list in descending order of the scores.
+ Node added to the ordered linked list should be taken from the free list.
+ 
+\end_layout
+
+\begin_layout Standard
+Assume that all players have different scores.
+\end_layout
+
+\begin_layout Subsection*
+Evidence 14 
+\end_layout
+
+\begin_layout Standard
+Your program code for Task 4.2.
+\begin_inset space \hfill{}
+\end_inset
+
+ [7]
+\end_layout
+
+\begin_layout Subsection*
+Task 4.3 
+\end_layout
+
+\begin_layout Standard
+Write a procedure 
+\family typewriter
+OutputData
+\family default
+ which displays the value of 
+\family typewriter
+HeadPtr
+\family default
+, the value of 
+\family typewriter
+FreePtr
+\family default
+ and the contents of 
+\family typewriter
+Node
+\family default
+ array in index order.
+\end_layout
+
+\begin_layout Subsection*
+Evidence 15 
+\end_layout
+
+\begin_layout Standard
+Your program code for Task 4.3.
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\begin_layout Standard
+The files 
+\family typewriter
+SCORES1.txt
+\family default
+ and 
+\family typewriter
+SCORES2.txt
+\family default
+ contain the game data.
+ Each entry has the following format: 
+\family typewriter
+<Player ID>,<Score>
+\family default
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 4.4 
+\end_layout
+
+\begin_layout Standard
+Write a main program to:
+\end_layout
+
+\begin_layout Itemize
+Create a linked list object 
+\end_layout
+
+\begin_layout Itemize
+Read all player data from 
+\family typewriter
+SCORES1.txt
+\family default
+ and add them to the linked list by calling procedure 
+\family typewriter
+AddInOrder
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Your program will then call procedure 
+\family typewriter
+OutputData
+\family default
+.
+\end_layout
+
+\begin_layout Subsection*
+Evidence 16 
+\end_layout
+
+\begin_layout Standard
+Screenshot showing the output from running the program in Task 4.4 using
+ 
+\family typewriter
+SCORES1.txt
+\family default
+ file.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Subsection*
+Task 4.5 
+\end_layout
+
+\begin_layout Standard
+Amend your 
+\family typewriter
+AddInOrder
+\family default
+ program code in Task 4.2 so that if two or more players have the same score,
+ they are stored in alphabetical player ID order.
+ Use the file 
+\family typewriter
+SCORES2.txt
+\family default
+ to test your program code.
+\end_layout
+
+\begin_layout Standard
+The following diagram shows an example of an ordered linked list where players
+ 
+\family typewriter
+C412
+\family default
+ and 
+\family typewriter
+B321
+\family default
+ have the same game score of 
+\family typewriter
+13
+\family default
+ points.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-HCI-2019-P1-Q4-1.png
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Evidence 17 
+\end_layout
+
+\begin_layout Standard
+The amended program code for method 
+\family typewriter
+AddInOrder
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 18
+\end_layout
+
+\begin_layout Standard
+Screenshot showing the output from running the program in Task 4.4 using
+ 
+\family typewriter
+SCORES2.txt
+\family default
+ file.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Subsection*
+Task 4.6 
+\end_layout
+
+\begin_layout Standard
+A method 
+\family typewriter
+DisplayByRank
+\family default
+ is to be added, which outputs all player IDs and their scores stored in
+ the ordered linked list in rank order.
+ If multiple players record the same score, they will have the same rank.
+ 
+\end_layout
+
+\begin_layout Standard
+Below is a sample of screen output:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Rank
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Player ID
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Score
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+F111
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+45
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+G333
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+45
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Z333
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+45
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+C333
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+38
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+B111
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Q333
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+E333
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+Write program code to:
+\end_layout
+
+\begin_layout Itemize
+Implement this method 
+\end_layout
+
+\begin_layout Itemize
+Test the program code with the data from Task 4.5.
+\end_layout
+
+\begin_layout Subsection*
+Evidence 19 
+\end_layout
+
+\begin_layout Standard
+Program code for Task 4.6.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[7]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 20
+\end_layout
+
+\begin_layout Standard
+Screenshot of the program output.
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Subsection*
+Task 4.7 
+\end_layout
+
+\begin_layout Standard
+Write a recursive 
+\family typewriter
+ReverseTraversal
+\family default
+ procedure that will traverse the linked list in reverse order and output
+ players’ IDs and scores in ascending scores order.
+\end_layout
+
+\begin_layout Standard
+Include a call to the procedure from your main program.
+\end_layout
+
+\begin_layout Standard
+Test the program code with the data from Task 4.5.
+\end_layout
+
+\begin_layout Subsection*
+Evidence 21 
+\end_layout
+
+\begin_layout Standard
+Your program code for Task 4.7.
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 22
+\end_layout
+
+\begin_layout Standard
+Screenshot showing the program execution to test the 
+\family typewriter
+ReverseTraversal
+\family default
+ method.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[HCI/PRELIM/9597/2019/P2/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+A bookshop wishes to expand its business from a brick and mortar shop to
+ allow for online sales.
+ A software company has been engaged by the bookshop to develop the online
+ sales system.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The analyst decides to adopt a top-down approach to the design.
+ What are the advantages of using top-down design to solve complex problems?
+\begin_inset space \hfill{}
+\end_inset
+
+ [3] 
+\end_layout
+
+\begin_layout Standard
+The project manager decides to use some project management tool in the planning
+ of the project.
+ Below is the list of activities along with their required time for completion.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Expected completion time (day)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Preceded by
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+G
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+G
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E, F, H
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+ Construct the PERT chart for the activities, indicating the earliest start
+ time and latest start time of each activity.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(c)
+\end_layout
+
+\end_inset
+
+ Which tasks are on the critical path of the Program Evaluation and Review
+ Technique (PERT) chart? 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(d)
+\end_layout
+
+\end_inset
+
+ What is the slack time for Task C and G? 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(e)
+\end_layout
+
+\end_inset
+
+ The person working on Task C tells the project manager he cannot start
+ work until one day after the scheduled starting date.
+ What impact would this have on the completion date of the project? Why?
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(f)
+\end_layout
+
+\end_inset
+
+ Task A will be delayed by 2 days for some reason.
+ If the project manager still wants to finish the project within the original
+ time frame, he will need to shorten the time for one or more of the tasks.
+ What steps can he take to reduce the number of days allocated to a task?
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(g)
+\end_layout
+
+\end_inset
+
+ The project manager decides to reduce the time needed for Tasks D and F
+ by one day each.
+ How effective will this reduction be in achieving his aim of maintaining
+ the original finish time for the project? What can he do for it to be more
+ effective?
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(h)
+\end_layout
+
+\end_inset
+
+ Produce a Gantt chart based on the above information.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(i)
+\end_layout
+
+\end_inset
+
+ Give 
+\series bold
+one
+\series default
+ reason why a Gantt chart may be preferred over a PERT chart.
+\begin_inset space \hfill{}
+\end_inset
+
+ [1]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[HCI/PRELIM/9597/2019/P2/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Customers can view a catalogue of books and order from its website.
+ Payment is made by the customer forwarding their credit card details, which
+ are processed immediately.
+ Details of the orders are matched against the stock file to check for availabil
+ity of items before packing lists are produced and sent to the packing departmen
+t.
+\end_layout
+
+\begin_layout Enumerate
+Draw a data flow diagram to explain the flow of data through this system.
+\begin_inset space \hfill{}
+\end_inset
+
+ [6]
+\end_layout
+
+\begin_layout Enumerate
+Using examples from your DFD, explain how the diagram helps to inform a
+ database solution for the new computerized system.
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\begin_layout Enumerate
+Give 
+\series bold
+two
+\series default
+ parts of the database design that is not possible from the DFD.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[HCI/PRELIM/9597/2019/P2/Q3] 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Explain the difference between synchronous and asynchronous data transmission.
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Enumerate
+Describe the three modes of data transmission: simplex, half-duplex and
+ full-duplex.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+Give 
+\series bold
+two
+\series default
+ advantages of packet switching over circuit switching.
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[HCI/PRELIM/9597/2019/P2/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Sing Airline Company uses a website to provide ticket purchasing services
+ to customers.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Customers are required to fill up a form with their name, passport number,
+ hand phone number and flight information.
+ Give 
+\series bold
+two
+\series default
+ examples of data validation and 
+\series bold
+one
+\series default
+ example of data verification for the company to validate the customers’
+ data.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\begin_layout Enumerate
+Explain the purpose of using client and server scripting and give 
+\series bold
+one
+\series default
+ scripting language for each.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\begin_layout Enumerate
+The company uses a web server to handle the customers’ orders.
+ Describe 
+\series bold
+two
+\series default
+ possible threats that the web server may encounter and suggest 
+\series bold
+one
+\series default
+ strategy for each threat.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\begin_layout Enumerate
+Due to large amount of information to maintain and protect, the company
+ is planning to use cloud computing to store and access data.
+ Give 
+\series bold
+one
+\series default
+ advantage and 
+\series bold
+one
+\series default
+ disadvantage of using this technology.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+The company’s staff handbook must include rules and regulations for IT staff.
+ Suggest 
+\series bold
+two
+\series default
+ code of conduct for the company.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[HCI/PRELIM/9597/2019/P2/Q5] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Below is the manner in which the school library will process its overdue
+ list:
+\end_layout
+
+\begin_layout Itemize
+If a book is overdue then a reminder letter would normally be sent.
+\end_layout
+
+\begin_layout Itemize
+However, if the book is more than 5 days overdue, 2 further checks are made
+ to see whether the reminder should be replaced by a warning letter:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+If the student has had a previous warning letter the student will not only
+ receive the warning letter but, in addition, a copy will be sent to the
+ parents of the student.
+\end_layout
+
+\begin_layout Itemize
+If the student has more than 4 books overdue, but no previous warning letter,
+ the reminder letter is replaced by a warning letter.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Create a decision table showing all the possible outcomes and results.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Enumerate
+Simplify your decision table by removing redundancies.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[HCI/PRELIM/9597/2019/P2/Q6] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+A company manages subscriptions to thirty different magazines.
+ Customers can subscribe to receive one or more of the magazines.
+\end_layout
+
+\begin_layout Itemize
+Each magazine has a category such as Gardening or Current Affairs.
+ 
+\end_layout
+
+\begin_layout Itemize
+Each magazine has a subscription rate, which is the cost of subscribing
+ to receive the magazine for 12 months.
+\end_layout
+
+\begin_layout Standard
+Details of the subscriptions are to be stored in a flat file.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Magazine(MagazineID, MagazineName, Category, SubscriptionRate, CustomerID,
+ StartDate, EndDate, CustomerName, Address, PostCode, TelephoneNumber) 
+\end_layout
+
+\begin_layout Enumerate
+What is the difference between a flat file and a relational database? 
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Enumerate
+Identify and state 
+\series bold
+three
+\series default
+ potential problems with the flat file implementation for the magazine subscript
+ions.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+Improved on the flat file and determine the relations needed in the relational
+ database for the above.
+ Explain the purpose of each relation.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\begin_layout Enumerate
+In what way can your database solve the three problems in 
+\series bold
+part (b)
+\series default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\begin_layout Enumerate
+Draw the Entity-Relationship diagram between the relations you have in 
+\series bold
+part (c)
+\series default
+.
+ Explain your answer.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[HCI/PRELIM/9597/2019/P2/Q7] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The algebraic expression 
+\family typewriter
+X = 2 * A + B
+\family default
+ could be held in a binary tree as:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-HCI-2019-P2-Q7.png
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This tree can then be read using the following algorithm:
+\end_layout
+
+\begin_layout Standard
+process left subtree 
+\end_layout
+
+\begin_layout Standard
+process right subtree 
+\end_layout
+
+\begin_layout Standard
+read root node
+\end_layout
+
+\begin_layout Standard
+This will give 
+\family typewriter
+X 2 A * B + =
+\family default
+ which is the reverse Polish form of the expression.
+\end_layout
+
+\begin_layout Enumerate
+Using diagrams to help the explanation, or otherwise, show how a computer
+ can use a stack to evaluate the expression from its reverse Polish form.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Enumerate
+The tree in the example could be stored in an array called TREE.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TREE[9]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TREE[8]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TREE[7]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TREE[6]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TREE[5]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TREE[4]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TREE[3]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TREE[2]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TREE[1]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TREE[0]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The values in each location in the array are: node value; left pointer;
+ right pointer.
+ Where no left or right pointer exists the rouge value -1 is used.
+ Copy and complete the array for the example.
+ (Note that, since in the example there are only seven nodes, three rows
+ of the array will be unused.) 
+\begin_inset space \hfill{}
+\end_inset
+
+[5]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Draw a tree similar to the one in the example which would represent the
+ expression:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\family typewriter
+Y = 2 * (A + B) – (A ^ 2)
+\family default
+ 
+\end_layout
+
+\begin_layout Standard
+where 
+\family typewriter
+x ^ y
+\family default
+ means 
+\begin_inset Formula $\mathtt{x^{y}}$
+\end_inset
+
+.
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Using the algorithm in the example, and your tree, write out the reverse
+ Polish form of the expression in 
+\series bold
+part
+\series default
+ (c).
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[HCI/PRELIM/9597/2019/P1/Q8] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Using the following numbers as an example, show how the numbers can be sorted
+ in ascending order using a 
+\series bold
+quick sort
+\series default
+.
+ For each pass, show the numbers swapped and the sub lists after splitting.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+435, 646, 344, 54, 23, 98
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+\begin_inset space \hfill{}
+\end_inset
+
+[7]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+ 
+\end_layout
+
+\end_body
+\end_document

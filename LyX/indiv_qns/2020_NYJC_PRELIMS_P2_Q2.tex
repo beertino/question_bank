@@ -1,0 +1,67 @@
+\item \textbf{{[}NYJC/PRELIM/9569/2020/P2/Q2{]} }
+
+A school library stores the following data in a file named \texttt{story.csv}: 
+
+\begin{tabular}{ll}
+\textbf{Field} & \textbf{Format}\tabularnewline
+book\_title & text\tabularnewline
+text subject & text\tabularnewline
+author\_name & text\tabularnewline
+published & \textquoteleft YYYY\textquoteright{} (year) \tabularnewline
+\end{tabular}
+
+Merge sort is an efficient sorting algorithm which falls under divide
+and conquer paradigm and produces a stable sort. It operates by dividing
+a large array into two smaller subarrays and then recursively sorting
+the subarrays. 
+
+For each of the sub-tasks, add a comment statement at the beginning
+of the code using the hash symbol '\texttt{\#}', to indicate the sub-task
+the program code belongs to, for example: 
+\noindent \begin{center}
+\begin{tabular}{c|l|}
+\cline{2-2} 
+\multirow{2}{*}{\texttt{In{[}1{]}:}} & \texttt{\# Task 2.1}\tabularnewline
+ & \texttt{Program Code}\tabularnewline
+\cline{2-2} 
+\multirow{2}{*}{\texttt{In{[}2{]}:}} & \texttt{\# Task 2.2}\tabularnewline
+ & \texttt{Program Code}\tabularnewline
+\cline{2-2} 
+\end{tabular}
+\par\end{center}
+
+\subsection*{Task 2.1 }
+
+Write program code to: 
+\begin{itemize}
+\item read data from \texttt{story.csv} into an array of records. 
+\item ask user to input in which field to sort the records by.
+\item validate that the choice must be \texttt{\textquoteleft B\textquoteright },
+\texttt{\textquoteleft S\textquoteright }, \texttt{\textquoteleft A\textquoteright },
+or \texttt{\textquoteleft P\textquoteright{}} representing \texttt{book\_title},
+\texttt{subject}, \texttt{author\_name} and \texttt{published} fields. 
+\item implement a \texttt{MergeSort(ArrayData, Sortby)} function that takes
+in two parameters, \texttt{ArrayData} (array of records) and \texttt{Sortby},
+and sorts the records in ascending order according to the specified
+field. \texttt{MergeSort(ArrayData, Sortby)} will return the sorted
+\texttt{ArrayData} using a mergesort algorithm to do the sorting. 
+\item display \texttt{ArrayData}. 
+\item test your program twice and show your output for sorting by \texttt{subject}
+and by \texttt{author\_name}. \hfill{} {[}12{]}
+\end{itemize}
+
+\subsubsection*{Task 2.2 }
+
+Write program code to: 
+\begin{itemize}
+\item implement a \texttt{QuickSort(ArrayData)} function that uses the quicksort
+algorithm to sort the \texttt{ArrayData} by \texttt{book\_title} in
+descending order. \hfill{} {[}8{]}
+\end{itemize}
+Design 2 test cases to test your QuickSort(ArrayData) function and
+explain the purpose of the test data. Show the output of your test
+cases. \hfill{}{[}4{]}
+
+Save your program code and output for Task 2 as 
+
+\texttt{TASK2\_<your name>.ipynb}

@@ -1,0 +1,833 @@
+%% LyX 2.3.6.1 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,lmargin=2.5cm,rmargin=2.5cm}
+\usepackage{amsmath}
+\PassOptionsToPackage{normalem}{ulem}
+\usepackage{ulem}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+{[}SPLIT\_HERE{]}
+\begin{enumerate}
+\item \textbf{{[}JPJC/PRELIM/9569/2020/P1/Q1{]} }
+
+A one-dimensional array \texttt{X} will be used to record the timings
+of the participating teams racing in a 200 metres dragon boat race
+event. Five dragon boat teams will compete in the event, and the timing
+(in seconds) of each team will be captured as records in \texttt{X}. 
+\noindent \begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+Index & 1  & 2 & 3  & 4  & 5\tabularnewline
+\hline 
+\hline 
+Timing, seconds & 58.61  & 49.01  & 48.54  & 59.32  & 49.78\tabularnewline
+\hline 
+\end{tabular} 
+\par\end{center}
+
+A segment of the pseudocode to perform bubble sort is given below. 
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{Line 1: \qquad{}flag <- TRUE }
+
+\texttt{Line 2: \qquad{}WHILE flag = TRUE DO }
+
+\texttt{Line 3: \qquad{}\qquad{}flag <- FALSE }
+
+\texttt{Line 4: \qquad{}\qquad{}FOR i = 1 to N //N is the size of
+array X }
+
+\texttt{Line 5: \qquad{}\qquad{}\qquad{}IF X{[}i{]} > X{[}i+1{]} }
+
+\texttt{Line 6: \qquad{}\qquad{}\qquad{}\qquad{}THEN }
+
+\texttt{Line 7: \qquad{}\qquad{}\qquad{}\qquad{}\qquad{}SWAP(X{[}i{]},
+X{[}i+1{]})//swaps value of items }
+
+\texttt{Line 8: \qquad{}\qquad{}\qquad{}\qquad{}\qquad{}flag
+<- TRUE }
+
+\texttt{Line 9: \qquad{}\qquad{}\qquad{}ENDIF }
+
+\texttt{Line 10: \qquad{}\qquad{}NEXT i }
+
+\texttt{Line 11: \qquad{}ENDWHILE}%
+\end{minipage} An error is detected in the pseudocode above. 
+\begin{enumerate}
+\item Identify the error by stating the line number, and the type of error.\hfill{}
+{[}2{]}
+\item \textbf{Without} changing the order and the types of constructs used,
+rectify the error in \textbf{(a)}. \hfill{}{[}1{]}
+\item Using the race timings of the dragon boat event given above, use a
+trace table to illustrate that the amended algorithm works. \hfill{}{[}3{]}
+\item Describe the worst case scenario, and state the worst case time complexity
+for performing the bubble sort using the algorithm given above. \hfill{}{[}2{]}
+\item In the worst case scenario, state the total number of comparisons
+made by the bubble sort algorithm if 10 lanes are used. \hfill{}{[}1{]}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}JPJC/PRELIM/9569/2020/P1/Q2{]} }
+
+Every sales transaction made in JPJC supermarket is stored as a record
+in a serial file for auditing purposes. At the end of each day, a
+copy of the daily serial file, sorted by transaction amount in descending
+order will be archived into the main database. 
+\begin{enumerate}
+\item State what is meant by a serial file? \hfill{}{[}1{]}
+\item Explain how an archive file is different from a backup file, and describe
+how a backup file for sales transactions can be created for JPJC supermarket.\hfill{}
+{[}2{]}
+\end{enumerate}
+Merge sort algorithm is used to arrange the sales transaction records
+by ordering them in descending order of transaction amounts. The algorithm
+will first read all the daily unsorted sales transactions into \texttt{A},
+a fixed size array of records with index starting from 1. Then, \texttt{mergesort}
+will be applied to sort \texttt{A}. The pseudocode for \texttt{mergesort}
+is given below, 
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{PROCEDURE mergesort(A: ARRAY of RECORDS, x, y: INTEGERS)}
+
+\texttt{\qquad{}IF x < y }
+
+\texttt{\qquad{}\qquad{}THEN }
+
+\texttt{\qquad{}\qquad{}\qquad{}m x + ((y - x) DIV 2) //DIV performs
+integer division }
+
+\texttt{\qquad{}\qquad{}\qquad{}mergesort(A, x, m) }
+
+\texttt{\qquad{}\qquad{}\qquad{}mergesort(A, m + 1, y) }
+
+\texttt{\qquad{}\qquad{}\qquad{}merge(A, x, m, y) }
+
+\texttt{\qquad{}ENDIF }
+
+\texttt{ENDPROCEDURE }
+
+\texttt{//-{}-{}-main program-{}-{}- }
+
+\texttt{mergesort(A, x, y) }%
+\end{minipage}
+
+Given that array \texttt{A = {[}39.10, 17.50, 35.40, 42.68, 8.90,
+35.40{]}}, and \texttt{merge(A, x, m, y)} will sort and combine elements
+of \texttt{A{[}x:m{]}}, and \texttt{A{[}m+1:y{]}} into \texttt{A{[}x:y{]}}
+in descending order. 
+\begin{enumerate}
+\item[(c)]  State the values of \texttt{x}, and \texttt{y} when \texttt{mergesort}
+is called in the main program.\hfill{} {[}2{]}
+\item[(d)]  State the total number of times \texttt{mergesort} and \texttt{merge}
+are called in the entire program.\hfill{} {[}2{]}
+\end{enumerate}
+The following diagram shows an incomplete trace tree diagram of the
+array of sales transaction records represented by its sales amount. 
+\begin{enumerate}
+\item[(e)]  Draw and complete the trace tree diagram above by applying merge
+sort to the unsorted array of records A. \hfill{}{[}4{]}
+\item[(f)]  The time complexity for merge sort is $O(N\log_{2}N)$. Explain
+why this time complexity is applicable to the best, average and worst
+case scenarios.\hfill{} {[}1{]}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}JPJC/PRELIM/9569/2020/P1/Q3{]} }
+\begin{enumerate}
+\item State what is meant by a recursive algorithm? \hfill{}{[}2{]}
+\item Explain the difference between an iterative algorithm and a recursive
+algorithm. \hfill{}{[}2{]}
+\item Design a recursive algorithm \texttt{SumOfCubes(n)} using pseudocode,
+that returns the integer value of series 
+\[
+1^{3}+2^{3}+3^{3}+\ldots+(n-1)^{3}+n^{3},
+\]
+where $n=1,2,3,\ldots$ \hfill{}{[}3{]}
+\item Explain what will happen when the value of \texttt{n }gets too large.
+\hfill{}{[}1{]}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}JPJC/PRELIM/9569/2020/P1/Q4{]} }
+
+The elections department of a town wishes to store the records of
+its voters in a linked list. The stored records are first ordered
+by the voter\textquoteright s age (in years), followed by voter\textquoteright s
+name in alphabetical order. The voters list is maintained with the
+record of the youngest voter at the start of the list. 
+\begin{enumerate}
+\item Explain why the sequence of nodes in a linked list does not always
+reflect how the data is stored in the memory of the computer. {[}2{]}
+\quad{} 
+
+\begin{tabular}{c|c|c|c|}
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{\textbf{Age}} & \multicolumn{1}{c}{\textbf{Name}} & \multicolumn{1}{c}{\textbf{Link}}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\textbf{1} & \texttt{35} & \texttt{Tim Tan} & \texttt{3}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\textbf{2} & \texttt{23} & \texttt{Annie Hao} & \texttt{a}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\textbf{3} & \texttt{45} & \texttt{Bob Boon} & \texttt{6}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\textbf{4} & \texttt{24} & \texttt{Lester Moh} & \texttt{b}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\textbf{5} & \texttt{18} & \texttt{Ari Bello} & \texttt{c}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\textbf{6} & \texttt{52} & \texttt{Helen How} & \texttt{0}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\textbf{7} & \texttt{23} & \texttt{Cindy Ku} & \texttt{d}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\textbf{8} & \texttt{55} & \texttt{Charles Chu} & \texttt{1}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\textbf{9} & \texttt{53} & \texttt{Mimi Lee} & \texttt{e}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\textbf{10} & \texttt{40} & \texttt{Jenny Tsai} & \texttt{f}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\end{tabular}%
+\begin{tabular}{|c|c|}
+\hline 
+\textbf{Head} & \texttt{g}\tabularnewline
+\hline 
+\textbf{Free} & \texttt{8}\tabularnewline
+\hline 
+\end{tabular}
+\end{enumerate}
+Two linked lists are kept to manage the actual data, and the free
+spaces. When a new item is added, a node is taken from the head of
+the free space list, and when a node is deleted, the deleted node
+will be returned to the tail of the free space list. 
+\begin{enumerate}
+\item[(b)]  Given that \texttt{Ari Bello} is the youngest voter, state the values
+of \texttt{a}, \texttt{b}, \texttt{c}, \texttt{d}, \texttt{e}, \texttt{f},
+and \texttt{g}. \hfill{}{[}4{]}
+\item[(c)]  Draw the \textbf{linked list diagram} to show its state right after
+each of the following successive operations: 
+\begin{enumerate}
+\item Insert \texttt{18} years old, \texttt{Ahmad Ali}. 
+\item Delete \texttt{23} years old, \texttt{Cindy Ku}. 
+\item Insert \texttt{37} years old, \texttt{Tania Tan}. \hfill{}{[}6{]}
+\end{enumerate}
+\item[(d)]  Describe \textbf{one} advantage and \textbf{one} disadvantage of
+using a linked list over a static array. \hfill{}{[}2{]}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}JPJC/PRELIM/9569/2020/P1/Q5{]} }
+
+The stack is a first in last out data structure where the items are
+inserted to and deleted from the top of the stack. The items of the
+stack are globally stored in a fixed length array \texttt{S} of size
+20. A stack pointer \texttt{sp} points to the top item in the stack,
+and is initialised to 0. The three basic methods of the stack are:
+\begin{itemize}
+\item \texttt{PUSH(X) //inserts X as new item on the top of STACK S }
+\item \texttt{POP() ~~//removes and returns item at the top of STACK S. }
+\item \texttt{PEEK() ~//returns value of the item on top of STACK S without
+removing it. }
+\end{itemize}
+\begin{enumerate}
+\item Write the pseudocode for the algorithms \texttt{PUSH(X)}, \texttt{POP()},
+and \texttt{PEEK()}.\hfill{}{[}5{]}
+\end{enumerate}
+The precedence order of the operators from highest to lowest is as
+follows: 
+\begin{enumerate}
+\item[1.]  Parenthesis 
+\item[2.] \texttt{ '\textasciicircum ' }
+\item[3.]  \texttt{'{*}'} or \texttt{'/'} with equivalent level of priority 
+\item[4.] \texttt{ '+'} or \texttt{'-'} with equivalent level of priority
+\end{enumerate}
+The pseudocode below shows a stack-based function \texttt{InfixToPostfix}
+that converts and returns an input expression represented in infix
+notation to its postfix form.
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{FUNCTION InfixToPostfix(infix: STRING) RETURNS postfix }
+
+\texttt{\qquad{}Scan through infix expression one token at a time
+from leftmost. }
+
+\texttt{\qquad{}Initialise empty STACK S }
+
+\texttt{\qquad{}Initialise empty STRING postfix }
+
+\texttt{FOR token read from infix item by item }
+
+\texttt{\qquad{}\qquad{}CASE of token: }
+
+\texttt{\qquad{}\qquad{}\qquad{}operand : postfix <- postfix +
+token}
+
+\texttt{\qquad{}\qquad{}\qquad{}'(' : PUSH(token) }
+
+\texttt{\qquad{}\qquad{}\qquad{}')' : REPEAT postfix <- postfix
++ POP() UNTIL POP() = '(' operator:}
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}WHILE S not empty }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}IF token = '('
+THEN }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}BREAK }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}ENDIF }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}IF PEEK() is
+higher or equal precedence than token THEN }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}postfix
+<- postfix + POP() }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}ENDIF }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}ENDWHILE }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}PUSH(token) }
+
+\texttt{\qquad{}\qquad{}END CASE }
+
+\texttt{\qquad{}NEXT token }
+
+\texttt{\qquad{}REPEAT }
+
+\texttt{\qquad{}\qquad{}postfix <- postfix + POP() }
+
+\texttt{\qquad{}UNTIL S is empty }
+
+\texttt{\qquad{}RETURN postfix }
+
+\texttt{ENDFUNCTION }%
+\end{minipage}
+\begin{enumerate}
+\item[(b)]  Complete the trace table given below for \texttt{InfixToPostfix(\textquotedbl A/(B-C){*}D\textasciicircum E\textquotedbl )}. 
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+\texttt{token } & \texttt{Description } & \texttt{STRING postfix } & \texttt{Stack, S}\tabularnewline
+\hline 
+\hline 
+\texttt{A} & \texttt{Appends to postfix } & \texttt{\textquotedbl A\textquotedbl{} } & \texttt{empty}\tabularnewline
+\hline 
+\texttt{/ } & \texttt{Push to S } & \texttt{\textquotedbl A\textquotedbl{} } & \texttt{/}\tabularnewline
+\hline 
+\texttt{( } & \texttt{Push to S } & \texttt{\textquotedbl A\textquotedbl{} } & \texttt{/,(}\tabularnewline
+\hline 
+\texttt{\dots{} } & \texttt{\dots \dots \dots \dots \dots{} } & \texttt{\dots \dots \dots \dots \dots{} } & \texttt{\dots \dots \dots \dots \dots{}}\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\end{enumerate}
+\hfill{}{[}4{]}
+\begin{enumerate}
+\item[(c)]  Show, with the aid of diagrams, how the computer uses a stack to
+directly evaluate the value of the postfix expression \texttt{895-/12+{*}4-}.
+\hfill{}{[}3{]}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}JPJC/PRELIM/9569/2020/P1/Q6{]} }
+
+Traversal was performed on the binary tree given below. 
+\begin{enumerate}
+\item List the nodes, in the order, that are visited for, 
+\begin{enumerate}
+\item in-order traversal, \hfill{}{[}1{]}
+\item pre-order traversal, and \hfill{}{[}1{]}
+\item post-order traversal.\hfill{}{[}1{]}
+\end{enumerate}
+\item A binary search tree is considered as an ordered binary tree where
+the key values of nodes in the left sub-tree are less than the value
+of its parent (root) node's key, and key values of nodes in the right
+sub-tree are greater than the value of its parent (root) node\textquoteright s
+key. 
+\begin{enumerate}
+\item Explain how a recursive algorithm can be used to locate a node with
+key value \texttt{search\_key} by returning \texttt{TRUE} when \texttt{search\_key}
+is found, and \texttt{FALSE} otherwise. \hfill{}{[}4{]}
+\item State \textbf{one} advantage of using binary search tree as data structure
+over linked list, and describe a situation that would negate this
+advantage.\hfill{} {[}2{]}
+\end{enumerate}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}JPJC/PRELIM/9569/2020/P1/Q7{]} }
+
+Car owners who wish to purchase or renew their insurance policy with
+XYZ Motor Insurance are required to accumulate not more than 6 demerit
+points in their driving records. Under this demerit points system,
+a driver who clocks up more than 20 demerit points will have his/her
+driving license revoked, thus denying the person from driving and
+from purchasing any vehicle insurance. Drivers who have not made any
+insurance claims for the past 3 years can get 2 demerit points off,
+and current employees of XYZ Motor Insurance can get 1 demerit point
+deducted. In addition, drivers awarded with certificate of merit can
+get 1 demerit point off as well. XYZ Motor Insurance only allows drivers
+to receive a maximum deduction of 3 demerit points per year. Draw
+a decision table to reflect the eligibility of car owners who wish
+to purchase or renew a car insurance policy with XYZ Motor Insurance.
+\hfill{}{[}5{]}
+
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}JPJC/PRELIM/9569/2020/P1/Q8{]} }
+
+A company currently uses a computerised flat file to keep track of
+the monthly claims submitted by its employee, and has decided to use
+a relational database to store and manage the claims submitted by
+the employees instead. The following table shows the details of the
+computerised flat file.
+
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+Claims ID  & Item Description  & Staff ID  & Staff Name  & Department  & Amount\tabularnewline
+\hline 
+\hline 
+2818 & Phone charger & P212 & John Lee & Production & \$53.23\tabularnewline
+\hline 
+3291 & Car Transport & S281 & Chan, Molly & Sales & \$31.40\tabularnewline
+\hline 
+3998 & Meal, Lunch & O323  & Omar Hairi  & Operations & \$7.20\tabularnewline
+\hline 
+4820  & AAA Batteries  & E493  & Muthu K.  & Engineering  & \$10.17\tabularnewline
+\hline 
+6322  & Hard Drive 3TB  & A550  & Jervois F.  & Accounts  & \$27.99\tabularnewline
+\hline 
+7384  & Medical  & M438  & Zudin B Ali  & Marketing  & \$48.00\tabularnewline
+\hline 
+\dots .  & \dots .  & \dots .  & \dots .  & \dots . & \dots .\tabularnewline
+\hline 
+\end{tabular}
+\begin{enumerate}
+\item State and justify \textbf{one} reason made by the company to migrate
+its claims information from the existing flat file system to a relational
+database management system. \hfill{}{[}2{]}
+\item State \textbf{two} other fields which would be useful for the company
+to capture. \hfill{}{[}2{]}
+\item Given that the every claim is associated with one item, write the
+table descriptions of the relational database in \textbf{first normal
+form} and \textbf{second normal form}. You are to include the fields
+in \textbf{(b)}. \hfill{}{[}4{]}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}JPJC/PRELIM/9569/2020/P1/Q9{]} }
+\begin{enumerate}
+\item What is the denary value of hexadecimal ABCD? \hfill{} {[}2{]}
+\item An integer variable of size 4 bytes is used to keep track of the number
+of commuters who travel to work from Jurong bus interchange. State
+the maximum number of commuters this variable can keep track. \hfill{}{[}3{]}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}JPJC/PRELIM/9569/2020/P1/Q10{]} }
+
+A program written using object-oriented programming has \texttt{point},
+\texttt{circle}, and \texttt{cone} as its defined classes. The following
+diagram below shows the attributes and methods of the class \texttt{point}. 
+\noindent \begin{center}
+\texttt{}%
+\begin{tabular}{|l|}
+\hline 
+\texttt{point }\tabularnewline
+\hline 
+\hline 
+\texttt{Properties: }\tabularnewline
+\hline 
+\texttt{PROTECTED: }\tabularnewline
+\texttt{x-value: REAL }\tabularnewline
+\texttt{y-value: REAL }\tabularnewline
+\hline 
+\texttt{Methods: }\tabularnewline
+\hline 
+\texttt{PUBLIC: }\tabularnewline
+\texttt{constructor() }\tabularnewline
+\texttt{getCoordinates(): TUPLE }\tabularnewline
+\texttt{setCoordinates(x, y: REAL)}\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+\begin{enumerate}
+\item Draw an inheritance diagram for \textbf{all} the \textbf{three} classes
+defined in the program. \hfill{}{[}4{]}
+\item Explain the differences between 
+\begin{enumerate}
+\item private and protected attributes/ methods of a class, \hfill{}{[}2{]}
+\item an object and a class. \hfill{}{[}2{]}
+\end{enumerate}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}JPJC/PRELIM/9569/2020/P1/Q11{]} }
+
+A clinic manages patients\textquoteright{} medical and financial records
+through an Internet-based information management portal. Due to several
+security incidents related to unintended disclosure of patients\textquoteright{}
+information, the clinic\textquoteright s management has decided to
+migrate the portal to a local area network (LAN) that consists only
+\textbf{four} computers and \textbf{one} printer. Information of patients\textquoteright{}
+medical and financial records can only be accessed by authorised staff
+on one of the four computers. 
+\begin{enumerate}
+\item Describe the meaning of the term local area network (LAN). \hfill{}{[}2{]}
+\item Explain why ring networks today rarely use physical layout of a ring?
+\hfill{}{[}2{]}
+\item Describe the functions of a multi-station access unit used in a Token
+Ring network. \hfill{}{[}3{]}
+\item Describe how token passing enables a computer to send data to the
+printer in this Token Ring network. \hfill{}{[}3{]}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}JPJC/PRELIM/9569/2020/P2/Q1{]} }
+
+Jurong Pioneer Primary School uses buses to transport students to
+school. There are six bus routes labelled \texttt{A} to \texttt{F}.
+A survey was conducted to analyse the punctuality statistics of these
+buses over a four-week period.
+
+The data from the survey is stored in the file \texttt{SURVEY.TXT}.
+The format of the data in the file is: 
+\noindent \begin{center}
+\texttt{<Day>,<A>,<B>,<C>,<D>,<E>,<F>} 
+\par\end{center}
+
+Positive numbers represent minutes early, negative numbers represent
+minutes late and 0 represents the bus having been on time. 
+
+\subsection*{Task 1.1 }
+
+Write the program code that: 
+\begin{itemize}
+\item reads the entire contents of \texttt{SURVEY.TXT} into an appropriate
+data structure called \texttt{Records}, and 
+\item displays the contents of \texttt{Records} in neat columns. \hfill{}{[}4{]}
+\end{itemize}
+
+\subsection*{Task 1.2 }
+
+Extend your program so that the following statistics for the four-week
+period may be calculated and output: 
+\begin{itemize}
+\item the number of late arrivals for each bus route,
+\item the average number of minutes late for each bus route, using only
+data from days on which it was late, and 
+\item the bus route(s) with the highest number of days late. 
+\end{itemize}
+All the results should be displayed with appropriate annotation. The
+following is an example run of the program: 
+\noindent \begin{center}
+<INSERT\_IMAGE\_HERE> \hfill{}{[}8{]}
+\par\end{center}
+
+\subsection*{Task 1.3}
+
+Additional code is to be written for the user to input a specific
+day, for example: \texttt{Fri3}, to be used for the analysis of data.
+Find and display how many buses were late on this day and for each
+late bus, display the route label and how late the bus was on this
+day. 
+
+Test your code using the following test data: 
+
+\texttt{Tue1} 
+
+\texttt{Thu2} 
+
+Download your program code for Task 1 as 
+
+\texttt{TASK1\_<your class>\_<your name>.ipynb} \hfill{}{[}4{]}
+
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}JPJC/PRELIM/9569/2020/P2/Q2{]} }
+
+In linear queue data structure, elements are inserted until the queue
+becomes full. However, after the queue becomes full, new elements
+cannot be inserted until all the existing elements are removed from
+the queue. Although there are empty spaces in the queue, they remain
+unused. This is a disadvantage of a linear queue. 
+
+After inserting all the elements into a linear queue: 
+\noindent \begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+\textquotedblleft John\textquotedblright{} & \textquotedblleft Amy\textquotedblright{}  & \textquotedblleft Chetan\textquotedblright{}  & \textquotedblleft Xin Xin\textquotedblright{}  & \textquotedblleft Evan\textquotedblright{}\tabularnewline
+\hline 
+\multicolumn{1}{c}{$\overset{\uparrow}{\text{Front}}$} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\overset{\uparrow}{\text{Rear}}$}\tabularnewline
+\end{tabular}
+\par\end{center}
+
+Linear queue is still considered full after elements have been dequeued: 
+\noindent \begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+\textquotedblleft John\textquotedblright{} & \textquotedblleft Amy\textquotedblright{} & \textquotedblleft Chetan\textquotedblright{} & \textquotedblleft Xin Xin\textquotedblright{} & \textquotedblleft Evan\textquotedblright{}\tabularnewline
+\hline 
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\overset{\uparrow}{\text{Front}}$} & \multicolumn{1}{c}{$\overset{\uparrow}{\text{Rear}}$}\tabularnewline
+\end{tabular}
+\par\end{center}
+
+To overcome this disadvantage, a circular queue data structure may
+be implemented. The next element added to the queue will be stored
+at index 0 
+\noindent \begin{center}
+<INSERT\_IMAGE\_HERE> 
+\par\end{center}
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline 
+\multicolumn{3}{|c|}{\texttt{Queue}}\tabularnewline
+\hline 
+\multicolumn{3}{|c|}{Attributes}\tabularnewline
+\hline 
+\texttt{\hspace{0.01\columnwidth}}Identifier & \texttt{\hspace{0.01\columnwidth}}Data Type & \texttt{\hspace{0.05\columnwidth}}Description\tabularnewline
+\hline 
+\texttt{Items} & \texttt{ARRAY{[}0:4{]} OF STRING} & Stores the elements of queue\tabularnewline
+\hline 
+\texttt{Front} & \texttt{INTEGER} & Index of the first item added to the queue.\tabularnewline
+\hline 
+\texttt{Rear} & \texttt{INTEGER} & Index of the last item added to the queue.\tabularnewline
+\hline 
+\multicolumn{3}{|c|}{\texttt{Methods}}\tabularnewline
+\hline 
+Identifier & \multicolumn{2}{l|}{Description}\tabularnewline
+\hline 
+\texttt{Constructor()} & \multicolumn{2}{l|}{Instantiates a \texttt{Queue} object.}\tabularnewline
+\hline 
+\texttt{IsEmpty()} & \multicolumn{2}{l|}{Returns \texttt{TRUE} if the queue is empty and \texttt{FALSE} otherwise.}\tabularnewline
+\hline 
+\texttt{IsFull()} & \multicolumn{2}{l|}{Returns \texttt{TRUE} if the queue is full and \texttt{FALSE} otherwise.}\tabularnewline
+\hline 
+\texttt{Enqueue(STRING)} & \multicolumn{2}{l|}{Inserts a new item to the queue. Displays a suitable message if the
+queue is full.}\tabularnewline
+\hline 
+\texttt{Dequeue():STRING} & \multicolumn{2}{l|}{Returns the item removed from the queue or \textquotedblleft \texttt{NONE}\textquotedblright{}
+if the queue is empty.}\tabularnewline
+\hline 
+\texttt{Display()} & \multicolumn{2}{l|}{Outputs items from the front to the rear of the queue.}\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\begin{center}
+\begin{tabular}{|l|l||l|}
+\hline 
+\multicolumn{3}{|c|}{\texttt{CircularQueue}}\tabularnewline
+\hline 
+\multicolumn{3}{|c|}{\texttt{Methods}}\tabularnewline
+\hline 
+Identifier & \multicolumn{2}{l|}{Description}\tabularnewline
+\hline 
+\texttt{Constructor()} & \multicolumn{2}{l|}{Instantiates a \texttt{CircularQueue} object.}\tabularnewline
+\hline 
+\texttt{IsFull()} & \multicolumn{2}{l|}{Returns \texttt{TRUE} if the queue is full and \texttt{FALSE} otherwise.Overrides
+the method in parent class.}\tabularnewline
+\hline 
+\texttt{Enqueue(STRING)} & \multicolumn{2}{l|}{Inserts a new item to the queue. Displays a suitable message if the
+queue is full.Overrides the method in parent class.}\tabularnewline
+\hline 
+\texttt{Dequeue():STRING} & \multicolumn{2}{l|}{Returns the item removed from the queue or \textquotedblleft \texttt{NONE}\textquotedblright{}
+if the queue is empty.Overrides the method in parent class.}\tabularnewline
+\hline 
+\texttt{Display()} & \multicolumn{2}{l|}{Outputs items from the front to the rear of the queue.Overrides the
+method in parent class.}\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\subsection*{Task 2.1}
+
+Implement the classes \texttt{Queue} and \texttt{CircularQueue} with
+object-oriented programming. The first item added to an empty queue
+is stored at index 0. The attributes of each object is reinitialised
+when the queue becomes empty.\hfill{} {[}20{]} 
+
+\subsection*{Task 2.2 }
+
+There are two printers in the General Office. One of the printers
+implements a linear queue while the other implements a circular queue. 
+
+Write the code to instantiate a \texttt{Queue} object and a \texttt{CircularQueue}
+object. Test your code, on both queues, using the following steps: 
+\begin{enumerate}
+\item[i.]  Enqueue five users in the order given in the diagram. 
+\item[ii.]  Dequeue twice.
+\item[iii.]  Enqueue \textquotedblleft Mohan\textquotedblright .
+\item[iv.]  Display the queue. 
+\end{enumerate}
+Download your program code for Task 2 as 
+
+\texttt{TASK2\_<your class>\_<your name>.ipynb} \hfill{}{[}6{]}
+
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}JPJC/PRELIM/9569/2020/P2/Q3{]} }
+
+The library in Jurong Pioneer Primary School uses a hybrid data structure
+to keep track of its inventory. Each record in the hash table stores
+a simple list \texttt{{[}<Category>, <Binary Search Tree object>{]}}.
+Each node in the Binary Search Tree (BST) stores the ISBN number and
+title of a book. The nodes in each BST share the same book category
+and are sorted, in ascending order, according to their ISBN numbers. 
+
+\subsection*{Task 3.1 }
+
+Write the object-oriented code for the \texttt{BST} and \texttt{BSTNode}
+classes described above. \hfill{}{[}10{]}
+
+A checksum is applied to determine the Hash Value for each \texttt{<Category>},
+where the ASCII value of each character in the title is multiplied
+by its position in the \texttt{<Category>} string (starting from left
+to right), and then summed. 
+
+For example, given the category \textquotedblleft classics\textquotedblright ,
+the summed value would thus be: $99\times1+108\times2+97\times3+115\times4+115\times5+105\times6+99\times7+115\times8=3884$.
+
+$(3884\mod19)+1=9$
+
+A weighted modulus 19 operation is then applied and 1 is added to
+the remainder to determine the final Hash Value. 
+
+\subsection*{Task 3.2 }
+
+Write the code for the function \texttt{CalcHash(my\_string)}, which
+takes in a string argument and returns its resultant Hash Value. \hfill{}{[}4{]}
+
+\subsection*{Task 3.3 }
+
+Write the code to declare and initialise \texttt{HashTable}, an empty
+hash table array that may store up to 19 records. {[}2{]} 
+
+\subsection*{Task 3.4 }
+
+\texttt{CATEGORIES.TXT} is a text file containing the book categories.
+Read the entire contents of \texttt{CATEGORIES.TXT} and update the
+records in the hash table. Collisions are handled using \textbf{linear
+probing}. \hfill{}{[}4{]}
+
+\texttt{BOOKS.TXT} holds the details of books in the library. The
+format of the data in the file is: \texttt{<Category>},\texttt{ <ISBN>},\texttt{
+<Title>}. 
+
+\subsection*{Task 3.5 }
+
+Write program code to: 
+\begin{itemize}
+\item read the lines from the file, 
+\item extract the \texttt{<Category>}, \texttt{<ISBN>} and \texttt{<Title>}
+values, and 
+\item add each book to the BST of its category. \hfill{}{[}6{]}
+\end{itemize}
+
+\subsection*{Task 3.6 }
+
+Write the code to display the ISBN and title of each book belonging
+to \texttt{\textquotedblleft classics\textquotedblright{}} category.
+The output is sorted according to the ISBN numbers. Ensure your output
+uses headings to identify the data displayed. 
+
+Download your program code for Task 3 as 
+
+\texttt{TASK3\_<your class>\_<your name>.ipynb}\hfill{} {[}4{]}
+
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}JPJC/PRELIM/9569/2020/P2/Q4{]} }
+
+A computer company has several offices throughout Singapore, each
+with several salespersons. Each salesperson is assigned to one office
+only. A record of the sales made by each salesperson has been set
+up using a relational database. 
+
+The following tables hold the data: 
+
+\texttt{CUSTOMER (}\texttt{\uline{CustomerID}}\texttt{, CustomerName,
+Email, Telephone) }
+
+\texttt{OFFICE (}\texttt{\uline{OfficeID}}\texttt{, PostalCode,
+Telephone) }
+
+\texttt{SALE (}\texttt{\uline{SalesPersonID{*}}}\texttt{, }\texttt{\uline{CustomerID{*}}}\texttt{,
+}\texttt{\uline{SaleDate}}\texttt{, Amount) }
+
+\texttt{SALESPERSON (}\texttt{\uline{SalesPersonID}}\texttt{, SalesPersonName,
+OfficeID{*}) }
+
+\textbf{Note}: Underlined field indicates primary key. Asterisk ({*})
+indicates a foreign key. 
+
+\subsection*{Task 4.1 }
+
+Write the SQL code to create the four tables in the database named
+\texttt{computercompany.db}. 
+
+Save the SQL file as \texttt{TASK4\_1\_<your class>\_<your name>.sql}.
+\hfill{}{[}4{]}
+
+\subsection*{Task 4.2 }
+
+The files \texttt{CUSTOMER.CSV}, \texttt{OFFICE.CSV}, \texttt{SALE.CSV}
+and \texttt{SALESPERSON.CSV} contain information exported by their
+spreadsheets files. Write Python code to migrate them to the database. 
+
+Save your Python code as \texttt{TASK4\_2\_<your class>\_<your name>.py}.
+\hfill{} {[}6{]}
+
+\subsection*{Task 4.3 }
+
+Write SQL code to show the \texttt{SaleDate}, \texttt{SalesPersonName},
+\texttt{CustomerName} and \texttt{Amount} of all sale transactions
+performed at the office with ID \texttt{1}. 
+
+Save the SQL file as \texttt{TASK4\_3\_<your class>\_<your name>.sql}.
+\hfill{} {[}4{]}
+
+\subsection*{Task 4.4 }
+
+A report is produced to show the top salesperson in each office each
+month. 
+
+Write Python code to: 
+\begin{enumerate}
+\item[i.]  generate a web form that allows a user to enter the month (\texttt{1}
+to \texttt{12}) and year, 
+\item[ii.]  use the data submitted by the web form to query the database, and 
+\item[iii.]  return a HTML page with the report displayed. 
+\end{enumerate}
+The following is a sample report for March, 2020. 
+\noindent \begin{center}
+\begin{tabular}{|lll|}
+\hline 
+\multicolumn{3}{|c|}{Top Performers in March 2020}\tabularnewline
+\textbf{Office ID} & \textbf{Salesperson} & \textbf{Total Amount S\$}\tabularnewline
+1 & Low Kok Kheong & 7880\tabularnewline
+2 & Mindy Tan & 6935\tabularnewline
+3 & Monish Chandr & 10700\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+Save your Python program as \texttt{TASK4\_4\_<your class>\_<your
+name>.py} with any additional files/ sub-folders as needed in a zipped
+folder named 
+
+\texttt{Task4\_<your class>\_<your name>.zip}.\hfill{} {[}12{]}
+
+\subsection*{Task 4.5 }
+
+Deploy the web app on your local host and enter the following data: 
+\begin{enumerate}
+\item month -- \texttt{8}, and 
+\item year -- \texttt{2020}. 
+\end{enumerate}
+Save the screenshot of table generated as 
+
+\texttt{TASK4\_5\_<your class>\_<your name>.jpg}. \hfill{} {[}2{]}
+
+{[}SPLIT\_HERE{]}
+\end{enumerate}
+ 
+\end{document}

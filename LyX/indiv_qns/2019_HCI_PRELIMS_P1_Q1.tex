@@ -1,0 +1,68 @@
+\item \textbf{{[}HCI/PRELIM/9597/2019/P1/Q1{]} }
+
+The manager of a private carpark wants to process the daily data of
+people using the carpark. The carpark is open from 8am to 11pm and
+the carpark charge is as follows:
+\begin{itemize}
+\item Before 5pm: \$1.50 per hour or part thereof 
+\item After 5pm, \$3.00 per entry regardless of the duration
+\end{itemize}
+However, if a car enters before 5pm and leaves after 5pm, the charge
+involves both rules. For example, if the car stays in the carpark
+from 2.45pm to 6.30pm, it is broken down to 2 hours 15 minutes before
+5pm and 1 hour 30 minutes after 5pm. Hence the charge will be \$1.50
+{*} 3 + \$3.00 = \$7.50. 
+
+Each day the carpark electronic system generates a file\texttt{ CARPARK.txt}.
+Each record in the file has the following format:
+\noindent \begin{center}
+\texttt{<CARPLATE NUMBER>,<START TIME>,<END TIME>}
+\par\end{center}
+
+For example, \texttt{SLX2315A,0940,1415} means that a car with car
+plate number SLX2315A entered the carpark at 9.40am and left at 2.15pm. 
+
+You are \textbf{not} allowed to use any built-in functions for time
+processing. 
+
+\subsection*{Task 1.1 }
+
+Write program code for the \texttt{Price} function using the following
+specification:
+\noindent \begin{center}
+\texttt{FUNCTION Price (start: STRING, end: STRING) : FLOAT}
+\par\end{center}
+
+The function has two string parameters \texttt{start}, \texttt{end}
+which refers to the start and end time when the car parked. The function
+returns the carpark charge as a float. 
+
+\subsection*{Evidence 1 }
+
+Your program code.\hfill{} {[}5{]}
+
+\subsection*{Task 1.2 }
+
+Write a program code to perform the following task for the manager:
+\begin{itemize}
+\item Read data from \texttt{CARPARK.txt }
+\item Write all the car plate numbers and corresponding carpark charges
+to another file \texttt{CHARGE.txt}, in the following format: 
+\noindent \begin{center}
+\texttt{<CARPLATE NUMBER>,<CARPARK CHARGE>}
+\par\end{center}
+
+\noindent \begin{center}
+\texttt{<CARPLATE NUMBER>,<CARPARK CHARGE>}
+\par\end{center}
+\item Output the total charges for the day
+\end{itemize}
+
+\subsection*{Evidence 2 }
+
+Your program code.\hfill{} {[}7{]}
+
+\subsection*{Evidence 3}
+
+One screenshot showing the program output and contents of \texttt{CHARGE.txt}
+from running the program.\hfill{} {[}3{]}

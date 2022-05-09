@@ -1,0 +1,1106 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1.8cm,bmargin=4cm,lmargin=1.5cm,rmargin=2cm}
+\usepackage{enumitem}
+\usepackage{amstext}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{graphicx}
+\doublespacing
+
+
+\usepackage{enumitem}
+\setenumerate[1]{label=\textbf{\arabic*}}
+\setenumerate[2]{label=\textbf{(\alph*)}}
+\setenumerate[3]{label=\textbf{(\roman*)}}
+\setlist[enumerate]{align=right}
+
+\setcounter{page}{2}
+
+%for upright integrals
+\usepackage[integrals]{wasysym}
+
+%to be used in conjunction with fancyfoot for last page
+\usepackage{zref-totpages}
+
+%fancyhrd settings
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancypagestyle{laststyle}
+{
+   \fancyhf{}
+   \chead{\thepage}
+   \fancyfoot[L]{\copyright NJC }
+   \fancyfoot[R]{\textbf{END}} %Put \thispagestyle{laststyle} in the last page
+}
+
+%%centering page number
+\chead{\thepage}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%%footer settings, different footer for ODD and EVEN pages, also for the LASTPAGE
+\fancyfoot[LO]{\copyright NJC\hfill \textbf{[Turn Over}}
+\fancyfoot[LE]{\copyright NJC }
+
+%%shameless self-plug BRW
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+[NJC/PROMO/9758/2021/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+A curve $y=
+\backslash
+frac{2}{{{x}^{2}}-3}$ undergoes, in succession, the following transformations,
+ where a and b are positive constants.
+ A: A translation of a units in the negative x-direction.
+ B: A reflection about the y-axis.
+ C: A scaling parallel to the y-axis with scale factor of b.
+ The equation of the resultant curve is $y=
+\backslash
+frac{6}{{{x}^{2}}-10x+22}$.
+ Find the values of a and b.
+ [3]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[NJC/PROMO/9758/2021/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+A candy shop is having a Halloween sale.
+ The items that are on promotion are chocolate bars, gummy bears and lollipops.
+ There is a 20% discount for every chocolate bar purchased, a $2 discount
+ for every 3 bags of gummy bears purchased and every 6 lollipops can be
+ purchased at the price of 5 lollipops.
+\end_layout
+
+\begin_layout Standard
+Hannah, Jo and Pete are preparing for a Halloween party.
+ The table below shows the total bill and the number of chocolate bars,
+ the number of bags of gummy bears and the number of lollipops bought from
+ the candy shop.
+ Chocolate Bar Gummy bears Lollipops Total Bill ($) Jo 5 3 36 65.20 Hannah
+ 4 14 24 119.84 Pete 17 5 20 89.12
+\end_layout
+
+\begin_layout Standard
+Calculate the original selling price for each of a chocolate bar, a bag
+ of gummy bears and a lollipop.
+ [4]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[NJC/PROMO/9758/2021/Q3] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The diagram shows a sketch of the curve $y=
+\backslash
+text{f}(x).$ The curve cuts the x-axis at 
+\backslash
+[
+\backslash
+left( 0,
+\backslash
+ 
+\backslash
+text{0} 
+\backslash
+right)
+\backslash
+], 
+\backslash
+[
+\backslash
+left( 2,
+\backslash
+ 
+\backslash
+text{0} 
+\backslash
+right)
+\backslash
+] and 
+\backslash
+[
+\backslash
+left( 4,
+\backslash
+ 
+\backslash
+text{0} 
+\backslash
+right).
+\backslash
+] It has a stationary point 
+\backslash
+[
+\backslash
+left( 3,
+\backslash
+ -
+\backslash
+frac{5}{2} 
+\backslash
+right)
+\backslash
+] and asymptotes with equations 
+\backslash
+[x=1
+\backslash
+] and 
+\backslash
+[y=2.
+\backslash
+]
+\end_layout
+
+\begin_layout Standard
+Sketch, on separate diagrams, the curves with the following equations, stating
+ the equations of any asymptotes and the coordinates of any turning points
+ and any points where the curves cross the x- and y-axes.
+\end_layout
+
+\begin_layout Standard
+(a) $y=
+\backslash
+left| 
+\backslash
+text{f}(x) 
+\backslash
+right|,$ and [2]
+\end_layout
+
+\begin_layout Standard
+(b) $y=
+\backslash
+frac{1}{
+\backslash
+text{f}(x)}.$ [3]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[NJC/PROMO/9758/2021/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+4 (i) Solve the inequality $20x
+\backslash
+ge 
+\backslash
+frac{17{{x}^{2}}+81x-6}{5-3x},$ leaving your answer in exact form.
+ [4]
+\end_layout
+
+\begin_layout Enumerate
+(ii) Hence solve the inequality $
+\backslash
+frac{20}{x}
+\backslash
+ge 
+\backslash
+frac{17+81x-6{{x}^{2}}}{5{{x}^{2}}-3x}$ exactly.
+ [3]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[NJC/PROMO/9758/2021/Q5] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\backslash
+[
+\backslash
+text{f}(x)=
+\backslash
+left
+\backslash
+{ 
+\backslash
+begin{matrix} {{
+\backslash
+left( x-2 
+\backslash
+right)}^{2}}, & 0
+\backslash
+le x<2 
+\backslash
+
+\backslash
+ 2x-4, & 2
+\backslash
+le x
+\backslash
+le 4 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right.
+\backslash
+]
+\end_layout
+
+\begin_layout Standard
+and that $
+\backslash
+text{f}(x)=
+\backslash
+text{f}(x+4)$ for all real values of x.
+ (i) State the value of $
+\backslash
+text{f}(21).$ [1]
+\end_layout
+
+\begin_layout Standard
+(ii) Sketch the graph of $y=
+\backslash
+text{f}(x)$ for $-6
+\backslash
+le x
+\backslash
+le 6.$ [2]
+\end_layout
+
+\begin_layout Standard
+The function g is defined by
+\end_layout
+
+\begin_layout Standard
+$
+\backslash
+text{g}(x)=
+\backslash
+sqrt{x-4},
+\backslash
+quad 4
+\backslash
+le x
+\backslash
+le 20.$
+\end_layout
+
+\begin_layout Standard
+(iii) Find fg in a similar form as f.
+ [4]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[NJC/PROMO/9758/2021/Q6]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+A curve ${{C}_{1}}$ has equation
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+[{{x}^{2}}+2{{y}^{2}}=100
+\backslash
+]
+\end_layout
+
+\begin_layout Standard
+and a curve ${{C}_{2}}$ has parametric equations
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+[x=2{{
+\backslash
+text{e}}^{-t}}-4{{
+\backslash
+text{e}}^{2t}},
+\backslash
+text{ }y=3{{
+\backslash
+text{e}}^{-t}}+{{
+\backslash
+text{e}}^{2t}}.
+\backslash
+] (i) On the same diagram, sketch ${{C}_{1}}$ and ${{C}_{2}},$ labelling
+ the coordinates of the points where both curves cross the x- and y-axes.
+ [5] 
+\end_layout
+
+\begin_layout Standard
+(ii) Show that ${{C}_{2}}$ has a Cartesian equation of the form ${{
+\backslash
+left( ax+by 
+\backslash
+right)}^{2}}
+\backslash
+left( cx+dy 
+\backslash
+right)=k$
+\end_layout
+
+\begin_layout Standard
+for some integer constants a, b, c, d and k to be determined.
+ [3]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[NJC/PROMO/9758/2021/Q7] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Due to intense rainfall, the Bukit Teemah canal is often filled to the brim,
+ which causes the surrounding areas to be prone to flooding.
+ The Ministry of Environment is looking into redesigning the canal to improve
+ the flow of water by maximising the cross-sectional area, $A
+\backslash
+text{ }{{
+\backslash
+text{m}}^{2}},$of the canal.
+\end_layout
+
+\begin_layout Standard
+The cross-section of the canal has sides of fixed lengths CD FG IJ 4 m,
+ DE HI 3 m and EF GH 0.5 m.
+ Also, the vertical depth DL IK s m and 
+\backslash
+[
+\backslash
+angle CDL=
+\backslash
+angle JIK=
+\backslash
+theta 
+\backslash
+] radians.
+ 
+\end_layout
+
+\begin_layout Standard
+(i) Show that 
+\backslash
+[A=40
+\backslash
+cos 
+\backslash
+theta +8
+\backslash
+sin 2
+\backslash
+theta +2
+\backslash
+].
+ [2]
+\end_layout
+
+\begin_layout Standard
+(ii) Use differentiation to find the value of which gives a maximum value
+ of A.
+ [4]
+\end_layout
+
+\begin_layout Standard
+The National Water Agency conducts regular inspections on the water quality
+ in the canal.
+ During one such inspection, an officer transfers water from the canal into
+ a plastic container (as shown in the diagram below) at a constant rate
+ of 162$
+\backslash
+text{c}{{
+\backslash
+text{m}}^{3}}$ per second.
+ 
+\end_layout
+
+\begin_layout Standard
+The plastic container is in the shape of a hollow circular cone with fixed
+ radius 15 cm and fixed height 35 cm.
+ After t seconds, the depth of water in the container is h cm and the top
+ surface of the water has a radius of r cm.
+\end_layout
+
+\begin_layout Standard
+(iii) Find the rate at which h is increasing at the instant when h 21.
+ [4] 
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[NJC/PROMO/9758/2021/Q8]
+\series default
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+(a) A curve C has parametric equations
+\end_layout
+
+\begin_layout Standard
+$x=2
+\backslash
+theta -
+\backslash
+sin 2
+\backslash
+theta ,
+\backslash
+text{ }y=1-
+\backslash
+cos 2
+\backslash
+theta ,$ for $0
+\backslash
+le 
+\backslash
+theta 
+\backslash
+le 
+\backslash
+frac{
+\backslash
+text{ }
+\backslash
+!
+\backslash
+!
+\backslash
+pi
+\backslash
+!
+\backslash
+!
+\backslash
+text{ }}{2}$.
+\end_layout
+
+\begin_layout Standard
+Find the exact area of the region bounded by C, the line $x=
+\backslash
+text{ }
+\backslash
+!
+\backslash
+!
+\backslash
+pi
+\backslash
+!
+\backslash
+!
+\backslash
+text{ }$ and the x-axis.
+ [5] 
+\end_layout
+
+\begin_layout Standard
+(b) The region bounded by the curve $y=
+\backslash
+tan x$, the line $y=1$ and the y-axis is rotated about the x-axis through
+ $2
+\backslash
+text{ }
+\backslash
+!
+\backslash
+!
+\backslash
+pi
+\backslash
+!
+\backslash
+!
+\backslash
+text{ }$ radians.
+ Find the exact volume of the solid formed.
+ [5]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[NJC/PROMO/9758/2021/Q9]
+\series default
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Relative to the origin O, the points A, B and C have position vectors 
+\backslash
+[2
+\backslash
+mathbf{u}-3
+\backslash
+mathbf{v},
+\backslash
+]
+\backslash
+[
+\backslash
+mathbf{u}+2
+\backslash
+mathbf{v}
+\backslash
+]and 
+\backslash
+[3
+\backslash
+mathbf{u}-2
+\backslash
+mathbf{v}
+\backslash
+]respectively, where u and v are two non-zero and non-parallel vectors.
+ (i) Show that the area of triangle ABC is given by $3
+\backslash
+left| 
+\backslash
+mathbf{u}
+\backslash
+times 
+\backslash
+mathbf{v} 
+\backslash
+right|.$ [3]
+\end_layout
+
+\begin_layout Standard
+It is given that $
+\backslash
+mathbf{u}=2
+\backslash
+mathbf{i}-
+\backslash
+mathbf{j}+2
+\backslash
+mathbf{k}$ and $
+\backslash
+mathbf{v}=3
+\backslash
+mathbf{i}-4
+\backslash
+mathbf{j}-p
+\backslash
+mathbf{k},$ where p is a constant.
+ 
+\end_layout
+
+\begin_layout Standard
+(ii) If the area of triangle ABC is $15
+\backslash
+sqrt{53}$ square units, find the possible values of p exactly.
+ [4]
+\end_layout
+
+\begin_layout Standard
+(iii) It is given that the angle between vectors u and v is acute.
+ Find this angle, giving your answer in degrees.
+ Explain why there is only one answer.
+ [3]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[NJC/PROMO/9758/2021/Q10]
+\series default
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The curve ${{C}_{1}}$ has equation
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+[{{(x-1)}^{2}}-{{(y-4)}^{2}}=1.
+\backslash
+]
+\end_layout
+
+\begin_layout Standard
+(i) Sketch ${{C}_{1}},$ labelling clearly the equations of any asymptotes
+ and the coordinates of any vertices and the points where the curve crosses
+ the x- and y-axes.
+ [3] 
+\end_layout
+
+\begin_layout Standard
+The curve ${{C}_{2}}$ with equation
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+[y=
+\backslash
+frac{{{x}^{2}}+ax}{x-1},
+\backslash
+]
+\end_layout
+
+\begin_layout Standard
+where a is a constant, has two turning points.
+\end_layout
+
+\begin_layout Standard
+(ii) Find the range of possible values of a, showing your working clearly.
+ [3]
+\end_layout
+
+\begin_layout Standard
+It is further given that ${{C}_{1}}$ does not intersect ${{C}_{2}}.$
+\end_layout
+
+\begin_layout Standard
+(iii) By finding the equation of the oblique asymptote of ${{C}_{2}}$ in
+ terms of a, find the value of a exactly.
+ [2] (iv) Assuming now that a is the value you have found in part (iii),
+ sketch ${{C}_{2}}$ on the same diagram in part (i), labelling clearly the
+ equations of any asymptotes and the coordinates of any turning points and
+ the points where the curve crosses the x- and y-axes.
+ [3] 
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[NJC/PROMO/9758/2021/Q11]
+\series default
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+(a) Find $
+\backslash
+int{
+\backslash
+frac{x}{{{x}^{4}}+6{{x}^{2}}+9}
+\backslash
+text{ d}x}.$ [3]
+\end_layout
+
+\begin_layout Standard
+(b) Find $
+\backslash
+int{{{x}^{2}}
+\backslash
+ln 
+\backslash
+left( x+2 
+\backslash
+right)}
+\backslash
+text{ d}x.$ [3] 
+\end_layout
+
+\begin_layout Standard
+(c) Using the substitution $u=
+\backslash
+frac{1}{x}$, show that 
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+[
+\backslash
+int_{
+\backslash
+sqrt{2}}^{2}{
+\backslash
+frac{1}{x
+\backslash
+sqrt{{{x}^{2}}-2}}}
+\backslash
+text{ d}x=
+\backslash
+frac{
+\backslash
+sqrt{2}}{k}
+\backslash
+text{ }
+\backslash
+!
+\backslash
+!
+\backslash
+pi
+\backslash
+!
+\backslash
+!
+\backslash
+text{ }
+\backslash
+],
+\end_layout
+
+\begin_layout Standard
+where k is a constant to be determined.
+ [5]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[NJC/PROMO/9758/2021/Q12]
+\series default
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+In the diagram below, a light source is placed at the point P with coordinates
+ $(-2,
+\backslash
+ -4,
+\backslash
+ -2).$ A rectangular glass prism is placed such that the top of the prism
+ is closer to point P than the bottom of the prism.
+\end_layout
+
+\begin_layout Standard
+It is given that the top of the prism is a part of the plane with equation
+\end_layout
+
+\begin_layout Standard
+$
+\backslash
+mathbf{r}=
+\backslash
+left( 
+\backslash
+begin{matrix} -2 
+\backslash
+
+\backslash
+ 3 
+\backslash
+
+\backslash
+ -2 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right)+
+\backslash
+lambda 
+\backslash
+left( 
+\backslash
+begin{matrix} 1 
+\backslash
+
+\backslash
+ 2 
+\backslash
+
+\backslash
+ -3 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right)+
+\backslash
+mu 
+\backslash
+left( 
+\backslash
+begin{matrix} 3 
+\backslash
+
+\backslash
+ -4 
+\backslash
+
+\backslash
+ 1 
+\backslash
+
+\backslash
+ 
+\backslash
+end{matrix} 
+\backslash
+right),$
+\end_layout
+
+\begin_layout Standard
+where $
+\backslash
+lambda 
+\backslash
+text{ and }
+\backslash
+mu $ are parameters.
+\end_layout
+
+\begin_layout Standard
+(i) Show that this plane has a Cartesian equation of the form $x+y+z=d$
+ for some constant d to be determined.
+ [3]
+\end_layout
+
+\begin_layout Standard
+  A ray of light is sent in direction $3
+\backslash
+mathbf{i}+6
+\backslash
+mathbf{j}+2
+\backslash
+mathbf{k}$ from the light source at P.
+ The light ray enters the prism at point Q which lies on the top of the
+ prism, as shown in the diagram below.
+\end_layout
+
+\begin_layout Standard
+(ii) Find the exact coordinates of Q.
+ [3]
+\end_layout
+
+\begin_layout Standard
+The light ray emerges from the prism at point R with coordinates 
+\backslash
+[
+\backslash
+left( c,
+\backslash
+ 
+\backslash
+frac{53}{11},
+\backslash
+,
+\backslash
+frac{91}{11} 
+\backslash
+right),
+\backslash
+] as shown in the diagram below.
+\end_layout
+
+\begin_layout Standard
+It is known that the plane PQR is perpendicular to the top of the prism.
+\end_layout
+
+\begin_layout Standard
+(iii) Show that $c=
+\backslash
+frac{87}{11}.$ [3]
+\end_layout
+
+\begin_layout Standard
+Snell’s Law states that $
+\backslash
+sin 
+\backslash
+theta =k
+\backslash
+sin 
+\backslash
+phi ,$ where k is the refractive index of the prism, is the acute angle
+ between the normal to the top of the prism and PQ, and is the acute angle
+ between the normal to the top of the prism and QR.
+\end_layout
+
+\begin_layout Standard
+(iv) Find the value of k.
+ [3]
+\end_layout
+
+\begin_layout Standard
+(v) Find the exact thickness of the prism measured in the direction of the
+ normal at Q.
+ [2] 
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

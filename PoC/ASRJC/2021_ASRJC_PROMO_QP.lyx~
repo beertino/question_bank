@@ -1,0 +1,1422 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+[ASRJC/PROMO/9758/2021/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+It is given that 
+\begin_inset Formula $y^{2}=\sin x+\cos x$
+\end_inset
+
+.
+ Show that
+\begin_inset Formula $y\frac{\text{d}^{3}y}{\text{d}x^{3}}+A\frac{\text{d}y}{\text{d}x}\frac{\text{d}^{2}y}{\text{d}x^{2}}+y\frac{\text{d}y}{\text{d}x}=0$
+\end_inset
+
+, where 
+\begin_inset Formula $A$
+\end_inset
+
+ is a real constant to be determined.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[ASRJC/PROMO/9758/2021/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+A graph with the equation 
+\begin_inset Formula $y=\frac{3}{x^{2}+2}$
+\end_inset
+
+ undergoes, in succession, the following transformations: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+: A translation of 1 unit in the direction of the negative 
+\begin_inset Formula $x$
+\end_inset
+
+-axis.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B$
+\end_inset
+
+: A scaling parallel to the 
+\begin_inset Formula $x$
+\end_inset
+
+-axis by a scale factor of 
+\begin_inset Formula $\frac{1}{3}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C$
+\end_inset
+
+: A reflection in the 
+\begin_inset Formula $y$
+\end_inset
+
+-axis.
+ 
+\end_layout
+
+\begin_layout Standard
+Determine the equation of the resulting curve.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[ASRJC/PROMO/9758/2021/Q3]
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\int x^{2}\tan^{-1}\left(2x\right)\text{d}x$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\int\frac{x}{\sqrt{8-2x-x^{2}}}\text{d}x$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[ASRJC/PROMO/9758/2021/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+A curve C has equation 
+\begin_inset Formula $y^{3}-2xy^{2}+3x^{2}-3=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(i)
+\end_layout
+
+\end_inset
+
+ Find 
+\begin_inset Formula $\frac{\text{d}y}{\text{d}x}$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(ii)
+\end_layout
+
+\end_inset
+
+ Find the equation of the normal to the curve at the point 
+\begin_inset Formula $P(2,3)$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(iii)
+\end_layout
+
+\end_inset
+
+ Given that 
+\begin_inset Formula $C$
+\end_inset
+
+ meets the 
+\begin_inset Formula $y$
+\end_inset
+
+-axis at the point 
+\begin_inset Formula $R$
+\end_inset
+
+ and the normal in (ii) meets the y-axis at the point 
+\begin_inset Formula $A$
+\end_inset
+
+, find the area of triangle 
+\begin_inset Formula $APR$
+\end_inset
+
+ in the form 
+\begin_inset Formula $a-\sqrt[3]{b}$
+\end_inset
+
+, where 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ are integers to be determined.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[ASRJC/PROMO/9758/2021/Q5] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+<INSERT_IMAGE_HERE>
+\end_layout
+
+\begin_layout Standard
+The diagram above shows the graph of 
+\begin_inset Formula $y=\text{f}(x)$
+\end_inset
+
+.
+ It has a maximum point at 
+\begin_inset Formula $(4,a)$
+\end_inset
+
+, where 
+\begin_inset Formula $a>0$
+\end_inset
+
+, and meets the axes at 
+\begin_inset Formula $(1,0)$
+\end_inset
+
+ and 
+\begin_inset Formula $(0,0.5)$
+\end_inset
+
+.
+ The curve has asymptotes with equations 
+\begin_inset Formula $y=0$
+\end_inset
+
+ and 
+\begin_inset Formula $x=-1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+On separate diagrams, sketch the graphs of 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=\frac{1}{\text{f}\left(x\right)}$
+\end_inset
+
+} ; 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=\text{ f }'\left(x\right)$
+\end_inset
+
+,
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\begin_layout Standard
+stating the equation(s) of any asymptotes and where possible, the coordinates
+ of any turning point(s) and axial intercept(s).
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[ASRJC/PROMO/9758/2021/Q6] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The functions 
+\begin_inset Formula $\text{f}$
+\end_inset
+
+ and 
+\begin_inset Formula $\text{g}$
+\end_inset
+
+ are defined by 
+\begin_inset Formula 
+\begin{align*}
+\ensuremath{\text{f}:x} & \mapsto6+\lambda x-x^{2} & \text{, }x\in\mathbb{R},\\
+\ensuremath{\text{g}:x} & \mapsto1+7\text{e}^{-x} & ,\ensuremath{x\ge0}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(i)
+\end_layout
+
+\end_inset
+
+ For this part of the question, it is given that 
+\begin_inset Formula $\lambda=5$
+\end_inset
+
+.
+ Show that the composite function fg exists.
+ Hence find the range of fg.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(ii)
+\end_layout
+
+\end_inset
+
+ It is now given that 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is a real constant that is not necessary equals to 5.
+ If the domain of f is restricted to 
+\begin_inset Formula $x\le\frac{\lambda}{2}$
+\end_inset
+
+, find 
+\begin_inset Formula $\text{f}^{-1}$
+\end_inset
+
+ in a similar form.
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[ASRJC/PROMO/9758/2021/Q7] 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\frac{\text{d}}{\text{d}x}\left(\tan^{3}x\right)$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Hence find 
+\begin_inset Formula $\int\text{sec}^{4}x\,\text{d}x$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\int\sin x\left(\sin x+\sin3x\right)\text{d}x$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\begin_layout Enumerate
+For 
+\begin_inset Formula $p>2$
+\end_inset
+
+, find the value of 
+\begin_inset Formula $\int_{0}^{p}x\left|2-x\right|\text{ d}x$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[ASRJC/PROMO/9758/2021/Q8] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Relative to origin 
+\begin_inset Formula $O$
+\end_inset
+
+, the points 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ have position vectors 
+\begin_inset Formula $\mathbf{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{b}$
+\end_inset
+
+ respectively, where 
+\begin_inset Formula $\mathbf{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{b}$
+\end_inset
+
+ are non-zero vectors.
+ The point 
+\begin_inset Formula $C$
+\end_inset
+
+ is on 
+\begin_inset Formula $BA$
+\end_inset
+
+ produced such that 
+\begin_inset Formula $BA:BC=3:5$
+\end_inset
+
+ and 
+\begin_inset Formula $OC$
+\end_inset
+
+ is perpendicular to 
+\begin_inset Formula $OB$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(i)
+\end_layout
+
+\end_inset
+
+ Find 
+\begin_inset Formula $\overrightarrow{OC}$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $\mathbf{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{b}$
+\end_inset
+
+.
+\begin_inset space \hfill{}
+\end_inset
+
+ [1]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(ii)
+\end_layout
+
+\end_inset
+
+ Show that 
+\begin_inset Formula $\mathbf{a}\cdot\mathbf{b}=\frac{2}{5}\left|\mathbf{b}\right|^{2}$
+\end_inset
+
+.
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Standard
+The point 
+\begin_inset Formula $P$
+\end_inset
+
+ is on the line 
+\begin_inset Formula $OB$
+\end_inset
+
+ such that it is the image of 
+\begin_inset Formula $B$
+\end_inset
+
+ in the line 
+\begin_inset Formula $OC$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(iii)
+\end_layout
+
+\end_inset
+
+ Find the area of triangle 
+\begin_inset Formula $PCB$
+\end_inset
+
+.
+ Leave your answer in the form of 
+\begin_inset Formula $k\left|\mathbf{a}\times\mathbf{b}\right|$
+\end_inset
+
+, where 
+\begin_inset Formula $k$
+\end_inset
+
+ is an exact real constant.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Standard
+The point 
+\begin_inset Formula $F$
+\end_inset
+
+ is the foot of perpendicular of 
+\begin_inset Formula $P$
+\end_inset
+
+ to the line 
+\begin_inset Formula $AB$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(iv)
+\end_layout
+
+\end_inset
+
+ Given that 
+\begin_inset Formula $\left|\mathbf{a}\right|^{2}=\frac{7}{25}\left|\mathbf{b}\right|^{2}$
+\end_inset
+
+, find the position vector of 
+\begin_inset Formula $F$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $\mathbf{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{b}$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[ASRJC/PROMO/9758/2021/Q9] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The curve C has equation 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=\frac{4x^{2}+px-q}{x^{2}-s},\text{ }x\in\mathbb{R},\text{ }x^{2}\ne s
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $p$
+\end_inset
+
+, 
+\begin_inset Formula $q$
+\end_inset
+
+ and 
+\begin_inset Formula $s$
+\end_inset
+
+ are non-zero constants.
+ 
+\end_layout
+
+\begin_layout Enumerate
+It is given that 
+\begin_inset Formula $C$
+\end_inset
+
+ passes through the point 
+\begin_inset Formula $\left(0,\frac{1}{2}\right)$
+\end_inset
+
+ and has a vertical asymptote 
+\begin_inset Formula $x=2$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+State the value of 
+\begin_inset Formula $s$
+\end_inset
+
+ and show that the value of 
+\begin_inset Formula $q$
+\end_inset
+
+ is 2.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+It is given further that the line 
+\begin_inset Formula $y=1$
+\end_inset
+
+ is a tangent to 
+\begin_inset Formula $C$
+\end_inset
+
+ and it does not meet the curve again.
+ Find the exact value of 
+\begin_inset Formula $p$
+\end_inset
+
+ if 
+\begin_inset Formula $p$
+\end_inset
+
+ is a negative real value.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+It is now given instead that 
+\begin_inset Formula $p=4,\text{ }q=-1\text{ and }s=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Sketch the curve 
+\begin_inset Formula $C$
+\end_inset
+
+, showing clearly the coordinates of any turning point(s), equations of
+ any asymptotes and the coordinates of any points of intersection with the
+ axes.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+Find the equation of the additional curve that needs to be added to the
+ curve sketched in (b)(i) to determine the number of distinct real roots
+ for the equation 
+\begin_inset Formula $10(x+2)^{2}=3\left(10-\left(\frac{(4x^{2}+4x+1)}{(x^{2}-1)}\right)^{2}\right)$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[ASRJC/PROMO/9758/2021/Q10] 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+<INSERT_IMAGE_HERE>
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 1 shows the cylindrical-shaped water pipe, with negligible thickness and
+ open on both ends, inscribed in a hemisphere with fixed radius 8 cm.
+ The cross sectional view of the pipe and the hemisphere is shown in Fig.
+ 2.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If the diameter of the pipe is 
+\begin_inset Formula $x$
+\end_inset
+
+ cm, show that the curved surface area, S, of the pipe is 
+\begin_inset Formula $2\pi x\sqrt{64-x^{2}}$
+\end_inset
+
+ 
+\begin_inset Formula $\text{cm}^{2}$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+It is given that as 
+\begin_inset Formula $x$
+\end_inset
+
+ varies, the maximum value of 
+\begin_inset Formula $S$
+\end_inset
+
+ occurs when the ratio of the diameter of the pipe to its height is 
+\begin_inset Formula $1:k$
+\end_inset
+
+.
+ Find the exact value of 
+\begin_inset Formula $k$
+\end_inset
+
+ and the exact maximum value of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\begin_inset space \hfill{}
+\end_inset
+
+ [6]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A particle is moving on the curve with equation 
+\begin_inset Formula $y=2\sin^{-1}(3x),-\frac{1}{3}\le x\le\frac{1}{3},$
+\end_inset
+
+ where 
+\begin_inset Formula $(x,y)$
+\end_inset
+
+ is the coordinate of the particle at time 
+\begin_inset Formula $t$
+\end_inset
+
+ relative to a fixed point 
+\begin_inset Formula $O$
+\end_inset
+
+.
+ The 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ values represent the horizontal and vertical displacements.
+ When the 
+\begin_inset Formula $y$
+\end_inset
+
+-coordinate of the particle is 
+\begin_inset Formula $\frac{\pi}{3}$
+\end_inset
+
+, the rate at which the 
+\begin_inset Formula $y$
+\end_inset
+
+-coordinate is decreasing with time 
+\begin_inset Formula $t$
+\end_inset
+
+ is 2 units per second.
+ At this instant, find the exact rate at which the 
+\begin_inset Formula $x$
+\end_inset
+
+-coordinate of the particle changes with time.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[ASRJC/PROMO/9758/2021/Q11]
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Ivy took a $40 000 tuition fee loan for her 4-year university course that
+ commences on 1st January 2021.
+ The loan is interest-free during the period of study.
+ Immediately after graduation, interest is charged at 4% per annum of the
+ outstanding amount owe at the end of each year.
+ The maximum loan repayment period is at most 15 years upon graduation.
+ Ivy took a 550 every month upon graduation.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Show that the amount she owes at the end of the n years after graduation
+ is 
+\begin_inset Formula $\$171600-131600\left(1.04\right)^{n}$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+Will she be able to finish repaying the loan by the end of 2030? Justify
+ your answer clearly.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+Find the minimum monthly repayment Ivy should make if she intends to utilize
+ fully the loan repayment period.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+To save for her tuition fee loan repayment, Ivy wishes to start a new savings
+ plan on the first day of November 2021.
+ In this plan, she needs to invest $200 into the account on the first day
+ of each month.
+ Every $200 invested earns a fixed interest of 
+\begin_inset Formula $d$
+\end_inset
+
+% of $200 at the end of each month until a withdrawal is made from the account.
+ The interest is added to the account and does not accumulate further interest.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+How much interest, in terms of 
+\begin_inset Formula $d$
+\end_inset
+
+, will the first $200 deposited earn at the end of 2022? 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+Find the least value of 
+\begin_inset Formula $d$
+\end_inset
+
+ such that the total amount in the account exceed $10 000 at the end of
+ 36 months.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Relative to the origin 
+\begin_inset Formula $O$
+\end_inset
+
+, a point 
+\begin_inset Formula $A$
+\end_inset
+
+ has position vector 
+\begin_inset Formula $-\mathbf{j}+2\mathbf{k}$
+\end_inset
+
+.
+ The plane 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ has equation 
+\begin_inset Formula $\mathbf{r}\cdot\left(\begin{array}{c}
+1\\
+-1\\
+0
+\end{array}\right)=3$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(i)
+\end_layout
+
+\end_inset
+
+ Find the position vector of the foot of perpendicular from point 
+\begin_inset Formula $A$
+\end_inset
+
+ to the plane 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+.
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\begin_layout Standard
+The line 
+\begin_inset Formula $l$
+\end_inset
+
+ has equation 
+\begin_inset Formula $\mathbf{r}=\left(\begin{array}{c}
+0\\
+-1\\
+2
+\end{array}\right)+\mu\left(\begin{array}{c}
+0\\
+1\\
+1
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\mu\in\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(ii)
+\end_layout
+
+\end_inset
+
+ Find the acute angle between the plane 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ and the line 
+\begin_inset Formula $l$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(iii)
+\end_layout
+
+\end_inset
+
+ The point 
+\begin_inset Formula $B\left(-\alpha,2,\alpha\right)$
+\end_inset
+
+ is equidistant from the plane 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ and the line 
+\begin_inset Formula $l$
+\end_inset
+
+.
+ Find the possible values of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ [4]
+\end_layout
+
+\begin_layout Standard
+The plane 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+ has equation 
+\begin_inset Formula $\mathbf{r}\cdot\left(\begin{array}{c}
+1\\
+1\\
+-1
+\end{array}\right)=5-\beta$
+\end_inset
+
+ , 
+\begin_inset Formula $\beta\ne8$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(iv)
+\end_layout
+
+\end_inset
+
+ Show that the point 
+\begin_inset Formula $C\left(4,1,\beta\right)$
+\end_inset
+
+ lies on both 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+.
+ Hence find the vector equation of the line of intersection between the
+ planes 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+.
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

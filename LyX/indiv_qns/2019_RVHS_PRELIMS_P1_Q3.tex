@@ -1,0 +1,207 @@
+\item \textbf{{[}RVHS/PRELIM/9597/2019/P1/Q3{]} }
+
+\textbf{Minimum Heap }
+
+A minimal heap is a binary tree that always maintains the smallest
+data item at its root node. In this question, the \texttt{class minHeap}
+is implemented using a 1D array with each child node index calculated
+using the following formula. 
+
+\texttt{left\_child\_ptr = node\_ptr x 2 + 1}
+
+\texttt{right\_child\_ptr = node\_ptr x 2 + 2 }
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline 
+\texttt{\textbf{class minHeap attributes}} & \texttt{\textbf{Description}}\tabularnewline
+\hline 
+\texttt{count (INTEGER)} & It stores the number of data item currently in \texttt{minHeap}\tabularnewline
+\hline 
+\texttt{size (INTEGER)} & It stores the maximum number of data item \texttt{minHeap} can take.\tabularnewline
+\hline 
+\texttt{tree (ARRAY OF INTEGER)} & It is a 1D array that stores the data items as nodes in \texttt{minHeap}.
+If a data item doesn\textquoteright t exist, it is represented by
+-1. \tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\subsection*{Task 3.1 }
+
+The pseudo-code of the class procedure \texttt{add(newItem)} is given
+in file \textquotedblleft \texttt{task31.txt}\textquotedblright .
+
+Use it to implement the class procedure \texttt{add}. 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{PROCEDURE add(newItem) }
+
+\texttt{\qquad{}IF minHeap is not full THEN}
+
+\texttt{\qquad{}\qquad{}tree{[}count{]} <- newItem}
+
+\texttt{\qquad{}\qquad{}curr\_ptr <- count }
+
+\texttt{\qquad{}\qquad{}parent\_ptr <- QUOTIENT((curr\_ptr - 1)
+DIV 2)}
+
+\texttt{\qquad{}\qquad{}REPEAT }
+
+\texttt{\qquad{}\qquad{}\qquad{}SWAP (tree{[}parent\_ptr{]}, tree{[}curr\_ptr{]}) }
+
+\texttt{\qquad{}\qquad{}\qquad{}curr\_ptr <- parent\_ptr }
+
+\texttt{\qquad{}\qquad{}\qquad{}parent\_ptr <- QUOTIENT((curr\_ptr
+- 1) DIV 2)}
+
+\texttt{\qquad{}\qquad{}UNTIL curr\_ptr EQUAL TO 0 OR tree{[}parent\_ptr{]}<=
+newItem}
+
+\texttt{\qquad{}\qquad{}INCREMENT count BY 1 }
+
+\texttt{\qquad{}ELSE }
+
+\texttt{\qquad{}\qquad{}OUTPUT \textquotedbl Heap is full. Cannot
+add.\textquotedbl{} }
+
+\texttt{\qquad{}END IF }
+
+\texttt{END PROCEDURE}%
+\end{minipage}
+
+\subsection*{Evidence 19 }
+
+Program code for \texttt{add}. \hfill{} {[}3{]}
+
+\subsection*{Task 3.2 }
+
+The class function \texttt{remove\_minimum} is implemented for you
+in file \textquotedblleft \texttt{T3.py}\textquotedblright . This
+function removes the data item at the root node of the minimum heap
+and returns the data item. Your task is to implement the class function
+\texttt{sort} which returns a list consists of all the data items
+stored in the minimum heap in increasing order. Take note that after
+\texttt{sort} is executed, the minimum heap becomes empty. 
+
+For example: 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{def test(): }
+
+\texttt{\qquad{}test\_value = {[}58, 36, 3, 9, 87{]}}
+
+\texttt{\qquad{}h1 = minHeap(5) }
+
+\texttt{\qquad{}for value in test\_value: }
+
+\texttt{\qquad{}\qquad{}h1.add(value) }
+
+\texttt{\qquad{}print(h1.sort())}
+
+\texttt{>\textcompwordmark >\textcompwordmark > test () }
+
+\texttt{{[}3, 9, 36, 58, 87{]} }%
+\end{minipage}
+
+\paragraph*{Evidence 20}
+
+Program code for the class function \texttt{sort}. \hfill{} {[}2{]}
+
+\subsection*{Evidence 21}
+
+Screenshot of the output of the following code: \hfill{}{[}1{]}
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{def test\_32(n): }
+
+\texttt{\qquad{}test\_value = random.sample(range(1,100), n)}
+
+\texttt{\qquad{}h1 = minHeap(n)}
+
+\texttt{\qquad{}for value in test\_value:}
+
+\texttt{\qquad{}\qquad{}h1.add(value)}
+
+\texttt{\qquad{}print(h1.sort())\bigskip{}
+}
+
+\texttt{print(\textquotedbl task 3.2\textquotedbl ) }
+
+\texttt{print(\textquotedbl 1st run\textquotedbl ) }
+
+\texttt{test\_32(15)}
+
+\texttt{print(\textquotedbl 2nd run\textquotedbl )}
+
+\texttt{test\_32(15) }
+
+\texttt{print(\textquotedbl 3rd run\textquotedbl )}
+
+\texttt{test\_32(15) }%
+\end{minipage}
+
+\subsection*{Task 3.3 }
+
+Implement the class procedure \texttt{display\_all\_paths} which displays
+all paths from the root of minimum heap to all its leaves. \emph{Hint:
+The minimum heap in this question is implemented using a complete
+binary tree. This means that the }\texttt{tree}\emph{ array indices
+from }\texttt{0}\emph{ to }\texttt{count-1}\emph{ contain all the
+data items of the minimum heap}. 
+
+For example: 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{def test\_33(n):}
+
+\texttt{\qquad{}test\_value = random.sample(range(1,100), n) }
+
+\texttt{\qquad{}h1 = minHeap(n)}
+
+\texttt{\qquad{}for value in test\_value: }
+
+\texttt{\qquad{}\qquad{}h1.add(value) }
+
+\texttt{\qquad{}h1. display\_all\_paths() }
+
+\texttt{>\textcompwordmark >\textcompwordmark > test\_33(10) }
+
+\texttt{5 16 21 40 }
+
+\texttt{5 16 21 29 }
+
+\texttt{5 16 34 94 }
+
+\texttt{5 49 96 }
+
+\texttt{5 49 69 }%
+\end{minipage}
+
+\subsection*{Evidence 22 }
+
+Program code for \texttt{display\_all\_paths}. \hfill{} {[}3{]}
+
+\subsection*{Evidence 23 }
+
+Screenshot of the output of the following code: \hfill{}{[}1{]}
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{print(\textquotedbl task 3.3\textquotedbl ) }
+
+\texttt{print(\textquotedbl 1st run\textquotedbl ) }
+
+\texttt{test\_33(5)}
+
+\texttt{print(\textquotedbl 2nd run\textquotedbl )}
+
+\texttt{test\_33(10)}
+
+\texttt{print(\textquotedbl 3rd run\textquotedbl )}
+
+\texttt{test\_33(15) }%
+\end{minipage}

@@ -1,0 +1,73 @@
+\item \textbf{{[}YIJC/PRELIM/9569/2021/P1/Q3{]} }
+
+A stack is a last-in-first-out (LIFO) abstract data type (ADT) in
+which all the elements are inserted and removed from one end. 
+
+It is common to either use a linked list or an array to implement
+a stack
+\begin{itemize}
+\item In the linked list implementation, a root pointer points to the top
+of a stack and a data structure. The data structure contains the value
+of the data and a pointer pointing to the next node in the stack. 
+\item In the array implementation, a fixed size array is used to store the
+elements. 
+\end{itemize}
+The basic stack operations of \texttt{push()}, \texttt{pop()} and
+\texttt{peek()} are provided in both implementations. 
+\begin{itemize}
+\item \texttt{push()} is used to insert an element into the stack. 
+\item \texttt{pop()} removes an element from the stack and returns the value
+of the element. 
+\item \texttt{peek()} returns the value of the element at the top of the
+stack without removing it. 
+\end{itemize}
+\begin{enumerate}
+\item Describe what an abstract data type is and how it benefits the user.\hfill{}
+{[}3{]} 
+\item State one advantage and one disadvantage of implementing the stack
+ADT using a linked list. \hfill{}{[}2{]} 
+\item State one advantage and one disadvantage of implementing the stack
+ADT using an array.\hfill{} {[}2{]} 
+\item Describe how a \texttt{push()} operation is done in a stack ADT which
+is implemented using a linked list. \hfill{}{[}3{]} 
+\item Describe how the number of elements within a stack can be counted
+using only the basic stack operations provided. \hfill{}{[}3{]} 
+\end{enumerate}
+The following program code uses a Python list as an array with the
+built-in functions\texttt{ <list>.insert()} and \texttt{<list>.pop()}. 
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{01 def add(seq): }
+
+\texttt{02 \qquad{}stk = {[}{]} }
+
+\texttt{03 \qquad{}def InsertOne(item): }
+
+\texttt{04 \qquad{}\qquad{}if stk=={[}{]} or item < stk{[}0{]}:}
+
+\texttt{05 \qquad{}\qquad{}\qquad{}stk.insert(0,item) }
+
+\texttt{06 \qquad{}else: }
+
+\texttt{07 \qquad{}\qquad{}temp = stk.pop(0) }
+
+\texttt{08 \qquad{}\qquad{}InsertOne(item) }
+
+\texttt{09 \qquad{}\qquad{}stk.insert(0,temp) }
+
+\texttt{10 \qquad{}for ele in seq: }
+
+\texttt{11 \qquad{}\qquad{}InsertOne(ele) }
+
+\texttt{12 \qquad{}return stk }%
+\end{minipage}
+\begin{enumerate}
+\item[(f)] {}
+\begin{enumerate}
+\item The above is an example of implementing a stack using an array. State
+and explain how the program code adds all the elements in the sequence
+\texttt{seq} into the stack. \hfill{}{[}2{]} 
+\item Modify the above program code such that it uses only the basic stack
+ADT operations provided. \hfill{}{[}4{]}
+\end{enumerate}
+\end{enumerate}

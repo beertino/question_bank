@@ -1,0 +1,78 @@
+\item \textbf{{[}JPJC/PRELIM/9597/2019/P2/Q9{]} }
+
+A binary search tree is stored as an array of records. Each record
+represents a node and consists of the data and a left pointer and
+a right pointer. After a number of records are inserted, the tree
+is as shown. 
+
+The array is called \texttt{BinaryTree}. 
+
+The notation \texttt{BinaryTree{[}Root{]}.Data} will access the data
+at root node.
+\noindent \begin{center}
+\begin{tabular}{c|c|c|c|}
+\multicolumn{4}{c}{\texttt{BinaryTree}}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+ & \texttt{LeftPtr} & \texttt{DataValue} & \texttt{RightPtr}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\texttt{{[}1{]}} & \texttt{2} & \texttt{Jay} & \texttt{3}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\texttt{{[}2{]}} & \texttt{4} & \texttt{Gel} & \texttt{0}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\texttt{{[}3{]}} & \texttt{0} & \texttt{Ken} & \texttt{5}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\texttt{{[}4{]}} & \texttt{0} & \texttt{Ace} & \texttt{0}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\texttt{{[}5{]}} & \texttt{6} & \texttt{Pan} & \texttt{0}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\texttt{{[}6{]}} & \texttt{0} & \texttt{Max} & \texttt{0}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\texttt{{[}7{]}} & \texttt{8} &  & \tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\texttt{{[}8{]}} & \texttt{9} &  & \tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\texttt{{[}9{]}} & \texttt{0} &  & \tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\end{tabular}
+\par\end{center}
+
+\noindent \begin{center}
+\texttt{}%
+\begin{tabular}{c|c|c|c|}
+\cline{2-2} \cline{4-4} 
+\texttt{Root} & \texttt{1} & \texttt{NextFree} & \texttt{7}\tabularnewline
+\cline{2-2} \cline{4-4} 
+\end{tabular}\texttt{ }
+\par\end{center}
+\begin{enumerate}
+\item Draw the binary search tree. \hfill{}{[}2{]}
+\item Complete the algorithm to find a node in a binary search tree. This
+function will return a pointer to node.\hfill{} {[}4{]}
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{FUNCTION FindNode(SearchItem) RETURNS INTEGER }
+
+\texttt{\qquad{}TempPtr <- Root }
+
+\texttt{\qquad{}WHILE TempPtr <> NULL AND ............A............}
+
+\texttt{\qquad{}\qquad{}IF ............B............ THEN }
+
+\texttt{\qquad{}\qquad{}\qquad{}TempPtr <- BinaryTree{[}TempPtr{]}.LeftPtr }
+
+\texttt{\qquad{}\qquad{}ELSE }
+
+\texttt{\qquad{}\qquad{}\qquad{}............C............ }
+
+\texttt{\qquad{}\qquad{}ENDIF }
+
+\texttt{\qquad{}ENDWHILE }
+
+\texttt{\qquad{}............D............}
+
+\texttt{ENDFUNCTION} %
+\end{minipage}
+\item Write an algorithm for a pre-order traversal of the binary search
+tree. \hfill{}{[}4{]}
+\end{enumerate}

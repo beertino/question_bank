@@ -1,0 +1,1754 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1.8cm,bmargin=4cm,lmargin=1.5cm,rmargin=2cm}
+\usepackage{enumitem}
+\usepackage{amstext}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{graphicx}
+\doublespacing
+
+
+\usepackage{enumitem}
+\setenumerate[1]{label=\textbf{\arabic*}}
+\setenumerate[2]{label=\textbf{(\alph*)}}
+\setenumerate[3]{label=\textbf{(\roman*)}}
+\setlist[enumerate]{align=right}
+
+\setcounter{page}{2}
+
+%for upright integrals
+\usepackage[integrals]{wasysym}
+
+%to be used in conjunction with fancyfoot for last page
+\usepackage{zref-totpages}
+
+%fancyhrd settings
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancypagestyle{laststyle}
+{
+   \fancyhf{}
+   \chead{\thepage}
+   \fancyfoot[L]{\copyright NJC }
+   \fancyfoot[R]{\textbf{END}} %Put \thispagestyle{laststyle} in the last page
+}
+
+%%centering page number
+\chead{\thepage}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%%footer settings, different footer for ODD and EVEN pages, also for the LASTPAGE
+\fancyfoot[LO]{\copyright NJC\hfill \textbf{[Turn Over}}
+\fancyfoot[LE]{\copyright NJC }
+
+%%shameless self-plug BRW
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\begin_layout Enumerate
+State a sequence of transformations that will transform the curve with equation
+ 
+\begin_inset Formula $y=2\sin(2x+\alpha)\cos(x)$
+\end_inset
+
+ on to the curve with equation 
+\begin_inset Formula $y=-2\sin(4x+3\alpha)\cos(2x+\alpha$
+\end_inset
+
+ ), where 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is a positive constant.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Solve algebraically the inequality 
+\begin_inset Formula $\frac{x+3}{x^{2}+x-2}>-1$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Hence solve the inequality 
+\begin_inset Formula $\frac{x+3x^{2}}{1+x-2x^{2}}>-1.$
+\end_inset
+
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A curve 
+\begin_inset Formula $C$
+\end_inset
+
+ has equation 
+\begin_inset Formula 
+\[
+\frac{x^{2}-4y^{2}}{x^{2}+xy^{2}+100}=\frac{1}{2}\,,x\in\mathbb{R},x\ne-\,8.
+\]
+
+\end_inset
+
+Show that 
+\begin_inset Formula $\frac{\text{d}y}{\text{d}x}=\frac{2x-y^{2}}{2xy+16y}$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Hence, prove that curve 
+\begin_inset Formula $C$
+\end_inset
+
+ does not have any stationary point.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\color white
+_
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+<INSERT IMAGE HERE>
+\end_layout
+
+\begin_layout Standard
+The diagram shows the curve
+\begin_inset Formula $y=\text{f}(x)$
+\end_inset
+
+.
+ There are two vertical asymptotes with equations 
+\begin_inset Formula $x=-2$
+\end_inset
+
+ and 
+\begin_inset Formula $x=2$
+\end_inset
+
+ respectively.
+ The curve crosses the 
+\begin_inset Formula $x$
+\end_inset
+
+-axis at the point 
+\begin_inset Formula $A$
+\end_inset
+
+ and has a maximum turning point at 
+\begin_inset Formula $B$
+\end_inset
+
+ where it crosses the 
+\begin_inset Formula $y$
+\end_inset
+
+-axis.
+ 
+\end_layout
+
+\begin_layout Standard
+The curve also has a minimum turning point at 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ The coordinates of 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+ are 
+\begin_inset Formula $(a,0)$
+\end_inset
+
+, 
+\begin_inset Formula $(0,-10)$
+\end_inset
+
+ and 
+\begin_inset Formula $(p,q)$
+\end_inset
+
+ respectively, where 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+ are constants.
+ 
+\end_layout
+
+\begin_layout Standard
+Sketch the following curves and state the equations of the asymptotes, the
+ coordinates of the turning points and of points where the curve crosses
+ the axes, if any.
+ Leave your answers in terms of 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $p$
+\end_inset
+
+ or 
+\begin_inset Formula $q$
+\end_inset
+
+ where necessary.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(i)
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $y=\frac{1}{\text{f}(x)}$
+\end_inset
+
+, and 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(ii)
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $y=\text{f}(2-|x|)$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Referred to the origin 
+\begin_inset Formula $O$
+\end_inset
+
+, points 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ have position vectors 
+\begin_inset Formula $\mathbf{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{b}$
+\end_inset
+
+ respectively.
+ The modulus of 
+\begin_inset Formula $\mathbf{a}$
+\end_inset
+
+ is 2 and 
+\begin_inset Formula $\mathbf{b}$
+\end_inset
+
+ is a unit vector.
+ The angle between 
+\begin_inset Formula $\mathbf{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{b}$
+\end_inset
+
+ is 
+\begin_inset Formula $60^{\circ}$
+\end_inset
+
+.
+ Point 
+\begin_inset Formula $C$
+\end_inset
+
+ lies on 
+\begin_inset Formula $AB$
+\end_inset
+
+, between 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+, such that 
+\begin_inset Formula $AC=kCB$
+\end_inset
+
+, where 
+\begin_inset Formula $0<k<1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(i)
+\end_layout
+
+\end_inset
+
+ Express 
+\begin_inset Formula $\overrightarrow{OC}$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $\mathbf{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{b}$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(ii)
+\end_layout
+
+\end_inset
+
+ Show that the length of projection of 
+\begin_inset Formula $\overrightarrow{OC}$
+\end_inset
+
+ on 
+\begin_inset Formula $\overrightarrow{OA}$
+\end_inset
+
+ is given by 
+\begin_inset Formula $\frac{k+4}{2\left(k+1\right)}$
+\end_inset
+
+.
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(iii)
+\end_layout
+
+\end_inset
+
+ Find, in terms of 
+\begin_inset Formula $k$
+\end_inset
+
+, the area of triangle 
+\begin_inset Formula $OAC$
+\end_inset
+
+.
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\begin_layout Enumerate
+The Cartesian equation of line 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ is
+\begin_inset Formula $\frac{x-2}{a}=\frac{y+2}{b}=\frac{z-3}{c}$
+\end_inset
+
+, where 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+, 
+\begin_inset Formula $c$
+\end_inset
+
+ are constants.
+ The line 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ is parallel to the vector 
+\begin_inset Formula $4\mathbf{i}+3\mathbf{j}$
+\end_inset
+
+.
+ The line 
+\begin_inset Formula $L_{3}$
+\end_inset
+
+ asses through the origin and the point with position vector 
+\begin_inset Formula $\mathbf{j}+\mathbf{k}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(i)
+\end_layout
+
+\end_inset
+
+ Given that 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ is perpendicular to 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+, form an equation relating 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(ii)
+\end_layout
+
+\end_inset
+
+ Given that 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ intersects 
+\begin_inset Formula $L_{3}$
+\end_inset
+
+, show that
+\begin_inset Formula $5a+2b-2c=0$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(iii)
+\end_layout
+
+\end_inset
+
+ Hence express 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(iv)
+\end_layout
+
+\end_inset
+
+ Find the acute angle between 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $L_{3}$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The functions f and g are defined by 
+\begin_inset Formula 
+\begin{align*}
+\text{f : }x & \mapsto\frac{1}{\left|1-x^{2}\right|}\ ,x\in\mathbb{R},\text{ }-2\le x<-1,\\
+\text{g: }x & \mapsto-(x-2)^{2}+k,x\in\mathbb{R},\text{ }\ x\ge0\,\text{where \ensuremath{k} is a constant}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(i)
+\end_layout
+
+\end_inset
+
+ Sketch on the same diagram the graphs of 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $y=\text{f }\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $y=\text{f}^{-1}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(c)
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $y=\text{f}^{-1}\text{f}\left(x\right)$
+\end_inset
+
+ stating the equations of any asymptotes and the coordinates of any endpoints.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(ii)
+\end_layout
+
+\end_inset
+
+ Find 
+\begin_inset Formula $\text{f}^{-1}$
+\end_inset
+
+ and state the domain of 
+\begin_inset Formula $\text{f}^{-1}$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(iii)
+\end_layout
+
+\end_inset
+
+ Show that the composite function 
+\begin_inset Formula $\text{gf}$
+\end_inset
+
+ exists and find its range.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The figure below shows a cross-section 
+\begin_inset Formula $OBCE$
+\end_inset
+
+ of a car headlight whose reflective surface is modelled in suitable units
+ by the curve with parametric equations
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x=a(\theta-\sin\theta),y=a(1-\cos\theta)
+\]
+
+\end_inset
+
+ for 
+\begin_inset Formula $0\le\theta\le2\pi$
+\end_inset
+
+ , where 
+\begin_inset Formula $a$
+\end_inset
+
+ is a positive constant.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+<INSERT IMAGE HERE>
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(i)
+\end_layout
+
+\end_inset
+
+ Find in terms of 
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+ the length of 
+\begin_inset Formula $OE$
+\end_inset
+
+, 
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+ the maximum height of the curve 
+\begin_inset Formula $OBCE$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(ii)
+\end_layout
+
+\end_inset
+
+ Show that 
+\begin_inset Formula $\frac{\text{d}y}{\text{d}x}=\cot\frac{\theta}{2}$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\begin_layout Standard
+Point 
+\begin_inset Formula $B$
+\end_inset
+
+ lies on the curve and has parameter 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+ 
+\begin_inset Formula $TS$
+\end_inset
+
+ is tangential to the curve at 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $BC$
+\end_inset
+
+ is parallel to the 
+\begin_inset Formula $x$
+\end_inset
+
+-axis.
+ Given that 
+\begin_inset Formula $\angle TBC=\frac{\pi}{6}$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(iii)
+\end_layout
+
+\end_inset
+
+ show that 
+\begin_inset Formula $\beta=\frac{2\pi}{3}$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(iv)
+\end_layout
+
+\end_inset
+
+ Show that the equation of normal to the curve at the point 
+\begin_inset Formula $B$
+\end_inset
+
+ is 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+ky=-k^{2}x+2\pi a,
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $k$
+\end_inset
+
+ is an exact constant to be determined.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Given that 
+\begin_inset Formula $\sum\limits _{r=1}^{n}r^{2}=\frac{1}{6}n\left(n+1\right)\left(2n+1\right)$
+\end_inset
+
+, find 
+\begin_inset Formula $\sum\limits _{r=7}^{n+1}\left(2^{r}+r^{2}-r\right)$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Use the method of differences to show that 
+\begin_inset Formula $\sum\limits _{r=2}^{n}\frac{1}{r^{2}-1}=\frac{3}{4}+\frac{A}{n}+\frac{A}{n+1}$
+\end_inset
+
+, where 
+\begin_inset Formula $A$
+\end_inset
+
+ is a constant to be determined.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+Explain why the series 
+\begin_inset Formula $\sum\limits _{r=2}^{\infty}\frac{1}{r^{2}-1}$
+\end_inset
+
+ converges, and write down its value.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+Hence deduce that 
+\begin_inset Formula $\frac{2}{2^{2}}+\frac{2}{3^{2}}+\frac{2}{4^{2}}+...$
+\end_inset
+
+ is less than 
+\begin_inset Formula $\frac{3}{2}$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Referred to the origin 
+\begin_inset Formula $O$
+\end_inset
+
+, the points 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+ have position vectors 
+\begin_inset Formula $4\mathbf{i}-2\mathbf{j}$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha\mathbf{i}-\mathbf{j}+2\mathbf{k}$
+\end_inset
+
+ and 
+\begin_inset Formula $-\mathbf{i}-7\mathbf{j}+\beta\mathbf{k}$
+\end_inset
+
+ respectively, where 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ are constants.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(i)
+\end_layout
+
+\end_inset
+
+ Given that 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+ are collinear, show that 
+\begin_inset Formula $\alpha=5$
+\end_inset
+
+, and find the value of 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Standard
+The plane 
+\begin_inset Formula $\pi$
+\end_inset
+
+ contains the line 
+\begin_inset Formula $L$
+\end_inset
+
+, which has equation 
+\begin_inset Formula $\mathbf{r}=2\mathbf{i}+3\mathbf{j}+\mu(2\mathbf{i}-\mathbf{j}+\mathbf{k}).$
+\end_inset
+
+ The plane 
+\begin_inset Formula $\pi$
+\end_inset
+
+ is also parallel to the line that passes through the points 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(ii)
+\end_layout
+
+\end_inset
+
+ Find the shortest distance from point 
+\begin_inset Formula $A$
+\end_inset
+
+ to the line 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(iii)
+\end_layout
+
+\end_inset
+
+ Show that the cartesian equation of the plane 
+\begin_inset Formula $\pi$
+\end_inset
+
+ is 
+\begin_inset Formula $x+y-z=5$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(iv)
+\end_layout
+
+\end_inset
+
+ Find the position vector of the foot of the perpendicular from point 
+\begin_inset Formula $A$
+\end_inset
+
+ to the plane 
+\begin_inset Formula $\pi$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(v)
+\end_layout
+
+\end_inset
+
+ Hence find the reflection of the line that passes through points 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ about the plane 
+\begin_inset Formula $\pi$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The figure below shows a container with an open top.
+ The uniform cross section 
+\begin_inset Formula $ABCD$
+\end_inset
+
+ of the container is a trapezium with 
+\begin_inset Formula $AB=BC=CD=10$
+\end_inset
+
+ cm.
+ 
+\begin_inset Formula $AB$
+\end_inset
+
+ and 
+\begin_inset Formula $CD$
+\end_inset
+
+ are each inclined to the line 
+\begin_inset Formula $BC$
+\end_inset
+
+ at an acute angle of 
+\begin_inset Formula $\theta$
+\end_inset
+
+ radians.
+ The length of the container is 50 cm and the container is placed on a horizonta
+l table.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+<INSERT IMAGE HERE>
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(i)
+\end_layout
+
+\end_inset
+
+ Show that the volume V of the container is given by 
+\begin_inset Formula 
+\[
+V=5000\left(\sin\theta\right)(1+\cos\theta)\,\text{cm}^{3}.
+\]
+
+\end_inset
+
+
+\color white
+_
+\color inherit
+
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Hence using differentiation, find the exact maximum value of 
+\begin_inset Formula $V$
+\end_inset
+
+, proving that it is a maximum.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[5]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(ii)
+\end_layout
+
+\end_inset
+
+ For the remaining part of the question, 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is fixed at 
+\begin_inset Formula $\frac{\pi}{4}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Water fills the container at a rate of 100 
+\begin_inset Formula $\text{cm}^{3}\text{s}^{-1}$
+\end_inset
+
+.
+ At time 
+\begin_inset Formula $t$
+\end_inset
+
+ seconds, the depth of the water is 
+\begin_inset Formula $h$
+\end_inset
+
+ cm.
+ The surface of the water is a rectangle 
+\begin_inset Formula $PQRS$
+\end_inset
+
+.
+ When 
+\begin_inset Formula $h=3\text{ cm},$
+\end_inset
+
+ find the rate of change of 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+ the depth of the water, 
+\begin_inset Formula $h$
+\end_inset
+
+, 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+ the surface area of the water 
+\begin_inset Formula $PQRS$
+\end_inset
+
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Mrs Tan plans to start a business which requires a start-up capital of $700,000.
+ She decided to first save $200,000 by depositing money every month into
+ a savings plan.
+ For the remaining $500,000, she intends to take a loan from a finance company.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+She deposited $3000 into the savings plan in the first month and on the
+ first day of each subsequent month, she deposited $100 more than the previous
+ month.
+ Mrs Tan will continue depositing money into the savings plan until the
+ total amount in her savings plan reaches $200,000.
+ It is given that this savings plan pays no interest.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(i)
+\end_layout
+
+\end_inset
+
+ Find the month in which Mrs Tan’s monthly deposit will exceed $6,550.
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(ii)
+\end_layout
+
+\end_inset
+
+ Find the number of months that it will take for Mrs Tan to save $200,000
+ and hence find the amount that she would have deposited in the last month.
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\begin_layout Standard
+After Mrs Tan has saved $200,000, she took a loan of $500,000 from a finance
+ company.
+ To repay the loan from the finance company, Mrs Tan would have to pay a
+ monthly payment of 
+\begin_inset Formula $\$x$
+\end_inset
+
+ at the beginning of each month, starting from the first month.
+ An interest of 0.3% per month will be charged on the outstanding loan amount
+ at the end of the month.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(iii)
+\end_layout
+
+\end_inset
+
+ Show that the outstanding amount at the end of 
+\begin_inset Formula $n^{\text{th}}$
+\end_inset
+
+ month, after the interest has been charged, is 
+\begin_inset Formula $A\left(1.003^{n}\right)-Bx\left(1.003^{n}-1\right)$
+\end_inset
+
+, where 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are exact constants to be determined.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(iv)
+\end_layout
+
+\end_inset
+
+ Find the amount of 
+\begin_inset Formula $\$x$
+\end_inset
+
+, to 2 decimal places, if Mrs Tan wants to fully repay her loan in 8 years.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(v)
+\end_layout
+
+\end_inset
+
+ Using the value of 
+\begin_inset Formula $x$
+\end_inset
+
+ found in part (iv), calculate the total interest that the finance company
+ will earn from Mrs Tan at the end of 8 years.
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

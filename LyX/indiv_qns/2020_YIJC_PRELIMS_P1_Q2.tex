@@ -1,0 +1,40 @@
+\item \textbf{{[}YIJC/PRELIM/9569/2020/P1/Q2{]} }
+
+An array \texttt{seq} contains a list of sorted data items except
+the last element. \texttt{{[}1,2,5,8,9,6{]}} is an example of such
+an array. 
+
+The function \texttt{sortInner} takes two parameters, the array \texttt{seq}
+and the index position \texttt{j} of the last element, and returns
+the mutated array \texttt{seq}. 
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{def sortInner(seq, j): }
+
+\texttt{\qquad{}if j == 0: }
+
+\texttt{\qquad{}\qquad{}return seq }
+
+\texttt{\qquad{}else: }
+
+\texttt{\qquad{}\qquad{}if seq{[}j{]} <= seq{[}j-1{]}: }
+
+\texttt{\qquad{}\qquad{}\qquad{}seq{[}j{]}, seq{[}j-1{]} = seq{[}j-1{]},
+seq{[}j{]} }
+
+\texttt{\qquad{}return sortInner(seq, j-1)}%
+\end{minipage} 
+\begin{enumerate}
+\item State what is meant by a recursive function.\hfill{} {[}2{]} 
+\item Describe what happens when the function \texttt{sortInner({[}1,2,5,8,9,6{]},5)}
+is executed. \hfill{}{[}2{]} 
+\item Write a recursive function \texttt{insertionSort} for the Insertion
+Sort algorithm by using the given function \texttt{sortInner(seq,j}).\hfill{}
+{[}2{]} 
+\item Explain whether the Insertion Sort algorithm in \textbf{(c)} is performing
+an \textquotedbl in-place\textquotedbl{} or \textquotedbl non in-place\textquotedbl{}
+sorting and whether it is stable or unstable.\hfill{} {[}4{]} 
+\item State and explain the efficiencies of the Insertion Sort algorithm
+in \textbf{(c)} in the worst case scenario, using the Big-O notation
+for the time complexity. \hfill{}{[}2{]} 
+\end{enumerate}

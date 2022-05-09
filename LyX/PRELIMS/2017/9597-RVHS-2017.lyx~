@@ -1,0 +1,2749 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+9597 ALVL 2017
+\end_layout
+
+\begin_layout Subsection
+Paper 1
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+[RVHS/PRELIM/9597/2017/P1/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+Results management 
+\end_layout
+
+\begin_layout Standard
+For this task, you are required to read the text file “
+\series bold
+overall_grades.txt
+\series default
+” which contains the subject grades of the first and second semester examination
+ of 50 students.
+\end_layout
+
+\begin_layout Standard
+The format of the text file is as follow: 
+\family typewriter
+<name>;<subject1>:<grade1>,<grade2>;<subject2>:<grade1>,<grade 2>;<subject3>:<gr
+ade1>,<grade2>,…etc;
+\backslash
+n 
+\end_layout
+
+\begin_layout Standard
+For example: 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Rufus Schuck;EL:C,B;CL:C,C;Math:C,E;Bio:B,F; 
+\end_layout
+
+\begin_layout Standard
+Student Rufus Schuck takes 4 subjects.
+ They are English (EL), Chinese (CL), Math (Math) and Biology (Bio).
+ His 1st and 2nd semester grades for English is C and B respectively.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 1.1 
+\end_layout
+
+\begin_layout Standard
+Write the program code for the function process_data() which reads the text
+ file “
+\series bold
+overall_grades.txt
+\series default
+” and returns a dictionary which has the following format.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+{'Rufus Schuck': {'EL': ['C', 'B'], 'CL': ['C', 'C'], 'Math': ['C', 'E'],
+ 'Bio': ['B', 'F']}, ...} 
+\end_layout
+
+\begin_layout Standard
+The returned dictionary uses the name of student as key and another dictionary
+ as its return value.
+ This “another” dictionary then uses the subjects and a list containing
+ the grades of the 1st and 2nd semesters as its key and value respectively.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 1 
+\end_layout
+
+\begin_layout Standard
+The program code for the function 
+\family typewriter
+process_data()
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Subsection*
+Task 1.2
+\end_layout
+
+\begin_layout Standard
+Write a function 
+\family typewriter
+have_n_improvement(n)
+\family default
+ which takes in an integer 
+\family typewriter
+n
+\family default
+ and returns a list of student names who have improvement in exactly 
+\family typewriter
+n
+\family default
+ subject(s).
+ Using the example in Task 1.1, '
+\family typewriter
+Rufus Schuck
+\family default
+' shows improvement in only English.
+ So, if 
+\family typewriter
+n
+\family default
+ is 1, '
+\family typewriter
+Rufus Schuck
+\family default
+' must be included in the student name list.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 2
+\end_layout
+
+\begin_layout Standard
+The program code for the function 
+\family typewriter
+have_n_improvement(n)
+\family default
+.
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\begin_layout Subsection*
+Task 1.3 
+\end_layout
+
+\begin_layout Standard
+Write a function 
+\family typewriter
+have_improvement_in_all_subjs()
+\family default
+ which returns a list of student names who have improvement in all his/her
+ subjects.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 3
+\end_layout
+
+\begin_layout Standard
+The program code for the function have_improvement_in_all_subjs(n).
+\begin_inset space \hfill{}
+\end_inset
+
+ [3]
+\end_layout
+
+\begin_layout Subsection*
+Task 1.4 
+\end_layout
+
+\begin_layout Standard
+Write a function 
+\family typewriter
+count_combi(combi)
+\family default
+ which takes a list of subjects 
+\family typewriter
+combi
+\family default
+ as input and returns the total number of students who take the subject
+ combination in 
+\family typewriter
+combi
+\family default
+.
+ Take note that students who take more subjects than what is indicated in
+ 
+\family typewriter
+combi
+\family default
+ are included.
+ 
+\end_layout
+
+\begin_layout Standard
+For example:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> count_combi(['EL', 'MATH']) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> 50 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Evidence 4 
+\end_layout
+
+\begin_layout Standard
+The program code for the function 
+\family typewriter
+count_combi(n)
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Subsection*
+Task 1.5
+\end_layout
+
+\begin_layout Standard
+Using your solution in Task 1.4, find the total number of students who take
+ "Chem" and "Bio" but not "Physics".
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 5 
+\end_layout
+
+\begin_layout Standard
+The program code to find what is required in Task 1.5.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Subsection*
+Task 1.6 
+\end_layout
+
+\begin_layout Standard
+Write a function 
+\family typewriter
+calculate_GPA(name)
+\family default
+ which takes a string 
+\family typewriter
+name
+\family default
+ as input and calculates the GPA of the student indicated by 
+\family typewriter
+name
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The points for each grade are as follow: 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+{'A':5, 'B':4, 'C':3, 'D':2, 'E':1, 'F':0} 
+\end_layout
+
+\begin_layout Standard
+The 1 st and 2nd semester grades in the data has the same weightages.
+ 
+\end_layout
+
+\begin_layout Standard
+To calculate GPA,
+\end_layout
+
+\begin_layout Itemize
+Find the average points achieved of each subject.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+e.g.
+ if a student gets C and D in "CL", his average points for "CL" is 3 + 2
+ = 2.5 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Add up the average points of each subject 
+\end_layout
+
+\begin_layout Itemize
+Divide the total by the number subjects the student takes 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+e.g.
+ 
+\family typewriter
+'Claudette Bode': {'EL': ['C', 'D'], 'CL': ['D', 'A'], 'Math': ['A', 'D'],
+ 'Phy': ['A', 'D'], 'Bio': ['D', 'C']}
+\family default
+, 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+[(3 + 2)/2 + (2 + 5)/2 + (5 + 2)/2 + (2 + 5)/2 + (2 + 3)/2]/5 = 3.1
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+GPA for '
+\family typewriter
+Claudette Bode
+\family default
+' is 3.1 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 6 
+\end_layout
+
+\begin_layout Standard
+The program code for the function 
+\family typewriter
+calculate_GPA(name)
+\family default
+.
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[RVHS/PRELIM/9597/2017/P1/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+Missing phone number digits 
+\end_layout
+
+\begin_layout Standard
+Your friend (Mary) made an oversea friend (Jenny) yesterday while she was
+ studying in the regional library.
+ To remain in contact, Jenny gave Marry her phone number and told Mary that
+ it is also a valid 10 digits International Standard Book Number (ISBN).
+ 
+\end_layout
+
+\begin_layout Standard
+After Jenny had left, Mary accidentally punched a few holes on the phone
+ number while she was arranging her notes using the library’s hole puncher
+ machine.
+ It was too difficult for Mary to recover the lost pieces of paper.
+ So, Mary decided to look for you to recover the missing digits instead.
+ Below is the picture of the paper.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-RHVS-2017-P1-Q1-1.png
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To recover the missing digits, you need to understand how ISBN-10 works.
+ The steps to check for a valid ISBN-10 is as follow: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+1.
+\end_layout
+
+\end_inset
+
+ Each of the digits of the ISBN-10 is first multiplied by a number in a
+ sequence from 10 to 1 (Take note that the last digit of the ISBN-10 can
+ be ‘X’ which holds a value of 10).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+2.
+\end_layout
+
+\end_inset
+
+ All the 10 digits are then added up together.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+3.
+\end_layout
+
+\end_inset
+
+ If the sum is divisible by 11, it is a valid ISBN-10, else it is invalid.
+ 
+\end_layout
+
+\begin_layout Standard
+For example, to check if ‘997150233X’ is a valid ISBM-10:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Step 1 and 2
+\end_layout
+
+\begin_layout Plain Layout
+
+\emph on
+\begin_inset Formula 
+\begin{align*}
+ & (9\times10)+(9\times9)+(7\times8)+(1\times7)+(5\times6)+(0\times5)+(2\times4)+(3\times3)+(3\times2)+(\boldsymbol{X}\times1)\\
+= & (9\times10)+(9\times9)+(7\times8)+(1\times7)+(5\times6)+(0\times5)+(2\times4)+(3\times3)+(3\times2)+(\boldsymbol{10}\times1)\\
+= & 297
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\emph on
+Step 3
+\end_layout
+
+\begin_layout Plain Layout
+
+\emph on
+297 is a multiple of 11.
+ Therefore, ‘997150233X’ is a valid ISBN-10.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Task 2.1
+\end_layout
+
+\begin_layout Standard
+Write a function 
+\family typewriter
+is_valid_ISBN10(isbn10)
+\family default
+ which takes a string 
+\family typewriter
+isbn10
+\family default
+ as input and returns 
+\family typewriter
+True
+\family default
+ if 
+\family typewriter
+isdn10
+\family default
+ is a valid ISBN-10 and 
+\family typewriter
+False
+\family default
+ otherwise.
+ You are to validate the input string 
+\family typewriter
+isbn10
+\family default
+ and print to terminal the issue related to the 
+\family typewriter
+isbn10
+\family default
+ string.
+ The possible issues to be printed to terminal includes:
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+ISBN-10 must only have 10 digits.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+ISBN-10 can only contain numbers and the character 'X'.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+'X' can only be found at the last digit of isbn10.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+Wrong check digit.
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+Valid ISBN-10.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 7 
+\end_layout
+
+\begin_layout Standard
+The program code for the function 
+\family typewriter
+is_valid_ISBN10(isbn10)
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\begin_layout Subsection*
+Task 2.2 
+\end_layout
+
+\begin_layout Standard
+Write a function 
+\family typewriter
+possible_ISBN(isbn)
+\family default
+ which takes a query string 
+\family typewriter
+isbn10
+\family default
+ as input and returns a list of possible ISBN-10.
+ The query string 
+\family typewriter
+isbn10
+\family default
+ has 3 missing digits replaced with a '
+\family typewriter
+?
+\family default
+' and they can be at any positions of the query string.
+ 
+\end_layout
+
+\begin_layout Standard
+For example, 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> possible_ISBN("9971??23?X") 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> ['997100237X', '997102232X', '997103235X', '997104238X', '997105230X',
+ '997106233X', '997107236X', '997108239X', '997109231X', '997110234X', '99711123
+7X', '997113232X', '997114235X', '997115238X', '997116230X', '997117233X',
+ '997118236X', '997119239X', '997120231X', '997121234X', '997122237X', '99712423
+2X', '997125235X', '997126238X', '997127230X', '997128233X', '997129236X',
+ '997130239X', '997131231X', '997132234X', '997133237X', '997135232X', '99713623
+5X', '997137238X', '997138230X', '997139233X', '997140236X', '997141239X',
+ '997142231X', '997143234X', '997144237X', '997146232X', '997147235X', '99714823
+8X', '997149230X', '997150233X', '997151236X', '997152239X', '997153231X',
+ '997154234X', '997155237X', '997157232X', '997158235X', '997159238X', '99716023
+0X', '997161233X', '997162236X', '997163239X', '997164231X', '997165234X',
+ '997166237X', '997168232X', '997169235X', '997170238X', '997171230X', '99717223
+3X', '997173236X', '997174239X', '997175231X', '997176234X', '997177237X',
+ '997179232X', '997180235X', '997181238X', '997182230X', '997183233X', '99718423
+6X', '997185239X', '997186231X', '997187234X', '997188237X', '997190232X',
+ '997191235X', '997192238X', '997193230X', '997194233X', '997195236X', '99719623
+9X', '997197231X', '997198234X', '997199237X']
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Evidence 8 
+\end_layout
+
+\begin_layout Standard
+The program code for the function 
+\family typewriter
+possible_ISBN(isbn)
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\begin_layout Subsection*
+Task 2.3
+\end_layout
+
+\begin_layout Standard
+Examine the missing numbers in the paper closely and eliminate impossible
+ digit choices.
+ For example, the three missing digits cannot be ‘1’ as the three missing
+ digits in the paper have round edges at the top.
+ Modify your solution in Task 2.2 and suggest these possible ISBN-10 to Mary.
+\end_layout
+
+\begin_layout Subsection*
+Evidence 9 
+\end_layout
+
+\begin_layout Standard
+The screenshot of the suggested possible ISBN-10 that you will give to Mary.
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Subsection*
+Task 2.4 
+\end_layout
+
+\begin_layout Standard
+Write a menu to help other to generate possible ISBN-10.
+ The menu should have the following functions.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Menu
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+A) Input a ISBN-10 query string
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+B) Display all possible ISBN-10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+C) Quit
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+You should validate user inputs and call for re-entry when an invalid option
+ is given.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 10
+\end_layout
+
+\begin_layout Standard
+Program code for the procedure 
+\family typewriter
+menu()
+\family default
+.
+\begin_inset space \hfill{}
+\end_inset
+
+ [6]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[RVHS/PRELIM/9597/2017/P1/Q3] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+Unsorted Linked List
+\end_layout
+
+\begin_layout Standard
+The classes Node and LinkedList is partially implemented for you according
+ to the specification given below.
+ The attribute start of class LinkedList stores the first node instance
+ of the linked list.
+ If the linked list has no node, start has the value of None.
+ Functions in bold are not implemented.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\family typewriter
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \hspace{}
+\length 25col%
+\end_inset
+
+Node
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+-data : STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+-next : Node
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
++constructor()
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
++set_data(data)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
++get_data()
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
++set_next(node)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
++get_next()
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
++__str__()
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \hspace{}
+\length 25col%
+\end_inset
+
+LinkedList
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+-start : Node
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
++constructor()
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
++set_start(node)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
++get_start()
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
++insert_data(data)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
++transfer(linkedlist)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
++delete_pos(pos)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
++display() 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Task 3
+\end_layout
+
+\begin_layout Standard
+Implement the following 
+\family typewriter
+LinkedList
+\family default
+ class functions according to its specification given: 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
++insert_data(data) : 
+\family default
+This function takes a string 
+\family typewriter
+data
+\family default
+ as input and uses its value to create a new 
+\family typewriter
+Node
+\family default
+ instance.
+ The new Node instance is then inserted as the first node of the linked
+ list
+\family typewriter
+.
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
++transfer(llist) :
+\family default
+ This function takes a 
+\family typewriter
+LinkedList
+\family default
+ instance 
+\family typewriter
+llist
+\family default
+ as input and transfers all its 
+\family typewriter
+Node
+\family default
+ instances in the same order to the 
+\family typewriter
+LinkedList
+\family default
+ instance that calls for this function.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+For example: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+A:'boy'->'man'->'woman'
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+B:'girl'->'baby' 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> A.transfer(B) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+A: 'boy'->'man'->'woman'->'girl'->'baby'
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+B: None
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\family typewriter
++delete_pos(pos) : 
+\family default
+This function takes in an integer pos as input and deletes the node at position
+ pos.
+ Take note that the first node of the linked list is position 1.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+For example: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+A:'boy'->'man'->'woman' 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> A.
+ delete_pos(2) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+A:'boy'->'woman'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Evidence 11 
+\end_layout
+
+\begin_layout Standard
+Program code for: 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+insert_data(node)
+\family default
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+transfer(linkedlist) 
+\family default
+
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+delete_pos()
+\family default
+
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[RVHS/PRELIM/9597/2017/P1/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+Sorting Algorithms 
+\end_layout
+
+\begin_layout Standard
+The pseudocode procedure below is given a list of integers in random order,
+ the procedure then outputs a sorted list in ascending order.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+01.
+ FUNCTION Merge_Sort (ARRAY: arr) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+02.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+n = SIZE(arr) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+03.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+IF n < 2: 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+04.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+RETURN arr 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+05.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+END IF 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+06.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+left = Merge_Sort(PARTITION(arr, 0, n DIV 2)) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+07.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+right = Merge_Sort(PARTITION(arr, n DIV 2, n)) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+08.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+RETURN Merge(left, right) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+09.
+ END FUNCTION 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+10.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+11.
+ FUNCTION Merge (ARRAY: left, LIST: right) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+12.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+DECLARE results: ARRAY[SIZE(left) + SIZE(right)] 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+13.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+DECLARE i, j, index : INTEGER 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+14.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+i, j, index = 0, 0, 0 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+15.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+WHILE i < SIZE(left) and j < SIZE(right)
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+16.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+IF left[i] < right[j]:
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+17.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+results[index] = left[i] 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+18.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+i = i + 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+19.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+ELSE: 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+20.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+results[index] = right[j]
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+21.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+j = j + 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+22.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+END IF 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+23.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+index = index + 1 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+24.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+END WHILE
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+25.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+WHILE i < SIZE(left)
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+26.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+results[index] = left[i] 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+27.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+i = i + 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+28.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+index = index + 1 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+29.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+END WHILE
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+30.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+WHILE j < SIZE(right) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+31.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+results[index] = right[j] 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+32.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+j = j + 1 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+33.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+index = index + 1 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+34.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+END WHILE
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+35.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+RETURN results
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+36.
+ END FUNCTION 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Task 4.1 
+\end_layout
+
+\begin_layout Standard
+Write program code to implement the given procedure.
+ Execute the function using the following list as the parameter.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+[1, 15, 2, 4, 3, 9, 7, 10]
+\family default
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 12 
+\end_layout
+
+\begin_layout Standard
+Program Code.
+ Screenshot showing the output.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 13
+\end_layout
+
+\begin_layout Standard
+Analyze and state the time complexity of the algorithm in big 
+\begin_inset Formula $O$
+\end_inset
+
+ notation.
+\begin_inset space \hfill{}
+\end_inset
+
+ [1]
+\end_layout
+
+\begin_layout Subsection*
+Task 4.2 
+\end_layout
+
+\begin_layout Standard
+Bubble sort is a common sorting algorithm, below is an implementation of
+ in-place bubble sort using recursion.
+ There are three missing lines in the pseudocode, indicated as 
+\family typewriter
+A
+\family default
+, 
+\family typewriter
+B
+\family default
+ and 
+\family typewriter
+C
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+01.
+ PROCEDURE Bubble_Sort (ARRAY: arr, INTEGER: n) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+02.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+IF _______A_______:
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+03.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+RETURN 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+04.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+END IF 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+05.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+06.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+FOR i FROM 0 TO (n-1): 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+07.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+IF _______B_______: 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+08.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+temp = arr[i] 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+09.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+arr[i] = arr[i+1] 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+10.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+arr[i+1] = temp 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+11.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+END IF 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+12.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+END FOR 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+13.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+14.
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+_______C_______ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+15.
+ END PROCEDURE 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Execute the procedure to sort the following list.
+ 
+\family typewriter
+[1, 15, 2, 4, 3, 9, 7, 10] 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 14
+\end_layout
+
+\begin_layout Standard
+Complete the missing lines 
+\family typewriter
+A
+\family default
+, 
+\family typewriter
+B
+\family default
+ and 
+\family typewriter
+C
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Standard
+Insert a counting mechanism to count the number of comparisons made, and
+ return the value as an integer.
+ Implement the new recursive bubble sort.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 15
+\end_layout
+
+\begin_layout Standard
+Program Code.
+ 
+\end_layout
+
+\begin_layout Standard
+Screenshot showing the output of the sorted list and count value.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 16 
+\end_layout
+
+\begin_layout Standard
+Analyze and state the time complexity of the algorithm in big 
+\begin_inset Formula $O$
+\end_inset
+
+ notation.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [1]
+\end_layout
+
+\begin_layout Subsection*
+Task 4.3
+\end_layout
+
+\begin_layout Standard
+Due to the nature of bubble sort, if no swaps are observed in a given iteration,
+ then there is no need for the next iteration.
+ Implement the improved bubble sort.
+ Execute the function to sort the following list.
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+[1, 15, 2, 4, 3, 9, 7, 10]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 17
+\end_layout
+
+\begin_layout Standard
+Program Code.
+ Screenshot showing the output of the sorted list and count value.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[RVHS/PRELIM/9597/2017/P1/Q5] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+Grocery Store Manager 
+\end_layout
+
+\begin_layout Standard
+The grocery shop in the neighborhood ask your help to create an application
+ to manage the grocery store.
+ 
+\end_layout
+
+\begin_layout Standard
+First, you are tasked to work on an object-oriented solution to store all
+ the grocery details.
+ The 
+\family typewriter
+title
+\family default
+ of the grocery item, 
+\family typewriter
+cost
+\family default
+, 
+\family typewriter
+price
+\family default
+ and 
+\family typewriter
+stock
+\family default
+ of each grocery is recorded.
+ Besides the normal groceries, the shop identifies three unique types of
+ grocery too, namely:
+\end_layout
+
+\begin_layout Itemize
+Electrical Appliance: there is a need to indicate the 
+\family typewriter
+power
+\family default
+ of the product to understand its energy consumption rate.
+\end_layout
+
+\begin_layout Itemize
+Cigarette: it is important to track the 
+\family typewriter
+nicotine content
+\family default
+ of various kinds of cigarette.
+\end_layout
+
+\begin_layout Itemize
+Alcohol: there are distinct 
+\family typewriter
+types
+\family default
+ of alcohols such as wine or beer.
+ 
+\end_layout
+
+\begin_layout Standard
+Below is an UML class diagram for your reference.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-RVHS-2017-P1-Q5-1.png
+	width 65page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Task 5.1
+\end_layout
+
+\begin_layout Standard
+Implement the classes of 
+\family typewriter
+Grocery
+\family default
+, 
+\family typewriter
+ElectricalAppliance
+\family default
+, 
+\family typewriter
+Cigarette
+\family default
+ and 
+\family typewriter
+Alcohol
+\family default
+ with object-oriented programming.
+\end_layout
+
+\begin_layout Subsection*
+Evidence 18
+\end_layout
+
+\begin_layout Standard
+Program Code for four classes.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[7]
+\end_layout
+
+\begin_layout Subsection*
+Task 5.2 
+\end_layout
+
+\begin_layout Standard
+In country S, purchasing all groceries will incur a 7% Goods and Services
+ Tax(GST).
+ 
+\end_layout
+
+\begin_layout Standard
+To promote healthy living, additional tax have been imposed to cigarettes
+ and alcohols: 
+\end_layout
+
+\begin_layout Itemize
+Cigarette: additional 60% tax 
+\end_layout
+
+\begin_layout Itemize
+Wines: additional 50% tax 
+\end_layout
+
+\begin_layout Itemize
+Beers: additional 20% tax 
+\end_layout
+
+\begin_layout Standard
+For example: 
+\emph on
+the price of one packet of “Yun Yan” cigarette is $23.00, the final price
+ can be calculated by: $23.00 x 160% x 107% = $39.38
+\end_layout
+
+\begin_layout Standard
+In addition, to support the “save energy movement”, all electrical appliance
+ with a power less than or equals to 10Watt was set to be sold at 80% of
+ its original price.
+ 
+\end_layout
+
+\begin_layout Standard
+Implement the function 
+\family typewriter
+calculate_final_price()
+\family default
+ which includes the above mentioned tax and promotion into consideration.
+ 
+\end_layout
+
+\begin_layout Standard
+Implement the 
+\family typewriter
+__str__()
+\family default
+ function which returns a string in the following format (You may refer
+ to the 
+\family typewriter
+test_function_5_1()
+\family default
+ to understand the formatting): 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Title | Cost | Price | Stock | Final Price 
+\end_layout
+
+\begin_layout Standard
+For example, Yun Yan’s cost is $16.50, price is set at $23.00, the current
+ stock is 4 and final price is $39.38.
+ The __str__() function should return the following string:
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Yun Yan | $ 16.50 | $ 23.00 | 4 | $ 39.38
+\end_layout
+
+\begin_layout Subsection*
+Evidence 19 
+\end_layout
+
+\begin_layout Standard
+Program Code for 
+\family typewriter
+calculate_final_price()
+\family default
+ and 
+\family typewriter
+__str__()
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Screenshot showing output of 
+\family typewriter
+test_function_5_1()
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\begin_layout Subsection*
+Task 5.3
+\end_layout
+
+\begin_layout Standard
+Implement a class 
+\family typewriter
+StoreManager
+\family default
+ which keep track of a list of grocery items, 
+\family typewriter
+curr_item_list
+\family default
+.
+ The 
+\family typewriter
+StoreManager
+\family default
+ should have the following class functions: 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+sell_item(sold_item)
+\family default
+ 
+\family typewriter
+sold_item
+\family default
+ is a tuple containing 2 elements: the 
+\family typewriter
+title
+\family default
+ of the item and the 
+\family typewriter
+quantity
+\family default
+ sold.
+ You may assume the title of item is always valid and the quantity sold
+ is always smaller than the current stock.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The function should decrease the current stock of the sold items.
+ Upon completion, it should print out a string containing the following
+ information:
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Title | Unit Price | Quantity Sold | Subtotal
+\end_layout
+
+\begin_layout Standard
+The function should return a float containing the 
+\family typewriter
+sub_total
+\family default
+ value.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\family typewriter
+sell_items(sold_item _list)
+\family default
+ 
+\family typewriter
+sold_item_list
+\family default
+ is a list of tuples; each tuple containing the item 
+\family typewriter
+title
+\family default
+ and 
+\family typewriter
+quantity
+\family default
+ sold.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The function should print out a table displaying information for all sold
+ items in the following format: 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Title | Unit Price | Quantity Sold | Subtotal
+\end_layout
+
+\begin_layout Standard
+The summary should end with a line indicating the overall total value of
+ items sold in this transaction.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\family typewriter
+stock_check()
+\family default
+ When this function is called, it should check the list of all grocery items
+ and print out a summary of items with current stock value below 5.
+ This indicates the need for stocking up these items soon.
+ A summary table should be printed in the following format: 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\family typewriter
+Title | Unit Cost | Quantity Left 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Evidence 20 
+\end_layout
+
+\begin_layout Standard
+Program Code for class functions of StoreManager class: 
+\end_layout
+
+\begin_layout Itemize
+sell_item 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Itemize
+sell_items 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Itemize
+stock_check 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Standard
+Screenshot showing output of 
+\family typewriter
+test_function_5_2()
+\family default
+.
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

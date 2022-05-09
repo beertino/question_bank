@@ -1,0 +1,63 @@
+\item \textbf{{[}RVHS/PRELIM/9569/2021/P1/Q3{]} }
+
+The following recursive procedure is created to encode a character
+\texttt{char} based on a \texttt{shift} value. For example, if letter
+\textquotedbl\texttt{a}\textquotedbl{} is shifted by \texttt{3},
+it will become letter \textquotedbl\texttt{d}\textquotedbl ; and
+if shifted by \texttt{-3}, it will become letter \textquotedbl\texttt{x}\textquotedbl . 
+
+The \texttt{ORD} and \texttt{CHR} function will help to convert the
+character to its ASCII value and vice versa.
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{01 PROCEDURE ENCODE\_CHAR(char: STRING, shift: INT): }
+
+\texttt{02 \qquad{}IF shift == 0: }
+
+\texttt{03 \qquad{}\qquad{}RETURN char }
+
+\texttt{04 \qquad{}ELSE IF shift > 0: }
+
+\texttt{05 \qquad{}\qquad{}DECLARE new\_char: STRING }
+
+\texttt{06 \qquad{}\qquad{}new\_char = CHR((ORD(char) + 1) \% 26) }
+
+\texttt{07 \qquad{}\qquad{}shift -= 1 }
+
+\texttt{08 \qquad{}\qquad{}RETURN ENCODE\_CHAR(new\_char, shift) }
+
+\texttt{09 \qquad{}ELSE: }
+
+\texttt{10 \qquad{}\qquad{}Shift += 26 }
+
+\texttt{11 \qquad{}\qquad{}RETURN ENCODE\_CHAR(char, shift) }
+
+\texttt{12 \qquad{}END IF }
+
+\texttt{13 END PROCEDURE}%
+\end{minipage} 
+\begin{enumerate}
+\item Identify one error from the above code, state the type of the error,
+including its definition and explain how the errors can be fixed.
+\hfill{}{[}2{]}
+\item Assume the above error has been fixed. Copy the following trace table
+to your answer booklet. State the line number each time one of the
+return statements is called and complete it based on the following
+function call. 
+
+\texttt{ENCODE\_CHAR(\textquotedbl y\textquotedbl , -24) }\hfill{}{[}3{]}
+\noindent \begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+\texttt{Line No. } & \texttt{char } & \texttt{shift } & \texttt{new\_char }\tabularnewline
+\hline 
+ &  &  & \tabularnewline
+\hline 
+ &  &  & \tabularnewline
+\hline 
+ &  &  & \tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\end{enumerate}

@@ -1,0 +1,85 @@
+\item \textbf{{[}DHS/PRELIM/9597/2018/P2/Q6{]} }
+
+The following figure shows the partial contents of an unnormalised
+relational database table for library book loans by an amateur database
+administrator. 
+\noindent \begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline 
+CallNo & Title & Author & PublisherID & PublisherName & BorrowerID & BorrowerName & Email & LoanDate\tabularnewline
+\hline 
+A2345 & Superhuman & Peter Smith & P0928 & Healthy Global & X894 & Robert Lim & roblim@gmail.com & 20181004\tabularnewline
+\hline 
+A1133 & Agile Methodology & Sophia Jones & P7823 & CS Books & X894 & Robert Lim & roblim@gmail.com & 20181004\tabularnewline
+\hline 
+B5104 & Python Advanced & Zen Wang & P8246 & Make It Harder & Y532 & Mary Tan & maryt@yahoo.com & 20181007\tabularnewline
+\hline 
+A2257 & Computer Science & Berry Mile & P8246 & Make It Harder & X451 & Ben Neo & benn@gmail.com & 20181007\tabularnewline
+\hline 
+B7513 & Alibaba & Jacky Ma & P3245 & Ali Pub  & X451 & Ben Neo & benn@gmail.com & 20181007\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\begin{enumerate}
+\item Give \textbf{two} potential anomalies that can occur with this design.
+\hfill{}{[}2{]}
+\item Give \textbf{two} advantages of normalisation. \hfill{}{[}2{]}
+\item Give the table specification in 
+\begin{enumerate}
+\item 1NF
+\item 2NF
+\item 3NF \hfill{}{[}6{]}
+\end{enumerate}
+\item Draw an E-R diagram to represent your normalised design.\hfill{}
+{[}3{]}
+\item The following figure shows the notification email sent to the borrower
+upon successful loan of library books.
+
+\noindent\fbox{\begin{minipage}[t]{1\columnwidth - 2\fboxsep - 2\fboxrule}%
+\texttt{Oct 4, 2018, 6:52 PM }
+
+\texttt{From: NLB <helpdesk@nlb.gov.sg> }
+
+\texttt{To: roblim@gmail.com}
+
+\bigskip{}
+
+\texttt{Dear Robert Lim}
+
+\bigskip{}
+
+\texttt{Thank you for using NLB's e-notification service through email,
+a free service available to all library members.}
+
+\bigskip{}
+
+\texttt{This notification service confirms the number of items you
+have borrowed at the library book borrowing station.}
+
+\bigskip{}
+
+\texttt{You have borrowed 2 item(s) at 18:52 on 4 Oct 2018 at Serangoon
+Public Library:}
+
+\bigskip{}
+
+\texttt{1. Superhuman }
+
+\texttt{~~~Due on: 25 October 2018}
+
+\bigskip{}
+
+\texttt{2. Agile Methodology }
+
+\texttt{~~~Due on: 25 October 2018}
+
+\bigskip{}
+
+\texttt{You may also check your updated account status at http://www.nlb.gov.sg}%
+\end{minipage}}
+
+Describe how the customised contents of the notification email are
+generated from the database. You may assume that the default loan
+period is 21 days.\hfill{} {[}3{]}
+\end{enumerate}

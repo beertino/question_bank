@@ -1,0 +1,5088 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+[RVHS/PRELIM/9597/2018/P1/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+Accumulative Season Scores 
+\end_layout
+
+\begin_layout Standard
+For the first task, you are required to read the text file “
+\emph on
+T1_gamescore.txt
+\emph default
+” which contains the accumulative scores of a group of players from an online
+ game over 12 seasons.
+ 
+\end_layout
+
+\begin_layout Standard
+The format of a line of the text file is as follow: 
+\family typewriter
+<player1_name>,<class_1>:<ss1>,<ss2>,<ss3>,<ss4>,<ss5>,<ss6>,< ss7>,<ss8>,<ss9>,
+<ss10>,<ss11>,<ss12>
+\backslash
+n 
+\end_layout
+
+\begin_layout Standard
+E.g.
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Rufus,priest:4255,17366,22616,31889,49634,58847,78112,86631,94 924,106955,125372
+,130725 
+\end_layout
+
+\begin_layout Standard
+The above line represents the player 
+\family typewriter
+Rufus
+\family default
+ plays the class 
+\family typewriter
+priest
+\family default
+ and his 12 accumulative seasonal scores are 
+\family typewriter
+4255, 17366, 22616, 31889, 49634, 58847, 78112, 86631, 94924, 106955, 125372
+\family default
+ and 
+\family typewriter
+130725
+\family default
+ respectively.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 1.1 – Read the file 
+\end_layout
+
+\begin_layout Standard
+Implement the procedure readfile.
+ It reads the file “T1_gamescore.txt” and returns a list of lists as below.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> results = readfile() 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> results [['Rufus', 'priest', 4255, 13111, 5250, 9273, 17745, 9213, 19265,
+ 8519, 8293, 12031, 18417, 5353], ['Ione Wolfe', 'warrior', 2827, 17757,
+ 3612, 6818, 11772, 9161, 4393, 10469, 10567, 15424, 7307, 10014],……,['Carola
+ Tegeler', 'rogue', 6407, 14795, 0, 5004, 16084, 14960, 11879, 16545, 10247,
+ 5617, 7345, 0]] 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Take note that the returned scores in the lists are not accumulative scores
+ but the actual season scores.
+ It can be computed by: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n$
+\end_inset
+
+th season score = 
+\begin_inset Formula $n$
+\end_inset
+
+th – 
+\begin_inset Formula $(n-1)$
+\end_inset
+
+th accumulative season score 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 1 
+\end_layout
+
+\begin_layout Standard
+Program code of procedure 
+\family typewriter
+readfile
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6] 
+\end_layout
+
+\begin_layout Subsection*
+Task 1.2 – Count Class 
+\end_layout
+
+\begin_layout Standard
+Using the data from “
+\emph on
+T1_gamescore.txt
+\emph default
+”, implement the function 
+\family typewriter
+count_class
+\family default
+.
+ It takes in the string 
+\family typewriter
+clss
+\family default
+ as parameter and returns an integer which contains the number of players
+ who play the class indicated by 
+\family typewriter
+clss
+\family default
+.
+ For example:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> count_class("warrior") 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+57
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+This means that the number of players who play the class warrior is 57.
+ Evidence 2 
+\end_layout
+
+\begin_layout Standard
+Program code of function 
+\family typewriter
+count_class
+\family default
+.
+\begin_inset space \hfill{}
+\end_inset
+
+ [2]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 3 
+\end_layout
+
+\begin_layout Standard
+Screenshot of the output of the following code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+for clss in ["warrior", "mage", "priest"]: 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print("Number of " + clss + ":" + str(count_class(clss))) 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Task 1.3 – Top Class by Season 
+\end_layout
+
+\begin_layout Standard
+Using the data from “
+\emph on
+T1_gamescore.txt
+\emph default
+”, implement the function 
+\family typewriter
+top_class_by_season
+\family default
+.
+ It takes in the integer 
+\family typewriter
+season
+\family default
+ as parameter and returns a string which contains the class which holds
+ the highest average score of the season.
+ (Code with the assumption that you do not know how many and what the classes
+ are available in this game.) 
+\end_layout
+
+\begin_layout Standard
+The average score of the season of a class is calculated by summing up all
+ the scores of the players who play the class divided by the total number
+ of players who play the same class.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> top_class_by_season (6) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+"priest" 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Evidence 4
+\end_layout
+
+\begin_layout Standard
+Program code of function 
+\family typewriter
+top_class_by_season
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[6]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 5 
+\end_layout
+
+\begin_layout Standard
+Screenshot of the output of the following code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+for i in range(1, 13): 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print("Top class in season " + str(i) + ":") 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print(top_class_by_season(i)) 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Task 1.4 – Top n Players by Season 
+\end_layout
+
+\begin_layout Standard
+Using the data from “
+\emph on
+T1_gamescore.txt
+\emph default
+”, implement the function 
+\family typewriter
+top_n_players_by_season
+\family default
+.
+ It takes in the integers 
+\family typewriter
+n
+\family default
+ and season as parameters and returns a list of strings which contains names
+ of the top 
+\family typewriter
+n
+\family default
+ players.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> top_n_players_by_season(3, 2) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+['bumpkintiger', 'diamondagile', 'milkshakessulky'] 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> top_n_players_by_season(10, 4) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+['Carolann Kintner', 'lewdsterpub', 'fabindustry', 'eggfun', 'fellradial',
+ 'Grazyna Kitzman', 'chapteridentical', 'chubbysourdough', 'palmears', 'leardflu
+ttering'] 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Evidence 6 
+\end_layout
+
+\begin_layout Standard
+Program code of function 
+\family typewriter
+top_n_players_by_season
+\family default
+.
+\begin_inset space \hfill{}
+\end_inset
+
+ [5]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 7 
+\end_layout
+
+\begin_layout Standard
+Screenshot of the list of names of the top 20 players in season 9.
+\begin_inset space \hfill{}
+\end_inset
+
+ [1]
+\end_layout
+
+\begin_layout Subsection*
+Task 1.5 – Stagnant Players 
+\end_layout
+
+\begin_layout Standard
+Using the data from “
+\emph on
+T1_gamescore.txt
+\emph default
+”, implement the function 
+\family typewriter
+find_stagnant_players
+\family default
+ which returns a list of strings which contains names of the players who
+ did not play in at least 1 season.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 8 
+\end_layout
+
+\begin_layout Standard
+Program code of function 
+\family typewriter
+find_stagnant_players
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 9 
+\end_layout
+
+\begin_layout Standard
+Screenshot of the output of program.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[RVHS/PRELIM/9597/2018/P1/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+Health Workshops 
+\end_layout
+
+\begin_layout Standard
+To promote healthy lifestyle, a local company decided to sponsor its 500
+ employees up to 3 health workshops of their choice.
+ The company decides to maintain this piece of information using a binary
+ search tree (BST) with each node contains a string called 
+\family typewriter
+employeeID
+\family default
+ which is used as the key of the BST, and an array structure called workshops
+ to store the name(s) and cost(s) of the health workshop(s) chosen by the
+ employee.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 2.1
+\end_layout
+
+\begin_layout Standard
+Implement the BST structure and perform insertion using the 8-character
+ employee ID as key.
+ During the insertion process, the employee’s respective health workshop(s)
+ information must also be stored in the node.
+ The information of the employees and their chosen workshops can be found
+ in “
+\emph on
+T2_healthworkshops.txt
+\emph default
+” and its format is as follow: 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+<employeeID>-[<workshopName1>,<cost1> [<workshopName2>,<cost2>] 
+\end_layout
+
+\begin_layout Standard
+For example: 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+5175590R-[Yoga With Yoyo,60][Decoding The Nutrition Label,55] 
+\end_layout
+
+\begin_layout Standard
+This means that the employee with 
+\family typewriter
+employeeID
+\family default
+ 5175590R has chosen “Yoga With Yoyo” and “Decoding The Nutrition Label”
+ workshops and the cost of these 2 workshops are $60 and $55 respectively.
+ 
+\end_layout
+
+\begin_layout Standard
+The BST structure must be able to handle up to 500 nodes.
+ You need to implement the following functions.
+ 
+\end_layout
+
+\begin_layout Itemize
+Functions
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\family typewriter
+createBST()
+\family default
+ This function creates a BST, reads the file “
+\emph on
+T2_workshops.txt
+\emph default
+”, perform insertion of data and returns a BST structure.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[5]
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+inOrderTraversal()
+\family default
+ This procedure outputs all employee IDs from the BST in-order.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+findWorkshopsById (employeeID)
+\family default
+ This function returns a list of names of all the workshops chosen by the
+ employee with employee ID as 
+\family typewriter
+employeeID
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[3]
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+findIdsByWorkshop (workshopName)
+\family default
+ This function returns a list of employee IDs of employees who have chosen
+ the workshop indicated by the string 
+\family typewriter
+workshopName
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+findTotalCost()
+\family default
+ This function returns the cost of all the workshops chosen by all the employees
+ in the company as an integer.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[2]
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Evidence 10
+\end_layout
+
+\begin_layout Standard
+Program code for Task 2.1.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[24]
+\end_layout
+
+\begin_layout Subsection*
+Evidence 11 
+\end_layout
+
+\begin_layout Standard
+Screenshot the output of the following code.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+def test1(): 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+b1 = createBST() 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print(b1.findTotalCost()) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print(b1.findWorkshopsById("1001278B")) 
+\begin_inset space \qquad{}
+\end_inset
+
+print(b1.findWorkshopsById("1019563R")) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print(b1.findWorkshopsById("3161202Y"))
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print(b1.findWorkshopsById("5095845H"))
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print(b1.findWorkshopsById("9965997Y"))
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print(b1.findWorkshopsById("9998622F")) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print(b1.findIdsByWorkshop('Diabetes 101')) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print(b1.findIdsByWorkshop('The Truth About Carbs')) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print(b1.findIdsByWorkshop('Nutrition Nuts And Bolts'))
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+print(b1.findIdsByWorkshop('Yoga With Yoyo')
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+test1() 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Task 2.2 
+\end_layout
+
+\begin_layout Standard
+Write a menu which has the following options.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+1) Read file to generate BST 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+2) Find workshop(s) by user ID.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+3) Find user ID(s) by workshop.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+4) Display users in order.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+5) Total cost.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+6) Quit.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The validation of the employee ID follows the rules below: 
+\end_layout
+
+\begin_layout Itemize
+The last of employee ID is the check code.
+ 
+\end_layout
+
+\begin_layout Itemize
+The algorithm to generate the check code is as follows:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Obtain the weighted sum of the 7 digits using the weights <2,7,6,5,4,3,2>
+ 
+\end_layout
+
+\begin_layout Itemize
+Find the remainder of the weighted sum when divided by 17 
+\end_layout
+
+\begin_layout Itemize
+Look the check code up in the table below.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="17">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+G
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+J
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+N
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Q
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Y
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Z
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Below is an example of how the menu works.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>>menu()
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+1) Read file to generate BST 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+2) Find workshop(s) by user ID.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+3) Find user ID(s) by workshop.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+4) Display users in order.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+5) Total cost.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+6) Quit.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Choose an action: 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+File read.
+ BST created.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+1) Read file to generate BST
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+2) Find workshop(s) by user ID.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+3) Find user ID(s) by workshop.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+4) Display users in order.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+5) Total cost.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+6) Quit.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Choose an action: 2 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Type a userID: 1001278B
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+['Stress Management For Managers: Helping You and Your Team Stress Less']
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+1) Read file to generate BST 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+2) Find workshop(s) by user ID.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+3) Find user ID(s) by workshop.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+4) Display users in order.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+5) Total cost.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+6) Quit.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Choose an action: 3
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Type a workshop name: Yoga With Yoyo 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+['1026960S', '1425017Z', '1518324H', '1602033B', '1712684E', '1855773Y',
+ '1914889R', '1918475F', '2131933A', '2174550G', '2448074G', '2544510E',
+ '2570896Z', '2882640B', '3307418R', '4583774N', '4881580J', '5015391T',
+ '5175590R', '6010700R', '6237846Z', '6285730A', '6382864S', '6397129T',
+ '6695719R', '6801170S', '6865739T', '7357796T', '7498335T', '7839365D',
+ '8154005Y', '8958192T', '9023193T', '9038581D', '9540693Y', '9750174Q',
+ '9964906Y'] 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+1) Read file to generate BST 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+2) Find workshop(s) by user ID.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+3) Find user ID(s) by workshop.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+4) Display users in order.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+5) Total cost.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+6) Quit.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Choose an action: 4
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+1001278B 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+1006415N
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+...
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+9978729Q 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+9998622F
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+1) Read file to generate BST 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+2) Find workshop(s) by user ID.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+3) Find user ID(s) by workshop.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+4) Display users in order.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+5) Total cost.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+6) Quit.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Choose an action: 6
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Quit.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Evidence 12 
+\end_layout
+
+\begin_layout Standard
+Program code of 
+\family typewriter
+menu
+\family default
+ with full input validations.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [10]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[RVHS/PRELIM/9597/2018/P1/Q3] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+Cards Party
+\end_layout
+
+\begin_layout Standard
+A deck of French playing cards is the most common deck of playing cards
+ used today.
+ It includes thirteen ranks of each of the four suits: clubs (
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+), diamonds (
+\begin_inset Formula $\diamondsuit$
+\end_inset
+
+), hearts (
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+) and spades (
+\begin_inset Formula $\spadesuit$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="14">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Club
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+A
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+2
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+3
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+4
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+5
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+6
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+7
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+8
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+9
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+10
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+J
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Q
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+K
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Diamond
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+A
+\begin_inset Formula $\diamondsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+2
+\begin_inset Formula $\diamondsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+3
+\begin_inset Formula $\diamondsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+4
+\begin_inset Formula $\diamondsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+5
+\begin_inset Formula $\diamondsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+6
+\begin_inset Formula $\diamondsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+7
+\begin_inset Formula $\diamondsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+8
+\begin_inset Formula $\diamondsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+9
+\begin_inset Formula $\diamondsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+10
+\begin_inset Formula $\diamondsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+J
+\begin_inset Formula $\diamondsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Q
+\begin_inset Formula $\diamondsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+K
+\begin_inset Formula $\diamondsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Heart
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+A
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+2
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+3
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+4
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+5
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+6
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+7
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+8
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+9
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+10
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+J
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Q
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+K
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Spade
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+A
+\begin_inset Formula $\spadesuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+2
+\begin_inset Formula $\spadesuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+3
+\begin_inset Formula $\spadesuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+4
+\begin_inset Formula $\spadesuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+5
+\begin_inset Formula $\spadesuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+6
+\begin_inset Formula $\spadesuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+7
+\begin_inset Formula $\spadesuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+8
+\begin_inset Formula $\spadesuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+9
+\begin_inset Formula $\spadesuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+10
+\begin_inset Formula $\spadesuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+J
+\begin_inset Formula $\spadesuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Q
+\begin_inset Formula $\spadesuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+K
+\begin_inset Formula $\spadesuit$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+In this task, the 
+\family typewriter
+rank
+\family default
+ and 
+\family typewriter
+suits
+\family default
+ will follow the following order when a comparison is needed.
+ Ranks from smallest to largest (left to right)
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="14">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+Ranks from smallest to largest ( left to right )
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Rank
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+J
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Q
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+K
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Values Represented
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+13
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+Suits from smallest to largest ( left to right )
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Suits
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Club
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Diamond
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Heart
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Spade
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Python Expression
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+u"
+\backslash
+u2663"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+u"
+\backslash
+u2662"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+u"
+\backslash
+u2661"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+u"
+\backslash
+u2660" 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Task 3.1 – Card Class
+\end_layout
+
+\begin_layout Standard
+Implement the 
+\family typewriter
+Card
+\family default
+ class based on the following UML class diagram.
+ The descriptions for some class methods can be found below.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \hspace{}
+\length 25col%
+\end_inset
+
+Card
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+- suit : string
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+- rank_value : int
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
++ Card(suit:string, rank_value: int)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
++ get_suit():string
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
++ get_rank_value(): int
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
++ get_suit_symbol(): string
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
++ get_rank():string
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
++ __str__(): string
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Functions and their descriptions:
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+get_suit_symbol(): string
+\family default
+ Return the Unicode symbol corresponding to the 
+\family typewriter
+card
+\family default
+’s suit.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+get_rank():string
+\family default
+ Return a string from "
+\family typewriter
+A
+\family default
+", "
+\family typewriter
+2
+\family default
+", "
+\family typewriter
+3
+\family default
+", … "
+\family typewriter
+10
+\family default
+", "
+\family typewriter
+J
+\family default
+", "
+\family typewriter
+Q
+\family default
+", "
+\family typewriter
+K
+\family default
+" corresponding to the 
+\family typewriter
+card
+\family default
+’s 
+\family typewriter
+rank_value
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+__str__(): string
+\family default
+ Return a string with length of 3-character, stating the 
+\family typewriter
+card
+\family default
+’s 
+\family typewriter
+rank
+\family default
+ followed by its 
+\family typewriter
+suit
+\family default
+.
+ For example: " 
+\family typewriter
+K
+\begin_inset Formula $\spadesuit$
+\end_inset
+
+
+\family default
+ ", "
+\family typewriter
+10
+\family default
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+", " 
+\family typewriter
+8
+\family default
+
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+"
+\end_layout
+
+\begin_layout Subsection*
+Evidence 13 
+\end_layout
+
+\begin_layout Standard
+Screenshot of the program.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Subsection*
+Task 3.2 – CardList Class 
+\end_layout
+
+\begin_layout Standard
+Implement the 
+\family typewriter
+CardList
+\family default
+ class based on the following UML class diagram.
+ The descriptions for some class methods can be found below.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 25col%
+\end_inset
+
+CardList
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+- cards: list = list()
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+- rank_value : int
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
++ CardList()
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
++ add_card(new_card)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
++ get_cards(): list
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
++ get_size(): int
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
++ shuffle()
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
++ __str__(): string
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Functions and their descriptions:
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+add_card(new_card)
+\family default
+ Add a new 
+\family typewriter
+card
+\family default
+ into the current list of 
+\family typewriter
+cards
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+get_cards(): list
+\family default
+ Return the current list of 
+\family typewriter
+cards
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+get_size():int
+\family default
+ Get the size of the current list of 
+\family typewriter
+cards
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+shuffle()
+\family default
+ Shuffle the current list of 
+\family typewriter
+cards
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+__str__(): string
+\family default
+ Return a 
+\family typewriter
+string
+\family default
+ consisting of each 
+\family typewriter
+card
+\family default
+ in the list of 
+\family typewriter
+cards
+\family default
+, separated by commas.
+ For example: " 
+\family typewriter
+K
+\begin_inset Formula $\spadesuit$
+\end_inset
+
+, 9
+\begin_inset Formula $\spadesuit$
+\end_inset
+
+, 5
+\begin_inset Formula $\spadesuit$
+\end_inset
+
+, A
+\begin_inset Formula $\spadesuit$
+\end_inset
+
+, 10
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+, 6
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+, 2
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+, J
+\begin_inset Formula $\diamondsuit$
+\end_inset
+
+, 7
+\begin_inset Formula $\diamondsuit$
+\end_inset
+
+, 3
+\begin_inset Formula $\diamondsuit$
+\end_inset
+
+, Q
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+, 8
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+, 4
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+
+\family default
+" 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 14
+\end_layout
+
+\begin_layout Standard
+Screenshot of the program.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Subsection*
+Task 3.3 – Sort your hand 
+\end_layout
+
+\begin_layout Standard
+Implement two additional methods in the 
+\family typewriter
+CardList
+\family default
+ class based on the descriptions below.
+ 
+\end_layout
+
+\begin_layout Standard
+State the best-case and worst-case time complexity of the two methods.
+ 
+\end_layout
+
+\begin_layout Standard
+Functions and their Descriptions
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+sort_by_suit():
+\family default
+ Sort the current list of 
+\family typewriter
+cards
+\family default
+ by suit first, then by rank, in 
+\series bold
+ascending
+\series default
+ order.
+ Implement the method by adopting the algorithm of 
+\series bold
+insertion sort
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+sort_by_rank():
+\family default
+ Sort the current list of 
+\family typewriter
+cards
+\family default
+ by rank first, then by suit, in 
+\series bold
+ascending
+\series default
+ order.
+ Implement the method by adopting the algorithm of 
+\series bold
+improved bubble sort
+\series default
+.
+\end_layout
+
+\begin_layout Subsection*
+Evidence 15
+\end_layout
+
+\begin_layout Standard
+Screenshot of the program.
+ 
+\end_layout
+
+\begin_layout Standard
+Best-case and worst-case time complexity of the two methods.
+\begin_inset space \hfill{}
+\end_inset
+
+ [8]
+\end_layout
+
+\begin_layout Subsection*
+Task 3.4 – Test Sorting
+\end_layout
+
+\begin_layout Standard
+Algorithms Implement a function test_sorts()and design 2 test cases.
+ Run each test case against both methods and test if they are implemented
+ correctly.
+ 
+\end_layout
+
+\begin_layout Standard
+Write down the justification of each test case using comments.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 16
+\end_layout
+
+\begin_layout Standard
+Screenshot of the program and output.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Subsection*
+Task 3.5 – Hand Ranking 
+\end_layout
+
+\begin_layout Standard
+A hand of five cards can be ranked according to the following categories
+ from low to high.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Names and their Examples 
+\end_layout
+
+\begin_layout Itemize
+Normal - A normal hand containing five cards not of sequential rank nor
+ of the same suit, such as 
+\family typewriter
+K
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+ J
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+ 8
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+ 7
+\begin_inset Formula $\diamondsuit$
+\end_inset
+
+ 4
+\family default
+
+\begin_inset Formula $\spadesuit$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Straight - A straight hand containing five cards of sequential rank, not
+ all of the same suit, such as 7
+\family typewriter
+
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+
+\family default
+ 6
+\begin_inset Formula $\spadesuit$
+\end_inset
+
+ 5
+\begin_inset Formula $\spadesuit$
+\end_inset
+
+ 4
+\family typewriter
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\family default
+ 3
+\family typewriter
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\family default
+.
+ (AKQJ10 is included.) 
+\end_layout
+
+\begin_layout Itemize
+Flush - A flush hand containing five cards all of the same suit, not all
+ of sequential rank, such as K
+\family typewriter
+
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+
+\family default
+ 10
+\family typewriter
+
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+
+\family default
+ 7
+\family typewriter
+
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+
+\family default
+ 6
+\family typewriter
+
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+
+\family default
+ 4
+\family typewriter
+
+\begin_inset Formula $\clubsuit$
+\end_inset
+
+
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Straight Flush - A straight flush is a poker hand containing five cards
+ of sequential rank, all of the same suit, such as Q
+\family typewriter
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\family default
+ J
+\family typewriter
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\family default
+ 10
+\family typewriter
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\family default
+ 9
+\family typewriter
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\family default
+ 8
+\family typewriter
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Implement an function 
+\family typewriter
+compare_five_cards()
+\family default
+.
+ The function should take in 2 
+\family typewriter
+CardList
+\family default
+ objects, 
+\family typewriter
+hand1
+\family default
+ and 
+\family typewriter
+han
+\family default
+d2.
+ If both hands have exactly five cards, compare the hands and return a string
+ indicating if the first hand wins, loses, or there is a draw.
+ 
+\end_layout
+
+\begin_layout Standard
+For this task, if both hands fall into the same category, it is not necessary
+ to further compare the value.
+ The comparison result will be deemed as a draw.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Evidence 17
+\end_layout
+
+\begin_layout Standard
+Screenshot of the program.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+ [5]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+[RVHS/PRELIM/9597/2018/P1/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+Reversi 
+\end_layout
+
+\begin_layout Standard
+In this task you will implement part of the board game called Reversi.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Task 4.1 
+\end_layout
+
+\begin_layout Standard
+Implement the function 
+\family typewriter
+initiate_board
+\family default
+ which takes in an integer 
+\family typewriter
+size
+\family default
+ and returns a 2-dimension list that contains 
+\family typewriter
+size
+\family default
+ 
+\begin_inset Formula $\times$
+\end_inset
+
+ 
+\family typewriter
+size
+\family default
+ " ".
+\end_layout
+
+\begin_layout Standard
+For example, 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> initiate_board(2)
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+[[' ', ' '], [' ', ' ']] 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> initiate_board(10) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+[[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '], 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '], 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '], 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '], 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '], 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Evidence 18
+\end_layout
+
+\begin_layout Standard
+Program code of 
+\family typewriter
+initiate_board
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[1]
+\end_layout
+
+\begin_layout Subsection*
+Task 4.2
+\end_layout
+
+\begin_layout Standard
+Implement the function display_board which takes in a 2-dimension list board
+ and output the playboard following the format below.
+ For example, 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> b1 = [['X', ' ', 'O'], [' ', 'X', ' '], ['O', 'X', 'O']]
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> display_board(b1) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+--0-1-2- 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+0|X| |O| 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+1| |X| | 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+2|O|X|O| 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> b2 = [[" "," "," "," "," "," "," "," "], 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+[" "," "," "," "," "," "," "," "], 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+[" "," "," "," "," "," "," "," "], 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+[" "," "," ","X","O"," "," "," "], 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+[" "," "," ","O","X"," "," "," "], 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+[" "," "," "," "," "," "," "," "], 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+[" "," "," "," "," "," "," "," "], 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+[" "," "," "," "," "," "," "," "]] 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+>>> display_board(b2) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+--0-1-2-3-4-5-6-7- 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+0| | | | | | | | | 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+1| | | | | | | | | 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+2| | | | | | | | | 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+3| | | |X|O| | | | 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+4| | | |O|X| | | | 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+5| | | | | | | | | 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+6| | | | | | | | | 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+7| | | | | | | | |
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+------------------ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Evidence 19 
+\end_layout
+
+\begin_layout Standard
+Program code of 
+\family typewriter
+display_board
+\family default
+.
+\begin_inset space \hfill{}
+\end_inset
+
+ [4]
+\end_layout
+
+\begin_layout Subsection*
+Task 4.3 
+\end_layout
+
+\begin_layout Standard
+Implement the function 
+\family typewriter
+reverse
+\family default
+ which simulates a valid move in the game Reversi.
+\end_layout
+
+\begin_layout Standard
+It takes in 4 parameters as shown below.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+board
+\family default
+ – a 2-Dimension list that represents the current state of the play board.
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+row
+\family default
+ – an integer that represents the row number at which the disc is placed.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+col
+\family default
+ – an integer that represents the column number at which the disc is placed.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+disc
+\family default
+ – a string that takes either the value of "X" or "O" which represents black
+ and white of the disc.
+ 
+\end_layout
+
+\begin_layout Standard
+The function returns 
+\family typewriter
+True
+\family default
+ if it is a valid move and then updates 
+\family typewriter
+board
+\family default
+ accordingly, otherwise, returns 
+\family typewriter
+False
+\family default
+ without updating 
+\family typewriter
+board
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+A valid move refers to, for example, placing a “
+\family typewriter
+X
+\family default
+” disc at a position that there exists at least one straight (horizontal,
+ vertical, or diagonal) occupied line between the new piece and another
+ “
+\family typewriter
+X
+\family default
+” piece, with one or more contiguous “
+\family typewriter
+O
+\family default
+” pieces between them, and vice versa.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Examples 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-RVHS-2018-P1-Q4-1.png
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Evidence 20
+\end_layout
+
+\begin_layout Standard
+Program code of the iterative version of function 
+\family typewriter
+reverse
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[5]
+\end_layout
+
+\begin_layout Standard
+Program code of the recursive version of function 
+\family typewriter
+reverse
+\family default
+.
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[5]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
