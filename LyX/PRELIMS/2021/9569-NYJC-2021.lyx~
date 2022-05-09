@@ -81,12 +81,8 @@
 
 \begin_body
 
-\begin_layout Section
-9597 ALVL 2017
-\end_layout
-
-\begin_layout Subsection
-Paper 1
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \begin_layout Enumerate
@@ -259,6 +255,10 @@ Describe the purpose of the DNS protocol.
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 
@@ -330,6 +330,10 @@ status open
 \end_inset
 
 [3]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
@@ -607,7 +611,11 @@ status open
 \begin_inset space \hfill{}
 \end_inset
 
-[4]   
+[4]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
@@ -1427,6 +1435,10 @@ ensure
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 
@@ -1655,6 +1667,10 @@ Explain why the Binary Search Tree might need to be periodically recreated.
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 
@@ -1907,6 +1923,10 @@ TIDES.TXT
 \end_inset
 
 [4]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
@@ -2245,6 +2265,10 @@ TodoList
 \begin_layout Standard
 Save your Jupyter Notebook for Task 2.
  
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
@@ -2612,6 +2636,10 @@ should return and display
 
 \begin_layout Standard
 Save your Jupyter Notebook for Task 3.
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
@@ -3073,6 +3101,10 @@ TASK4_3_<your name>_<centre number>_<index number>.html
 \end_inset
 
 [4]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper

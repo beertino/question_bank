@@ -1,0 +1,159 @@
+\item \textbf{{[}YIJC/PRELIM/9569/2021/P1/Q1{]} }
+
+An iterative function Fn has two parameters, Arr and Object, and returns
+an integer. The pseudocode is as follows: 
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{01 FUNCTION Fn(Arr: ARRAY, Object: STRING) RETURNS INTEGER }
+
+\texttt{02 \qquad{}Current \textleftarrow{} 1 }
+
+\texttt{03 \qquad{}\qquad{}REPEAT }
+
+\texttt{04 \qquad{}\qquad{}\qquad{}IF Object = Arr{[}Current{]} }
+
+\texttt{05 \qquad{}\qquad{}\qquad{}\qquad{}THEN }
+
+\texttt{06 \qquad{}\qquad{}\qquad{}\qquad{}\qquad{}RETURN Current }
+
+\texttt{07 \qquad{}\qquad{}\qquad{}ENDIF }
+
+\texttt{08 \qquad{}\qquad{}\qquad{}IF Object > Arr{[}Current{]} }
+
+\texttt{09 \qquad{}\qquad{}\qquad{}\qquad{}THEN }
+
+\texttt{10 \qquad{}\qquad{}\qquad{}\qquad{}\qquad{}Next \textleftarrow{}
+1 + Current {*} 2 }
+
+\texttt{11 \qquad{}\qquad{}\qquad{}\qquad{}ELSE }
+
+\texttt{12 \qquad{}\qquad{}\qquad{}\qquad{}\qquad{}Next \textleftarrow{}
+Current {*} 2 }
+
+\texttt{13 \qquad{}\qquad{}\qquad{}ENDIF }
+
+\texttt{14 \qquad{}\qquad{}\qquad{}Current \textleftarrow{} Next }
+
+\texttt{15 \qquad{}UNTIL Current > LENGTH(Arr) }
+
+\texttt{16 \qquad{}RETURN -1 }
+
+\texttt{17 ENDFUNCTION }%
+\end{minipage}A binary search tree is used to store the names of the 12 Chinese
+Zodiac animals. The order in which these names were added into the
+tree follows the order in the array \texttt{X}. 
+\noindent \begin{center}
+\begin{tabular}{c|c|cc|c|}
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{\texttt{Array X}} &  & \multicolumn{1}{c}{} & \multicolumn{1}{c}{}\tabularnewline
+\cline{2-2} \cline{5-5} 
+\texttt{X{[}1{]}} & \texttt{'Rat'} &  & \texttt{X{[}7{]}} & \texttt{'Tiger' }\tabularnewline
+\cline{2-2} \cline{5-5} 
+\texttt{X{[}2{]}} & \texttt{'Monkey'} &  & \texttt{X{[}8{]}} & \texttt{'Dog'}\tabularnewline
+\cline{2-2} \cline{5-5} 
+\texttt{X{[}3{]}} & \texttt{'Snake'} &  & \texttt{X{[}9{]}} & \texttt{'Horse'}\tabularnewline
+\cline{2-2} \cline{5-5} 
+\texttt{X{[}4{]}} & \texttt{'Dragon'} &  & \texttt{X{[}10{]}} & \texttt{'Ox'}\tabularnewline
+\cline{2-2} \cline{5-5} 
+\texttt{X{[}5{]}} & \texttt{'Pig'} &  & \texttt{X{[}11{]}} & \texttt{'Rabbit'}\tabularnewline
+\cline{2-2} \cline{5-5} 
+\texttt{X{[}6{]}} & \texttt{'Sheep'} &  & \texttt{X{[}12{]}} & \texttt{'Rooster'}\tabularnewline
+\cline{2-2} \cline{5-5} 
+\end{tabular}
+\par\end{center}
+\begin{enumerate}
+\item Draw the binary tree using the array \texttt{X}. \hfill{}{[}3{]}
+\item Complete the trace table templates provided for the following function
+calls and state the RETURN value after each function call: 
+\noindent \begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+\texttt{Current } & \texttt{Object = Arr{[}Current{]} } & \texttt{Object > Arr{[}Current{]} } & \texttt{Next }\tabularnewline
+\hline 
+ &  &  & \tabularnewline
+\hline 
+ &  &  & \tabularnewline
+\hline 
+ &  &  & \tabularnewline
+\hline 
+ &  &  & \tabularnewline
+\hline 
+\multicolumn{4}{|l|}{\texttt{Output:}}\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+\begin{enumerate}
+\item Function call: \texttt{Fn(X,'Sheep')} \hfill{}{[}2{]}
+\item Function call: \texttt{Fn(X,'Duck')} \hfill{}{[}3{]}
+\end{enumerate}
+\item Describe the purpose of function \texttt{Fn}. \hfill{}{[}2{]}
+\item Explain why this function \texttt{Fn} is more efficient than linear
+search.\hfill{} {[}2{]}
+\item It is found that one of the Zodiac animals should be named as \textquoteleft Goat\textquoteright{}
+instead of \textquoteleft Sheep\textquoteright . Design another array
+\texttt{Y} such that the function \texttt{Fn} can be used with the
+correct list of the Chinese Zodiac animals. 
+
+Complete the template provided for the array \texttt{Y}.\hfill{}{[}2{]}
+\end{enumerate}
+\begin{description}
+\item [{Template~for~Question~1(b)}]~
+\end{description}
+\begin{enumerate}
+\item[(i)] Function call: \texttt{Fn(X,'Sheep')}
+
+\noindent %
+\begin{tabular}{|c|c|c|c|}
+\hline 
+\texttt{Current} & \texttt{Object = Arr{[}Current{]}} & \texttt{Object > Arr{[}Current{]}} & \texttt{Next}\tabularnewline
+\hline 
+ &  &  & \tabularnewline
+\hline 
+ &  &  & \tabularnewline
+\hline 
+ &  &  & \tabularnewline
+\hline 
+ &  &  & \tabularnewline
+\hline 
+\multicolumn{4}{|l|}{\texttt{Output:}}\tabularnewline
+\hline 
+\end{tabular}
+\item[(ii)] Function call: \texttt{Fn(X,'Duck')}
+\noindent \begin{flushleft}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+\texttt{Current} & \texttt{Object = Arr{[}Current{]}} & \texttt{Object > Arr{[}Current{]}} & \texttt{Next}\tabularnewline
+\hline 
+ &  &  & \tabularnewline
+\hline 
+ &  &  & \tabularnewline
+\hline 
+ &  &  & \tabularnewline
+\hline 
+ &  &  & \tabularnewline
+\hline 
+\multicolumn{4}{|l|}{\texttt{Output:}}\tabularnewline
+\hline 
+\end{tabular}
+\par\end{flushleft}
+\end{enumerate}
+\begin{description}
+\item [{Template~for~Question~1(e)}]~
+\end{description}
+\noindent \begin{center}
+\begin{tabular}{c|c|cc|c|}
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{\texttt{Array Y}} &  & \multicolumn{1}{c}{} & \multicolumn{1}{c}{}\tabularnewline
+\cline{2-2} \cline{5-5} 
+\texttt{Y{[}1{]}} & \texttt{\textcolor{white}{'Rat'}} &  & \texttt{Y{[}7{]}} & \texttt{\textcolor{white}{'Tiger'}}\tabularnewline
+\cline{2-2} \cline{5-5} 
+\texttt{Y{[}2{]}} & \texttt{\textcolor{white}{'Monkey'}} &  & \texttt{Y{[}8{]}} & \texttt{\textcolor{white}{'Dog'}}\tabularnewline
+\cline{2-2} \cline{5-5} 
+\texttt{Y{[}3{]}} & \texttt{\textcolor{white}{'Snake'}} &  & \texttt{Y{[}9{]}} & \texttt{\textcolor{white}{'Horse'}}\tabularnewline
+\cline{2-2} \cline{5-5} 
+\texttt{Y{[}4{]}} & \texttt{\textcolor{white}{'Dragon'}} &  & \texttt{Y{[}10{]}} & \texttt{\textcolor{white}{'Ox'}}\tabularnewline
+\cline{2-2} \cline{5-5} 
+\texttt{Y{[}5{]}} & \texttt{\textcolor{white}{'Pig'}} &  & \texttt{Y{[}11{]}} & \texttt{\textcolor{white}{'Rabbit'}}\tabularnewline
+\cline{2-2} \cline{5-5} 
+\texttt{Y{[}6{]}} & \texttt{\textcolor{white}{'Sheep'}} &  & \texttt{Y{[}12{]}} & \texttt{\textcolor{white}{'Rooster'}}\tabularnewline
+\cline{2-2} \cline{5-5} 
+\end{tabular}
+\par\end{center}

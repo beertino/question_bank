@@ -81,12 +81,8 @@
 
 \begin_body
 
-\begin_layout Section
-9597 YIJC 2021
-\end_layout
-
-\begin_layout Subsection
-Paper 1
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \begin_layout Enumerate
@@ -1174,6 +1170,10 @@ Y
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 
@@ -1547,6 +1547,10 @@ Explain whether using a merge sort algorithm or a bubble sort algorithm
 [3]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 
@@ -1902,10 +1906,14 @@ Modify the above program code such that it uses only the basic stack ADT
 \begin_inset space \hfill{}
 \end_inset
 
-[4] 
+[4]
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 
@@ -1924,7 +1932,7 @@ The following shows a sample of a student’s result slip for the Preliminary
 \noindent
 \align center
 \begin_inset Graphics
-	filename C:/Users/Beertino/Desktop/Github/Question_Bank/question_bank/static/img/9597-YIJC-2021-P1-Q4.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9569-YIJC-2021-P1-Q4.png
 	scale 50
 
 \end_inset
@@ -1999,6 +2007,10 @@ Write an SQL query to output the names, civics groups and grades of students
 \end_inset
 
 [4]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
@@ -2234,6 +2246,10 @@ two
 [4]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 
@@ -2343,7 +2359,10 @@ Explain why OOP is a preferred programming paradigm in the development of
 [2]
 \end_layout
 
-\end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \begin_layout Description
 Template
 \begin_inset space ~
@@ -2360,7 +2379,6 @@ Question
 1(b)
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 \begin_inset Argument item:1
 status open
@@ -3329,11 +3347,11 @@ Y[12]
 
 \end_layout
 
-\end_deeper
-\begin_layout Subsection
-Paper 2
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
 
 \series bold
@@ -3676,6 +3694,10 @@ print the number of comparisons made in the searching process.
  [8]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 
@@ -3747,7 +3769,7 @@ The diagram below shows two locations
 \noindent
 \align center
 \begin_inset Graphics
-	filename C:/Users/Beertino/Desktop/Github/Question_Bank/question_bank/static/img/9597-YIJC-2021-P2-Q2.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9569-YIJC-2021-P2-Q2.png
 	scale 50
 
 \end_inset
@@ -3908,6 +3930,10 @@ You may use the functions written in Task 2.1 and Task 2.2 for the program
  [5]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 
@@ -3955,7 +3981,7 @@ Account
 \noindent
 \align center
 \begin_inset Graphics
-	filename C:/Users/Beertino/Desktop/Github/Question_Bank/question_bank/static/img/9597-YIJC-2021-P2-Q3-1.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9569-YIJC-2021-P2-Q3-1.png
 	scale 50
 
 \end_inset
@@ -3996,7 +4022,7 @@ to display the customer’s details, with the profile picture, and a menu
 \noindent
 \align center
 \begin_inset Graphics
-	filename C:/Users/Beertino/Desktop/Github/Question_Bank/question_bank/static/img/9597-YIJC-2021-P2-Q3-2.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9569-YIJC-2021-P2-Q3-2.png
 	scale 50
 
 \end_inset
@@ -4107,7 +4133,7 @@ The Shoppe customers usually browse through the available products on the
 \noindent
 \align center
 \begin_inset Graphics
-	filename C:/Users/Beertino/Desktop/Github/Question_Bank/question_bank/static/img/9597-YIJC-2021-P2-Q3-3.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9569-YIJC-2021-P2-Q3-3.png
 	scale 50
 
 \end_inset
@@ -4179,6 +4205,10 @@ total cost
 \end_inset
 
  [14]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
@@ -4840,7 +4870,7 @@ Display()
 \noindent
 \align center
 \begin_inset Graphics
-	filename C:/Users/Beertino/Desktop/Github/Question_Bank/question_bank/static/img/9597-YIJC-2021-P2-Q4-1.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9569-YIJC-2021-P2-Q4-1.png
 	scale 50
 
 \end_inset
@@ -5296,10 +5326,29 @@ DATA.txt
 DisplayTop(5)
 \family default
  method on the linked list: 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9569-YIJC-2021-P2-Q4-2.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset space \hfill{}
 \end_inset
 
 [13]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper

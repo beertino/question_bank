@@ -1,0 +1,68 @@
+\item \textbf{{[}JPJC/PRELIM/9569/2021/P2/Q1{]} }
+
+Your program code and output for Task 1 should be saved in a single
+\texttt{.ipynb} file. 
+
+Name your Jupyter Notebook as \texttt{TASK1\_<your name>\_<class>\_<index
+number>.ipynb }
+
+The file \texttt{marathon.CSV} contains the full list of athletes
+who took part in the 42.195km marathon race. The first line in the
+file is the heading for the records. Each subsequent line is a record
+of a runner in the form: 
+\noindent \begin{center}
+\texttt{<name of athlete>,<country code>,<timing in h:mm:ss>} 
+\par\end{center}
+
+For example, \texttt{Abdi ABDIRAHMAN,USA,2:18:27} 
+
+Several athletes did not complete the race and their timing is recorded
+as 'DNF' to indicate \textquoteleft did not finish\textquoteright . 
+
+For example: \texttt{Alemu BEKELE,BRN,DNF }
+
+\subsubsection*{Task 1.1 }
+
+Write program code to find out the number of athletes who did not
+finish the race and output the following three statements: 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{Number of DNF: x }
+
+\texttt{Total number of athletes: y }
+
+\texttt{Percentage of athletes who finished race: z }%
+\end{minipage}
+
+\texttt{x} is the number of athletes who did not finish the race, 
+
+\texttt{y} is the total number of athletes who participated in the
+marathon race, 
+
+and \texttt{z} is the percentage (rounded to 1 decimal place) of athletes
+who finished the race.\hfill{} {[}7{]}
+
+\subsubsection*{Task 1.2 }
+
+Write a function \texttt{insertionSort} that takes an unsorted list
+as a parameter, sorts the list using the insertion sort algorithm,
+and returns the sorted list. \hfill{}{[}6{]}
+
+\subsubsection*{Task 1.3 }
+
+By making use of the \texttt{insertionSort} function from Task 1.2,
+or otherwise, find out the top 20 athletes and list them in order
+of rank under the heading (Rank, Country, Name, Timing). \hfill{}{[}5{]} 
+
+Sample Output: 
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{Rank Country Name ~~~~~~Timing }
+
+\texttt{1 ~~~ABC ~~~~Harry TAN ~2:08:38 }
+
+\texttt{2 ~~~XYZ ~~~~Andy LEE ~~2:09:58 }
+
+\texttt{3 ~~~... ~~~~... ~~~~~~~... }%
+\end{minipage}

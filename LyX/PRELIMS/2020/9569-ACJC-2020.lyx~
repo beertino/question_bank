@@ -81,21 +81,23 @@
 
 \begin_body
 
-\begin_layout Section
-9597 ACJC 2020
-\end_layout
-
-\begin_layout Subsection
-Paper 1
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \begin_layout Enumerate
+
+\series bold
+[ACJC/PRELIM/9569/2021/P1/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A food delivery app offers promotions to customers based on their usage
  pattern.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 First time customers would receive a $5 discount on their first purchase.
  If a customer has spent at least $1000 on the app in the last 3 months,
@@ -131,8 +133,19 @@ Simplify your decision table by removing redundancies from the decision
 [1]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ACJC/PRELIM/9569/2021/P1/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 The recursive function 
 \family typewriter
 Binomial
@@ -148,7 +161,6 @@ R
 .
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \noindent
 \begin_inset Box Frameless
@@ -342,7 +354,7 @@ Binomial(3,1)
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename C:/Users/beert/OneDrive/Desktop/Github/question_bank/static/img/9597-ACJC-2020-P1-Q2.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9569-ACJC-2020-P1-Q2.png
 	width 50page%
 
 \end_inset
@@ -384,8 +396,19 @@ Give values of N and R which would cause the function to enter infinite
 [2]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ACJC/PRELIM/9569/2021/P1/Q3] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 The function 
 \family typewriter
 Evaluate
@@ -399,7 +422,6 @@ Evaluate
  of x.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 For example, the polynomial 
 \begin_inset Formula $5x^{3}-2x^{2}+3x-1$
@@ -600,12 +622,22 @@ x
 [4]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
-During Home-Based Learning, many lessons were carried out over the Internet.
+
+\series bold
+[ACJC/PRELIM/9569/2021/P1/Q4] 
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+During Home-Based Learning, many lessons were carried out over the Internet.
+\end_layout
+
 \begin_layout Enumerate
 For lessons carried out by video conferencing, tools by external companies
  such as Zoom or Google Meet were used.
@@ -660,14 +692,24 @@ Describe how Unicode might address some of these problems.
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ACJC/PRELIM/9569/2021/P1/Q5] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A printing shop offers printing services to its customers.
  When a printing order is sent to the shop, the following information is
  recorded down:
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
 Date of order 
 \end_layout
@@ -758,16 +800,26 @@ Explain the purpose of inheritance in object-oriented programing.
 \begin_inset space \hfill{}
 \end_inset
 
-[2]  
+[2]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ACJC/PRELIM/9569/2021/P1/Q6] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 In a computer game, players’ names and scores are stored in a binary search
  tree, in increasing order of score.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 The binary search tree has its data inserted in the following order:
 \end_layout
@@ -1450,22 +1502,18 @@ The program has a feature which allows the user to enter an integer.
 \end_layout
 
 \begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\begin_layout Standard
   
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-{}
-\end_layout
-
-\end_inset
-
-
+\series bold
+[ACJC/PRELIM/9569/2021/P1/Q7] 
 \end_layout
 
 \begin_deeper
@@ -2089,15 +2137,25 @@ With reference to the requirements of the program, suggest one advantage
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ACJC/PRELIM/9569/2021/P1/Q8] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A programmer is tasked to write a program to store the examination scores
  of students in the entire school.
  For each student, the database would need to store the following data:
  name, form class, subject class, subject, score and subject teacher.
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 Suggest a suitable data type for each of the following fields: 
 \end_layout
@@ -2253,17 +2311,23 @@ Using the information provided, write table descriptions for the tables
 \end_layout
 
 \end_deeper
-\end_deeper
-\begin_layout Subsection
-Paper 1
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ACJC/PRELIM/9569/2021/P2/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A programmer is writing a program to implement a role-playing computer game
  using Object-Oriented Programming (OOP).
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 The players have to collect food items.
  A food item has the following attributes:
@@ -2823,8 +2887,19 @@ TASK1_<your name>_<centre number>_<index number>.ipynb
 [3]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ACJC/PRELIM/9569/2021/P2/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 An 
 \begin_inset Formula $\mathtt{n\times n}$
 \end_inset
@@ -2847,7 +2922,6 @@ An
  at the bottom.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 A chess knight is a piece that occupies a square, and can then move to another
  square according to one of the following rules:
@@ -2868,9 +2942,14 @@ See the diagram below for examples.
 \end_layout
 
 \begin_layout Standard
-\noindent
 \align center
-<INSERT_IMAGE_HERE>
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9569-ACJC-2020-P2-Q2.png
+	width 50page%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3077,8 +3156,19 @@ TASK2_<your name>_<centre number>_<index number>.ipynb
  [9]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ACJC/PRELIM/9569/2021/P2/Q3] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A text file 
 \family typewriter
 INVENTORY.txt
@@ -3088,7 +3178,6 @@ INVENTORY.txt
  name, product type, purchase price, selling price and quantity available.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 Each line is in the format
 \end_layout
@@ -3485,13 +3574,23 @@ TASK3_4_<your name>_<centre number>_<index number>.py
 [5]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ACJC/PRELIM/9569/2021/P2/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A company keeps records of the employees working for it.
  The following are the information stored in the company’s database:
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
 
 \family typewriter
@@ -3621,7 +3720,11 @@ Save your SQL code as
 \family typewriter
 TASK4_1_<your name>_<centre number>_<index number>.sql
 \family default
- [5]
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[5]
 \end_layout
 
 \begin_layout Subsection*
@@ -3724,6 +3827,10 @@ Save your program code as
 \family typewriter
 TASK4_2_<your name>_<centre number>_<index number>.py
 \family default
+
+\begin_inset space \hfill{}
+\end_inset
+
  [5]
 \end_layout
 
@@ -3814,723 +3921,17 @@ Service_status
 TASK4_3_<your name>_<centre number>_<index number>.html
 \family default
 .
- [12]
-\end_layout
-
-\end_deeper
-\begin_layout Section
-9597 ALVL 201X TEMPLATE
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="7" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="left" valignment="top">
-<row>
-<cell multirow="3" alignment="center" valignment="middle" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-In[1]:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-# Task 1.1
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Program Code
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multirow="3" alignment="center" valignment="middle" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-In[2]:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-# Task 1.2
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Program Code
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multirow="3" alignment="center" valignment="middle" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-In[3]:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-# Task 1.3
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Program Code
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Output:
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Subsubsection*
-\noindent
-Task X.X
-\end_layout
-
-\begin_layout Plain Layout
+ 
 \begin_inset space \hfill{}
 \end_inset
 
-[]
-\end_layout
-
-\begin_layout Subsubsection*
-
-\series bold
-Evidence X
-\end_layout
-
-\end_inset
-
-
+[12]
 \end_layout
 
 \begin_layout Standard
-\noindent
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-
-\family typewriter
-FUNCTION CalCheckDigit(Number AS STRING, Total AS INTEGER) RETURNS STRING
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \qquad{}
-\end_inset
-
-IF LENGTH(Number) > 1 THEN
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-Digit <- INTEGER(LBFT(Number,1))
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-// Calculate ISBN, an example of how the function is called.
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-// Second parameter is always 0.
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-ISBN = CalCheckDigit("184146208",0)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="3">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top">
-<column alignment="left" valignment="top">
-<column alignment="left" valignment="top">
-<row>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Class: Connection Node
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Attributes
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \hspace{}
-\length 1col%
-\end_inset
-
-
-\family default
-Identifier
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \hspace{}
-\length 1col%
-\end_inset
-
-
-\family default
-Data Type
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \hspace{}
-\length 5col%
-\end_inset
-
-
-\family default
-Description
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-DataValue
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-STRING
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The node data
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-LeftChild
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-INTEGER
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The left node pointer
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-RightChild
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-INTEGER
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The right node pointer
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="9" columns="1">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top">
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \hspace{}
-\length 25col%
-\end_inset
-
-ToDo
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-category : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-description : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-constructor(c : STRING, d : STRING)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-set_category(s : STRING)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-set_description(s : STRING)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-get_category() : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-get:_description() : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-summary() : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
- 
-\end_layout
-
 \end_body
 \end_document

@@ -1,0 +1,75 @@
+\item \textbf{{[}DHS/PRELIM/9569/2020/P2/Q2{]} }
+
+Write a program that sorts a list of student last names, but the sort
+only uses the first two letters of the name. Nothing else in the name
+is used for sorting. However, if two names have the same first two
+letters, they should stay in the same order as in the input (this
+is known as a 'stable sort'). Sorting is case sensitive based on ASCII
+order (with uppercase letters sorting before lowercase letters i.e.
+A<B<\dots <Z<a<b<\dots <z). 
+
+\subsubsection*{Input }
+
+The input file \texttt{LASTNAMES.txt} consists of a sequence of up
+to 500 test cases. Each case starts with a line containing an integer
+$1\le n\leq200$. After this follow $n$ last names made up of only
+letters (a--z, lowercase or uppercase), one name per line. Names
+have between 2 and 20 letters. Input ends when $n=0$. 
+
+\subsubsection*{Output }
+
+For each case, print the last names in sort-of-sorted order, one per
+line. Print a blank line between cases. 
+
+\subsubsection*{Sample Input }
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{3 }
+
+\texttt{Mozart }
+
+\texttt{Beethoven }
+
+\texttt{Bach }
+
+\texttt{5 }
+
+\texttt{Hilbert }
+
+\texttt{Godel}
+
+\texttt{Poincare }
+
+\texttt{Ramanujan }
+
+\texttt{Pochhammmer }
+
+\texttt{0 }%
+\end{minipage}
+
+\subsubsection*{Sample Output }
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{Bach }
+
+\texttt{Beethoven }
+
+\texttt{Mozart }
+
+\texttt{Godel }
+
+\texttt{Hilbert }
+
+\texttt{Poincare }
+
+\texttt{Pochhammmer}
+
+\texttt{Ramanujan }%
+\end{minipage}
+
+You should make use of an appropriate data structure and one or more
+suitable sorting algorithms from the syllabus. Indicate as comments
+your choice of how you have adapted them or your case for designing
+and implementing your own. \hfill{}{[}13{]}

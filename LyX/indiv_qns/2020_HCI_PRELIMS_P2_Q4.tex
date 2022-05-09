@@ -1,0 +1,99 @@
+\item \textbf{{[}HCI/PRELIM/9569/2020/P2/Q4{]} }
+
+A programmer is writing a program to manipulate different data structures
+using Object-Oriented Programming. 
+
+The superclass, \texttt{LinkedStructure}, will store the following
+data:
+\begin{itemize}
+\item A linear linked list of data items held in an \textbf{array} of size
+10. Array index starts at 1. 
+\item Head pointer, pointing to the first element in the linked list 
+\item Tail pointer, pointing to the last element in the linked list 
+\item Free pointer, pointing to the first element in the free list
+\end{itemize}
+The diagram shows the linked structure after four items have been
+added and the unused nodes are linked together. 
+\noindent \begin{center}
+<INSERT\_IMAGE\_HERE>
+\par\end{center}
+
+This superclass has the following methods:
+\begin{itemize}
+\item \texttt{Initialise()} method sets up an empty linked list. Should
+link all nodes to form the free list. Initialise values for head pointer,
+tail pointer and free pointer 
+\item \texttt{Add(item)} appends the parameter into its correct \textbf{alphabetical}
+order in the linked list. 
+\item \texttt{Remove(item)} removes the parameter from the ordered linked
+list 
+\item \texttt{Display()} displays the data items in the linked list in alphabetical
+order 
+\item \texttt{PrintStructure()} displays the current state of all pointers
+and the array contents in index order 
+\item \texttt{IsEmpty()} tests for empty linked list 
+\item \texttt{IsFull()} tests for no unused nodes
+\end{itemize}
+The superclass is used to implement a linear queue. 
+
+The subclass \texttt{Queue} has the following methods:
+\begin{itemize}
+\item \texttt{Add(item)} appends the parameter to the queue and overrides
+the \texttt{LinkedStructure} add method . 
+\item \texttt{Remove()} returns and removes the next item in the queue
+\item \texttt{Display()} method should display the queue contents in order
+(e.g. the earliest added item first) and should override the \texttt{LinkedStructure}
+display method. 
+\end{itemize}
+Each method updates its appropriate pointers, and produces suitable
+errors (or returns different values) to indicate if the actions are
+not possible, e.g. if the structure is empty. 
+
+For each of the sub-tasks, add a comment statement, at the beginning
+of the code using the hash symbol \textquoteleft \#\textquoteright ,
+to indicate the sub-task the program code belongs to, for example:
+
+\subsection*{Task 4.1 }
+
+Write program code for the superclass \texttt{LinkedStructure}. \hfill{}{[}20{]}
+
+\subsection*{Task 4.2}
+
+Write program code to:
+\begin{itemize}
+\item create a \texttt{LinkedStructure} object 
+\item add the following three data items in the order shown to the ordered
+linked list 
+\noindent \begin{center}
+\texttt{Japan, Singapore, China }
+\par\end{center}
+\item output all pointers and array contents using the \texttt{PrintStructure()}
+method after adding the items 
+\item output the current contents of the linked list using the \texttt{Display()}
+method 
+\item remove two data items \texttt{China}, \texttt{Japan} in that order
+from the linked list 
+\item output all pointers and array contents using the \texttt{PrintStructure()}
+method after the removal of the items. \hfill{} {[}5{]}
+\end{itemize}
+
+\subsection*{Task 4.3}
+
+Write program code for the subclass \texttt{Queue}.
+
+Use appropriate inheritance and polymorphism in your designs. \hfill{}{[}5{]}
+
+\subsection*{Task 4.4}
+
+The file \texttt{QUEUE.TXT} stores data to test your program.
+
+Write program code to:
+\begin{itemize}
+\item create a new queue and add the data in the file QUEUE.TXT to the queue 
+\item output the current contents of the queue
+\item remove and output two items from the queue 
+\item output all pointers and the array contents of the queue after the
+removal of the items.
+\end{itemize}
+All outputs should have appropriate messages to indicate what they
+are showing. \hfill{}{[}3{]}

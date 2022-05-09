@@ -1,0 +1,689 @@
+%% LyX 2.3.6.1 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,lmargin=2.5cm,rmargin=2.5cm}
+\usepackage{array}
+\usepackage{multirow}
+\PassOptionsToPackage{normalem}{ulem}
+\usepackage{ulem}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+{[}SPLIT\_HERE{]}
+\begin{enumerate}
+\item \textbf{{[}HCI/PRELIM/9569/2020/P1/Q1{]} }
+\begin{enumerate}
+\item Describe \textbf{two} characteristics of client-server network. \hfill{}{[}2{]}
+\item Give \textbf{one} advantage and \textbf{one} disadvantage of client-server
+network compared to peer-to-peer network. \hfill{}{[}2{]}
+\item Briefly explain how Domain Name Server (DNS) works. \hfill{}{[}2{]}
+\item Describe the DHCP server\textquoteright s process to allocate an IP
+address to a client. \hfill{}{[}4{]}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}HCI/PRELIM/9569/2020/P1/Q2{]} }
+
+Computing technology was adopted worldwide during the recent pandemic. 
+\begin{enumerate}
+\item Describe \textbf{one} positive and \textbf{one} negative impact you
+have observed.\hfill{} {[}2{]}
+\item The national task force sets a code of conduct for all computing professionals
+working on contact tracing, data analysis, etc. Describe two rules
+that you would expect to be included. For each of your rules, give
+an example of the unethical behaviour it is designed to prevent. \hfill{}{[}4{]}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}HCI/PRELIM/9569/2020/P1/Q3{]} }
+\begin{enumerate}
+\item Using real-life examples, explain the terms data validation and data
+verification. \hfill{}{[}4{]}
+\item Describe how data is transmitted in a packet switching network, and
+give two advantages of packet switching over circuit switching network.\hfill{}
+{[}4{]}
+\item Explain the purpose of layering in TCP/IP model. List the layers in
+order and describe each layer\textquoteright s major function. \hfill{}{[}6{]}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}HCI/PRELIM/9569/2020/P1/Q4{]} }
+\begin{enumerate}
+\item The ASCII code in denary for the character \textquoteleft \texttt{1}\textquoteright{}
+is \texttt{49}.
+\begin{enumerate}
+\item Using 7 bits, express the ASCII code for the character \textquoteleft \texttt{4}\textquoteright{}
+in binary.\hfill{}{[}1{]}
+\item Express the character \textquoteleft \texttt{4}\textquoteright{} as
+a hexadecimal number. \hfill{}{[}1{]}
+\end{enumerate}
+\item Convert \texttt{4B1} hexadecimal number to a binary number stored
+as two bytes. \hfill{}{[}2{]}
+\item In a restaurant, every membership account number is made up of five
+digits followed by a letter e.g. \texttt{36514C} where the letter
+is a modulus-eleven check digit for the account number. Each digit
+is weighted, with the first digit having a weight of \texttt{7} and
+each subsequent digit decreases its weight by \texttt{1}. Valid check
+digits are in the range of letter C to letter M, with C corresponding
+to the value of 1, D corresponds to 2 and so on.
+\begin{enumerate}
+\item What is the purpose of including a check digit at the end of each
+membership account number? \hfill{}{[}1{]}
+\item Write, in \textbf{pseudocode}, an algorithm which checks whether a
+membership account number is valid. \hfill{}{[}4{]}
+\item Using your algorithm, determine whether a person with the account
+number \texttt{47938K} is a member of the restaurant. Explain your
+answer. \hfill{}{[}1{]}
+\end{enumerate}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}HCI/PRELIM/9569/2020/P1/Q5{]} }
+\begin{enumerate}
+\item Run-length encoding is a simple data compression technique that can
+be effective when repeated values occur at adjacent positions within
+a string. Compression is achieved by replacing groups of repeated
+values with one copy of the value, followed by the number of times
+the value should be repeated. For example, \textquotedblleft \texttt{AAAAABBBAAAB}\textquotedblright{}
+would be compressed as \textquotedblleft \texttt{A5B3A3B1}\textquotedblright . 
+
+Write, in \textbf{pseudocode}, a function that implements the run-length
+compression technique described above. The function will take a string
+argument and return the run-length compressed string. \hfill{}{[}6{]}
+\item Using \textbf{pseudocode}, write a detailed algorithm for a function
+which will take two string values, called \texttt{P} and \texttt{Q},
+and will search the string value \texttt{P} for the first occurrence
+of the string value \texttt{Q} within it. The value returned is the
+start position of the first occurrence of \texttt{Q} in \texttt{P},
+or zero if there is no occurrence. Assume the string index starts
+at 1. For example, if \texttt{P} is '\texttt{bananas}' and Q is '\texttt{na}'
+then the function would give the result 3, because '\texttt{na}' first
+occurs in '\texttt{bananas}' starting at character position three.
+{[}6{]}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}HCI/PRELIM/9569/2020/P1/Q6{]} }
+\begin{enumerate}
+\item State \textbf{two} key characteristics of a recursive function, and
+when is it suitable to be used. {[}3{]}
+\item The procedure \texttt{MoveTower(n,i,j)} shown below simulates the
+movement of moving \texttt{n} discs from peg \texttt{i} to peg \texttt{j}.
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{PROCEDURE MoveTower(n, i, j) }
+
+\texttt{\qquad{}IF n = 1 OUTPUT (\textquotedbl Move disc from peg\textquotedbl ,
+i, \textquotedbl to peg\textquotedbl , j) }
+
+\texttt{\qquad{}ELSE }
+
+\texttt{\qquad{}\qquad{}MoveTower(n-1, i, 6-i-j) }
+
+\texttt{\qquad{}\qquad{}OUTPUT (\textquotedbl Move disc from peg\textquotedbl ,
+i, \textquotedbl to peg\textquotedbl , j) }
+
+\texttt{\qquad{}\qquad{}MoveTower(n-1, 6-i-j, j) }
+
+\texttt{\qquad{}ENDIF}
+
+\texttt{ENDPROCEDURE}%
+\end{minipage}
+\begin{enumerate}
+\item Dry-run the procedure and show the output that is produced when the
+task is to move 3 discs from peg 1 to peg 3. \hfill{}{[}3{]}
+\item Assuming a stack is used for passing parameters to the procedure,
+show also the contents of the stack, excluding the return address,
+after each of the first \textbf{five} procedure calls. \hfill{} {[}3{]}
+\end{enumerate}
+\item If a procedure is to be able to call itself recursively, it is usual
+for the values of any variables used in the procedure to be held in
+a stack rather than in fixed storage. Why is this? \hfill{}{[}1{]}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}HCI/PRELIM/9569/2020/P1/Q7{]} }
+
+A linked list ADT has the following operations defined: 
+\begin{itemize}
+\item \texttt{Create(x) }-{}- creates an empty linked list \texttt{x}; 
+\item \texttt{Insert(x,item,p)} -{}- inserts new value, \texttt{item}, into
+linked list \texttt{x} so that it is at position \texttt{p} in the
+linked list; 
+\item \texttt{Delete(x,p)} -{}- deletes the item at position \texttt{p}
+in the linked list \texttt{x}; 
+\item \texttt{Read(x,p)} -{}- returns the item at position \texttt{p} in
+the linked list \texttt{x}; 
+\item \texttt{Length(x)} -{}- returns the number of items in the linked
+list \texttt{x}; 
+\item \texttt{IsEmptyList(x)} -{}- returns \texttt{True} if linked list
+\texttt{x} is empty, otherwise returns \texttt{False}; 
+\item \texttt{Clear(x)} -- empties the linked list \texttt{x};
+\end{itemize}
+The linked list is implemented by the use of a collection of nodes
+that have two parts: the item data and a pointer to the next item
+in the list. In addition, there is a \texttt{Start} pointer which
+points to the first item in the list.
+\begin{enumerate}
+\item Write algorithms that could be used to implement the \textquoteleft \texttt{Delete}\textquoteright{}
+and \textquoteleft \texttt{Insert}\textquoteright{} operation. \hfill{}{[}8{]}
+\end{enumerate}
+A stack ADT has the following operations:
+\begin{itemize}
+\item \texttt{Create()} - creates a new stack; 
+\item \texttt{Push(item)} - adds \texttt{item} onto the stack; 
+\item \texttt{Pop()} - deletes and returns item from the stack; 
+\item \texttt{IsEmpty()} -- if the stack is empty returns True, otherwise
+False; 
+\item \texttt{Clear()} -- removes all items in the stack;
+\end{itemize}
+\begin{enumerate}
+\item[(b)]  Show how to implement \textquoteleft \texttt{Create}\textquoteright ,
+\textquoteleft \texttt{Push}\textquoteright{} and \textquoteleft \texttt{Pop}\textquoteright{}
+operation using the list ADT operations.\hfill{} {[}4{]}
+\end{enumerate}
+The stack implementation above is used to implement the undo/redo
+mechanism of a text editor. 
+
+An Undo stack is used to keep the edit history of the editor and the
+Redo stack is used to keep the history of the undo operations. The
+content of the text editor is stored as a string in the Undo stack
+and Redo stack. 
+
+When an undo is invoked, the Undo stack is popped and the content
+is pushed into the Redo Stack. When a redo is invoked, the Redo stack
+is popped and the content is pushed into the Undo Stack.
+\begin{enumerate}
+\item[(c)]  Using the stack ADT operations, show how to implement the following
+functions which return the contents. Assume that \texttt{undoStack}
+and \texttt{redoStack} are created. 
+\begin{enumerate}
+\item \texttt{FUNCTION Undo() RETURNS STRING} 
+\item \texttt{FUNCTION Redo() RETURNS STRING}\hfill{} {[}3{]}
+\end{enumerate}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}HCI/PRELIM/9569/2020/P1/Q8{]} }
+
+S-Cut offers haircut service at a price based on age group at 60 outlets
+located around Singapore. S-Cut has engaged you to develop an application
+that runs on kiosk stationed at their outlets. The application uses
+a relational database to store the data. Customers need to register
+as a regular member with their name, contact number and price. They
+can purchase a haircut service using the kiosks provided. The service
+record should contain date of service, member information and the
+outlet information. Based on the requirements given above, design
+the database that consists of 3 tables: Member, Outlet and ServiceRecord.
+\begin{enumerate}
+\item {}
+\begin{enumerate}
+\item Draw the Entity-Relationship (E-R) diagram to show the tables in third
+normal form (3NF) and their relationships between them. \hfill{}{[}3{]}
+\item A table description can be expressed as:
+
+\texttt{TableName( }\texttt{\uline{Attribute1}}\texttt{, Attribute2{*},
+Attribute3, \dots ) }
+
+The primary key is indicated by underlining one or more attributes.
+Foreign keys are indicated by using a dashed underline/asterisk. Using
+the information given, write table descriptions for the tables you
+have identified in part \textbf{(a)(i)}. \hfill{}{[}5{]}
+\end{enumerate}
+\item To attract more customers, some outlets offer 20\% discount on Saturday
+and Sunday. Write the table description with the changes to the database
+to capture the change in price per haircut on Saturday and Sunday.
+\hfill{}{[}1{]}
+\item S-Cut offers platinum membership which entice members to additional
+benefits. Platinum member needs to credit \$100 to their account which
+entitles them to 12 sessions of haircut services, in addition they
+will receive a birthday gift on their birthday month. To ensure greater
+productivity in development of the membership system, object oriented
+design is used. 
+\begin{enumerate}
+\item Draw a class diagram for member class(es) which exhibit the following: 
+\begin{itemize}
+\item Suitable classes with appropriate properties and methods
+\item Inheritance 
+\item Polymorphism \hfill{}{[}6{]}
+\end{itemize}
+\item Explain the term \textbf{encapsulation} and how it is applied in your
+design in (c)(i). \hfill{}{[}2{]}
+\item Explain the term \textbf{polymorphism} and how it is applied in your
+design in (c)(i). \hfill{}{[}2{]}
+\end{enumerate}
+\item An alternative way to develop an application that runs on the kiosk
+would be a web-based application. State \textbf{two} differences between
+a native application and a web-based application. \hfill{}{[}2{]}
+\item S-Cut collects data from the customer, describe \textbf{two} data
+protection obligations on how S-Cut must comply with the Personal
+Data Protection Act (PDPA). \hfill{}{[}2{]}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}HCI/PRELIM/9569/2020/P2/Q1{]} }
+
+The file \texttt{COVID19.TXT} stores the cumulative total number of
+confirmed covid-19 cases in Singapore from 14 April 2020 till 15 May
+2020.
+
+A sample record is: 
+
+\texttt{1704}, \texttt{5050 }
+
+This means that as of 17 April 2020, a cumulative total of 5050 confirmed
+covid-19 cases were reported. 
+
+The task is to determine the dates with the highest and lowest number
+of the confirmed new covid-19 cases in Singapore and the longest ascending
+streak during the period.
+
+Note: You cannot use the built-in \texttt{sort()}, \texttt{min()}
+and \texttt{max()} functions.
+
+\subsection*{Task 1.1 }
+
+Write program code to: 
+\begin{itemize}
+\item read the data from the text file 
+\item calculate the number of new covid-19 cases per day (from 15 April
+2020 to 15 May 2020) 
+\item output the dates with the highest and lowest numbers of new covid-19
+cases, excluding the first day on 14 April 2020. 
+\item If more than one dates exists with the highest/lowest number of new
+covid-19 cases, all dates are reported.
+\end{itemize}
+
+\subsubsection*{Sample output:}
+
+\texttt{Highest \# cases (1426) is on 20 April 2020 }
+
+\texttt{Lowest \# cases (447) is on 15 April 2020, 2 May 2020} \hfill{}{[}9{]}
+
+\subsection*{Task 1.2 }
+
+Write program code to:
+\begin{itemize}
+\item Determine the ascending streak of new covid-19 cases 
+\item output the longest ascending streak of new cases across the period
+from 15 April 2020 to 15 May 2020 inclusive.
+\noindent \begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+Date & Cumulative Total Cases & New Cases & \tabularnewline
+\hline 
+\hline 
+1404 & 3252 &  & \tabularnewline
+\hline 
+1504 & 3699 & 447 & \multirow{2}{*}{2-day ascending streak}\tabularnewline
+\cline{1-3} \cline{2-3} \cline{3-3} 
+1604 & 4427 & 728 & \tabularnewline
+\hline 
+1704 & 5050 & 623 & \multirow{2}{*}{2-day ascending streak}\tabularnewline
+\cline{1-3} \cline{2-3} \cline{3-3} 
+1804 & 5992 & 942 & \tabularnewline
+\hline 
+1904 & 6588 & 596 & \tabularnewline
+\hline 
+$\vdots$ & $\vdots$ & $\vdots$ & \tabularnewline
+\hline 
+0305 & 18205 & 657 & \tabularnewline
+\hline 
+0305 & 18778 & 573 & \multirow{3}{*}{3-day ascending streak}\tabularnewline
+\cline{1-3} \cline{2-3} \cline{3-3} 
+0305 & 19410 & 632 & \tabularnewline
+\cline{1-3} \cline{2-3} \cline{3-3} 
+0305 & 20198 & 788 & \tabularnewline
+\hline 
+0305 & 20939 & 741 & \tabularnewline
+\hline 
+$\vdots$ & $\vdots$ & $\vdots$ & \tabularnewline
+\hline 
+1205 & 24671 & 884 & \tabularnewline
+\hline 
+1305 & 25346 & 675 & \multirow{3}{*}{3-day ascending streak}\tabularnewline
+\cline{1-3} \cline{2-3} \cline{3-3} 
+1405 & 26098 & 752 & \tabularnewline
+\cline{1-3} \cline{2-3} \cline{3-3} 
+1505 & 26891 & 793 & \tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+\end{itemize}
+
+\subsubsection*{Sample output:}
+
+\texttt{Longest ascending streak is 3 days} \hfill{}{[}6{]}
+
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}HCI/PRELIM/9569/2020/P2/Q2{]} }
+
+The file \texttt{COUNTRY1.TXT} stores a list of country names.
+
+\subsection*{Task 2.1 }
+
+Using the country name, a hash address is calculated from a hashing
+function as follows: 
+\begin{itemize}
+\item the ASCII code is calculated for each character (in lowercase) within
+the country name 
+\item the total of ASCII values is calculated 
+\item the total is divided by 30 and the remainder is the hash address for
+this country 
+\end{itemize}
+For example, the hash address for \texttt{Brazil} is 14 
+
+Write program code for the hashing function using the following specification 
+
+\texttt{FUNCTION HashKey (Country: STRING): INTEGER }
+
+This function has a single parameter \texttt{Country} and returns
+the hash address as an integer. \hfill{}{[}3{]}
+
+\subsection*{Task 2.2 }
+
+The hash table is implemented as a list with 30 elements. Elements
+are written to and read from the hash table using the above hash function
+with the country name as the input parameter. 
+
+Write program code which does the following: 
+\begin{itemize}
+\item Read all country names from \texttt{COUNTRY1.TXT} 
+\item Use the function \texttt{HashKey} to calculate the hash address for
+each country 
+\item Store each country name in the hash table 
+\end{itemize}
+You must ensure that when a collision occurs, your program design
+will deal with this situation by searching sequentially from the calculated
+hash address for an empty location and storing the country name at
+this empty location. The program will generate an error message if
+the hash table is full. \hfill{}{[}7{]}
+
+\subsection*{Task 2.3 }
+
+Write program code for a procedure SearchCountry using the following
+specification 
+
+\texttt{PROCEDURE SearchCountry (Country: STRING, HashTable: LIST)}
+
+This procedure has two parameters, \texttt{Country} and \texttt{HashTable},
+and does the following: 
+\begin{itemize}
+\item Calculate the hash address for the country 
+\item Locate the country name in the hash table 
+\item Report whether or not this country name was found. If found, also
+output the address of the hash table where the country was found. 
+\end{itemize}
+You must ensure that your program can deal with collision when searching.
+\hfill{}{[}6{]}
+
+Devise a set of \textbf{three} test cases with the country to be used.
+\hfill{} {[}3{]}
+
+\subsection*{Task 2.4 }
+
+The file \texttt{COUNTRY2.TXT} stores a list of countries with their
+corresponding numbers of confirmed cases and death cases of COVID19
+pandemic on May 16, 2020. 
+
+Each record has the following format: 
+\noindent \begin{center}
+\texttt{<country>,<no. of confirmed cases>,<no. of death case> }
+\par\end{center}
+
+A sample record is 
+\noindent \begin{center}
+\texttt{Brazil, 233142, 15633 }
+\par\end{center}
+
+Death rate for each country is calculated as the number of death cases
+/ the number of confirmed cases. This rate is output as a percentage
+to 1 decimal place. For the example above, the death rate of Brazil
+is $15633/233142=6.7\%$.
+
+Write program code which does the following: 
+\begin{itemize}
+\item Read the data from \texttt{COUNTRY2.TXT }
+\item Implement \textbf{bubble sort} to arrange the countries from highest
+to lowest death rate 
+\item Generate a text file \texttt{RATE.TXT} to display the list of countries
+and their death rate. Each record has the format \texttt{<country>,
+<death rate>}. 
+\end{itemize}
+If two countries have the same death rate, their order in the list
+does not matter. \hfill{}{[}9{]}
+
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}HCI/PRELIM/9569/2020/P2/Q3{]} }
+
+A bakery currently keeps records on paper of all its products it sells
+in the shop. It decided to trial a database to manage its products.
+It is expected that the database should be normalized. The following
+information of the bakery is recorded: 
+\begin{itemize}
+\item \texttt{ProductCode} -- Unique code of the item 
+\item \texttt{Name} -- Name of the item 
+\item \texttt{Type} -- The type of product -- \texttt{'Cake'}, \texttt{'Loaf'},
+\texttt{'Bun'} 
+\item \texttt{Location} -- The location at which the product is made --
+\texttt{'North'}, \texttt{'South'}, \texttt{'East'}, \texttt{'West'}
+Kitchen 
+\item \texttt{Price} -- The selling price of the product 
+\end{itemize}
+For cakes, the following additional information is recorded: 
+\begin{itemize}
+\item \texttt{ServingSize} -- the estimated number of servings per cake 
+\item \texttt{Shape} -- Shape of the cake -- \texttt{'Square'}, \texttt{'Circle'},
+\texttt{'Roll'} 
+\end{itemize}
+For loaves, the following additional information is recorded: 
+\begin{itemize}
+\item \texttt{Weight} -- weight of loaf in gram 
+\end{itemize}
+For buns, the following additional information is recorded:
+\begin{itemize}
+\item \texttt{PiecesPerPackage} -- number of pieces per package
+\end{itemize}
+The information is to be stored in four different tables: 
+
+\texttt{Product }
+
+\texttt{Cake }
+
+\texttt{Loaf }
+
+\texttt{Bun}
+
+\subsection*{Task 3.1 }
+
+Create a SQL file named \texttt{Task3\_1\_<your\_name>\_<centre number>\_<index
+number>.sql} to show the SQL code to create the database \texttt{bakery.db}
+with the four tables. The table, \texttt{Product}, must use the \texttt{ProductCode}
+as its \textbf{primary key}. The other tables must refer to the \texttt{ProductCode}
+as a \textbf{foreign key}.
+
+Save your SQL code as 
+
+\texttt{Task3\_1\_<your\_name>\_<centre number>\_<index number>.sql}
+\hfill{}{[}4{]}
+
+\subsection*{Task 3.2 }
+
+The files \texttt{CAKES.TXT}, \texttt{LOAVES.TXT} and \texttt{BUNS.TXT}
+contain information about the bakery\textquoteright s cakes, loaves
+and buns respectively for insertion into the bakery database. Each
+row in the three files is a comma-separated list of information about
+a single product. 
+
+For \texttt{CAKES.TXT}, the information about each cake is given in
+the following order: 
+\noindent \begin{center}
+\texttt{ProductCode, Name, Location, Price, ServingSize, Shape }
+\par\end{center}
+
+For \texttt{LOAVES.TXT}, the information about each loaf is given
+in the following order: 
+\noindent \begin{center}
+\texttt{ProductCode, Name, Location, Price, Weight }
+\par\end{center}
+
+For \texttt{BUNS.TXT}, the information about each bun is given in
+the following order:
+\noindent \begin{center}
+\texttt{ProductCode, Name, Location, Price, PiecesPerPackage}
+\par\end{center}
+
+Write a Python program to insert all information from the three files
+into the bakery database, bakery.db. Run the program. 
+
+Save your program code as \texttt{Task3\_2\_<your\_name>\_<centre
+number>\_<index number>.py} \hfill{}{[}6{]}
+
+\subsection*{Task 3.3 }
+
+Write SQL code to show the \texttt{ProductCode}, \texttt{Name}, \texttt{Location},
+\texttt{Price} and the \texttt{ServingSize} of each cake with \texttt{'Circle'}
+Shape. Run the query. 
+
+Save this code as 
+
+\texttt{Task3\_3\_<your\_name>\_<centre number>\_<index number>.sql
+}\hfill{}{[}4{]}
+
+\subsection*{Task 3.4 }
+
+The bakery wants to filter the products by \texttt{Location} and display
+the results in a web browser. 
+
+Write a Python program and the necessary files to create a web application
+that: 
+\begin{itemize}
+\item receives a \texttt{Location} string from a HTML form, then 
+\item creates and returns a HTML document that enables the web browser to
+display a table tabulating the details of the product based on the
+\texttt{Location} in ascending order of \texttt{Price}. The table
+will display the following columns: \texttt{Name}, \texttt{Type},
+\texttt{Price}.
+\end{itemize}
+Save your Python program as 
+
+\texttt{Task3\_4\_<your\_name>\_<centre number>\_<index number>.py }
+
+with any additional files/sub-folders as needed in a folder named
+Task3\_4\_<your\_name>\_<centre number>\_<index number>
+
+Run the web application. Save the output of the program when \texttt{'North'}
+is entered as the \texttt{Location} as 
+
+\texttt{Task3\_4\_<your\_name>\_<centre number>\_<index number>.html}
+\hfill{}{[}10{]}
+
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}HCI/PRELIM/9569/2020/P2/Q4{]} }
+
+A programmer is writing a program to manipulate different data structures
+using Object-Oriented Programming. 
+
+The superclass, \texttt{LinkedStructure}, will store the following
+data:
+\begin{itemize}
+\item A linear linked list of data items held in an \textbf{array} of size
+10. Array index starts at 1. 
+\item Head pointer, pointing to the first element in the linked list 
+\item Tail pointer, pointing to the last element in the linked list 
+\item Free pointer, pointing to the first element in the free list
+\end{itemize}
+The diagram shows the linked structure after four items have been
+added and the unused nodes are linked together. 
+\noindent \begin{center}
+<INSERT\_IMAGE\_HERE>
+\par\end{center}
+
+This superclass has the following methods:
+\begin{itemize}
+\item \texttt{Initialise()} method sets up an empty linked list. Should
+link all nodes to form the free list. Initialise values for head pointer,
+tail pointer and free pointer 
+\item \texttt{Add(item)} appends the parameter into its correct \textbf{alphabetical}
+order in the linked list. 
+\item \texttt{Remove(item)} removes the parameter from the ordered linked
+list 
+\item \texttt{Display()} displays the data items in the linked list in alphabetical
+order 
+\item \texttt{PrintStructure()} displays the current state of all pointers
+and the array contents in index order 
+\item \texttt{IsEmpty()} tests for empty linked list 
+\item \texttt{IsFull()} tests for no unused nodes
+\end{itemize}
+The superclass is used to implement a linear queue. 
+
+The subclass \texttt{Queue} has the following methods:
+\begin{itemize}
+\item \texttt{Add(item)} appends the parameter to the queue and overrides
+the \texttt{LinkedStructure} add method . 
+\item \texttt{Remove()} returns and removes the next item in the queue
+\item \texttt{Display()} method should display the queue contents in order
+(e.g. the earliest added item first) and should override the \texttt{LinkedStructure}
+display method. 
+\end{itemize}
+Each method updates its appropriate pointers, and produces suitable
+errors (or returns different values) to indicate if the actions are
+not possible, e.g. if the structure is empty. 
+
+For each of the sub-tasks, add a comment statement, at the beginning
+of the code using the hash symbol \textquoteleft \#\textquoteright ,
+to indicate the sub-task the program code belongs to, for example:
+
+\subsection*{Task 4.1 }
+
+Write program code for the superclass \texttt{LinkedStructure}. \hfill{}{[}20{]}
+
+\subsection*{Task 4.2}
+
+Write program code to:
+\begin{itemize}
+\item create a \texttt{LinkedStructure} object 
+\item add the following three data items in the order shown to the ordered
+linked list 
+\noindent \begin{center}
+\texttt{Japan, Singapore, China }
+\par\end{center}
+\item output all pointers and array contents using the \texttt{PrintStructure()}
+method after adding the items 
+\item output the current contents of the linked list using the \texttt{Display()}
+method 
+\item remove two data items \texttt{China}, \texttt{Japan} in that order
+from the linked list 
+\item output all pointers and array contents using the \texttt{PrintStructure()}
+method after the removal of the items. \hfill{} {[}5{]}
+\end{itemize}
+
+\subsection*{Task 4.3}
+
+Write program code for the subclass \texttt{Queue}.
+
+Use appropriate inheritance and polymorphism in your designs. \hfill{}{[}5{]}
+
+\subsection*{Task 4.4}
+
+The file \texttt{QUEUE.TXT} stores data to test your program.
+
+Write program code to:
+\begin{itemize}
+\item create a new queue and add the data in the file QUEUE.TXT to the queue 
+\item output the current contents of the queue
+\item remove and output two items from the queue 
+\item output all pointers and the array contents of the queue after the
+removal of the items.
+\end{itemize}
+All outputs should have appropriate messages to indicate what they
+are showing. \hfill{}{[}3{]}
+
+{[}SPLIT\_HERE{]}
+\end{enumerate}
+
+\end{document}

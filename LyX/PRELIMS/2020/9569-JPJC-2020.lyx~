@@ -81,15 +81,18 @@
 
 \begin_body
 
-\begin_layout Section
-9597 ALVL 2017
-\end_layout
-
-\begin_layout Subsection
-Paper 1
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \begin_layout Enumerate
+
+\series bold
+[JPJC/PRELIM/9569/2020/P1/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A one-dimensional array 
 \family typewriter
 X
@@ -105,7 +108,6 @@ X
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \noindent
 \align center
@@ -505,8 +507,19 @@ In the worst case scenario, state the total number of comparisons made by
 [1]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[JPJC/PRELIM/9569/2020/P1/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Every sales transaction made in JPJC supermarket is stored as a record in
  a serial file for auditing purposes.
  At the end of each day, a copy of the daily serial file, sorted by transaction
@@ -514,7 +527,6 @@ Every sales transaction made in JPJC supermarket is stored as a record in
  
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 State what is meant by a serial file? 
 \begin_inset space \hfill{}
@@ -831,19 +843,15 @@ status open
  [1]
 \end_layout
 
-\end_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
-\end_inset
+\end_deeper
+\begin_layout Enumerate
 
-
+\series bold
+[JPJC/PRELIM/9569/2020/P1/Q3] 
 \end_layout
 
 \begin_deeper
@@ -901,8 +909,19 @@ gets too large.
 [1]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[JPJC/PRELIM/9569/2020/P1/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 The elections department of a town wishes to store the records of its voters
  in a linked list.
  The stored records are first ordered by the voter’s age (in years), followed
@@ -912,7 +931,6 @@ The elections department of a town wishes to store the records of its voters
  
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 Explain why the sequence of nodes in a linked list does not always reflect
  how the data is stored in the memory of the computer.
@@ -1645,8 +1663,19 @@ one
 [2]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[JPJC/PRELIM/9569/2020/P1/Q5] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 The stack is a first in last out data structure where the items are inserted
  to and deleted from the top of the stack.
  The items of the stack are globally stored in a fixed length array 
@@ -1662,7 +1691,6 @@ sp
  The three basic methods of the stack are:
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
 
 \family typewriter
@@ -2510,16 +2538,26 @@ status open
 \begin_inset space \hfill{}
 \end_inset
 
-[3] 
+[3]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[JPJC/PRELIM/9569/2020/P1/Q6] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Traversal was performed on the binary tree given below.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 List the nodes, in the order, that are visited for, 
 \end_layout
@@ -2600,11 +2638,18 @@ one
 
 \end_deeper
 \begin_layout Standard
-  
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[JPJC/PRELIM/9569/2020/P1/Q7] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Car owners who wish to purchase or renew their insurance policy with XYZ
  Motor Insurance are required to accumulate not more than 6 demerit points
  in their driving records.
@@ -2627,14 +2672,25 @@ Car owners who wish to purchase or renew their insurance policy with XYZ
 [5]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
+
+\series bold
+[JPJC/PRELIM/9569/2020/P1/Q8] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A company currently uses a computerised flat file to keep track of the monthly
  claims submitted by its employee, and has decided to use a relational database
  to store and manage the claims submitted by the employees instead.
  The following table shows the details of the computerised flat file.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="8" columns="6">
@@ -3156,19 +3212,15 @@ second normal form
 [4]
 \end_layout
 
-\end_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
-\end_inset
+\end_deeper
+\begin_layout Enumerate
 
-
+\series bold
+[JPJC/PRELIM/9569/2020/P1/Q9] 
 \end_layout
 
 \begin_deeper
@@ -3191,8 +3243,19 @@ An integer variable of size 4 bytes is used to keep track of the number
 [3]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[JPJC/PRELIM/9569/2020/P1/Q10] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A program written using object-oriented programming has 
 \family typewriter
 point
@@ -3215,7 +3278,6 @@ point
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \noindent
 \align center
@@ -3402,8 +3464,19 @@ an object and a class.
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[JPJC/PRELIM/9569/2020/P1/Q11] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A clinic manages patients’ medical and financial records through an Internet-bas
 ed information management portal.
  Due to several security incidents related to unintended disclosure of patients’
@@ -3422,7 +3495,6 @@ one
  
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 Describe the meaning of the term local area network (LAN).
  
@@ -3460,12 +3532,19 @@ Describe how token passing enables a computer to send data to the printer
 [3]
 \end_layout
 
-\end_deeper
-\begin_layout Section
-9597 ALVL 201X TEMPLATE
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
+
+\series bold
+[JPJC/PRELIM/9569/2020/P2/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Jurong Pioneer Primary School uses buses to transport students to school.
  There are six bus routes labelled 
 \family typewriter
@@ -3480,7 +3559,6 @@ F
  over a four-week period.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 The data from the survey is stored in the file 
 \family typewriter
@@ -3629,8 +3707,19 @@ TASK1_<your class>_<your name>.ipynb
 [4]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[JPJC/PRELIM/9569/2020/P2/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 In linear queue data structure, elements are inserted until the queue becomes
  full.
  However, after the queue becomes full, new elements cannot be inserted
@@ -3640,7 +3729,6 @@ In linear queue data structure, elements are inserted until the queue becomes
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 After inserting all the elements into a linear queue: 
 \end_layout
@@ -4792,8 +4880,19 @@ TASK2_<your class>_<your name>.ipynb
 [6]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[JPJC/PRELIM/9569/2020/P2/Q3] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 The library in Jurong Pioneer Primary School uses a hybrid data structure
  to keep track of its inventory.
  Each record in the hash table stores a simple list 
@@ -4808,7 +4907,6 @@ The library in Jurong Pioneer Primary School uses a hybrid data structure
  
 \end_layout
 
-\begin_deeper
 \begin_layout Subsection*
 Task 3.1 
 \end_layout
@@ -5026,8 +5124,19 @@ TASK3_<your class>_<your name>.ipynb
  [4]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[JPJC/PRELIM/9569/2020/P2/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A computer company has several offices throughout Singapore, each with several
  salespersons.
  Each salesperson is assigned to one office only.
@@ -5036,7 +5145,6 @@ A computer company has several offices throughout Singapore, each with several
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 The following tables hold the data: 
 \end_layout
@@ -5500,6 +5608,10 @@ TASK4_5_<your class>_<your name>.jpg
 \end_inset
 
  [2]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper

@@ -1,0 +1,43 @@
+\item \textbf{{[}ACJC/PRELIM/9569/2021/P1/Q2{]} }
+
+A hash table has 8 spaces to store strings, indexed from 1 to 8 inclusive.
+
+The hash function finds the ASCII number of the first letter of the
+string, then counts the number of 1s in its binary representation.
+This is the index in which the string will be inserted into the hash
+table.
+
+For example, the string \texttt{'Arlington'} will have index 2 because
+the ASCII number of '\texttt{A}' is 65, which is \texttt{1000001}
+in binary, and there are two \texttt{1}s.
+
+The following strings are to be inserted into the hash table in the
+order given.
+
+\texttt{'Grover', }
+
+\texttt{Horsburgh', }
+
+\texttt{'Island',}
+
+\texttt{'Jordan', }
+
+\texttt{'Kalman'}
+\begin{enumerate}
+\item Find the output of the hash function for each of the strings. \hfill{}{[}5{]}
+\item {}
+\begin{enumerate}
+\item Suppose collisions in the hash table are to be resolved using open
+hashing.
+
+Draw the hash table after all five strings are inserted. \hfill{}{[}5{]}
+\item Suppose instead that collisions in the hash table are to be resolved
+using closed hashing, where spaces 6 to 8 (inclusive) are used as
+the overflow storage.
+
+Draw the hash table after all five strings are inserted. \hfill{}
+{[}2{]}
+\end{enumerate}
+\item Explain why the space with index 1 in the hash table will never be
+occupied unless there is a collision. \hfill{} {[}2{]}
+\end{enumerate}

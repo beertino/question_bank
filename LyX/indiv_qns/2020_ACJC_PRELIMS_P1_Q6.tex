@@ -1,0 +1,80 @@
+\item \textbf{{[}ACJC/PRELIM/9569/2021/P1/Q6{]} }
+
+In a computer game, players\textquoteright{} names and scores are
+stored in a binary search tree, in increasing order of score.
+
+The binary search tree has its data inserted in the following order:
+
+Ryan 18 
+
+Bella 25 
+
+Joshua 27 
+
+Shane 20 
+
+Jasmine 17 
+
+Alexis 21 
+
+Leslie 15
+\begin{enumerate}
+\item Draw the binary search tree. \hfill{}{[}4{]}
+\item The binary search tree is implemented using the two dimensional array
+shown below. Copy and fill in the entries in the array.
+\noindent \begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+Index & Name & Score & Left Pointer & Right Pointer\tabularnewline
+\hline 
+0 &  &  &  & \tabularnewline
+\hline 
+1 &  &  &  & \tabularnewline
+\hline 
+2 &  &  &  & \tabularnewline
+\hline 
+3 &  &  &  & \tabularnewline
+\hline 
+4 &  &  &  & \tabularnewline
+\hline 
+5 &  &  &  & \tabularnewline
+\hline 
+6 &  &  &  & \tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\hfill{}{[}5{]}
+\item To delete a node from a binary tree, the following cases are considered:
+\noindent \begin{center}
+\begin{tabular}{|l|l|}
+\hline 
+Case & Action\tabularnewline
+\hline 
+Node has no children & - Node is removed from tree\tabularnewline
+\hline 
+Node has one child & - Node is replaced with its child\tabularnewline
+\hline 
+\multirow{4}{*}{Node has two children} & - Call the node to be deleted $D$. Do not delete$D$\tabularnewline
+\cline{2-2} 
+ & - Look for the node $E$ that comes after $D$ in an in-order traversal\tabularnewline
+\cline{2-2} 
+ & - Copy the data $E$ into $D$.\tabularnewline
+\cline{2-2} 
+ & - Delete $E$ using one of the previous two cases.\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+Draw the tree at each step after the following players are deleted,
+one after another:
+\begin{enumerate}
+\item Joshua \hfill{}{[}1{]}
+\item Jasmine\hfill{} {[}1{]}
+\item Ryan \hfill{}{[}2{]}
+\end{enumerate}
+\item The program has a feature which allows the user to enter an integer.
+The program then returns a list of players whose score is greater
+than that integer. Describe how the program can create this list using
+the binary search tree. \hfill{}{[}4{]}
+\end{enumerate}

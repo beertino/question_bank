@@ -1,0 +1,52 @@
+\item \textbf{{[}RVHS/PRELIM/9569/2021/P1/Q5{]} }
+
+The implementation of a Binary Search Tree (BST) using three 1D arrays
+is shown below. 
+
+Each unused node that are not in the logical BST is initially connected
+in a singly linked list manner using the \texttt{leftPtr} array. The
+first position of this linked list is indicated by the variable \texttt{nextFree}. 
+
+When a piece of data is inserted into the BST, a node will be disconnected
+from the linked list and added to the logical BST. The root of this
+logical BST is indicated by the variable \texttt{root}. The logical
+structure of the BST is managed by \texttt{leftPtr} and \texttt{rightPtr}
+which are the positions of the left and right child of the node respectively. 
+
+Below is an illustration for such BST with a 0-based index array. 
+
+\begin{tabular}{|c|c|}
+\hline 
+\texttt{root } & 7 \tabularnewline
+\hline 
+\texttt{nextFree} & 0\tabularnewline
+\hline 
+\end{tabular} 
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline 
+Array Index  & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7\tabularnewline
+\hline 
+\texttt{Data } & - & 7 & 10 & 6 & 1 & 4 & 2 & 9\tabularnewline
+\hline 
+\texttt{leftPtr } & -1 & -1 & -1 & 5 & -1 & 6 & 4 & 3\tabularnewline
+\hline 
+\texttt{rightPtr } & -1 & -1 & -1 & 1 & -1 & -1 & -1 & 2\tabularnewline
+\hline 
+\end{tabular}
+\begin{enumerate}
+\item Draw the logical BST at this point of time. \hfill{}{[}1{]}
+\item State the post order traversal of the BST \hfill{}{[}1{]}
+\item State the values of \texttt{root}, \texttt{nextFree} and the values
+in the arrays \texttt{data}, \texttt{leftPtr} and \texttt{rightPtr}
+after the \textbf{each} of the following BST operations are executed
+sequentially. \hfill{}{[}3{]} 
+\begin{itemize}
+\item \texttt{Add 8}
+\item \texttt{Recursive Delete 6 }
+\end{itemize}
+\item State an advantage of BST over Hash table. \hfill{}{[}1{]}
+\item Explain what can make a Hash Table Search inefficient besides a bad
+hash function and how to overcome it. \hfill{}{[}2{]}
+\item State 2 characteristics of a good hash function. \hfill{}{[}2{]}
+\end{enumerate}

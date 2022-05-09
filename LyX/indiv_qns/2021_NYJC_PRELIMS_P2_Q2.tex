@@ -1,0 +1,74 @@
+\item \textbf{{[}NYJC/PRELIM/9569/2021/P2/Q2{]} }
+
+Name your Jupyter Notebook as 
+
+\texttt{TASK2\_<your name>\_<centre number>\_<index number>.ipynb }
+
+The task is to implement a todo list using a linkedlist data structure.
+For each of the sub-tasks, add a comment statement, at the beginning
+of the code using the hash symbol \textquoteleft \texttt{\#}\textquoteright ,
+to indicate the sub-task the program code belongs to, for example: 
+\noindent \begin{center}
+\begin{tabular}{c|l|}
+\cline{2-2} 
+\multirow{2}{*}{\texttt{In{[}1{]}:}} & \texttt{\# Task 2.1}\tabularnewline
+ & \texttt{Program Code}\tabularnewline
+\cline{2-2} 
+\multicolumn{1}{c}{} & \multicolumn{1}{l}{\texttt{Output:}}\tabularnewline
+\end{tabular}
+\par\end{center}
+
+\subsubsection*{Task 2.1 }
+
+The class \texttt{TodoList} represents a LinkedList and has the following
+attributes: 
+\begin{itemize}
+\item \texttt{\_\_head} -- a pointer to the first node of the LinkedList;
+if empty, it has a value of \texttt{None} 
+\item \texttt{\_\_tail} -- a pointer to the last node of the LinkedList;
+if empty, it has a value of \texttt{None} 
+\end{itemize}
+\texttt{TodoList} has the following methods defined on it: 
+\begin{itemize}
+\item \texttt{add(item)} -- wraps \texttt{item} in a \texttt{TodoItem}
+instance, and adds it to the end of the LinkedList 
+\item \texttt{remove(item)} -- removes the first \texttt{TodoItem} containing
+\texttt{item} from the LinkedList 
+\item \texttt{list()} -- returns a Python list containing each \texttt{item}
+in the TodoList 
+\end{itemize}
+The class \texttt{TodoItem} represents a Node of the LinkedList and
+has the following attributes: 
+\begin{itemize}
+\item \texttt{title} -- a short description of the todo item 
+\item \texttt{\_\_next} -- a pointer to the next node in the LinkedList;
+if this is the last node, it has a value of None 
+\end{itemize}
+\texttt{TodoItem} has the following methods defined on it: 
+\begin{itemize}
+\item l\texttt{ink\_to(todoitem)} -- links this \texttt{TodoItem} instance
+to \texttt{todoitem}, another instance of the TodoItem class 
+\end{itemize}
+Implement the above classes. \hfill{}{[}13{]}
+
+\subsubsection*{Task 2.2 }
+
+Add the following items to a new \texttt{TodoList}: 
+\begin{itemize}
+\item \textquotedblleft Buy milk\textquotedblright{} 
+\item \textquotedblleft Buy flour\textquotedblright{} 
+\item \textquotedblleft Buy eggs\textquotedblright{}
+\item \textquotedblleft Bake cake\textquotedblright{} 
+\end{itemize}
+Display the contents of the \texttt{TodoList}. \hfill{}{[}7{]}
+
+\subsubsection*{Task 2.3 }
+
+Remove the following items from the \texttt{TodoList}: 
+\begin{itemize}
+\item \textquotedblleft Buy milk\textquotedblright{} 
+\item \textquotedblleft Buy eggs\textquotedblright{} 
+\end{itemize}
+Display the contents of the \texttt{TodoList}. \hfill{}{[}3{]}
+
+Save your Jupyter Notebook for Task 2.

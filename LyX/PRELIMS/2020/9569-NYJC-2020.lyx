@@ -81,21 +81,23 @@
 
 \begin_body
 
-\begin_layout Section
-9597 ALVL 2017
-\end_layout
-
-\begin_layout Subsection
-Paper 2
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \begin_layout Enumerate
+
+\series bold
+[NYJC/PRELIM/9569/2020/P2/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 The task is to implement a hash table to retrieve data about waste disposal
  in Singapore.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 For each of the sub-tasks, add a comment statement, at the beginning of
  the code using the hash symbol '
@@ -475,8 +477,19 @@ Save your program code and output for Task 1 as
 TASK1_<your name>.ipynb 
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[NYJC/PRELIM/9569/2020/P2/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A school library stores the following data in a file named 
 \family typewriter
 story.csv
@@ -484,7 +497,6 @@ story.csv
 : 
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="2">
@@ -886,8 +898,19 @@ Save your program code and output for Task 2 as
 TASK2_<your name>.ipynb
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[NYJC/PRELIM/9569/2020/P2/Q3] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 You are to create a song playlist using a doubly linked list implemented
  using Object-Oriented Programming (OOP).
  The doubly linked list data structure is a linked list made up of nodes
@@ -895,11 +918,15 @@ You are to create a song playlist using a doubly linked list implemented
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
-\noindent
 \align center
-<INSERT_IMAGE_HERE>
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9569-NYJC-2020-P2-Q3-1.png
+	width 50page%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1201,9 +1228,14 @@ Inserting at the beginning of the list
 \end_layout
 
 \begin_layout Standard
-\noindent
 \align center
-<INSERT_IMAGE_HERE>
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9569-NYJC-2020-P2-Q3-2.png
+	width 50page%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1211,9 +1243,14 @@ Inserting after a given node
 \end_layout
 
 \begin_layout Standard
-\noindent
 \align center
-<INSERT_IMAGE_HERE>
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9569-NYJC-2020-P2-Q3-3.png
+	width 50page%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1486,8 +1523,19 @@ TASK3_<your name>.ipynb
  
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[NYJC/PRELIM/9569/2020/P2/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A school wants to create a database to allow students to register for different
  enrichment activities that will be held on the school’s Enrichment Day.
  An enrichment activity falls under one of three categories – Arts, Cultural,
@@ -1495,7 +1543,6 @@ A school wants to create a database to allow students to register for different
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 It is expected that the database should be normalised.
  
@@ -1711,9 +1758,14 @@ The school wants to allow students to register over the internet.
 \end_layout
 
 \begin_layout Standard
-\noindent
 \align center
-<INSERT_IMAGE_HERE>
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9569-NYJC-2020-P2-Q4.png
+	width 50page%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1854,15 +1906,26 @@ Save this code as
 \family typewriter
 TASK4_4_<your name>.sql
 \family default
- [4]
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+[4]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
-\begin_layout Subsection
-Paper 1
+\begin_layout Enumerate
+
+\series bold
+[NYJC/PRELIM/9569/2020/P1/Q1] 
 \end_layout
 
-\begin_layout Enumerate
+\begin_deeper
+\begin_layout Standard
 
 \series bold
 Figure 1
@@ -1874,7 +1937,6 @@ L
 .
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \noindent
 \align center
@@ -2354,9 +2416,14 @@ Figure 2
 \end_layout
 
 \begin_layout Standard
-\noindent
 \align center
-<INSERT_IMAGE_HERE>
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9569-NYJC-2020-P1-Q1.png
+	width 50page%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -2559,14 +2626,24 @@ Name and describe another recursive sort algorithm.
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[NYJC/PRELIM/9569/2020/P1/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 In Morse code, each letter of the alphabet is represented by a unique combinatio
 n of dots and dashes.
  Study the following table carefully:
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \noindent
 \align center
@@ -2762,9 +2839,14 @@ The first three levels of the tree are shown below:
 \end_layout
 
 \begin_layout Standard
-\noindent
 \align center
-<INSERT_IMAGE_HERE>
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9569-NYJC-2020-P1-Q2.png
+	width 50page%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -2820,8 +2902,19 @@ Describe a better alternative and explain how the Morse code of a letter
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[NYJC/PRELIM/9569/2020/P1/Q3] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 The algorithm represented using pseudo-code in 
 \series bold
 Figure 3
@@ -2851,7 +2944,6 @@ Table 1
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \noindent
 \align center
@@ -3605,8 +3697,19 @@ Other than a trace table, describe two other debugging methods a programmer
  [4]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[NYJC/PRELIM/9569/2020/P1/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Company X sells merchandise to wholesale and retail outlets.
  Wholesale customers receive a two percent discount on all orders.
  The company also encourages both wholesale and retail customers to pay
@@ -3616,7 +3719,6 @@ Company X sells merchandise to wholesale and retail outlets.
  Discounts can be stacked for each order.
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 Create a decision table to show these conditions and actions.
  
@@ -3660,15 +3762,25 @@ Draw a system flowchart of your pseudo-code in
 [4]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[NYJC/PRELIM/9569/2020/P1/Q5] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Athletes, who are members of teams, compete in running events, which are
  held at fixtures throughout the year.
  For example, athlete 15 might compete in the Girls’ 1500m Under 18 race
  in the fixture at National Stadium on 12 September 2020.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 A relational database is used to store the details of which athletes enter
  each event at each fixture.
@@ -3807,9 +3919,14 @@ Figure 6
 \end_layout
 
 \begin_layout Standard
-\noindent
 \align center
-<INSERT_IMAGE_HERE>
+\begin_inset Graphics
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9569-NYJC-2020-P1-Q5.png
+	width 50page%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -4010,13 +4127,23 @@ Explain with reasons if you agree or disagree with making the change.
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[NYJC/PRELIM/9569/2020/P1/Q6] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Computers connected to the Internet use the TCP/IP suite of protocols for
  data transmission.
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 What is a protocol? [1]
 \end_layout
@@ -4354,13 +4481,23 @@ client port number
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[NYJC/PRELIM/9569/2020/P1/Q7] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Below is a numbered list of the names of some of the legislation that applies
  in situations where computers are used:
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 1.
  Copyright, Designs and Patents Act 
@@ -4486,6 +4623,10 @@ Explain with specific examples why a code of conduct for computing professionals
 \end_inset
 
  [3]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper

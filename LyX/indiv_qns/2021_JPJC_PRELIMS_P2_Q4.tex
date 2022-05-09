@@ -1,0 +1,107 @@
+\item \textbf{{[}JPJC/PRELIM/9569/2021/P2/Q4{]}}
+
+JP Mobile sells mobile phones and manages its inventory using a NoSQL
+database. Information about the mobile phones is stored in the JSON
+file \texttt{items.JSON}. 
+
+The following fields are recorded: 
+\begin{itemize}
+\item brand of mobile phone, 
+\item model, 
+\item colour(s) available, 
+\item price in dollar, 
+\item quantity in stock. 
+\end{itemize}
+
+\subsubsection*{Task 4.1 }
+
+Write program code to import the information from the JSON file into
+a MongoDB database. Save the information under the \texttt{phone}
+collection in the \texttt{jp\_mobile} database. Ensure that the collection
+only stores the information from the JSON file. 
+
+Save your program code as \texttt{TASK4\_<your name>\_<class>\_<index
+number>.py }\hfill{}{[}4{]}
+
+\subsubsection*{Task 4.2 }
+
+The shop decides to include one or more free gifts for new batches
+of mobile phones it sells. 
+
+Write program code for a user to insert information of a mobile phone
+by getting user input of the following: brand, model, colour, price,
+quantity, free gift(s). 
+
+Your code should allow user to input one or more free gifts. 
+
+If a phone\textquoteright s brand, model and colour already exists,
+add the new quantity to the existing quantity in the database, and
+replace the existing price with the new price. 
+
+Run your program and insert the following 2 documents: 
+\noindent \begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline 
+No. & Brand  & Model  & Colour  & Price  & Quantity  & Free gift(s)\tabularnewline
+\hline 
+1  & orange  & 22  & black  & 900  & 11  & power bank\tabularnewline
+\hline 
+2  & solo  & A33  & red  & 1300  & 7  & power bank, earbuds\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+Add your program code to \texttt{TASK4\_<your name>\_<class>\_<index
+number>.py} \hfill{}{[}7{]}
+
+\subsubsection*{Task 4.3 }
+
+Write a function \texttt{display\_all} that will display all the information
+in the \texttt{phone} collection under these fields: \texttt{brand},
+\texttt{model}, \texttt{colour}, \texttt{price}, \texttt{quantity},
+\texttt{free gift(s)}. 
+
+If no free gift comes with the phone, print a \texttt{None} statement.
+
+Include a final statement that shows the total number of documents
+in the collection. 
+
+Run the \texttt{display\_all} function to show your output. 
+
+Add your program code to \texttt{TASK4\_<your name>\_<class>\_<index
+number>.py} \hfill{}{[}6{]}
+
+\subsubsection*{Task 4.4}
+
+The shop uses a web browser to display the database content. The manager
+wants to filter the mobile phones by \texttt{brand} and display the
+results in a web browser. 
+
+Write additional Python code and the necessary files to create a web
+application that 
+\begin{itemize}
+\item receives a \texttt{brand} string from a HTML form, then 
+\item creates and returns a HTML document that enables the web browser to
+display an ordered list of mobile phones sorted by \texttt{price}. 
+\end{itemize}
+For each document, the web page should include the: 
+\begin{itemize}
+\item brand as the heading 
+\item model, 
+\item colour, 
+\item price 
+\end{itemize}
+Save your program as 
+
+\texttt{TASK4\_4\_<your name>\_<class>\_<index number>.py} 
+
+with any additional files / sub-folders as needed in a folder named 
+
+\texttt{TASK4\_4\_<your name>\_<class>\_<index number>} 
+
+Run the web application and input brand as \textquoteleft \texttt{solo}\textquoteright{}
+in the webpage.
+
+Save the output of the program as 
+
+TASK4\_4\_<your name>\_<class>\_<index number>.html\hfill{} {[}12{]}

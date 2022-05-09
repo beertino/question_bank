@@ -1,0 +1,61 @@
+\item \textbf{{[}DHS/PRELIM/9569/2020/P2/Q4{]} }
+
+A dental clinic wishes to manage its patients' information using a
+NoSQL database. 
+
+There are 2 rooms in the clinic: Room 1 and Room 2. 
+
+There are 3 dentists in the clinic: Doctor 1, Doctor 2, Doctor 3. 
+
+Information about the patients is stored in the data file PATIENTS.txt
+in the following format: 
+
+\texttt{PatientID,Name,Appointment Date,Appointment Start Time,Doctor
+Assigned,Room Number,Amount Charged }
+\begin{itemize}
+\item \texttt{PatientID} is an integer 
+\item \texttt{Name} is made up of letters and space only 
+\item \texttt{Appointment Date} is in DDMMYYYY format 
+\item \texttt{Appointment Start} Time is HHMM in 24-hour format 
+\item \texttt{Doctor Assigned} is either Doctor 1, Doctor 2 or Doctor 3 
+\item \texttt{Room Number} is either Room 1 or Room 2 
+\item \texttt{Amount Charged} is a float to 2 decimal places 
+\end{itemize}
+
+\subsection*{Task 4.1 }
+
+Write program code to convert and import the data from \texttt{PATIENTS.txt}
+into a MongoDB database Clinic under the collection \texttt{Patient}.
+\hfill{}{[}4{]}
+
+\subsection*{Task 4.2 }
+
+Write program code to allow the Admin Clerk to add new patients by
+requesting for the following information: 
+\begin{itemize}
+\item New patient's Name 
+\item Appointment Date in DDMMYYYY format 
+\item Appointment Start Time in 24-hour HHMM format 
+\item Doctor to be Assigned 
+\end{itemize}
+The program should automatically assign a \texttt{PatientID}. Your
+program should perform the necessary validation for each field. \hfill{}{[}8{]}
+
+\subsection*{Task 4.3}
+
+The Admin Clerk wants to know if there are issues with appointments.
+Write program code to output appointments clashes and double bookings.
+If an appointment clash occurs, reschedule the latter appointment
+to the nearest available appointment on the same date. If a double
+booking occurs, delete the latter duplicate booking. \hfill{}{[}8{]}
+
+\subsection*{Task 4.4 }
+
+Write program code for the Admin Clerk to determine the top 3 paying
+patients. \hfill{} {[}4{]}
+
+\subsection*{Task 4.5 }
+
+The Admin Clerk realised that there are patients with the same name.
+Write program code to identify patients with the same names and output
+their \texttt{PatientID}s. \hfill{} {[}3{]}

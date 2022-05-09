@@ -1,0 +1,120 @@
+\item \textbf{{[}JPJC/PRELIM/9569/2020/P2/Q2{]} }
+
+In linear queue data structure, elements are inserted until the queue
+becomes full. However, after the queue becomes full, new elements
+cannot be inserted until all the existing elements are removed from
+the queue. Although there are empty spaces in the queue, they remain
+unused. This is a disadvantage of a linear queue. 
+
+After inserting all the elements into a linear queue: 
+\noindent \begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+\textquotedblleft John\textquotedblright{} & \textquotedblleft Amy\textquotedblright{}  & \textquotedblleft Chetan\textquotedblright{}  & \textquotedblleft Xin Xin\textquotedblright{}  & \textquotedblleft Evan\textquotedblright{}\tabularnewline
+\hline 
+\multicolumn{1}{c}{$\overset{\uparrow}{\text{Front}}$} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\overset{\uparrow}{\text{Rear}}$}\tabularnewline
+\end{tabular}
+\par\end{center}
+
+Linear queue is still considered full after elements have been dequeued: 
+\noindent \begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+\textquotedblleft John\textquotedblright{} & \textquotedblleft Amy\textquotedblright{} & \textquotedblleft Chetan\textquotedblright{} & \textquotedblleft Xin Xin\textquotedblright{} & \textquotedblleft Evan\textquotedblright{}\tabularnewline
+\hline 
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\overset{\uparrow}{\text{Front}}$} & \multicolumn{1}{c}{$\overset{\uparrow}{\text{Rear}}$}\tabularnewline
+\end{tabular}
+\par\end{center}
+
+To overcome this disadvantage, a circular queue data structure may
+be implemented. The next element added to the queue will be stored
+at index 0 
+\noindent \begin{center}
+<INSERT\_IMAGE\_HERE> 
+\par\end{center}
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline 
+\multicolumn{3}{|c|}{\texttt{Queue}}\tabularnewline
+\hline 
+\multicolumn{3}{|c|}{Attributes}\tabularnewline
+\hline 
+\texttt{\hspace{0.01\columnwidth}}Identifier & \texttt{\hspace{0.01\columnwidth}}Data Type & \texttt{\hspace{0.05\columnwidth}}Description\tabularnewline
+\hline 
+\texttt{Items} & \texttt{ARRAY{[}0:4{]} OF STRING} & Stores the elements of queue\tabularnewline
+\hline 
+\texttt{Front} & \texttt{INTEGER} & Index of the first item added to the queue.\tabularnewline
+\hline 
+\texttt{Rear} & \texttt{INTEGER} & Index of the last item added to the queue.\tabularnewline
+\hline 
+\multicolumn{3}{|c|}{\texttt{Methods}}\tabularnewline
+\hline 
+Identifier & \multicolumn{2}{l|}{Description}\tabularnewline
+\hline 
+\texttt{Constructor()} & \multicolumn{2}{l|}{Instantiates a \texttt{Queue} object.}\tabularnewline
+\hline 
+\texttt{IsEmpty()} & \multicolumn{2}{l|}{Returns \texttt{TRUE} if the queue is empty and \texttt{FALSE} otherwise.}\tabularnewline
+\hline 
+\texttt{IsFull()} & \multicolumn{2}{l|}{Returns \texttt{TRUE} if the queue is full and \texttt{FALSE} otherwise.}\tabularnewline
+\hline 
+\texttt{Enqueue(STRING)} & \multicolumn{2}{l|}{Inserts a new item to the queue. Displays a suitable message if the
+queue is full.}\tabularnewline
+\hline 
+\texttt{Dequeue():STRING} & \multicolumn{2}{l|}{Returns the item removed from the queue or \textquotedblleft \texttt{NONE}\textquotedblright{}
+if the queue is empty.}\tabularnewline
+\hline 
+\texttt{Display()} & \multicolumn{2}{l|}{Outputs items from the front to the rear of the queue.}\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\begin{center}
+\begin{tabular}{|l|l||l|}
+\hline 
+\multicolumn{3}{|c|}{\texttt{CircularQueue}}\tabularnewline
+\hline 
+\multicolumn{3}{|c|}{\texttt{Methods}}\tabularnewline
+\hline 
+Identifier & \multicolumn{2}{l|}{Description}\tabularnewline
+\hline 
+\texttt{Constructor()} & \multicolumn{2}{l|}{Instantiates a \texttt{CircularQueue} object.}\tabularnewline
+\hline 
+\texttt{IsFull()} & \multicolumn{2}{l|}{Returns \texttt{TRUE} if the queue is full and \texttt{FALSE} otherwise.Overrides
+the method in parent class.}\tabularnewline
+\hline 
+\texttt{Enqueue(STRING)} & \multicolumn{2}{l|}{Inserts a new item to the queue. Displays a suitable message if the
+queue is full.Overrides the method in parent class.}\tabularnewline
+\hline 
+\texttt{Dequeue():STRING} & \multicolumn{2}{l|}{Returns the item removed from the queue or \textquotedblleft \texttt{NONE}\textquotedblright{}
+if the queue is empty.Overrides the method in parent class.}\tabularnewline
+\hline 
+\texttt{Display()} & \multicolumn{2}{l|}{Outputs items from the front to the rear of the queue.Overrides the
+method in parent class.}\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\subsection*{Task 2.1}
+
+Implement the classes \texttt{Queue} and \texttt{CircularQueue} with
+object-oriented programming. The first item added to an empty queue
+is stored at index 0. The attributes of each object is reinitialised
+when the queue becomes empty.\hfill{} {[}20{]} 
+
+\subsection*{Task 2.2 }
+
+There are two printers in the General Office. One of the printers
+implements a linear queue while the other implements a circular queue. 
+
+Write the code to instantiate a \texttt{Queue} object and a \texttt{CircularQueue}
+object. Test your code, on both queues, using the following steps: 
+\begin{enumerate}
+\item[i.]  Enqueue five users in the order given in the diagram. 
+\item[ii.]  Dequeue twice.
+\item[iii.]  Enqueue \textquotedblleft Mohan\textquotedblright .
+\item[iv.]  Display the queue. 
+\end{enumerate}
+Download your program code for Task 2 as 
+
+\texttt{TASK2\_<your class>\_<your name>.ipynb} \hfill{}{[}6{]}
