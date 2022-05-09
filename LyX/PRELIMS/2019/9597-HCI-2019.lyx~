@@ -3311,7 +3311,8 @@ one
 \end_layout
 
 \begin_layout Enumerate
-The company’s staff handbook must include rules and regulations for IT staff.
+(e) The company’s staff handbook must include rules and regulations for
+ IT staff.
  Suggest 
 \series bold
 two
@@ -3322,10 +3323,6 @@ two
 \end_inset
 
  [2]
-\end_layout
-
-\begin_layout Standard
-[SPLIT_HERE]
 \end_layout
 
 \end_deeper
@@ -3379,10 +3376,6 @@ Simplify your decision table by removing redundancies.
 \end_inset
 
 [2]
-\end_layout
-
-\begin_layout Standard
-[SPLIT_HERE]
 \end_layout
 
 \end_deeper
@@ -3478,10 +3471,6 @@ part (c)
 \end_inset
 
 [6]
-\end_layout
-
-\begin_layout Standard
-[SPLIT_HERE]
 \end_layout
 
 \end_deeper
@@ -4007,10 +3996,6 @@ part
 [3]
 \end_layout
 
-\begin_layout Standard
-[SPLIT_HERE]
-\end_layout
-
 \end_deeper
 \begin_layout Enumerate
 
@@ -4043,10 +4028,6 @@ quick sort
 \end_inset
 
 [7]
-\end_layout
-
-\begin_layout Standard
-[SPLIT_HERE]
 \end_layout
 
 \end_deeper

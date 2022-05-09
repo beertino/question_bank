@@ -1,0 +1,70 @@
+\item \textbf{{[}JPJC/PRELIM/9597/2019/P1/Q2{]} }
+
+The incomplete pseudocode function below takes in an array as input.
+The array will then be sorted in ascending order and the results will
+be returned. Note that the start index of the array is 1. 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{FUNCTION SomeSort(SomeList : ARRAY) }
+
+\texttt{\qquad{}FOR Pointer \textleftarrow{} 2 TO NumberOfItems }
+
+\texttt{\qquad{}\qquad{}ItemToBeInserted \textleftarrow{} SomeList{[}Pointer{]} }
+
+\texttt{\qquad{}\qquad{}CurrentItem \textleftarrow{} Pointer \textendash{}
+1 }
+
+\texttt{\qquad{}\qquad{}WHILE(SomeList{[}CurrentItem{]}>ItemToBeInserted
+AND CurrentItem>0) }
+
+\texttt{\qquad{}\qquad{}\qquad{}SomeList{[}CurrentItem+1{]} \textleftarrow{}
+SomeList{[}CurrentItem{]} }
+
+\texttt{\qquad{}\qquad{}\qquad{}CurrentItem \textleftarrow{} CurrentItem
+- 1 }
+
+\texttt{\qquad{}\qquad{}ENDWHILE}
+
+\texttt{\qquad{}\qquad{}............... $\mathtt{A}$............... }
+
+\texttt{\qquad{}ENDFOR }
+
+\texttt{\qquad{}RETURN ARRAY}
+
+\texttt{ENDFUNCTION }%
+\end{minipage}
+
+\subsection*{Task 2.1 }
+
+Complete the missing line and write program code to implement the
+complete function. Sort the array given in the file \texttt{NUMBERS.txt}.
+You may copy and paste the array into your program code. 
+
+\subsection*{Evidence 3 }
+\begin{itemize}
+\item Your program code. 
+\item Screenshot showing the array before and after running the function.\hfill{}
+{[}7{]}
+\end{itemize}
+
+\subsection*{Task 2.2 }
+
+Write a bubble sort function that takes an array, sorts the array
+and returns the array. 
+
+\subsection*{Evidence 4 }
+
+Your bubble sort function.\hfill{} {[}4{]}
+
+\subsection*{Task 2.3 }
+
+Amend your program code in both functions to count and display the
+number of comparisons made when sorting the array. 
+
+\subsection*{Evidence 5 }
+\begin{itemize}
+\item Your amended program code. 
+\item Screenshot of running both sorting functions with number of comparisons
+displayed.\hfill{} {[}4{]}
+\end{itemize}

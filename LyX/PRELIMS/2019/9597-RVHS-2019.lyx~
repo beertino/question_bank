@@ -6222,10 +6222,6 @@ State 2 important topics in the project proposal.
 [1]
 \end_layout
 
-\begin_layout Standard
-[SPLIT_HERE]
-\end_layout
-
 \end_deeper
 \begin_layout Enumerate
 
@@ -6555,15 +6551,7 @@ You can assume that the operations executed are always valid.
 swap(lst1,4)
 \family default
  will not be called.
- 
-\begin_inset space \hfill{}
-\end_inset
-
-[5]
-\end_layout
-
-\begin_layout Standard
-[SPLIT_HERE]
+ [5]
 \end_layout
 
 \end_deeper
@@ -6659,10 +6647,6 @@ State and explain a method to protect data at rest.
 \end_inset
 
 [1]
-\end_layout
-
-\begin_layout Standard
-[SPLIT_HERE]
 \end_layout
 
 \end_deeper
@@ -7336,10 +7320,6 @@ status open
  [2]
 \end_layout
 
-\begin_layout Standard
-[SPLIT_HERE]
-\end_layout
-
 \end_deeper
 \begin_layout Enumerate
 
@@ -7708,10 +7688,6 @@ status open
 \end_inset
 
 [2]
-\end_layout
-
-\begin_layout Standard
-[SPLIT_HERE]
 \end_layout
 
 \end_deeper
@@ -8097,10 +8073,6 @@ status open
  [3]
 \end_layout
 
-\begin_layout Standard
-[SPLIT_HERE]
-\end_layout
-
 \end_deeper
 \begin_layout Enumerate
 
@@ -8260,10 +8232,6 @@ methods
 \end_inset
 
 [2]
-\end_layout
-
-\begin_layout Standard
-[SPLIT_HERE]
 \end_layout
 
 \end_deeper

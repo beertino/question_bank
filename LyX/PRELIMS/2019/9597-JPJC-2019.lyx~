@@ -5230,10 +5230,6 @@ Simplify your decision table by removing redundancies.
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-[SPLIT_HERE]
-\end_layout
-
 \end_deeper
 \begin_layout Enumerate
 
@@ -5304,10 +5300,6 @@ two
 \end_inset
 
  [2]
-\end_layout
-
-\begin_layout Standard
-[SPLIT_HERE]
 \end_layout
 
 \end_deeper
@@ -5788,10 +5780,6 @@ Delete item from a queue.
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-[SPLIT_HERE]
-\end_layout
-
 \end_deeper
 \begin_layout Enumerate
 
@@ -6570,10 +6558,6 @@ Write an algorithm for a pre-order traversal of the binary search tree.
 \end_inset
 
 [4]
-\end_layout
-
-\begin_layout Standard
-[SPLIT_HERE]
 \end_layout
 
 \end_deeper

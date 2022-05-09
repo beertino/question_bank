@@ -70,7 +70,5050 @@
 \usepackage{babel}
 \begin{document}
 
-\begin{enumerate}\item \textbf{{[}ACJC/PRELIM/9569/2021/P1/Q1{]} }
+\begin{enumerate}\item \textbf{{[}DHS/PRELIM/9597/2019/P1/Q1{]} }
+
+The file \texttt{IOI19.TXT} stores the scoreboard of the 31st International
+Olympiad in Informatics (IOI) held in Baku, Azerbaijan from 4 to 11
+August 2019. The first line contains the header with contestant's
+rank, name, team (country), and overall score. The remaining lines
+contain the corresponding data. IOI 2019 eventually awarded 28 Gold,
+54 Silver and 81 Bronze medals. A country typically sends up to 4
+contestants to participate in IOI. 
+
+\subsection*{Task 1.1 }
+
+Determine the top 3 teams in the competition and display their country
+names as well as the number of Gold, Silver and Bronze medals attained.
+Teams which are tied will be ordered by their country names in alphabetical
+order and will share the same rank. 
+
+Sample output: 
+
+\texttt{Top 3 teams: }
+
+\texttt{1 ABC 4G }
+
+\texttt{2 DEF 3G1S }
+
+\texttt{2 GHI 3G1S }
+
+\texttt{4 JKL 2G1S1B }
+
+\texttt{4 MNO 2G1S1B }
+
+\subsection*{Evidence 1 }
+
+Program code. \hfill{}{[}9{]}
+
+\subsection*{Evidence 2 }
+
+Screenshot. \hfill{} {[}1{]}
+
+\subsection*{Task 1.2 }
+
+Write program code to prompt a user to enter a team name and display
+the results of its participants. Participants who did not receive
+a medal will be denoted with \texttt{P}. The program will terminate
+when a user enters the text string \texttt{'ZZZ'} (without the quotes). 
+
+Sample interaction: 
+
+\texttt{Enter team: SGP }
+
+\texttt{Eu-Shaun Leong G }
+
+\texttt{Lee Jeffrey Chun Hean S }
+
+\texttt{Benson Zhan Li Lin B }
+
+\texttt{Daniel Zhenghao Choo P }
+
+\texttt{Enter team: ZZZ }
+
+\texttt{Bye }
+
+\subsection*{Evidence 3}
+
+Program code. \hfill{} {[}4{]}
+
+\subsection*{Evidence 4 }
+
+Screenshot. \hfill{}{[}1{]}
+
+ \newpage 
+
+\item \textbf{{[}DHS/PRELIM/9597/2019/P1/Q2{]} }
+
+Dubbed first of its kind globally, the Singapore Quick Response Code
+(SGQR) is an infrastructure-light technology that will help to simplify
+QR e-payments in Singapore for both consumers and merchants. 
+
+The SGQR is based on the QR Code Specification for Payment System
+- Merchant-Presented Mode standard issued by EMVCo, which has the
+benefits of international interoperability, multi-tenancy of QR schemes
+and non-sensitive data presented for payments. 
+
+According to the specification, the parsed SGQR text string contains
+data items, with each data item adhering to the following structure:
+id, length, value. Two such data items are highlighted in bold in
+the following diagram: 
+\begin{center}
+\includegraphics[width=0.5\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-DHS-2019-P1-Q2}
+\par\end{center}
+
+Thus for the first data item \texttt{\textbf{000201}}, \texttt{00}
+is the id, \texttt{02} is the length, and \texttt{01} is the value. 
+
+And for the last data item \texttt{\textbf{630457B3}}, \texttt{63}
+is the id, \texttt{04} is the length, and \texttt{57B3} is the value. 
+
+The value \texttt{57B3} is also a hexdecimal number to verify the
+integrity of the SGQR data. 
+
+\subsection*{Task 2.1 }
+
+Write program code to extract the last data item of the SGQR stored
+in \texttt{SGQR.TXT}. For the example above, it will be the data item
+with id 63 and length 4 i.e. 630457B3. 
+
+\subsection*{Evidence 5 }
+
+Program code. \hfill{} {[}3{]}
+
+\subsection*{Evidence 6 }
+
+Screenshot. \hfill{} {[}1{]}
+
+\subsection*{Task 2.2 }
+
+Write a \texttt{hex2oct} function which takes in a hexadecimal number
+string and returns its equivalent octal number string. For example
+\texttt{hex2oct('A')} returns \texttt{'12'}. You may not use Python's
+built in \texttt{int(num, 8)}, \texttt{int(num, 16)}, \texttt{bin()},
+\texttt{oct()} or \texttt{hex()} functions. Use the hexadecimal number
+string \texttt{'4F63A'} to to test your program code. 
+
+Hint: One hexadecimal digit can be expressed as four binary digits
+and one octal digit can be expressed as three binary digits. 
+
+\subsection*{Evidence 7 }
+
+Program code. \hfill{}{[}5{]}
+
+\subsection*{Evidence 8 }
+
+Screenshot. \hfill{}{[}1{]}
+
+\subsection*{Task 2.3 }
+
+Write program code to perform input validation for a hexadecimal number
+string. Test your program with suitable test data. 
+
+\subsection*{Evidence 9 }
+
+Program code. \hfill{}{[}3{]}
+
+\subsection*{Evidence 10 }
+
+Screenshots. \hfill{}{[}2{]}
+
+ \newpage 
+
+\item \textbf{{[}DHS/PRELIM/9597/2019/P1/Q3{]} }
+
+From 2021 onwards, the Primary School Leaving Exam (PSLE) will be
+scored with wider bands, replacing the current T-scores. 
+
+Each subject will be scored using 8 bands known as Achievement Levels
+(AL), with AL 1 being the best score and AL 8 being the lowest score.
+The student\textquoteright s PSLE Score will be the sum of the four
+subject scores. The PSLE Score will range from 4 (best) to 32. 
+\begin{center}
+\includegraphics[width=0.5\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-DHS-2019-P1-Q3}
+\par\end{center}
+
+Secondary 1 posting will continue to be based on academic merit, using
+the PSLE Score. 
+
+Each student will submit a list of 6 schools in order of preference.
+If two students with the same score are being considered for the last
+place in a school, the following tie-breakers will be used: 
+\begin{itemize}
+\item Citizenship - priority given to Singapore Citizens (SC), then Singapore
+Permanent Residents (PR), then International Students (IS) 
+\item Choice order of schools - priority given to the student who indicates
+a certain school as a higher choice 
+\item Computerised balloting 
+\end{itemize}
+The file \texttt{PSLE21.txt} contains the application information
+of 400 Primary 6 students of a primary school with the following structure:
+
+\texttt{<StudentID>,<EnglishLanguageMark>,<MathematicsMark>,<ScienceMark>,<MotherTongueLangueMark>,<Citizenship>,<SchoolChoice1>,<SchoolChoice2>
+,<SchoolChoice3> }
+
+You may assume that in this school all students study subjects at
+the standard level. Also, all of them have made up their mind to only
+apply to 3 schools of their choice. If a student is unable to get
+admission to a school of their choice, they will be posted to SchoolD.
+
+It is decided to process and store the following application information
+about the student in 4 linked lists. Each linked list pertain to the
+vacancy positions of the 4 schools. Schools A, B and C have 120, 150
+and 80 available places. The data to be stored in each linked list
+node include: PSLE score, student ID, citizenship and the 3 school
+choices. 
+
+\subsection*{Task 3.1 }
+
+Write program code to read in and store the contents of the file \texttt{PSLE21.txt}
+in a dictionary \texttt{students} with key \texttt{StudentID} and
+value the computed PSLE score, citizenship and three school choices.
+Display the first 10 dictionary entries in \texttt{students}. 
+
+\subsection*{Evidence 11}
+
+Program code. \hfill{}{[}6{]}
+
+\subsection*{Evidence 12 }
+
+Screenshot for first 10 dictionary entries in \texttt{students}.\hfill{}
+{[}1{]}
+
+\subsection*{Task 3.2 }
+
+Using OOP where appropriate, write program code to declare and initialise
+the necessary classes. Insert the 400 students from the \texttt{students}
+dictionary in Task 3.1 to the appropriate linked lists in your main
+program driver code. 
+
+\subsection*{Evidence 13 }
+
+Program code. \hfill{}{[}16{]}
+
+\subsection*{Evidence 14 }
+
+Screenshots for the first 5 entries in each linked list. \hfill{}{[}4{]}
+
+\subsection*{Task 3.3 }
+
+Students \texttt{P351} and \texttt{P365} who were previously Singapore
+Permanent Residents (PR) have successfully become Singapore Citizens
+(SC). Write the necessary program code to update their citizenship
+status and new secondary 1 posting order. 
+
+\subsection*{Evidence 15}
+
+Program code. \hfill{}{[}5{]}
+
+\subsection*{Evidence 16 }
+
+Screenshots. \hfill{}{[}2{]}
+
+\subsection*{Task 3.4}
+
+Student \texttt{P286} has decided to emigrate to another country with
+his/her parents. Write the necessary program code to remove him/her
+from his/her existing allocation and perform the necessary adjustments
+to fill up the vacancy. 
+
+\subsection*{Evidence 17}
+
+Program code. \hfill{}{[}5{]}
+
+\subsection*{Evidence 18 }
+
+Screenshot.\hfill{} {[}1{]}
+
+ \newpage 
+
+\item \textbf{{[}DHS/PRELIM/9597/2019/P1/Q4{]} }
+
+The Viola-Jones object detection algorithm, named after two computer
+vision researchers Paul Viola and Michael Jones, uses integral images
+to detect the presence of facial features in an image efficiently. 
+
+An integral image (also known as a summed-area table) is the name
+of both a data structure and an algorithm used to obtain this data
+structure. It uses a quick and efficient way to calculate the sum
+of pixel values in a rectangular part of an image. 
+
+In an integral image, the value of each point is the sum of all pixels
+above and to the left, including the target pixel: 
+\begin{center}
+\includegraphics[width=0.5\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-DHS-2019-P1-Q4-1}
+\par\end{center}
+
+The integral image can be calculated in a single pass over the original
+image. This reduces summing the pixel intensities within a rectangle
+into only three operations with four numbers, regardless of rectangle
+size: 
+\begin{center}
+\includegraphics[width=0.25\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-DHS-2019-P1-Q4-2}
+\par\end{center}
+
+The sum of pixels in the rectangle ABCD can be derived from the values
+of points A, B, C, and D, using the formula $D-B-C+A$. It is easier
+to understand this formula visually:
+
+Note that subtracting both B and C means that the area defined with
+A has been subtracted twice, so we need to add it back again. 
+
+Thus $D-B-C+A=113-50-42+20=41$. 
+\begin{center}
+\includegraphics[width=0.5\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-DHS-2019-P1-Q4-3}
+\par\end{center}
+
+\subsection*{Task 4.1 }
+
+Write an \texttt{integral\_image()} function which reads in the data
+from the file \texttt{IMAGE1.IN} into a 2D array and computes and
+outputs the integral image to a file \texttt{IMAGE1.OUT} using the
+algorithm described above, and also displays the result of $D-B-C+A$
+to the screen. 
+
+\subsection*{Evidence 19}
+
+Program code. \hfill{} {[}13{]}
+
+\subsection*{Evidence 20}
+
+Screenshots of \texttt{IMAGE1.OUT} and output of $D-B-C+A$. \hfill{}{[}2{]}
+
+\subsection*{Task 4.2}
+
+Write a \texttt{magic()} function which is a generalisation of your
+\texttt{integral\_image()} function which will work for any $m\times n$
+rectangular 2D array and any rectangle ABCD.
+
+Programmatically randomise your image with suitable values ($m,n\geq8$)
+in \texttt{IMAGE2.IN} and work your magic on this pseudo-randomly
+generated file to produce \texttt{IMAGE2.OUT} and the updated computed
+value of $D-B-C+A$. 
+
+\subsection*{Evidence 21}
+
+Program code. \hfill{}{[}13{]}
+
+\subsection*{Evidence 22 }
+
+Screenshots of \texttt{IMAGE2.OUT} and output of $D-B-C+A$. \hfill{}{[}2{]}
+
+ \newpage 
+
+\item \textbf{{[}DHS/PRELIM/9597/2019/P2/Q1{]} }
+
+The following Gantt chart shows the key tasks involved in a data science
+project for a product recommendation engine based on customers' past
+purchase patterns.
+\noindent \begin{center}
+\begin{tabular}{|c|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline 
+AID & Activity & \multicolumn{21}{c|}{Week}\tabularnewline
+\hline 
+A & Understand the problem & X & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+B & Review with team &  &  & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+C & Make problem statement &  &  & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+D & Define scope of work &  &  & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+E & Identify suitable algorithms &  &  &  & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+F & Collect data &  &  & X & X & X & X & X & X &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+G & Clean data &  &  & X & X & X & X & X & X &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+H & Exploratory data analysis &  &  &  &  & X & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+I & Develop use cases &  &  &  &  &  & X & X &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+J & Present use cases &  &  &  &  &  &  &  & X &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+K & Analyse full data &  &  &  &  &  &  &  &  & X & X & X &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+L & Develop proof of concept &  &  &  &  &  &  &  &  &  &  &  & X & X & X &  &  &  &  &  &  & \tabularnewline
+\hline 
+M & Get customer approval &  &  &  &  &  &  &  &  &  &  &  &  &  &  & X &  &  &  &  &  & \tabularnewline
+\hline 
+N & Build final models &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & X & X & X &  &  & \tabularnewline
+\hline 
+O & Deploy models &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & X & X & \tabularnewline
+\hline 
+P & Sign off &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & X\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+A project manager often uses both PERT chart and Gantt chart to illustrate
+and manage a project workflow. 
+\begin{enumerate}
+\item Give one benefit and one limitation of using a Gantt chart to depict
+a project workflow?\hfill{} {[}2{]}
+\item {}
+\begin{enumerate}
+\item Construct a PERT chart to depict the project work flow.\hfill{} {[}4{]}
+\item State the critical path and the minimum project completion time. \hfill{}{[}2{]}
+\item Explain and give an example of a dependent activity.\hfill{} {[}2{]}
+\item Explain and give an example of a concurrent activity. \hfill{}{[}2{]}
+\item Indicate in your PERT chart and justify a suitable dummy activity.
+\hfill{}{[}2{]}
+\item Give an example to show your understanding of float or slack time.\hfill{}
+{[}2{]}
+\end{enumerate}
+\item The project manager needs to include a documentation activity and
+a cybersecurity activity to the project. Justify the significance
+of these activities and show how these can be included in your PERT
+chart. Explain any implications to the critical path and projection
+completion time. \hfill{}{[}5{]}
+\item The project team would inadvertently have access to some restricted
+customer purchase information. Give two ethical considerations related
+to the privacy of data and suggest possible mitigation measures.\hfill{}
+{[}4{]}
+\end{enumerate}
+The following shows sample interaction snippets of an interactive
+exploratory data analysis session. 
+\begin{center}
+\includegraphics[width=0.65\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-DHS-2019-P2-Q1-1}
+\par\end{center}
+
+\begin{center}
+\includegraphics[width=0.65\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-DHS-2019-P2-Q1-2}
+\par\end{center}
+\begin{enumerate}
+\item[(e)]  {}
+\begin{enumerate}
+\item State the interface used and justify why this is the most appropriate
+form of user interaction. \hfill{}{[}3{]}
+\item The data analysis team is deciding on whether to perform the analysis
+online in a cloud infrastructure or to process all data on a local
+computer. What are two factors to consider in arriving at this decision?
+\hfill{}{[}2{]}
+\item Evaluate the pros and cons of each approach and make a recommendation
+with reason(s) to the project team. \hfill{}{[}5{]}
+\end{enumerate}
+\item[(f)]  Given the relationship: bit rate = baud rate {*} voltage (\# bits
+per signal)
+\begin{enumerate}
+\item Explain the difference between baud rate and bit rate. \hfill{}{[}2{]}
+\item The following voltage levels expressed in volts are chosen to encode
+bits:
+
+-6.0, -4.5, -3.0, -1.5, +1.5, +3.0, +4.5, +6.0
+
+How many bits represent these voltages?\hfill{} {[}1{]}
+\item For the above voltages, write down one possible set of corresponding
+bit patterns.\hfill{} {[}1{]}
+\item If the baud rate of the line is 900 baud what is the bit rate for
+the voltage levels?\hfill{} {[}1{]}
+\end{enumerate}
+
+ \newpage 
+
+\end{enumerate}
+\item \textbf{{[}DHS/PRELIM/9597/2019/P2/Q2{]} }
+\begin{enumerate}
+\item Given an array of integers, devise an algorithm for a function \texttt{FindLargest}
+that arranges them in order to return the largest possible integer.
+For example, given {[}10, 7, 76, 415{]}, your algorithm should return
+77641510.\hfill{} {[}5{]}
+\item Given an array of integers, devise an algorithm for a function \texttt{MultiplyNotMe}
+that returns a new array such that each element at index i of the
+new array is the product of all the numbers in the original array
+except the one at i. For example, given {[}1, 2, 3, 4, 5{]}, your
+algorithm should return {[}120, 60, 40, 30, 23{]}.\hfill{} {[}5{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}DHS/PRELIM/9597/2019/P2/Q3{]} }
+\begin{enumerate}
+\item Given a binary search tree of positive integers, devise an algorithm
+\texttt{FindFloorCeiling} to find the floor and ceiling of a given
+positive integer k. The floor Is the highest element in the tree less
+than or equal to an integer, while the ceiling is the lowest element
+in the tree greater than or equal to an integer. If either value does
+not exist, return -1. \hfill{}{[}5{]}
+\item Given a sorted array, devise an algorithm \texttt{MakeBalancedBST}
+to convert it into a height-balanced binary search tree. \hfill{}{[}5{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}DHS/PRELIM/9597/2019/P2/Q4{]} }
+
+Blackjack is a two-player card game whose rules are as follows:
+\begin{itemize}
+\item The player and then the dealer are each given two cards. 
+\item The player can then \textquotedbl hit\textquotedbl , or ask for
+arbitrarily many additional cards, so long as their total does not
+exceed 21. 
+\item The dealer must then hit if their total is 16 or lower, otherwise
+pass. 
+\item Finally, the two compare totals, and the one with the greatest sum
+not exceeding 21 is the winner.
+\end{itemize}
+For this problem, cards values are counted as follows: each card between
+2 and 10 counts as their face value, face cards count as 10, and aces
+count as 1. 
+\begin{enumerate}
+\item Express the above blackjack game flow using a program flowchart. \hfill{}{[}4{]}
+\item Given perfect knowledge of the sequence of cards in the deck, devise
+an efficient algorithm that maximises the player's score (i.e. wins
+minus losses). \hfill{} {[}8{]}
+\item Evaluate the efficiency of your algorithm for part (b). \hfill{}{[}3{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}DHS/PRELIM/9597/2019/P2/Q5{]} }
+
+A role playing game (RPG) uses object-oriented programming (OOP) to
+store its game characters' data. A character, either a hero or a monster,
+has a name, health, magic points and inventory. Each character also
+has a \texttt{take\_damage()} and a \texttt{display()} method. 
+
+The game also has a special type of character, a dragon, which also
+has additional data \texttt{airSpeed} and \texttt{breathType}.
+\begin{enumerate}
+\item Draw a class diagram showing the relationship between the different
+game characters. \hfill{}{[}4{]}
+\item Using appropriate examples, explain the following terms:
+\begin{enumerate}
+\item encapsulation
+\item inheritance
+\item polymorphism \hfill{}{[}6{]}
+\end{enumerate}
+\item Using suitable examples, explain why OOP is a preferred programming
+paradigm in game development than a(n) imperative/procedural one.
+\hfill{} {[}2{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}DHS/PRELIM/9597/2019/P2/Q6{]} }
+
+BuildingBloCS is Singapore's first/only/largest by Computing students
+for Computing students and beyond national Computing education outreach
+programme. In 2019, it comprises a series of workshops, talks, games,
+projects showcase, programming quizzes, lucky draws and more (media
+and entertainment very important). 
+
+The organisers would like to apply what they learned in Computing
+to manage workshop information using a relational database. 
+\begin{itemize}
+\item Each participant can register for one or more workshops 
+\item Each workshop is conducted by one or more instructors 
+\item Each workshop is also facilitated by one or more facilitators 
+\end{itemize}
+Due to Personal Data Protection Act (PDPA), it is decided to use an
+alternative unique identifier as the primary key instead of collecting
+participants' NRICs/FINs.
+
+The normalised design requires a number of tables.
+\begin{enumerate}
+\item Draw an Entitiy-Relationship (E-R) diagram that shows these tables
+and the relationships between them. \hfill{} {[}4{]}
+\item Suggest and justify a suitable primary key candidate other than NRIC/FIN.
+\hfill{} {[}2{]}
+\item A table description can be expressed as:
+
+\texttt{TableName(Attribute1, Attribute2, Attribute3, \dots )}
+
+The primary key is indicated by underlining one or more attributes.
+
+Derive the table descriptions for the tables. \hfill{}{[}6{]}
+\item There are some fields with missing or null values. Explain how these
+arise and how a Database Management System (DBMS) may provide facilities
+to ensure the information is appropriately managed. \hfill{}{[}3{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}HCI/PRELIM/9597/2019/P1/Q1{]} }
+
+The manager of a private carpark wants to process the daily data of
+people using the carpark. The carpark is open from 8am to 11pm and
+the carpark charge is as follows:
+\begin{itemize}
+\item Before 5pm: \$1.50 per hour or part thereof 
+\item After 5pm, \$3.00 per entry regardless of the duration
+\end{itemize}
+However, if a car enters before 5pm and leaves after 5pm, the charge
+involves both rules. For example, if the car stays in the carpark
+from 2.45pm to 6.30pm, it is broken down to 2 hours 15 minutes before
+5pm and 1 hour 30 minutes after 5pm. Hence the charge will be \$1.50
+{*} 3 + \$3.00 = \$7.50. 
+
+Each day the carpark electronic system generates a file\texttt{ CARPARK.txt}.
+Each record in the file has the following format:
+\noindent \begin{center}
+\texttt{<CARPLATE NUMBER>,<START TIME>,<END TIME>}
+\par\end{center}
+
+For example, \texttt{SLX2315A,0940,1415} means that a car with car
+plate number SLX2315A entered the carpark at 9.40am and left at 2.15pm. 
+
+You are \textbf{not} allowed to use any built-in functions for time
+processing. 
+
+\subsection*{Task 1.1 }
+
+Write program code for the \texttt{Price} function using the following
+specification:
+\noindent \begin{center}
+\texttt{FUNCTION Price (start: STRING, end: STRING) : FLOAT}
+\par\end{center}
+
+The function has two string parameters \texttt{start}, \texttt{end}
+which refers to the start and end time when the car parked. The function
+returns the carpark charge as a float. 
+
+\subsection*{Evidence 1 }
+
+Your program code.\hfill{} {[}5{]}
+
+\subsection*{Task 1.2 }
+
+Write a program code to perform the following task for the manager:
+\begin{itemize}
+\item Read data from \texttt{CARPARK.txt }
+\item Write all the car plate numbers and corresponding carpark charges
+to another file \texttt{CHARGE.txt}, in the following format: 
+\noindent \begin{center}
+\texttt{<CARPLATE NUMBER>,<CARPARK CHARGE>}
+\par\end{center}
+
+\noindent \begin{center}
+\texttt{<CARPLATE NUMBER>,<CARPARK CHARGE>}
+\par\end{center}
+\item Output the total charges for the day
+\end{itemize}
+
+\subsection*{Evidence 2 }
+
+Your program code.\hfill{} {[}7{]}
+
+\subsection*{Evidence 3}
+
+One screenshot showing the program output and contents of \texttt{CHARGE.txt}
+from running the program.\hfill{} {[}3{]}
+
+ \newpage 
+
+\item \textbf{{[}HCI/PRELIM/9597/2019/P1/Q2{]} }
+
+When a list of integers has repeated numbers, the searching and sorting
+algorithms can be different. The task is to perform an insertion sort
+before a binary search is executed. 
+
+\subsection*{Task 2.1 }
+
+Write the program code for a procedure to implement insertion sort
+in ascending order. The input parameter is a list of integers which
+may have repeated numbers. 
+
+\subsection*{Evidence 4}
+
+Your program code.\hfill{} {[}4{]}
+
+\subsection*{Task 2.2 }
+
+Write the program code for a procedure to implement binary search
+for a targeted integer. The input parameter is an ordered list of
+integers which may have repeated numbers. The procedure outputs all
+the indices at which the target appears, or \texttt{\textminus 1}
+if the target is not found. 
+
+\subsection*{Evidence 5 }
+
+Your program code. \hfill{}{[}9{]}
+
+\subsection*{Task 2.3 }
+
+The file \texttt{NUMBERS.txt} contains one integer at each line. Write
+a program that uses the procedures in previous tasks and performs
+the following task: 
+\begin{itemize}
+\item Reads the text file \texttt{NUMBERS.txt}, 
+\item Perform insertion sort, and outputs the list of integers in a row, 
+\item Prompts the user to provide a target to be searched, 
+\item Perform a binary search and output an appropriate message
+\end{itemize}
+
+\subsection*{Evidence 6 }
+
+Your program code.\hfill{} {[}4{]}
+
+\subsection*{Task 2.4 }
+
+Draw up \textbf{three} suitable tests and provide screenshot evidence
+for your testing. 
+
+\subsection*{Evidence 7 }
+
+Annotated screenshots for each test data run. \hfill{}{[}3{]}
+
+ \newpage 
+
+\item \textbf{{[}HCI/PRELIM/9597/2019/P1/Q3{]} }
+
+The examinations department of a school needs to keep long-term records
+of the overall examination achievements of its students.
+
+Students at the school have two main choices. Firstly, they can take
+a variety of subjects and achieve an Academic Diploma. A diploma gives
+them the opportunity to go to university. Secondly they can achieve
+a Skills Certificate where they focus on one particular area (such
+as IT). This gives them the necessary skills to start a career in
+their chosen area.
+
+The examinations department decides to store the following data:
+\begin{itemize}
+\item \texttt{StudID} is used to uniquely identify a particular student
+and is six digits. The first four digits represent the year that the
+student started at the school and the last two digits are used to
+make the \texttt{StudID} unique e.g. 201804.
+\item \texttt{Name} is the name of the student and is at most 30 characters.
+\item \texttt{StudType} is the type of student and can have the values \textquoteleft D\textquoteright{}
+or \textquoteleft S\textquoteright .
+\item \texttt{SkillArea} is text and gives the area that the student acquired
+skills in. It can have one of three values: \textquoteleft IT\textquoteright ,
+\textquoteleft Business\textquoteright{} or \textquoteleft Accountancy\textquoteright .
+\item \texttt{NoOfSub} is the number of subjects studied by those taking
+the Diploma. 
+\item \texttt{Result} is a single character and is used to indicate the
+overall grade awarded. For those students who took the Skills Certificate
+the grades could be Distinction (D), Merit (M), Pass (P) or Fail (F).
+For those who took the Diploma the grade could be one of the letters
+A to F. Grade A to E are passes. Grade F is a fail.
+\end{itemize}
+The program design for a solution to this problem is to be implemented
+with object-oriented programming with the following three classes:
+\begin{center}
+\includegraphics[width=0.5\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-HCI-2019-P1-Q4-1}
+\par\end{center}
+
+\subsection*{Task 3.1 }
+
+Write program code to define the classes \texttt{Student}, \texttt{Diploma}
+and \texttt{SkillsCert}.
+
+\subsection*{Evidence 8}
+
+Program code for the three classes in Task 3.1. \hfill{}{[}6{]}
+
+Assume that a file, \texttt{STUDENT.txt}, which contains details of
+each student, has been created for you. The format of each student
+record is as follows: 
+\noindent \begin{center}
+\texttt{<StudID>|<Name>|<StudType>|<SkillArea>|<NoOfSub>|<Result>}
+\par\end{center}
+\begin{itemize}
+\item \texttt{SkillArea} would have the value \textquoteleft Diploma\textquoteright{}
+if the student is taking a Diploma. 
+\item \texttt{NoOfSub} would have the value 0 for those taking the Skills
+Certificate.
+\item \texttt{Result} is left blank initially. 
+\end{itemize}
+
+\subsection*{Task 3.2 }
+
+Write a module, \texttt{ENTER\_RESULT}, which, when called, will ask
+the user for a particular \texttt{StudID} whose result is to be entered.
+Using the student ID that has been input, the corresponding student
+record will be located in \texttt{STUDENT.txt}. The student data will
+be displayed to the user. The user will be allowed to enter the result
+for the student. The amended record will be stored back in \texttt{STUDENT.txt}. 
+
+The student ID and result that have been input should be validated. 
+
+If the \texttt{StudID} does not exist, the user will be given an appropriate
+message.
+
+\textbf{You are expected to make use of the classes you designed in
+Task 3.1}.
+
+Run the program \textbf{three} times. Use the following data input,
+and produce a screenshot for each. 
+\noindent \begin{center}
+\begin{tabular}{cc}
+StudID & Result\tabularnewline
+\hline 
+\texttt{201701} & \texttt{A}\tabularnewline
+\texttt{201801} & \texttt{B}\tabularnewline
+\texttt{201901} & \texttt{M}\tabularnewline
+\end{tabular}
+\par\end{center}
+
+\subsection*{Evidence 9}
+
+Program code for Task 3.2 \hfill{}{[}8{]}
+
+\subsection*{Evidence 10 }
+
+Three screenshots showing the test runs and final contents of \texttt{STUDENT.txt}
+to show evidence that successful updates have been carried out. \hfill{}{[}2{]}
+
+\subsection*{Task 3.3}
+
+Implement code as specified below.
+
+A report should be generated and displayed which will list the students
+whose result has still not been entered into the \texttt{STUDENT.txt}
+file. The report will list, for each different starting year: 
+\begin{itemize}
+\item \texttt{StudID} 
+\item \texttt{Name} 
+\item \texttt{StudType}
+\item \texttt{SkillArea} or \texttt{NoOfSub} depending upon the value of
+\texttt{StudType} 
+\end{itemize}
+In addition the number of each student type for each year will also
+be output.
+
+A sample output is shown below.
+\noindent \begin{center}
+\begin{tabular}{llll}
+Year: 2017 &  &  & \tabularnewline
+\hline 
+\texttt{201715} & FLoo & D & 6\tabularnewline
+\texttt{201708} & BLang & D & 5\tabularnewline
+\texttt{201710} & LArms & S & IT\tabularnewline
+Diplomas: & 2 &  & \tabularnewline
+Skills: & 1 &  & \tabularnewline
+\end{tabular}
+\par\end{center}
+
+\noindent \begin{center}
+\begin{tabular}{llll}
+Year: 2018 &  &  & \tabularnewline
+\hline 
+\texttt{201813} & FJean & D & 7\tabularnewline
+\texttt{201817} & ABright & D & 7\tabularnewline
+Diplomas: & 2 &  & \tabularnewline
+Skills: & 0 &  & \tabularnewline
+\end{tabular}
+\par\end{center}
+
+\noindent \begin{center}
+\begin{tabular}{llll}
+Year: 2019 &  &  & \tabularnewline
+\hline 
+\texttt{201905} & Alfie & S & Business\tabularnewline
+\texttt{201903} & GKoh & D & 8\tabularnewline
+Diplomas: & 1 &  & \tabularnewline
+Skills: & 1 &  & \tabularnewline
+\end{tabular}
+\par\end{center}
+
+\subsection*{Evidence 11 }
+
+Program code for Task 3.3. \hfill{}{[}8{]}
+
+\subsection*{Evidence 12 }
+
+Screenshot of the output produced.\hfill{} {[}2{]}
+
+ \newpage 
+
+\item \textbf{{[}HCI/PRELIM/9597/2019/P1/Q4{]} }
+
+A game maintains the player IDs and their scores in an ordered linked
+list. The player with the highest score is stored at the first node
+while the player with the lowest score is stored at the last node. 
+
+The program to implement the linked list abstract data type will use
+two classes, \texttt{ListNode} and \texttt{LinkedList}. 
+
+The \texttt{ListNode} class has the following properties:
+\noindent \begin{center}
+\begin{tabular}{|l|l|l|}
+\hline 
+\texttt{\hspace{0.01\columnwidth}}Identifier & \texttt{\hspace{0.01\columnwidth}}Data Type & \texttt{\hspace{0.05\columnwidth}}Description\tabularnewline
+\hline 
+\texttt{ID} & \texttt{STRING} & The ID of the player. All IDs are unique and have the format \texttt{L999}
+where \texttt{L} is any uppercase letter and \texttt{9} is a digit.\tabularnewline
+\hline 
+\texttt{Score} & \texttt{INTEGER} & The score of the player.\tabularnewline
+\hline 
+\texttt{Ptr} & \texttt{INTEGER} & The pointer to the next node.\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+The \texttt{LinkedList} class has the following properties: 
+\noindent \begin{center}
+\begin{tabular}{|l|l|l|}
+\hline 
+\texttt{\hspace{0.01\columnwidth}}Identifier & \texttt{\hspace{0.01\columnwidth}}Data Type & \texttt{\hspace{0.05\columnwidth}}Description\tabularnewline
+\hline 
+\texttt{Node} & \texttt{ARRAY{[}1..20{]} OF ListNode} & 1-D array stores the nodes that make the ordered linked list. The
+unused nodes are linked together into a free list.\tabularnewline
+\hline 
+\texttt{HeadPtr} & \texttt{INTEGER} & Pointer to the first node in the ordered list.\tabularnewline
+\hline 
+\texttt{FreePtr} & \texttt{INTEGER} & Pointer to the first node in the free list.\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+The following diagram shows an example of a linked list object. This
+example list consists of three nodes, linked in descending order of
+the game scores. The unused nodes are linked to form a free list.
+\begin{center}
+\includegraphics[width=0.5\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-HCI-2019-P1-Q4-1}
+\par\end{center}
+
+\subsection*{Task 4.1}
+
+Write program code for the classes \texttt{ListNode} and \texttt{Linkedlist}
+to declare all the required variables and create the initial empty
+linked list which contains all 20 nodes.
+
+Add statement(s) to initialise the empty ordered linked list.
+
+\subsection*{Evidence 13 }
+
+Your program code for Task 4.1. \hfill{}{[}6{]}
+
+\subsection*{Task 4.2 }
+
+Write code to implement a method \texttt{AddInOrder} that will add
+a new node with player\textquoteright s ID and score into the ordered
+linked list in descending order of the scores. Node added to the ordered
+linked list should be taken from the free list. 
+
+Assume that all players have different scores.
+
+\subsection*{Evidence 14 }
+
+Your program code for Task 4.2.\hfill{} {[}7{]}
+
+\subsection*{Task 4.3 }
+
+Write a procedure \texttt{OutputData} which displays the value of
+\texttt{HeadPtr}, the value of \texttt{FreePtr} and the contents of
+\texttt{Node} array in index order.
+
+\subsection*{Evidence 15 }
+
+Your program code for Task 4.3.\hfill{} {[}3{]}
+
+The files \texttt{SCORES1.txt} and \texttt{SCORES2.txt} contain the
+game data. Each entry has the following format: \texttt{<Player ID>,<Score>} 
+
+\subsection*{Task 4.4 }
+
+Write a main program to:
+\begin{itemize}
+\item Create a linked list object 
+\item Read all player data from \texttt{SCORES1.txt} and add them to the
+linked list by calling procedure \texttt{AddInOrder}. 
+\item Your program will then call procedure \texttt{OutputData}.
+\end{itemize}
+
+\subsection*{Evidence 16 }
+
+Screenshot showing the output from running the program in Task 4.4
+using \texttt{SCORES1.txt} file. \hfill{}{[}2{]}
+
+\subsection*{Task 4.5 }
+
+Amend your \texttt{AddInOrder} program code in Task 4.2 so that if
+two or more players have the same score, they are stored in alphabetical
+player ID order. Use the file \texttt{SCORES2.txt} to test your program
+code.
+
+The following diagram shows an example of an ordered linked list where
+players \texttt{C412} and \texttt{B321} have the same game score of
+\texttt{13} points. 
+\begin{center}
+\includegraphics[width=0.5\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-HCI-2019-P1-Q4-1}
+\par\end{center}
+
+\subsection*{Evidence 17 }
+
+The amended program code for method \texttt{AddInOrder}. \hfill{}{[}4{]}
+
+\subsection*{Evidence 18}
+
+Screenshot showing the output from running the program in Task 4.4
+using \texttt{SCORES2.txt} file. \hfill{}{[}2{]}
+
+\subsection*{Task 4.6 }
+
+A method \texttt{DisplayByRank} is to be added, which outputs all
+player IDs and their scores stored in the ordered linked list in rank
+order. If multiple players record the same score, they will have the
+same rank. 
+
+Below is a sample of screen output:
+\noindent \begin{center}
+\begin{tabular}{lll}
+\texttt{Rank} & \texttt{Player ID} & \texttt{Score}\tabularnewline
+\texttt{1} & \texttt{F111} & \texttt{45}\tabularnewline
+\texttt{1} & \texttt{G333} & \texttt{45}\tabularnewline
+\texttt{1} & \texttt{Z333} & \texttt{45}\tabularnewline
+\texttt{4} & \texttt{C333} & \texttt{38}\tabularnewline
+\texttt{5} & \texttt{B111} & \texttt{25}\tabularnewline
+\texttt{5} & \texttt{Q333} & \texttt{25}\tabularnewline
+\texttt{7} & \texttt{E333} & \texttt{12}\tabularnewline
+\end{tabular}
+\par\end{center}
+
+Write program code to:
+\begin{itemize}
+\item Implement this method 
+\item Test the program code with the data from Task 4.5.
+\end{itemize}
+
+\subsection*{Evidence 19 }
+
+Program code for Task 4.6. \hfill{}{[}7{]}
+
+\subsection*{Evidence 20}
+
+Screenshot of the program output.\hfill{} {[}2{]}
+
+\subsection*{Task 4.7 }
+
+Write a recursive \texttt{ReverseTraversal} procedure that will traverse
+the linked list in reverse order and output players\textquoteright{}
+IDs and scores in ascending scores order.
+
+Include a call to the procedure from your main program.
+
+Test the program code with the data from Task 4.5.
+
+\subsection*{Evidence 21 }
+
+Your program code for Task 4.7.\hfill{}{[}4{]}
+
+\subsection*{Evidence 22}
+
+Screenshot showing the program execution to test the \texttt{ReverseTraversal}
+method. \hfill{}{[}2{]}
+
+ \newpage 
+
+\item \textbf{{[}HCI/PRELIM/9597/2019/P1/Q8{]} }
+
+Using the following numbers as an example, show how the numbers can
+be sorted in ascending order using a \textbf{quick sort}. For each
+pass, show the numbers swapped and the sub lists after splitting. 
+\noindent \begin{center}
+435, 646, 344, 54, 23, 98
+\par\end{center}
+
+\noindent \begin{flushleft}
+\hfill{}{[}7{]}
+\par\end{flushleft}
+
+ \newpage 
+
+\item \textbf{{[}HCI/PRELIM/9597/2019/P2/Q1{]} }
+
+A bookshop wishes to expand its business from a brick and mortar shop
+to allow for online sales. A software company has been engaged by
+the bookshop to develop the online sales system. 
+\begin{enumerate}
+\item The analyst decides to adopt a top-down approach to the design. What
+are the advantages of using top-down design to solve complex problems?\hfill{}
+{[}3{]} 
+\end{enumerate}
+The project manager decides to use some project management tool in
+the planning of the project. Below is the list of activities along
+with their required time for completion.
+\noindent \begin{center}
+\begin{tabular}{|c|c|c|}
+\hline 
+Activity & Expected completion time (day) & Preceded by\tabularnewline
+\hline 
+\hline 
+A & 2 & -\tabularnewline
+\hline 
+B & 3 & A\tabularnewline
+\hline 
+C & 1 & B\tabularnewline
+\hline 
+D & 3 & B\tabularnewline
+\hline 
+E & 4 & C\tabularnewline
+\hline 
+F & 3 & D\tabularnewline
+\hline 
+G & 2 & A\tabularnewline
+\hline 
+H & 5 & G\tabularnewline
+\hline 
+I & 3 & E, F, H\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+\begin{enumerate}
+\item[(b)]  Construct the PERT chart for the activities, indicating the earliest
+start time and latest start time of each activity. \hfill{}{[}3{]}
+\item[(c)]  Which tasks are on the critical path of the Program Evaluation and
+Review Technique (PERT) chart? \hfill{}{[}1{]}
+\item[(d)]  What is the slack time for Task C and G? \hfill{}{[}2{]}
+\item[(e)]  The person working on Task C tells the project manager he cannot
+start work until one day after the scheduled starting date. What impact
+would this have on the completion date of the project? Why?\hfill{}
+{[}2{]}
+\item[(f)]  Task A will be delayed by 2 days for some reason. If the project
+manager still wants to finish the project within the original time
+frame, he will need to shorten the time for one or more of the tasks.
+What steps can he take to reduce the number of days allocated to a
+task? \hfill{}{[}2{]}
+\item[(g)]  The project manager decides to reduce the time needed for Tasks
+D and F by one day each. How effective will this reduction be in achieving
+his aim of maintaining the original finish time for the project? What
+can he do for it to be more effective?\hfill{} {[}2{]}
+\item[(h)]  Produce a Gantt chart based on the above information. \hfill{}{[}2{]}
+\item[(i)]  Give \textbf{one} reason why a Gantt chart may be preferred over
+a PERT chart.\hfill{} {[}1{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}HCI/PRELIM/9597/2019/P2/Q2{]} }
+
+Customers can view a catalogue of books and order from its website.
+Payment is made by the customer forwarding their credit card details,
+which are processed immediately. Details of the orders are matched
+against the stock file to check for availability of items before packing
+lists are produced and sent to the packing department.
+\begin{enumerate}
+\item Draw a data flow diagram to explain the flow of data through this
+system.\hfill{} {[}6{]}
+\item Using examples from your DFD, explain how the diagram helps to inform
+a database solution for the new computerized system.\hfill{} {[}4{]}
+\item Give \textbf{two} parts of the database design that is not possible
+from the DFD. \hfill{}{[}2{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}HCI/PRELIM/9597/2019/P2/Q3{]} }
+\begin{enumerate}
+\item Explain the difference between synchronous and asynchronous data transmission.\hfill{}
+{[}2{]}
+\item Describe the three modes of data transmission: simplex, half-duplex
+and full-duplex. \hfill{}{[}3{]}
+\item Give \textbf{two} advantages of packet switching over circuit switching.\hfill{}
+{[}2{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}HCI/PRELIM/9597/2019/P2/Q4{]} }
+
+Sing Airline Company uses a website to provide ticket purchasing services
+to customers. 
+\begin{enumerate}
+\item Customers are required to fill up a form with their name, passport
+number, hand phone number and flight information. Give \textbf{two}
+examples of data validation and \textbf{one} example of data verification
+for the company to validate the customers\textquoteright{} data. \hfill{}
+{[}3{]}
+\item Explain the purpose of using client and server scripting and give
+\textbf{one} scripting language for each. \hfill{} {[}4{]}
+\item The company uses a web server to handle the customers\textquoteright{}
+orders. Describe \textbf{two} possible threats that the web server
+may encounter and suggest \textbf{one} strategy for each threat. \hfill{}
+{[}4{]}
+\item Due to large amount of information to maintain and protect, the company
+is planning to use cloud computing to store and access data. Give
+\textbf{one} advantage and \textbf{one} disadvantage of using this
+technology. \hfill{}{[}2{]}
+\item The company\textquoteright s staff handbook must include rules and
+regulations for IT staff. Suggest \textbf{two} code of conduct for
+the company. \hfill{} {[}2{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}HCI/PRELIM/9597/2019/P2/Q5{]} }
+
+Below is the manner in which the school library will process its overdue
+list:
+\begin{itemize}
+\item If a book is overdue then a reminder letter would normally be sent.
+\item However, if the book is more than 5 days overdue, 2 further checks
+are made to see whether the reminder should be replaced by a warning
+letter:
+\begin{itemize}
+\item If the student has had a previous warning letter the student will
+not only receive the warning letter but, in addition, a copy will
+be sent to the parents of the student.
+\item If the student has more than 4 books overdue, but no previous warning
+letter, the reminder letter is replaced by a warning letter.
+\end{itemize}
+\end{itemize}
+\begin{enumerate}
+\item Create a decision table showing all the possible outcomes and results.
+\hfill{}{[}4{]}
+\item Simplify your decision table by removing redundancies. \hfill{}{[}2{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}HCI/PRELIM/9597/2019/P2/Q6{]} }
+
+A company manages subscriptions to thirty different magazines. Customers
+can subscribe to receive one or more of the magazines.
+\begin{itemize}
+\item Each magazine has a category such as Gardening or Current Affairs. 
+\item Each magazine has a subscription rate, which is the cost of subscribing
+to receive the magazine for 12 months.
+\end{itemize}
+Details of the subscriptions are to be stored in a flat file. 
+
+\texttt{Magazine(MagazineID, MagazineName, Category, SubscriptionRate,
+CustomerID, StartDate, EndDate, CustomerName, Address, PostCode, TelephoneNumber) }
+\begin{enumerate}
+\item What is the difference between a flat file and a relational database?
+\hfill{} {[}2{]}
+\item Identify and state \textbf{three} potential problems with the flat
+file implementation for the magazine subscriptions. \hfill{}{[}3{]}
+\item Improved on the flat file and determine the relations needed in the
+relational database for the above. Explain the purpose of each relation.
+\hfill{}{[}6{]}
+\item In what way can your database solve the three problems in \textbf{part
+(b)}. \hfill{} {[}3{]}
+\item Draw the Entity-Relationship diagram between the relations you have
+in \textbf{part (c)}. Explain your answer. \hfill{}{[}6{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}HCI/PRELIM/9597/2019/P2/Q7{]} }
+
+The algebraic expression \texttt{X = 2 {*} A + B} could be held in
+a binary tree as:
+\begin{center}
+\includegraphics[width=0.5\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-HCI-2019-P2-Q7}
+\par\end{center}
+
+This tree can then be read using the following algorithm:
+
+process left subtree 
+
+process right subtree 
+
+read root node
+
+This will give \texttt{X 2 A {*} B + =} which is the reverse Polish
+form of the expression.
+\begin{enumerate}
+\item Using diagrams to help the explanation, or otherwise, show how a computer
+can use a stack to evaluate the expression from its reverse Polish
+form. \hfill{}{[}4{]}
+\item The tree in the example could be stored in an array called TREE.
+\noindent \begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+TREE{[}9{]} &  &  & \tabularnewline
+\hline 
+TREE{[}8{]} &  & -1 & \tabularnewline
+\hline 
+TREE{[}7{]} &  & 5 & \tabularnewline
+\hline 
+TREE{[}6{]} &  &  & \tabularnewline
+\hline 
+TREE{[}5{]} & 2 &  & \tabularnewline
+\hline 
+TREE{[}4{]} &  &  & \tabularnewline
+\hline 
+TREE{[}3{]} & X &  & \tabularnewline
+\hline 
+TREE{[}2{]} &  &  & \tabularnewline
+\hline 
+TREE{[}1{]} & B &  & \tabularnewline
+\hline 
+TREE{[}0{]} & = & 3 & 4\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+The values in each location in the array are: node value; left pointer;
+right pointer. Where no left or right pointer exists the rouge value
+-1 is used. Copy and complete the array for the example. (Note that,
+since in the example there are only seven nodes, three rows of the
+array will be unused.) \hfill{}{[}5{]}
+\item Draw a tree similar to the one in the example which would represent
+the expression:
+\begin{center}
+\texttt{Y = 2 {*} (A + B) \textendash{} (A \textasciicircum{} 2)} 
+\par\end{center}
+
+where \texttt{x \textasciicircum{} y} means $\mathtt{x^{y}}$.\hfill{}{[}3{]}
+\item Using the algorithm in the example, and your tree, write out the reverse
+Polish form of the expression in \textbf{part} (c). \hfill{}{[}3{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}JPJC/PRELIM/9597/2019/P1/Q1{]} }
+
+The file \texttt{VISITORS.txt} contains the number of visitors to
+Singapore from 1978 to 2018. Each line of the text file is in the
+following format: 
+\noindent \begin{center}
+\texttt{<year>,<month>,<number\_of\_visitors> }
+\par\end{center}
+
+\subsection*{Task 1.1 }
+
+Write program code to 
+\begin{itemize}
+\item read the data from the file and store them in an appropriate data
+structure, 
+\item get user input to select the \textbf{year(s)} to display for \textbf{total
+number of visitors}, 
+\item ensure that user input for\textbf{ start year} and \textbf{end year}
+are valid, 
+\item display the \textbf{year(s)} and \textbf{number of visitors}. 
+\end{itemize}
+Sample output: 
+
+\noindent\fbox{\begin{minipage}[t]{1\columnwidth - 2\fboxsep - 2\fboxrule}%
+\texttt{Start year : 1978}
+
+\texttt{End year ~~: 1980}
+
+\texttt{Year Number of visitors }
+
+\texttt{1978 1234567 }
+
+\texttt{1979 1542384 }
+
+\texttt{1980 1278652 }%
+\end{minipage}}
+
+\subsection*{Evidence 1 }
+
+Your program code. \hfill{}{[}11{]}
+
+\subsection*{Task 1.2 }
+
+Test your program with \textbf{four} relevant test data for user input.
+Copy the table with the following headings to show your test cases. 
+\noindent \begin{center}
+\begin{tabular}{|c|c|c|}
+\hline 
+Test data & Purpose of test data & Expected results \tabularnewline
+\hline 
+ &  & \tabularnewline
+\hline 
+\end{tabular} 
+\par\end{center}
+
+\subsection*{Evidence 2 }
+
+Completed table with \textbf{four} test cases. 
+
+Screenshots of running your program with the \textbf{four} test cases.
+\hfill{}{[}4{]}
+
+ \newpage 
+
+\item \textbf{{[}JPJC/PRELIM/9597/2019/P1/Q2{]} }
+
+The incomplete pseudocode function below takes in an array as input.
+The array will then be sorted in ascending order and the results will
+be returned. Note that the start index of the array is 1. 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{FUNCTION SomeSort(SomeList : ARRAY) }
+
+\texttt{\qquad{}FOR Pointer \textleftarrow{} 2 TO NumberOfItems }
+
+\texttt{\qquad{}\qquad{}ItemToBeInserted \textleftarrow{} SomeList{[}Pointer{]} }
+
+\texttt{\qquad{}\qquad{}CurrentItem \textleftarrow{} Pointer \textendash{}
+1 }
+
+\texttt{\qquad{}\qquad{}WHILE(SomeList{[}CurrentItem{]}>ItemToBeInserted
+AND CurrentItem>0) }
+
+\texttt{\qquad{}\qquad{}\qquad{}SomeList{[}CurrentItem+1{]} \textleftarrow{}
+SomeList{[}CurrentItem{]} }
+
+\texttt{\qquad{}\qquad{}\qquad{}CurrentItem \textleftarrow{} CurrentItem
+- 1 }
+
+\texttt{\qquad{}\qquad{}ENDWHILE}
+
+\texttt{\qquad{}\qquad{}............... $\mathtt{A}$............... }
+
+\texttt{\qquad{}ENDFOR }
+
+\texttt{\qquad{}RETURN ARRAY}
+
+\texttt{ENDFUNCTION }%
+\end{minipage}
+
+\subsection*{Task 2.1 }
+
+Complete the missing line and write program code to implement the
+complete function. Sort the array given in the file \texttt{NUMBERS.txt}.
+You may copy and paste the array into your program code. 
+
+\subsection*{Evidence 3 }
+\begin{itemize}
+\item Your program code. 
+\item Screenshot showing the array before and after running the function.\hfill{}
+{[}7{]}
+\end{itemize}
+
+\subsection*{Task 2.2 }
+
+Write a bubble sort function that takes an array, sorts the array
+and returns the array. 
+
+\subsection*{Evidence 4 }
+
+Your bubble sort function.\hfill{} {[}4{]}
+
+\subsection*{Task 2.3 }
+
+Amend your program code in both functions to count and display the
+number of comparisons made when sorting the array. 
+
+\subsection*{Evidence 5 }
+\begin{itemize}
+\item Your amended program code. 
+\item Screenshot of running both sorting functions with number of comparisons
+displayed.\hfill{} {[}4{]}
+\end{itemize}
+
+ \newpage 
+
+\item \textbf{{[}JPJC/PRELIM/9597/2019/P1/Q3{]} }
+
+JP Medical Centre uses a priority queue to register patients who visit
+for medical attention. Upon registration at the medical centre, each
+patient will be assigned a priority number according to the urgency
+in seeking medical care. The urgent cases receive top priority and
+go directly to the front of the queue, whereas the minor cases are
+added to the bottom of the queue.
+
+A priority queue is an extension of queue with the following properties.
+\begin{itemize}
+\item Every element has a priority associated with it. Higher priority has
+a larger number. 
+\item An element with high priority leaves the queue before an element with
+low priority.
+\item If two elements have the same priority, they are served according
+to their order in the queue, i.e. the earlier element will be served
+before the later element (FIFO). 
+\end{itemize}
+An example of operations on a priority queue is shown below:
+
+\textbf{Initial state of priority queue} 
+
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+Data & \textquoteleft jim\textquoteright{} & \textquoteleft ben\textquoteright{} & \textquoteleft ken\textquoteright{} & \textquoteleft wayne\textquoteright{} & \textquoteleft harry\textquoteright{}\tabularnewline
+\hline 
+Priority & 3 & 3 & 2 & 1 & 1\tabularnewline
+\hline 
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{$\overset{\uparrow}{\boldsymbol{\text{front}}}$} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\overset{\uparrow}{\boldsymbol{\text{rear}}}$}\tabularnewline
+\end{tabular}
+
+\textbf{Insert \textquoteleft jenny\textquoteright{} with priority
+3:} \textquoteleft jenny\textquoteright{} joins the priority queue
+ahead of \textquoteleft ken\textquoteright{} who has a priority of
+2 
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline 
+Data & \textquoteleft jim\textquoteright{} & \textquoteleft ben\textquoteright{} & '\emph{jenny}' & \textquoteleft ken\textquoteright{} & \textquoteleft wayne\textquoteright{} & \textquoteleft harry\textquoteright{}\tabularnewline
+\hline 
+Priority & 3 & 3 & \emph{3} & 2 & 1 & 1\tabularnewline
+\hline 
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{$\overset{\uparrow}{\boldsymbol{\text{front}}}$} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\overset{\uparrow}{\boldsymbol{\text{rear}}}$}\tabularnewline
+\end{tabular}
+
+Remove from priority queue: \textquoteleft jim\textquoteright{} is
+removed from front of priority queue 
+
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+Data & \textquoteleft ben\textquoteright{} & '\emph{jenny}' & \textquoteleft ken\textquoteright{} & \textquoteleft wayne\textquoteright{} & \textquoteleft harry\textquoteright{}\tabularnewline
+\hline 
+Priority & 3 & \emph{3} & 2 & 1 & 1\tabularnewline
+\hline 
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{$\overset{\uparrow}{\boldsymbol{\text{front}}}$} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\overset{\uparrow}{\boldsymbol{\text{rear}}}$}\tabularnewline
+\end{tabular}
+
+A \textbf{priority queue} abstract data type (ADT) is to be \textbf{implemented}
+as \textbf{a linked list} using object-oriented programming. Two classes
+\texttt{Node} and \texttt{PQueue} have been identified. 
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline 
+\multicolumn{3}{|c|}{\texttt{Class: Node}}\tabularnewline
+\hline 
+\texttt{\textbf{\hspace{0.01\columnwidth}}}\textbf{Identifier} & \texttt{\textbf{\hspace{0.01\columnwidth}}}\textbf{Data Type} & \texttt{\textbf{\hspace{0.05\columnwidth}}}\textbf{Description}\tabularnewline
+\hline 
+\multicolumn{3}{|l|}{\textbf{Properties}}\tabularnewline
+\hline 
+\texttt{Data} & \texttt{STRING} & The node data\tabularnewline
+\hline 
+\texttt{Priority} & \texttt{INTEGER} & Indicates priority of node. Higher value has higher priority.\tabularnewline
+\hline 
+\texttt{Pointer} & \texttt{INTEGER} & Pointer to next node in queue.\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline 
+\multicolumn{3}{|c|}{\texttt{Class: PQueue}}\tabularnewline
+\hline 
+\texttt{\textbf{\hspace{0.01\columnwidth}}}\textbf{Identifier} & \texttt{\textbf{\hspace{0.01\columnwidth}}}\textbf{Data Type} & \texttt{\textbf{\hspace{0.05\columnwidth}}}\textbf{Description}\tabularnewline
+\hline 
+\multicolumn{3}{|l|}{\textbf{Properties}}\tabularnewline
+\hline 
+\texttt{ThisPQueue} & \texttt{ARRAY{[}10{]} OF Node} & The data for the priority queue.\tabularnewline
+\hline 
+\texttt{Front} & \texttt{INTEGER} & Index for front node of queue. \tabularnewline
+\hline 
+\texttt{Rear} & \texttt{INTEGER} & Index for rear node of queue. \tabularnewline
+\hline 
+\texttt{NextFree} & \texttt{INTEGER} & Index for the next unused node.\tabularnewline
+\hline 
+\multicolumn{3}{|l|}{\textbf{Methods}}\tabularnewline
+\hline 
+\multirow{2}{*}{Initialise} & \multirow{2}{*}{\texttt{PROCEDURE}} & \textbullet{} Create a new priority queue \tabularnewline
+ &  & \textbullet{} Initialise \texttt{Front} and \texttt{Rear} to -1.\tabularnewline
+\hline 
+\multirow{3}{*}{\texttt{JoinPQueue (NewItem:STRING, Priority:INTEGER)}} & \multirow{3}{*}{\texttt{PROCEDURE}} & \textbullet{} Create a new node of Node class.\tabularnewline
+ &  & \textbullet{} Assign \texttt{NewItem} and \texttt{Priority} passed
+as parameters to the \texttt{Data} and \texttt{Priority} attribute
+of \texttt{Node}.\tabularnewline
+ &  & \textbullet{} Assign \texttt{Node} to the \texttt{PQueue} according
+to the priority of the node.\tabularnewline
+\hline 
+\multirow{2}{*}{\texttt{LeavePQueue}} & \multirow{2}{*}{\texttt{FUNCTION}} & \textbullet{} Remove \texttt{Node} from \texttt{PQueue}.\tabularnewline
+ &  & \textbullet{} Return the \texttt{data} attribute of \texttt{Node}. \tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+The diagram shows the linked list with: 
+\begin{itemize}
+\item the elements \textquoteleft ben\textquoteright , \textquoteleft jenny\textquoteright ,
+\textquoteleft ken\textquoteright , \textquoteleft wayne\textquoteright ,
+\textquoteleft harry\textquoteright{} in the priority queue
+\item the unused nodes linked together
+\end{itemize}
+\begin{center}
+\includegraphics[width=0.65\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-JPJC-2019-P1-Q3-1}
+\par\end{center}
+
+\subsection*{Task 3.1 }
+
+Write program code to
+\begin{itemize}
+\item declare all the required identifiers for the \texttt{Node} and \texttt{PQueue}
+class as specified, including the methods \texttt{Initialise}, \texttt{JoinPQueue},
+\texttt{LeavePQueue}, and 
+\item create the initial priority queue. 
+\end{itemize}
+
+\subsection*{Evidence 6: }
+
+Your program code. \hfill{}{[}25{]}
+
+\subsection*{Task 3.2 }
+
+Write a procedure \texttt{OutputQueue} which displays the value of
+\texttt{Front}, \texttt{Rear}, and \texttt{NextFree} and the contents
+of \texttt{ThisPQueue} in index order. 
+
+\subsection*{Evidence 7: }
+\begin{itemize}
+\item Your program code for \texttt{OutputPQueue}.
+\item Screenshot for displaying the initial priority queue. \hfill{}{[}4{]}
+\end{itemize}
+
+\subsection*{Task 3.3 }
+
+Write a main program to:
+\begin{itemize}
+\item Read from file\texttt{ PATIENTS.txt} all the data items with its priorities
+into the priority queue by calling procedure \texttt{JoinPQueue}.
+\item Output the priority queue by calling \texttt{OutputPQueue}. 
+\end{itemize}
+
+\subsection*{Evidence 8: }
+\begin{itemize}
+\item Your program code for task 3.3. 
+\item Screenshot showing the output from running program in task 3.3. \hfill{}{[}5{]}
+\end{itemize}
+Task 3.4 
+
+Write additional code in your main program that prints a menu with
+the following options:
+
+\noindent\fbox{\begin{minipage}[t]{1\columnwidth - 2\fboxsep - 2\fboxrule}%
+\noindent \texttt{Patient Queue Menu }
+\begin{enumerate}
+\item[1)] \texttt{ Add patient to PQueue }
+\item[2)] \texttt{ Remove patient from PQueue }
+\item[3)] \texttt{ Display PQueue }
+\item[4)] \texttt{ Exit program }
+\end{enumerate}
+%
+\end{minipage}}
+
+Write program code for each option by calling the appropriate methods
+from the \texttt{PQueue} class. 
+
+\subsection*{Evidence 9: }
+
+Your program code for task 3.4.\hfill{} {[}4{]}
+
+\subsection*{Task 3.5 }
+
+Test your main program by doing the following in order and display
+the priority queue: 
+\noindent \begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline 
+No. & Operation & Data  & Priority\tabularnewline
+\hline 
+1 & Remove patient & - & -\tabularnewline
+\hline 
+2 & Add patient & Donny & 2\tabularnewline
+\hline 
+\end{tabular} 
+\par\end{center}
+
+\subsection*{Evidence 10: }
+
+Screenshot for testing your program in task 3.5.\hfill{} {[}2{]}
+
+ \newpage 
+
+\item \textbf{{[}JPJC/PRELIM/9597/2019/P1/Q4{]} }
+
+You are to write a computer program to test the validity of classic
+Sudoku puzzles. 
+
+The classic Sudoku puzzle involves a grid of 81 squares. The grid
+is divided into nine blocks, each containing nine squares. Each of
+the nine blocks has to contain all the numbers 1 to 9 within its squares.
+Each number can only appear once in a row, column or block. 
+
+A $9\times9$ classic Sudoku puzzle can be represented using a two-dimensional
+array. An example of this puzzle is:
+\begin{center}
+\includegraphics[width=0.5\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-JPJC-2019-P1-Q4-1}
+\par\end{center}
+
+The puzzle can be displayed in this way on the computer. 
+\noindent \begin{center}
+\texttt{}%
+\begin{tabular}{c}
+\texttt{8 2 5 4 7 1 3 9 6}\tabularnewline
+\texttt{1 9 4 3 2 6 5 7 8}\tabularnewline
+\texttt{3 7 6 9 8 5 2 4 1}\tabularnewline
+\texttt{5 1 9 7 4 3 8 6 2}\tabularnewline
+\texttt{6 3 2 5 9 8 4 1 7}\tabularnewline
+\texttt{4 8 7 6 1 2 9 3 5}\tabularnewline
+\texttt{2 6 3 1 5 9 7 8 4}\tabularnewline
+\texttt{9 4 8 2 6 7 1 5 3}\tabularnewline
+\texttt{7 5 1 8 3 4 6 2 9}\tabularnewline
+\end{tabular}
+\par\end{center}
+
+\noindent \begin{center}
+\par\end{center}
+
+\subsection*{Task 4.1 }
+
+Write program code for a procedure \texttt{displayboard} that will
+take a parameter \texttt{board} and display a puzzle declared as a
+two-dimensional array. 
+
+Copy and paste array \texttt{puzzle1} from the file \texttt{PUZZLES.txt}
+into your program code. 
+
+Call procedure \texttt{displayboard} to display \texttt{puzzle1}. 
+
+\subsection*{Evidence 11: }
+\begin{itemize}
+\item Your program code for \texttt{displayboard} to display \texttt{puzzle1}. 
+\item Screenshot of displaying \texttt{puzzle1} as a $9\times9$ Sudoku
+puzzle.\hfill{} {[}5{]} 
+\end{itemize}
+To test the validity of a Sudoku puzzle, each of the rows, columns
+and blocks can be checked to ensure that each number 1 to 9 only appears
+once. 
+
+\subsection*{Task 4.2 }
+
+Write program code for a function \texttt{checkRow} that will check
+all the nine rows of the puzzle to ensure that each number 1 to 9
+only appears once. The function should take a parameter board and
+return a Boolean value. 
+
+\subsection*{Evidence 12: }
+
+Your program code for \texttt{checkRow}.\hfill{} {[}6{]}
+
+\subsection*{Task 4.3}
+
+Write program code for a function \texttt{checkColumn} that will check
+all the nine columns of the puzzle to ensure that each number 1 to
+9 only appears once. The function should take a parameter \texttt{board}
+and return a Boolean value.
+
+\subsection*{Evidence 13: }
+
+Your program code for \texttt{checkColumn}. \hfill{}{[}6{]}
+
+\section*{Task 4.4 }
+
+Write program code for a function \texttt{checkBlock} that will check
+all the nine blocks of the puzzle to ensure that each number 1 to
+9 only appear once. The function should take a parameter board and
+return a Boolean value. 
+
+\subsection*{Evidence 14: }
+
+Your program code for \texttt{checkBlock}.\hfill{} {[}8{]}
+
+\subsection*{Task 4.5 }
+
+Write program code to call the three functions \texttt{checkrow},
+\texttt{checkColumn}, and \texttt{checkBlock} to test the validity
+of \texttt{puzzle1}, \texttt{puzzle2}, and \texttt{puzzle3} given
+in the file \texttt{PUZZLES.txt}. Copy and paste these puzzles into
+your program code. Your program should first display the puzzle before
+printing statement(s) to show whether the puzzle is valid or not.
+If invalid, state whether the invalidity is due to the row, column
+or block.
+
+\subsection*{Evidence 15:}
+
+\textbullet{} Your program code for task 4.5 
+
+\textbullet{} Screenshot of running task 4.5\hfill{} {[}5{]}
+
+ \newpage 
+
+\item \textbf{{[}JPJC/PRELIM/9597/2019/P2/Q1{]} }
+
+Furniture retailer XFurniture is currently using a manual, paper-based
+ordering system. 
+
+The customer visits the show room and informs the salesperson his/her
+furniture selection. After which, the salesperson asks the filing
+clerk to locate the relevant paper files that contain all the necessary
+details of the chosen item in the file cabinet. The files contain
+the following information of a furniture item:
+\begin{itemize}
+\item item code 
+\item description of item 
+\item price of item 
+\item delivery time 
+\item details of the supplier
+\end{itemize}
+The customer pays for the purchase and the salesperson hands the original
+purchase order, and a duplicate copy to the customer and the filing
+clerk respectively. At the end of the day, the filing clerk will record
+the total sales for the day and proceed to order the furniture from
+the supplier by sending them a purchase order of the consolidated
+furniture items sold for the day. 
+
+The management of XFurniture decides to replace its current system
+with a server--based ordering system. 
+
+A system developer from an IT consultant firm is employed to carry
+out the project. The first task is to write a project proposal. 
+\begin{enumerate}
+\item One section of the project proposal is the Problem Statement which
+lists the problems in the current system. Write the Problem Statement.
+\hfill{}{[}4{]}
+\end{enumerate}
+The system developer draws up a list of activities that will be required
+for the completion of the software project:
+\noindent \begin{center}
+\begin{tabular}{|c|l|c|}
+\hline 
+Identifier & Activity & Estimated Duration (weeks)\tabularnewline
+\hline 
+A & Order and deliver the new database system and server & 4\tabularnewline
+\hline 
+B & Design and install the network infrastructure & 7\tabularnewline
+\hline 
+C & Order, deliver and install new PCs and printer & 9\tabularnewline
+\hline 
+D & est the database system, server and network & 3\tabularnewline
+\hline 
+E & Test the PCs with the server and network & 2\tabularnewline
+\hline 
+F & Copy existing sales data to the new database system & 1\tabularnewline
+\hline 
+G & Copy other existing PC software to the new PCs & 3\tabularnewline
+\hline 
+H & Test all software and database on the new PCs and server & 1\tabularnewline
+\hline 
+I & Train users & 2\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+Tasks A, B and C can be undertaken at the same time, but Task A and
+Task B must be completed before Task D can commence. Tasks C and D
+must be completed before Task E can begin. Task E must be completed
+before Tasks F and G can start. Tasks F and G can be undertaken at
+the same time, but both must be completed before Task H can commence.
+Task I must follow Task H. 
+\begin{enumerate}
+\item[(b)]  Draw a PERT chart for this project. Provide a node key explaining
+the layout and contents of the nodes used in your diagram. \hfill{}{[}4{]} 
+\item[(c)]  Copy and complete the following table with the earliest and latest
+start times, the earliest and latest finish times, duration, and float
+time for each task. 
+\noindent \begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline 
+Task & EST & LST & EFT & LFT & Duration & Float\tabularnewline
+\hline 
+A & 0 & 3 & 4 & 7 & 4 & 3\tabularnewline
+\hline 
+B &  &  &  &  & 7 & \tabularnewline
+\hline 
+C &  &  &  &  & 9 & \tabularnewline
+\hline 
+D &  &  &  &  & 3 & \tabularnewline
+\hline 
+E &  &  &  &  & 2 & \tabularnewline
+\hline 
+F & 12 & 14 & 13 & 15 & 1 & \tabularnewline
+\hline 
+G &  &  &  &  & 3 & \tabularnewline
+\hline 
+H & 15 & 15 & 16 & 16 & 1 & \tabularnewline
+\hline 
+I & 16 & 16 & 18 & 18 & 2 & 0\tabularnewline
+\hline 
+\end{tabular} 
+\par\end{center}
+
+\hfill{}{[}4{]}
+\item[(d)]  State the critical path.\hfill{} {[}1{]}
+\item[(e)]  State the minimum time required for the project to be completed.
+\hfill{} {[}1{]}
+\item[(f)]  Dummy task may be used in PERT chart. What is a dummy task? \hfill{}
+{[}1{]}
+\item[(g)]  Draw a Gantt chart for the same project tasks, showing each of these
+tasks, all dependencies, and the duration of each task. Highlight
+the critical path on the Gantt chart.\hfill{} {[}4{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}JPJC/PRELIM/9597/2019/P2/Q2{]} }
+
+A project\textquoteright s software development life cycle includes
+analysis, design, development, testing, implementation, and evaluation
+stages.
+\begin{enumerate}
+\item Describe the following testing strategies that might be carried out
+during a software development project, and explain how each type of
+the testing strategy contributes to the overall quality of the project\textquoteright s
+deliverables. 
+\begin{enumerate}
+\item Bottom-up testing. 
+\item Top-down testing. \hfill{}{[}6{]}
+\end{enumerate}
+\item State two methods that could be used to implement a newly developed
+system. Give a reason for each of the method chosen. \hfill{}{[}4{]}
+\end{enumerate}
+\item \textbf{{[}JPJC/PRELIM/9597/2019/P2/Q3{]} }
+\begin{enumerate}
+\item \textbf{Copy} and \textbf{complete} the algorithm for a binary search
+written in pseudocode shown below. It is given that the data being
+searched is stored in the array \texttt{SearchData{[}63{]}}, and the
+item of data being searched is stored in the variable \texttt{SearchItem}. 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{X <- 0 }
+
+\texttt{Low <- 1 }
+
+\texttt{High <- \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots{} }
+
+\texttt{WHILE (High >= Low) AND (\dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots )}
+
+\texttt{\qquad{}Middle INT((High + Low)/2) }
+
+\texttt{\qquad{}IF SearchData{[}Middle{]} = SearchItem }
+
+\texttt{\qquad{}\qquad{}THEN }
+
+\texttt{\qquad{}\qquad{}\qquad{}X <- Middle }
+
+\texttt{\qquad{}\qquad{}ELSE}
+
+\texttt{\qquad{}\qquad{}\qquad{}IF SearchData{[}Middle{]} < SearchItem }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}THEN}
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}Low <- Middle
++ 1}
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}ELSE }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}IF SearchData{[}Middle{]}
+> SearchItem }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}THEN}
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}\dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots{} }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}ENDIF }
+
+\texttt{\qquad{}\qquad{}\qquad{}ENDIF }
+
+\texttt{\qquad{}ENDIF }
+
+\texttt{ENDWHILE }%
+\end{minipage}
+
+\hfill{}{[}3{]}
+\item State the maximum number of comparisons that are required to find
+an item which is present in \texttt{SearchData}. \hfill{} {[}1{]}
+\item You will change the binary search algorithm to a recursive algorithm
+and write the equivalent program code in the form of a procedure.
+Name the recursive procedure \texttt{BinarySearch}. Use the following
+variables: 
+\noindent \begin{center}
+\begin{tabular}{|l|l|l|}
+\hline 
+\textbf{Variable} & \textbf{Data Type} & \textbf{Description}\tabularnewline
+\hline 
+\texttt{SearchData} & \texttt{ARRAY{[}63{]} : INTEGER} & global array\tabularnewline
+\hline 
+\texttt{SearchItem} & \texttt{INTEGER} & global variable\tabularnewline
+\hline 
+\texttt{X} & \texttt{INTEGER} & global variable\tabularnewline
+\hline 
+\texttt{Low} & \texttt{INTEGER} & parameter\tabularnewline
+\hline 
+\texttt{High} & \texttt{INTEGER} & global variable\tabularnewline
+\hline 
+\texttt{Middle} & \texttt{INTEGER} & local variable\tabularnewline
+\hline 
+\end{tabular} 
+\par\end{center}
+
+Write pseudocode or program code for the recursive procedure \texttt{BinarySearch}.
+\hfill{}{[}4{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}JPJC/PRELIM/9597/2019/P2/Q4{]} }
+
+Object-oriented programming is used to store and process data for
+a company\textquoteright s payroll. 
+\begin{center}
+\includegraphics[width=0.5\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-JPJC-2019-P2-Q4-1}
+\par\end{center}
+\begin{enumerate}
+\item With reference to the class diagram shown above, explain: 
+\begin{enumerate}
+\item data encapsulation, and how classes support information hiding and
+implementation independence. \hfill{}{[}3{]}
+\item inheritance, and how it promotes software reusability. \hfill{}{[}2{]}
+\end{enumerate}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}JPJC/PRELIM/9597/2019/P2/Q5{]} }
+
+With reference to \textbf{Question 1}, a server--based ordering system
+will be implemented in XFurniture.
+
+Local Area Network (LAN) will be used for the staff and customers.
+\begin{enumerate}
+\item Explain the meaning of a protocol for communication within the LAN.
+\hfill{}{[}1{]}
+\item State the purposes of switches and routers in a network. \hfill{}{[}4{]}
+\item Explain the differences between using packet switching and circuit
+switching in the transmission of a message. \hfill{} {[}3{]}
+\item The LAN is connected to the Internet. Discuss the social and ethical
+effects of allowing staff to have unrestricted access to the Internet.
+\hfill{}{[}4{]}
+\item Customers are now able to order furniture online after logging in
+to the XFurniture online system. 
+\begin{enumerate}
+\item Explain why authentication techniques are necessary. \hfill{} {[}2{]}
+\item Explain \textbf{two} methods for ensuring security of a network application.
+\hfill{}{[}2{]}
+\item A security policy is a formalised statement that defines how security
+will be implemented within XFurniture. Explain why staff members are
+required to know the need for privacy and integrity of data. \hfill{}{[}2{]}
+\end{enumerate}
+\item Explain why XFurniture has chosen to implement their server--based
+ordering system over the intranet. \hfill{}{[}4{]}
+\item An alternative to a server--based ordering system is to subscribe
+the services of cloud computing. State the \textbf{three} services
+provided by cloud computing, and explain how they can benefit XFurniture.
+\hfill{} {[}6{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}JPJC/PRELIM/9597/2019/P2/Q6{]} }
+
+A reservation form used for booking JP Hotel rooms is shown:
+\begin{center}
+\includegraphics[width=0.5\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-JPJC-2019-P2-Q6-1}
+\par\end{center}
+
+There are three room types available and the room rates are higher
+for arrival on Fridays and Saturdays. A normalised database solution
+is designed to store data for the hotel using a number of tables.
+\begin{enumerate}
+\item Draw an E-R diagram that shows these tables and the relationships
+between them. \hfill{}{[}4{]}
+\item Using standard notation, write the table descriptions of the tables
+in part \textbf{(a)}. \hfill{} {[}6{]}
+\end{enumerate}
+To book a room in JP Hotel, the guest can fill in the hotel reservation
+form with details specified on the form. After the form is submitted,
+the credit card number and its expiration date are validated. The
+guest will be notified with a message if the credit card number is
+invalid. If the credit card number is valid, details of the guests
+will be stored in a file. The room type requested by the guest will
+then be checked for availability. If room type requested by guest
+is available, a confirmation letter will be sent to the guest. 
+\begin{enumerate}
+\item[(c)]  Draw a data flow diagram for the hotel reservation system. \hfill{}{[}8{]}
+\item[(d)]  A hotel room accommodates two guests and also includes breakfast
+for two. The hotel allows for an additional guest to stay in a room
+booked for two guests at a charge of \$80. An extra bed may be requested
+for the additional guest at a charge of \$20. Breakfast can also be
+provided for the additional guest at \$20.
+\begin{enumerate}
+\item Create a decision table showing all the possible conditions and actions.
+\hfill{} {[}4{]}
+\item Simplify your decision table by removing redundancies. \hfill{} {[}2{]}
+\end{enumerate}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}JPJC/PRELIM/9597/2019/P2/Q7{]} }
+\begin{enumerate}
+\item Computers use character codes that can be represented by ASCII and
+Unicode. Explain the differences between these two character encoding
+systems. \hfill{}{[}2{]}
+\item Given that \textbf{two} bytes are used to represent a positive integer,
+what is the denary number that corresponds to the \textbf{two} successive
+bytes below? 
+\noindent \begin{center}
+\texttt{10010101 00110011} 
+\par\end{center}
+
+\noindent \begin{center}
+\hfill{}\texttt{ }{[}2{]}
+\par\end{center}
+\item What is the hexadecimal number of the \textbf{two} bytes in \textbf{(b)}?
+\hfill{} {[}2{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}JPJC/PRELIM/9597/2019/P2/Q8{]} }
+
+An Abstract Data Type (ADT) is a type (or class) for objects whose
+behavior is defined by a set of value and a set of operations. 
+
+A linked list ADT has the following operations defined:
+\begin{enumerate}
+\item[i. ]  \texttt{Create(x)} -- creates an empty linked list \texttt{x}.
+\item[ii.]  \texttt{Insert(x,item,i)} -- inserts new value, \texttt{item},
+into linked list \texttt{x} so that it is at position \texttt{i} in
+the linked list.
+\item[iii.]  \texttt{Delete(x,i)} -- deletes the \texttt{item} at position \texttt{i}
+in the linked list \texttt{x}.
+\item[iv.]  \texttt{Read(x,i)} -- returns the \texttt{item} at position \texttt{i}
+in the linked list \texttt{x}.
+\item[v.]  \texttt{Length(x)} -- returns the number of items in the linked
+list \texttt{x}.
+\item[vi.]  \texttt{IsEmptyList(x)} -- returns true if linked list \texttt{x}
+is empty.
+\end{enumerate}
+The linked list is implemented by the use of a collection of nodes
+that has \textbf{two} parts: the \textbf{data} and a \textbf{pointer
+to the next item} in the linked list. In addition, there is a Start
+pointer which points to the first node in the list. 
+\begin{enumerate}
+\item Assume a node with the following structure: 
+\begin{center}
+\includegraphics[width=0.25\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-JPJC-2019-P2-Q8-1}
+\par\end{center}
+
+Complete the algorithm to implement the 'Delete' operation: \hfill{}{[}5{]}
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{PROCEDURE Delete (x, i) }
+
+\texttt{\qquad{}IF Length(x) = 0 THEN }
+
+\texttt{\qquad{}\qquad{}....................................A.................................... }
+
+\texttt{\qquad{}ENDIF }
+
+\texttt{\qquad{}IF i = 1 THEN // situation 1: delete the 1st node }
+
+\texttt{\qquad{}\qquad{}temp <- Start }
+
+\texttt{\qquad{}\qquad{}....................................B.................................... }
+
+\texttt{\qquad{}ELSE // situation 2 : delete middle node }
+
+\texttt{\qquad{}\qquad{}Previous <- NULL }
+
+\texttt{\qquad{}\qquad{}Current <- Start }
+
+\texttt{\qquad{}\qquad{}FOR n <- 1 TO (i \textendash{} 1) STEP 1 }
+
+\texttt{\qquad{}\qquad{}\qquad{}....................................C.................................... }
+
+\texttt{\qquad{}\qquad{}\qquad{}....................................D.................................... }
+
+\texttt{\qquad{}\qquad{}NEXT n }
+
+\texttt{\qquad{}\qquad{}\qquad{}....................................E.................................... //
+make the deletion }
+
+\texttt{\qquad{}ENDIF }
+
+\texttt{ENDPROCEDURE }%
+\end{minipage}
+\item Show how the following operations for an ADT called QUEUE using the
+linked list ADT operations can be implemented. 
+\begin{enumerate}
+\item Create new queue. \hfill{}{[}1{]}
+\item Add item to a queue. \hfill{}{[}2{]}
+\item Delete item from a queue. \hfill{} {[}2{]}
+\end{enumerate}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}JPJC/PRELIM/9597/2019/P2/Q9{]} }
+
+A binary search tree is stored as an array of records. Each record
+represents a node and consists of the data and a left pointer and
+a right pointer. After a number of records are inserted, the tree
+is as shown. 
+
+The array is called \texttt{BinaryTree}. 
+
+The notation \texttt{BinaryTree{[}Root{]}.Data} will access the data
+at root node.
+\noindent \begin{center}
+\begin{tabular}{c|c|c|c|}
+\multicolumn{4}{c}{\texttt{BinaryTree}}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+ & \texttt{LeftPtr} & \texttt{DataValue} & \texttt{RightPtr}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\texttt{{[}1{]}} & \texttt{2} & \texttt{Jay} & \texttt{3}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\texttt{{[}2{]}} & \texttt{4} & \texttt{Gel} & \texttt{0}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\texttt{{[}3{]}} & \texttt{0} & \texttt{Ken} & \texttt{5}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\texttt{{[}4{]}} & \texttt{0} & \texttt{Ace} & \texttt{0}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\texttt{{[}5{]}} & \texttt{6} & \texttt{Pan} & \texttt{0}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\texttt{{[}6{]}} & \texttt{0} & \texttt{Max} & \texttt{0}\tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\texttt{{[}7{]}} & \texttt{8} &  & \tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\texttt{{[}8{]}} & \texttt{9} &  & \tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\texttt{{[}9{]}} & \texttt{0} &  & \tabularnewline
+\cline{2-4} \cline{3-4} \cline{4-4} 
+\end{tabular}
+\par\end{center}
+
+\noindent \begin{center}
+\texttt{}%
+\begin{tabular}{c|c|c|c|}
+\cline{2-2} \cline{4-4} 
+\texttt{Root} & \texttt{1} & \texttt{NextFree} & \texttt{7}\tabularnewline
+\cline{2-2} \cline{4-4} 
+\end{tabular}\texttt{ }
+\par\end{center}
+\begin{enumerate}
+\item Draw the binary search tree. \hfill{}{[}2{]}
+\item Complete the algorithm to find a node in a binary search tree. This
+function will return a pointer to node.\hfill{} {[}4{]}
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{FUNCTION FindNode(SearchItem) RETURNS INTEGER }
+
+\texttt{\qquad{}TempPtr <- Root }
+
+\texttt{\qquad{}WHILE TempPtr <> NULL AND ............A............}
+
+\texttt{\qquad{}\qquad{}IF ............B............ THEN }
+
+\texttt{\qquad{}\qquad{}\qquad{}TempPtr <- BinaryTree{[}TempPtr{]}.LeftPtr }
+
+\texttt{\qquad{}\qquad{}ELSE }
+
+\texttt{\qquad{}\qquad{}\qquad{}............C............ }
+
+\texttt{\qquad{}\qquad{}ENDIF }
+
+\texttt{\qquad{}ENDWHILE }
+
+\texttt{\qquad{}............D............}
+
+\texttt{ENDFUNCTION} %
+\end{minipage}
+\item Write an algorithm for a pre-order traversal of the binary search
+tree. \hfill{}{[}4{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}NYJC/PRELIM/9597/2019/P1/Q1{]} }
+
+The number of rainy days for each year and month is stored in the
+file \texttt{RAINFALL.txt}. The first line of the file contains the
+heading description for the data. Each line of data is stored in the
+format \texttt{YYYY-MM,99} where \texttt{YYYY} is the year, \texttt{MM}
+is the month and \texttt{99} is the number of days. Thus '\texttt{1982-
+01,10}' means there were 10 rainy days in the month of January, 1982. 
+
+You are required to write a program to: 
+\begin{itemize}
+\item Read the data in the file. 
+\item Calculate the total number of rainy days for each year by adding all
+the months\textquoteright{} rainy days for that year. 
+\item Create a new file \texttt{RAINFALLYEAR.txt}. 
+\item Write the heading description in the first line as \textquotedbl Year,Rainy
+Days\textquotedblright . 
+\item For each subsequent line, write to the file in the format \texttt{YYYY,999}
+where \texttt{YYYY} is the year and \texttt{999} is the total number
+of rainy days (up to 3 digits) for that year. 
+\end{itemize}
+
+\subsection*{Task 1.1 }
+
+Write program code for this task. 
+
+\subsection*{Evidence 1: }
+
+Your program code. \hfill{}{[}8{]}
+
+\subsection*{Task 1.2 }
+
+Write program code for a procedure \texttt{ShowMenu} to display the
+following menu: 
+\begin{enumerate}
+\item[1.] \texttt{ Query total rainy days in any year}
+\item[2.] \texttt{ Query by year the month of highest rainy days }
+\item[3.] \texttt{ -1 to Exit}
+\end{enumerate}
+
+\subsection*{Evidence 2: }
+
+Your program code.\hfill{} {[}2{]}
+
+\subsection*{Task 1.3 }
+
+Implement a program that displays \texttt{ShowMenu} and asks the user
+for their choice. Create functions \texttt{Query1} and \texttt{Query2}
+which corresponds to the menu selection option \texttt{1} and \texttt{2}
+respectively. When option \texttt{1} is selected, \texttt{Query1}
+should run and ask the user to input the year. \texttt{Query1} will
+return the total number of rainy days or a suitable message if data
+for that year is not available. 
+
+When option \texttt{2} is selected, \texttt{Query2} should execute
+and ask the user for the year. \texttt{Query2} will return the month
+with the highest number of rainy days in that year in words (e.g.
+January, August, or December) or a suitable message if data for that
+year is not available. 
+
+For both \texttt{Query1} and \texttt{Query2}, appropriate validation
+of the user input for year should be done. The program will display
+\texttt{ShowMenu} after each valid query until option \texttt{3} is
+selected.
+
+\subsection*{Evidence 3: }
+
+Your program code. \hfill{}{[}8{]}
+
+\subsection*{Task 1.4 }
+
+Design 3 test data which tests the functionality of your program. 
+
+\subsection*{Evidence 4: }
+
+A screenshot for each test case you considered. Annotate the screenshot
+explaining the purpose of each test. \hfill{}{[}3{]}
+
+ \newpage 
+
+\item \textbf{{[}NYJC/PRELIM/9597/2019/P1/Q2{]} }
+
+The following is the algorithm for a recursive insertion sort on an
+array of size $n$. 
+\begin{enumerate}
+\item[1.]  Base Case: If array size is 1 or smaller, return. 
+\item[2.]  Recursively sort first n -- 1 elements. 
+\item[3.]  Insert last element at its correct position in sorted array. 
+\end{enumerate}
+
+\subsection*{Task 2.1 }
+
+Write program code for this algorithm to implement a recursive insertion
+sort function. Use the sample array data available from text file
+\texttt{COUNTRIES.txt} and paste this into your programming code.
+Your program should display the sorted items with each item shown
+per line. 
+
+\subsection*{Evidence 5: }
+
+Your program code. \hfill{}{[}8{]}
+
+\subsection*{Task 2.2 }
+
+Amend your code to display the insertion process done during each
+recursive call. Each recursive call should display a line as follows: 
+
+\texttt{Element at position n is being inserted in position j }
+
+Replace \texttt{n} and \texttt{j} to show the actual index value. 
+
+\subsection*{Evidence 6: }
+
+Your amended program code. \hfill{}{[}3{]}
+
+\subsection*{Evidence 7:}
+
+One screenshot of the output. \hfill{} {[}2{]}
+
+ \newpage 
+
+\item \textbf{{[}NYJC/PRELIM/9597/2019/P1/Q3{]} }
+
+Create a binary tree Abstract Data Type (ADT) with commands to create
+a new tree, insert data items to the tree and print the tree. 
+
+The sequence of commands 
+\noindent \begin{center}
+\begin{tabular}{l}
+Create a new tree\tabularnewline
+Add to tree (15) \tabularnewline
+Add to tree (10) \tabularnewline
+Add to tree (20) \tabularnewline
+Add to tree (8) \tabularnewline
+Add to tree (12) \tabularnewline
+Add to tree (18) \tabularnewline
+Add to tree (25)\tabularnewline
+\end{tabular}
+\par\end{center}
+
+would create the following binary tree: 
+\begin{center}
+\includegraphics[width=0.25\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-NYJC-2019-P1-Q3-1}
+\par\end{center}
+
+The program to implement this ADT will use the classes Tree and Node
+designed as follows: 
+\begin{center}
+\begin{tabular}{|l|}
+\hline 
+\texttt{ToDo}\tabularnewline
+\hline 
+\texttt{root : Node}\tabularnewline
+\hline 
+\texttt{constructor()}\tabularnewline
+\texttt{add(newItem)}\tabularnewline
+\texttt{printTreeInOrder()}\tabularnewline
+\hline 
+\end{tabular}%
+\begin{tabular}{|l|}
+\hline 
+\texttt{Node}\tabularnewline
+\hline 
+\texttt{key : INTEGER}\tabularnewline
+\texttt{left : Node}\tabularnewline
+\texttt{right : Node}\tabularnewline
+\hline 
+\texttt{constructor()}\tabularnewline
+\texttt{insert(key : INTEGER)}\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\subsection*{Task 3.1 }
+
+Write program code to define the classes \texttt{Tree} and \texttt{Node}.
+
+\subsection*{Evidence 8: }
+
+Your program code. \hfill{}{[}16{]}
+
+\subsection*{Task 3.2 }
+\begin{itemize}
+\item Write program code for a procedure \texttt{CreateTreefromArray} that
+accepts an array of unsorted unique integers passed in via a parameter. 
+\item The procedure will read each integer in the array and construct a
+binary tree using your classes \texttt{Tree} and \texttt{Node}. 
+\item Call \texttt{printTreeInOrder} to display the output (numbers shown
+will always be sorted). 
+\item Test your program by copying the input data found in \texttt{BST.txt}
+into your code. 
+\end{itemize}
+
+\subsection*{Evidence 9: }
+
+Your \texttt{CreateTreefromArray} program code. \hfill{}{[}4{]}
+
+\subsection*{Evidence 10: }
+
+A screenshot of the output. \hfill{}{[}2{]}
+
+\subsection*{Task 3.3}
+
+A binary tree created from keys that are in ascending order will result
+in an unbalanced binary tree.
+
+For instance, the sequence of commands
+\noindent \begin{center}
+\begin{tabular}{l}
+Create a new tree \tabularnewline
+Add to tree (8) \tabularnewline
+Add to tree (10) \tabularnewline
+Add to tree (12) \tabularnewline
+Add to tree (15)\tabularnewline
+Add to tree (18) \tabularnewline
+Add to tree (20)\tabularnewline
+Add to tree (25)\tabularnewline
+\end{tabular}
+\par\end{center}
+
+will result in a tree that looks as follows: 
+\begin{center}
+\includegraphics[width=0.25\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-NYJC-2019-P1-Q3-2}
+\par\end{center}
+
+Amend procedure \texttt{CreateTreefromArray} so that the created tree
+from any input array of integers will be balanced where the number
+of items on the left and right subtree will roughly be divided equally
+(Hint: input array must first be sorted).
+
+\subsection*{Evidence 11: }
+
+Your amended program code. \hfill{}{[}6{]}
+
+\subsection*{Task 3.4 }
+
+Create a function \texttt{FindKthSmallest} that returns the $k$th
+smallest element in your binary tree. If $k=5$ the $k$th smallest
+element will be 18. Your function should not need to use extra space
+(e.g. creating a new array) to solve the problem other than using
+a temp variable(s). 
+
+\subsection*{Evidence 12: }
+
+Your program code for \texttt{FindKthSmallest}. \hfill{}{[}4{]}
+
+\subsection*{Evidence 13:}
+
+Produce a screenshot showing the retrieval of the 5th smallest element
+from the tree created earlier. \hfill{}{[}2{]}
+
+ \newpage 
+
+\item \textbf{{[}NYJC/PRELIM/9597/2019/P1/Q4{]} }
+
+To encrypt a message, a keyword cipher is used. It is a form of monoalphabetic
+substitution where a keyword is used as the key. The key is used to
+determine the letter matchings of the cipher alphabet to the plain
+alphabet. Repeating letters in the key is removed. For instance, if
+the key used is \texttt{'SECRET'}, the cipher alphabet generated will
+be as follows: 
+
+\begin{tabular}{lcccccccccccccccccccccccccc}
+Plain text: & \texttt{A} & \texttt{B} & \texttt{C} & \texttt{D} & \texttt{E} & \texttt{F} & \texttt{G} & \texttt{H} & \texttt{I} & \texttt{J} & \texttt{K} & \texttt{L} & \texttt{M} & \texttt{N} & \texttt{O} & \texttt{P} & \texttt{Q} & \texttt{R} & \texttt{S} & \texttt{T} & \texttt{U} & \texttt{V} & \texttt{W} & \texttt{X} & \texttt{Y} & \texttt{Z}\tabularnewline
+Cipher Alphabet: & \texttt{S} & \texttt{E} & \texttt{C} & \texttt{R} & \texttt{T} & \texttt{A} & \texttt{B} & \texttt{D} & \texttt{F} & \texttt{G} & \texttt{H} & \texttt{I} & \texttt{J} & \texttt{K} & \texttt{L} & \texttt{M} & \texttt{N} & \texttt{O} & \texttt{P} & \texttt{Q} & \texttt{U} & \texttt{V} & \texttt{W} & \texttt{X} & \texttt{Y} & \texttt{Z}\tabularnewline
+\end{tabular}
+
+After the key\textquoteright s unique letters is used up, the rest
+of the ciphertext letters are used in alphabetical order, excluding
+those already used in the key. Thus, to encode the word \textquoteleft \texttt{Attack}\textquoteright ,
+\textquoteleft \texttt{A}\textquoteright{} is replaced with \texttt{'S'},
+\texttt{'t'} is replaced with \texttt{'Q'}, and so on giving the encrypted
+word as \texttt{'SQQSCH'}. 
+
+\subsection*{Task 4.1 }
+
+Write program code for a function to generate an array of the cipher
+alphabet given a key. 
+\noindent \begin{center}
+\texttt{FUNCTION Cipher (NewAlphabet : ARRAY, Key : STRING) }
+\par\end{center}
+
+The function has two parameters and returns the \texttt{NewAlphabet}
+array with the correct cipher alphabet based on the \texttt{Key} parameter. 
+
+\subsection*{Evidence 14:}
+
+Your program code. \hfill{} {[}6{]}
+
+\subsection*{Task 4.2 }
+
+Write driver code that asks the user to enter a key that contains
+only letters, calls function Cipher and displays the cipher alphabet
+(all in uppercase) in one line. Do appropriate data validation on
+the input key. 
+
+\subsection*{Evidence 15: }
+
+Your program code. \hfill{} {[}3{]}
+
+\subsection*{Task 4.3 }
+
+Design three suitable test cases and provide screenshot evidence for
+your testing. 
+
+\subsection*{Evidence 16: }
+
+Annotated screenshots for each test data run. \hfill{} {[}3{]}
+
+\subsection*{Task 4.4 }
+
+Develop your program further to display the following menu: 
+\begin{enumerate}
+\item[1.]  Encode a message
+\item[2.]  Decode a message 
+\item[3.]  -1 to Quit
+\end{enumerate}
+Implement the menu options to allow a line of text to be encoded or
+decoded. For each option, ask for the cipher key and the message that
+is to be encoded or decoded. Test your program with the key \texttt{'TOPSECRET'}
+and the message \texttt{'I will score A for Computing}'. 
+
+\subsection*{Evidence 17: }
+
+Your program code. \hfill{}{[}10{]}
+
+\subsection*{Evidence 18: }
+
+Screenshot(s) showing your output. \hfill{}{[}2{]}
+
+\subsection*{Task 4.5 }
+
+Frequency analysis is a common method used by code breakers to break
+monoalphabetic substitution ciphers. The first step is to analyse
+the coded message and construct a frequency table of all the letters
+appearing in the coded message. 
+
+Write a program that reads the content from the file \texttt{INTERCEPT.txt}.
+The text in this file contains a coded message. Construct a frequency
+table (ignore punctuation marks) as follows using a suitable data
+structure: 
+
+\begin{tabular}{lcccccccccccccccccccccccccc}
+Ciphertext Letter: & \texttt{A} & \texttt{B} & \texttt{C} & \texttt{D} & \texttt{E} & \texttt{F} & \texttt{G} & \texttt{H} & \texttt{I} & \texttt{J} & \texttt{K} & \texttt{L} & \texttt{M} & \texttt{N} & \texttt{O} & \texttt{P} & \texttt{Q} & \texttt{R} & \texttt{S} & \texttt{T} & \texttt{U} & \texttt{V} & \texttt{W} & \texttt{X} & \texttt{Y} & \texttt{Z}\tabularnewline
+Frequency: & \texttt{5} & \texttt{2} & $\cdots$ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\end{tabular}
+
+Your program will then display the table sorted by descending order
+showing the most used letter and its frequency first followed by the
+next highest and so on.
+
+Partial sample output: 
+
+\begin{tabular}{lcccc}
+Ciphertext Letter: & \texttt{S} & \texttt{O} & \texttt{G} & \texttt{$\cdots$}\tabularnewline
+Frequency: & \texttt{88} & \texttt{85} & \texttt{67} & $\cdots$\tabularnewline
+\end{tabular}
+
+\subsection*{Evidence 19: }
+
+Your program code. \hfill{} {[}7{]}
+
+\subsection*{Evidence 20: }
+
+Screenshot of output. \hfill{}{[}1{]}
+
+ \newpage 
+
+\item \textbf{{[}NYJC/PRELIM/9597/2019/P2/Q1{]} }
+\begin{enumerate}
+\item Database management systems are aimed at solving a number of problems
+associated with traditional file-based systems. Describe three such
+problems and explain how they are solved by database management systems.
+\hfill{} {[}6{]}
+\item A national car hire company uses a relational database. Cars are available
+for hire from a large number of depots around the country. Two entities
+(or records) are CARS-FOR-HIRE and DEPOTS.
+\begin{enumerate}
+\item Suggest four attributes (or fields) associated with the entity CARS-FOR-HIRE.
+\hfill{}{[}4{]}
+\item Draw a diagram showing the relationship between the entities CARS-FOR-HIRE
+and DEPOTS. \hfill{}{[}1{]}
+\item State one other entity which is related to either or both of the original
+entities. Describe the relationship(s). Suggest an attribute for this
+entity. \hfill{}{[}4{]}
+\end{enumerate}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}NYJC/PRELIM/9597/2019/P2/Q2{]} }
+
+A stack is to be implemented using an array of 20 elements. 
+\begin{enumerate}
+\item Describe an algorithm to remove an item from a stack and place it
+in a variable \texttt{x}. \hfill{}{[}4{]}
+\item With the aid of examples, explain what nested functions or nested
+subroutines are. \hfill{} {[}3{]}
+\item Explain with the aid of diagrams or otherwise, how a stack can be
+used by the operating system to process \textquotedblleft nested functions\textquotedblright{}
+or \textquotedblleft nested subroutines\textquotedblright . \hfill{}{[}5{]}
+\item Outline the data attributes and member functions for a class stack
+abstract data type. You need not go into details as to how they will
+be implemented. \hfill{}{[}6{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}NYJC/PRELIM/9597/2019/P2/Q3{]} }
+
+A large national electrical appliances company maintains an extensive
+inventory of appliances for sale in a country. The company has twelve
+specialised retail stores targeting the needs of different market
+segments. Six of these stores are housed in a large mall in the capital,
+but the other six are in different cities in the country. 
+
+The six stores in the capital are linked using a LAN, while the other
+six are linked via a WAN. 
+\begin{enumerate}
+\item Explain the difference between a LAN and a WAN. \hfill{} {[}2{]}
+\item Wireless technology has become more popular in recent years. Describe
+two reasons why the company will not replace its LAN network with
+a wireless one. \hfill{} {[}4{]}
+\item Discuss two security threats faced by the company\textquoteright s
+LAN and measures that can be put in place to reduce these threats.
+\hfill{} {[}6{]}
+\end{enumerate}
+The company is thinking of allowing all its sales personnel access
+to this inventory. It can store this data on an intranet or cloud
+storage. Discuss the relative merits and demerits of these two options.
+\hfill{}{[}6{]}
+
+ \newpage 
+
+\item \textbf{{[}NYJC/PRELIM/9597/2019/P2/Q4{]} }
+
+A company has decided to offer an in-house credit system by issuing
+privileged customers an in-house credit-card which allows customers
+to charge their purchases from the stores to the card, up to the customers\textquoteright{}
+credit limits.
+\begin{enumerate}
+\item During a sales promotion, the store offers a discount of 15\% if a
+customer\textquoteright s total purchase is greater or equal to \$200
+but less than \$500. A discount of 20\% is given if the customer\textquoteright s
+total purchase is greater or equal to \$500. For customers who had
+exceeded their credit limits, the supervisor\textquoteright s approval
+is required. Create a decision table or tree to represent the above
+conditions and actions. \hfill{}{[}5{]}
+\item In order to protect the privacy of data, many countries have passed
+legislation to address this issue. Describe any 3 features of the
+Personal Data Protection Act in Singapore that aims to do this. \hfill{}{[}6{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}NYJC/PRELIM/9597/2019/P2/Q5{]} }
+
+When a customer orders goods over the phone, the cashier will record
+the order in an order form containing the items ordered and quantity,
+customer address, delivery date and time and the amount payable. A
+copy of this form will be given to the storeman who will pick the
+goods and generate a delivery order (DO). The DO will be given to
+the delivery man who will deliver the goods. The customer on collecting
+the goods will sign on the DO and return a signed copy to the delivery
+man. On his return, the delivery man will give the DO to the accounts
+department who will generate an invoice. Invoices are kept in a file
+until the next day where they will be mailed to the customers.
+\begin{enumerate}
+\item Draw a data flow diagram of the above processes.\hfill{} {[}8{]} 
+\item Goods in the warehouse are divided into 2 main categories -- Kitchen
+appliances (e.g. kettle, toasters and ovens) and Entertainment products
+(e.g. LCD television, mp3 players and gaming consoles). Each item
+has an item name, description, unit price and quantity on hand. Kitchen
+appliances have an item weight, packing volume and colour. Entertainment
+products have a serial number, country of manufacture and recommended
+retail price.
+\begin{enumerate}
+\item Draw a class diagram of the above showing inheritance, their private
+attributes and public methods.\hfill{} {[}6{]}
+\item What is the purpose of a public method?\hfill{} {[}1{]}
+\item What is the difference between a class and an object?\hfill{} {[}2{]}
+\end{enumerate}
+\item In relation to the diagram in part (b), explain the terms: 
+\begin{enumerate}
+\item Encapsulation; \hfill{}{[}2{]}
+\item Inheritance;\hfill{} {[}2{]}
+\item Data hiding; \hfill{}{[}2{]}
+\item Polymorphism. \hfill{}{[}2{]}
+\end{enumerate}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}NYJC/PRELIM/9597/2019/P2/Q6{]} }
+
+A linked list ADT with the following incomplete specification is given
+as follows:
+\begin{center}
+\begin{tabular}{|l|}
+\hline 
+\texttt{LList}\tabularnewline
+\hline 
+\texttt{head : Node}\tabularnewline
+\hline 
+\texttt{constructor()}\tabularnewline
+\texttt{addNode(s : Node)}\tabularnewline
+\texttt{findmiddle(l : llist)-> INTEGER}\tabularnewline
+\hline 
+\end{tabular}%
+\begin{tabular}{|l|}
+\hline 
+Node\tabularnewline
+\hline 
+\texttt{data : INTEGER}\tabularnewline
+\texttt{nextPtr : Node}\tabularnewline
+\hline 
+\texttt{constructor()}\tabularnewline
+\texttt{setData(s : INTEGER)}\tabularnewline
+\texttt{setnextPtr(x : Node)}\tabularnewline
+\texttt{getData(): INTEGER }\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+\begin{enumerate}
+\item Explain the main difference between an array and a linked list data
+structure.\hfill{} {[}2{]}
+\item Using pseudo code, write an algorithm to implement \texttt{findmiddle}
+that will return the data in the middle of the linked list in one
+pass. \hfill{}{[}7{]}
+\item State two applications of a linked list. \hfill{}{[}2{]}
+\item State two other common methods (including parameters) that should
+be included in the \texttt{LList} specification.\hfill{} {[}2{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}RVHS/PRELIM/9597/2019/P1/Q1{]} }
+
+\textbf{CID3 Team Grouping} 
+
+In this question, you will help the CID3 students in forming CID3
+groups for their projects. 
+
+In \textquotedblleft \texttt{student\_cid.txt}\textquotedblright{} 
+
+There are three fields on each line which indicates \texttt{name},
+\texttt{role} and \texttt{gender} of 50 cid3 students. The fields
+are separated by \textquoteleft ;\textquoteright{} 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{Rufus Schuck;Coder;F }
+
+\texttt{Ione Wolfe;Dealer;F }
+
+\texttt{Hillary Curl;Coder;M }
+
+\texttt{\dots{} }%
+\end{minipage}
+
+\subsection*{Task 1.1 }
+
+Implement the function \texttt{read\_data(filename)} which takes \texttt{filename}
+as a string and returns a 2-dimension list that follows the format
+as shown in the example below.
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{>\textcompwordmark >\textcompwordmark > read\_data(\textquotedbl student\_cid.txt\textquotedbl ) }
+
+\texttt{{[}{[}'Rufus Schuck', 'Coder', 'F'{]}, {[}'Ione Wolfe', 'Dealer',
+'F'{]}, {[}'Hillary Curl', 'Coder', 'M'{]},\dots {]} }%
+\end{minipage}
+
+\subsection*{Evidence 1 }
+
+Program code of function \texttt{read\_data}. \hfill{}{[}2{]}
+
+\subsection*{Task 1.2}
+
+Implement the function \texttt{gender\_count(cid\_student\_lst, is\_female)}
+which takes a list \texttt{cid\_student\_lst} and a boolean \texttt{is\_female}
+as inputs and returns the number of female students in \texttt{cid\_student\_lst}
+if \texttt{is\_female} is \texttt{True}, otherwise return the number
+of male students. \texttt{cid\_student\_lst} is the list obtained
+in \textbf{Task 1.1}. 
+
+\subsection*{Evidence 2 }
+
+Program code of function \texttt{gender\_count}.\hfill{} {[}2{]}
+
+\subsection*{Evidence 3 }
+
+Screenshot of the output of the following: 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{cid\_student\_lst = read\_data(\textquotedbl student\_cid.txt\textquotedbl ) }
+
+\texttt{print(gender\_count(cid\_student\_lst, True)) }
+
+\texttt{print(gender\_count(cid\_student\_lst, False))}\hfill{}\texttt{
+}{[}1{]}%
+\end{minipage}
+
+\subsection*{Task 1.3 }
+
+Implement the procedure \texttt{role\_statistics(cid\_student\_lst)}
+which takes a list \texttt{cid\_student\_lst} as input and output
+the number of students for each role in the following format. (There
+are more than 5 types of roles.) 
+
+For example: 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{>\textcompwordmark >\textcompwordmark > cid\_student\_lst
+= read\_data(\textquotedbl student\_cid.txt\textquotedbl ) }
+
+\texttt{>\textcompwordmark >\textcompwordmark > role\_statistics(cid\_student\_lst) }
+
+\texttt{Role ~~~~~~~Number }
+
+\texttt{Coder ~~~~~~11 }
+
+\texttt{Dealer ~~~~~13 }
+
+\texttt{Designer ~~~14 }
+
+\texttt{Empathizer ~14 }
+
+\texttt{Maker ~~~~~~12 }%
+\end{minipage}
+
+Take note that the roles and numbers shown above is just an example.
+
+\subsection*{Evidence 4 }
+
+Program code of procedure \texttt{role\_statistics}.\hfill{} {[}3{]}
+
+\subsection*{Evidence 5}
+
+Screenshot of the output of the following: 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{cid\_student\_lst = read\_data(\textquotedbl student\_cid.txt\textquotedbl ) }
+
+\texttt{role\_statistics(cid\_student\_lst)}\hfill{} {[}1{]}%
+\end{minipage}
+
+\subsection*{Task 1.4 }
+
+Implement the function \texttt{form\_random\_group(cid\_student\_lst)}
+which takes a list \texttt{cid\_student\_lst} as input and returns
+a list consists of 5 student names. This list of students forms a
+group and must consist of one coder, one maker, one dealer, one empathizer
+and one designer. The student picked for each role must be random.
+If there is not sufficient roles or students to form a group, return
+an empty list. 
+
+For example: 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{>\textcompwordmark >\textcompwordmark > cid\_student\_lst
+= read\_data(\textquotedbl student\_cid.txt\textquotedbl ) }
+
+\texttt{>\textcompwordmark >\textcompwordmark > form\_random\_group(cid\_student\_lst) }
+
+\texttt{{[}'Fredricka Gormley', 'Jalisa Stoudemire', 'Laverna Halpern',
+'Chadwick Griffin', 'Abdul Boland'{]} }%
+\end{minipage}
+
+Note: 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{Fredricka Gormley is a coder }
+
+\texttt{Jalisa Stoudemire is a dealer}
+
+\texttt{Laverna Halpern is a designer }
+
+\texttt{Chadwick Griffin is an empathizer }
+
+\texttt{Abdul Boland is a maker}%
+\end{minipage}
+
+\subsection*{Evidence 6 }
+
+Program code of procedure \texttt{form\_random\_group}.\hfill{} {[}5{]}
+
+\subsection*{Evidence 7 }
+
+Screenshot of the output of the following: 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{cid\_student\_lst = read\_data(\textquotedbl student\_cid.txt\textquotedbl ) }
+
+\texttt{for i in range(3): }
+
+\texttt{\qquad{}print(form\_random\_group(cid\_student\_lst))} \hfill{}{[}1{]}%
+\end{minipage}
+
+\subsection*{Task 1.5 }
+
+Implement the function \texttt{remove\_students} which takes \texttt{cid\_student\_lst}
+and \texttt{one\_cid\_group} as inputs where \texttt{cid\_studnet\_lst}
+is the list obtained from \textbf{task 1.1} and \texttt{one\_cid\_group}
+is the list of 5 student names obtained from task 1.4. The function
+removes 5 records in \texttt{cid\_student\_lst} specified by the student
+names in \texttt{one\_cid\_group} and returns the removed records
+in a list. For example: 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{>\textcompwordmark >\textcompwordmark > cid\_student\_lst
+= read\_data(\textquotedbl student\_cid.txt\textquotedbl )}
+
+\texttt{>\textcompwordmark >\textcompwordmark > one\_cid\_group
+= form\_random\_group(cid\_student\_lst) }
+
+\texttt{>\textcompwordmark >\textcompwordmark > one\_cid\_group
+{[}'Rufus Schuck', 'Kathlene Collar', 'Luanne Lett', 'Phyliss Rolen',
+'Tobias Kimmer'{]} }
+
+\texttt{>\textcompwordmark >\textcompwordmark > remove\_students(cid\_student\_lst,
+one\_cid\_group) {[}{[}'Rufus Schuck', 'Coder', 'F'{]}, {[}'Kathlene
+Collar', 'Empathizer', 'M'{]}, {[}'Luanne Lett', 'Dealer', 'F'{]},
+{[}'Phyliss Rolen', 'Maker', 'M'{]}, {[}'Tobias Kimmer', 'Designer',
+'F'{]}}
+
+\texttt{>\textcompwordmark >\textcompwordmark > len(cid\_student\_lst) }
+
+\texttt{45 }%
+\end{minipage}
+
+After \texttt{remove\_students(cid\_student\_lst, one\_cid\_group)}
+is executed \texttt{cid\_student\_lst} should not contain any records
+with students name \texttt{Fredricka Gormley}, \texttt{Jalisa Stoudemire},
+\texttt{Laverna Halpern}, \texttt{Chadwick Griffin} and \texttt{Abdul
+Boland}. Since the 5 names are removed. \texttt{cid\_student\_lst}
+should now have 45 records. 
+
+\subsection*{Evidence 8 }
+
+Program code of function \texttt{remove\_students}. \hfill{}{[}4{]}
+
+\subsection*{Evidence 9 }
+
+Screenshot of the output of the following code. 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{def test\_15(): }
+
+\texttt{\qquad{}print(\textquotedbl -{}-{}-{}-{}-{}-Task 1.5-{}-{}-{}-{}-{}-\textquotedbl ) }
+
+\texttt{\qquad{}cid\_student\_lst = read\_data(\textquotedbl student\_cid.txt\textquotedbl ) }
+
+\texttt{\qquad{}one\_cid\_group = form\_random\_group(cid\_student\_lst) }
+
+\texttt{\qquad{}removed\_records = remove\_students(cid\_student\_lst,
+one\_cid\_group) }
+
+\texttt{\qquad{}print(\textquotedbl removed records\textquotedbl ) }
+
+\texttt{\qquad{}for removed\_record in removed\_records: }
+
+\texttt{\qquad{}\qquad{}print(removed\_record) }
+
+\texttt{\qquad{}print(\textquotedbl remaining records\textquotedbl ) }
+
+\texttt{\qquad{}for cid\_student in cid\_student\_lst: }
+
+\texttt{\qquad{}\qquad{}print(cid\_student) }
+
+\texttt{test\_15()} \hfill{} {[}1{]}%
+\end{minipage}
+
+\subsection*{Task 1.6 }
+
+Using your solutions in task 1.1, 1.4 and 1.5, write a procedure \texttt{form\_max\_cid\_group}
+which takes a list \texttt{cid\_student\_lst} as input and write to
+a file named \textquotedblleft \texttt{result.txt}\textquotedblright{}
+the suggested maximum number of CID3 groups that can be formed from
+\texttt{cid\_student\_lst}. The content in \textquotedbl\texttt{result.txt}\textquotedbl{}
+should also include the group number and its group members. For example,
+the content of \textquotedbl\texttt{result.txt}\textquotedbl{} can
+be: 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{Group 0}
+
+\texttt{Rufus Schuck Coder F}
+
+\texttt{Lashawna Meals Dealer M}
+
+\texttt{Phyliss Rolen Maker M }
+
+\texttt{Laverna Halpern Designer F }
+
+\texttt{Apryl Soileau Empathizer F }
+
+\texttt{Group 1 }
+
+\texttt{Claudette Bode Maker F }
+
+\texttt{Angle Linck Coder F }
+
+\texttt{Grazyna Kitzman Designer M }
+
+\texttt{Virgilio Britt Dealer F }
+
+\texttt{Dannette Raasch Empathizer F }
+
+\texttt{Group 2 }
+
+\texttt{Carolann Kintner Designer M }
+
+\texttt{Ola Markell Empathizer F }
+
+\texttt{Jaye Galle Maker F }
+
+\texttt{Lanita Sciortino Coder M}
+
+\texttt{Joella Wessner Dealer F }
+
+\texttt{Group 3 }
+
+\texttt{Hertha Dossantos Dealer F }
+
+\texttt{Chadwick Griffin Empathizer M }
+
+\texttt{Fredricka Gormley Coder F }
+
+\texttt{Marcella Daigneault Designer F}
+
+\texttt{Farah Quon Maker F}
+
+\texttt{Group 4 }
+
+\texttt{Hillary Curl Coder M }
+
+\texttt{Elvia Dubrey Designer F}
+
+\texttt{Terrence Shannon Empathizer M }
+
+\texttt{Luanne Lett Dealer F }
+
+\texttt{See Borne Maker F }
+
+\texttt{Group 5 }
+
+\texttt{Toney Mcnab Coder M }
+
+\texttt{Jalisa Stoudemire Dealer M }
+
+\texttt{Abdul Boland Maker M }
+
+\texttt{Russell Gillison Designer F }
+
+\texttt{Reiko Stack Empathizer F}%
+\end{minipage}
+
+\subsection*{Evidence 10 }
+
+Program code of procedure \texttt{form\_max\_cid\_group}. \hfill{}{[}4{]}
+
+\subsection*{Evidence 11 }
+
+Screenshot of the content of \textquotedbl\texttt{result.txt}\textquotedbl .
+\hfill{}{[}1{]}
+
+ \newpage 
+
+\item \textbf{{[}RVHS/PRELIM/9597/2019/P1/Q2{]} }
+
+\textbf{EAN-13 }
+
+EAN-13 (European Article Number) barcode a standard describing a barcode
+symbology and numbering system used in global trade to identify a
+specific retail product type, in a specific packaging configuration,
+from a specific manufacturer. 
+
+EAN check digits are calculated by summing each of the odd position
+numbers multiplied by 3 and then by adding the sum of the even position
+numbers. 
+
+Numbers are examined going from right to left, so the first odd position
+is the last digit in the code. The final digit of the result is subtracted
+from 10 to calculate the check digit. 
+
+For example, 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{EAN(first 12 digits) = }\texttt{\textbf{4}}\texttt{0}\texttt{\textbf{0}}\texttt{6}\texttt{\textbf{3}}\texttt{8}\texttt{\textbf{1}}\texttt{3}\texttt{\textbf{3}}\texttt{3}\texttt{\textbf{9}}\texttt{3 }
+
+\texttt{Even digits ~~~~~~~~~= 4 + 0 + 3 + 1 + 3 + 9 ~~~~~~=
+20 }
+
+\texttt{Odd digits x 3 ~~~~~~= (0 + 6 + 8 + 3 + 3 + 3) x 3 =
+69 }
+
+\texttt{Total ~~~~~~~~~~~~~~~= 20 + 69 ~~~~~~~~~~~~~~~~~~~~=
+89 }
+
+\texttt{Check digit ~~~~~~~~~= 10 \textendash{} 9 ~~~~~~~~~~~~~~~~~~~~~=
+1 }%
+\end{minipage}
+
+Therefore, the valid EAN number is \texttt{4006381333931}. 
+
+\subsection*{Task 2.1 }
+
+Implement the \textbf{\emph{iterative}} function \texttt{EAN} that
+takes in a string \texttt{ean12} which is the first 12 characters
+of a valid EAN number and returns the full valid EAN with the check
+digit in string. 
+
+For example:
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{>\textcompwordmark >\textcompwordmark > EAN(\textquotedbl 400638133393\textquotedbl ) }
+
+\texttt{\textquotedbl 4006381333931\textquotedbl{} }
+
+\texttt{>\textcompwordmark >\textcompwordmark > EAN(\textquotedbl 590123412345\textquotedbl )}
+
+\texttt{\textquotedbl 5901234123457\textquotedbl{} }%
+\end{minipage}
+
+\subsection*{Evidence 12 }
+
+Program code for \texttt{EAN}. \hfill{} {[}3{]}
+
+\subsection*{Evidence 13 }
+
+Screenshot of the output of the following code. \hfill{} {[}1{]}
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{print(EAN(\textquotedbl 400638133393\textquotedbl ))}
+
+\texttt{print(EAN(\textquotedbl 590123412345\textquotedbl )) }
+
+\texttt{print(EAN(\textquotedbl 950110153000\textquotedbl )) }
+
+\texttt{print(EAN(\textquotedbl 007567816412\textquotedbl )) }
+
+\texttt{print(EAN(\textquotedbl 123456789123\textquotedbl )) }
+
+\texttt{print(EAN(\textquotedbl 563643712973\textquotedbl )) }%
+\end{minipage}
+
+\subsection*{Task 2.2}
+
+Implement the function \texttt{EAN\_rec} which is the recursive version
+of task 2.1. 
+
+\subsection*{Evidence 14}
+
+Program code for \texttt{EAN\_rec}. \hfill{}{[}3{]}
+
+\subsection*{Task 2.3 }
+
+Implement the function \texttt{generate\_n\_random\_EAN(n)} that takes
+an integer \texttt{n} as input and return a list that contains n random
+valid EAN numbers in string. 
+
+For example: 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{>\textcompwordmark >\textcompwordmark > generate\_n\_random\_EAN(5)}
+
+\texttt{{[}'9399783016850', '7126497037138', '7859230985143', '4663965860605',
+'0075678464126'{]}}%
+\end{minipage}
+
+\subsection*{Evidence 15 }
+
+Program code for \texttt{generate\_n\_random\_EAN}. \hfill{} {[}3{]}
+
+\subsection*{Evidence 16 }
+
+Screenshot of the output of the following code: \hfill{} {[}1{]}
+
+\texttt{print(generate\_n\_random\_EAN(5))} 
+
+\subsection*{Task 2.4}
+
+Implement the function \texttt{quick\_sort\_10\_EAN()} that performs
+quicksort on 10 randomly generated valid EANs and returns the sorted
+list of EANs in string.
+
+For example: 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{>\textcompwordmark >\textcompwordmark > quick\_sort\_10\_EAN() }
+
+\texttt{{[}'0777557883249', '1830930669218', '1932904647625', '3257925382651',
+'6272017045297', '6715598129708', '7248472619815', '7660010013945',
+'9810395262430', '9870932286909'{]} }%
+\end{minipage}
+
+\subsection*{Evidence 17 }
+
+Program code for \texttt{quick\_sort\_10\_EAN}. \hfill{}{[}3{]}
+
+\subsection*{Evidence 18}
+
+Screenshot of the output of the following code: \hfill{}{[}1{]}
+
+\texttt{print(quick\_sort\_10\_EAN())}
+
+ \newpage 
+
+\item \textbf{{[}RVHS/PRELIM/9597/2019/P1/Q3{]} }
+
+\textbf{Minimum Heap }
+
+A minimal heap is a binary tree that always maintains the smallest
+data item at its root node. In this question, the \texttt{class minHeap}
+is implemented using a 1D array with each child node index calculated
+using the following formula. 
+
+\texttt{left\_child\_ptr = node\_ptr x 2 + 1}
+
+\texttt{right\_child\_ptr = node\_ptr x 2 + 2 }
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline 
+\texttt{\textbf{class minHeap attributes}} & \texttt{\textbf{Description}}\tabularnewline
+\hline 
+\texttt{count (INTEGER)} & It stores the number of data item currently in \texttt{minHeap}\tabularnewline
+\hline 
+\texttt{size (INTEGER)} & It stores the maximum number of data item \texttt{minHeap} can take.\tabularnewline
+\hline 
+\texttt{tree (ARRAY OF INTEGER)} & It is a 1D array that stores the data items as nodes in \texttt{minHeap}.
+If a data item doesn\textquoteright t exist, it is represented by
+-1. \tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\subsection*{Task 3.1 }
+
+The pseudo-code of the class procedure \texttt{add(newItem)} is given
+in file \textquotedblleft \texttt{task31.txt}\textquotedblright .
+
+Use it to implement the class procedure \texttt{add}. 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{PROCEDURE add(newItem) }
+
+\texttt{\qquad{}IF minHeap is not full THEN}
+
+\texttt{\qquad{}\qquad{}tree{[}count{]} <- newItem}
+
+\texttt{\qquad{}\qquad{}curr\_ptr <- count }
+
+\texttt{\qquad{}\qquad{}parent\_ptr <- QUOTIENT((curr\_ptr - 1)
+DIV 2)}
+
+\texttt{\qquad{}\qquad{}REPEAT }
+
+\texttt{\qquad{}\qquad{}\qquad{}SWAP (tree{[}parent\_ptr{]}, tree{[}curr\_ptr{]}) }
+
+\texttt{\qquad{}\qquad{}\qquad{}curr\_ptr <- parent\_ptr }
+
+\texttt{\qquad{}\qquad{}\qquad{}parent\_ptr <- QUOTIENT((curr\_ptr
+- 1) DIV 2)}
+
+\texttt{\qquad{}\qquad{}UNTIL curr\_ptr EQUAL TO 0 OR tree{[}parent\_ptr{]}<=
+newItem}
+
+\texttt{\qquad{}\qquad{}INCREMENT count BY 1 }
+
+\texttt{\qquad{}ELSE }
+
+\texttt{\qquad{}\qquad{}OUTPUT \textquotedbl Heap is full. Cannot
+add.\textquotedbl{} }
+
+\texttt{\qquad{}END IF }
+
+\texttt{END PROCEDURE}%
+\end{minipage}
+
+\subsection*{Evidence 19 }
+
+Program code for \texttt{add}. \hfill{} {[}3{]}
+
+\subsection*{Task 3.2 }
+
+The class function \texttt{remove\_minimum} is implemented for you
+in file \textquotedblleft \texttt{T3.py}\textquotedblright . This
+function removes the data item at the root node of the minimum heap
+and returns the data item. Your task is to implement the class function
+\texttt{sort} which returns a list consists of all the data items
+stored in the minimum heap in increasing order. Take note that after
+\texttt{sort} is executed, the minimum heap becomes empty. 
+
+For example: 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{def test(): }
+
+\texttt{\qquad{}test\_value = {[}58, 36, 3, 9, 87{]}}
+
+\texttt{\qquad{}h1 = minHeap(5) }
+
+\texttt{\qquad{}for value in test\_value: }
+
+\texttt{\qquad{}\qquad{}h1.add(value) }
+
+\texttt{\qquad{}print(h1.sort())}
+
+\texttt{>\textcompwordmark >\textcompwordmark > test () }
+
+\texttt{{[}3, 9, 36, 58, 87{]} }%
+\end{minipage}
+
+\paragraph*{Evidence 20}
+
+Program code for the class function \texttt{sort}. \hfill{} {[}2{]}
+
+\subsection*{Evidence 21}
+
+Screenshot of the output of the following code: \hfill{}{[}1{]}
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{def test\_32(n): }
+
+\texttt{\qquad{}test\_value = random.sample(range(1,100), n)}
+
+\texttt{\qquad{}h1 = minHeap(n)}
+
+\texttt{\qquad{}for value in test\_value:}
+
+\texttt{\qquad{}\qquad{}h1.add(value)}
+
+\texttt{\qquad{}print(h1.sort())\bigskip{}
+}
+
+\texttt{print(\textquotedbl task 3.2\textquotedbl ) }
+
+\texttt{print(\textquotedbl 1st run\textquotedbl ) }
+
+\texttt{test\_32(15)}
+
+\texttt{print(\textquotedbl 2nd run\textquotedbl )}
+
+\texttt{test\_32(15) }
+
+\texttt{print(\textquotedbl 3rd run\textquotedbl )}
+
+\texttt{test\_32(15) }%
+\end{minipage}
+
+\subsection*{Task 3.3 }
+
+Implement the class procedure \texttt{display\_all\_paths} which displays
+all paths from the root of minimum heap to all its leaves. \emph{Hint:
+The minimum heap in this question is implemented using a complete
+binary tree. This means that the }\texttt{tree}\emph{ array indices
+from }\texttt{0}\emph{ to }\texttt{count-1}\emph{ contain all the
+data items of the minimum heap}. 
+
+For example: 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{def test\_33(n):}
+
+\texttt{\qquad{}test\_value = random.sample(range(1,100), n) }
+
+\texttt{\qquad{}h1 = minHeap(n)}
+
+\texttt{\qquad{}for value in test\_value: }
+
+\texttt{\qquad{}\qquad{}h1.add(value) }
+
+\texttt{\qquad{}h1. display\_all\_paths() }
+
+\texttt{>\textcompwordmark >\textcompwordmark > test\_33(10) }
+
+\texttt{5 16 21 40 }
+
+\texttt{5 16 21 29 }
+
+\texttt{5 16 34 94 }
+
+\texttt{5 49 96 }
+
+\texttt{5 49 69 }%
+\end{minipage}
+
+\subsection*{Evidence 22 }
+
+Program code for \texttt{display\_all\_paths}. \hfill{} {[}3{]}
+
+\subsection*{Evidence 23 }
+
+Screenshot of the output of the following code: \hfill{}{[}1{]}
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{print(\textquotedbl task 3.3\textquotedbl ) }
+
+\texttt{print(\textquotedbl 1st run\textquotedbl ) }
+
+\texttt{test\_33(5)}
+
+\texttt{print(\textquotedbl 2nd run\textquotedbl )}
+
+\texttt{test\_33(10)}
+
+\texttt{print(\textquotedbl 3rd run\textquotedbl )}
+
+\texttt{test\_33(15) }%
+\end{minipage}
+
+ \newpage 
+
+\item \textbf{{[}RVHS/PRELIM/9597/2019/P1/Q4{]} }
+
+\textbf{Begemed }
+
+Begemed is a casual game which is played on ruled grids. The player
+is required to swap a gem in one of the four possible directions,
+namely \textquotedblleft up\textquotedblright , \textquotedblleft down\textquotedblright ,
+\textquotedblleft left\textquotedblright , \textquotedblleft right\textquotedblright ;
+after the swap, if a row or a column of 3 or more gems are formed,
+it\textquoteright s considered a valid move and the connected gems
+will be destroyed. Otherwise, it\textquoteright s considered an invalid
+move. Note that diagonal directions are not counted. 
+
+Below are some examples of the game demonstrated in a $5\times5$
+grid. The letters \textquotedbl d\textquotedbl , \textquotedbl s\textquotedbl ,
+\textquotedbl t\textquotedbl , \textquotedbl r\textquotedbl ,
+\textquotedbl e\textquotedbl{} represents Diamond, Sapphire, Topaz,
+Ruby, Emerald respectively. 
+\begin{center}
+\includegraphics[width=0.7\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-RVHS-2019-P1-Q4-1}
+\par\end{center}
+
+Some other valid swaps are: 
+\begin{center}
+\includegraphics[width=0.7\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-RVHS-2019-P1-Q4-2}
+\par\end{center}
+
+\begin{center}
+\includegraphics[width=0.7\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-RVHS-2019-P1-Q4-3}
+\par\end{center}
+
+\begin{center}
+\includegraphics[width=0.7\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-RVHS-2019-P1-Q4-4}
+\par\end{center}
+
+You are tasked to create a text-based interactive \textquotedblleft Begemed\textquotedblright{}
+game in the following tasks. 
+
+\subsection*{Task 4.1 }
+
+Implement \texttt{Begemed} class according to the UML class diagram
+and attributes/methods specifications given. 
+\begin{center}
+\begin{tabular}{|l|}
+\hline 
+\texttt{Board}\tabularnewline
+\hline 
+\texttt{- board: list }\tabularnewline
+\hline 
+\texttt{+ Board(size: int)}\tabularnewline
+\texttt{+ new\_game(board: list) }\tabularnewline
+\texttt{+ check\_connection(row: int, col: int): boolean }\tabularnewline
+\texttt{+ find\_valid\_moves(row: int, col: int): list}\tabularnewline
+\texttt{+ display(hint: boolean=False)}\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline 
+\texttt{\textbf{Attribute}} & \texttt{\textbf{Specification}}\tabularnewline
+\hline 
+\texttt{board: list} & \texttt{board} is a 2-dimensional \texttt{list} hosting the gems inside
+each grid. \tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+Methods and its specification.
+\begin{itemize}
+\item \texttt{Board(n: int) : n} is the size used to define the dimension
+of the \texttt{board}. The board should be initialized to a ($n\times n$)
+2- dimensional list filled with string \textquotedblleft \_\textquotedblright .
+\hfill{}{[}2{]}
+\item \texttt{new\_game(new\_board : list): new\_game} takes in a \texttt{list}
+named \texttt{new\_board} and assign it to the class attribute \texttt{board}.
+The following list is provided in the python template file. 
+
+t\texttt{est\_board = {[} {[}'r', 'r', 'd', 'e', 'd'{]}, {[}'s', 'd',
+'r', 'd', 't'{]}, {[}'d', 'd', 'r', 's', 'd'{]}, {[}'e', 'r', 't',
+'r', 'r'{]}, {[}'t', 'e', 'e', 's', 'd'{]}{]} }
+
+\emph{This method is just a temporary solution which help you in initial
+coding and debugging. In a later task, there will be further instructions
+to update its implementation.} \hfill{}{[}1{]}
+\item \texttt{check\_connection( row: int, col: int): boolean : check\_connection}
+takes in the \texttt{row} and \texttt{col} value of a particular gem,
+then check if there is a connection of 3 or more gems of the same
+type in its horizontal or vertical direction. Return \texttt{True}
+if such a connection is found, and \texttt{False} otherwise. \hfill{}{[}8{]}
+\end{itemize}
+
+\subsection*{Evidence 24 }
+
+Program code of class Board and class methods up to \texttt{check\_conection}.
+{[}11{]} 
+
+Methods and its specification.
+\begin{itemize}
+\item \texttt{find\_valid\_moves( row: int, col: int): list} : \texttt{find\_valid\_moves}
+takes in the \texttt{row} and \texttt{col} value of a particular gem,
+then attempt to swap in the four directions (up, down, left, right).
+If there is a new connection of 3 or more gems of the same type formed,
+record as a valid movement. 
+
+Return a \texttt{list} containing all valid movements. An empty \texttt{list}
+is to be returned if no valid movement is found. 
+
+For example:
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{~~~~0~~~1~~~2~~~3~~~4 }
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{0 | r | r | d | e | d | }
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{1 | s | d | r | d | t | }
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{2 | d | d | r | s | d | }
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{3 | e | r | t | r | r | }
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{4 | t | e | e | s | d | }
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }%
+\end{minipage}
+
+If \texttt{find\_valid\_moves(0, 2)} is called, the function should
+return \texttt{{[}'d', 'l'{]}} because when down swap or left swap
+is performed on gem at \texttt{(0, 2)}, a new connection of 3 or more
+gems of the same type will be formed. {[}5{]}
+\item \texttt{display(hint: Boolean=False)} : \texttt{display} will print
+out the \texttt{board} according to the sample format given. Take
+note that the \texttt{size} of the board can be changed and hence
+the grid outline should be dynamically adjusted according to its \texttt{size}. 
+
+For example: 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{~~~~0~~~1~~~2~~~3~~~4}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+}
+
+\texttt{0 | r | r | d | e | d |}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+}
+
+\texttt{1 | s | d | r | d | t |}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+}
+
+\texttt{2 | d | d | r | s | d |}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+}
+
+\texttt{3 | e | r | t | r | r |}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+}
+
+\texttt{4 | t | e | e | s | d |}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+}%
+\end{minipage}
+
+\texttt{hint} is an optional argument with a default value of \texttt{False}.
+If \texttt{hint} is set to be \texttt{True}, the gems with valid moves
+should be highlighted by using the \textbf{uppercase} letters, and
+the valid moves for the \textbf{coordinates} and \textbf{directions}
+should be displayed too. 
+
+For example: 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{(0, 1) {[}'r'{]}}
+
+\texttt{(0, 2) {[}'d', 'l'{]}}
+
+\texttt{(1, 2) {[}'u'{]} }
+
+\texttt{(1, 3) {[}'u', 'r'{]}}
+
+\texttt{(2, 2) {[}'d'{]} }
+
+\texttt{(3, 0) {[}'d'{]} }
+
+\texttt{(3, 1) {[}'r'{]}}
+
+\texttt{(3, 3) {[}'l'{]} }%
+\end{minipage}
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{~~~~0~~~1~~~2~~~3~~~4}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+}
+
+\texttt{0 | r | }\texttt{\textbf{\uline{R}}}\texttt{ | }\texttt{\textbf{\uline{D}}}\texttt{
+| e | d |}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+}
+
+\texttt{1 | s | d | }\texttt{\textbf{\uline{R}}}\texttt{ | }\texttt{\textbf{\uline{D}}}\texttt{
+| t |}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+}
+
+\texttt{2 | d | d | }\texttt{\textbf{\uline{R}}}\texttt{ | s |
+d |}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+}
+
+\texttt{3 | }\texttt{\textbf{\uline{E}}}\texttt{ | }\texttt{\textbf{\uline{R}}}\texttt{
+| t | }\texttt{\textbf{\uline{R}}}\texttt{ | r |}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+}
+
+\texttt{4 | t | e | e | s | d |}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+}%
+\end{minipage}
+\end{itemize}
+
+\subsection*{Evidence 25 }
+
+Program code of class method \texttt{find\_valid\_moves} and \texttt{display}.
+\hfill{}{[}14{]}
+
+\subsection*{Task 4.2 }
+
+Write a texted based menu which has the following options. Validation
+of the user input is needed. 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{Choose an option below: }
+
+\texttt{1) Validate Move }
+
+\texttt{2) Toggle Hint Mode}
+
+\texttt{3) Move the Gem!}
+
+\texttt{4) New Game}
+
+\texttt{5) Exit }%
+\end{minipage}
+
+The descriptions for the options can be found below. 
+
+Options and its descriptions.
+\begin{itemize}
+\item \texttt{Validate Move} : Ask user to input a set of \texttt{row},
+\texttt{col} and \texttt{direction}. Check and feedback if this swap
+is valid. 
+\item \texttt{Toggle Hint Mode} : For every new game, the \texttt{hint}
+mode by default should be \texttt{off}. Use this option to toggle
+the \texttt{on} and \texttt{off} state of hint mode.
+
+If \texttt{hint} mode is \texttt{on}, the menu interface should automatically
+highlight the gems with valid moves and print out a list of the coordinates
+together with its valid movement directions. 
+\item \texttt{Move the Gem! :} Move a gem in a chosen direction. 
+
+\emph{Note that the related class method will only be implemented
+in the }\textbf{\emph{next task}}\emph{. For the current menu, you
+only need to take in user input for }\texttt{row}\emph{, }\texttt{col}\emph{
+and }\texttt{direction}\emph{, but no further action needs to be taken. }
+\item \texttt{New Game} : Start a new game and reset \texttt{hint} mode
+to be off. 
+
+For this task, you may just initialize the new game using the \texttt{test\_board}
+given. 
+\item \texttt{Exit} : Exit program. 
+\end{itemize}
+
+\subsection*{Evidence 26}
+
+Program code of menu implementation. \hfill{}{[}10{]}
+
+\subsection*{Task 4.3}
+
+Update the class Begemed with the following methods. Note that this
+task is time consuming and only worth \textbf{2 marks}. 
+
+Methods and its specification.
+\begin{itemize}
+\item \texttt{new\_game(n: int)} : \texttt{new\_game} will now take in a
+size of \texttt{n} and randomly generate a \texttt{$\mathtt{n}\times\mathtt{n}$}
+board of gems. The newly generated gems should not have any connection
+of 3 or more gems with the same type. 
+\item \texttt{move\_gem(row: int, col: int, direction: string)} \texttt{move\_gem}
+should take in a gem position and direction. If the swap is a valid
+move, detect any newly formed connection of 3 or more gems with the
+same type and cancel them. 
+
+\noindent %
+\begin{minipage}[t]{0.5\columnwidth}%
+\texttt{~~~~0~~~1~~~2~~~3~~~4 }
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{0 | r | r | d | e | d |}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{1 | s | d | r | d | t |}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{2 | d | d | r | s | d |}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{3 | e | }\texttt{\textbf{\uline{r}}}\texttt{ | }\texttt{\textbf{\uline{t}}}\texttt{
+| r | r |}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{4 | t | e | e | s | d |}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+}
+
+Swap \textquotedbl r\textquotedbl{} at (3, 1) with \textquotedbl t\textquotedbl{}
+at (3, 2)%
+\end{minipage}%
+\begin{minipage}[t]{0.5\columnwidth}%
+\texttt{~~~~0~~~1~~~2~~~3~~~4 }
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+}
+
+\texttt{0 | r | r | d | e | d | }
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{1 | s | d | \_ | d | t |}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{2 | d | d | \_ | s | d | }
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{3 | e | t | \_ | \_ | \_ | }
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{4 | t | e | e | s | d | }
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+}
+
+Gems connected with 3 or more of the same type are cancelled. %
+\end{minipage}
+
+After the gems are being cancelled, those gems on top of the current
+gems should \textquotedblleft fall\textquotedblright{} down. 
+
+New gems will be randomly generated to fill up the board. 
+
+\noindent %
+\begin{minipage}[t]{0.5\columnwidth}%
+\texttt{~~~~0~~~1~~~2~~~3~~~4 }
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{0 | r | r | \_ | \_ | \_ | }
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{1 | s | d | \_ | }\texttt{\textbf{\uline{e}}}\texttt{ |
+}\texttt{\textbf{\uline{d}}}\texttt{ |}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{2 | d | d | \_ | }\texttt{\textbf{\uline{d}}}\texttt{ |
+}\texttt{\textbf{\uline{t}}}\texttt{ |}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{3 | e | t | }\texttt{\textbf{\uline{d}}}\texttt{ | }\texttt{\textbf{\uline{s}}}\texttt{
+| }\texttt{\textbf{\uline{d}}}\texttt{ |}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{4 | t | e | e | s | d | }
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+Gems on top of the cancelled gem \textquotedblleft falls\textquotedblright{}
+down%
+\end{minipage}%
+\begin{minipage}[t]{0.5\columnwidth}%
+\texttt{~~~~0~~~1~~~2~~~3~~~4 }
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{0 | r | r | }\texttt{\textbf{\uline{r}}}\texttt{ | }\texttt{\textbf{\uline{s}}}\texttt{
+| }\texttt{\textbf{\uline{s}}}\texttt{ |}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{1 | s | d | }\texttt{\textbf{\uline{t}}}\texttt{ | e |
+d | }
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{2 | d | d | }\texttt{\textbf{\uline{t}}}\texttt{ | d |
+t | }
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{3 | e | t | d | s | d |}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+\texttt{4 | t | e | e | s | d |}
+
+\texttt{~~+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+-{}-{}-+ }
+
+New gems are generated %
+\end{minipage}
+
+Check if there are more connections of 3 or more gems of the same
+type are formed, if found repeat the above cancel and refill steps. 
+\item \texttt{menu} Adjust the menu to accommodate these new changes. 
+\end{itemize}
+
+\subsection*{Evidence 27 }
+
+Program code of above mentioned changes. \hfill{}{[}2{]}
+
+ \newpage 
+
+\item \textbf{{[}RVHS/PRELIM/9597/2019/P2/Q1{]} }
+
+Vending machine
+\begin{enumerate}
+\item Draw a data flow diagram for a vending machine system that allows
+user to buy drinks using coins and seller to refill stock. \emph{Note:
+You are to decide on the processes to be included in the DFD on your
+own}. \hfill{}{[}5{]}
+\item Draw a flow chart on the steps in dispensing a drink by the vending
+machine. Your flow chart should include various situations faced by
+the system e.g. not enough cash, drinks chosen out of stock etc. \hfill{}{[}5{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}RVHS/PRELIM/9597/2019/P2/Q2{]} }
+
+Driverless car
+\begin{enumerate}
+\item State one ethical and one social issue of using driverless car. \hfill{}{[}2{]}
+\item A simplified decision making on the behavior of a driverless car is
+as follow. 
+\begin{itemize}
+\item When a pedestrian is sensed 10m ahead, the driverless car \textbf{must}
+apply emergency break if its current speed is more than 20 km/hr.
+Otherwise, it should slow down gently.
+\item In other situations, when red light is sensed 20m ahead, the driverless
+car should slow down gently regardless of its speed. 
+\end{itemize}
+Draw a reduced decision table for the scenario above. \hfill{}{[}5{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}RVHS/PRELIM/9597/2019/P2/Q3{]} }
+
+A project manager uses the PERT chart to manage a software project.
+\begin{center}
+\includegraphics[width=0.5\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-RVHS-2019-P2-Q3-1}
+\par\end{center}
+
+\noindent \begin{center}
+\begin{tabular}{|c|c|c|}
+\hline 
+\textbf{Activity} & \textbf{Description} & \textbf{Duration (week)}\tabularnewline
+\hline 
+A & Specification & 4\tabularnewline
+\hline 
+B & Installation of datastore servers & 5\tabularnewline
+\hline 
+C & Development & 7\tabularnewline
+\hline 
+D & Unit Testing & 3\tabularnewline
+\hline 
+E & System testing & 3\tabularnewline
+\hline 
+F & Conversion of existing data files to new format & 9\tabularnewline
+\hline 
+G & UAT & 2\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+\begin{enumerate}
+\item Explain the significance of the dotted line. \hfill{}{[}1{]}
+\item Draw a Gantt chart based on the above information.\hfill{} {[}3{]}
+\item State the impact on the project if activity F duration is cut by 3
+weeks.\hfill{} {[}2{]}
+\item State the purpose of the project proposal.\hfill{} {[}1{]}
+\item State 2 important topics in the project proposal. \hfill{}{[}1{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}RVHS/PRELIM/9597/2019/P2/Q4{]} }
+
+A user-defined linked list has the following operations.
+
+Operations and its descriptions 
+\begin{itemize}
+\item \texttt{create()} : This function creates an empty linked list.
+
+For example: 
+
+\texttt{lst1 = create()}
+
+A linked list is created and referenced by \texttt{lst1}.
+\item \texttt{insert(llst,data)} : This procedure always adds \texttt{data}
+as a node at the head of the linked list
+
+For example
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{lst1: 'A'->'B'->'C'->'D'->'E'}
+
+\texttt{insert(lst1, 'Z')}
+
+\texttt{lst1: 'Z'->'A'->'B'->'C'->'D'->'E'}%
+\end{minipage}
+\item \texttt{split(llst,pos)} The function breaks the linked list at position
+\texttt{pos} and returns the cut half as a new linked list.
+
+For example: 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{lst1: 'A'->'B'->'C'->'D'->'E'}
+
+\texttt{lst2 = split(lst1, 2)}
+
+\texttt{lst1: 'A'->'B' }
+
+\texttt{lst2: 'C'->'D'->'E'}%
+\end{minipage}
+\item \texttt{join(llst1,llist2)} This function joins 2 linked lists as
+one.
+
+For example: 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{lst1: 'C'->'B' }
+
+\texttt{lst2: 'A'->'D'->'E}
+
+\texttt{join(lst1, lst2)}
+
+\texttt{lst1: 'C'->'B'->'A'->'D'->'E' }
+
+\texttt{lst2: Empty}%
+\end{minipage}
+\end{itemize}
+Using the provided operations of the linked list, write, in pseudo-code
+an algorithm that could be used to implement the \texttt{swap} operation.
+\emph{Hint: you don\textquoteright t have to use all the operations
+provided}.
+
+Operations and its description 
+\begin{itemize}
+\item \texttt{swap(llst,pos)} : This procedure swaps the data at positions
+\texttt{pos} and \texttt{pos + 1}
+
+For example: 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{lst1:'A'->'B'->'C'->'D'->'E' }
+
+\texttt{swap(lst1,3)}
+
+\texttt{lst1:'A'->'B'->'D'->'C'->'E'}%
+\end{minipage}
+\end{itemize}
+You can assume that the operations executed are always valid. For
+example, if there is no 5th node, \texttt{swap(lst1,4)} will not be
+called. \hfill{}{[}5{]}
+
+ \newpage 
+
+\item \textbf{{[}RVHS/PRELIM/9597/2019/P2/Q5{]} }
+
+Computer Network
+\begin{enumerate}
+\item Explain how the switch forwards data packet to destinated device.
+\hfill{}{[}1{]}
+\item State the function of a router.\hfill{} {[}1{]}
+\item Explain with an example what a client server network is.\hfill{}
+{[}1{]}
+\item Describe the differences between PaaS and IaaS.\hfill{} {[}1{]}
+\item State 2 data verification methods.\hfill{} {[}1{]}
+\item Explain what packet switching is.\hfill{} {[}1{]}
+\item State the connection mode that the walkie-talkie (push to talk) is
+working on.\hfill{} {[}1{]}
+\item State the difference between synchronous and asynchronous data transmission.
+\hfill{}{[}1{]}
+\item State and explain a method to protect data in transit.\hfill{} {[}1{]}
+\item State and explain a method to protect data at rest.\hfill{}{[}1{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}RVHS/PRELIM/9597/2019/P2/Q6{]} }
+
+A sort procedure is implemented in Python is follow.
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{def sort(sort\_lst, unsort\_lst):}
+
+\texttt{\qquad{}if len(unsort\_lst) > 0: }
+
+\texttt{\qquad{}\qquad{}item = unsort\_lst{[}0{]} }
+
+\texttt{\qquad{}\qquad{}i = 0 }
+
+\texttt{\qquad{}\qquad{}while i < len(sort\_lst) and item < sort\_lst{[}i{]}: }
+
+\texttt{\qquad{}\qquad{}\qquad{}i += 1 }
+
+\texttt{\qquad{}\qquad{}return sort(sort\_lst{[}:i{]}+{[}item,{]}+sort\_lst{[}i:{]},
+unsort\_lst{[}1:{]})}
+
+\texttt{\qquad{}else:}
+
+\texttt{\qquad{}\qquad{}return sort\_lst}%
+\end{minipage}
+\begin{enumerate}
+\item State the name of the above sorting algorithm. \hfill{}{[}1{]}
+\item The below statement is executed.
+
+\texttt{>\textcompwordmark >\textcompwordmark > sort({[}{]}, {[}9,1,8,2,3,7,5{]})}
+
+Using the table below, trace the items in \texttt{sort\_lst} and \texttt{unsort\_lst}
+in each recursive call.
+\noindent \begin{center}
+\begin{tabular}{|c|c|c|}
+\hline 
+\texttt{\textbf{\#}} & \texttt{\textbf{sort\_lst}} & \texttt{\textbf{unsort\_lst}}\tabularnewline
+\hline 
+\texttt{1} & \texttt{{[}{]}} & \texttt{{[}9,1,8,2,3,7,5{]}}\tabularnewline
+\hline 
+\texttt{2} &  & \tabularnewline
+\hline 
+\texttt{3} &  & \tabularnewline
+\hline 
+\texttt{4} &  & \tabularnewline
+\hline 
+\texttt{5} &  & \tabularnewline
+\hline 
+\texttt{6} &  & \tabularnewline
+\hline 
+\texttt{7} &  & \tabularnewline
+\hline 
+\texttt{8} &  & \tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\hfill{}{[}3{]}
+\item State the time complexity of the sort procedure above. \hfill{}{[}1{]}
+\end{enumerate}
+\quad{} A sleepy teacher implemented an inefficient binary search
+function as follow. The function is supposed to return True if target
+is found in the list inc\_sort\_lst and False otherwise.
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{01 def binSearch(target, inc\_sort\_lst):}
+
+\texttt{02 if len(inc\_sort\_lst) == 0: }
+
+\texttt{03 \qquad{}return False}
+
+\texttt{04 if len(inc\_sort\_lst) == 1: }
+
+\texttt{05 \qquad{}return True }
+
+\texttt{06 n = len(inc\_sort\_lst)}
+
+\texttt{07 first\_half = inc\_sort\_lst{[}:n//2{]} }
+
+\texttt{08 second\_half = inc\_sort\_lst{[}n//2:{]} }
+
+\texttt{09 if target > first\_half{[}-1{]}: }
+
+\texttt{10 \qquad{}return binSearch(target, second\_half) }
+
+\texttt{11 else: }
+
+\texttt{12 \qquad{}return binSearch(target, first\_half)}%
+\end{minipage}
+\begin{enumerate}
+\item[(d)]  Explain the bug in his code with examples. \hfill{}{[}1{]}
+\item[(e)]  Explain how you can correct the bug without changing the code from
+line 06 onwards.\hfill{} {[}2{]}
+\item[(f)]  Explain why the binary search performed is inefficient.\hfill{}
+{[}2{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}RVHS/PRELIM/9597/2019/P2/Q7{]} }
+
+Run length encoding (RLE) is a very simple form of lossless data compression
+which runs on sequences having same value occurring many consecutive
+times and it encodes the sequence to store only a single value and
+its count. For example, \textquotedblleft 111111000\textquotedblright{}
+can be converted to \textquotedblleft 6130\textquotedblright .
+
+Below is a draft attempt of implementing this algorithm. 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{01 PROCEDURE RLECompress(s: STRING): }
+
+\texttt{02 \qquad{}DECLARE comp\_str: STRING }
+
+\texttt{03 \qquad{}DECLARE count, i: INT }
+
+\texttt{04 \qquad{}comp\_str = \textquotedbl\textquotedbl{} }
+
+\texttt{05 \qquad{}count, i = 0, 0 }
+
+\texttt{06 }
+
+\texttt{07 \qquad{}WHILE i < LENGTH(s): }
+
+\texttt{08 \qquad{}\qquad{}count = 1 }
+
+\texttt{09 }
+
+\texttt{10 \qquad{}\qquad{}WHILE i < LENGTH(s) - 1 and s{[}i{]}
+== s{[}i+1{]}:}
+
+\texttt{11 \qquad{}\qquad{}\qquad{}count += 1 }
+
+\texttt{12 \qquad{}\qquad{}\qquad{}i += 1 }
+
+\texttt{13 \qquad{}\qquad{}END WHILE }
+
+\texttt{14 }
+
+\texttt{15 \qquad{}\qquad{}comp\_str += count + s{[}i{]} }
+
+\texttt{16 \qquad{}END WHILE }
+
+\texttt{17 }
+
+\texttt{18 \qquad{}RETURN comp\_str }
+
+\texttt{19 END PROCEDURE}%
+\end{minipage}
+\begin{enumerate}
+\item The compiler reported an error at line 15. Identity the type of error,
+state its definition and suggest how it can be fixed.\hfill{} {[}3{]}
+\item After the above error has been corrected, a successful compilation
+produces executable code. However, when the code was executed, it
+failed to complete. Identity another type of error, state its definition
+and suggest how it can be fixed. \hfill{}{[}3{]}
+\end{enumerate}
+Assuming all errors have been identified and corrected.
+
+The following steps are taken to encode English alphabets:
+\begin{enumerate}
+\item[1.]  Convert alphabet to hexadecimal ASCII value 
+\item[2.]  Convert the hexadecimal number to binary number 
+\item[3.]  Encode the binary number using RLE algorithm
+\end{enumerate}
+For example, the alphabet \textquotedblleft A\textquotedblright{}
+has a hexadecimal ASCII value of \textquotedblleft 41\textquotedblright .
+\begin{enumerate}
+\item[(c)]  State the definition of ASCII.\hfill{} {[}2{]}
+\item[(d)]  State the encoded RLE string for letter \textquotedblleft A\textquotedblright .\hfill{}
+{[}1{]}
+\item[(e)]  State and explain with example one potential limitation of RLE encoding
+when compressing long binary strings. \hfill{}{[}2{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}RVHS/PRELIM/9597/2019/P2/Q8{]} }
+
+The school library currently stores their data in flat files. These
+files contain information about students, books and their loaning
+details. 
+
+Using examples from the school\textquoteright s flat files to illustrate
+your answers.
+\begin{enumerate}
+\item Explain how data inconsistency could arise.\hfill{} {[}2{]}
+\item Explain why data privacy could be a potential concern.\hfill{} {[}2{]}
+\item Explain the definition of Primary Key in a relational database. \hfill{}{[}2{]}
+\end{enumerate}
+A book can be borrowed by any student, and a student can borrow any
+book. Students need to fill up a loaning record form each time he/she
+wants to borrow a book. A student is entitled to borrow up to 5 books
+each time using the same loaning record form.
+
+The decision has been made to create a relational database for the
+library loaning system.
+\begin{enumerate}
+\item[(d)]  Identify the necessary tables and draw an E-R diagram to show the
+relationships between these tables. {[}4{]}
+\item[(e)]  For each table specify the attributes (fields) required and state
+suitable primary keys and foreign key relationships. State necessary
+legends if you are using symbols to represent the primary and foreign
+keys. {[}7{]}
+\end{enumerate}
+The following table is generated for students\textquoteright{} reference
+regarding their loaning details.
+
+\begin{tabular}{|l|l|l|l|}
+\hline 
+\textbf{Student Name:} & Xiao Ming  & \textbf{Class: } & 19J08\tabularnewline
+\hline 
+ &  &  & \tabularnewline
+\hline 
+\textbf{Book Name} & \textbf{Author} & \textbf{Loan Date} & \textbf{Due Date}\tabularnewline
+\hline 
+A Brief History of Time & Stephen Hawking & 05 Aug 2019 & 30 Aug 2019\tabularnewline
+\hline 
+Spider Man Comics & Stan Lee & 29 Aug 2019 & 20 Sep 2019\tabularnewline
+\hline 
+\end{tabular}
+\begin{enumerate}
+\item[(f)]  To create the report \texttt{StudentName} and \texttt{StudentClass}
+are used. Name other fields that the database uses to produce this
+report.\hfill{}{[}4{]}
+\end{enumerate}
+Beside the database design, you are also in charge of creating an
+online loaning form.
+\begin{enumerate}
+\item[(g)]  Design and draw a webpage layout for the auto loaning interface
+for the new system. Identify and briefly explain your design considerations
+for the various features which aid users to input valid data entries.
+\hfill{}{[}4{]}
+\item[(h)]  Some students use their handphones to snap photos of tables and
+charts from the books they borrowed and use them for their research
+projects. Explain what potential issues may arise and suggest alternate
+ways which students can adopt.\hfill{} {[}3{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}RVHS/PRELIM/9597/2019/P2/Q9{]} }
+
+The school library has in store different kinds of items which students
+can loan out. Information about items are stored and recorded, such
+as \texttt{title}, \texttt{description}, and \texttt{damaged}, which
+is a Boolean value indicating if the item has any form of physical
+damage.
+
+For books in the library, additional information such as the \texttt{author},
+\texttt{publisher}, \texttt{ISBN} are recorded.
+
+Digital media resources are also available for students\textquoteright{}
+reference. Information such as \texttt{storage media}, \texttt{file
+size} and\texttt{ playback time} are stored. 
+
+You are engaged by the school to design an Object-Oriented Programming
+solution to manage these items.
+\begin{enumerate}
+\item Draw a class diagram, with base class \texttt{Item}, showing: 
+\begin{itemize}
+\item appropriate sub-classes 
+\item inheritance
+\item the properties required 
+\item appropriate methods, including \textbf{constructor} methods, and at
+least \textbf{one} pair of \textquoteleft \textbf{get}\textquoteright{}
+and \textquoteleft \textbf{set}\textquoteright{} methods for one of
+the properties. \hfill{}{[}5{]}
+\end{itemize}
+\item Using the above example, explain the meaning of the term \textbf{Polymorphism}.
+\hfill{}{[}2{]}
+\item Using the above example, explain the meaning of the term \textbf{Encapsulation}.\hfill{}
+{[}2{]}
+\item The school also provides a series of past year examination papers
+for the students\textquoteright{} loaning and reference. State how
+this would affect the \textbf{class}, \textbf{properties} and \textbf{methods}
+in the current example. \hfill{}{[}2{]}
+\end{enumerate}
+
+ \newpage 
+
+\item \textbf{{[}YIJC/PRELIM/9597/2019/P1/Q1{]} }
+
+According to some researches done on children below the age of 16,
+it was found that the height of a boy, measured in centimetres (cm),
+should lie within the normal range with: 
+\noindent \begin{center}
+minimum height = 5.3 \texttimes{} Age + 71 
+\par\end{center}
+
+\noindent \begin{center}
+maximum height = 6.2 \texttimes{} Age + 87 
+\par\end{center}
+
+The text file HEIGHTDATA.TXT contains 20 entries of the data in the
+following format: 
+\noindent \begin{center}
+<Name>, <Age>, <Height> 
+\par\end{center}
+
+\subsection*{Task 1.1: }
+
+Write program code to:
+\begin{itemize}
+\item read the entire contents of \texttt{HEIGHTDATA.TXT}. 
+\item determine if the boy\textquoteright s height lies within the normal
+range. 
+\item display the contents using the format given below 
+\end{itemize}
+\noindent %
+\begin{minipage}[t]{0.5\columnwidth}%
+Example run of the program: 
+
+\textbf{Input File: }
+
+\texttt{Ali,6,105 }
+
+\texttt{Bob,10,145 }
+
+\texttt{Charlie,15,185} %
+\end{minipage}%
+\fbox{\begin{minipage}[t]{0.5\columnwidth}%
+The output generated from the input file would be: 
+
+\texttt{\textbf{Name ~~~Age Height Within normal range }}
+
+\texttt{Ali ~~~~6 ~~105 ~~~Yes}
+
+\texttt{Bob ~~~~10 ~145 ~~~Yes }
+
+\texttt{Charlie 15 ~185 ~~~No}%
+\end{minipage}}
+
+\subsection*{Evidence 1.1: }
+
+Your program code. \hfill{}{[}6{]}
+
+\subsection*{Evidence 1.2: }
+
+Screenshot of the output.\hfill{} {[}2{]}
+
+During data entry, some of the data may have been wrongly entered
+with transposition errors. In the case of Charlie\textquoteright s,
+his height should have been 158 cm but was wrongly transposed and
+entered as 185 cm. 
+
+\subsection*{Task 1.2: }
+
+Write program code to: 
+\begin{itemize}
+\item determine the correct height for those entries outside the normal
+range. 
+\item display the amended contents using the format given below. 
+\end{itemize}
+In cases where there are more than one possible or no possible height,
+print \textquoteleft Re-enter data\textquoteright .
+
+\noindent %
+\begin{minipage}[t]{0.5\columnwidth}%
+Example run of the program:
+
+\textbf{Input File:}
+
+\texttt{Ali,6,105}
+
+\texttt{Bob,10,145 }
+
+\texttt{Charlie,15,185 }
+
+\texttt{Ethan,7,131 }
+
+\texttt{Rick,13,415 }%
+\end{minipage}%
+\fbox{\begin{minipage}[t]{0.5\columnwidth}%
+The output generated from the input file would be:
+
+\texttt{\textbf{Name ~~~Age Height Corrected Height}}
+
+\texttt{Charlie 15 ~185 ~~~158}
+
+\texttt{Ethan ~~7 ~~131 ~~~113 }
+
+\texttt{Rick ~~~13 ~415 ~~~Re-enter data}%
+\end{minipage}}
+
+Example run of the program: 
+
+\subsection*{Evidence 1.3: }
+
+Your program code. \hfill{}{[}6{]}
+
+\subsection*{Evidence 1.4: }
+
+Screenshot of the output. \hfill{}{[}1{]}
+
+ \newpage 
+
+\item \textbf{{[}YIJC/PRELIM/9597/2019/P1/Q2{]} }
+
+The Oxford English Dictionary, published in 1989, contains 171,476
+words. Instead of doing a linear search whenever we want to find a
+word, it is more efficient to perform a binary search. 
+
+\subsection*{Evidence 2.1: }
+
+Describe the binary search algorithm. \hfill{}{[}2{]}
+
+\subsection*{Task 2.1: }
+
+Write a program \texttt{BinarySearch(lst, item)} to search for an
+item in the list \texttt{lst} using the binary search algorithm. 
+
+The program will:
+\begin{itemize}
+\item import the sorted list of words, given in the file \texttt{1000WORDS.TXT},
+into a simple array \texttt{dataset}. 
+\item report whether or not the item is found in the list. If found, output
+the index position and the list of words examined by the program during
+the binary search. 
+\end{itemize}
+
+\subsection*{Evidence 2.2:}
+
+Your program code and the screenshot for the following searches: 
+\begin{itemize}
+\item \texttt{BinarySearch(dataset, \textquotedbl WORD\textquotedbl ) }
+\item \texttt{BinarySearch(dataset, \textquotedbl WORDA\textquotedbl ) }
+\item \texttt{BinarySearch(dataset, \textquotedbl TRADE\textquotedbl )}
+\hfill{}{[}8{]}
+\end{itemize}
+If we want to find all the words that start with \textquotedblleft TR\textquotedblright ,
+we can perform a partial word search on the given dataset. The search
+will return a word list as follows: 
+\noindent \begin{center}
+\texttt{{[}'TRACK', 'TRADE', 'TRAIN', 'TRAVEL', 'TREE', 'TRIANGLE',
+'TRIP', 'TROUBLE', 'TRUCK', 'TRUE', 'TRY'{]}}
+\par\end{center}
+
+Using the program written in Task 2.1 to perform a binary search for
+the word \textquotedblleft \texttt{TR}\textquotedblright ; the first
+word starting with \textquotedblleft \texttt{TR}\textquotedblright{}
+should be \textquotedblleft \texttt{TRADE}\textquotedblright{} found
+at index \texttt{889}. We can now perform a linear search near index
+\texttt{889} for all the words starting with \textquotedblleft \texttt{TR}\textquotedblright . 
+
+\subsection*{Task 2.2: }
+
+Modify the code \texttt{BinarySearch(lst, item)} written in Task 2.1. 
+
+Your program will: 
+\begin{enumerate}
+\item[1.]  perform a partial search for the word in the list \texttt{lst} starting
+with the given letter(s), item 
+\item[2.]  perform a linear search near the index found in step (1) to return
+a list of words starting with the given letter(s) 
+\end{enumerate}
+
+\subsection*{Evidence 2.3: }
+
+Your program code and the screenshot for the following searches: 
+\begin{itemize}
+\item \texttt{BinarySearch(dataset, \textquotedbl TR\textquotedbl )} 
+\item \texttt{BinarySearch(dataset, \textquotedbl RE\textquotedbl )}\hfill{}
+{[}5{]}
+\end{itemize}
+
+ \newpage 
+
+\item \textbf{{[}YIJC/PRELIM/9597/2019/P1/Q3{]} }
+
+An \texttt{ExpressionTree} data structure is required to store 20
+nodes. A linked list is maintained of all the nodes. A node contains
+a data value and two pointers: a left pointer and a right pointer.
+Items in the list are initially linked using their \texttt{LeftChild}
+pointers. 
+
+Each node is implemented as an instance of the class \texttt{Node}. 
+
+The class \texttt{Node} has the following properties: Class: Node
+Attributes Identifier Data Type Description DataValue STRING The node
+data LeftChild INTEGER The left node pointer RightChild INTEGER The
+right node pointer 
+
+The \texttt{ExpressionTree} class is implemented as follows: Class:
+ExpressionTree Attributes Identifier Data Type Description Tree ARRAY{[}1:20{]}
+OF Node The tree data, initialised as a linked list Fringe ARRAY:
+INTEGER A list to store the index of nodes traversed Root INTEGER
+Index for the root position of the Tree array NextFreeChild INTEGER
+Index for the next unused node 
+
+The index of the first available node is indicated by \texttt{NextFreeChild}.
+The initial value of \texttt{Root} is 0 and the initial value of \texttt{NextFreeChild}
+is 0. The \texttt{Fringe} is initialised as an empty list and it will
+be used for node insertion to store the index for the nodes traversed. 
+
+The diagram shows the \texttt{Tree} array with the linked list to
+record the unused nodes.
+\begin{center}
+\includegraphics[width=0.15\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-YIJC-2019-P1-Q3-1}
+\par\end{center}
+
+\subsection*{Task 3.1 }
+
+Write a program code to define the \texttt{Node} and \texttt{ExpressionTree}
+classes.
+
+\subsection*{Evidence 3.1}
+
+Your program code for Task 3.1. \hfill{}{[}12{]}
+
+The task is to store the tokens of a binary arithmetic expression
+in the data structure instantiated from the \texttt{ExpressionTree}
+class. 
+
+An arithmetic expression is a sequence of tokens that follows prescribed
+rules. A token may be either an operand or an operator. 
+
+A binary arithmetic operation using the standard arithmetic operators,
+\texttt{+ - {*} /} , may be in the form of operand-operator-operand.
+For example, 
+\noindent \begin{center}
+\texttt{2 + 3 }
+\par\end{center}
+
+where \texttt{2} and \texttt{3} are operands, \texttt{+} is an operator.
+This expression will evaluate to a value of \texttt{5}. 
+
+\subsection*{Task 3.2 }
+
+Write a function \texttt{IsOperator(s)} that takes in a string \texttt{s},
+and returns \texttt{True} if it is a standard arithmetic operator
+and returns \texttt{False} if otherwise. 
+
+\subsection*{Evidence 3.2 }
+
+Your program code for Task 3.2. \hfill{}{[}2{]}
+
+An expression tree is a binary tree with the following properties: 
+\begin{enumerate}
+\item[1.]  Each leaf is an \emph{operand}. 
+\item[2.]  The root and internal nodes are \emph{operators}. 
+\item[3.]  Subtrees are sub-expressions, with the root being an \emph{operator}.
+\end{enumerate}
+The following shows a series of commands to create and insert values
+into the data structure to create an expression tree. 
+
+\begin{minipage}[t]{0.5\columnwidth}%
+\texttt{CreateNewExpTree }
+
+\texttt{InsertToExpTree(\textquotedbl +\textquotedbl ) }
+
+\texttt{InsertToExpTree(\textquotedbl{*}\textquotedbl ) }
+
+\texttt{InsertToExpTree(\textquotedbl 4\textquotedbl ) }
+
+\texttt{InsertToExpTree(\textquotedbl 2\textquotedbl ) }
+
+\texttt{InsertToExpTree(\textquotedbl /\textquotedbl ) }
+
+\texttt{InsertToExpTree(\textquotedbl 3\textquotedbl )}
+
+\texttt{InsertToExpTree(\textquotedbl 1\textquotedbl )}%
+\end{minipage}
+
+The figure below shows the expression tree obtained and its \textbf{infix}
+expression obtained by an in-order traversal. 
+
+This expression will evaluate to \texttt{10}.
+\begin{center}
+\includegraphics[width=0.25\paperwidth]{C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-YIJC-2019-P1-Q3-2}
+\par\end{center}
+
+The following pseudocode (available in \texttt{PSEUDOCODE\_TASK\_3\_3.TXT})
+can be used to add a node to the expression tree. 
+
+\begin{minipage}[t]{0.88\columnwidth}%
+\texttt{PROCEDURE Insert(NewToken)}
+
+\texttt{\qquad{}IF NextFreeChild = -1 THEN // check if tree is full }
+
+\texttt{\qquad{}\qquad{}RETURN 'Tree is Full'}
+
+\texttt{\qquad{}// tree is not full, safe to insert new token }
+
+\texttt{\qquad{}IF NextFreeChild = 0 THEN // inserting into empty
+Tree }
+
+\texttt{\qquad{}\qquad{}Tree{[}Root{]}.DataValue NewToken }
+
+\texttt{\qquad{}\qquad{}NextFreeChild }
+
+\texttt{\qquad{}\qquad{}Tree{[}Root{]}.LeftChild Tree{[}Root{]}.LeftChild
+-1}
+
+\texttt{\qquad{}ELSE }
+
+\texttt{\qquad{}\qquad{}// inserting into tree with existing }
+
+\texttt{\qquad{}\qquad{}// starting with Root }
+
+\texttt{\qquad{}\qquad{}Current 0 // index of the current node }
+
+\texttt{\qquad{}\qquad{}Previous -1 // index of previous node }
+
+\texttt{\qquad{}\qquad{}NewNode Tree{[}NextFreeChild{]} // declare
+new node }
+
+\texttt{\qquad{}\qquad{}NewNode.DataValue NewToken }
+
+\texttt{\qquad{}\qquad{}\qquad{}// Finding the node at which the
+NewNode can be inserted }
+
+\texttt{\qquad{}\qquad{}\qquad{}WHILE Current <> -1 THEN }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}CurrNode Tree{[}Current{]} }
+
+\texttt{\qquad{}\qquad{}\qquad{}IF IsOperator(CurrNode.DataValue)
+THEN }
+
+\texttt{\qquad{}\qquad{}\qquad{}// check if CurrNode contains an
+operator }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}IF CurrNode.LeftChild
+= -1 THEN }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}// if LeftChild is empty,
+insert here }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}CurrNode.LeftChild
+NextFreeChild }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}NextFreeChild
+NewNode.LeftChild }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}NewNode.LeftChild
+-1 }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}Current -1}
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}ELIF CurrNode.RightChild
+= -1 THEN}
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}// if RightChild
+is empty, insert here }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}CurrNode.RightChild }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}NextFreeChild
+NextFreeChild \textleftarrow{} NewNode.LeftChild }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}NewNode.LeftChild
+-1}
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}Current -1 }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}ELIF IsOperator(Tree{[}CurrNode.LeftChild{]}.DataValue)
+THEN }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}// if LeftChild
+is an operator, }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}// traverse leftchild
+subtree }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}Previous Current }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}Current CurrNode.LeftChild}
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}Fringe.APPEND(Previous)}
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}ELIF IsOperator(Tree{[}CurrNode.RightChild{]}.DataValue)THEN }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}// if RightChild
+is an operator, }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}// traverse rightchild
+subtree }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}Previous Current}
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}Current CurrNode.RightChild }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}Fringe.APPEND(Previous) }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}ELSE // traverse right
+subtree }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}Previous Fringe.POP(-1) }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}Current Tree{[}Previous{]}.RightChild}
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}ENDIF }
+
+\texttt{\qquad{}\qquad{}\qquad{}ELSE // no place to insert}
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}RETURN \textquotedbl Cannot
+be inserted\textquotedbl{} }
+
+\texttt{\qquad{}\qquad{}\qquad{}ENDIF }
+
+\texttt{\qquad{}\qquad{}ENDWHILE}
+
+\texttt{\qquad{}ENDIF}
+
+\texttt{ENDPROCEDURE}%
+\end{minipage}
+
+\subsection*{Task 3.3 }
+
+Write a code to implement the \texttt{Insert} method for the \texttt{ExpressionTree}
+class from this pseudocode.
+
+You may use the text file \texttt{PSEUDOCODE\_TASK\_3\_3.TXT} as a
+basis for writing your code.
+
+\subsection*{Evidence 3.3 }
+
+Your program code for Task 3.3. \hfill{}{[}7{]}
+
+\subsection*{Task 3.4: }
+
+Write a code for the \texttt{Display} method for the \texttt{ExpressionTree}
+class which displays the contents of \texttt{Tree} in index order. 
+
+\subsection*{Evidence 3.4 }
+
+Your program code for Task 3.4. \hfill{} {[}4{]}
+
+\subsection*{Task 3.5 }
+
+Write a sequence of program statements to: 
+\begin{itemize}
+\item create an expression tree
+\item add the data items based on the sequence of commands given 
+\item display the array contents 
+\end{itemize}
+
+\subsection*{Evidence 3.5 }
+
+Your program code for Task 3.5. \hfill{}{[}3{]}
+
+\subsection*{Evidence 3.6 }
+
+Screenshot showing the output from running the program in Task 3.5.
+\hfill{}{[}1{]}
+
+\subsection*{Task 3.6 }
+
+The infix notation can be obtained by performing an in-order traversal
+in the expression tree. 
+
+Write a code for the \texttt{infix} method for the \texttt{ExpressionTree}
+class to generate the infix notation for a complete expression tree. 
+
+\subsection*{Evidence 3.7 }
+
+Your program code for Task 3.6. \hfill{} {[}6{]}
+
+\subsection*{Evidence 3.8 }
+
+Screenshot showing the output from running the program in Task 3.6.
+\hfill{} {[}1{]}
+
+\subsection*{Task 3.7 }
+
+Write a code for the \texttt{calculate} method to evaluate and return
+the numerical answer for the expression, rounded off to 2 decimal
+places. 
+
+\subsection*{Evidence 3.9 }
+
+Your program code for Task 3.7. \hfill{}{[}3{]}
+
+\subsection*{Evidence 3.10 }
+
+Screenshot showing the output from running the program in Task 3.7.
+\hfill{}{[}1{]}
+
+ \newpage 
+
+\item \textbf{{[}YIJC/PRELIM/9597/2019/P1/Q4{]} }
+
+Minesweeper is a type of single-player puzzle game in which the player
+continuously selects a cell in a square grid. Each cell contains either
+a bomb or a value showing the number of bombs in the neighbouring
+cell. (Neighbouring cells are those adjacent horizontally, vertically
+or diagonally.)
+
+If the player selects a cell that is a bomb, it \textquoteleft explodes\textquoteright{}
+and he loses the game. The number of cells the player has selected
+without exploding a bomb will be the player\textquoteright s score.
+
+You are required to write a program code to generate a minesweeper
+grid, randomly position the bombs and populate all the other cells
+with the values indicating the number of bombs in the neighbouring
+cells. Without revealing the minesweeper grid to the player, the program
+should prompt the player to select the cells one by one. His score
+will be the number of cells opened before hitting a bomb. 
+\noindent \begin{center}
+\begin{minipage}[t]{0.25\columnwidth}%
+\texttt{X 2 1 1 }
+
+\texttt{1 3 X 2 }
+
+\texttt{0 2 X 3 }
+
+\texttt{0 1 2 X }%
+\end{minipage}
+\par\end{center}
+
+\subsection*{Task 4.1: }
+
+Write a program code to generate and display an empty square grid
+of size $n$, ie $n$ rows by $n$ columns. The minesweeper grid for
+$n=5$ is as shown below: 
+\noindent \begin{center}
+\begin{minipage}[t]{0.25\columnwidth}%
+\texttt{0 0 0 0 0 }
+
+\texttt{0 0 0 0 0 }
+
+\texttt{0 0 0 0 0 }
+
+\texttt{0 0 0 0 0}
+
+\texttt{0 0 0 0 0 }%
+\end{minipage}
+\par\end{center}
+
+Your code should use a suitable data structure and fixed loop(s) to
+display the grid.
+
+\subsection*{Evidence 4.1: }
+
+Your program code and screenshot of an empty grid of size 5.\hfill{}
+{[}3{]}
+
+
+\subsection*{Task 4.2: }
+
+Write a program code to randomly place a bomb, represented by \textquotedbl X\textquotedbl ,
+within the grid. Populate all the neighbouring cells by increasing
+their values to 1 to indicate the presence of this one bomb in the
+neighbourhood. 
+
+\subsection*{Evidence 4.2: }
+
+Your program code and two different screenshots of the grid ($n=5$).
+\hfill{}{[}5{]}
+
+\subsection*{Task 4.3: }
+
+Modify the code written in Task 4.2 to randomly place two bombs within
+the grid. Populate all the neighbouring cells with the correct values
+to indicate the presence of the bombs in the neighbourhood. 
+
+\subsection*{Evidence 4.3: }
+
+Your program code and the screenshot of the grid ($n=5$) with 2 bombs.\hfill{}
+{[}4{]}
+
+\subsection*{Task 4.4: }
+
+Modify the code written in Task 4.3 to generate $k$ numbers of bombs
+within a grid of size $n$ and correctly display all the values in
+the neighbouring cells surrounding the bombs. 
+
+\subsection*{Evidence 4.4: }
+
+Your program code and the screenshots of the minesweeper grids for
+the following levels of difficulty. 
+\begin{itemize}
+\item Beginner (grid size $n=5$; no. of bombs $k=3$)
+\item Intermediate (grid size $n=6$; no. of bombs $k=8$)
+\item Expert (grid size $n=8$; no. of bombs $k=20$) {[}8{]}
+\end{itemize}
+
+\subsection*{Task 4.5: }
+
+Write a program code to play the minesweeper game. Your code will:
+\begin{itemize}
+\item prompt the player to select the level of difficulty
+\item generate the Minesweeper grid 
+\item display a \textquotedblleft blank\textquotedblright{} grid with \textquoteleft -\textquoteright{}
+for each of the cell prompt the player to input the coordinates of
+a cell he wishes to open 
+\begin{itemize}
+\item If the opened cell is a bomb (\textquotedblleft X\textquotedblright ),
+declare \textquotedblleft Game Over!\textquotedblright , show the
+grid and display the player\textquoteright s score.
+\item If the opened cell is not a bomb, show the updated grid with the opened
+cell, increase the player\textquoteright s score by 1 and continue
+with the game.
+\end{itemize}
+\item declare \textquotedblleft You have Won!\textquotedblright{} when the
+player has opened all the possible cells and display the player\textquoteright s
+score. 
+
+{[}Sample screenshot of a typical game{]}: 
+
+\noindent %
+\begin{minipage}[t]{0.5\columnwidth}%
+\texttt{Enter your cell you want to open:}
+
+\texttt{X (1 to 5) : 2}
+
+\texttt{Y (1 to 5) : 3}
+
+\texttt{\_ \_ \_ \_ \_}
+
+\texttt{\_ \_ 1 \_ \_}
+
+\texttt{0 \_ \_ \_ \_}
+
+\texttt{\_ \_ 1 \_ \_}
+
+\texttt{\_ \_ \_ \_ \_}
+
+\texttt{Your score is : 3}%
+\end{minipage}%
+\begin{minipage}[t]{0.5\columnwidth}%
+\texttt{Enter your cell you want to open:}
+
+\texttt{X (1 to 5) : 2}
+
+\texttt{Y (1 to 5) : 4}
+
+\texttt{X 1 1 1 1}
+
+\texttt{1 1 1 X 1}
+
+\texttt{0 0 1 1 1}
+
+\texttt{0 1 1 1 0}
+
+\texttt{0 1 X 1 0}
+
+\texttt{Game over! You've hit the bomb at : (2,4).}
+
+\texttt{Your score is : 3}
+
+\texttt{Do you want to try again?}%
+\end{minipage}
+\end{itemize}
+
+\subsection*{Evidence 4.5:}
+
+Your program code and a screenshot of a game. \hfill{}{[}10{]}
+
+ \newpage 
+
+\item \textbf{{[}ACJC/PRELIM/9569/2021/P1/Q1{]} }
 
 A food delivery app offers promotions to customers based on their
 usage pattern. 

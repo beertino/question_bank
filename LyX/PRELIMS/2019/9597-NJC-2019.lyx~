@@ -81,8 +81,12 @@
 
 \begin_body
 
-\begin_layout Standard
-[SPLIT_HERE]
+\begin_layout Section
+9597 ALVL 2017
+\end_layout
+
+\begin_layout Subsection
+Paper 1
 \end_layout
 
 \begin_layout Enumerate
@@ -723,10 +727,6 @@ Task 1.5
 [4]
 \end_layout
 
-\begin_layout Standard
-[SPLIT_HERE]
-\end_layout
-
 \end_deeper
 \begin_layout Enumerate
 
@@ -1191,10 +1191,6 @@ The program code to test the implementation in Task 2.3 (using cases in Task
 \end_inset
 
 [2]
-\end_layout
-
-\begin_layout Standard
-[SPLIT_HERE]
 \end_layout
 
 \end_deeper
@@ -2569,10 +2565,6 @@ Task 3.7
 [4]
 \end_layout
 
-\begin_layout Standard
-[SPLIT_HERE]
-\end_layout
-
 \end_deeper
 \begin_layout Enumerate
 
@@ -3190,10 +3182,6 @@ The screenshots of the inputs and outputs to test each of the above cases.
 \end_inset
 
  [4]
-\end_layout
-
-\begin_layout Standard
-[SPLIT_HERE]
 \end_layout
 
 \end_deeper
@@ -4216,10 +4204,6 @@ status open
 [2]
 \end_layout
 
-\begin_layout Standard
-[SPLIT_HERE]
-\end_layout
-
 \end_deeper
 \begin_layout Enumerate
 
@@ -4367,10 +4351,6 @@ Trace your recursive implementation for
 \end_inset
 
 [3]
-\end_layout
-
-\begin_layout Standard
-[SPLIT_HERE]
 \end_layout
 
 \end_deeper
@@ -4725,10 +4705,6 @@ INSERT
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-[SPLIT_HERE]
-\end_layout
-
 \end_deeper
 \begin_layout Enumerate
 
@@ -4842,10 +4818,6 @@ For the remote transmission, the video stream needs to be encrypted when
 \end_inset
 
  [2]
-\end_layout
-
-\begin_layout Standard
-[SPLIT_HERE]
 \end_layout
 
 \end_deeper
@@ -5279,10 +5251,6 @@ four
 \end_inset
 
 [4]
-\end_layout
-
-\begin_layout Standard
-[SPLIT_HERE]
 \end_layout
 
 \end_deeper
