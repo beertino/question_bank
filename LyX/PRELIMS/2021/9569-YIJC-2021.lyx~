@@ -1924,7 +1924,7 @@ The following shows a sample of a student’s result slip for the Preliminary
 \noindent
 \align center
 \begin_inset Graphics
-	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9569-YIJC-2021-P1-Q4.png
+	filename C:/Users/Beertino/Desktop/Github/Question_Bank/question_bank/static/img/9597-YIJC-2021-P1-Q4.png
 	scale 50
 
 \end_inset
@@ -3747,7 +3747,7 @@ The diagram below shows two locations
 \noindent
 \align center
 \begin_inset Graphics
-	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9569-YIJC-2021-P2-Q2.png
+	filename C:/Users/Beertino/Desktop/Github/Question_Bank/question_bank/static/img/9597-YIJC-2021-P2-Q2.png
 	scale 50
 
 \end_inset
@@ -3955,7 +3955,7 @@ Account
 \noindent
 \align center
 \begin_inset Graphics
-	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9569-YIJC-2021-P2-Q3-1.png
+	filename C:/Users/Beertino/Desktop/Github/Question_Bank/question_bank/static/img/9597-YIJC-2021-P2-Q3-1.png
 	scale 50
 
 \end_inset
@@ -3996,7 +3996,7 @@ to display the customer’s details, with the profile picture, and a menu
 \noindent
 \align center
 \begin_inset Graphics
-	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9569-YIJC-2021-P2-Q3-2.png
+	filename C:/Users/Beertino/Desktop/Github/Question_Bank/question_bank/static/img/9597-YIJC-2021-P2-Q3-2.png
 	scale 50
 
 \end_inset
@@ -4107,7 +4107,7 @@ The Shoppe customers usually browse through the available products on the
 \noindent
 \align center
 \begin_inset Graphics
-	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9569-YIJC-2021-P2-Q3-3.png
+	filename C:/Users/Beertino/Desktop/Github/Question_Bank/question_bank/static/img/9597-YIJC-2021-P2-Q3-3.png
 	scale 50
 
 \end_inset
@@ -4840,7 +4840,7 @@ Display()
 \noindent
 \align center
 \begin_inset Graphics
-	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9569-YIJC-2021-P2-Q4-1.png
+	filename C:/Users/Beertino/Desktop/Github/Question_Bank/question_bank/static/img/9597-YIJC-2021-P2-Q4-1.png
 	scale 50
 
 \end_inset
@@ -5296,21 +5296,6 @@ DATA.txt
 DisplayTop(5)
 \family default
  method on the linked list: 
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align center
-\begin_inset Graphics
-	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9569-YIJC-2021-P2-Q4-2.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset space \hfill{}
 \end_inset
 

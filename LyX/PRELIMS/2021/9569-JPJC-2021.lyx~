@@ -81,8 +81,12 @@
 
 \begin_body
 
-\begin_layout Standard
-[SPLIT_HERE]
+\begin_layout Section
+9597 JPJC 2021
+\end_layout
+
+\begin_layout Subsection
+Paper 2
 \end_layout
 
 \begin_layout Enumerate
@@ -467,10 +471,6 @@ Andy LEE
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-[SPLIT_HERE]
 \end_layout
 
 \end_deeper
@@ -1071,10 +1071,6 @@ GAME OVER…
 
 \begin_layout Itemize
 Closes the sockets.
-\end_layout
-
-\begin_layout Standard
-[SPLIT_HERE]
 \end_layout
 
 \end_deeper
@@ -2072,10 +2068,6 @@ ContactNo
  [3]
 \end_layout
 
-\begin_layout Standard
-[SPLIT_HERE]
-\end_layout
-
 \end_deeper
 \begin_layout Enumerate
 
@@ -2586,10 +2578,6 @@ TASK4_4_<your name>_<class>_<index number>.html
 \end_inset
 
  [12]
-\end_layout
-
-\begin_layout Standard
-[SPLIT_HERE]
 \end_layout
 
 \end_deeper
