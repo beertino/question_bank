@@ -1,0 +1,64 @@
+\item \textbf{{[}IJC/PRELIM/9597/2018/P1/Q2{]} }
+
+In a school, students are identified by student numbers. These numbers
+are stored in a hash table which uses the hashing function 
+\noindent \begin{center}
+\texttt{Address <- StudentNumber MOD X }
+\par\end{center}
+
+The hash table is implemented as a one-dimensional array with elements
+indexed \texttt{0} to\texttt{ (X-1)}. 
+
+\subsection*{Task 2.1}
+
+Write program code to: 
+\begin{itemize}
+\item Read student numbers from a text file and store them in a hash table.
+For the purpose of testing the program, \texttt{X} is to be set to
+the value of 12. 
+
+Assume different student numbers will hash to different addresses
+(no collisions).
+\item Print out the contents of the hash table in the order in which the
+elements are stored in the array.
+\end{itemize}
+Use \texttt{KEYS.TXT} to test your program code.
+
+\subsection*{Evidence 2}
+
+Your program code. 
+
+Screenshot of the program output. \hfill{}{[}7{]}
+
+\subsection*{Task 2.2 }
+
+Linear probing is a method to handle collisions. This means that a
+collision is resolved by searching sequentially from the hashed address
+for an empty location and storing the student number at this empty
+location. If the end of the table is reached, the search for an empty
+location is continued from the start of the table.
+
+Use \texttt{KEYS2.TXT} to test your amended program code.
+
+\subsection*{Evidence 3}
+
+Your amended program code which performs linear probing. 
+
+Screenshot of the program output. \hfill{}{[}4{]}
+
+\subsection*{Task 2.3 }
+
+Add code to your Task 2.2 program. The program is to: 
+\begin{itemize}
+\item Take as input a student number 
+\item Search the hash table and output the address (index number) of the
+hash table where the student number was found.
+\end{itemize}
+Use KEYS2.TXT to test your program code. Run the program three times.
+Use the following inputs: 15, 23, 88. 
+
+\subsection*{Evidence 4}
+
+Your program code.
+
+Screenshot of the program output.\hfill{} {[}7{]}

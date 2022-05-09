@@ -1,0 +1,61 @@
+\item \textbf{{[}PJC/PRELIM/9597/2016/P2/Q8{]} }
+
+Consider the following program in pseudocode, which includes a recursive
+function that calculates the power of an integer. 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{010 PROGRAM }
+
+\texttt{020}
+
+\texttt{030 FUNCTION Power(Base: INTEGER, Exponent: INTEGER) RETURN }
+
+\texttt{040 INTEGER }
+
+\texttt{050 \qquad{}IF Exponent = 0 }
+
+\texttt{060 \qquad{}\qquad{}THEN }
+
+\texttt{070 \qquad{}\qquad{}\qquad{}Result <- 1}
+
+\texttt{080 \qquad{}\qquad{}ELSE }
+
+\texttt{090 \qquad{}\qquad{}\qquad{}Result <- Base {*} Power(Base,
+Exponent \textendash{} 1)}
+
+\texttt{100 \qquad{}ENDIF }
+
+\texttt{110 \qquad{}RETURN Result }
+
+\texttt{120 ENDFUNCTION}
+
+\texttt{130 }
+
+\texttt{140~// main program}
+
+\texttt{150 DECLARE Answer: INTEGER, Base: INTEGER, Exponent: INTEGER }
+
+\texttt{160 INPUT Base }
+
+\texttt{170 INPUT Exponent }
+
+\texttt{180 Answer <- Power(Base, Exponent) }
+
+\texttt{~~~~OUTPUT Answer }%
+\end{minipage}
+\begin{enumerate}
+\item Trace the execution of the function call \texttt{Power(2,3)}, showing
+for each re-entry into the \texttt{Power} function, the values passed
+to the function and the results returned.\hfill{} {[}3{]}
+\end{enumerate}
+The program is executed, starting from line 140.
+\begin{enumerate}
+\item[(b)]  Explain how the stack content changes during the execution of the
+program, with input of 2 for \texttt{Base} (line 150), and 3 for \texttt{Exponent}
+(line 160).\hfill{} {[}4{]}
+\item[(c)]  Write a pseudocode for a non-recursive version of the \texttt{Power}
+function. \hfill{}{[}3{]}
+\item[(d)]  State one reason why a non-recursive \texttt{Power} function may
+be preferred to a recursive one. \hfill{}{[}1{]}
+\end{enumerate}
