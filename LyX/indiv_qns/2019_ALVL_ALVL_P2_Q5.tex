@@ -1,0 +1,91 @@
+\item \textbf{{[}ALVL/9597/2019/P2/Q5{]} }
+
+The function \texttt{z} takes three integer parameters, \texttt{low},
+\texttt{high}, \texttt{seek} and returns an integer value. It operates
+on the values in the elements of the array \texttt{A}. 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{01 FUNCTION Z(low, high, seek, A) RETURNS INTEGER }
+
+\texttt{02 \qquad{}IF low > high THEN }
+
+\texttt{03 \qquad{}\qquad{}RETURN \textemdash 1 }
+
+\texttt{04 \qquad{}ENDIF }
+
+\texttt{05 \qquad{}mid <- low + INT( (high \textemdash{} low) /2)}
+
+\texttt{06 \qquad{}IF seek = A{[}mid{]} THEN}
+
+\texttt{07 \qquad{}\qquad{}RETURN mid }
+
+\texttt{08 \qquad{}ELSE }
+
+\texttt{09 \qquad{}\qquad{}IF seek < A{[}mid{]} THEN }
+
+\texttt{10 \qquad{}\qquad{}\qquad{}RETURN Z(low, mid - 1, seek,
+A) }
+
+\texttt{11 \qquad{}\qquad{}ELSE }
+
+\texttt{12 \qquad{}\qquad{}\qquad{}RETURN Z(mid + 1, high, seek,
+A) . }
+
+\texttt{13 \qquad{}\qquad{}ENDIF }
+
+\texttt{14 \qquad{}ENDIF }
+
+\texttt{15 ENDFUNCTION}%
+\end{minipage}
+\begin{enumerate}
+\item {}
+\begin{enumerate}
+\item State what lines \texttt{10} and \texttt{12} tell you about the function.
+\hfill{}{[}1{]}
+\item State the purpose for the \texttt{RETURN} statements in lines \texttt{03}
+and \texttt{07} of function \texttt{z}. \hfill{} {[}1{]}
+\end{enumerate}
+\end{enumerate}
+The values in each of the eight elements of the array \texttt{A} are:
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+\multicolumn{1}{l}{\textbf{Element}} & \multicolumn{1}{c}{0} & \multicolumn{1}{c}{1} & \multicolumn{1}{c}{2} & \multicolumn{1}{c}{3} & \multicolumn{1}{c}{4} & \multicolumn{1}{c}{5} & \multicolumn{1}{c}{6} & \multicolumn{1}{c}{7}\tabularnewline
+\hline 
+\textbf{Value} & -3 & 8 & 14 & 15 & 96 & 101 & 412 & 500\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+\begin{enumerate}
+\item Copy and then complete the trace table for the instruction: 
+
+\texttt{OUTPUT z(0, 7, 103, A)}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline 
+Function call & \texttt{\textbf{low}} & \texttt{\textbf{high}} & \texttt{\textbf{seek}} & \texttt{\textbf{mid}} & \texttt{\textbf{A{[}mid{]}}} & \texttt{\textbf{OUTPUT}}\tabularnewline
+\hline 
+\texttt{1} & \texttt{0} & \texttt{7} & \texttt{103} &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\hfill{}{[}4{]}
+\item Function \texttt{z} can return two different types of value.
+
+Explain what these represent. \hfill{}{[}2{]}
+\item The number of elements in array \texttt{A} may be very large. 
+
+Explain why a programmer might prefer to use an iterative approach
+rather than the one used in function \texttt{z}. \hfill{} {[}2{]}
+\end{enumerate}

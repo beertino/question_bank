@@ -81,20 +81,22 @@
 
 \begin_body
 
-\begin_layout Section
-9597 ALVL 2014
-\end_layout
-
-\begin_layout Subsection
-Paper 1
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2019/P1/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Many applications require the user to search for a data item from a file
  or one-dimensional array.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 
 \family typewriter
@@ -151,31 +153,12 @@ status open
  A match anywhere within the term text
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 1.1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Design and write program code to:
 \end_layout
 
@@ -204,200 +187,200 @@ Output a count of the number of matches
 End with the input of term "XXX"
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A typical run of the program is shown below:
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 +++++++++++++++++++++++ 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 1.
  Exact match 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 2.
  Start of term 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 3.
  Within term 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 ++++++++++++++++++ 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 Choice ?1 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 Term?firewall 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 firewall 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 There were 1 matching term(s)
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 +++++++++++++++++++++++ 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 1.
  Exact match 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 2.
  Start of term 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 3.
  Within term 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 ++++++++++++++++++ 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 Choice ?2 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 Term?data 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 data flow diagram 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 database management system 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 data file 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 database 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 There were 4 matching term(s)
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 +++++++++++++++++++++++ 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 1.
  Exact match 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 2.
  Start of term 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 3.
  Within term 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 ++++++++++++++++++
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 Choice ?3 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 Term?box 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 white box testing 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 black box testing 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 There were 2 matching term(s)
@@ -409,7 +392,7 @@ There were 2 matching term(s)
 Evidence 1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The program code.
  
 \begin_inset space \hfill{}
@@ -423,7 +406,7 @@ The program code.
 Task 1.2
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Study the contents of 
 \family typewriter
 JARGON.TXT
@@ -438,62 +421,48 @@ JARGON.TXT
 Evidence 2
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 State the test data used in Task 1.2 and show screenshots to confirm the
  successful testing of each of your four test cases.
  
 \begin_inset space \hfill{}
 \end_inset
 
-[4] 
+[4]
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-A binary search (binary chop) is a technique to search for a value in an
- ordered dataset.
+
+\series bold
+[ALVL/9597/2019/P1/Q2] 
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
+A binary search (binary chop) is a technique to search for a value in an
+ ordered dataset.
+\end_layout
 
 \begin_layout Subsubsection*
 \noindent
 Task 2.1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Study the identifier table and incomplete recursive algorithm.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The missing parts of the algorithm are labelled A, B and C.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="3">
@@ -660,7 +629,7 @@ Lowest index of the considered list
 \begin_layout Plain Layout
 
 \family typewriter
-High 
+High
 \end_layout
 
 \end_inset
@@ -680,7 +649,7 @@ INTEGER
 \begin_inset Text
 
 \begin_layout Plain Layout
-Highest index of the considered list 
+Highest index of the considered list
 \end_layout
 
 \end_inset
@@ -693,7 +662,7 @@ Highest index of the considered list
 \begin_layout Plain Layout
 
 \family typewriter
-Middle 
+Middle
 \end_layout
 
 \end_inset
@@ -726,7 +695,7 @@ The array index for the middle position of the current list considered
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \noindent
 \begin_inset Box Frameless
 position "t"
@@ -749,7 +718,7 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-FUNCTION BinarySearch(ThisArray, FindValue, Low, High) RETURNS INTEGER 
+FUNCTION BinarySearch(ThisArray, FindValue, Low, High) RETURNS INTEGER
 \end_layout
 
 \begin_layout Plain Layout
@@ -758,7 +727,7 @@ FUNCTION BinarySearch(ThisArray, FindValue, Low, High) RETURNS INTEGER
 \begin_inset space \qquad{}
 \end_inset
 
-DECLARE Middle : INTEGER 
+DECLARE Middle : INTEGER
 \end_layout
 
 \begin_layout Plain Layout
@@ -769,7 +738,6 @@ DECLARE Middle : INTEGER
 
 IF ...............
  A ...............
- 
 \end_layout
 
 \begin_layout Plain Layout
@@ -782,7 +750,7 @@ IF ...............
 \begin_inset space \qquad{}
 \end_inset
 
-THEN 
+THEN
 \end_layout
 
 \begin_layout Plain Layout
@@ -799,7 +767,7 @@ THEN
 \begin_inset space \qquad{}
 \end_inset
 
-RETURN -1 // not found 
+RETURN -1 // not found
 \end_layout
 
 \begin_layout Plain Layout
@@ -808,7 +776,7 @@ RETURN -1 // not found
 \begin_inset space \qquad{}
 \end_inset
 
-ELSE 
+ELSE
 \end_layout
 
 \begin_layout Plain Layout
@@ -821,7 +789,7 @@ ELSE
 \begin_inset space \qquad{}
 \end_inset
 
-// calculate new Middle value 
+// calculate new Middle value
 \end_layout
 
 \begin_layout Plain Layout
@@ -836,7 +804,6 @@ ELSE
 
 Middle ← ...............
  B ...............
- 
 \end_layout
 
 \begin_layout Plain Layout
@@ -849,24 +816,7 @@ Middle ← ...............
 \begin_inset space \qquad{}
 \end_inset
 
-IF ThisArray[Middle] > FindValue 
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-THEN 
+IF ThisArray[Middle] > FindValue
 \end_layout
 
 \begin_layout Plain Layout
@@ -883,28 +833,7 @@ THEN
 \begin_inset space \qquad{}
 \end_inset
 
-
-\begin_inset space \qquad{}
-\end_inset
-
-RETURN BinarySearch(ThisArray, FindValue, Low, Middle - 1) 
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-ELSE 
+THEN
 \end_layout
 
 \begin_layout Plain Layout
@@ -925,7 +854,45 @@ ELSE
 \begin_inset space \qquad{}
 \end_inset
 
-IF ThisArray[Middle] < FindValue 
+RETURN BinarySearch(ThisArray, FindValue, Low, Middle - 1)
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+ELSE
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+IF ThisArray[Middle] < FindValue
 \end_layout
 
 \begin_layout Plain Layout
@@ -950,7 +917,7 @@ IF ThisArray[Middle] < FindValue
 \begin_inset space \qquad{}
 \end_inset
 
-THEN 
+THEN
 \end_layout
 
 \begin_layout Plain Layout
@@ -981,7 +948,6 @@ THEN
 
 ...............
  C ...............
- 
 \end_layout
 
 \begin_layout Plain Layout
@@ -1006,7 +972,7 @@ THEN
 \begin_inset space \qquad{}
 \end_inset
 
-ELSE 
+ELSE
 \end_layout
 
 \begin_layout Plain Layout
@@ -1035,7 +1001,7 @@ ELSE
 \begin_inset space \qquad{}
 \end_inset
 
-RETURN Middle // found at position Middle 
+RETURN Middle // found at position Middle
 \end_layout
 
 \begin_layout Plain Layout
@@ -1056,7 +1022,7 @@ RETURN Middle // found at position Middle
 \begin_inset space \qquad{}
 \end_inset
 
-ENDIF 
+ENDIF
 \end_layout
 
 \begin_layout Plain Layout
@@ -1069,7 +1035,7 @@ ENDIF
 \begin_inset space \qquad{}
 \end_inset
 
-ENDIF 
+ENDIF
 \end_layout
 
 \begin_layout Plain Layout
@@ -1078,13 +1044,13 @@ ENDIF
 \begin_inset space \qquad{}
 \end_inset
 
-ENDIF 
+ENDIF
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-ENDFUNCTION 
+ENDFUNCTION
 \end_layout
 
 \end_inset
@@ -1098,7 +1064,7 @@ ENDFUNCTION
 Evidence 3
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 What are the three missing lines in this pseudocode? 
 \begin_inset space \hfill{}
 \end_inset
@@ -1111,12 +1077,12 @@ What are the three missing lines in this pseudocode?
 Task 2.2
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write a program to implement binary search.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The program will
 \end_layout
 
@@ -1137,7 +1103,7 @@ Report whether or now this animal name was found.
  If found, also output the index position.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The array in the program has identifier 
 \family typewriter
 MyAnimal
@@ -1146,7 +1112,7 @@ MyAnimal
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Use the dataset given in the file 
 \family typewriter
 ANIMALS.TXT
@@ -1166,7 +1132,7 @@ InitialiseAnimals
 Evidence 4
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Program code for Task 2.2 
 \begin_inset space \hfill{}
 \end_inset
@@ -1180,7 +1146,7 @@ Program code for Task 2.2
 Evidence 5
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshot to confirm that an animal wich is present in the list was found
  with its index position displayed.
  
@@ -1195,11 +1161,11 @@ Screenshot to confirm that an animal wich is present in the list was found
 Task 2.3
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Amend the program as follows: 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The program must also output the number of function calls carried out.
 \end_layout
 
@@ -1209,7 +1175,7 @@ The program must also output the number of function calls carried out.
 Evidence 6
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The amended program code.
  
 \begin_inset space \hfill{}
@@ -1224,7 +1190,7 @@ The amended program code.
 Evidence 7
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshots showing the amended ouput for runs of the program where: 
 \end_layout
 
@@ -1241,20 +1207,25 @@ the animal is not found.
 [2]
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2019/P1/Q3] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A program is to be written to represent and implement a linked list of nodes.
  Each node contains a string data value and a pointer.
  The pointers link the data items in alphabetical order.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 The unused nodes are linked as shown below.
  The first unused node is the position where the next new data item is to
@@ -1265,8 +1236,8 @@ The unused nodes are linked as shown below.
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2014-P1-Q3.png
-	width 50page%
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-ALVL-2014-P1-Q3.png
+	width 25page%
 
 \end_inset
 
@@ -2055,31 +2026,12 @@ Tests for no unused nodes.
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 3.1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code that repeatedly:
 \end_layout
 
@@ -2152,7 +2104,7 @@ calls an appropriate procedure depending on the user's choice.
 Evidence 8
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Program code for Task 3.1.
 \begin_inset space \hfill{}
 \end_inset
@@ -2160,36 +2112,12 @@ Program code for Task 3.1.
  [5]
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 3.2
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code for the classes 
 \family typewriter
 ListNode
@@ -2207,7 +2135,7 @@ IsEmpty
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Do not attempt to write the methods 
 \family typewriter
 AddNode
@@ -2234,7 +2162,7 @@ IsFull
 Evidence 9
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Program code for the 
 \family typewriter
 ListNode
@@ -2255,7 +2183,7 @@ LinkedList
 Task 3.3
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write code to create a 
 \family typewriter
 LinkedList
@@ -2263,7 +2191,7 @@ LinkedList
  object in the main program.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Run the program and select menu choice 3 to confirm the initial values of
  the pointers and data values when the linked list is empty.
  [10]
@@ -2275,7 +2203,7 @@ Run the program and select menu choice 3 to confirm the initial values of
 Evidence 10
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshot confirming all values after initialisation of the 
 \family typewriter
 LinkedList
@@ -2284,7 +2212,7 @@ LinkedList
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset space \hfill{}
 \end_inset
 
@@ -2296,7 +2224,7 @@ LinkedList
 Task 3.4
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Consider the 
 \family typewriter
 AddNode
@@ -2306,11 +2234,11 @@ AddNode
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The algorithm uses the variables below:
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="3">
@@ -2389,7 +2317,7 @@ NewItem
 \begin_layout Plain Layout
 
 \family typewriter
-STRING 
+STRING
 \end_layout
 
 \end_inset
@@ -2546,6 +2474,25 @@ Temporary storage of pointer value
 
 
 \end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
 
 \begin_layout Plain Layout
 
@@ -3483,25 +3430,6 @@ PSEUDOCODE_TASK_3_4.TXT
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
 Write code to implement for the 
 \family typewriter
 LinkedList
@@ -3526,7 +3454,7 @@ IsFull
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 You may use the text file 
 \family typewriter
 PSEUDOCODE_TASK_3_4.TXT
@@ -3535,7 +3463,7 @@ PSEUDOCODE_TASK_3_4.TXT
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The main program should check each time that the 
 \family typewriter
 LinkedList
@@ -3548,7 +3476,7 @@ AddNode
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Run the program as follows: 
 \end_layout
 
@@ -3557,7 +3485,7 @@ Menu choice 1 four times, inputting the data values:
 \end_layout
 
 \begin_deeper
-\begin_layout Plain Layout
+\begin_layout Standard
 MANGO, ORANGE.
  BANANA.
  LEMON in that order.
@@ -3576,7 +3504,7 @@ Menu choice 3 to display.
 Evidence 11
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Program code for method 
 \family typewriter
 AddNode
@@ -3595,7 +3523,7 @@ AddNode
 Evidence 12
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshot showing the pointers and the addition of the four nodes to the
  linked list.
 \begin_inset space \hfill{}
@@ -3609,7 +3537,7 @@ Screenshot showing the pointers and the addition of the four nodes to the
 Task 3.5
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code to implement the 
 \family typewriter
 LinkedList
@@ -3620,13 +3548,13 @@ Traversal
 \family default
  by calling the 
 \family typewriter
-TraversalInOrdEr
+TraversalInOrder
 \family default
  procedure given below.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \noindent
 \begin_inset Box Frameless
 position "t"
@@ -3649,7 +3577,7 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-PROCEDURE TraversalInOrder(Index) 
+PROCEDURE TraversalInOrder(Index)
 \end_layout
 
 \begin_layout Plain Layout
@@ -3658,20 +3586,7 @@ PROCEDURE TraversalInOrder(Index)
 \begin_inset space \qquad{}
 \end_inset
 
-IF Index <> 0 
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-THEN 
+IF Index <> 0
 \end_layout
 
 \begin_layout Plain Layout
@@ -3684,11 +3599,7 @@ THEN
 \begin_inset space \qquad{}
 \end_inset
 
-
-\begin_inset space \qquad{}
-\end_inset
-
-OUTPUT Node[lndex].DataValue 
+THEN
 \end_layout
 
 \begin_layout Plain Layout
@@ -3705,7 +3616,7 @@ OUTPUT Node[lndex].DataValue
 \begin_inset space \qquad{}
 \end_inset
 
-// follow the pointer to the next data item in the linked list 
+OUTPUT Node[lndex].DataValue
 \end_layout
 
 \begin_layout Plain Layout
@@ -3722,7 +3633,7 @@ OUTPUT Node[lndex].DataValue
 \begin_inset space \qquad{}
 \end_inset
 
-TraversalInOrder(Node[Index].PointerValue) 
+// follow the pointer to the next data item in the linked list
 \end_layout
 
 \begin_layout Plain Layout
@@ -3731,13 +3642,30 @@ TraversalInOrder(Node[Index].PointerValue)
 \begin_inset space \qquad{}
 \end_inset
 
-ENDIF 
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+TraversalInOrder(Node[Index].PointerValue)
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-ENDPRCCEDURE 
+\begin_inset space \qquad{}
+\end_inset
+
+ENDIF
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+ENDPRCCEDURE
 \end_layout
 
 \end_inset
@@ -3751,7 +3679,7 @@ ENDPRCCEDURE
 Evidence 13
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Program code for procedures 
 \family typewriter
 Traversal
@@ -3772,7 +3700,7 @@ TraversalInOrder
 Task 3.6
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Run the program as follows: 
 \end_layout
 
@@ -3781,7 +3709,7 @@ Menu choice 1 four times, inputting the data values:
 \end_layout
 
 \begin_deeper
-\begin_layout Plain Layout
+\begin_layout Standard
 MANGO, ORANGE, BANANA.
  LEMON in that order.
  
@@ -3799,7 +3727,7 @@ Menu choice 2 to display.
 Evidence 14
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshot showing the program execution to test the 
 \family typewriter
 Traversal
@@ -3817,7 +3745,7 @@ Traversal
 Task 3.7
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Make a copy of the 
 \family typewriter
 TraversalInOrder
@@ -3829,7 +3757,7 @@ Traversal
  procedures.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Paste to form two new procedures 
 \family typewriter
 TraversalInReverseOrder
@@ -3842,7 +3770,7 @@ ReverseTraversal
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Make the necessary changes/additions to these procedures in order that the
  data items are output in reverse order by calling the new method 
 \family typewriter
@@ -3851,11 +3779,11 @@ ReverseTraversal
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Run the program code from a new menu choice 4.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Test the method using the four items given in Task 3.6.
 \end_layout
 
@@ -3865,7 +3793,7 @@ Test the method using the four items given in Task 3.6.
 Evidence 15
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Program code for the new procedures.
  
 \begin_inset space \hfill{}
@@ -3880,7 +3808,7 @@ Program code for the new procedures.
 Evidence 16
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshot showing option 4 selected and the resulting output.
  
 \begin_inset space \hfill{}
@@ -3889,17 +3817,22 @@ Screenshot showing option 4 selected and the resulting output.
 [1]
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-Design and code a computer program to simulate the following: 
+
+\series bold
+[ALVL/9597/2019/P1/Q4] 
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+Design and code a computer program to simulate the following: 
+\end_layout
+
 \begin_layout Standard
 A garden has a rectangular fish pond measuring 15 metres by 8 metres.
  
@@ -4097,36 +4030,17 @@ Y coordinate <1 to 8>? 3
  .
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 4.1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The following are the suggested characters to use for the visual representation
  of the pond: 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="3">
@@ -4236,7 +4150,7 @@ Stone impact position
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Decide on the design to be used for: 
 \end_layout
 
@@ -4258,7 +4172,7 @@ Procedure(s) and/or function(s)s to be used
 Evidence 17
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Show your program design (Task 4.1).
  
 \begin_inset space \hfill{}
@@ -4272,7 +4186,7 @@ Show your program design (Task 4.1).
 Task 4.2
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code to display the pond contents after a single stone has
  been thrown.
  
@@ -4284,7 +4198,7 @@ Write program code to display the pond contents after a single stone has
 Evidence 18
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The program code.
  
 \begin_inset space \hfill{}
@@ -4299,7 +4213,7 @@ The program code.
 Evidence 19
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshot for a single run of the program.
  
 \begin_inset space \hfill{}
@@ -4313,23 +4227,23 @@ Screenshot for a single run of the program.
 Task 4.3
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The boy has been told to stop throwing stones into the pond because the
  pond now has three fish.
  The fish randomly swim around.
  Each fish will occupy a unique grid position.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Using a random number generator, simulate the positioning of the three fish.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Use the following character for a fish: 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="3">
@@ -4410,7 +4324,7 @@ Fish
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code to show the pond containing the three fish at a particular
  instance of time.
  The program will now only display the pond and fish.
@@ -4423,7 +4337,7 @@ Write program code to show the pond containing the three fish at a particular
 Evidence 20
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The program code for Task 4.3.
  
 \begin_inset space \hfill{}
@@ -4438,7 +4352,7 @@ The program code for Task 4.3.
 Evidence 21
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshot for a single run of the program.
  
 \begin_inset space \hfill{}
@@ -4452,7 +4366,7 @@ Screenshot for a single run of the program.
 Task 4.4
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The boy has been asked to feed the fish.
  He cannot see the fish in the pond.
  He throws a food pellet into the pond which lands inside one of the square
@@ -4462,11 +4376,11 @@ The boy has been asked to feed the fish.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Use character symbols for the pond‘s grid display as follows: 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="3">
@@ -4634,7 +4548,7 @@ Fish
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code to simulate the boy throwing one food pellet into the
  pond.
  The user will input an x-coordinate and y-coordinate for the food pellet
@@ -4648,7 +4562,7 @@ Write program code to simulate the boy throwing one food pellet into the
 Evidence 22
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The program code.
 \begin_inset space \hfill{}
 \end_inset
@@ -4662,7 +4576,7 @@ The program code.
 Evidence 23
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshotevldence similar to that shown which shows: 
 \end_layout
 
@@ -4671,19 +4585,19 @@ one throw which did not feed a fish
 \end_layout
 
 \begin_deeper
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 X coordinate <1 to 15>? 2 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 Y coordinate <1 to 8>? 5 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 .
@@ -4704,7 +4618,7 @@ Y coordinate <1 to 8>? 5
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 .
@@ -4724,7 +4638,7 @@ Y coordinate <1 to 8>? 5
  .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 .
@@ -4743,7 +4657,7 @@ Y coordinate <1 to 8>? 5
  .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 .
@@ -4763,7 +4677,7 @@ Y coordinate <1 to 8>? 5
  .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 .
@@ -4781,7 +4695,7 @@ Y coordinate <1 to 8>? 5
  .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 .
@@ -4801,7 +4715,7 @@ Y coordinate <1 to 8>? 5
  .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 .
@@ -4820,7 +4734,7 @@ Y coordinate <1 to 8>? 5
  .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 .
@@ -4846,19 +4760,19 @@ a second throw where a fish was fed
 \end_layout
 
 \begin_deeper
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 X coordinate <1 to 15>? 1 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 Y coordinate <1 to 8>? 5 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 .
@@ -4879,7 +4793,7 @@ Y coordinate <1 to 8>? 5
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 .
@@ -4899,7 +4813,7 @@ Y coordinate <1 to 8>? 5
  .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 .
@@ -4919,7 +4833,7 @@ Y coordinate <1 to 8>? 5
  F
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 .
@@ -4939,7 +4853,7 @@ Y coordinate <1 to 8>? 5
  .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 H .
@@ -4958,7 +4872,7 @@ H .
  .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 .
@@ -4978,7 +4892,7 @@ H .
  .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 .
@@ -4997,7 +4911,7 @@ H .
  .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 .
@@ -5024,23 +4938,24 @@ H .
 \end_layout
 
 \end_deeper
-\end_inset
-
-
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
-\begin_layout Subsection
-Paper 2
+\begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2019/P2/Q1] 
 \end_layout
 
-\begin_layout Enumerate
+\begin_deeper
+\begin_layout Standard
 A supermarket chain wants to encourage customers to return to its store.
  They operate a scheme of rewards for customers based on how much they spend
  over a period of time.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 Customers are issued with a card that is readable by a Point of Sale (POS)
  terminal.
@@ -5116,8 +5031,8 @@ Time is measured in weeks.
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2014-P2-Q1.png
-	width 50page%
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-ALVL-2014-P2-Q1.png
+	width 70page%
 
 \end_inset
 
@@ -5535,17 +5450,27 @@ two
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
-Consider the following binary tree:
+
+\series bold
+[ALVL/9597/2019/P2/Q2] 
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
+Consider the following binary tree:
+\end_layout
+
+\begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2014-P2-Q2.png
-	width 50page%
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-ALVL-2014-P2-Q2.png
+	width 25page%
 
 \end_inset
 
@@ -5592,12 +5517,22 @@ Describe an algorithm, using pseudocode, to perform a binary tree search.
 [5]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
-A network manager for a sales company types the following into his computer:
+
+\series bold
+[ALVL/9597/2019/P2/Q3] 
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+A network manager for a sales company types the following into his computer:
+\end_layout
+
 \begin_layout Standard
 
 \family typewriter
@@ -5684,13 +5619,23 @@ status open
 [2]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2019/P2/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A small local area network (LAN) in a school consists of one switch, one
  file server and ten computers.
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 Explain why circuit switching could be used in this LAN.
  
@@ -5767,14 +5712,24 @@ status open
  [4]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2019/P2/Q5] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A software developer is given the task of producing software for a college.
  The software will help to manage information about what students do after
  finishing at the college.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 The destination of each student after college is classified in one of three
  possible ways:
@@ -5906,15 +5861,25 @@ average number of passes for the students going to university e total number
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2019/P2/Q6] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A function is to be written that returns the sum of all values held in an
  array that are greater than a minimum value.
  The function will be used with arrays of varying size, but never more than
  a maximum of 50 000 elements.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 A first attempt at writing the program code for the function is given below:
 \end_layout
@@ -6252,554 +6217,10 @@ TempArray
 [3]
 \end_layout
 
-\end_deeper
-\begin_layout Section
-9597 ALVL 201X TEMPLATE
-\end_layout
-
 \begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Subsubsection*
-\noindent
-Task X.X
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset space \hfill{}
-\end_inset
-
-[10]
-\end_layout
-
-\begin_layout Subsubsection*
-
-\series bold
-Evidence X
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-
-\family typewriter
-FUNCTION CalCheckDigit(Number AS STRING, Total AS INTEGER) RETURNS STRING
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \qquad{}
-\end_inset
-
-IF LENGTH(Number) > 1 THEN
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-Digit <- INTEGER(LBFT(Number,1))
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-// Calculate ISBN, an example of how the function is called.
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-// Second parameter is always 0.
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-ISBN = CalCheckDigit("184146208",0)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="3">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top">
-<column alignment="left" valignment="top">
-<column alignment="left" valignment="top">
-<row>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-Class: Connection Node
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Attributes
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \hspace{}
-\length 1col%
-\end_inset
-
-
-\family default
-Identifier
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \hspace{}
-\length 1col%
-\end_inset
-
-
-\family default
-Data Type
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \hspace{}
-\length 5col%
-\end_inset
-
-
-\family default
-Description
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-DataValue
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-STRING
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The node data
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-LeftChild
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-INTEGER
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The left node pointer
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-RightChild
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-INTEGER
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The right node pointer
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="9" columns="1">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top">
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \hspace{}
-\length 25col%
-\end_inset
-
-ToDo
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-category : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-description : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-constructor(c : STRING, d : STRING)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-set_category(s : STRING)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-set_description(s : STRING)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-get_category() : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-get:_description() : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-summary() : STRING
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename static/img/9597-SPECIMENT-P2-Q6.png
-	width 50page%
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
- 
-\end_layout
-
 \end_body
 \end_document

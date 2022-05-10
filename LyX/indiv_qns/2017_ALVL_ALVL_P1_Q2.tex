@@ -1,0 +1,187 @@
+\item \textbf{{[}ALVL/9597/2017/P1/Q2{]} }
+
+Every published book has an international Standard Book Number (ISBN).
+This ISBN is a 9-digit number plus a check digit which is calculated
+and added to the end of the number. A weighted-modulus method is used
+to calculate the check digit. 
+
+This method uses a weighted modulus 11. If the check digit is calculated
+as 10. it is replaced with the character 'X'. Where the check digit
+is calculated as 11, it will be replaced with 0. 
+
+\noindent %
+\begin{tabular}{l}
+184146208 will be calculated as\tabularnewline
+$1\times10=10$\tabularnewline
+$8\times9=72$\tabularnewline
+$4\times8=32$\tabularnewline
+$1\times7=7$\tabularnewline
+$4\times6=24$\tabularnewline
+$6\times5=30$\tabularnewline
+$2\times4=8$\tabularnewline
+$0\times3=0$\tabularnewline
+$8\times2=16$\tabularnewline
+Total = 199\tabularnewline
+$199/11=18$ remainder 1\tabularnewline
+$11-1=10$\tabularnewline
+Therefore, 10 is replaced with X:\tabularnewline
+ISBN is 184146208\textbf{X}\tabularnewline
+\end{tabular}%
+\begin{tabular}{l}
+034085045 will be calculated as\tabularnewline
+$0\times10=0$\tabularnewline
+$7\times9=63$\tabularnewline
+$5\times8=40$\tabularnewline
+$1\times7=7$\tabularnewline
+$5\times6=30$\tabularnewline
+$4\times5=20$\tabularnewline
+$9\times4=36$\tabularnewline
+$2\times3=6$\tabularnewline
+$6\times2=12$\tabularnewline
+Total = 154\tabularnewline
+$154/11=14$ remainder 0\tabularnewline
+$11-0=11$\tabularnewline
+Therefore, 11 is replaced with 0:\tabularnewline
+ISBN is 034085045\textbf{0}\tabularnewline
+\end{tabular}%
+\begin{tabular}{l}
+075154926 will be calculated as\tabularnewline
+$0\times10=0$\tabularnewline
+$3\times9=27$\tabularnewline
+$4\times8=32$\tabularnewline
+$0\times7=0$\tabularnewline
+$8\times6=48$\tabularnewline
+$5\times5=25$\tabularnewline
+$0\times4=0$\tabularnewline
+$4\times3=12$\tabularnewline
+$5\times2=10$\tabularnewline
+Total = 214\tabularnewline
+$214/11=19$ remainder 5\tabularnewline
+$11-5=6$\tabularnewline
+Therefore, 6 is added to the\tabularnewline
+end of the ISBN: 075154926\textbf{6} \tabularnewline
+\end{tabular}
+
+\subsubsection*{Task 2.1}
+
+Study the identifier table and the incomplete recursive algorithm
+on the opposite page. 
+
+The missing lines in the algorithm are labelled \textbf{A}, \textbf{B}
+and \textbf{C}. 
+
+Write the\textbf{ three} missing lines of code. Label each as \textbf{A},
+\textbf{B} or \textbf{C}. \hfill{} {[}3{]}
+
+\subsubsection*{Evidence 3}
+
+The three missing lines of code. \hfill{}{[}3{]}
+\begin{center}
+\begin{tabular}{|l|c|l|}
+\hline 
+\textbf{Identifier} & \textbf{Data Type} & \textbf{Description}\tabularnewline
+\hline 
+\texttt{Number} & \texttt{STRING} & The ISBN to be processed\tabularnewline
+\hline 
+\texttt{Digit} & \texttt{lNTEGER} & A digit from the iSBN to be processed\tabularnewline
+\hline 
+\texttt{Total} & \texttt{INTEGER} & Running total for modulus calculation\tabularnewline
+\hline 
+\texttt{NewNumber} & \texttt{STRING} & A version of the list string shortened by removing the first character\tabularnewline
+\hline 
+\texttt{CheckDigit} & \texttt{STRING} & The calculated check digit value\tabularnewline
+\hline 
+\texttt{CalcModulus} & \texttt{INTEGER} & Used to store the result of \texttt{(Total MOD 11)}\tabularnewline
+\hline 
+\texttt{CheckValue} & \texttt{INTEGER} & Used to store the result of \texttt{(11 - CalcModulus)}\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{FUNCTION CalCheckDigit(Number AS STRING, Total AS INTEGER)
+RETURNS STRING }
+
+\texttt{\qquad{}IF LENGTH(Number) > 1 THEN }
+
+\texttt{\qquad{}\qquad{}Digit <- INTEGER(LEFT(Number,1)) }
+
+\texttt{\qquad{}\qquad{}Total <- Total + (Digit {*} (LENGTH(Number)+1)) }
+
+\texttt{\qquad{}\qquad{}NewNumber <- RIGHT(Number, LENGTH(Number)-1) }
+
+\texttt{\qquad{}\qquad{}CheckDigit <- .................. A ................. }
+
+\texttt{\qquad{}ELSE }
+
+\texttt{\qquad{}\qquad{}Digit <- INTEGER(LEFT(Number,1)) }
+
+\texttt{\qquad{}\qquad{}Total <- Total + (Digit 1 (LENGTH(Number)+1)) }
+
+\texttt{\qquad{}\qquad{}CalcModulus <- Total MOD 11 }
+
+\texttt{\qquad{}\qquad{}CheckValue <- 11 - CalcModulus }
+
+\texttt{\qquad{}\qquad{}IF CheckValue = 11 THEN }
+
+\texttt{\qquad{}\qquad{}\qquad{}RETURN STRING(O) }
+
+\texttt{\qquad{}\qquad{}ELSE }
+
+\texttt{\qquad{}\qquad{}\qquad{}IF CheckValue = 10 THEN }
+
+\texttt{\qquad{}\qquad{}\qquad{}....................... B .......................... }
+
+\texttt{\qquad{}\qquad{}\qquad{}ELSE }
+
+\texttt{\qquad{}\qquad{}\qquad{}RETURN STRING(CheckValue) }
+
+\texttt{\qquad{}\qquad{}\qquad{}ENDIF }
+
+\texttt{\qquad{}\qquad{}ENDIF }
+
+\texttt{\qquad{}ENDIF }
+
+\texttt{\qquad{}IF LENGTH(Number) = 9 THEN }
+
+\texttt{\qquad{}\qquad{}RETURN .................... C .................... }
+
+\texttt{\qquad{}ELSE }
+
+\texttt{\qquad{}\qquad{}RETURN CheckDigit; }
+
+\texttt{\qquad{}ENDIF }
+
+\texttt{END FUNCTION}
+
+\bigskip{}
+
+\texttt{// Calculate ISBN, an example of how the function is called. }
+
+\texttt{// Second parameter is always 0. }
+
+\texttt{ISBN = CalCheckDigit(\textquotedbl 184146208\textquotedbl ,0)}%
+\end{minipage}
+
+\subsubsection*{Task 2.2}
+
+Write a program to implement the ISBN program using the \texttt{CalCheckDigit}
+function.
+
+The program will:
+\begin{itemize}
+\item read the entire contents of the file \texttt{ISBNPRE.TXT} (seven 9-digit
+lSBNs without check digits) into an appropriate data structure
+\item use the function \texttt{CalCheckDigit} to calculate the result (ISBN
+with check digit) for each entry in the file
+\item write each result (ISBN with check digit) to the screen.
+\end{itemize}
+
+\subsubsection*{Evidence 4}
+
+Your program code for Task 2.2. \hfill{}{[}11{]}
+
+\subsubsection*{Evidence 5}
+
+Screenshot of the results of processing the \texttt{ISBNPRE.TXT} file.\hfill{}{[}1{]}

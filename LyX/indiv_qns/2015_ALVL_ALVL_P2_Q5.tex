@@ -1,0 +1,77 @@
+\item \textbf{{[}ALVL/9597/2015/P2/Q5{]} }
+
+A program is to be written to test an insertion sort algorithm. A
+top-down approach was used in the design of the program. The program,
+\texttt{InsertionSortTester}, has a number of parts: 
+\begin{itemize}
+\item input integer values into the array 
+\item output the initial values in the array 
+\item output the sorted values in the array
+\item perform the insertion sort 
+\item validate the values 
+\end{itemize}
+\begin{enumerate}
+\item Draw a diagram, which exhibits top-down design, for the \texttt{InsertionSortTester}
+program. \hfill{}{[}3{]}
+
+A list of data items is stored in the array \texttt{Values}. The pseudocode
+for the insertion sort algorithm is: 
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{01 FOR i <- 2 TO Arraysize }
+
+\texttt{02 \qquad{}Temp <- Values{[}i{]} }
+
+\texttt{03 \qquad{}j <- i\textemdash l }
+
+\texttt{04 \qquad{}WHILE (j > 0) AND (Values {[}j{]} > Temp) }
+
+\texttt{05 \qquad{}\qquad{}Values{[}j+1{]} <\textemdash{} Values
+{[}j{]} }
+
+\texttt{06 \qquad{}\qquad{}j <- j\textemdash l }
+
+\texttt{07 \qquad{}\qquad{}ENDWHILE }
+
+\texttt{08 \qquad{}\qquad{}Values {[}j+1{]} <- Temp }
+
+\texttt{09 ENDFOR }%
+\end{minipage}
+\item The sort algorithm is to be tested using the sequence of numbers:
+6, 8, 2 and 1. Copy and complete the trace table given below. 
+\begin{center}
+\begin{tabular}{|c|c|c|c||c|c|c|}
+\hline 
+\multicolumn{4}{|c||}{\texttt{Values}} &  &  & \tabularnewline
+\hline 
+\texttt{{[}1{]}} & \texttt{{[}2{]}} & \texttt{{[}3{]}} & \texttt{{[}4{]}} & \texttt{i} & \texttt{j} & \texttt{Temp}\tabularnewline
+\hline 
+\hline 
+6 & 8 & 2 & 1 &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  & \tabularnewline
+\end{tabular}
+\par\end{center}
+
+\hfill{}{[}6{]}
+\item Explain why this particular algorithm is inefficient for an array
+where the initial values are already in order.\hfill{} {[}2{]}
+\item Give \textbf{two} different test cases for the program. Justify your
+selection in each case.\hfill{} {[}4{]}
+\end{enumerate}

@@ -1,0 +1,123 @@
+\item \textbf{{[}ALVL/9597/2018/P2/Q5{]} }
+
+The organisers of a diving championship have created software to calculate
+and show the total score for each diver. 
+
+There are nine judges scoring each dive. The two best scores and the
+two worst scores are ignored. The other five scores are added together
+to give the diver\textquoteright s total score. 
+\begin{enumerate}
+\item Write an algorithm to take in the nine scores, delete the best two
+and the two worst scores, and total the five remaining scores. \hfill{}{[}4{]}
+\end{enumerate}
+There are 10 divers in the final. The scoreboard shows the order of
+diving. 
+\begin{center}
+\begin{tabular}{|c|c|l|}
+\hline 
+\textbf{Order} & \textbf{Diver name} & \textbf{Total score}\tabularnewline
+\hline 
+1 & Daniel Tan & \tabularnewline
+\hline 
+2 & Parker Lam & \tabularnewline
+\hline 
+3 & Mohamed Noor & \tabularnewline
+\hline 
+4 & Hariz Yazid & \tabularnewline
+\hline 
+5 & Sheryl Xuan & \tabularnewline
+\hline 
+6 & Karl Lim & \tabularnewline
+\hline 
+7 & Elaine Ning & \tabularnewline
+\hline 
+8 & Nadyia Esmadi & \tabularnewline
+\hline 
+9 & Cai Ng & \tabularnewline
+\hline 
+10 & Hamid Mahmood & \tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+\begin{enumerate}
+\item The programmers decided to use a 1D array for the scores. They will
+also use a bubble sort to sort the scores into descending order.
+\begin{enumerate}
+\item Explain how a bubble sort can be used to arrange the scores into a
+descending or ascending order. \hfill{}{[}2{]}
+\end{enumerate}
+This is the bubble sort algorithm for sorting into descending order:
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{01 WHILE NoSwaps = FALSE}
+
+\texttt{02 \qquad{}NoSwaps <- TRUE}
+
+\texttt{03 \qquad{}UpperBound <- ListLength}
+
+\texttt{04 \qquad{}FOR Posn <- 0 TO ......}\texttt{\textbf{A}}\texttt{......}
+
+\texttt{05 \qquad{}\qquad{}IF List{[}Posn{]} < ......}\texttt{\textbf{B}}\texttt{......}
+
+\texttt{06 \qquad{}\qquad{}\qquad{}THEN}
+
+\texttt{O7 \qquad{}\qquad{}\qquad{}\qquad{}// Swap}
+
+\texttt{O8 \qquad{}\qquad{}\qquad{}\qquad{}NoSwaps <- ......}\texttt{\textbf{C}}\texttt{......}
+
+\texttt{09 \qquad{}\qquad{}\qquad{}\qquad{}Temp <- List{[}Posn{]}}
+
+\texttt{10 \qquad{}\qquad{}\qquad{}\qquad{}List{[}Posn{]} <- ListiPosn
++ 1{]}}
+
+\texttt{11 \qquad{}\qquad{}\qquad{}\qquad{}List{[}Posn + 1{]}
+<- ......}\texttt{\textbf{D}}\texttt{......}
+
+\texttt{12 \qquad{}\qquad{}ENDIF}
+
+\texttt{l3 \qquad{}ENDFOR}
+
+\texttt{14 ENDWHILE}%
+\end{minipage}
+\begin{enumerate}
+\item Write the pseudocode for \texttt{\textbf{A}}, \texttt{\textbf{B}},
+\texttt{\textbf{C}}\textbf{ a}nd \texttt{\textbf{D}} in the algorithm.
+\hfill{} {[}4{]}
+\end{enumerate}
+\item During the first round of dives, the sorted scores for five divers
+are: 
+
+\texttt{48 }
+
+\texttt{45 }
+
+\texttt{40 }
+
+\texttt{37 }
+
+\texttt{36 }
+
+The sixth diver scores 42 and the software appends the score to the
+list as follows: 
+
+\texttt{48 }
+
+\texttt{45 }
+
+\texttt{40 }
+
+\texttt{37 }
+
+\texttt{36 }
+
+\texttt{42}
+\begin{enumerate}
+\item State the number of passes needed through the list to return the list
+to its sorted order. \hfill{}{[}1{]}
+\item Explain why the bubble sort is efficient in this example. \hfill{}{[}2{]}
+\item Name another sort method that could have been used in this situation. 
+
+Compare the speed of sorting the divers\textquoteright{} scores in
+your named method with using the bubble sort. \hfill{}{[}2{]}
+\end{enumerate}
+\end{enumerate}

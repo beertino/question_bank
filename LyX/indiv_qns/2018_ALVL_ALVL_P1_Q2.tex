@@ -1,0 +1,130 @@
+\item \textbf{{[}ALVL/9597/2018/P1/Q2{]} }
+
+The following algorithm is an implementation of a quick sort that
+operates on an array \texttt{Scores}. 
+
+This algorithm assumes that the first element of an array is the zeroth
+element. This means that \texttt{Scores{[}0{]}} is the first element
+in the array.
+
+This pseudocode is available in the file \texttt{QUICKSORT.TXT}
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\noindent \texttt{FUNCTION QuickSort(Scores)}
+
+\noindent \texttt{\qquad{}QuickSortHelper(Scores, 0, LENGTH(Scores)
+- 1)}
+
+\noindent \texttt{\qquad{}RETURN Scores}
+
+\noindent \texttt{ENDFUNCTION}
+
+\bigskip{}
+
+\noindent \texttt{FUNCTION QuickSortHelper(Scores, First, Last)}
+
+\noindent \texttt{\qquad{}IF First < Last}
+
+\noindent \texttt{\qquad{}THEN}
+
+\noindent \texttt{\qquad{}\qquad{}SplitPoint <- PartitioniScores,
+First, Last)}
+
+\noindent \texttt{\qquad{}\qquad{}QuickSortHelper(Scores, First,
+SplitPoint \textemdash{} 1)}
+
+\noindent \texttt{\qquad{}\qquad{}QuickSoRtHelper(Scores, SplitPoint
++ 1, Last)}
+
+\noindent \texttt{\qquad{}ENDIF}
+
+\noindent \texttt{\qquad{}RETURN Scores}
+
+\noindent \texttt{ENDFUNCTION }\bigskip{}
+
+\noindent \texttt{FUNCTION Partition(Scores, First, Last)}
+
+\noindent \texttt{\qquad{}PivotValue <- ScoresiFirst{]}}
+
+\noindent \texttt{\qquad{}Lefthark <- First + 1}
+
+\noindent \texttt{\qquad{}RightMark <- Last}
+
+\noindent \texttt{\qquad{}Done <- FALSE}
+
+\noindent \texttt{\qquad{}WHILE (Done = FALSE)}
+
+\noindent \texttt{\qquad{}\qquad{}WHILE LeftMark <= RightMark AND
+Scores{[}LeftMark{]} <= PivotValue}
+
+\noindent \texttt{\qquad{}\qquad{}\qquad{}LeftMark <- LeftMark
++ 1}
+
+\noindent \texttt{\qquad{}\qquad{}ENDWHILE}
+
+\noindent \texttt{\qquad{}\qquad{}WHILE Scores{[}RightMark{]} >=
+PivotValue AND RightMark >= LeftMark}
+
+\noindent \texttt{\qquad{}\qquad{}\qquad{}RightMark <- RightMark
+\textemdash{} 1}
+
+\noindent \texttt{\qquad{}\qquad{}ENDWHILE}
+
+\noindent \texttt{\qquad{}\qquad{}IF RightMark < LeftMark}
+
+\noindent \texttt{\qquad{}\qquad{}\qquad{}THEN}
+
+\noindent \texttt{\qquad{}\qquad{}\qquad{}\qquad{}Done <- TRUE}
+
+\noindent \texttt{\qquad{}\qquad{}ELSE}
+
+\noindent \texttt{\qquad{}\qquad{}\qquad{}Temp <- Scores{[}LeftMark{]}}
+
+\noindent \texttt{\qquad{}\qquad{}\qquad{}Scores{[}LeftMark{]}
+<- Scores{[}RightMark{]}}
+
+\noindent \texttt{\qquad{}\qquad{}\qquad{}Scores{[}RightMark{]}
+<- Temp}
+
+\noindent \texttt{\qquad{}ENDIF}
+
+\noindent \texttt{ENDWHILE }\bigskip{}
+
+\noindent \texttt{\textbf{\emph{<swap Scores{[}First{]} with Scores{[}RightMark{]}>}}}\texttt{
+}\bigskip{}
+
+\noindent \texttt{\qquad{}RETURN RightMark}
+
+\noindent \texttt{ENDFUNCTION}%
+\end{minipage}
+
+\subsubsection*{Task 2.1}
+
+Write program code to implement this algorithm. Ensure that you add
+the missing code to complete the algorithm. The area of missing code
+is highlighted as:
+\begin{center}
+\texttt{\textbf{\emph{<swap Scores {[}First{]} with Scores {[}RightMark{]}>}}}
+\par\end{center}
+
+Copy the sample data available in the \texttt{SCORES.TXT} file. Paste
+this into your programming code to set up the data to be sorted.
+
+\subsubsection*{Evidence 4}
+
+Your program code. \hfill{}{[}12{]}
+
+\subsubsection*{Task 2.2}
+
+Add a function to your code to output Scores. Call this function before
+and after the operation of the quick sort so that the unsorted and
+sorted data is displayed.
+
+\subsubsection*{Evidence 5}
+
+Your program code. \hfill{}{[}2{]}
+
+\subsubsection*{Evidence 6}
+
+Screenshot showing the unsorted and sorted \texttt{Scores} data.\hfill{}
+{[}1{]}

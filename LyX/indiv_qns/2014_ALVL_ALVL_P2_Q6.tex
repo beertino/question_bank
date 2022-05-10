@@ -1,0 +1,82 @@
+\item \textbf{{[}ALVL/9597/2019/P2/Q6{]} }
+
+A function is to be written that returns the sum of all values held
+in an array that are greater than a minimum value. The function will
+be used with arrays of varying size, but never more than a maximum
+of 50 000 elements.
+
+A first attempt at writing the program code for the function is given
+below:
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{01 FUNCTION TotalSum(Results : ARRAY{[}50000{]} OF REAL, ArraySize
+: INTEGER, MinValue : REAL) RETURNS REAL }
+
+\texttt{02 \qquad{}DECLARE Sum, Counter : INTEGER }
+
+\texttt{03 \qquad{}DECLARE Temp : Real }
+
+\texttt{04 \qquad{}Sum = 0.0 }
+
+\texttt{05 \qquad{}\qquad{}FOR Counter = 1 TOO ArraySize }
+
+\texttt{06 \qquad{}\qquad{}\qquad{}Temp = Results{[}Counter{]} }
+
+\texttt{07 \qquad{}\qquad{}\qquad{}IF Temp > MinValue THEN Sum
+= Sum {*} Temp }
+
+\texttt{08 \qquad{}\qquad{}ENDEOR }
+
+\texttt{09 \qquad{}RETURN Sum }
+
+\texttt{10 ENDFUNCTION}%
+\end{minipage}
+
+The function is included in a program specifically written to test
+the function. The main program outputs the value returned by the function.
+A compiler was used to compile the source program.
+\begin{enumerate}
+\item The compiler reported an error at line 5 in the function. Identify
+the error and explain why it was flagged as a syntax error. \hfill{}{[}2{]}
+\item The compiler also reported an error at line 8. State the type of error
+reported by the compiler justifying your answer. \hfill{}{[}2{]}
+\end{enumerate}
+The errors indicated in \textbf{parts (a)} and \textbf{(b)} were corrected.
+A successful compilation produces executable code. When the code was
+executed, the program failed to complete and reports an error at line
+7.
+\begin{enumerate}
+\item[(c)]  {} 
+\begin{enumerate}
+\item State the type of error that occurred. Justify your answer. \hfill{}{[}2{]}
+\item The error described in \textbf{part (c) (i)} depends on the detection
+of another type of error. Name this other type of error. How should
+the code be changed to correct this error?\hfill{}{[}2{]}
+\end{enumerate}
+\end{enumerate}
+When the program finally runs without error, the test plan needs to
+be completed. The test plan uses data that tests different sizes of
+array, different array values and different minimum values. 
+
+The array \texttt{TempArray} is used in the main program as the array
+to be processed.\quad{} 
+\begin{enumerate}
+\item[(d)]  Each element of \texttt{TempArray} stores a random value between
+1.0 and 10.0.
+\begin{enumerate}
+\item Explain why the function call:
+
+\texttt{TotalSum(TempArray, 1000, 5.0)}
+
+is not an appropriate black box test. \hfill{}{[}2{]}
+\item Explain why the function call:
+
+\texttt{TotalSum(TempArray, 10, 10.5)}
+
+is not an appropriate white box test. \hfill{}{[}2{]}
+\end{enumerate}
+\item[(e)] if each element of \texttt{TempArray} stores the value 1.0, state
+a function call that will be an appropriate black box test. Justify
+your answer. \hfill{}{[}3{]}
+\end{enumerate}

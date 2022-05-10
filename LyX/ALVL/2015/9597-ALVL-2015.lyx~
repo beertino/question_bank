@@ -81,15 +81,18 @@
 
 \begin_body
 
-\begin_layout Section
-9597 ALVL 2015
-\end_layout
-
-\begin_layout Subsection
-Paper 1
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2015/P1/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 The file 
 \family typewriter
 ADMISSIONS-DATA.TXT
@@ -99,7 +102,6 @@ ADMISSIONS-DATA.TXT
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 The task is to read the numbers from the file and display a sorted list.
  
@@ -120,35 +122,15 @@ Either a quick sort or an insertion sort but not both.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Subsubsection*
-\noindent
 Task 1.1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write code for a procedure to display a menu with the following options:
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \align center
 \begin_inset Box ovalbox
 position "t"
@@ -178,7 +160,7 @@ status open
 
 \end_inset
 
- Read file data 
+ Read file data
 \end_layout
 
 \begin_layout Enumerate
@@ -191,7 +173,7 @@ status open
 
 \end_inset
 
-Bubble sort 
+Bubble sort
 \end_layout
 
 \begin_layout Enumerate
@@ -204,7 +186,7 @@ status open
 
 \end_inset
 
-Quick sort/ Insertion sort 
+Quick sort/ Insertion sort
 \end_layout
 
 \begin_layout Enumerate
@@ -217,7 +199,7 @@ status open
 
 \end_inset
 
-End Task 
+End Task
 \end_layout
 
 \end_inset
@@ -230,7 +212,7 @@ End Task
 Task 1.2
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write the program code for a procedure to implement menu option 1.
 \end_layout
 
@@ -254,7 +236,7 @@ Program code for menu option 1.
 [5] 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Options 2 and 3 will sort and display the sorted data.
  The algorithm for a bubble sort is given in file 
 \family typewriter
@@ -264,7 +246,7 @@ BUBBLE.TXT
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code as a procedure to implement the bubble sort.
  
 \end_layout
@@ -284,7 +266,7 @@ The bubble sort code procedure.
 [1]
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code as a procedure to implement the quick sort or the insertion
  sort.
  
@@ -309,43 +291,23 @@ The program for the sort method used.
 [4]
 \end_layout
 
-\end_inset
-
- 
-\end_layout
-
 \begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
+
+\end_layout
 
 \begin_layout Subsubsection*
 \noindent
 Task 1.3
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Additional code is to be written for each sort procedure.
  The sort methods will count and display the number of comparisons made
  in completing the sort process.
  This will provide an indicator of the efficiency of each algorithm.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write the additional code to count and display the number of comparisons
  made for each sort method.
 \end_layout
@@ -380,18 +342,23 @@ The output from menu option 3.
  [2]
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2015/P1/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 The pseudocode procedure below is given a denary number.
  The procedure then outputs the binary equivalent of the denary number.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \noindent
 \begin_inset Box Frameless
@@ -524,36 +491,17 @@ ENDPROCEDURE
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 2.1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code to implement the given procedure.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Execute the procedure using 56 as the parameter.
  
 \end_layout
@@ -583,12 +531,12 @@ Screenshot showing the output.
 Task 2.2
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 There is an error with the given algorithm.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Describe the error and the effect it created on the output in Evidence 6.
  
 \end_layout
@@ -613,17 +561,17 @@ Statement(s) to answer Task 2.2.
 Task 2.3
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Make changes to the procedure Converter which will correct the error.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Draw up a list of test cases for the testing of the amended code.
  by completing a table with the following headings: 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="3">
@@ -638,7 +586,7 @@ Draw up a list of test cases for the testing of the amended code.
 \begin_layout Plain Layout
 
 \family typewriter
-DenaryNumber 
+DenaryNumber
 \end_layout
 
 \end_inset
@@ -647,7 +595,7 @@ DenaryNumber
 \begin_inset Text
 
 \begin_layout Plain Layout
-Purpose of the test 
+Purpose of the test
 \end_layout
 
 \end_inset
@@ -656,7 +604,7 @@ Purpose of the test
 \begin_inset Text
 
 \begin_layout Plain Layout
-Expected output 
+Expected output
 \end_layout
 
 \end_inset
@@ -789,13 +737,19 @@ Screenshots for two of the tests.
 [11]
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2015/P1/Q3] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 When buying software.
  the purchaser is issued with a licence key.
  The product licence can be purchased for either one or three computers.
@@ -803,7 +757,6 @@ When buying software.
  the licence was for a single-user or 3-users.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 The licence key is a 10 character code as follows: 
 \end_layout
@@ -1330,31 +1283,12 @@ X
 .
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 3.1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Design a function 
 \family typewriter
 LicenceKey
@@ -1363,12 +1297,12 @@ LicenceKey
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code to implement the function.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Test the function for 
 \series bold
 three
@@ -1406,7 +1340,7 @@ Screenshot(s) showing the generation of the three new licence keys.
 Task 3.2
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A file 
 \family typewriter
 LICENCE-KEYS.TXT
@@ -1417,22 +1351,22 @@ g which follows.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Typical data for two licences are shown: 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 SYNCTKMMF8 1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 indicates this is a single-user licence.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 SNPHHUATV7 3 1
@@ -1440,17 +1374,17 @@ SNPHHUATV7 3 1
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 purchased as a 3-user licence.
  but currently has only one registered user.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code for a menu with the following options: 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \align center
 \begin_inset Box ovalbox
 position "t"
@@ -1481,7 +1415,6 @@ status open
 \end_inset
 
  Purchase of a new licence for either a single-user or a 3-user licence
- 
 \end_layout
 
 \begin_layout Enumerate
@@ -1494,7 +1427,7 @@ status open
 
 \end_inset
 
-Register an additional user to an active 3-user licence 
+Register an additional user to an active 3-user licence
 \end_layout
 
 \begin_layout Enumerate
@@ -1507,7 +1440,7 @@ status open
 
 \end_inset
 
-End 
+End
 \end_layout
 
 \end_inset
@@ -1520,11 +1453,11 @@ End
 Task 3.3
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write code as a procedure for menu option 1.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The requirement will be: 
 \end_layout
 
@@ -1600,11 +1533,11 @@ LICENCE-KEYS.TXT
 Task 3.4
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Program menu option 2.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Carry out three relevant tests.
 \end_layout
 
@@ -1625,11 +1558,6 @@ Screenshot evidence of three test cases.
 \end_inset
 
 [5]
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1657,7 +1585,7 @@ The program design to manage purchases and registrations is to be implemented
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2015-P1-Q3.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-ALVL-2015-P1-Q3.png
 	width 50page%
 
 \end_inset
@@ -1665,31 +1593,12 @@ The program design to manage purchases and registrations is to be implemented
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 3.5
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code 
 \series bold
 only
@@ -1698,7 +1607,7 @@ only
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Do not attempt to develop the application further.
 \end_layout
 
@@ -1716,45 +1625,31 @@ Program code for the three classes.
 [9]
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2015/P1/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Users of a local area network each have a network account ID.
  The IDs have the format 2015_NNNN.
  where N is a digit.
  
 \end_layout
 
-\begin_deeper
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 4.1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Complete the test case table with the addition of 
 \series bold
 three
@@ -1764,7 +1659,7 @@ three
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The return value is a code as follows: 
 \end_layout
 
@@ -1782,7 +1677,7 @@ you will use other integer numbers for other invalid cases.
 \end_layout
 
 \begin_deeper
-\begin_layout Plain Layout
+\begin_layout Standard
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="4">
@@ -1993,7 +1888,7 @@ Valid User ID
 \end_layout
 
 \end_deeper
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset space \hfill{}
 \end_inset
 
@@ -2020,19 +1915,19 @@ The completed test case table.
 Task 4.2
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code for a function to validate a User ID.
  The function header has the format: 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \align center
 
 \family typewriter
 FUNCTION ValidateUserID (ThisUserID : STRING) RETURNS INTEGER 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write a program to:
 \end_layout
 
@@ -2051,7 +1946,7 @@ Output a message describing the validity of the input.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset space \hfill{}
 \end_inset
 
@@ -2087,11 +1982,6 @@ Three
 \end_inset
 
 [3]
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2136,30 +2026,10 @@ Room16
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Subsubsection*
-\noindent
 Task 4.3
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Design and write program code to define one or more classes and other appropriat
 e data structures for this application.
  
@@ -2171,18 +2041,13 @@ e data structures for this application.
 Evidence 15
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Program code for the class(es).
  
 \begin_inset space \hfill{}
 \end_inset
 
-[6]
-\end_layout
-
-\end_inset
-
- A print queue behaves as a queue data structure.
+[6] A print queue behaves as a queue data structure.
  
 \end_layout
 
@@ -2353,31 +2218,12 @@ two
 ion 4.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 4.4
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code to: 
 \end_layout
 
@@ -2399,7 +2245,7 @@ run the appropriate code for the choice made.
 Evidence 16
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The program code.
  
 \begin_inset space \hfill{}
@@ -2408,36 +2254,12 @@ The program code.
 [3]
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 4.5
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code to initialise the print queue for the 
 \family typewriter
 Room16
@@ -2446,7 +2268,7 @@ Room16
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code to display the current state of the print queue.
 \end_layout
 
@@ -2456,7 +2278,7 @@ Write program code to display the current state of the print queue.
 Evidence 17
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The program code for:
 \end_layout
 
@@ -2478,11 +2300,11 @@ output of the current print queue.
 Task 4.6
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code to add a new print job to the print queue.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The requirement will be:
 \end_layout
 
@@ -2494,7 +2316,7 @@ program user enters data for the new print job
 print job is added to the print queue.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Test the code by adding one new print job.
 \end_layout
 
@@ -2522,15 +2344,15 @@ Screenshot following menu option 1 then menu option 3.
 Task 4.7
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code to output the next print job from the printer.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 This code will execute from menu option 2.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Test the code by:
 \end_layout
 
@@ -2562,24 +2384,25 @@ Screenshot following menu option 1 three times.
 [6]
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
-\begin_layout Subsection
-Paper 2
+\begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2015/P2/Q1] 
 \end_layout
 
-\begin_layout Enumerate
+\begin_deeper
+\begin_layout Standard
 The management of a university is keen to implement changes which will result
  in higher student attainment.
  The management believes this is possible if it collects more data about
  its students which is then analysed.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 Possible data that might be collected includes: assignment grades, books
  taken out of the library, attendance at lectures, attendance at tutorials,
@@ -2939,7 +2762,7 @@ A first attempt to produce a Program Evaluation and Review Technique (PERT)
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2015-P2-Q1.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-ALVL-2015-P2-Q1.png
 	width 50page%
 
 \end_inset
@@ -3139,8 +2962,19 @@ status open
 [2]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2015/P2/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A stock control system requires that each stock item has a unique ID consisting
  of six digits.
  The sixth digit is a check digit.
@@ -3148,7 +2982,6 @@ A stock control system requires that each stock item has a unique ID consisting
  series of calculations:
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
 multiply each of the six digits by its position (position 6 is the leftmost
  position)
@@ -3209,13 +3042,23 @@ Describe a method of verification that can be used when an ID is entered
  [3]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2015/P2/Q3] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A simple queue data structure is implemented using a one-dimensional array
  and two pointers, Head and Tail, as shown:
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \align center
 \begin_inset Tabular
@@ -3784,13 +3627,23 @@ status open
 [2]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2015/P2/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 An algorithm for converting a number n from denary to octal uses the three
  built-in functions: 
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \align center
 \begin_inset Tabular
@@ -4170,7 +4023,7 @@ DenaryToOctal(39)
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2015-P2-Q4.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-ALVL-2015-P2-Q4.png
 	width 50page%
 
 \end_inset
@@ -4235,8 +4088,19 @@ that are non-essential but would help with the clarity of the pseudocode.
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2015/P2/Q5] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A program is to be written to test an insertion sort algorithm.
  A top-down approach was used in the design of the program.
  The program, 
@@ -4246,7 +4110,6 @@ InsertionSortTester
 , has a number of parts: 
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
 input integer values into the array 
 \end_layout
@@ -5266,14 +5129,24 @@ two
  [4]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2015/P2/Q6] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Students from several schools are entered for examinations in different
  subjects.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 A relational database is to be used by the examination board to store data
  about examination entries and results.
@@ -5458,6 +5331,10 @@ Explain how the relationship between the STUDENT table and the SCHOOL table
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \end_body
 \end_document

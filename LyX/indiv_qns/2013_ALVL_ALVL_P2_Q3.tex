@@ -1,0 +1,30 @@
+\item \textbf{{[}ALVL/9597/2013/P2/Q3{]} }
+
+A hash table has an index range of 1 to 900. The following pseudocode
+describes an algorithm for searching the table using the hashing function
+Hash. It is assumed that the key is present in the table.
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{01 Index <- Hash(Key) }
+
+\texttt{02 WHILE Table{[}Index, 1{]} <> Key }
+
+\texttt{03 \qquad{}Index <- Index + 1 }
+
+\texttt{04 ENDWHILE }
+
+\texttt{05 Value <- Table{[}Index, 2{]}}%
+\end{minipage}
+\begin{enumerate}
+\item Explain the purpose of:
+\begin{enumerate}
+\item line 3
+\item line 5\hfill{} {[}4{]}
+\end{enumerate}
+\item Describe a problem that might occur with a key which, when hashed,
+produces an index of 900. \hfill{}{[}2{]}
+\item What modification to the algorithm is required to overcome this problem?
+\hfill{}{[}3{]}
+\item Explain how a new item can be added to this hash table. \hfill{}{[}4{]}
+\end{enumerate}

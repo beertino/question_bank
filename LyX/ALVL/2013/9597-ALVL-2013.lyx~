@@ -90,6 +90,13 @@ Paper 1
 \end_layout
 
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2013/P1/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 The files 
 \family typewriter
 WORDS1.TXT
@@ -101,7 +108,6 @@ WORDS2.TXT
  store a list of single word computing terms used in a textbook.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 Each entry has the following format: 
 \end_layout
@@ -139,31 +145,12 @@ This means that after a complete scan of the textbook the word 'program'
  was found 52 times.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 1.1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code to find and output the term with the highest number of
  occurrences.
  Use the file 
@@ -179,7 +166,7 @@ WORDS1.TXT
 Evidence 1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The program code.
  
 \begin_inset space \hfill{}
@@ -194,7 +181,7 @@ The program code.
 Evidence 2
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshot of output.
  
 \begin_inset space \hfill{}
@@ -208,7 +195,7 @@ Screenshot of output.
 Task 1.2
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Amend your program code so that if more than one term exists with the highest
  number of occurrences, all terms are reported.
  Use the file 
@@ -224,7 +211,7 @@ WORDS2.TXT
 Evidence 3
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The program code.
  
 \begin_inset space \hfill{}
@@ -239,7 +226,7 @@ The program code.
 Evidence 4
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshot of output.
 \begin_inset space \hfill{}
 \end_inset
@@ -247,9 +234,8 @@ Screenshot of output.
  [1]
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \begin_layout Standard
@@ -258,12 +244,18 @@ Screenshot of output.
 
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2013/P1/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A company keeps data about its employees.
  The employee surname and employee ID are recorded.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 All employee IDs are unique and have the format C999 where C is any uppercase
  letter and 9 is a digit.
@@ -415,31 +407,12 @@ Array2
 This design would produce repetition of code.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 2.1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code which performs each of the searches:
 \end_layout
 
@@ -451,13 +424,13 @@ Search by surname
 Search by employee ID
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your code should address the issues of inefficiency and repetition of code
  described in the scenario above.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Use the sample array data available from the text file 
 \family typewriter
 EMPLOYEEDATA.txt
@@ -471,7 +444,7 @@ EMPLOYEEDATA.txt
 Evidence 5
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code.
 \begin_inset space \hfill{}
 \end_inset
@@ -484,7 +457,7 @@ Your program code.
 Task 2.2
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Devise a set of four test cases with the data to be used.
 \end_layout
 
@@ -494,7 +467,7 @@ Devise a set of four test cases with the data to be used.
 Evidence 6
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A screenshot for each test case you considered.
  Annotate the screenshot explaining the purpose of each test.
  
@@ -504,9 +477,8 @@ A screenshot for each test case you considered.
 [4]
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \begin_layout Standard
@@ -515,12 +487,18 @@ A screenshot for each test case you considered.
 
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2013/P1/Q3] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 The task is to store a dataset (maximum size 20 items) as a binary tree
  structure.
  You should assume that the data items are unique.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 The program will use a user-defined type Node for each node defined as follows:
 \end_layout
@@ -825,7 +803,11 @@ INTEGER
 \begin_inset Text
 
 \begin_layout Plain Layout
-Index for the root position of the ThisTree array
+Index for the root position of the 
+\family typewriter
+ThisTree
+\family default
+ array
 \end_layout
 
 \end_inset
@@ -874,7 +856,7 @@ Index for the next unused node
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2013-P1-Q3.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-ALVL-2013-P1-Q3.png
 	width 50page%
 
 \end_inset
@@ -887,37 +869,18 @@ The diagram shows the binary tree and linked list after four values have
  been added.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 3.1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write the program code to declare all the required variables and create
  the initial linked list which contains all 20 nodes.
  Add statement(s) to initialise the empty tree.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset space \hfill{}
 \end_inset
 
@@ -930,17 +893,17 @@ Write the program code to declare all the required variables and create
 Evidence 7
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code for Task 3.1.
  [11]
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The following (incomplete) pseudocode inserts a data value into the binary
  tree structure.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The 
 \family typewriter
 LastMove
@@ -948,19 +911,19 @@ LastMove
  variable holds the direction of the previous traversal move as follows:
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 X - no move yet made 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 L - move was to the left 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 R - move was to the right
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \noindent
 \begin_inset Box Frameless
 position "t"
@@ -1005,7 +968,7 @@ IF Root = 0
 \begin_inset space \qquad{}
 \end_inset
 
-THEN 
+THEN
 \end_layout
 
 \begin_layout Plain Layout
@@ -1022,7 +985,7 @@ THEN
 \begin_inset space \qquad{}
 \end_inset
 
-Root ← NextFreePosition 
+Root ← NextFreePosition
 \end_layout
 
 \begin_layout Plain Layout
@@ -1035,24 +998,7 @@ Root ← NextFreePosition
 \begin_inset space \qquad{}
 \end_inset
 
-ELSE 
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-// traverse the tree to find the position for the new value 
+ELSE
 \end_layout
 
 \begin_layout Plain Layout
@@ -1069,7 +1015,7 @@ ELSE
 \begin_inset space \qquad{}
 \end_inset
 
-CurrentPosition ← Root 
+// traverse the tree to find the position for the new value
 \end_layout
 
 \begin_layout Plain Layout
@@ -1086,7 +1032,7 @@ CurrentPosition ← Root
 \begin_inset space \qquad{}
 \end_inset
 
-LastMove ← 'X' 
+CurrentPosition ← Root
 \end_layout
 
 \begin_layout Plain Layout
@@ -1103,7 +1049,7 @@ LastMove ← 'X'
 \begin_inset space \qquad{}
 \end_inset
 
-REPEAT 
+LastMove ← 'X'
 \end_layout
 
 \begin_layout Plain Layout
@@ -1120,11 +1066,7 @@ REPEAT
 \begin_inset space \qquad{}
 \end_inset
 
-
-\begin_inset space \qquad{}
-\end_inset
-
-PreviousPosition ← CurrentPosition 
+REPEAT
 \end_layout
 
 \begin_layout Plain Layout
@@ -1145,7 +1087,7 @@ PreviousPosition ← CurrentPosition
 \begin_inset space \qquad{}
 \end_inset
 
-IF NewFreeItem < ThisTree[CurrentPosition].Data 
+PreviousPosition ← CurrentPosition
 \end_layout
 
 \begin_layout Plain Layout
@@ -1166,11 +1108,7 @@ IF NewFreeItem < ThisTree[CurrentPosition].Data
 \begin_inset space \qquad{}
 \end_inset
 
-
-\begin_inset space \qquad{}
-\end_inset
-
-THEN 
+IF NewFreeItem < ThisTree[CurrentPosition].Data
 \end_layout
 
 \begin_layout Plain Layout
@@ -1195,11 +1133,7 @@ THEN
 \begin_inset space \qquad{}
 \end_inset
 
-
-\begin_inset space \qquad{}
-\end_inset
-
-// move left 
+THEN
 \end_layout
 
 \begin_layout Plain Layout
@@ -1228,7 +1162,7 @@ THEN
 \begin_inset space \qquad{}
 \end_inset
 
-LastMove ← 'L' 
+// move left
 \end_layout
 
 \begin_layout Plain Layout
@@ -1257,32 +1191,7 @@ LastMove ← 'L'
 \begin_inset space \qquad{}
 \end_inset
 
-CurrentPosition ← ThisTree[CurrentPosition].LeftP 
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-ELSE 
+LastMove ← 'L'
 \end_layout
 
 \begin_layout Plain Layout
@@ -1311,7 +1220,32 @@ ELSE
 \begin_inset space \qquad{}
 \end_inset
 
-// move right 
+CurrentPosition ← ThisTree[CurrentPosition].LeftP
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+ELSE
 \end_layout
 
 \begin_layout Plain Layout
@@ -1340,7 +1274,7 @@ ELSE
 \begin_inset space \qquad{}
 \end_inset
 
-LastMove ← 'R' 
+// move right
 \end_layout
 
 \begin_layout Plain Layout
@@ -1369,7 +1303,7 @@ LastMove ← 'R'
 \begin_inset space \qquad{}
 \end_inset
 
-CurrentPosition ← ThisTree[CurrentPosition].RightP 
+LastMove ← 'R'
 \end_layout
 
 \begin_layout Plain Layout
@@ -1390,7 +1324,15 @@ CurrentPosition ← ThisTree[CurrentPosition].RightP
 \begin_inset space \qquad{}
 \end_inset
 
-ENDIF 
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+CurrentPosition ← ThisTree[CurrentPosition].RightP
 \end_layout
 
 \begin_layout Plain Layout
@@ -1407,7 +1349,28 @@ ENDIF
 \begin_inset space \qquad{}
 \end_inset
 
-UNTIL CurrentPosition = 0 
+
+\begin_inset space \qquad{}
+\end_inset
+
+ENDIF
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+UNTIL CurrentPosition = 0
 \end_layout
 
 \begin_layout Plain Layout
@@ -1425,7 +1388,7 @@ ENDIF
 \begin_inset space \qquad{}
 \end_inset
 
-IF LastMove = 'R' 
+IF LastMove = 'R'
 \end_layout
 
 \begin_layout Plain Layout
@@ -1438,37 +1401,7 @@ IF LastMove = 'R'
 \begin_inset space \qquad{}
 \end_inset
 
-THEN 
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-ThisTree[PreviousPosition].RightP ← NextFreePosition 
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-ELSE 
+THEN
 \end_layout
 
 \begin_layout Plain Layout
@@ -1485,7 +1418,7 @@ ELSE
 \begin_inset space \qquad{}
 \end_inset
 
-ThisTree[PreviousPosition].LeftP ← NextFreePosition 
+ThisTree[PreviousPosition].RightP ← NextFreePosition
 \end_layout
 
 \begin_layout Plain Layout
@@ -1494,7 +1427,11 @@ ThisTree[PreviousPosition].LeftP ← NextFreePosition
 \begin_inset space \qquad{}
 \end_inset
 
-ENDIF 
+
+\begin_inset space \qquad{}
+\end_inset
+
+ELSE
 \end_layout
 
 \begin_layout Plain Layout
@@ -1503,7 +1440,33 @@ ENDIF
 \begin_inset space \qquad{}
 \end_inset
 
-NextFreePosition ThisTree[NextFreePosition].LeftP 
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+ThisTree[PreviousPosition].LeftP ← NextFreePosition
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+ENDIF
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space \qquad{}
+\end_inset
+
+NextFreePosition ThisTree[NextFreePosition].LeftP
 \end_layout
 
 \begin_layout Plain Layout
@@ -1517,7 +1480,7 @@ ENDPROCEDURE
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Note: The above text is available in the text file 
 \family typewriter
 PSEUDOCODE_TASK_3_2.TXT
@@ -1528,7 +1491,7 @@ PSEUDOCODE_TASK_3_2.TXT
 Task 3.2
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write non-recursive code to implement the 
 \family typewriter
 AddItemToBinaryTree
@@ -1541,7 +1504,7 @@ PSEUDOCODE_TASK_3_2.TXT
  as a basis for the writing of your code.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The given pseudocode is incomplete as:
 \end_layout
 
@@ -1562,7 +1525,7 @@ ThisTree
  array
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Add these requirements to your program solution.
 \end_layout
 
@@ -1572,7 +1535,7 @@ Add these requirements to your program solution.
 Evidence 8
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code for Task 3.2.
 \begin_inset space \hfill{}
 \end_inset
@@ -1585,7 +1548,7 @@ Your program code for Task 3.2.
 Task 3.3
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write a procedure
 \family typewriter
  OutputData
@@ -1611,7 +1574,7 @@ ThisTree
 Evidence 9
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code for Task 3.3.
  
 \begin_inset space \hfill{}
@@ -1625,7 +1588,7 @@ Your program code for Task 3.3.
 Task 3.4
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write a main program to:
 \end_layout
 
@@ -1653,7 +1616,7 @@ OutputData
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Run the program with the input of the single value "
 \family typewriter
 XXX
@@ -1667,7 +1630,7 @@ XXX
 Evidence 10
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshot showing the output from running the program in Task 3.4.
 \begin_inset space \hfill{}
 \end_inset
@@ -1680,11 +1643,11 @@ Screenshot showing the output from running the program in Task 3.4.
 Task 3.5
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Test your program using the following data items input in the order shown:
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \align center
 
 \family typewriter
@@ -1697,18 +1660,13 @@ INDIA, NEPAL, MALAYSIA, SINGAPORE, BURMA, CANADA, LATVIA, XXX
 Evidence 11
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Provide screenshot test evidence for Task 3.5.
  
 \begin_inset space \hfill{}
 \end_inset
 
 [5]
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1719,36 +1677,17 @@ in-order traversal
 .
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 3.6
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write a recursive procedure to carry out an in-order tree traversal.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Include a call to the procedure from your main program.
 \end_layout
 
@@ -1758,7 +1697,7 @@ Include a call to the procedure from your main program.
 Evidence 12
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code.
  
 \begin_inset space \hfill{}
@@ -1773,7 +1712,7 @@ Your program code.
 Evidence 13
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Produce a screenshot for the Task 3.5 dataset confirming the output of the
  countries in alphabetical order.
  
@@ -1783,9 +1722,8 @@ Produce a screenshot for the Task 3.5 dataset confirming the output of the
 [2]
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \begin_layout Standard
@@ -1794,11 +1732,17 @@ Produce a screenshot for the Task 3.5 dataset confirming the output of the
 
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2013/P1/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 The task is to input data for a frequency distribution and then output to
  the screen a horizontal bar chart.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 The data is input as an X value followed by its frequency.
  Assume the frequency is always in the range 0 to 60 and there are no more
@@ -2011,31 +1955,12 @@ XXL @@@@@@@@@@@
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 4.1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write a program which inputs a set of X values and frequencies and produces
  output in the format shown.
 \end_layout
@@ -2046,7 +1971,7 @@ Write a program which inputs a set of X values and frequencies and produces
 Evidence 14
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code for Task 4.1.
 \begin_inset space \hfill{}
 \end_inset
@@ -2060,18 +1985,13 @@ Your program code for Task 4.1.
 Evidence 15
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A screenshot to confirm the dataset used and the output produced.
  
 \begin_inset space \hfill{}
 \end_inset
 
 [2]
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2104,31 +2024,12 @@ The line width for the output is exactly 80 characters.
 Its appearance could be improved by changing the @ character.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 4.2
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write code to produce a new chart for the data used in Task 4.1 showing the
  maximum possible bar width and any other refinements you have introduced.
 \end_layout
@@ -2139,7 +2040,7 @@ Write code to produce a new chart for the data used in Task 4.1 showing the
 Evidence 16
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code for Task 4.2.
  
 \begin_inset space \hfill{}
@@ -2154,18 +2055,13 @@ Your program code for Task 4.2.
 Evidence 17
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A screenshot showing the data entry followed by the bar chart.
  
 \begin_inset space \hfill{}
 \end_inset
 
 [2]
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2180,31 +2076,12 @@ The bar chart would benefit by the inclusion of a horizontal axis labelled
  with a scale showing the frequency values.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 4.3
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Revise your program code to meet these new requirements.
 \end_layout
 
@@ -2214,7 +2091,7 @@ Revise your program code to meet these new requirements.
 Evidence 18
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code for Task 4.3.
 \begin_inset space \hfill{}
 \end_inset
@@ -2228,7 +2105,7 @@ Your program code for Task 4.3.
 Evidence 19
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshots demonstrating: 
 \end_layout
 
@@ -2246,29 +2123,30 @@ Dataset 3 of your choice to demonstrate frequencies which must be scaled
  differently to Dataset 2 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset space \hfill{}
 \end_inset
 
 [6]
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
-\begin_layout Subsection
-Paper 2
+\begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2013/P2/Q1] 
 \end_layout
 
-\begin_layout Enumerate
+\begin_deeper
+\begin_layout Standard
 A dental practice currently uses a computer system to store details of its
  patients, staff and appointments in separate files.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 The practice manager and the receptionist have their own computers for accessing
  and updating the files.
@@ -2348,7 +2226,7 @@ Time is measured in weeks.
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2013-P2-Q1-1.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-ALVL-2013-P2-Q1-1.png
 	width 50page%
 
 \end_inset
@@ -2420,7 +2298,7 @@ _
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2013-P2-Q1-2.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-ALVL-2013-P2-Q1-2.png
 	width 50page%
 
 \end_inset
@@ -2653,8 +2531,19 @@ status open
  [4]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2013/P2/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Examination centres receive examination results for their candidates as
  a printed report.
  The report lists the candidates in order based on their Index Number.
@@ -2663,11 +2552,10 @@ Examination centres receive examination results for their candidates as
  the examination.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2013-P2-Q2-1.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-ALVL-2013-P2-Q2-1.png
 	width 50page%
 
 \end_inset
@@ -2757,15 +2645,25 @@ Explain why.
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2013/P2/Q3] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A hash table has an index range of 1 to 900.
  The following pseudocode describes an algorithm for searching the table
  using the hashing function Hash.
  It is assumed that the key is present in the table.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \noindent
 \begin_inset Box Frameless
@@ -2871,13 +2769,23 @@ Explain how a new item can be added to this hash table.
 [4]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2013/P2/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A software development company currently hosts its own email server.
  The company is considering a replacement webmail service, using cloud computing.
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 (a) State two advantages of this change.
 \begin_inset space \hfill{}
@@ -2938,8 +2846,19 @@ status open
 [4]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2013/P2/Q5] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Bank customers are allowed to withdraw money from their accounts at an ATM.
  They cannot withdraw more than the current balance in their account.
  There is a daily limit on the amount that can be withdrawn.
@@ -2947,7 +2866,6 @@ Bank customers are allowed to withdraw money from their accounts at an ATM.
  The rules are:
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
 the transaction is rejected if the withdrawal amount requested is greater
  than the current balance 
@@ -3013,13 +2931,23 @@ State two ways in which your answer in (c) demonstrates clarity of code.
 [2]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2013/P2/Q6] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 The ASCII code for the character 'Z', expressed as a denary integer, is
  90.
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 Express the denary integer 90 as:
 \end_layout
@@ -3073,6 +3001,10 @@ Describe a method of storing strings of characters of variable length in
 \end_inset
 
 [2]
+\end_layout
+
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper

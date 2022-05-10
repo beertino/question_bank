@@ -1,0 +1,76 @@
+\item \textbf{{[}ALVL/9597/2015/P1/Q2{]} }
+
+The pseudocode procedure below is given a denary number. The procedure
+then outputs the binary equivalent of the denary number.
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{PROCEDURE Converter(DenaryNumber : INTEGER) }
+
+\texttt{\qquad{}IF DenaryNumber = 0 OR DenaryNumber = 1 }
+
+\texttt{\qquad{}\qquad{}THEN }
+
+\texttt{\qquad{}\qquad{}\qquad{}OUTPUT DenaryNumber }
+
+\texttt{\qquad{}\qquad{}ELSE }
+
+\texttt{\qquad{}\qquad{}\qquad{}OUTPUT DenaryNumber MOD 2 }
+
+\texttt{\qquad{}\qquad{}\qquad{}Converter(DenaryNumber DIV 2) }
+
+\texttt{\qquad{}ENDIF }
+
+\texttt{ENDPROCEDURE}%
+\end{minipage}
+
+\subsubsection*{Task 2.1}
+
+Write program code to implement the given procedure. 
+
+Execute the procedure using 56 as the parameter. 
+
+\subsubsection*{Evidence 6}
+\begin{itemize}
+\item Program code. 
+\item Screenshot showing the output. \hfill{}{[}6{]}
+\end{itemize}
+
+\subsubsection*{Task 2.2}
+
+There is an error with the given algorithm. 
+
+Describe the error and the effect it created on the output in Evidence
+6. 
+
+\subsubsection*{Evidence 7}
+\begin{itemize}
+\item Statement(s) to answer Task 2.2. \hfill{}{[}1{]}
+\end{itemize}
+
+\subsubsection*{Task 2.3}
+
+Make changes to the procedure Converter which will correct the error. 
+
+Draw up a list of test cases for the testing of the amended code.
+by completing a table with the following headings: 
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline 
+\texttt{DenaryNumber} & Purpose of the test & Expected output\tabularnewline
+\hline 
+ &  & \tabularnewline
+\hline 
+$\vdots$ & $\vdots$ & $\vdots$\tabularnewline
+\hline 
+ &  & \tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\subsubsection*{Evidence 8}
+\begin{itemize}
+\item The amended PROCEDURE Converter program code.
+\item The completed table. 
+\item Screenshots for two of the tests. \hfill{}{[}11{]}
+\end{itemize}

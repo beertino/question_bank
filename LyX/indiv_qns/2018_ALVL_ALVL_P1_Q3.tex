@@ -1,0 +1,181 @@
+\item \textbf{{[}ALVL/9597/2018/P1/Q3{]} }
+
+The file,\texttt{ HASHEDDATA.TXT}, holds details of the names and
+telephone numbers of 250 people. 
+
+There are a total of 500 lines in the file, and a number of these
+lines are empty of name and telephone number.
+
+An index is stored for each line of the file. 
+
+The format of the data in the file is: 
+\begin{center}
+<Index>,<PersonName>,<TelephoneNumber> 
+\par\end{center}
+
+The first 10 lines from the file are shown as follows: 
+
+\noindent\fbox{\begin{minipage}[t]{1\columnwidth - 2\fboxsep - 2\fboxrule}%
+0, ,
+
+1, ,
+
+2, ,
+
+3, Boon Keng V., 07492 546415
+
+4, ,
+
+5, ,
+
+6, Ahmad Yusof, 07439 778665
+
+7, Durno Peter, 07662 863518
+
+8, Batisah Wong, 07362 156265
+
+9, ,%
+\end{minipage}}
+
+The values in the file are separated by the comma character. 
+
+A record structure is used to store a name and telephone number. A
+data structure of 500 records is needed to store all the names and
+telephone numbers. Each line in the file is written to a corresponding
+position in the data structure.
+
+The records with index six to eight from the data structure are: 
+\begin{center}
+\begin{tabular}{r|c|c|}
+\cline{2-3} \cline{3-3} 
+\textbf{Index} & \textbf{PersonName} & \textbf{TelephoneNumber}\tabularnewline
+\cline{2-3} \cline{3-3} 
+6 & Ahmad Yusof & 07439 778665\tabularnewline
+\cline{2-3} \cline{3-3} 
+7 & Durno Peter & 07662 863518\tabularnewline
+\cline{2-3} \cline{3-3} 
+\texttt{8} & Batisah Wong & 07362 156265\tabularnewline
+\cline{2-3} \cline{3-3} 
+\end{tabular}
+\par\end{center}
+
+\subsubsection*{Task 3.1}
+
+Use program code to create a:
+\begin{itemize}
+\item record structure to hold the name and telephone number for one person
+\item data structure, using this record structure to store 500 records.
+\end{itemize}
+
+\subsubsection*{Evidence 7}
+
+Your program code. \hfill{}{[}6{]}
+
+\subsubsection*{Task 3.2}
+
+Write program code to:
+\begin{itemize}
+\item read the lines from the file
+\item extract the <Index>, <PersonName> and <TelephoneNumber> values
+\item store these values in the data structure.
+\end{itemize}
+Create a procedure called \texttt{DisplayValues} that will loop though
+the data structure and display the index, name and telephone number
+for every record where the name is present.
+
+Ensure your procedure uses headings to identify the data displayed.
+
+\subsubsection*{Evidence 8}
+
+Your program code. \hfill{}{[}13{]}
+
+\subsubsection*{Evidence 9}
+
+A Screenshot showing the output.\hfill{} {[}1{]}
+
+A hashing function was used to create the file. The same hashing function
+can be used to search the data structure for a particular name. The
+hashing function generates a hash. This is calculated as follows:
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{Get SearchName}
+
+\texttt{Set HashTotal to 0}
+
+\texttt{FOR each Character in SearchName}
+
+\texttt{\qquad{}Get the ASCII code for Character}
+
+\texttt{\qquad{}Multiply the ASCII code by the position of Character
+in SearchName}
+
+\texttt{\qquad{}Add the result to the HashTotal}
+
+\texttt{Calculate Hash as HashTotal MOD 500}
+
+\texttt{RETURN Hash}%
+\end{minipage}
+
+\subsubsection*{Task 3.3}
+
+Add the program code for the hashing function. Use the following specification:
+\begin{center}
+\texttt{FUNCTION GenerateHash(SearchName : STRING) : INTEGER}
+\par\end{center}
+
+The function has a single parameter \texttt{SearchName} and returns
+an integer value.
+
+Write additional code for your program to allow you to test the implementation
+of this function.
+
+The following test data will assist you.
+
+\qquad{}\textquotedblleft Tait Davinder\textquotedblright{} should
+return a hash of 87
+
+\qquad{}\textquotedblleft Anandan Yeo\textquotedbl{} should return
+a hash of 156
+
+\subsubsection*{Evidence 10}
+
+Your program code. \hfill{}{[}8{]}
+
+\subsubsection*{Evidence 11}
+
+A screenshot (or screenshots) of your program to show the results
+of the hash calculation for both the given test data values.\hfill{}{[}2{]}
+
+The hash calculated from the \texttt{SearchName} can be used to find
+a corresponding record in the data structure.
+
+If the \texttt{SearchName} is not found in the record given by the
+hash \textbf{and} the record is not empty:
+\begin{itemize}
+\item compare \texttt{SearchName} with the next record
+\item until the \texttt{SearchName} is found or an empty record is found.
+\end{itemize}
+If an empty record is found then the program will report that the
+name is \textquotedblleft NOT FOUND\textquotedblright .
+
+If the record is found, the program will output the index, name and
+telephone number.
+
+\subsubsection*{Task 3.4}
+
+Add the program code to implement the search as described.
+
+\subsubsection*{Evidence 12}
+
+Your program code. \hfill{}{[}7{]}
+
+\subsubsection*{Evidence 11}
+
+A screenshot (or screenshots) of your program to show the results
+of the following searches:
+
+Search 1: Charlie Love
+
+Search 2: Chin Tan
+
+Search 3: John Barrowman\hfill{}{[}3{]}

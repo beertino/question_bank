@@ -1,0 +1,108 @@
+\item \textbf{{[}ALVL/9597/2019/P1/Q4{]} }
+
+A stack is used to store characters.
+
+\subsubsection*{Task 4.1}
+
+Write program code to implement the stack and the operations specified.
+
+Your code should allow operations to: 
+\begin{itemize}
+\item push an item on to the stack
+\item pop an item off the stack
+\item determine the size of the stack. A size of zero indicates that the
+stack is empty.
+\end{itemize}
+
+\subsubsection*{Evidence 9}
+
+Your program code for the stack.\hfill{}{[}10{]}
+
+The stack is to be used to identify it an arithmetic expression is
+balanced. 
+
+An expression is balanced if each opening bracket has a corresponding
+closing bracket. 
+
+Different pairs of brackets can be used. These are: {[}{]}, () or
+\{\}. 
+
+This is an example of an expression that is balanced.
+
+\texttt{\qquad{}({[}8-1{]}/(5{*}7)) }
+
+This is an example of an expression that is not balanced. 
+
+\texttt{\qquad{}{[}(8-1{]}/(5{*}7)) }
+
+Note the change in the order of the first two open bracket symbols.
+The first closing bracket should be a closing bracket ')' to match
+the previous opening bracket \textquoteleft ('. 
+
+Note that an expression is not balanced if the order of the brackets
+is incorrect, even if there are the same number of opening and closing
+brackets of each bracket type. 
+
+An expression is checked by iterating over it: 
+\begin{itemize}
+\item if a non-bracket symbol is found, continue to the next character. 
+\item If an opening symbol is found, push it on to the stack and continue
+to the next character. 
+\item If a closing bracket is encountered: 
+\begin{itemize}
+\item If the stack is empty, return an error (because there is no corresponding
+opening bracket) 
+\item else pop the symbol from the top of the stack and compare it to the
+current closing symbol to see if they make a matching pair 
+\item If they do match continue to the next character 
+\item else return an error (pairs of brackets must match). 
+\end{itemize}
+\item When the last symbol is encountered: 
+\begin{itemize}
+\item return an error if the stack is not empty (too many opening symbols) 
+\item else return a success message.
+\end{itemize}
+\end{itemize}
+
+\subsubsection*{Task 4.2}
+
+Add \textbf{five} other suitable test cases and a reason for choosing
+each test case.
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline 
+\hspace{0.05\columnwidth}\textbf{Test case} & \textbf{Reason for choice} & \textbf{Expected value}\tabularnewline
+\hline 
+\texttt{({[}8-1{]}/(5{*}7))} & Provided & Succeeds\tabularnewline
+\hline 
+\texttt{{[}(8-1{]}/(5{*}7))} & Provided & Fails\tabularnewline
+\hline 
+ &  & Succeeds\tabularnewline
+\hline 
+ &  & Succeeds\tabularnewline
+\hline 
+ &  & Fails\tabularnewline
+\hline 
+ &  & Fails\tabularnewline
+\hline 
+ &  & Fails\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\subsubsection*{Evidence 10}
+
+The completed table with all seven test cases and a reason for choosing
+each test case.\hfill{}{[}6{]}
+
+\subsubsection*{Task 4.3}
+
+Write program code that checks expressions using the given algorithm. 
+
+Use all \textbf{seven} test cases to verify It.
+
+\subsubsection*{Evidence 11}
+
+Your program code for the stack.
+
+Screenshots for each test data run. \hfill{}{[}19{]}

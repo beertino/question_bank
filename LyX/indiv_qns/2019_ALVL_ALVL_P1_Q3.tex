@@ -1,0 +1,150 @@
+\item \textbf{{[}ALVL/9597/2019/P1/Q3{]} }
+
+A program is to be written to implement a to-do list using object-oriented
+programming (OOP). The list shows tasks that need to be done.
+
+Each task is given a category and a description.
+
+The base class will be called \texttt{ToDo} and is designed as follows: 
+\begin{center}
+\begin{tabular}{|l|}
+\hline 
+\texttt{\hspace{0.25\columnwidth}ToDo}\tabularnewline
+\hline 
+\texttt{category : STRING }\tabularnewline
+\texttt{description : STRING}\tabularnewline
+\hline 
+\texttt{constructor(c : STRING, d : STRING) }\tabularnewline
+\texttt{set\_category(s : STRING)}\tabularnewline
+\texttt{set\_description(s : STRING) }\tabularnewline
+\texttt{get\_category() : STRING }\tabularnewline
+\texttt{get:\_description() : STRING }\tabularnewline
+\texttt{summary() : STRING}\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+The \texttt{summary()} method returns the category and description
+as a single string.
+
+\subsubsection*{Task 3.1}
+
+Write program code to define the class \texttt{ToDo}.
+
+\subsubsection*{Evidence 5}
+
+Your program code. \hfill{}{[}5{]}
+
+Tasks should be sorted alphabetically by category. Within each category.
+tasks should be sorted alphabetically by description. 
+
+A task to be added to the list is compared to the tasks already in
+the list to determine its correct position in the list. If the list
+is empty. it is added to the beginning of the list. 
+
+This comparison will use an additional member method,
+\begin{center}
+\texttt{compare\_with(td : ToDo) : INTEGER }
+\par\end{center}
+
+This function compares the instance (the item in the list) and the
+\texttt{ToDo} object passed to it, returning one of three values:
+
+\texttt{\qquad{}}-1 if the instance is before the given \texttt{ToDo}
+
+\texttt{\qquad{}}0 if the two are equal
+
+\texttt{\qquad{}}+1 if the instance is after the given \texttt{ToDo}
+
+\subsubsection*{Task 3.2}
+
+There are four objects defined in the text file \texttt{TASK3\_2.TXT}.
+
+Write program code to:
+\begin{itemize}
+\item implement the \texttt{compare\_with()} method
+\item create an empty list of \texttt{ToDo} objects
+\item add each of the four objects in the text file \texttt{TASK3\_2.TXT}
+to its appropriate place in the list
+\item printout the list contents using the \texttt{summary()} method.
+\end{itemize}
+
+\subsubsection*{Evidence 6}
+
+Your program code.
+
+Screenshot of test run. \hfill{}{[}13{]}
+
+The to-do list can have items with extra information. One such item
+has a date by which the task should be completed. 
+
+The \texttt{DatedToDo} class inherits from the \texttt{ToDo} class,
+extending it to have a \texttt{due\_date}. designed as follows: 
+\begin{center}
+\begin{tabular}{|l|}
+\hline 
+\hspace{0.25\columnwidth}DatedToDo : ToDo\tabularnewline
+\hline 
+\texttt{due\_date : DATE}\tabularnewline
+\hline 
+\texttt{constructor(dt : DATE, 0 : STRING, d : STRING)}\tabularnewline
+\texttt{set\_due\_date(d : DATE)}\tabularnewline
+\texttt{get\_due\_date() : DATE }\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+The \texttt{DatedToDo} class should extend the \texttt{compare\_with()}
+method to ensure that tasks are ordered by ascending \texttt{due\_date},
+and then by the ordering used by the base \texttt{compare\_with()}
+method. The \texttt{summary()} method should also be extended to return
+the \texttt{due\_date} and the return values of the base \texttt{summary()}
+method.
+
+\subsubsection*{Task 3.3}
+
+There are seven objects defined in the text file \texttt{TASK3\_3.TXT}.
+
+Amend your program code to:
+\begin{itemize}
+\item implement the \texttt{DatedToDo} class, with \texttt{constructor},
+\texttt{get\_due\_date} and \texttt{set\_due\_date}
+\item implement the extended \texttt{compare\_with()} method
+\item implement the extended \texttt{summary()} method
+\item ensure all seven objects in the text file \texttt{TASK3\_3.TXT} are
+added to the list
+\item print out the list contents using the \texttt{summary()} method.
+\end{itemize}
+
+\subsubsection*{Evidence 7}
+
+Your program code. 
+
+Screenshot of the test run.\hfill{}{[}5{]}
+
+\noindent When a task in the to-do list has been completed, it should
+be removed.
+
+\subsubsection*{Task 3.4}
+
+There are four completed tasks defined in the text file \texttt{TASK3\_4.TXT}.
+
+If any of the four tasks exists in the list, it should be removed.
+
+Amend your program to: 
+\begin{itemize}
+\item recreate the list of seven tasks from Task 3.3
+\item check if each of the four completed tasks in the text file \texttt{TASK3\_4.TXT}
+exists in the list and: 
+\begin{itemize}
+\item remove it from the list if it does or 
+\item print a warning message it the completed task does not exist
+\end{itemize}
+\item print out the list after all four objects have been processed. 
+\end{itemize}
+
+\subsubsection*{Evidence 8}
+
+Your amended code.
+
+Screenshot of the test run.\hfill{}{[}10{]}

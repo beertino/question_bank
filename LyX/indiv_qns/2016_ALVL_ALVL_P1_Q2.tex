@@ -1,0 +1,66 @@
+\item \textbf{{[}ALVL/9597/2016/P1/Q2{]} }
+
+Customers are identified by ID numbers. These ID numbers are to be
+stored in a hash table. The hashing function to be used is 
+\begin{center}
+\texttt{Address <- IDnumber MOD Max }
+\par\end{center}
+
+The hash table is implemented as a one-dimensional array with elements
+indexed 0 to \texttt{(Max-1)}. 
+
+\subsubsection*{Task 2.1}
+
+Write program code to: 
+\begin{itemize}
+\item Read ID numbers from a text file and store them in a hash table. For
+the purpose of testing the program. Max is to be set to the value
+20. 
+
+Assume different IDs will hash to different addresses (no collisions). 
+\item Print out the contents of the hash table in the order in which the
+elements are stored in the array.
+\end{itemize}
+Use \texttt{KEYS.TXT} to test your program code.
+
+\subsubsection*{Evidence 3}
+
+Your program code. 
+
+Screenshot of the program output.\hfill{} {[}7{]}
+
+\subsubsection*{Task 2.2}
+
+Amend your program code so that collisions can be managed using open
+hashing. This means a collision is resolved by searching sequentially
+from the hashed address for an empty location and storing the ID at
+this empty location. 
+
+Use \texttt{KEYS2.TXT} to test your program code. 
+
+\subsubsection*{Evidence 4}
+
+Your program code.
+
+Screenshot of the program output. \hfill{}{[}4{]}
+
+\subsubsection*{Task 2.3}
+
+Add code to your Task 2.2 program. 
+
+The program is to: 
+\begin{itemize}
+\item Take as input an ID number 
+\item Search the hash table and output the address (index number) of the
+hash table where the ID was found. 
+\end{itemize}
+Use \texttt{KEYS2.TXT} to test your program code. 
+
+Run the program three times. Use the following inputs: 37, 77 and
+97.
+
+\subsubsection*{Evidence 5}
+
+Your program code.
+
+Screenshot of the program output. \hfill{}{[}7{]}

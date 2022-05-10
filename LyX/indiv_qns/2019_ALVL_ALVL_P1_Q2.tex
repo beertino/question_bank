@@ -1,0 +1,61 @@
+\item \textbf{{[}ALVL/9597/2019/P1/Q2{]} }
+
+Characters are numerically encoded using ASCII codes.
+\begin{itemize}
+\item 'A' has the denary value 65; \textquoteleft B' has the denary value
+66 and so on.
+\item 'a' has the denary value 97; 'b' has the denary value 98 and so on.
+\end{itemize}
+The ROT-13 encoding function replaces a letter with the letter that
+is 13 positions after it in the alphabet. Characters that are not
+letters remain unchanged. .
+
+The function wraps around from the end of the alphabet back to the
+beginning. The case of the coded letter should match the case of the
+original letter.
+
+For example:
+\begin{itemize}
+\item 'A' is replaced with 'N'; 'a' is replaced with 'n'
+\item 'B' is replaced with '0\textquoteleft ; 'b' is replaced with 'o' 
+\item 'Z' is replaced with 'M'; 'z\textquoteleft{} is replaced with 'm'
+\end{itemize}
+
+\subsubsection*{Task 2.1}
+
+Write program code that:
+\begin{itemize}
+\item reads a string of characters as input
+\item encodes the string in ROT-13 form
+\item outputs the encoded string.
+\end{itemize}
+Run the program \textbf{three} times with the inputs: 
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{This is a word.}
+
+\texttt{ALL \&\&\&\& CAPITALS}
+
+\texttt{UpperCamelCase12()}%
+\end{minipage}
+
+\subsubsection*{Evidence 3}
+
+Your program code.
+
+Screenshots of your outputs. \hfill{}{[}9{]}
+
+\subsubsection*{Task 2.2}
+
+A string is encoded using ROT-13. The resulting string is then encoded
+using ROT-13. The output of the second encoding should be identical
+to the original string.
+
+Amend your program code to apply HOT-13 twice, in the method described.
+Show that the resulting string is identical to the original string.
+
+\subsubsection*{Evidence 4}
+
+Your program code.
+
+Screenshot of the output from one of the given inputs. \hfill{}{[}3{]}

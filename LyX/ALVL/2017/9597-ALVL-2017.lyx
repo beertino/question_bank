@@ -81,22 +81,24 @@
 
 \begin_body
 
-\begin_layout Section
-9597 ALVL 2017
-\end_layout
-
-\begin_layout Subsection
-Paper 1
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2017/P1/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A role-playing computer game includes a list of items called the inventory.
  This inventory can be represented using a one-dimensional (1 -D) array
  or a list structure.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 
 \family typewriter
@@ -415,31 +417,12 @@ Iron Ore
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 1.1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Design and write program code to: 
 \end_layout
 
@@ -473,11 +456,11 @@ display the contents of the ItemTypes and ItemCounts data structures using
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Example run of the program: 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="10" columns="5">
 <features tabularvalignment="middle">
@@ -975,7 +958,7 @@ Iron Ore
 Evidence 1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code.
 \begin_inset space \hfill{}
 \end_inset
@@ -987,7 +970,7 @@ Your program code.
 Evidence 2
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshot of your output.
  
 \begin_inset space \hfill{}
@@ -996,13 +979,19 @@ Screenshot of your output.
 [1]
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2017/P1/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Every published book has an international Standard Book Number (ISBN).
  This ISBN is a 9-digit number plus a check digit which is calculated and
  added to the end of the number.
@@ -1010,7 +999,6 @@ Every published book has an international Standard Book Number (ISBN).
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 This method uses a weighted modulus 11.
  If the check digit is calculated as 10.
@@ -1899,37 +1887,18 @@ end of the ISBN: 075154926
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 2.1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Study the identifier table and the incomplete recursive algorithm on the
  opposite page.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The missing lines in the algorithm are labelled 
 \series bold
 A
@@ -1946,7 +1915,7 @@ C
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write the
 \series bold
  three
@@ -1978,18 +1947,13 @@ C
 Evidence 3
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The three missing lines of code.
  
 \begin_inset space \hfill{}
 \end_inset
 
 [3]
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2673,31 +2637,12 @@ ISBN = CalCheckDigit("184146208",0)
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 2.2
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write a program to implement the ISBN program using the 
 \family typewriter
 CalCheckDigit
@@ -2705,7 +2650,7 @@ CalCheckDigit
  function.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The program will:
 \end_layout
 
@@ -2735,7 +2680,7 @@ write each result (ISBN with check digit) to the screen.
 Evidence 4
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code for Task 2.2.
  
 \begin_inset space \hfill{}
@@ -2750,7 +2695,7 @@ Your program code for Task 2.2.
 Evidence 5
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshot of the results of processing the 
 \family typewriter
 ISBNPRE.TXT
@@ -2762,13 +2707,19 @@ ISBNPRE.TXT
 [1]
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2017/P1/Q3] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A data structure is required to store 25 nodes.
  A linked list is maintained of all the nodes.
  A node contains a data value and two pointers: a left pointer and a right
@@ -2776,7 +2727,6 @@ A data structure is required to store 25 nodes.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 Items in the list are initially linked using their 
 \family typewriter
@@ -3302,7 +3252,7 @@ The diagram shows the empty data structure with the linked list to record
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2017-P1-Q3-1.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-ALVL-2017-P1-Q3-1.png
 	width 12.5page%
 
 \end_inset
@@ -3310,31 +3260,12 @@ The diagram shows the empty data structure with the linked list to record
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 3.1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write the program code to declare the 
 \series bold
 empty
@@ -3349,18 +3280,13 @@ empty
 Evidence 6
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code for Task 3.1.
  
 \begin_inset space \hfill{}
 \end_inset
 
 [12]
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -3395,7 +3321,7 @@ Z.
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2017-P1-Q3-2.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-ALVL-2017-P1-Q3-2.png
 	width 50page%
 
 \end_inset
@@ -3450,7 +3376,7 @@ NewDataItem
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2017-P1-Q3-3.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-ALVL-2017-P1-Q3-3.png
 	width 25page%
 
 \end_inset
@@ -4207,31 +4133,12 @@ ENDPROCEDURE
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 3.2
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write code to implement 
 \family typewriter
 AddToRobotData
@@ -4243,7 +4150,7 @@ FindNode
  from this pseudocode.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 You may use the text file 
 \family typewriter
 PSEUDOCODE_TASK_3_2.TXT
@@ -4257,7 +4164,7 @@ PSEUDOCODE_TASK_3_2.TXT
 Evidence 7
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code for Task 3.2.
  
 \begin_inset space \hfill{}
@@ -4271,7 +4178,7 @@ Your program code for Task 3.2.
 Task 3.3
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write a procedure 
 \family typewriter
 OutputData
@@ -4297,7 +4204,7 @@ RobotData
 Evidence 8
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code for Task 3.3.
 \begin_inset space \hfill{}
 \end_inset
@@ -4310,7 +4217,7 @@ Your program code for Task 3.3.
 Task 3.4
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The file 
 \family typewriter
 SEARCHTREE.TXT
@@ -4331,13 +4238,13 @@ A
 NewDataltem, ParentItem, ThisMove
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 NewDataItem, ParentItem, ThisMove
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 \begin_inset Formula $\dots$
@@ -4346,13 +4253,13 @@ NewDataItem, ParentItem, ThisMove
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 <End of File>
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 There are a total of 20 lines in the 
 \family typewriter
 SEARCHTREE.TXT
@@ -4360,7 +4267,7 @@ SEARCHTREE.TXT
  file representing possible routes.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write a main program to read the contents of this file and use 
 \family typewriter
 AddToRobotData
@@ -4388,7 +4295,7 @@ OutputData
 Evidence 9
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code for Task 3.4.
  
 \begin_inset space \hfill{}
@@ -4403,7 +4310,7 @@ Your program code for Task 3.4.
 Evidence 10
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshot showing the output from running the program in Task 3.4.
 \begin_inset space \hfill{}
 \end_inset
@@ -4416,7 +4323,7 @@ Screenshot showing the output from running the program in Task 3.4.
 Task 3.5
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write a recursive pre-order tree traversal that will display all valid routes
  from A to Z by following the routes described in 
 \family typewriter
@@ -4431,7 +4338,7 @@ RobotData
 Evidence 11
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code for Task 3.5.
 \begin_inset space \hfill{}
 \end_inset
@@ -4445,7 +4352,7 @@ Your program code for Task 3.5.
 Evidence 12
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshot showing the output from running the program in Task 3.5.
 \begin_inset space \hfill{}
 \end_inset
@@ -4453,19 +4360,24 @@ Screenshot showing the output from running the program in Task 3.5.
  [1]
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2017/P1/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A computer program can generate a simple Sudoku puzzle using a 4 x 4 two-dimensi
 onal array.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 An example of this puzzle is: 
 \end_layout
@@ -4812,39 +4724,32 @@ The first step to creating this puzzle is to develop a program to display
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 4.1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Create a program design that will declare, initialise and display the example
  puzzle shown.
- This design will: ' make use of top-down design ' include the data structure
- to represent the puzzle as a grid - initialise the grid using the values
- shown ° make use of appropriate procedures and/or functions.
- Evldence 13 Task 4.2 .
- Evldence 14 Evidence 15 Screenshot of the displayed grid.
- [1] 
+ This design will: 
+\end_layout
+
+\begin_layout Itemize
+make use of top-down design 
+\end_layout
+
+\begin_layout Itemize
+include the data structure to represent the puzzle as a grid 
+\end_layout
+
+\begin_layout Itemize
+initialise the grid using the values shown
+\end_layout
+
+\begin_layout Itemize
+make use of appropriate procedures and/or functions.
+ 
 \end_layout
 
 \begin_layout Subsubsection*
@@ -4853,7 +4758,7 @@ Create a program design that will declare, initialise and display the example
 Evidence 13
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program design for Task 4.1.
  
 \begin_inset space \hfill{}
@@ -4867,7 +4772,7 @@ Your program design for Task 4.1.
 Task 4.2
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code to display the puzzle designed in Task 4.1.
  
 \end_layout
@@ -4878,7 +4783,7 @@ Write program code to display the puzzle designed in Task 4.1.
 Evidence 14
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code.
 \begin_inset space \hfill{}
 \end_inset
@@ -4892,18 +4797,13 @@ Your program code.
 Evidence 15
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshot of the displayed grid.
  
 \begin_inset space \hfill{}
 \end_inset
 
 [1]
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -5048,7 +4948,7 @@ Swaps two rows in the same quadrants
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2017-P1-Q4-1.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-ALVL-2017-P1-Q4-1.png
 	width 30page%
 
 \end_inset
@@ -5114,7 +5014,7 @@ Swaps two columns in the same quadrants
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2017-P1-Q4-2.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-ALVL-2017-P1-Q4-2.png
 	width 15page%
 
 \end_inset
@@ -5180,7 +5080,7 @@ Swaps the top and bottom quadrant rows entirely
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2017-P1-Q4-3.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-ALVL-2017-P1-Q4-3.png
 	width 30page%
 
 \end_inset
@@ -5246,7 +5146,7 @@ Swaps the left and right quadrant columns entirely
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2017-P1-Q4-4.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-ALVL-2017-P1-Q4-4.png
 	width 15page%
 
 \end_inset
@@ -5264,31 +5164,12 @@ Swaps the left and right quadrant columns entirely
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 4.3
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write additional program code with brief 
 \series bold
 internal commentary
@@ -5297,7 +5178,7 @@ internal commentary
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The program code will: 
 \end_layout
 
@@ -5329,89 +5210,89 @@ display the puzzle before each transformation is applied and after the final
 \end_layout
 
 \begin_deeper
-\begin_layout Plain Layout
+\begin_layout Standard
 For example: 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 4321 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 1243 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 3412 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 2134 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 Transformation 1: Swaps two rows in the same quadrants 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 1243 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 4321 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 3412 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 2134 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 Transformation 4: Swaps the left and right quadrant columns entirely 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 4312 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 2143 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 1234 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family typewriter
 3421 
@@ -5424,7 +5305,7 @@ Transformation 4: Swaps the left and right quadrant columns entirely
 Evidence 16
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code that includes internal commentary.
 \begin_inset space \hfill{}
 \end_inset
@@ -5438,7 +5319,7 @@ Your program code that includes internal commentary.
 Evidence 17
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshots of the output that shows each of the four transformations applied.
  
 \begin_inset space \hfill{}
@@ -5447,17 +5328,19 @@ Screenshots of the output that shows each of the four transformations applied.
 [4]
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
-\begin_layout Subsection
-Paper 2
+\begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2017/P2/Q1] 
 \end_layout
 
-\begin_layout Enumerate
+\begin_deeper
+\begin_layout Standard
 The principal of a college decides to improve security access.
  Currently, the staff use keys to enter classrooms and laboratories.
  One of the principal’s suggested improvements is to replace the existing
@@ -5468,7 +5351,6 @@ The principal of a college decides to improve security access.
  door will be unlocked.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 Software for controlling the system is required to: 
 \end_layout
@@ -5639,14 +5521,24 @@ one
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2017/P2/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A multinational company has many local branches in various parts of the
  country that are linked using a wide area network (WAN).
  
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 The company's network transfers data using asynchronous data transmission.
  
@@ -5667,7 +5559,7 @@ State which of the following diagrams represents asynchronous data transmission.
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2017-P2-Q2-1.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-ALVL-2017-P2-Q2-1.png
 	width 50page%
 
 \end_inset
@@ -5693,7 +5585,7 @@ An employee works from home on her wireless laptop.
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2017-P2-Q2-2.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-ALVL-2017-P2-Q2-2.png
 	width 50page%
 
 \end_inset
@@ -5776,19 +5668,15 @@ one
  [2]
 \end_layout
 
-\end_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
-\end_inset
+\end_deeper
+\begin_layout Enumerate
 
-
+\series bold
+[ALVL/9597/2017/P2/Q3] 
 \end_layout
 
 \begin_deeper
@@ -5885,7 +5773,7 @@ Tutor
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2017-P2-Q3.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-ALVL-2017-P2-Q3.png
 	width 50page%
 
 \end_inset
@@ -5949,19 +5837,15 @@ Explain how to use the stack data structure to compute the following expression:
 
 \end_deeper
 \end_deeper
-\end_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
-\end_inset
+\end_deeper
+\begin_layout Enumerate
 
-
+\series bold
+[ALVL/9597/2017/P2/Q4] 
 \end_layout
 
 \begin_deeper
@@ -6052,8 +5936,16 @@ Calculate the transfer rate, in megabits per second, used to transfer this
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2017/P2/Q5] 
+\series default
 The following grid shows the initial state of a popular puzzle.
 \end_layout
 
@@ -6061,7 +5953,7 @@ The following grid shows the initial state of a popular puzzle.
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2017-P2-Q5.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-ALVL-2017-P2-Q5.png
 	width 50page%
 
 \end_inset
@@ -6189,8 +6081,19 @@ two
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2017/P2/Q6] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A computer company has several offices throughout the country, each with
  several salespersons.
  A record of the sales made by each salesperson has been set up using a
@@ -6198,7 +6101,6 @@ A computer company has several offices throughout the country, each with
  There is a minimum amount of $150 for each sale.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 The following tables hold the data.
  
@@ -6588,7 +6490,7 @@ Each month, a report is produced to show the sales for each salesperson.
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2017-P2-Q6.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-ALVL-2017-P2-Q6.png
 	width 50page%
 
 \end_inset
@@ -6666,6 +6568,10 @@ two
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \end_body
 \end_document

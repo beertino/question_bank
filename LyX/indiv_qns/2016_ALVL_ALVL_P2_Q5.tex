@@ -1,0 +1,93 @@
+\item \textbf{{[}ALVL/9597/2016/P2/Q5{]} }
+
+A programmer implements a linked list of surnames with a start pointer,
+\texttt{StartPtr} and two one-dimensional arrays: 
+\begin{itemize}
+\item Array \texttt{Data} stores the surnames. 
+\item Array \texttt{Ptr} stores the link pointers.
+\item Both arrays have lower bound 1 and upper bound 3000. 
+\end{itemize}
+The purpose of procedure \texttt{InsertListItem} is to insert a new
+surname to the linked list. 
+
+Assume a function \texttt{NextFree()} is available and returns: 
+\begin{itemize}
+\item the index position for the array \texttt{Data} at which the new surname
+is to be inserted 
+\item -1 when the \texttt{Data} array is full. 
+\end{itemize}
+The programmer designs the algorithm as follows:
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{01 PROCEDURE InsertListItem(NewSurname : STRING) }
+
+\texttt{02 \qquad{}IF NextFree() = \textemdash 1 }
+
+\texttt{03 \qquad{}\qquad{}THEN }
+
+\texttt{04 \qquad{}\qquad{}\qquad{}OUTPUT \textquotedbl List is
+full\textquotedbl{} }
+
+\texttt{05 \qquad{}\qquad{}ELSE }
+
+\texttt{O6 \qquad{}\qquad{}\qquad{}// input the surname }
+
+\texttt{07 \qquad{}\qquad{}\qquad{}IF StartPtr = 0 }
+
+\texttt{08 \qquad{}\qquad{}\qquad{}\qquad{}THEN }
+
+\texttt{09 \qquad{}\qquad{}\qquad{}\qquad{}\qquad{}StartPtr w
+NextFree() }
+
+\texttt{10 \qquad{}\qquad{}\qquad{}\qquad{}\qquad{}Data{[}StartPtr{]}
+e NewSurname }
+
+\texttt{11 \qquad{}\qquad{}\qquad{}\qquad{}ELSE }
+
+\texttt{12 \qquad{}\qquad{}\qquad{}\qquad{}\qquad{}// traverse
+the linked list to find the position }
+
+\texttt{13 \qquad{}\qquad{}\qquad{}\qquad{}\qquad{}// at which
+to insert NewSurname}
+
+$\vdots$
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}ENDIF }
+
+\texttt{\qquad{}\qquad{}ENDIF }
+
+\texttt{\qquad{}ENDPROCEDURE}%
+\end{minipage}
+\begin{enumerate}
+\item Describe the state of the linked list. if the condition \texttt{StartPtr
+= 0} in line \texttt{07} is \texttt{True}. {[}1{]} 
+\item It is now necessary to complete the design for procedure \texttt{InsertListItem}. 
+\begin{enumerate}
+\item The pseudocode already uses some variables. 
+
+Copy the table below and complete it to show any extra variables that
+you will need to use. 
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline 
+\textbf{Variable} & \textbf{Data Type} & \textbf{Description}\tabularnewline
+\hline 
+ &  & \tabularnewline
+\hline 
+ &  & \tabularnewline
+\hline 
+ &  & \tabularnewline
+\hline 
+ &  & \tabularnewline
+\hline 
+ &  & \tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\hfill{}{[}3{]}
+\item Write the pseudocode for line \texttt{14} onwards to complete the
+procedure. \hfill{}{[}6{]}
+\end{enumerate}
+\end{enumerate}

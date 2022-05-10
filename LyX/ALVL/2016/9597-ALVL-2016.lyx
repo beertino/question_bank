@@ -81,52 +81,35 @@
 
 \begin_body
 
-\begin_layout Section
-9597 ALVL 2016
-\end_layout
-
-\begin_layout Subsection
-Paper 1
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2016/P1/Q1] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 High-level programming languages usually have libraries of commonly used
  routines.
  These include random number generators.
  
 \end_layout
 
-\begin_deeper
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 1.1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code to generate 1000 random integers in the range 1 to 20.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The program will:
 \end_layout
 
@@ -140,11 +123,11 @@ Print out a frequency table.
 \end_layout
 
 \begin_deeper
-\begin_layout Plain Layout
+\begin_layout Standard
 Example output:
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="21" columns="2">
 <features tabularvalignment="middle">
@@ -584,22 +567,17 @@ Frequency
 Evidence 1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshot of the program output.
 \begin_inset space \hfill{}
 \end_inset
 
 [7]
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -621,31 +599,12 @@ The program code is to be amended to check how well the given pseudo-random
  number generator meets this requirement.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 1.2
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Amend your program code to:
 \end_layout
 
@@ -668,11 +627,11 @@ Output the difference between the actual and the expected frequency for
 Evidence 2
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshot of the program output.
 \begin_inset space \hfill{}
 \end_inset
@@ -680,19 +639,24 @@ Screenshot of the program output.
 [5]
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2016/P1/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Customers are identified by ID numbers.
  These ID numbers are to be stored in a hash table.
  The hashing function to be used is 
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \align center
 
@@ -710,31 +674,12 @@ The hash table is implemented as a one-dimensional array with elements indexed
  
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 2.1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code to: 
 \end_layout
 
@@ -746,7 +691,7 @@ Read ID numbers from a text file and store them in a hash table.
 \end_layout
 
 \begin_deeper
-\begin_layout Plain Layout
+\begin_layout Standard
 Assume different IDs will hash to different addresses (no collisions).
  
 \end_layout
@@ -757,7 +702,7 @@ Print out the contents of the hash table in the order in which the elements
  are stored in the array.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Use 
 \family typewriter
 KEYS.TXT
@@ -771,12 +716,12 @@ KEYS.TXT
 Evidence 3
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshot of the program output.
 \begin_inset space \hfill{}
 \end_inset
@@ -789,14 +734,14 @@ Screenshot of the program output.
 Task 2.2
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Amend your program code so that collisions can be managed using open hashing.
  This means a collision is resolved by searching sequentially from the hashed
  address for an empty location and storing the ID at this empty location.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Use 
 \family typewriter
 KEYS2.TXT
@@ -814,11 +759,11 @@ Evidence
 4
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshot of the program output.
  
 \begin_inset space \hfill{}
@@ -832,12 +777,12 @@ Screenshot of the program output.
 Task 2.3
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Add code to your Task 2.2 program.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The program is to: 
 \end_layout
 
@@ -851,7 +796,7 @@ Search the hash table and output the address (index number) of the hash
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Use 
 \family typewriter
 KEYS2.TXT
@@ -860,7 +805,7 @@ KEYS2.TXT
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Run the program three times.
  Use the following inputs: 37, 77 and 97.
 \end_layout
@@ -871,11 +816,11 @@ Run the program three times.
 Evidence 5
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshot of the program output.
  
 \begin_inset space \hfill{}
@@ -884,18 +829,23 @@ Screenshot of the program output.
 [7]
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2016/P1/Q3] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A binary tree Abstract Data Type (ADT) has commands to create a new tree,
  add unique data items to the tree and print the tree.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 The sequence of commands: 
 \end_layout
@@ -980,7 +930,7 @@ would create the following binary tree:
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2016-P1-Q3.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/static/img/9597-ALVL-2016-P1-Q3.png
 	width 50page%
 
 \end_inset
@@ -1379,31 +1329,12 @@ the right pointer.
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 3.1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code to define the classes 
 \family typewriter
 Tree
@@ -1422,7 +1353,7 @@ Node
 Evidence 6
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code.
  
 \begin_inset space \hfill{}
@@ -1436,12 +1367,12 @@ Your program code.
 Task 3.2
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The program is to be tested.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write a sequence of program statements to: 
 \end_layout
 
@@ -1458,7 +1389,7 @@ Print the array contents.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Execute your program to test it.
  
 \end_layout
@@ -1469,12 +1400,12 @@ Execute your program to test it.
 Evidence 7
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshot of test run.
 \begin_inset space \hfill{}
 \end_inset
@@ -1487,7 +1418,7 @@ Screenshot of test run.
 Task 3.3
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A method 
 \family typewriter
 inOrderTraversal()
@@ -1497,7 +1428,7 @@ inOrderTraversal()
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code to: 
 \end_layout
 
@@ -1516,12 +1447,12 @@ Test the program code with the data from Task 3.2.
 Evidence 8
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshot of test run.
  
 \begin_inset space \hfill{}
@@ -1530,49 +1461,35 @@ Screenshot of test run.
 [7]
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2016/P1/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Numbers in Computing are often represented in hexadecimal form.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 A program is required to convert a hexadecimal number into a denary number
  and vice versa.
  
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Subsubsection*
 \noindent
 Task 4.1
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write program code with the following specification: .
 \end_layout
 
@@ -1604,7 +1521,7 @@ Output the denary value.
 Evidence 9
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code.
  
 \begin_inset space \hfill{}
@@ -1618,7 +1535,7 @@ Your program code.
 Task 4.2
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Draw up a list of 
 \series bold
 three
@@ -1627,7 +1544,7 @@ three
  Complete a table with the following headings: 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="3">
@@ -1758,7 +1675,7 @@ Expected output
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Provide screenshot evidence for your testing.
  
 \end_layout
@@ -1769,12 +1686,12 @@ Provide screenshot evidence for your testing.
 Evidence 10
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The completed table.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshots for each test data run.
  
 \begin_inset space \hfill{}
@@ -1788,7 +1705,7 @@ Screenshots for each test data run.
 Task 4.3
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Write additional code to convert a denary number into a hexadecimal number.
  
 \end_layout
@@ -1799,7 +1716,7 @@ Write additional code to convert a denary number into a hexadecimal number.
 Evidence 11
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Your program code.
  
 \begin_inset space \hfill{}
@@ -1813,7 +1730,7 @@ Your program code.
 Task 4.4
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Draw up a list of
 \series bold
  three
@@ -1822,7 +1739,7 @@ Draw up a list of
  Complete a table with the following headings:
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="3">
@@ -1953,7 +1870,7 @@ Expected output
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Provide screenshot evidence for your testing.
 \end_layout
 
@@ -1963,11 +1880,11 @@ Provide screenshot evidence for your testing.
 Evidence 12
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The completed table.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Screenshots for each test data run.
  
 \begin_inset space \hfill{}
@@ -1976,17 +1893,19 @@ Screenshots for each test data run.
 [5]
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+[SPLIT_HERE]
 \end_layout
 
 \end_deeper
-\begin_layout Subsection
-Paper 2
+\begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2016/P2/Q1] 
 \end_layout
 
-\begin_layout Enumerate
+\begin_deeper
+\begin_layout Standard
 Many elderly people spend later life in a nursing home.
  The Ministry of Health (MOH) requires each nursing home to keep detailed
  care records for each resident.
@@ -1998,7 +1917,6 @@ Many elderly people spend later life in a nursing home.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 Care staff do not have computer access to medical records that each resident‘s
  doctor holds.
@@ -2284,7 +2202,7 @@ The Program Evaluation and Review Technique (PERT) chart for these initial
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2016-P2-Q1-1.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/static/img/9597-ALVL-2016-P2-Q1-1.png
 	width 50page%
 
 \end_inset
@@ -2698,7 +2616,7 @@ Implementation
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2016-P2-Q1-2.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/static/img/9597-ALVL-2016-P2-Q1-2.png
 	width 50page%
 
 \end_inset
@@ -2919,8 +2837,19 @@ two
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2016/P2/Q2] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A firm hires vehicles to customers.
  A customer usually makes a booking a number of weeks before the start of
  the hire period.
@@ -2928,7 +2857,6 @@ A firm hires vehicles to customers.
  when they return the vehicle from hire.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 At the time of the booking, the firm records the following data:
 \end_layout
@@ -2995,7 +2923,7 @@ The document below is an example of an invoice printed for the customer
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename static/img/9597-ALVL-2016-P2-Q2.png
+	filename C:/Users/Admin/Desktop/Github/question_bank/static/img/9597-ALVL-2016-P2-Q2.png
 	width 50page%
 
 \end_inset
@@ -3089,8 +3017,19 @@ three
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2016/P2/Q3] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 The recursive procedure 
 \family typewriter
 X
@@ -3111,7 +3050,6 @@ T
 .
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \noindent
 \begin_inset Box Frameless
@@ -4077,13 +4015,23 @@ X
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2016/P2/Q4] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Data is to be transmitted in packets between two computers.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 Each packet message can consist of: 
 \end_layout
@@ -4149,8 +4097,19 @@ three
 [6]
 \end_layout
 
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2016/P2/Q5] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A programmer implements a linked list of surnames with a start pointer,
  
 \family typewriter
@@ -4159,7 +4118,6 @@ StartPtr
  and two one-dimensional arrays: 
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
 Array 
 \family typewriter
@@ -4798,15 +4756,25 @@ Write the pseudocode for line
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
+[ALVL/9597/2016/P2/Q6] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 A real-estate management company owns a number of residential and business
  units.
  When the company first acquires a unit, it often requires renovation work.
  The company records the renovation cost.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 A residential unit will be a house or an individual flat within a building.
  A business unit will be either an office building, a storage unit or a
@@ -4939,6 +4907,10 @@ Explain the meaning of the term polymorphism.
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+[SPLIT_HERE]
+\end_layout
+
 \end_deeper
 \end_body
 \end_document

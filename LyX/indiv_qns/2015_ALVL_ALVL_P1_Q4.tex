@@ -1,0 +1,189 @@
+\item \textbf{{[}ALVL/9597/2015/P1/Q4{]} }
+
+Users of a local area network each have a network account ID. The
+IDs have the format 2015\_NNNN. where N is a digit. 
+
+\subsubsection*{Task 4.1}
+
+Complete the test case table with the addition of \textbf{three} more
+invalid User IDs. The reasons for their invalidity should be different. 
+
+The return value is a code as follows: 
+\begin{itemize}
+\item 0 - valid User lD 
+\item 1 - the User ID was not 9 characters 
+\item you will use other integer numbers for other invalid cases. 
+\begin{center}
+\begin{tabular}{|>{\centering}p{0.1\columnwidth}|>{\centering}p{0.1\columnwidth}|c|c|}
+\hline 
+Test Number & User ID & Return value & Explanation of the test case\tabularnewline
+\hline 
+1 & \texttt{2015\_0987} & \texttt{0} & Valid User ID\tabularnewline
+\hline 
+2 &  &  & \tabularnewline
+\hline 
+3 &  &  & \tabularnewline
+\hline 
+4 &  &  & \tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\end{itemize}
+\hfill{}{[}10{]}
+
+\subsubsection*{Evidence 13}
+\begin{itemize}
+\item The completed test case table. \hfill{}{[}6{]}
+\end{itemize}
+
+\subsubsection*{Task 4.2}
+
+Write program code for a function to validate a User ID. The function
+header has the format: 
+\begin{center}
+\texttt{FUNCTION ValidateUserID (ThisUserID : STRING) RETURNS INTEGER }
+\par\end{center}
+
+Write a program to:
+\begin{itemize}
+\item Input an ID entered by the user 
+\item Validate the input using the function\texttt{ ValidateUserID }
+\item Output a message describing the validity of the input. 
+\end{itemize}
+\hfill{}{[}10{]}
+
+\subsubsection*{Evidence 14}
+\begin{itemize}
+\item Program code for the function \texttt{ValidateUserID} \hfill{}{[}4{]}
+\item \textbf{Three} screenshots showing the testing of Test Numbers 2,
+3, and 4. \hfill{}{[}3{]}
+\end{itemize}
+You are to design an object-oriented program which simulates a print
+queue for a printer on a local area network (LAN).The print queue
+consists at any time of none, one, or more print jobs. 
+
+Each user can send a print job from any of the terminals on the LAN.
+Each terminal on the network is identified by an integer number in
+the range 1 to 172. 
+
+The program you are to design will record for each printjob: 
+\begin{itemize}
+\item the user lD
+\item the terminal number from which the print request was sent
+\item the file size (integer in Kbytes).
+\end{itemize}
+In practice, there are several print queues each associated with a
+different printer. Each printer is identified by a short name, such
+as \texttt{Room16}. 
+
+Task 4.3
+
+Design and write program code to define one or more classes and other
+appropriate data structures for this application. 
+
+\subsubsection*{Evidence 15}
+
+Program code for the class(es). \hfill{}{[}6{]} 
+
+A print queue behaves as a queue data structure. 
+
+Assume, for testing purposes: 
+\begin{itemize}
+\item there is a single printer on the LAN 
+\item the maximum print queue size for the printer is five print jobs. 
+\end{itemize}
+The main program will simulate: 
+\begin{itemize}
+\item the sending of print jobs to the printer by different users 
+\begin{itemize}
+\item that is, the addition of a print job to the print queue 
+\end{itemize}
+\item the output of a job from the print queue 
+\begin{itemize}
+\item that is, the removal of a print job from the print queue 
+\end{itemize}
+\end{itemize}
+The program design has the following menu: 
+\begin{center}
+\noindent\ovalbox{\begin{minipage}[t]{1\columnwidth - 2\fboxsep - 0.8pt}%
+\begin{enumerate}
+\item[1]  New print job added to print queue 
+\item[2] Next print job output from printer
+\item[3] Current print queue displayed
+\item[4] End
+\end{enumerate}
+%
+\end{minipage}}
+\par\end{center}
+
+The program simulates the working of the print queue as follows: 
+\begin{enumerate}
+\item[1.] The empty print queue is initialised. 
+\item[2.]  The program user selects menu options 1, 2 and 3 in any order. 
+\item[3.]  The program user selects menu opt\textbf{two}ion 4.
+\end{enumerate}
+
+\subsubsection*{Task 4.4}
+
+Write program code to: 
+\begin{itemize}
+\item display the main menu 
+\item input the choice by the user 
+\item run the appropriate code for the choice made.
+\end{itemize}
+
+\subsubsection*{Evidence 16}
+
+The program code. \hfill{}{[}3{]}
+
+\subsubsection*{Task 4.5}
+
+Write program code to initialise the print queue for the \texttt{Room16}
+printer. 
+
+Write program code to display the current state of the print queue.
+
+\subsubsection*{Evidence 17}
+
+The program code for:
+\begin{itemize}
+\item initialising the print queue
+\item output of the current print queue. \hfill{}{[}6{]}
+\end{itemize}
+
+\subsubsection*{Task 4.6}
+
+Write program code to add a new print job to the print queue.
+
+The requirement will be:
+\begin{itemize}
+\item program user enters data for the new print job
+\item print job is added to the print queue.
+\end{itemize}
+Test the code by adding one new print job.
+
+\subsubsection*{Evidence 18}
+\begin{itemize}
+\item Program code to add a new print job.
+\item Screenshot following menu option 1 then menu option 3. \hfill{}{[}4{]}
+\end{itemize}
+
+\subsubsection*{Task 4.7}
+
+Write program code to output the next print job from the printer.
+
+This code will execute from menu option 2.
+
+Test the code by:
+\begin{itemize}
+\item adding three print jobs
+\item outputting the next print job.
+\end{itemize}
+
+\subsubsection*{Evidence 19}
+\begin{itemize}
+\item Program code to output next print job.
+\item Screenshot following menu option 1 three times. then menu option 2,
+and menu option 3. \hfill{}{[}6{]}
+\end{itemize}

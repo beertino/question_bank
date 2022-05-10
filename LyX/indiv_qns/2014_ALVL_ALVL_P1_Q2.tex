@@ -1,0 +1,128 @@
+\item \textbf{{[}ALVL/9597/2019/P1/Q2{]} }
+
+A binary search (binary chop) is a technique to search for a value
+in an ordered dataset.
+
+\subsubsection*{Task 2.1}
+
+Study the identifier table and incomplete recursive algorithm. 
+
+The missing parts of the algorithm are labelled A, B and C.
+\begin{center}
+\begin{tabular}{|l|c|l|}
+\hline 
+\texttt{\hspace{0.01\columnwidth}}Variable & \texttt{\hspace{0.01\columnwidth}}Data Type & \texttt{\hspace{0.05\columnwidth}}Description\tabularnewline
+\hline 
+\texttt{ThisArray} & \texttt{ARRAY OF STRING} & Array containing the the dataset\tabularnewline
+\hline 
+\texttt{FindValue} & \texttt{STRING} & Item to be found\tabularnewline
+\hline 
+\texttt{Low} & \texttt{INTEGER} & Lowest index of the considered list\tabularnewline
+\hline 
+\texttt{High} & \texttt{INTEGER} & Highest index of the considered list\tabularnewline
+\hline 
+\texttt{Middle} & \texttt{INTEGER} & The array index for the middle position of the current list considered\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{FUNCTION BinarySearch(ThisArray, FindValue, Low, High) RETURNS
+INTEGER}
+
+\texttt{\qquad{}DECLARE Middle : INTEGER}
+
+\texttt{\qquad{}IF ............... A ...............}
+
+\texttt{\qquad{}\qquad{}THEN}
+
+\texttt{\qquad{}\qquad{}\qquad{}RETURN -1 // not found}
+
+\texttt{\qquad{}ELSE}
+
+\texttt{\qquad{}\qquad{}// calculate new Middle value}
+
+\texttt{\qquad{}\qquad{}Middle \textleftarrow{} ............... B
+...............}
+
+\texttt{\qquad{}\qquad{}IF ThisArray{[}Middle{]} > FindValue}
+
+\texttt{\qquad{}\qquad{}\qquad{}THEN}
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}RETURN BinarySearch(ThisArray,
+FindValue, Low, Middle - 1)}
+
+\texttt{\qquad{}\qquad{}\qquad{}ELSE}
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}IF ThisArray{[}Middle{]}
+< FindValue}
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}THEN}
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}............... C
+...............}
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}ELSE}
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}RETURN
+Middle // found at position Middle}
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}ENDIF}
+
+\texttt{\qquad{}\qquad{}ENDIF}
+
+\texttt{\qquad{}ENDIF}
+
+\texttt{ENDFUNCTION}%
+\end{minipage}
+
+\subsubsection*{Evidence 3}
+
+What are the three missing lines in this pseudocode? \hfill{}{[}3{]}
+
+\subsubsection*{Task 2.2}
+
+Write a program to implement binary search. 
+
+The program will
+\begin{itemize}
+\item Call procedure InitialiseAnimals 
+\item Input an animal name
+\item Use the function BinarySearch 
+\item Report whether or now this animal name was found. If found, also output
+the index position.
+\end{itemize}
+The array in the program has identifier \texttt{MyAnimal}. 
+
+Use the dataset given in the file \texttt{ANIMALS.TXT}. You should
+paste the contents of this file into your program. The statements
+will form the basis of the code for the procedure \texttt{InitialiseAnimals}.
+
+\subsubsection*{Evidence 4}
+
+Program code for Task 2.2 \hfill{}{[}7{]}
+
+\subsubsection*{Evidence 5}
+
+Screenshot to confirm that an animal wich is present in the list was
+found with its index position displayed. \hfill{}{[}1{]}
+
+\subsubsection*{Task 2.3}
+
+Amend the program as follows: 
+
+The program must also output the number of function calls carried
+out.
+
+\subsubsection*{Evidence 6}
+
+The amended program code. \hfill{}{[}4{]}
+
+\subsubsection*{Evidence 7}
+
+Screenshots showing the amended ouput for runs of the program where: 
+\begin{itemize}
+\item the animal is found
+\item the animal is not found. \hfill{}{[}2{]}
+\end{itemize}
