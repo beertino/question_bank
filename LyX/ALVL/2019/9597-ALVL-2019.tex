@@ -1,0 +1,814 @@
+%% LyX 2.3.6.1 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,lmargin=2.5cm,rmargin=2.5cm}
+\PassOptionsToPackage{normalem}{ulem}
+\usepackage{ulem}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+{[}SPLIT\_HERE{]}
+\begin{enumerate}
+\item \textbf{{[}ALVL/9597/2019/P1/Q1{]} }
+
+A text file, \texttt{TIDES.TXT}. contains the low and high tide information
+for a coastal location tor each day of a month. Each line contains
+tab-delimited data that shows the date, the time. whether the tide
+is high or low and the tide height in metres. 
+
+Each line is in the format: 
+\begin{center}
+\texttt{YYYY-MM-DD\textbackslash tHH:mm\textbackslash tTIDE\textbackslash tHEIGHT\textbackslash n }
+\par\end{center}
+\begin{itemize}
+\item The date is in the term YYYY-MM-DD, for example. 2019-08-03 is 3rd
+August. 2019 
+\item The time is in the form HH:mm, for example. 13:47 
+\item TIDE is either HIGH or LOW 
+\item HEIGHT is a positive number shown to one decimal place 
+\item \texttt{\textbackslash t} represents the tab character
+\item \texttt{\textbackslash n} represents the newline character 
+\end{itemize}
+The text file is stored in ascending order of date and time.
+
+\subsubsection*{Task 1.1}
+
+Write program code to:
+\begin{itemize}
+\item read the tide data from a text file
+\item find the highest high tide and print this value
+\item find the lowest low tide and print this value.
+\end{itemize}
+Use \texttt{TIDES.TXT} to test your program code.
+
+\subsubsection*{Evidence 1}
+
+Your program code.
+
+Screenshot of your output. \hfill{}{[}9{]} 
+
+\subsubsection*{Task 1.2}
+
+The tidal range is the difference between the heights of successive
+tides; from a high tide to the following low tide or from a low tide
+to the following high tide.
+
+Amend your program code to:
+\begin{itemize}
+\item output the largest tidal range and the date on which the second tide
+occurs
+\item output the smallest tidal range and the date on which the second tide
+occurs.
+\end{itemize}
+Use \texttt{TIDES.TXT} to test your program code.
+
+\subsubsection*{Evidence 2}
+
+Your program code.
+
+Screenshot of your output. \hfill{}{[}9{]}
+
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}ALVL/9597/2019/P1/Q2{]} }
+
+Characters are numerically encoded using ASCII codes.
+\begin{itemize}
+\item 'A' has the denary value 65; \textquoteleft B' has the denary value
+66 and so on.
+\item 'a' has the denary value 97; 'b' has the denary value 98 and so on.
+\end{itemize}
+The ROT-13 encoding function replaces a letter with the letter that
+is 13 positions after it in the alphabet. Characters that are not
+letters remain unchanged. .
+
+The function wraps around from the end of the alphabet back to the
+beginning. The case of the coded letter should match the case of the
+original letter.
+
+For example:
+\begin{itemize}
+\item 'A' is replaced with 'N'; 'a' is replaced with 'n'
+\item 'B' is replaced with '0\textquoteleft ; 'b' is replaced with 'o' 
+\item 'Z' is replaced with 'M'; 'z\textquoteleft{} is replaced with 'm'
+\end{itemize}
+
+\subsubsection*{Task 2.1}
+
+Write program code that:
+\begin{itemize}
+\item reads a string of characters as input
+\item encodes the string in ROT-13 form
+\item outputs the encoded string.
+\end{itemize}
+Run the program \textbf{three} times with the inputs: 
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{This is a word.}
+
+\texttt{ALL \&\&\&\& CAPITALS}
+
+\texttt{UpperCamelCase12()}%
+\end{minipage}
+
+\subsubsection*{Evidence 3}
+
+Your program code.
+
+Screenshots of your outputs. \hfill{}{[}9{]}
+
+\subsubsection*{Task 2.2}
+
+A string is encoded using ROT-13. The resulting string is then encoded
+using ROT-13. The output of the second encoding should be identical
+to the original string.
+
+Amend your program code to apply HOT-13 twice, in the method described.
+Show that the resulting string is identical to the original string.
+
+\subsubsection*{Evidence 4}
+
+Your program code.
+
+Screenshot of the output from one of the given inputs. \hfill{}{[}3{]}
+
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}ALVL/9597/2019/P1/Q3{]} }
+
+A program is to be written to implement a to-do list using object-oriented
+programming (OOP). The list shows tasks that need to be done.
+
+Each task is given a category and a description.
+
+The base class will be called \texttt{ToDo} and is designed as follows: 
+\begin{center}
+\begin{tabular}{|l|}
+\hline 
+\texttt{\hspace{0.25\columnwidth}ToDo}\tabularnewline
+\hline 
+\texttt{category : STRING }\tabularnewline
+\texttt{description : STRING}\tabularnewline
+\hline 
+\texttt{constructor(c : STRING, d : STRING) }\tabularnewline
+\texttt{set\_category(s : STRING)}\tabularnewline
+\texttt{set\_description(s : STRING) }\tabularnewline
+\texttt{get\_category() : STRING }\tabularnewline
+\texttt{get:\_description() : STRING }\tabularnewline
+\texttt{summary() : STRING}\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+The \texttt{summary()} method returns the category and description
+as a single string.
+
+\subsubsection*{Task 3.1}
+
+Write program code to define the class \texttt{ToDo}.
+
+\subsubsection*{Evidence 5}
+
+Your program code. \hfill{}{[}5{]}
+
+Tasks should be sorted alphabetically by category. Within each category.
+tasks should be sorted alphabetically by description. 
+
+A task to be added to the list is compared to the tasks already in
+the list to determine its correct position in the list. If the list
+is empty. it is added to the beginning of the list. 
+
+This comparison will use an additional member method,
+\begin{center}
+\texttt{compare\_with(td : ToDo) : INTEGER }
+\par\end{center}
+
+This function compares the instance (the item in the list) and the
+\texttt{ToDo} object passed to it, returning one of three values:
+
+\texttt{\qquad{}}-1 if the instance is before the given \texttt{ToDo}
+
+\texttt{\qquad{}}0 if the two are equal
+
+\texttt{\qquad{}}+1 if the instance is after the given \texttt{ToDo}
+
+\subsubsection*{Task 3.2}
+
+There are four objects defined in the text file \texttt{TASK3\_2.TXT}.
+
+Write program code to:
+\begin{itemize}
+\item implement the \texttt{compare\_with()} method
+\item create an empty list of \texttt{ToDo} objects
+\item add each of the four objects in the text file \texttt{TASK3\_2.TXT}
+to its appropriate place in the list
+\item printout the list contents using the \texttt{summary()} method.
+\end{itemize}
+
+\subsubsection*{Evidence 6}
+
+Your program code.
+
+Screenshot of test run. \hfill{}{[}13{]}
+
+The to-do list can have items with extra information. One such item
+has a date by which the task should be completed. 
+
+The \texttt{DatedToDo} class inherits from the \texttt{ToDo} class,
+extending it to have a \texttt{due\_date}. designed as follows: 
+\begin{center}
+\begin{tabular}{|l|}
+\hline 
+\hspace{0.25\columnwidth}DatedToDo : ToDo\tabularnewline
+\hline 
+\texttt{due\_date : DATE}\tabularnewline
+\hline 
+\texttt{constructor(dt : DATE, 0 : STRING, d : STRING)}\tabularnewline
+\texttt{set\_due\_date(d : DATE)}\tabularnewline
+\texttt{get\_due\_date() : DATE }\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+The \texttt{DatedToDo} class should extend the \texttt{compare\_with()}
+method to ensure that tasks are ordered by ascending \texttt{due\_date},
+and then by the ordering used by the base \texttt{compare\_with()}
+method. The \texttt{summary()} method should also be extended to return
+the \texttt{due\_date} and the return values of the base \texttt{summary()}
+method.
+
+\subsubsection*{Task 3.3}
+
+There are seven objects defined in the text file \texttt{TASK3\_3.TXT}.
+
+Amend your program code to:
+\begin{itemize}
+\item implement the \texttt{DatedToDo} class, with \texttt{constructor},
+\texttt{get\_due\_date} and \texttt{set\_due\_date}
+\item implement the extended \texttt{compare\_with()} method
+\item implement the extended \texttt{summary()} method
+\item ensure all seven objects in the text file \texttt{TASK3\_3.TXT} are
+added to the list
+\item print out the list contents using the \texttt{summary()} method.
+\end{itemize}
+
+\subsubsection*{Evidence 7}
+
+Your program code. 
+
+Screenshot of the test run.\hfill{}{[}5{]}
+
+\noindent When a task in the to-do list has been completed, it should
+be removed.
+
+\subsubsection*{Task 3.4}
+
+There are four completed tasks defined in the text file \texttt{TASK3\_4.TXT}.
+
+If any of the four tasks exists in the list, it should be removed.
+
+Amend your program to: 
+\begin{itemize}
+\item recreate the list of seven tasks from Task 3.3
+\item check if each of the four completed tasks in the text file \texttt{TASK3\_4.TXT}
+exists in the list and: 
+\begin{itemize}
+\item remove it from the list if it does or 
+\item print a warning message it the completed task does not exist
+\end{itemize}
+\item print out the list after all four objects have been processed. 
+\end{itemize}
+
+\subsubsection*{Evidence 8}
+
+Your amended code.
+
+Screenshot of the test run.\hfill{}{[}10{]}
+
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}ALVL/9597/2019/P1/Q4{]} }
+
+A stack is used to store characters.
+
+\subsubsection*{Task 4.1}
+
+Write program code to implement the stack and the operations specified.
+
+Your code should allow operations to: 
+\begin{itemize}
+\item push an item on to the stack
+\item pop an item off the stack
+\item determine the size of the stack. A size of zero indicates that the
+stack is empty.
+\end{itemize}
+
+\subsubsection*{Evidence 9}
+
+Your program code for the stack.\hfill{}{[}10{]}
+
+The stack is to be used to identify it an arithmetic expression is
+balanced. 
+
+An expression is balanced if each opening bracket has a corresponding
+closing bracket. 
+
+Different pairs of brackets can be used. These are: {[}{]}, () or
+\{\}. 
+
+This is an example of an expression that is balanced.
+
+\texttt{\qquad{}({[}8-1{]}/(5{*}7)) }
+
+This is an example of an expression that is not balanced. 
+
+\texttt{\qquad{}{[}(8-1{]}/(5{*}7)) }
+
+Note the change in the order of the first two open bracket symbols.
+The first closing bracket should be a closing bracket ')' to match
+the previous opening bracket \textquoteleft ('. 
+
+Note that an expression is not balanced if the order of the brackets
+is incorrect, even if there are the same number of opening and closing
+brackets of each bracket type. 
+
+An expression is checked by iterating over it: 
+\begin{itemize}
+\item if a non-bracket symbol is found, continue to the next character. 
+\item If an opening symbol is found, push it on to the stack and continue
+to the next character. 
+\item If a closing bracket is encountered: 
+\begin{itemize}
+\item If the stack is empty, return an error (because there is no corresponding
+opening bracket) 
+\item else pop the symbol from the top of the stack and compare it to the
+current closing symbol to see if they make a matching pair 
+\item If they do match continue to the next character 
+\item else return an error (pairs of brackets must match). 
+\end{itemize}
+\item When the last symbol is encountered: 
+\begin{itemize}
+\item return an error if the stack is not empty (too many opening symbols) 
+\item else return a success message.
+\end{itemize}
+\end{itemize}
+
+\subsubsection*{Task 4.2}
+
+Add \textbf{five} other suitable test cases and a reason for choosing
+each test case.
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline 
+\hspace{0.05\columnwidth}\textbf{Test case} & \textbf{Reason for choice} & \textbf{Expected value}\tabularnewline
+\hline 
+\texttt{({[}8-1{]}/(5{*}7))} & Provided & Succeeds\tabularnewline
+\hline 
+\texttt{{[}(8-1{]}/(5{*}7))} & Provided & Fails\tabularnewline
+\hline 
+ &  & Succeeds\tabularnewline
+\hline 
+ &  & Succeeds\tabularnewline
+\hline 
+ &  & Fails\tabularnewline
+\hline 
+ &  & Fails\tabularnewline
+\hline 
+ &  & Fails\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\subsubsection*{Evidence 10}
+
+The completed table with all seven test cases and a reason for choosing
+each test case.\hfill{}{[}6{]}
+
+\subsubsection*{Task 4.3}
+
+Write program code that checks expressions using the given algorithm. 
+
+Use all \textbf{seven} test cases to verify It.
+
+\subsubsection*{Evidence 11}
+
+Your program code for the stack.
+
+Screenshots for each test data run. \hfill{}{[}19{]}
+
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}ALVL/9597/2019/P2/Q1{]} }
+
+Pharmacists working in a group of pharmacies, dispense medicine to
+patients who present to them a prescription written by a doctor. A
+new system is to be built to allow a doctor to send prescription data
+electronically to a pharmacy of the patient's choice. Patients will
+either collect the medicine, or have the pharmacy deliver it to them. 
+
+A project proposal is written and sent to doctors and pharmacy staff,
+inviting each to respond within a given time. 
+\begin{enumerate}
+\item Give a reason why the project proposal is sent to: 
+\begin{enumerate}
+\item Doctors \hfill{}{[}1{]}
+\item Pharmacy staff \hfill{}{[}1{]}
+\end{enumerate}
+\end{enumerate}
+The responses from the doctors and pharmacy staff are reviewed. Invitations
+are sent to doctors to find out whether they are willing to take part
+in a pilot scheme. The project proposal is sent to prospective software
+developers. Some of the activities involved in the project are listed
+in the following table. 
+\begin{center}
+\begin{tabular}{|c|l|c|}
+\hline 
+Label & \hspace{0.25\columnwidth}Activity & Duration(Weeks)\tabularnewline
+\hline 
+\textbf{A} & Send project proposal  & 4\tabularnewline
+\hline 
+\textbf{B} & Send project proposal to pharmacy staff & 2\tabularnewline
+\hline 
+\textbf{C} & Discuss all the responses from A and B. and revise the proposal if
+2 required & 2\tabularnewline
+\hline 
+\textbf{D} & Send project proposal to prospective software developers & 3\tabularnewline
+\hline 
+\textbf{E} & Invite doctors to be part of a pilot scheme & 2\tabularnewline
+\hline 
+\textbf{F} & Request quotations of cost and development time from software developers & 3\tabularnewline
+\hline 
+\textbf{G} & Select a software developer  & 1\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+\begin{enumerate}
+\item[(b)] {}
+\begin{enumerate}
+\item Draw a Gantt chart for the activities labelled \textbf{A} to \textbf{G}.
+\hfill{}{[}6{]}
+\item State the estimated time taken to complete activities \textbf{A} to
+\textbf{G}. \hfill{}{[}1{]}
+\end{enumerate}
+\end{enumerate}
+In activities \textbf{A} and \textbf{B}, doctors and pharmacy staff
+identified ethical and security issues that would need to be addressed. 
+\begin{enumerate}
+\item[(c)] {}
+\begin{enumerate}
+\item Describe one security issue. \hfill{}{[}2{]}
+\item Describe one ethical issue. \hfill{}{[}2{]}
+\end{enumerate}
+\end{enumerate}
+In activity \textbf{F}, quotations are received from software developers.
+The lowest cost is from a developer who works alone, but demonstrates
+a number of successful projects. Other software developers that employ
+many staff submit more expensive quotations. 
+\begin{enumerate}
+\item[(d)] Explain why the group of pharmacies may decide against the single
+developer. \hfill{}{[}2{]}
+\end{enumerate}
+An analyst from the chosen software developer reviews the current
+system. 
+\begin{enumerate}
+\item[(e)] Give \textbf{four} methods available to the analyst to find out how
+a system operates. \hfill{}{[}4{]}
+\end{enumerate}
+The analyst proposes that the doctors and pharmacy staff interact
+with a web-based system. 
+\begin{enumerate}
+\item[(f)] tate the software that will be needed on the devices used by the
+doctors and pharmacy staff. other than the operating system. \hfill{}{[}1{]}
+\end{enumerate}
+The alternative to a web-based system would be to write and install
+purpose-built application software for each computer used by a doctor
+or member of the pharmacy staff. 
+\begin{enumerate}
+\item[(g)] Describe \textbf{two} advantages to the software developer of a web-based
+solution over purpose- built software running on each user's computer.
+\hfill{}{[}4{]}
+\end{enumerate}
+Doctors may wish to write prescriptions when they visit patients in
+their own home. 
+\begin{enumerate}
+\item[(h)] Explain \textbf{one} benefit of a web-based solution in this situation.
+\hfill{}{[}2{]}
+\end{enumerate}
+The computers used by the doctors and pharmacy staff are clients of
+the server operated by the pharmacy. Some validation is provided by
+client-side scripting.
+\begin{enumerate}
+\item[(i)] Give \textbf{two} advantages of using this type of scripting. \hfill{}{[}2{]}
+\end{enumerate}
+The new system is designed. coded and tested as a number of modules.
+A tester performing black-box testing on a module would need its specification. 
+\begin{enumerate}
+\item[(j)] Explain why the tester would not need access to the source code.
+\hfill{}{[}2{]}
+\item[(k)] Explain why someone designing a test strategy for white box testing
+would need access to the source code. \hfill{}{[}2{]}
+\item[(l)] Alpha testing is performed on the system. 
+
+Explain the purpose of alpha testing. \hfill{} {[}2{]}
+\item[(m)] The group of pharmacies is responsible for the security and integrity
+of the stored data. 
+\begin{enumerate}
+\item Give \textbf{two }methods that could be used to ensure security of
+the stored data. \hfill{}{[}2{]}
+\item Give \textbf{two} methods that could be used to ensure the integrity
+of the stored data. \hfill{}{[}2{]}
+\end{enumerate}
+\item[(n)] The group considers using either the cloud or its own server to store
+data needed by the proposed system. 
+
+Give \textbf{one} advantage and \textbf{one} disadvantage of storing
+the data in the cloud. \hfill{}{[}2{]}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}ALVL/9597/2019/P2/Q2{]} }
+
+A bakery bakes bread and cakes to sell in its own shop and to other
+shops throughout a city. 
+
+Its drivers visit every shop each day, delivering that day\textquoteright s
+order and collecting the order for the next day. 
+
+Order forms are pre-printed with the name of each shop and every item
+that the bakery bakes. The manager of each shop writes onto the form
+the quantity of each item required. When the drivers return to the
+bakery. the data from the order forms are collated to give the bakers
+the total of each item to bake. 
+
+Copies of the order forms are made and used as delivery notes for
+the next day\textquoteright s deliveries. The accounts department
+use the original order forms to prepare a weekly invoice for each
+shop.
+
+The bakery wants the shops to submit their orders online. 
+
+A program is needed to determine the number of each item needed and
+produce the weekly invoice for each shop.
+
+The new program will use a relational database with three tables:
+Product, Shop and Order. 
+
+Each product has a description. price. and a unique product ID number. 
+
+Each shop has a name. an address, telephone number. manager's name,
+and a unique shop iD number. 
+
+Each order has a product lD, a quantity, a shop ID and a date for
+delivery. 
+\begin{enumerate}
+\item Draw an Entity-Relationship (E-R) diagram showing the three tables
+and the relationships between them. \hfill{}{[}5{]}
+\item A table description can be expressed as: 
+
+\texttt{TableName (}\texttt{\uline{Attribute1}}\texttt{, Attribute2,
+Attribute3, ...) }
+
+The primary key is indicated by underlining one or more attributes. 
+
+Write table descriptions for the three tables. \hfill{}{[}4{]}
+\end{enumerate}
+The bakery can change the price of an item at any time. Validation
+ensures that the new price is within specified limits and is more
+likely to be correct.
+\begin{enumerate}
+\item[(c)] {}
+\begin{enumerate}
+\item Explain why this could still result in incorrect weekly invoices,
+assuming that the new price input is correct. \hfill{}{[}2{]}
+\item Describe changes to the database and draw a modified E-R diagram to
+ensure correct invoices are created. \hfill{}{[}4{]}
+\end{enumerate}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}ALVL/9597/2019/P2/Q3{]} }
+
+A programmer is asked to write a program to store names in alphabetical
+order.
+
+The program needs to:
+\begin{itemize}
+\item add and remove names
+\item search for the presence of a specific name
+\item output all the names in alphabetical order. 
+\end{itemize}
+The programmer considers two options: an array and a linked list.
+\begin{enumerate}
+\item {}
+\begin{enumerate}
+\item Explain why an array allows for more efficient searching. \hfill{}{[}2{]}
+\item State why this advantage becomes more significant as the number of
+names becomes much larger. \hfill{}{[}1{]}
+\end{enumerate}
+\item {}
+\begin{enumerate}
+\item Give \textbf{one} disadvantage of using an \textbf{array} to store
+the names in alphabetical order. \hfill{}{[}2{]}
+\item Give \textbf{one} advantage of using a \textbf{linked list} to store
+the names in alphabetical order. \hfill{}{[}2{]}
+\end{enumerate}
+\end{enumerate}
+A third option is to store the names in a binary tree.
+\begin{enumerate}
+\item[(c)] Explain how a binary tree provides some of the advantages of both
+an array and a linked list when storing sorted data. \hfill{}{[}2{]}
+\item[(d)] State why a binary tree may need to be re-created with exactly the
+same data items. \hfill{}{[}1{]}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}ALVL/9597/2019/P2/Q4{]} }
+
+A company operates a multi-storey car park. All parking bays are identified
+by a letter. indicating the floor. and a number indicating the position
+of the bay on that floor (for example. C34 indicates bay 34 on floor
+C). 
+
+The entrance to the car park is controlled by a barrier. Before the
+barrier lifts to allow a car to enter, the driver must press a button
+to indicate if they need a standard bay or a special bay. 
+
+Special bay users must present a card to a card reader at the barrier. 
+
+The car park has an additional third type of bay that has a charging
+point for electric vehicles. The hourly rate for these bays is not
+the same as standard bays. The cost of using this type of bay additionally
+depends on the cost of the electricity used. This is monitored by
+the charging device and stored.
+
+A camera captures the vehicle registration number. A ticket is printed
+showing:
+\begin{itemize}
+\item current time
+\item vehicle registration number 
+\item floor letter 
+\item position number of a suitable bay where the car must be parked 
+\item the card number for the special bay, if a card had been presented
+at the barrier. 
+\end{itemize}
+When the driver takes the ticket from the printer. the entrance barrier
+lifts. Before a car is allowed to leave, the ticket must be presented
+and a charge paid. The charge is determined by the length of stay
+and type of bay. The hourly rate for a standard bay is not the same
+as that for a special bay. As a car approaches the exit barrier a
+camera captures the vehicle registration. The barrier only lifts if
+the charge for this vehicle has been paid. 
+
+This system is to be implemented using object-oriented programming
+(OOP). 
+
+The base class PARKING\_BAY has a property to store whether or not
+a bay is occupied. 
+\begin{enumerate}
+\item Draw a class diagram, showing:
+\begin{itemize}
+\item any derived classes and inheritance from the base class
+\item the properties needed in the base, and any derived classes
+\item suitable methods to support the system with at least one getter and
+one setter method. \hfill{}{[}8{]}
+\end{itemize}
+\item Add a class, CAR\_PARK. thathas properties to store:
+\begin{itemize}
+\item a list of all bays
+\item the number of unoccupied bays. \hfill{}{[}3{]}
+\end{itemize}
+\item Explain why polymorphism is useful in object-oriented programming.
+\hfill{}{[}2{]}
+\item Explain the purpose of making the attributes of an object private.
+\hfill{}{[}2{]}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}ALVL/9597/2019/P2/Q5{]} }
+
+The function \texttt{z} takes three integer parameters, \texttt{low},
+\texttt{high}, \texttt{seek} and returns an integer value. It operates
+on the values in the elements of the array \texttt{A}. 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{01 FUNCTION Z(low, high, seek, A) RETURNS INTEGER }
+
+\texttt{02 \qquad{}IF low > high THEN }
+
+\texttt{03 \qquad{}\qquad{}RETURN \textemdash 1 }
+
+\texttt{04 \qquad{}ENDIF }
+
+\texttt{05 \qquad{}mid <- low + INT( (high \textemdash{} low) /2)}
+
+\texttt{06 \qquad{}IF seek = A{[}mid{]} THEN}
+
+\texttt{07 \qquad{}\qquad{}RETURN mid }
+
+\texttt{08 \qquad{}ELSE }
+
+\texttt{09 \qquad{}\qquad{}IF seek < A{[}mid{]} THEN }
+
+\texttt{10 \qquad{}\qquad{}\qquad{}RETURN Z(low, mid - 1, seek,
+A) }
+
+\texttt{11 \qquad{}\qquad{}ELSE }
+
+\texttt{12 \qquad{}\qquad{}\qquad{}RETURN Z(mid + 1, high, seek,
+A) . }
+
+\texttt{13 \qquad{}\qquad{}ENDIF }
+
+\texttt{14 \qquad{}ENDIF }
+
+\texttt{15 ENDFUNCTION}%
+\end{minipage}
+\begin{enumerate}
+\item {}
+\begin{enumerate}
+\item State what lines \texttt{10} and \texttt{12} tell you about the function.
+\hfill{}{[}1{]}
+\item State the purpose for the \texttt{RETURN} statements in lines \texttt{03}
+and \texttt{07} of function \texttt{z}. \hfill{} {[}1{]}
+\end{enumerate}
+\end{enumerate}
+The values in each of the eight elements of the array \texttt{A} are:
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+\multicolumn{1}{l}{\textbf{Element}} & \multicolumn{1}{c}{0} & \multicolumn{1}{c}{1} & \multicolumn{1}{c}{2} & \multicolumn{1}{c}{3} & \multicolumn{1}{c}{4} & \multicolumn{1}{c}{5} & \multicolumn{1}{c}{6} & \multicolumn{1}{c}{7}\tabularnewline
+\hline 
+\textbf{Value} & -3 & 8 & 14 & 15 & 96 & 101 & 412 & 500\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+\begin{enumerate}
+\item Copy and then complete the trace table for the instruction: 
+
+\texttt{OUTPUT z(0, 7, 103, A)}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline 
+Function call & \texttt{\textbf{low}} & \texttt{\textbf{high}} & \texttt{\textbf{seek}} & \texttt{\textbf{mid}} & \texttt{\textbf{A{[}mid{]}}} & \texttt{\textbf{OUTPUT}}\tabularnewline
+\hline 
+\texttt{1} & \texttt{0} & \texttt{7} & \texttt{103} &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\hfill{}{[}4{]}
+\item Function \texttt{z} can return two different types of value.
+
+Explain what these represent. \hfill{}{[}2{]}
+\item The number of elements in array \texttt{A} may be very large. 
+
+Explain why a programmer might prefer to use an iterative approach
+rather than the one used in function \texttt{z}. \hfill{} {[}2{]}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\item \textbf{{[}ALVL/9597/2019/P2/Q6{]} }
+
+Data communication networks can use circuit switching or packet switching. 
+\begin{enumerate}
+\item {}
+\begin{enumerate}
+\item Give \textbf{two} advantages of packet switching over circuit switching.
+\hfill{}{[}2{]}
+\item Give \textbf{one} advantage of circuit switching over packet switching.
+\hfill{}{[}1{]}
+\end{enumerate}
+\item {} 
+\begin{enumerate}
+\item State \textbf{one} reason for using either a parity check or a checksum.
+\hfill{}{[}1{]}
+\item Give \textbf{one} example of an error that a parity check cannot detect.
+\hfill{}{[}1{]}
+\end{enumerate}
+\item Switches and routers are common devices used in networking. 
+
+Explain the most significant differences between a switch and a router.
+\hfill{}{[}2{]}
+\item Explain the purpose of a bridge in a network.\hfill{}{[}1{]}
+\item A local area network (LAN) can be set up as either client-server or
+peer-to-peer. 
+
+Give \textbf{two} advantages in storing shared data on a client-server
+network rather than on a peer-to-peer network. \hfill{}{[}2{]}
+\end{enumerate}
+{[}SPLIT\_HERE{]}
+\end{enumerate}
+
+\end{document}

@@ -698,15 +698,11 @@ Complete the PERT chart below, indicating the earliest start time and latest
  start time of each activity: 
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
+\noindent
 \align center
-\begin_inset Graphics
-	filename C:/Users/Admin/Desktop/Github/question_bank/LyX/static/img/9597-HCI-2014-P1-Q2.png
-	width 65page%
-
-\end_inset
-
-
+<INSERT_IMAGE_HERE>
 \end_layout
 
 \begin_layout Standard
@@ -716,6 +712,7 @@ Complete the PERT chart below, indicating the earliest start time and latest
 [4]
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
 State the critical path.
  
