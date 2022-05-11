@@ -1,0 +1,107 @@
+\item \textbf{{[}RVHS/PRELIM/9569/2021/P1/Q2{]} }
+
+The recursive function below helps to check if a password string \texttt{pw}
+satisfies certain requirements. The meaning of the function parameters
+\texttt{pw}, \texttt{digit}s, \texttt{upper\_l}, \texttt{lower\_l}
+and \texttt{length} are password string, minimum number of digits,
+minimum number of uppercase letters, minimum number of lowercase letters
+and minimum length of the password respectively.
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{def check\_pw(pw, digits, upper\_l, lower\_l, length): }
+
+\texttt{\qquad{}if len(pw) == 0: }
+
+\texttt{\qquad{}\qquad{}return digits < 1 and upper\_l < 1 and lower\_l
+< 1 and length < 1 }
+
+\texttt{\qquad{}else: }
+
+\texttt{\qquad{}\qquad{}char = pw{[}0{]} }
+
+\texttt{\qquad{}\qquad{}if char.isdigit(): }
+
+\texttt{\qquad{}\qquad{}\qquad{}return check\_pw(pw{[}1:{]}, digits-1,
+upper\_l, lower\_l, length-1) }
+
+\texttt{\qquad{}\qquad{}elif char.isalpha(): }
+
+\texttt{\qquad{}\qquad{}\qquad{}if char.isupper():}
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}return check\_pw(pw{[}1:{]},
+digits, upper\_l-1, lower\_l, length-1) }
+
+\texttt{\qquad{}\qquad{}\qquad{}else: }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}return check\_pw(pw{[}1:{]},
+digits, upper\_l, lower\_l-1, length-1) }
+
+\texttt{\qquad{}\qquad{}\qquad{}else: }
+
+\texttt{\qquad{}\qquad{}\qquad{}\qquad{}return False }%
+\end{minipage}
+\begin{enumerate}
+\item State the values of all arguments in each recursive function call
+when the following code is executed. Then, state the value that the
+function returns. 
+
+\texttt{>\textcompwordmark >\textcompwordmark > check\_pw(\textquotedbl SP500\textquotedbl ,
+3, 1, 1, 5)} \hfill{}{[}3{]}
+
+The function in \textbf{2a)} is rewritten in such a way that string
+slicing on the password string pw is removed. A new function parameter
+\texttt{i} is added to help the recursive function to keep track of
+the position in \texttt{pw} in which it is currently checking. 
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{def check\_pw(pw, i, digits, upper\_l, lower\_l, length): }
+
+\texttt{if}\texttt{\textbf{ }}\texttt{\textbf{\uline{A}}}\texttt{: }
+
+\texttt{\qquad{}return digits < 1 and upper\_l < 1 and lower\_l <
+1 and length < 1 }
+
+\texttt{else: }
+
+\texttt{\qquad{}}\texttt{\textbf{\uline{B}}}\texttt{ }
+
+\texttt{\qquad{}if char.isdigit(): }
+
+\texttt{\qquad{}\qquad{}return check\_pw(pw, C, digits-1, upper\_l,
+lower\_l, length-1) }
+
+\texttt{\qquad{}elif char.isalpha(): }
+
+\texttt{\qquad{}\qquad{}if char.isupper(): }
+
+\texttt{\qquad{}\qquad{}\qquad{}return check\_pw(pw, C, digits,
+upper\_l-1, lower\_l, length-1) }
+
+\texttt{\qquad{}\qquad{}else: }
+
+\texttt{\qquad{}\qquad{}\qquad{}return check\_pw(pw, C, digits,
+upper\_l, lower\_l-1, length-1) }
+
+\texttt{\qquad{}\qquad{}else: }
+
+\texttt{\qquad{}\qquad{}\qquad{}return False }%
+\end{minipage}
+\item State the code in \textbf{A}, \textbf{B} and \textbf{C}. \hfill{}{[}3{]}
+\item Describe clearly or write in Python the modification needed for the
+function \texttt{check\_pw()} to also display a suggestion of a new
+password if the password requirements are not met. For example, if
+\texttt{pw} does not have enough digits, it will append digits to
+\texttt{pw} so that it can satisfy the requirement. 
+
+For example, 
+
+\texttt{>\textcompwordmark >\textcompwordmark > check\_pw(\textquotedbl WoBeiShiGeDa\textquotedbl ,
+0, 2, 6, 7, 15) }
+
+\texttt{Suggested password: WoBeiShiGeDa33Uxxx }
+
+\texttt{False }
+
+\texttt{\textquotedbl 33Uxxx\textquotedbl} is added to \texttt{\textquotedbl WoBeiShiGeDa\textquotedbl}
+so that the password passes the requirements. \hfill{}{[}4{]}
+\end{enumerate}

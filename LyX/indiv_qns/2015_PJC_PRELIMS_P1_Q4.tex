@@ -1,0 +1,137 @@
+\item \textbf{{[}PJC/PRELIM/9597/2015/P1/Q4{]} }
+
+Implement a stack class using array using the following properties
+and methods: 
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline 
+\multicolumn{3}{|c|}{\texttt{Class: Stack}}\tabularnewline
+\hline 
+\multicolumn{3}{|c|}{Properties}\tabularnewline
+\hline 
+\texttt{\hspace{0.01\columnwidth}}Identifier & \texttt{\hspace{0.01\columnwidth}}Data Type & \texttt{\hspace{0.05\columnwidth}}Description\tabularnewline
+\hline 
+\texttt{Data} & \texttt{ARRAY{[}x{]} of STRING} & x is the limit, which must be supplied when the object is called \tabularnewline
+\hline 
+\texttt{Limit} & \texttt{INTEGER} & The maximum number of elements the stack can hold \tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline 
+\multicolumn{3}{|c|}{\texttt{Class: Stack}}\tabularnewline
+\hline 
+\multicolumn{3}{|c|}{Methods}\tabularnewline
+\hline 
+\texttt{\hspace{0.01\columnwidth}}Identifier & \texttt{\hspace{0.01\columnwidth}}Data Type & \texttt{\hspace{0.05\columnwidth}}Description\tabularnewline
+\hline 
+\texttt{IsEmpty} & \texttt{FUNCTION RETURNS BOOLEAN} & Indicates whether any elements are stored in stack or not \tabularnewline
+\hline 
+\texttt{IsFull} & \texttt{FUNCTION RETURNS BOOLEAN} & Indicates whether stack is full or not\tabularnewline
+\hline 
+\texttt{Push} & \texttt{PROCEDURE} & Inserts data onto stack\tabularnewline
+\hline 
+\texttt{Pop} & \texttt{PROCEDURE} & Removes and returns the last inserted element from the stack\tabularnewline
+\hline 
+\texttt{Peek} & \texttt{PROCEDURE} & Returns the last inserted element without removing it\tabularnewline
+\hline 
+\texttt{Size} & \texttt{PROCEDURE} & Returns the number of elements stored in stack \tabularnewline
+\hline 
+\texttt{Display} & \texttt{PROCEDURE} & Displays the content of the stack with top of stack clearly indicated\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\subsection*{Task 4.1 }
+
+Write program code for the stack class with all the properties and
+methods above.
+
+\subsection*{Evidence 16:}
+
+Your program code. \hfill{}{[}12{]}
+
+A stack can be used to evaluate an arithmetic expression. An arithmetic
+expression can first be converted from infix notation to postfix notation,
+then the postfix notation can be evaluated to get the value of the
+infix notation. 
+
+For example, the infix notation \texttt{5 {*} (6 + 2) - 12 / 4} can
+first be converted to postfix notation \texttt{5 6 2 + {*} 12 4 /
+-}, and then evaluated to \texttt{37} using a stack. 
+
+The following is an algorithm for converting infix notation to postfix
+notation:
+\begin{enumerate}
+\item[1.]  Create an empty stack called \texttt{opStack} for keeping operators. 
+\item[2.]  Scan the token list from left to right. 
+\begin{itemize}
+\item If the token is an operand, append it to the end of the output list. 
+\item If the token is a left parenthesis, push it on the \texttt{opStack}. 
+\item If the token is an operator, \texttt{{*}, /, +}, or \texttt{-}, push
+it on the \texttt{opStack}. However, first remove any operators already
+on the \texttt{opStack} that have higher or equal precedence and append
+them to the output list. 
+\item If the token is a right parenthesis, pop the \texttt{opStack} until
+the corresponding left parenthesis is removed. Append each operator
+to the end of the output list. 
+\end{itemize}
+\end{enumerate}
+When the input expression has been completely processed, check the
+\texttt{opStack}. Any operators still on the stack can be removed
+and appended to the end of the output list. 
+
+\subsection*{Task 4.2 }
+
+Write program code for the algorithm to convert infix notation to
+postfix notation using the following specification: 
+\noindent \begin{center}
+\texttt{FUNCTION infixToPostfix(infixexpression:STRING):STRING}
+\par\end{center}
+
+\subsection*{Evidence 17: }
+
+Your program code. \hfill{}{[}7{]}
+
+The following algorithm can be used to evaluate postfix notation: 
+\begin{enumerate}
+\item 1. Create an empty stack called \texttt{operandStack}. 
+\item 2. Scan the token list from left to right. 
+\begin{itemize}
+\item If the token is an operand, convert it from a string to an integer
+and push the value onto the \texttt{operandStack}. 
+\item If the token is an operator, \texttt{{*}, /, +, }or \texttt{-}, it
+will need two operands. Pop the \texttt{operandStack} twice. The first
+pop is the second operand and the second pop is the first operand.
+Perform the arithmetic operation. Push the result back on the \texttt{operandStack}.
+\end{itemize}
+\end{enumerate}
+When the input expression has been completely processed, the result
+is on the stack. Pop the \texttt{operandStack} and return the value.
+
+\subsection*{Task 4.3 }
+
+Write program code for the algorithm to evaluate postfix notation
+using the following specification: 
+\noindent \begin{center}
+\texttt{FUNCTION postfixEval(postfixexpression:STRING):FLOAT }
+\par\end{center}
+
+\subsection*{Evidence 18: }
+
+Your program code.\hfill{} {[}7{]} 
+
+\subsection*{Task 4.4}
+
+Write program code to read the infix expressions from the file Infix.txt
+and output its postfix expressions and its evaluation. 
+
+\subsection*{Evidence 19: }
+
+Your program code. \hfill{}{[}2{]}
+
+\subsection*{Evidence 20: }
+
+Screenshot of running your program code in Task 4.4.\hfill{} {[}2{]}

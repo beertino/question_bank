@@ -1,0 +1,42 @@
+\item \textbf{{[}HCI/PRELIM/9597/2015/P2/Q5{]} }
+
+HC university has various campuses around the city and Wilson Parking
+is responsible for all the university car parks.
+
+At each car park:
+
+A car arriving triggers a sensor (S1) and a fixed fee (F) is paid
+into a machine. This allows a barrier (B1) to be lifted and the car
+to enter the car park. When a car leaves the car park it passes over
+another sensor (S2) and another barrier (B2) is lifted. 
+
+Each car park has a maximum number of spaces for cars (M) and when
+this maximum is reached a \textquotedblleft FULL\textquotedblright{}
+sign is illuminated at the entrance and the barrier (B1) will not
+rise. The car park is closed at least once a day for cleaning purposes. 
+\begin{enumerate}
+\item Write an algorithm which will control the barriers and which will
+keep a total (T) of the fees paid. \hfill{}{[}8{]}
+
+There are 100 car parks, each of which is identified by a number between
+1 and 100. 
+
+At the end of each month, the total fees paid for that month (T) is
+collected from each of the car parks as an integer value. 
+
+All data are stored in an array Parks(). 
+\begin{itemize}
+\item For car park x, Parks(x, 1) to Parks(x, 12) contains the totals for
+the twelve months of the year.
+\item Parks(x, 13) contain the annual total fees collected for each car
+park.
+\end{itemize}
+\item Using Parks(x,y) to identify individual values in the array, write
+an algorithm which can be used to produce the annual totals once the
+twelve monthly totals have been input to the array, and the grand
+annual total for all the 100 carparks. \hfill{}{[}5{]}
+\item When implementing the algorithm into program code, they should be
+written to display clarity. Describe \textbf{three} features of the
+final program code for this implementation that would achieve this
+goal. \hfill{}{[}3{]}
+\end{enumerate}

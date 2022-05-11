@@ -1,0 +1,92 @@
+\item \textbf{{[}IJC/PRELIM/9597/2018/P2/Q3{]} }
+
+The following table shows a partial list of Unicode characters. 
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+Unicode & Character & Denary Value & Description\tabularnewline
+\hline 
+U+0393 & $\Gamma$ & 915 & Greek Capital Letter Gamma\tabularnewline
+\hline 
+U+0394 & $\Delta$ & 916 & Greek Capital Letter Delta\tabularnewline
+\hline 
+U+0395 & $E$ & 917 & Greek Capital Letter Epsilon\tabularnewline
+\hline 
+U+0396 & $Z$ & 918 & Greek Capital Letter Zeta\tabularnewline
+\hline 
+U+0397 & $H$ & 919 & Greek Capital Letter Eta\tabularnewline
+\hline 
+U+0398 & $\Theta$ & 920 & Greek Capital Letter Theta\tabularnewline
+\hline 
+U+0399 & $I$ & 921 & Greek Capital Letter Iota\tabularnewline
+\hline 
+U+039A & $K$ & 922 & Greek Capital Letter Kappa\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+\begin{enumerate}
+\item Explain why the Unicode encoding system has replaced ASCII.\hfill{}
+{[}2{]}
+\item The Greek capital letter Omega, \textquoteleft $\Omega$\textquoteright ,
+has denary value 937. Write down its corresponding Unicode.\hfill{}
+{[}1{]}
+\item Write down the 16-bit binary value of the Unicode character with Unicode
+U+0A6C7. \hfill{}{[}1{]}
+\end{enumerate}
+The following pseudocode for a sort algorithm is used to sort a list
+of Greek character names.
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{01 FOR i <- 2 TO ArraySize: }
+
+\texttt{02 \qquad{}Key Array{[}i{]} }
+
+\texttt{03 \qquad{}j <- i-1 }
+
+\texttt{04 \qquad{}WHILE (j > 0) and (Key < Array{[}j{]}) }
+
+\texttt{05 \qquad{}\qquad{}Array{[}j+1{]} <- Array{[}j{]}}
+
+\texttt{06 \qquad{}\qquad{}j <- j-1}
+
+\texttt{07 \qquad{}ENDWHILE}
+
+\texttt{08 \qquad{}Array{[}j+1{]} <- Key}
+
+\texttt{09 ENDFOR}%
+\end{minipage}
+
+The sort algorithm is used on \texttt{Array}, a list of 5 Greek character
+names.
+\noindent \begin{center}
+\begin{tabular}{c|c|c|c|c|c|}
+\cline{2-6} \cline{3-6} \cline{4-6} \cline{5-6} \cline{6-6} 
+Array & Gamma & Delta & Epsilon & Zeta & Eta\tabularnewline
+\cline{2-6} \cline{3-6} \cline{4-6} \cline{5-6} \cline{6-6} 
+\end{tabular}
+\par\end{center}
+\begin{enumerate}
+\item[(d)]  Write down the name of this sort algorithm. \hfill{}{[}1{]}
+\item[(e)]  Copy and then complete the trace table given below. \hfill{}{[}6{]}
+\noindent \begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline 
+\multicolumn{5}{|c|}{\texttt{Array}} & \multicolumn{3}{c|}{}\tabularnewline
+\hline 
+\texttt{{[}1{]}} & \texttt{{[}2{]}} & \texttt{{[}3{]}} & \texttt{{[}4{]}} & \texttt{{[}5{]}} & \texttt{i} & \texttt{j} & \texttt{Key}\tabularnewline
+\hline 
+\texttt{Gamma} & \texttt{Delta} & \texttt{Epsilon} & \texttt{Zeta} & \texttt{Eta} &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  &  & \tabularnewline
+\end{tabular}
+\par\end{center}
+\item[(f)]  State the efficiency, in terms of running time, of this sort algorithm
+if the Greek character names in Array are initially in reverse order.
+\hfill{}{[}1{]}
+\end{enumerate}

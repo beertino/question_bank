@@ -1,0 +1,37 @@
+\item \textbf{{[}PJC/PRELIM/9597/2018/P1/Q6{]} }
+
+The following pseudo-code algorithm describes one method of finding
+an arbitrary visitor name in an alphabetically ordered array of N
+unique names. 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+set first to 1 
+
+set last to N 
+
+repeat 
+
+\texttt{\qquad{}}set mid to the integer part of (first + last) /2 
+
+\texttt{\qquad{}}If the mid name precedes the wanted name then 
+
+\texttt{\qquad{}\qquad{}}set first to mid + 1 
+
+\texttt{\qquad{}}else 
+
+\texttt{\qquad{}\qquad{}}set last to mid - 1
+
+\texttt{\qquad{}}endif 
+
+until first > last or midth name is the wanted name%
+\end{minipage}
+\begin{enumerate}
+\item If 142 names are stored in the array, and JOSEPH is the 44th name,
+state the elements of the array that are examined when searching for
+JOSEPH. \hfill{}{[}4{]}
+\item If a search is made for a name that is not in the array, what is the
+largest number of elements that might need to be examined before one
+could say that the name is not present? Explain how you arrive at
+your answer. \hfill{}{[}3{]}
+\end{enumerate}

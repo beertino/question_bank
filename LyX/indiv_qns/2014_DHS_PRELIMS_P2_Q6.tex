@@ -1,0 +1,45 @@
+\item \textbf{{[}DHS/PRELIM/9597/2014/P2/Q6{]} }
+
+While English is the official working language in Singapore, beneficiaries
+of the PGP are elderly and a significant segment of them do not speak
+or understand English. As a multi-racial society, the pioneer generation
+also consists of Chinese, Malays and Indians. 
+\begin{enumerate}
+\item What is Unicode and why is it an appropriate representation for PGP
+information compared to ASCII? \hfill{}{[}3{]}
+\item Give two disadvantages of using Unicode in this context. \hfill{}
+{[}2{]}
+\end{enumerate}
+Mailing information of the pioneers is currently held in a sequential
+file in NRIC order: 
+\noindent \begin{center}
+\texttt{<NRIC><Statutory name><Address line><Postal code> }
+\par\end{center}
+
+Postal code is a 6-digit string representing the geographic location
+of an address. To mail the PGP information to the pioneers efficiently,
+three methods are proposed: 
+\begin{itemize}
+\item M1 - Sort the contents of the sequential file using quick sort on
+the postal code field. 
+\item M2 - Reorganise the contents of the sequential file to a linked list
+of linked lists in ascending postal code order. Each node of the linked
+list points to a linked list of addresses with the same postal code. 
+\item M3 - Reorganize the contents of the sequential file to a binary search
+tree using postal code as the key field. Each node in the binary search
+tree points to a linked list of addresses with the same postal code. 
+\end{itemize}
+\begin{enumerate}
+\item[(c)]  Why is quick sort appropriate or inappropriate for method M1? \hfill{}{[}3{]}
+\item[(d)]  Draw diagrams to represent the scenario in 
+\begin{enumerate}
+\item method M2 using linked list 
+\item method M3 using binary tree 
+\end{enumerate}
+Your diagrams should contain at least 3 nodes for each scenario. \hfill{}
+{[}4{]}
+\item[(e)]  Write an algorithm to insert a new entry to the linked list in method
+M2, assuming a successful appeal. \hfill{} {[}4{]}
+\item[(f)]  Write an algorithm to delete an entry from the binary search tree
+in method M3, assuming the demise of a pioneer. \hfill{}{[}4{]}
+\end{enumerate}

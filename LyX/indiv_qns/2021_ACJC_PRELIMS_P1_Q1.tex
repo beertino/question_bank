@@ -1,0 +1,160 @@
+\item \textbf{{[}ACJC/PRELIM/9569/2021/P1/Q1{]} }
+
+A famous restaurant only accommodates one seating daily from 6.00
+pm to 8.00 pm. It has 10 tables, each with a maximum capacity between
+2 and 8 people. Advanced reservation is required to dine in at the
+restaurant. 
+
+The owner of the restaurant decides to write a program to handle reservations.
+As a trial, it can only take a booking for one evening only. 
+
+A procedure to initialise the arrays \texttt{MaxSize}, \texttt{IsBooked}
+and \texttt{GroupSize} has been defined. The indexes of each array
+corresponds to the table number.
+
+\begin{tabular}{|c|c|}
+\multicolumn{1}{c}{Index} & \multicolumn{1}{c}{\texttt{MaxSize}}\tabularnewline
+\hline 
+1 & 2\tabularnewline
+\hline 
+2 & 2\tabularnewline
+\hline 
+3 & 4\tabularnewline
+\hline 
+4 & 4\tabularnewline
+\hline 
+5 & 4\tabularnewline
+\hline 
+6 & 6\tabularnewline
+\hline 
+7 & 6\tabularnewline
+\hline 
+8 & 6\tabularnewline
+\hline 
+9 & 8\tabularnewline
+\hline 
+10 & 8\tabularnewline
+\hline 
+\end{tabular}%
+\begin{tabular}{|c|c|}
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{\texttt{IsBooked}}\tabularnewline
+\hline 
+1 & FALSE\tabularnewline
+\hline 
+2 & FALSE\tabularnewline
+\hline 
+3 & FALSE\tabularnewline
+\hline 
+4 & FALSE\tabularnewline
+\hline 
+5 & FALSE\tabularnewline
+\hline 
+6 & FALSE\tabularnewline
+\hline 
+7 & FALSE\tabularnewline
+\hline 
+8 & FALSE\tabularnewline
+\hline 
+9 & FALSE\tabularnewline
+\hline 
+10 & FALSE\tabularnewline
+\hline 
+\end{tabular}%
+\begin{tabular}{|c|c|}
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{\texttt{GroupSize}}\tabularnewline
+\hline 
+1 & \tabularnewline
+\hline 
+2 & \tabularnewline
+\hline 
+3 & \tabularnewline
+\hline 
+4 & \tabularnewline
+\hline 
+5 & \tabularnewline
+\hline 
+6 & \tabularnewline
+\hline 
+7 & \tabularnewline
+\hline 
+8 & \tabularnewline
+\hline 
+9 & \tabularnewline
+\hline 
+10 & \tabularnewline
+\hline 
+\end{tabular}
+
+The procedure \texttt{BookTable} is shown below. When a booking enquiry
+is made, the number of customers is keyed in. 
+
+\fbox{\begin{minipage}[t]{0.8\columnwidth}%
+\texttt{01 PROCEDURE BookTable }
+
+\texttt{02 \qquad{}DECLARE NumberOfCustomers, TableNumber : INTEGERS }
+
+\texttt{03 \qquad{}DECLARE Found : BOOLEAN}
+
+\texttt{04 \qquad{}INPUT NumberOfCustomers }
+
+\texttt{05 \qquad{}TableNumber \textleftarrow{} 0 }
+
+\texttt{06 \qquad{}FOUND \textleftarrow{} False }
+
+\texttt{07 \qquad{}REPEAT }
+
+\texttt{08 \qquad{}\qquad{}TableNumber \textleftarrow{} TableNumber
++ 1 }
+
+\texttt{09 \qquad{}\qquad{}IF MaxSize{[}TableNumber{]} > NumberOfCustomers
+AND IsBooked{[}TableNumber{]} = FALSE }
+
+\texttt{10 \qquad{}\qquad{}\qquad{}THEN }
+
+\texttt{11 \qquad{}\qquad{}\qquad{}\qquad{}Found \textleftarrow{}
+TRUE }
+
+\texttt{12 \qquad{}\qquad{}ENDIF }
+
+\texttt{13 \qquad{}UNTIL Found = TRUE AND TableNumber = 10 }
+
+\texttt{14 \qquad{}\qquad{}IF Found = FALSE }
+
+\texttt{15 \qquad{}\qquad{}\qquad{}THEN }
+
+\texttt{16 \qquad{}\qquad{}\qquad{}OUTPUT \textquotedbl No tables
+with enough seats available.\textquotedbl{} }
+
+\texttt{17 \qquad{}\qquad{}\qquad{}ELSE }
+
+\texttt{18 \qquad{}\qquad{}\qquad{}\qquad{}GroupSize{[}TableNumber{]}
+\textleftarrow{} NumberOfCustomers }
+
+\texttt{19 \qquad{}\qquad{}\qquad{}\qquad{}OUTPUT \textquotedbl Booking
+is successful! Table no:\textquotedbl , TableNumber }
+
+\texttt{20 \qquad{}ENDIF }
+
+\texttt{21 ENDPROCEDURE}%
+\end{minipage}}
+\begin{enumerate}
+\item There are two errors and one missing line of code in the procedure
+above.
+\begin{enumerate}
+\item Name the type of the errors. \hfill{}{[}1{]}
+\item Describe the errors and the changes required to correct them. \hfill{}{[}3{]}
+\item Write the missing line of code and state where it should be located.
+\hfill{}{[}2{]}
+\end{enumerate}
+\item Once the procedure \texttt{BookTable} is able to run correctly, the
+owner decides to improve its functionality.
+
+The procedure should ask the user to input the name and the mobile
+number of the person making the reservation when a table with enough
+seats can be found.
+
+Name and describe two data validation techniques that can be applied
+to any of the inputs mentioned above.\hfill{} {[}2{]}
+\item Explain the difference in the type of memory allocation for an array
+and a linked list. \hfill{}{[}2{]}
+\end{enumerate}

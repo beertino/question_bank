@@ -1,0 +1,66 @@
+\item \textbf{{[}DHS/PRELIM/9597/2018/P1/Q1{]} }
+
+The file \texttt{LOG.TXT} contains the access log entries of an organisation's
+website from 0000 to 1800 hours on 1 August 2018.
+
+The entries have the following format: 
+\begin{enumerate}
+\item[1.]  \textbf{host} (domain name or IP address) making the request.
+\item[2.]  \textbf{timestamp} in the format \textquotedbl DAY MON DD HH:MM:SS
+YYYY\textquotedbl , where \textbf{DAY} is the day of the week, \textbf{MON}
+is the name of the month, \textbf{DD} is the day of the month, \textbf{HH:MM:SS}
+is the time of day using a 24-hour clock, and \textbf{YYYY} is the
+year. The timezone is -0400.
+\item[3.]  \textbf{request} in quotes. 
+\item[4.]  \textbf{HTTP reply status code}. 
+\item[5.]  \textbf{bytes in the reply}.
+\end{enumerate}
+
+\subsection*{Task 1.1 }
+
+Determine the top 5 hosts which accessed the website during this period,
+in descending frequency order.
+
+Sample output: 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{Top 5 hosts: }
+
+\texttt{1 139.230.35.135 ~~~~~~~~~~~187}
+
+\texttt{2 ns2.sharp.co.jp ~~~~~~~~~~95 }
+
+\texttt{3 194.157.109.130 ~~~~~~~~~~62 }
+
+\texttt{3 ix-dfw12-08.ix.netcom.com 62 }
+
+\texttt{4 piweba1y.prodigy.com ~~~~~55 }
+
+\texttt{5 205.163.36.61 ~~~~~~~~~~~~30}%
+\end{minipage}
+
+\subsection*{Evidence 1 }
+
+Program code.\hfill{} {[}9{]}
+
+\subsection*{Evidence 2 }
+
+Screenshot. \hfill{}{[}1{]}
+
+\subsection*{Task 1.2}
+
+Determine the host which returned the largest reply size and the largest
+reply size.
+
+Sample output: 
+
+\texttt{slip4086.sirius.com 12345}
+
+\subsection*{Evidence 3 }
+
+Program code.\hfill{} {[}4{]}
+
+\subsection*{Evidence 4 }
+
+Screenshot. \hfill{}{[}1{]}

@@ -1,0 +1,124 @@
+\item \textbf{{[}HCI/PRELIM/9597/2014/P1/Q2{]} }
+
+The following is a pseudocode algorithm for the quick sort function. 
+
+The function takes in an array and returns a sorted array in \textbf{ascending}
+order. The algorithm works for most input but is missing out on a
+few edge cases. 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{FUNCTION quicksort(array) }
+
+\texttt{\qquad{}if array length = 1 }
+
+\texttt{\qquad{}\qquad{}return array }
+
+\texttt{\qquad{}select and remove a pivot value from array }
+
+\texttt{\qquad{}create empty subarrays less and greater }
+
+\texttt{\qquad{}for each item in array}
+
+\texttt{\qquad{}\qquad{}if item < pivot }
+
+\texttt{\qquad{}\qquad{}\qquad{}append item to less }
+
+\texttt{\qquad{}\qquad{}else }
+
+\texttt{\qquad{}\qquad{}\qquad{}append item to greater}
+
+\texttt{\qquad{}return quicksort(less) + pivot + quicksort(greater) }%
+\end{minipage}
+
+\subsection*{Task 2.1 }
+
+Write program code for this algorithm including all the amendments
+you would make to: 
+\begin{itemize}
+\item make the function work for all cases 
+\item adhere to good programming style 
+\end{itemize}
+Use the \texttt{Team} array sample data available from text file \texttt{SPORT+NAME+TEAM.txt}
+and paste this into your program code.
+
+\subsection*{Evidence 5: }
+
+Your program code.\hfill{} {[}6{]}
+
+\subsection*{Evidence 6: }
+
+One screenshot showing the output from running the program code for
+array Team.\hfill{} {[}1{]}
+
+The following is a pseudocode algorithm of a binary search written
+by a student to search for an item in an array Sport. This array stores
+string data arranged in ascending order and has a final subscript
+MAX. 
+
+The algorithm is poorly designed and also contains errors. 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{Enter k }
+
+\texttt{A = 1 }
+
+\texttt{B = MAX }
+
+\texttt{While not found }
+
+\texttt{\qquad{}C = (A+B) DIV 2 }
+
+\texttt{\qquad{}If Sport(C) = k }
+
+\texttt{\qquad{}\qquad{}Print \textquotedblleft Found\textquotedblright{} }
+
+\texttt{\qquad{}Else If Sport(C) < k }
+
+\texttt{\qquad{}\qquad{}B = C-1 }
+
+\texttt{\qquad{}Else }
+
+\texttt{\qquad{}\qquad{}A = C+1 }
+
+\texttt{\qquad{}End-If-Else }
+
+\texttt{End-While }%
+\end{minipage}
+
+\subsection*{Task 2.2 }
+
+Write program code for this algorithm including all the changes you
+would make to: 
+\begin{itemize}
+\item follow good programming practice 
+\item make the algorithm work properly 
+\end{itemize}
+Use the sample array data available from text file \texttt{SPORT+NAME+TEAM.txt}
+and paste this into your programming code. 
+
+\subsection*{Evidence 7: }
+
+Your program code. \hfill{}{[}7{]}
+
+\subsection*{Task 2.3 }
+
+The binary search code could be useful for many programs where a search
+routine is required. 
+
+Re-design the program code to have a procedure \texttt{BinarySearch}.
+This procedure should have parameters which allow it to be used for
+\uline{any} sorted array of string data. 
+
+Use the data provided in the array \texttt{Name} from text file \texttt{SPORT+NAME+TEAM.txt}
+and test the procedure with appropriate test cases to ensure it is
+working properly. 
+
+\subsection*{Evidence 8: }
+
+Your amended program code. \hfill{}{[}3{]}
+
+\subsection*{Evidence 9: }
+
+A screenshot for each appropriate test case. \hfill{}{[}3{]}

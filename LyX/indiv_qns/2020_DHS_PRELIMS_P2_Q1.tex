@@ -1,0 +1,61 @@
+\item \textbf{{[}DHS/PRELIM/9569/2020/P2/Q1{]} }
+
+On 28 June 2020, nearly 10,000 TraceTogether tokens were distributed
+to vulnerable seniors. The TraceTogether token supplements the TraceTogether
+mobile app by extending contact tracing to groups in the community
+who do not have smart phones and those whose phones do not work well
+with the TraceTogether app. 
+
+The TraceTogether token is designed to capture proximity data based
+on Bluetooth signals. Every five minutes, it scans to detect other
+TraceTogether users on the token or the app. The more 'hits' between
+two TraceTogether users, the more likely they are in close proximity
+for an extended period of time. Proximity can be estimated by the
+strength of the Bluetooth signal. The closer users are to one another,
+the stronger the signal and vice versa. 
+
+There are only four types of data contained in the token: 
+\begin{itemize}
+\item user's randomised ID 
+\item randomised ID of any other user in proximity 
+\item Bluetooth signal measured using RSSI{*} 
+\item timestamp of the encounter. 
+\end{itemize}
+{*}Received Signal Strength Indicator (RSSI) is a measure of the power
+level at the receiver. A more negative number indicates a device is
+further away. For example, a value of -20 to -30 indicates a device
+is close while a value of -120 indicates it is near the limit of detection. 
+
+It is important to note that these IDs do not refer to NRIC number,
+but randomised and anonymised IDs linked to a personal identifier
+like a mobile number. Also, no data is extracted unless a user has
+tested positive for COVID-19. From there, MOH has a special software
+key that can unlock the device and reveal the data for use in contact
+tracing. 
+
+A senior is tested positive for COVID-19 and MOH needs to perform
+contact tracing. With the user's permission, data from its TraceTogether
+token is retrieved and extracted to the file \texttt{TOKEN.txt} and
+has the following structure: 
+
+\texttt{UserRandomisedID, OtherRandomisedID, RSSI, Timestamp} 
+
+Timestamp is in the format YYYY-MM-DD HH:MM:SS. 
+
+\subsection*{Task 1.1 }
+
+Prolonged exposure is currently defined as being in close contact
+for at least 15 minutes within a single session. For simplicity, you
+may assume close contact as a Bluetooth signal strength of greater
+than or equal to -30. Generate the list of close contacts' randomised
+IDs which MOH needs to perform contact tracing. \hfill{}{[}10{]}
+
+\subsection*{Task 1.2 }
+
+Another 3 seniors with randomised ID 75348257, 45174591 and 02548147
+have also been tested as COVD-19 positive. Write a Boolean function
+\texttt{is\_close\_contact(rid1, rid2)} to determine if they are close
+contacts of 57345286. If yes, your function should also return the
+date(s) they are under prolonged exposure with each other, the start
+and end times as well as the total time in hours and minutes they
+are in close contact. \hfill{}{[}10{]}

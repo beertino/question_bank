@@ -1,0 +1,129 @@
+\item \textbf{{[}DHS/PRELIM/9597/2016/P1/Q3{]} }
+
+A Pokemon Go fan who nicknames himself Pokeboy wishes to manage his
+Pokemon collection using a binary search tree. Each binary search
+tree node stores the name together with the numbers of that particular
+Pokemon and candies collected, as well as a reference to a linked
+list. Each linked list node stores the combat power (CP) of a Pokemon.
+The binary search tree is organised in ascending Pokemon name order.
+Each linked list is organised in descending order of CP. For ease
+of reference, we shall name this composite data structure Poketree. 
+
+\subsection*{Task 3.1 }
+
+Using object-oriented programming, construct appropriate classes to
+initialise, insert and display the contents of the Poketree. In your
+main driver program, write code to initialise a Poketree with the
+first Pokemon collected which is randomly generated from the contents
+in the file \texttt{POKEMONS.TXT} as well as a randomly generated
+CP in the range 10 to 200 inclusive. When a Pokemon is caught, 3 candies
+of that kind are also added to the candies count of the Poketree binary
+search tree node.
+
+\subsection*{Evidence 9: }
+
+Program code for class definition, initialisation and display methods.\hfill{}
+{[}7{]}
+
+\subsection*{Evidence 10:}
+
+Screenshot output to show contents of Poketree with first Pokemon
+inserted.\hfill{} {[}1{]}
+
+\subsection*{Task 3.2 }
+
+Write a class method \texttt{insert()} and the necessary main driver
+program code to insert another 23 randomly generated Pokemons and
+their corresponding CPs into the Poketree. 
+
+\subsection*{Evidence 11: }
+
+Program code for Task 3.2.\hfill{} {[}4{]}
+
+\subsection*{Evidence 12:}
+
+Screenshot to show updated contents of Poketree.\hfill{} {[}1{]}
+
+Apart from collecting Pokemons, one can also evolve Pokemons. When
+a new Pokemon is evolved, its previous incarnation is deleted from
+the Poketree and its new incarnation either inserted (if its kind
+is not previously collected) or updated (if its kind is previously
+collected) to the Poketree. Evolving also requires a set amount and
+type of Pokemon candy. If there is insufficient Pokemon candies, Pokeboy's
+preferred action is to exchange (i.e. delete) existing Pokemons of
+the same species for candies, starting from the Pokemon with the lowest
+CP. Each Pokemon can be exchanged for one candy. Pokeboy also wishes
+to keep at least 2 Pokemons of the same species in his collection
+(well he is a Pokemon fan). The text file \texttt{CANDIES.TXT} contains
+the candies requirement for evolvement. 
+
+\subsection*{Task 3.3 }
+
+Write a Boolean class method \texttt{can\_evolve(pokemon)} to determine
+if a particular Pokemon can evolve by Pokeboy's preference. A Pokemon
+can evolve if there are sufficient candies or it is possible to exchange
+candies, leaving a minimum of 2 Pokemons of that species.
+
+Write a class method evolve(pokemon) which will evolve a Pokemon using
+\texttt{can\_evolve(pokemon)}. 
+
+Add necessary class method(s) and main driver program code to evolve
+all evolvable Pokemons. 
+
+\subsection*{Evidence 13: }
+
+Program code for Task 3.3.\hfill{} {[}7{]}
+
+\subsection*{Evidence 14:}
+
+Screenshot(s) to show evolution.\hfill{} {[}1{]}
+
+\subsection*{Task 3.4 }
+
+Write a class method \texttt{most\_poke()} to output the frequency
+and most collected Pokemon(s) collected by Pokeboy. 
+
+Add necessary program code to exercise \texttt{most\_poke()}.
+
+\subsection*{Evidence 15: }
+
+Program code for Task 3.4.\hfill{} {[}4{]}
+
+\subsection*{Evidence 16:}
+
+Screenshot for Task 3.4. \hfill{}{[}1{]}
+
+\subsection*{Task 3.5}
+
+Pokeboy aspires to join the Catch Them All club. The Catch Them All
+club is a group of elites who have managed to catch every species
+of Pokemon at least once. Write a class method \texttt{catch\_them\_all()}
+to either output the message \textquotedbl Welcome to the club! You
+have caught them all!\textquotedbl{} or output the number and remaining
+Pokemon names yet to be caught.
+
+Add necessary program code to exercise \texttt{catch\_them\_all()}. 
+
+\subsection*{Evidence 17:}
+
+Program code for Task 3.5.\hfill{} {[}6{]}
+
+\subsection*{Evidence 18: }
+
+Screenshot for annotated test cases. \hfill{}{[}2{]}
+
+\subsection*{Task 3.6 }
+
+After some time, it becomes necessary to reorganise the binary search
+tree to ensure optimal search performance. Write program code to rebalance
+the binary search tree and include as comments your strategy to do
+this. You should output the roots and heights of the old and new binary
+search trees.
+
+\subsection*{Evidence 19:}
+
+Program code for Task 3.6.\hfill{} {[}5{]}
+
+\subsection*{Evidence 20:}
+
+Screenshot.\hfill{} {[}1{]}

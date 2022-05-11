@@ -1,0 +1,56 @@
+\item \textbf{{[}DHS/PRELIM/9597/2015/P2/Q3{]} }
+
+Some game tournament such as badminton, bridge, chess, Pokemon, Scabble,
+and many eSports employ the Swiss system of play, in which players
+are not eliminated after each round and are paired with players with
+the same number of wins or as close as possible. The following shows
+an example of a 16-player Scrabble tournament. Assume that all games
+have a winner and there are no draws. 
+
+First round pairing is by random draw i.e there will be 8 random pairs.
+After round 1, there will be a group of 8 players with a score of
+1 (win), and a group of 8 players with a score of 0 (loss). 
+
+For the second round, players in each scoring group will be paired
+against each other -- 1\textquoteright s versus 1\textquoteright s
+and 0\textquoteright s versus 0\textquoteright s.
+
+After round 2, there will be three scoring groups: 
+\begin{itemize}
+\item 4 players who have won both games and have 2 points 
+\item 8 players who have won a game and lost a game and have 1 point
+\item 4 players who have lost both games and have no points. 
+\end{itemize}
+Again, for the third round, players are paired with players in their
+scoring group. After round 3, the typical scoring groups will be: 
+\begin{itemize}
+\item 2 players who have won 3 games (3 points) 
+\item 6 players with 2 wins (2 points) 
+\item 6 players with 1 win (1 point) 
+\item 2 players with no wins (0 points) 
+\end{itemize}
+For the fourth (and in this case final) round, the process repeats,
+and players are matched with others in their scoring group. Note that
+there are only 2 players who have won all of their games so far --
+they will be matched against each other for the \textquotedbl championship\textquotedbl{}
+game. After the final round, we will have something that looks like
+this: 
+\begin{itemize}
+\item 1 player with 4 points -- the winner! 
+\item 4 players with 3 points -- tied for second place
+\item 6 players with 2 points 
+\item 4 players with 1 point 
+\item 1 player with 0 points 
+\end{itemize}
+The Swiss system produces a clear winner in just a few rounds, no
+one is eliminated and almost everyone wins at least one game, but
+there are many ties to deal with. 
+\begin{enumerate}
+\item Propose and justify a suitable data structure to store and initialise
+the player names, intermediate and final opponents, points and results
+of the 16-player tournament. You may denote the players' names with
+the alphabets A -- P. \hfill{} {[}3{]}
+\item Devise an algorithm to update the data structure in (a) and determine
+the final ranks of the players. Players who are tied will have their
+names output in alphabetical order. The next rank after 2 is 3. \hfill{}{[}7{]}
+\end{enumerate}

@@ -1,0 +1,69 @@
+\item \textbf{{[}DHS/PRELIM/9569/2020/P2/Q3{]} }
+
+A school needs a web application for teachers to use during English
+lessons to record and view students' marks for weekly in-class presentations. 
+
+The teacher should be required to login and should only be able to
+input and view any information for students of the classes they teach. 
+
+The maximum score per presentation is 100. Each English lesson is
+always taught by the same teacher, each English lesson would only
+have one teacher, and each class would only have one English lesson
+per day. 
+
+In a training session conducted for teachers, a demo version of the
+app would be prepopulated with demo data as shown in the following
+table. 
+\noindent \begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+\textbf{Teacher's username } & \textbf{Teacher's password } & \textbf{Index number of student } & \textbf{Student's class } & \textbf{Date of presentation } & \textbf{Marks obtained}\tabularnewline
+\hline 
+\hline 
+\texttt{mr\_raj } & \texttt{cr53aYJP } & \texttt{3 } & \texttt{19S306 } & \texttt{20200315 } & \texttt{95}\tabularnewline
+\hline 
+\texttt{mr\_james } & \texttt{8orjqiZc } & \texttt{24 } & \texttt{19S301 } & \texttt{20200315 } & \texttt{60}\tabularnewline
+\hline 
+\texttt{mdm\_rahayu } & \texttt{7iqndCjW} & \texttt{2 } & \texttt{19S302 } & \texttt{20200315 } & \texttt{35.5}\tabularnewline
+\hline 
+\texttt{mr\_james } & \texttt{8orjqiZc } & \texttt{11 } & \texttt{19S304 } & \texttt{20200325} & \texttt{60}\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+You have been tasked to create this web application. The data file
+\texttt{DEMOAPP.txt} contains the demo data. 
+
+\subsection*{Task 3.1 }
+
+Create the user interface using HTML and CSS for the application.
+The fields should include: 
+\begin{itemize}
+\item TeacherUsername 
+\item TeacherPassword 
+\item StudentIndex 
+\item Class 
+\item PresentationDate 
+\item Marks The information should be presented in a tabular form. \hfill{}{[}7{]}
+\end{itemize}
+
+\subsection*{Task 3.2 }
+
+Create a normalised relational database scheme for this application.
+Provide the SQL statements for the creation of the tables. \hfill{}{[}6{]}
+
+\subsection*{Task 3.3 }
+
+Populate the table(s) with the demo data described above. Provide
+SQL statements for the insertion of the records in \texttt{task3.sql}.\hfill{}
+{[}4{]}
+
+\subsection*{Task 3.4 }
+
+Provide the processing logic in \texttt{app.py} and the associated
+template file(s). \textcolor{white}{.}\hfill{}{[}13{]}
+
+\subsection*{Task 3.5 }
+
+Using SQL or otherwise, determine and display the total marks scored
+by each class to the appropriate template file. \textcolor{white}{.}\hfill{}{[}5{]}

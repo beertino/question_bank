@@ -1,0 +1,94 @@
+\item \textbf{{[}RVHS/PRELIM/9597/2017/P1/Q3{]} }
+
+\textbf{Unsorted Linked List}
+
+The classes Node and LinkedList is partially implemented for you according
+to the specification given below. The attribute start of class LinkedList
+stores the first node instance of the linked list. If the linked list
+has no node, start has the value of None. Functions in bold are not
+implemented. 
+\begin{center}
+\texttt{}%
+\begin{tabular}{|l|}
+\hline 
+\texttt{\hspace{0.25\columnwidth}Node}\tabularnewline
+\hline 
+\texttt{-data : STRING}\tabularnewline
+\texttt{-next : Node}\tabularnewline
+\hline 
+\texttt{+constructor()}\tabularnewline
+\texttt{+set\_data(data)}\tabularnewline
+\texttt{+get\_data()}\tabularnewline
+\texttt{+set\_next(node)}\tabularnewline
+\texttt{+get\_next()}\tabularnewline
+\texttt{+\_\_str\_\_()}\tabularnewline
+\hline 
+\end{tabular}\texttt{}%
+\begin{tabular}{|l|}
+\hline 
+\texttt{\hspace{0.25\columnwidth}LinkedList}\tabularnewline
+\hline 
+\texttt{-start : Node}\tabularnewline
+\tabularnewline
+\hline 
+\texttt{+constructor()}\tabularnewline
+\texttt{+set\_start(node)}\tabularnewline
+\texttt{+get\_start()}\tabularnewline
+\texttt{\textbf{+insert\_data(data)}}\tabularnewline
+\texttt{\textbf{+transfer(linkedlist)}}\tabularnewline
+\texttt{\textbf{+delete\_pos(pos)}}\tabularnewline
+\texttt{+display() }\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+\subsection*{Task 3}
+
+Implement the following \texttt{LinkedList} class functions according
+to its specification given: 
+\begin{itemize}
+\item \texttt{+insert\_data(data) : }This function takes a string \texttt{data}
+as input and uses its value to create a new \texttt{Node} instance.
+The new Node instance is then inserted as the first node of the linked
+list\texttt{.}
+\item \texttt{+transfer(llist) :} This function takes a \texttt{LinkedList}
+instance \texttt{llist} as input and transfers all its \texttt{Node}
+instances in the same order to the \texttt{LinkedList} instance that
+calls for this function. 
+
+For example: 
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{A:'boy'->'man'->'woman'}
+
+\texttt{B:'girl'->'baby' }
+
+\texttt{>\textcompwordmark >\textcompwordmark > A.transfer(B) }
+
+\texttt{A: 'boy'->'man'->'woman'->'girl'->'baby'}
+
+\texttt{B: None}%
+\end{minipage}
+\item \texttt{+delete\_pos(pos) : }This function takes in an integer pos
+as input and deletes the node at position pos. Take note that the
+first node of the linked list is position 1.
+
+For example: 
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{A:'boy'->'man'->'woman' }
+
+\texttt{>\textcompwordmark >\textcompwordmark > A. delete\_pos(2) }
+
+\texttt{A:'boy'->'woman'}%
+\end{minipage}
+\end{itemize}
+
+\subsection*{Evidence 11 }
+
+Program code for: 
+\begin{itemize}
+\item \texttt{insert\_data(node)} \hfill{}{[}3{]}
+\item \texttt{transfer(linkedlist) }\hfill{}{[}3{]}
+\item \texttt{delete\_pos()}\hfill{} {[}4{]}
+\end{itemize}

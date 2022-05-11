@@ -1,0 +1,60 @@
+\item \textbf{{[}ACJC/PRELIM/9569/2021/P1/Q4{]} }
+
+Merge sort and bubble sort are two sorting algorithms that can be
+applied to sort a list of integers in ascending order.
+\begin{enumerate}
+\item By briefly comparing the operation of merge sort and bubble sort,
+state which algorithm would be more efficient. \hfill{}{[}3{]}
+\end{enumerate}
+The pseudocode for the recursive \texttt{MergeSortDesc} function is
+shown below, which takes in a list of integers and returns a new list
+with the integers sorted in descending order. It makes use of the
+\texttt{MergeDesc} function in line \texttt{10} that merges two lists
+of integers sorted in descending order into a single list of integers
+sorted in descending order as well.
+
+\fbox{\begin{minipage}[t]{0.8\columnwidth}%
+\texttt{01 FUNCTION MergeSortDesc(MyList: LIST) RETURNS LIST }
+
+\texttt{02 \qquad{}MaxIndex \textleftarrow{} LENGTH(MyList) }
+
+\texttt{03 \qquad{}\qquad{}IF ......A...... }
+
+\texttt{04 \qquad{}\qquad{}\qquad{}THEN }
+
+\texttt{05 \qquad{}\qquad{}\qquad{}Half \textleftarrow{} ......B...... }
+
+\texttt{06 \qquad{}\qquad{}\qquad{}LeftList \textleftarrow{} LEFT(MyList,
+Half) }
+
+\texttt{07 \qquad{}\qquad{}\qquad{}RightList \textleftarrow{} RIGHT(MyList,
+Half) }
+
+\texttt{08 \qquad{}\qquad{}\qquad{}SortedLeftList \textleftarrow{}
+MergeSortDesc(LeftList) }
+
+\texttt{09 \qquad{}\qquad{}\qquad{}SortedRightList \textleftarrow{}
+MergeSortDesc(RightList) }
+
+\texttt{10 \qquad{}\qquad{}\qquad{}Result \textleftarrow{} MergeDesc(SortedLeftList,
+SortedRightList) }
+
+\texttt{11 \qquad{}\qquad{}ELSE }
+
+\texttt{12 \qquad{}\qquad{}\qquad{}......C...... }
+
+\texttt{13 \qquad{}\qquad{}ENDIF }
+
+\texttt{14 \qquad{}\qquad{}RETURN Result }
+
+\texttt{15 ENDFUNCTION}%
+\end{minipage}}
+\begin{enumerate}
+\item[(b)] State what is meant by a \textbf{recursive} function. \hfill{}{[}2{]}
+\item[(c)] Write the pseudocode for \texttt{A}, \texttt{B} and \texttt{C} in
+the algorithm. \hfill{}{[}3{]}
+\item[(d)] Describe the operation of the \texttt{MergeDesc} function.
+
+Assume that the function does not modify the two input lists.\hfill{}
+{[}4{]}
+\end{enumerate}

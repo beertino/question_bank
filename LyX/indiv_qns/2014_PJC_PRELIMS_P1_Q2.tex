@@ -1,0 +1,80 @@
+\item \textbf{{[}PJC/PRELIM/9597/2014/P1/Q2{]} }
+
+A pseudocode algorithm for a binary search on an array \texttt{CITY}
+is shown below. This array stores records of city, and its country
+and population. Array is sorted by name of city. It has an initial
+subscript 1 and final subscript \texttt{MAX}. The algorithm can be
+improved to make it clearer and more efficient. 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{Set element\_found to false }
+
+\texttt{Set low\_element to 1 }
+
+\texttt{Set high\_element to MAX }
+
+\texttt{\textbf{DOWHILE}}\texttt{ (NOT element\_found)}
+
+\texttt{\qquad{}index = (low\_element + high\_element)/2 }
+
+\texttt{\qquad{}}\texttt{\textbf{IF}}\texttt{ CITY(index) = input\_value
+}\texttt{\textbf{THEN}}\texttt{ }
+
+\texttt{\qquad{}\qquad{}Set element\_found to true }
+
+\texttt{\qquad{}}\texttt{\textbf{ELSE}}\texttt{ }
+
+\texttt{\qquad{}\qquad{}}\texttt{\textbf{IF}}\texttt{ input\_value
+<= CITY(index) }\texttt{\textbf{THEN}}\texttt{ }
+
+\texttt{\qquad{}\qquad{}\qquad{}high\_element = index \textendash{}
+1 }
+
+\texttt{\qquad{}\qquad{}}\texttt{\textbf{ELSE}}\texttt{ }
+
+\texttt{\qquad{}\qquad{}\qquad{}low\_element = index + 1 }
+
+\texttt{\qquad{}\qquad{}}\texttt{\textbf{ENDIF}}
+
+\texttt{\qquad{}}\texttt{\textbf{ENDIF}}\texttt{ }
+
+\texttt{\textbf{ENDDO}}
+
+\texttt{\textbf{IF}}\texttt{ element\_found = true }\texttt{\textbf{THEN}}\texttt{ }
+
+\texttt{\qquad{}Print index}
+
+\texttt{\textbf{ELSE}}\texttt{ }
+
+\texttt{\qquad{}Print \textquotedbl sorry\textquotedbl{} }
+
+\texttt{ENDIF }%
+\end{minipage}
+
+\subsection*{Task 2.1 }
+
+Write program code for this algorithm and improve on clarity and efficiency.
+Include the sample array data available by reading from the file \texttt{CITY.csv}.
+If a city is found after searching, display the full record of the
+city, which includes country and population. 
+
+\subsection*{Evidence 5: }
+
+Your program code. \hfill{} {[}6{]}
+
+\subsection*{Evidence 6: }
+
+Produce a screenshot of running your program code, by searching for
+\texttt{\textbf{Istanbul}} and \texttt{\textbf{Aberdeen}}. \hfill{}
+{[}2{]}
+
+\subsection*{Task 2.2 }
+
+Write the binary search algorithm as a recursive function. Using comment
+lines, explain on your choice of parameters passed into the recursive
+function and return value, if any. 
+
+\subsection*{Evidence 7: }
+
+Your program code. \hfill{} {[}7{]}

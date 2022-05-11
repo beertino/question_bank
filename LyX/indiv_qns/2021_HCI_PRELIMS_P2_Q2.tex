@@ -1,0 +1,140 @@
+\item \textbf{{[}HCI/PRELIM/9569/2021/P2/Q2{]}}
+
+FlexiMSG provides messaging services. Information of the messages
+are logged into a file. The log records contain the phone numbers
+or IP address of the sender, the date which the service is being accessed,
+the status indicating whether the message has been sent and the type
+of application used. There are two different formats used: 
+
+\texttt{<IP address> <DD/MMM/YYYY> <Status> <App> }
+
+or 
+
+\texttt{<Phone number> <DD/MMM/YYYY> <Status>}
+
+Below is the log records in the file, \texttt{LOG.txt}: 
+
+\noindent %
+\noindent\fbox{\begin{minipage}[t]{1\columnwidth - 2\fboxsep - 2\fboxrule}%
+\texttt{54.36.149.41 22/Jan/2021 200 WA }
+
+\texttt{188.226.164.216 22/Jan/2021 0 FB }
+
+\texttt{92783423 22/Jan/2021 200 }
+
+\texttt{188.226.164.216 23/Jan/2021 0 FB }
+
+\texttt{88188293 23/Jan/2021 0 }%
+\end{minipage}}
+
+\subsubsection*{Task 2.1 }
+
+Write the SQL code to create database \texttt{ServiceLog.db} with
+the single table, \texttt{Log}. 
+
+The table will have the following fields of the given SQLite types: 
+\begin{itemize}
+\item \texttt{LogID} - primary key, an auto-incremented integer 
+\item \texttt{Sender} - the client internet address or phone number, text 
+\item \texttt{AccessDate} - the access date, text 
+\item \texttt{Status} - the status, integer 
+\item \texttt{AppType} - application type, text 
+\end{itemize}
+Save your SQL code as 
+
+\texttt{Task2\_1\_<your name>\_<center number>\_<index number>.sql}
+\hfill{}{[}2{]}
+
+\subsubsection*{Task 2.2 }
+
+FlexiMSG wants to use Python programming language and object-oriented
+programming to update the information in the log file into the database.
+
+Create the class \texttt{ServiceRecord} that will store the following: 
+\begin{itemize}
+\item \texttt{Sender} - stored as a string 
+\item \texttt{AccessDate} - stored as a string 
+\item \texttt{Status} - stored as integer, \texttt{0} or \texttt{200} 
+\item \texttt{AppTy}pe - stored as string value \texttt{'WA'} or \texttt{'FB'} 
+\end{itemize}
+The class has the following methods:
+\begin{itemize}
+\item \texttt{isSuccess()}- returns a Boolean value to indicate whether
+the message has been sent. 
+\begin{itemize}
+\item returns \texttt{True} if the \texttt{Status} is 200, otherwise returns
+\texttt{False} 
+\end{itemize}
+\item \texttt{getAppType()-} returns a string value to indicate the type
+of messaging application. 
+\begin{itemize}
+\item returns the value of \texttt{AppType} 
+\end{itemize}
+\end{itemize}
+Write program code to read in the information from \texttt{LOG.txt},
+creating an instance of the \texttt{ServiceRecord} class for each
+record and insert the information into \texttt{ServiceLog.db} database. 
+
+Save your program code as \texttt{Task2\_2\_<your name>\_<center number>\_<index
+number>.py} \hfill{}{[}8{]}
+
+\subsubsection*{Task 2.3 }
+
+FlexiMSG wants to publish the database content on a web page. 
+
+Create class \texttt{AppServiceRecord} which inherits from \texttt{ServiceRecord},
+such that: 
+\begin{itemize}
+\item \texttt{getAppType()}- returns the following values based on the value
+of \texttt{AppType} 
+\begin{itemize}
+\item \texttt{WA} - returns \texttt{'WHATSAPP'} 
+\item \texttt{FB} - returns \texttt{'FACEBOOK MESSENGER' }
+\end{itemize}
+\item \texttt{getSuccess()}- returns the following values based on the returned
+value of isSuccess() 
+\begin{itemize}
+\item \texttt{True} - returns \texttt{'SUCCESS'} 
+\item \texttt{False} - returns \texttt{'FAILED'} 
+\end{itemize}
+\end{itemize}
+Create class \texttt{SmsServiceRecord} which inherits from \texttt{ServiceRecord},
+such that: 
+\begin{itemize}
+\item \texttt{getAppType()}- always returns \texttt{'SHORT MESSAGE SERVICE' }
+\item \texttt{getSuccess()}- returns the following values based on the returned
+value of \texttt{isSuccess() }
+\begin{itemize}
+\item \texttt{True} - returns \texttt{'SUCCESS'} 
+\item \texttt{False} - returns \texttt{'FAILED'} 
+\end{itemize}
+\end{itemize}
+Save your program code to \texttt{Task2\_3\_<your name>\_<center number>\_<index
+number>.py}\hfill{} {[}4{]}
+
+\subsubsection*{Task 2.4 }
+
+Write a Python program and the necessary files to create a web application
+that enables the list of log records to be displayed. 
+
+For each record, the web page should include the: 
+\begin{itemize}
+\item \texttt{Sender }
+\item \texttt{AccessDate }
+\item \texttt{AppType} (either \texttt{WHATSAPP},\texttt{ FACEBOOK MESSENGER
+}or\texttt{ SHORT MESSAGE SERVICE}) 
+\item \texttt{Status} (\texttt{SUCCESS} or \texttt{FAILED}) 
+\end{itemize}
+Save your program code as 
+
+\texttt{Task2\_4\_<your name>\_<center number>\_<index number>.py }
+
+with any additional files/sub-folders as needed in a folder named 
+
+\texttt{Task2\_4\_<your name>\_<center number>\_<index number>}.\hfill{}
+{[}9{]}
+
+Run the web application and save the output of the program as 
+
+\texttt{Task2\_4\_<your name>\_<center number>\_<index number>.html}\hfill{}
+{[}1{]}

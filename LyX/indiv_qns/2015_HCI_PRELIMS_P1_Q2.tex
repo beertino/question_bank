@@ -1,0 +1,118 @@
+\item \textbf{{[}HCI/PRELIM/9597/2015/P1/Q2{]} }
+
+The Russian peasant algorithm is an alternative method to perform
+multiplication of whole numbers by consecutive application of doubling
+numbers, halving numbers and addition. 
+
+Consider the multiplication of \texttt{57} by \texttt{86} (= \texttt{4902}): 
+
+Write each number side by side: 
+\noindent \begin{center}
+\texttt{\sout{57 ~~86}}
+\par\end{center}
+
+Double the first number and halve the second number (by performing
+integer division by 2 i.e. drop the remainder).
+
+If the second number or halving result is even, cross out this entire
+row. Keep doubling, halving, and crossing out until the halving result
+is 1.
+\noindent \begin{center}
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{\sout{57 ~~86}}
+
+\texttt{\sout{114 ~43}}\texttt{ }
+
+\texttt{\sout{228 ~21}}
+
+\texttt{\sout{456 ~10}}
+
+\texttt{\sout{912 ~5 }}
+
+\texttt{\sout{1824 2 }}
+
+\texttt{\sout{3648 1}}\texttt{ }%
+\end{minipage}
+\par\end{center}
+
+Add up the remaining numbers in the first column. The total is the
+product of the original numbers. 
+\noindent \begin{center}
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{~~~114}
+
+\texttt{~~~228}
+
+\texttt{~~~912}
+
+\texttt{\uline{+ 3648 }}
+
+\texttt{~~4902}%
+\end{minipage}
+\par\end{center}
+
+
+\subsection*{Task 2.1 }
+
+Write a function to implement the Russian peasant multiplication algorithm.
+Test your function with the numbers \texttt{50} and \texttt{22}. 
+
+\subsection*{Evidence 3: }
+
+Your program code for Task 2.1. \hfill{} {[}7{]}
+
+\subsection*{Evidence 4: }
+
+Screenshot showing the output from running the program. \hfill{}
+{[}1{]}
+
+The Russian peasant algorithm is actually related to binary numbers.
+Doubling a decimal number is to shift its binary equivalent left,
+while halving a decimal number is to shift its binary equivalent right. 
+
+Consider the multiplication of \texttt{13} by \texttt{12} (\texttt{=
+156}) 
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{~~~~}In Binary\texttt{ ~~~~~~~~~~~~~}In Decimal\texttt{ }
+
+\texttt{~~~}\texttt{\sout{1101 1100}}\texttt{ ~~~~~~~~~~~}\texttt{\sout{13
+12}}\texttt{ }
+
+\texttt{~ }\texttt{\sout{11010 0110}}\texttt{ ~~~~~~~~~~~}\texttt{\sout{26
+6}}\texttt{ }
+
+\texttt{~110100 0011 ~~~~~~~~~~~52 3}
+
+\texttt{1101000 0001 ~~~~~~~~~~104 1 }
+
+\bigskip{}
+
+\texttt{110100 + 1101000 = 10011100 = 156 (in decimal) }%
+\end{minipage}
+
+\subsection*{Task 2.2 }
+
+Write a function \texttt{DecToBin()} to convert a decimal number to
+its binary equivalent.
+
+\subsection*{Evidence 5: }
+
+Your program code for Task 2.2. \hfill{}{[}3{]}
+
+\subsection*{Task 2.3}
+
+Implement the Russian peasant multiplication algorithm using binary
+numbers. Your program should accept 2 decimal numbers as input, convert
+them to binary, and then perform the necessary operations to output
+a binary string as the result. You should make use of your \texttt{DecToBin()}
+function in Task 2.2. 
+
+\subsection*{Evidence 6: }
+
+Your program code for Task 2.3. \hfill{} {[}8{]}
+
+\subsection*{Evidence 7: }
+
+One screenshot showing the output from running the program code. \hfill{}
+{[}1{]}

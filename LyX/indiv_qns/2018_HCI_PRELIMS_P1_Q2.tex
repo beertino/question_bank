@@ -1,0 +1,123 @@
+\item \textbf{{[}DHS/PRELIM/9597/2018/P1/Q2{]} }
+
+The International Bank Account Number (IBAN) is an international bank
+account identification standard used in many countries. It uses modulo
+arithmetic to perform validation. The IBAN consists of up to 34 alphanumeric
+characters, as follows: country code -- two letters check digits
+-- two digits, and basic bank account number -- up to 30 alphanumeric
+characters that are countryspecific An example of an IBAN in the United
+Kingdom Great Britain which is 22 characters is \texttt{GB82WEST12345698765432}
+(\texttt{GB} - country code, \texttt{82} - check digits) 
+
+The following is the IBAN check digits generation algorithm: 
+\begin{enumerate}
+\item[1.]  Initialize the two check digits by \texttt{00} (e.g. \texttt{GB}\texttt{\uline{00}}\texttt{WEST12345698765432}).
+\item[2.]  Move the four initial characters to the end of the string (e.g.
+\texttt{WEST12345698765432GB}\texttt{\uline{00}}). 
+\item[3.]  Replace each alphabet in the string with two digits, using the mapping
+A = 10, B = 11, C = 12, . . . . . , Z = 35 (i.e. ASCII value of uppercase
+letters - 55) (e.g. \texttt{\uline{32142829}}\texttt{12345698765432}\texttt{\uline{1611}}\texttt{00}). 
+\item[4.]  Convert the string to an integer. 
+\item[5.]  Calculate the remainder of dividing this number by 97 (e.g. \texttt{3214282912345698765432161100
+mod 97 = 16}).
+\item[6.]  Subtract the remainder from 98 to give the two check digits (e.g.
+check digits \texttt{= 98 - 16 = 82}). If the result is a single digit
+number, pad it with a leading 0 to make a two-digit number. 
+\end{enumerate}
+
+\subsection*{Task 2.1 }
+
+Write program code for the \texttt{CheckDigits} function using the
+following specification. 
+\noindent \begin{center}
+\texttt{FUNCTION CheckDigits (IBAN : STRING) : STRING }
+\par\end{center}
+
+The function has a single string parameter IBAN and returns a two-digit
+string result. Use the sample data provided in the text file \texttt{IBANS.txt}
+and paste this into your program code.
+
+\subsection*{Evidence 8 }
+
+Your program code. \hfill{}{[}6{]}
+
+\subsection*{Evidence 9 }
+
+One screenshot verifying that your program generates the correct check
+digits for the data in \texttt{IBANS.txt}. \hfill{}{[}1{]}
+
+An IBAN is validated by converting it into an integer and performing
+a basic mod-97 operation on it. If the IBAN is valid, the remainder
+equals 1. The algorithm of IBAN validation is as follows:
+\begin{enumerate}
+\item[1.]  Move the four initial characters to the end of the string (For the
+IBAN \texttt{GB82WEST12345698765432} e.g. \texttt{WEST12345698765432}\texttt{\uline{GB82}}).
+\item[2.]  Replace each letter in the string with two digits, thereby expanding
+the string, where A = 10, B = 11, C = 12, . . . . . , Z = 35 
+
+(e.g. \texttt{\uline{32142829}}\texttt{12345698765432}\texttt{\uline{1611}}\texttt{82}). 
+\item[3.]  Interpret the string as a decimal integer and compute the remainder
+of that number on division by 97 
+
+(e.g. \texttt{3214282912345698765432161182 mod 97 = 1}). 
+\end{enumerate}
+If the remainder is 1, the check digit test is passed and the IBAN
+might be valid.
+
+\subsection*{Task 2.2 }
+
+Write a Boolean function \texttt{ValidateIBAN} to determine if a given
+IBAN is valid. This function should have a parameter which allows
+it to be used for any IBAN. 
+
+\subsection*{Evidence 10 }
+
+Your \texttt{ValidateIBAN} program code. \hfill{}{[}2{]}
+
+\subsection*{Task 2.3 }
+
+A \texttt{TRANSACTIONS.txt} file contains transaction details of customers
+of a bank. Each transaction record takes up one line and has three
+data fields: customer IBAN, transaction mode (\texttt{W} - withdrawal
+or \texttt{D} - deposit) and transaction amount. 
+
+Write a procedure \texttt{CheckIBAN} to read in the IBANs in \texttt{TRANSACTIONS.txt}
+and display on the screen: 
+\begin{itemize}
+\item If an IBAN is valid, the valid IBAN followed by \textquotedblleft \texttt{OK}\textquotedblright . 
+\item If an IBAN is invalid, the invalid IBAN followed by \texttt{\textquotedblleft Invalid. Expected
+check digits: ??\textquotedblright }, where ?? represents the computed
+check digits. 
+\item For an invalid IBAN, update the record in \texttt{TRANSACTIONS.txt}
+with the expected computed check digits.
+\end{itemize}
+
+\subsection*{Evidence 11 }
+
+Your \texttt{CheckIBAN} program code.\hfill{} {[}7{]}
+
+\subsection*{Evidence 12 }
+
+One screenshot showing the output and contents of \texttt{TRANSACTIONS.txt}
+from running the program. {[}2{]} 
+
+\subsection*{Task 2.4 }
+
+A master file \texttt{ACCOUNTS.txt} contains the customer IBANs, names
+and current balances. 
+
+Write a procedure \texttt{UpdateBalance} to update the current balances
+of the customers in \texttt{ACCOUNTS.txt} from \texttt{TRANSACTIONS.txt}.
+At the end of the process, your program will output the message: 
+
+\texttt{x records updated. }
+
+\subsection*{Evidence 13}
+
+Your program code for the procedure \texttt{UpdateBalance}.\hfill{}
+{[}8{]}
+
+\subsection*{Evidence 14}
+
+One screenshot showing the program output and contents of \texttt{ACCOUNTS.txt}
+from running the program.\hfill{} {[}2{]}

@@ -1,0 +1,60 @@
+\item \textbf{{[}HCI/PRELIM/9569/2020/P1/Q7{]} }
+
+A linked list ADT has the following operations defined: 
+\begin{itemize}
+\item \texttt{Create(x) }-{}- creates an empty linked list \texttt{x}; 
+\item \texttt{Insert(x,item,p)} -{}- inserts new value, \texttt{item}, into
+linked list \texttt{x} so that it is at position \texttt{p} in the
+linked list; 
+\item \texttt{Delete(x,p)} -{}- deletes the item at position \texttt{p}
+in the linked list \texttt{x}; 
+\item \texttt{Read(x,p)} -{}- returns the item at position \texttt{p} in
+the linked list \texttt{x}; 
+\item \texttt{Length(x)} -{}- returns the number of items in the linked
+list \texttt{x}; 
+\item \texttt{IsEmptyList(x)} -{}- returns \texttt{True} if linked list
+\texttt{x} is empty, otherwise returns \texttt{False}; 
+\item \texttt{Clear(x)} -- empties the linked list \texttt{x};
+\end{itemize}
+The linked list is implemented by the use of a collection of nodes
+that have two parts: the item data and a pointer to the next item
+in the list. In addition, there is a \texttt{Start} pointer which
+points to the first item in the list.
+\begin{enumerate}
+\item Write algorithms that could be used to implement the \textquoteleft \texttt{Delete}\textquoteright{}
+and \textquoteleft \texttt{Insert}\textquoteright{} operation. \hfill{}{[}8{]}
+\end{enumerate}
+A stack ADT has the following operations:
+\begin{itemize}
+\item \texttt{Create()} - creates a new stack; 
+\item \texttt{Push(item)} - adds \texttt{item} onto the stack; 
+\item \texttt{Pop()} - deletes and returns item from the stack; 
+\item \texttt{IsEmpty()} -- if the stack is empty returns True, otherwise
+False; 
+\item \texttt{Clear()} -- removes all items in the stack;
+\end{itemize}
+\begin{enumerate}
+\item[(b)]  Show how to implement \textquoteleft \texttt{Create}\textquoteright ,
+\textquoteleft \texttt{Push}\textquoteright{} and \textquoteleft \texttt{Pop}\textquoteright{}
+operation using the list ADT operations.\hfill{} {[}4{]}
+\end{enumerate}
+The stack implementation above is used to implement the undo/redo
+mechanism of a text editor. 
+
+An Undo stack is used to keep the edit history of the editor and the
+Redo stack is used to keep the history of the undo operations. The
+content of the text editor is stored as a string in the Undo stack
+and Redo stack. 
+
+When an undo is invoked, the Undo stack is popped and the content
+is pushed into the Redo Stack. When a redo is invoked, the Redo stack
+is popped and the content is pushed into the Undo Stack.
+\begin{enumerate}
+\item[(c)]  Using the stack ADT operations, show how to implement the following
+functions which return the contents. Assume that \texttt{undoStack}
+and \texttt{redoStack} are created. 
+\begin{enumerate}
+\item \texttt{FUNCTION Undo() RETURNS STRING} 
+\item \texttt{FUNCTION Redo() RETURNS STRING}\hfill{} {[}3{]}
+\end{enumerate}
+\end{enumerate}

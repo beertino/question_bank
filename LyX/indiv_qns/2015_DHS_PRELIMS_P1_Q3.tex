@@ -1,0 +1,130 @@
+\item \textbf{{[}DHS/PRELIM/9597/2015/P1/Q3{]} }
+
+International Standard Book Number (ISBN) is a unique number assigned
+to each edition of a book. It has two formats: ISBN-10 and ISBN-13.
+The former is used before 1 Jan 2007 and the latter after that. Examples
+of valid ISBNs are 020103803X and 978-1-284-05591-7. The last digit
+is the check digit and is computed as follows:
+
+\textbf{ISBN check digit (10 digits) - mod 11 algorithm} 
+\begin{itemize}
+\item Each digit starting from left to right is assigned a weight from 1
+to 9. Each digit is multiplied by its position weight. The sum of
+products modulo 11 gives a remainder between 0 and 10. If the remainder
+is 10, the check digit is the roman numeral X, else the check digit
+is the remainder.
+\item \textbf{Example ISBN-10: 0-07-063546-3 }
+
+$(0\times1)+(0\times2)+(7\times3)+(0\times4)+(6\times5)+(3\times6)+(5\times7)+(4\times8)+(6\times9)=190$
+\item $190\mod11=3$
+\item Hence 3 is the check digit. 
+\end{itemize}
+\textbf{ISBN check digit (13 digits) - mod 10 algorithm}
+\begin{itemize}
+\item Each digit starting from the left to right is multiplied by 1 or 3
+alternatively. The sum of the products modulo 10 gives a remainder
+between 0 to 9. If the remainder is nonzero, subtract this from 10
+to get the check digit, else the check digit is 0. 
+\item Example ISBN-13: 978-0-07-063546-3 
+
+$1\times9+3\times7+1\times8+3\times0+1\times0+3\times7+1\times0+3\times6+1\times3+3\times5+1\times4+3\times6=117$
+\item $117\mod10=7$
+\item $10-7=3$ 
+\item Hence 3 is the check digit. 
+\end{itemize}
+
+\subsection*{Task 3.1}
+
+Write a function \texttt{ISBN\_Check\_Digit(isbn)} which generates
+the check digit for a given ISBN-10 or ISBN-13 number. 
+
+\subsection*{Evidence 9 }
+
+Program code. \hfill{}{[}5{]}
+
+\subsection*{Evidence 10 }
+
+Screenshots (1 for ISBN-10 and 1 for ISBN-13)\hfill{} {[}2{]}
+
+\subsection*{Task 3.2 }
+
+Write a function \texttt{Valid\_ISBN(isbn)} which calls your \texttt{ISBN\_Check\_Digit(isbn)}
+function in Task 3.1 to determine if a given ISBN-10 or ISBN-13 number
+is valid. 
+
+\subsection*{Evidence 11 }
+
+Program code. \hfill{}{[}4{]}
+
+\subsection*{Evidence 12 }
+
+Screenshots for appropriately generated ISBN-10 and ISBN-13 numbers.\hfill{}
+{[}2{]}
+
+An ISBN-10 number can be converted to its ISBN-13 equivalent by prefixing
+'978' to the ISBN-10 number and then calculating the check digit using
+the ISBN-13 algorithm. 
+
+\subsection*{Task 3.3 }
+
+Write a function \texttt{ISBN10\_To\_ISBN13(isbn)} to convert an ISBN-10
+number to its ISBN13 equivalent.
+
+\subsection*{Evidence 13 }
+
+Program code. \hfill{}{[}3{]}
+
+\subsection*{Evidence 14 }
+
+Screenshot of output for ISBN-10 number 1904467520. \hfill{}{[}1{]}
+
+\subsection*{Task 3.4}
+
+Write a function \texttt{ISBN13\_To\_ISBN10(isbn)} to convert an ISBN-13
+number to its ISBN10 equivalent.
+
+\subsection*{Evidence 15 }
+
+Program code. \hfill{}{[}4{]}
+
+\subsection*{Evidence 16 }
+
+Screenshot of output for ISBN-13 number 9780748740468. \hfill{} {[}1{]}
+
+A small library wishes to store its book collection details using
+a random file organisation. It currently holds 200 books but wishes
+to expand its collection by about 10\% every year. To resolve collisions,
+it decides to use double hashing which minimises clustering. For a
+start, assume that this file organisation will be maintained for 3
+years. 
+
+\subsection*{Task 3.5 }
+
+Devise and implement a suitable double hashing strategy \texttt{Hash\_Key(isbn)}.
+Annotate your strategy using program comments. 
+
+\subsection*{Evidence 17}
+
+Program code with comments. \hfill{}{[}5{]}
+
+\subsection*{Task 3.6}
+
+Write program code to generate an appropriate number of ISBNs to the
+random text file \texttt{LIBRARY.txt} which will cater to the library's
+collection growth over 3 years. Include \texttt{Insert\_Book(isbn)}
+and \texttt{Lookup\_Book(isbn)} functions to insert a book and lookup
+a book respectively. 
+
+\subsection*{Evidence 18}
+
+Program code. \hfill{} {[}8{]}
+
+\subsection*{Evidence 19 }
+
+Screenshots showing the insertion and lookup of one non-collided record
+and one collided record. \hfill{}{[}4{]}
+
+\subsection*{Evidence 20 }
+
+Separate printout of \texttt{LIBRARY.txt} after insertion of all generated
+records. \hfill{} {[}2{]}

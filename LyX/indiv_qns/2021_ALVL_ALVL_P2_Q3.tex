@@ -1,0 +1,79 @@
+\item \textbf{{[}ALVL/9569/2021/P2/Q3{]} }
+
+A programmer is writing a class, \texttt{LinkedList}, to represent
+a linked list of unique integers. A linked list is a collection of
+data elements, whose order is not given by their physical placement
+in memory. Instead, each element points to the next.
+
+For each of the sub-tasks, add a comment statement at the beginning
+of the code using the hash symbol \textquoteleft \#' to indicate the
+sub-task the program code belongs to, for example:
+
+\begin{singlespace}
+\noindent \texttt{}%
+\begin{tabular}{c|lcccccccccccccccccccccc|}
+\cline{2-24} \cline{3-24} \cline{4-24} \cline{5-24} \cline{6-24} \cline{7-24} \cline{8-24} \cline{9-24} \cline{10-24} \cline{11-24} \cline{12-24} \cline{13-24} \cline{14-24} \cline{15-24} \cline{16-24} \cline{17-24} \cline{18-24} \cline{19-24} \cline{20-24} \cline{21-24} \cline{22-24} \cline{23-24} \cline{24-24} 
+\texttt{In {[}1{]} :} & \texttt{\#Task 3.1} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+ & \texttt{Program Code} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\cline{2-24} \cline{3-24} \cline{4-24} \cline{5-24} \cline{6-24} \cline{7-24} \cline{8-24} \cline{9-24} \cline{10-24} \cline{11-24} \cline{12-24} \cline{13-24} \cline{14-24} \cline{15-24} \cline{16-24} \cline{17-24} \cline{18-24} \cline{19-24} \cline{20-24} \cline{21-24} \cline{22-24} \cline{23-24} \cline{24-24} 
+\multicolumn{1}{c}{} & \texttt{Output:} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \multicolumn{1}{c}{}\tabularnewline
+\end{tabular}
+\end{singlespace}
+
+\subsection*{Task 3.1 }
+
+Write the \texttt{LinkedList} class in Python. Use of a simple Python
+list is not sufficient. Include the following methods: 
+\begin{itemize}
+\item \texttt{insert(integer\_value)} inserts the \texttt{integer\_value}
+at the beginning (head) of the list 
+\item \texttt{delete(integer\_value)} attempts to delete \texttt{integer\_value}
+from the list; if the item was not present, return \texttt{None} 
+\item \texttt{search(integer\_value)} returns a Boolean value: \texttt{True}
+if \texttt{integer\_value} is in the list, \texttt{False} if not in
+the list 
+\item \texttt{count()} should return the number of elements in the list,
+or zero if empty 
+\item \texttt{to\_String()} should return a string containing a suitably
+formatted list with the elements separated by a comma and a space,
+with square brackets at either end, eg. in the form: 
+
+\texttt{\qquad{}{[}11, 2, 7, 4{]}} \hfill{}{[}8{]}
+\end{itemize}
+Test \texttt{LinkedList} by using the data in the file \texttt{Task3data.txt}.
+Use the \texttt{to\_String()} method to print the resulting contents
+of the list. \hfill{}{[}3{]}
+
+\subsection*{Task 3.2 }
+
+Write a Python subclass \texttt{SortedLinkedList} using \texttt{LinkedList}
+as its superclass. 
+
+The insert method in the \texttt{SortedLinkedList} subclass should
+ensure that the elements are stored in ascending order. \hfill{}{[}5{]}
+
+Test \texttt{SortedLinkedList} by using the data in the file \texttt{Task3data.txt}.
+Use the \texttt{to\_String()} method to print the resulting contents
+of the list. 
+
+Print the result of searching the SortedLinkedList for the value 94.
+\hfill{}{[}2{]}
+
+\subsection*{Task 3.3 }
+
+Write a Python subclass \texttt{Queue} using \texttt{LinkedList} as
+its superclass.
+
+Additional \texttt{enqueue} and \texttt{dequeue} methods are to be
+defined on the \texttt{Queue} class;
+\begin{itemize}
+\item \texttt{enqueue(integer\_value)} will insert \texttt{integer\_value}
+to the end of the queue
+\item \texttt{dequeue()} will return the first element in the queue. If
+the queue is empty, return \texttt{None.} \\
+\textcolor{white}{.}\hfill{}{[}6{]}
+\end{itemize}
+Test \texttt{Queue} by using the data in the file \texttt{Task3data.txt}.
+Print the first five elements to be dequeued from the list. \hfill{}{[}1{]}
+
+Save your Jupyter notebook for Task 3.

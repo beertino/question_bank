@@ -1,0 +1,205 @@
+\item \textbf{{[}DHS/PRELIM/9597/2018/P1/Q1{]} }
+
+A programmer is writing a treasure island game to be played on the
+computer. 
+
+The island is a rectangular grid, 30 squares by 10 squares. Each square
+of the island is represented by an element in a 2D array. The top
+left square of the island is represented by the array element {[}0,
+0{]}.
+
+There are 30 squares across and 10 squares down. 
+
+The computer will: 
+\begin{itemize}
+\item generate three random locations where treasure will be buried 
+\item prompt the player for the location of one square where the player
+choose to dig
+\item display the contents of the array by outputting for each square: 
+\begin{itemize}
+\item '.' for only sand in this square
+\item 'T' for treasure still hidden in sand 
+\item 'X' for a hole dug where treasure was found
+\item 'O' for a hole dug where no treasure was found. 
+\end{itemize}
+\end{itemize}
+Here is an example display after the player has chosen to dig at location
+{[}9, 3{]}: 
+
+\noindent %
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{.............................. }
+
+\texttt{.............................. }
+
+\texttt{.............................. }
+
+\texttt{.............................. }
+
+\texttt{..................T........... }
+
+\texttt{.............................. }
+
+\texttt{...T.......................... }
+
+\texttt{.............................. }
+
+\texttt{.............................. }
+
+\texttt{...X..........................}%
+\end{minipage}
+
+The game is to be implemented using object oriented programming. 
+
+The programmer has designed the class \texttt{IslandClass}. The identifier
+table for this class is: 
+\begin{itemize}
+\item \texttt{Grid : ARRAY{[}0:9, 0:29{]} OF CHAR} - 2D array to represent
+the squares of the island 
+\item \texttt{Constructor()} - instantiates an object of class \texttt{IslandClass}
+and initialises all squares to sand 
+\item \texttt{HideTreasure()} - generates a pair of random numbers used
+as the grid location of treasure and marks the square with \texttt{'T'} 
+\item \texttt{DigHole(Row, Column)} - takes as parameter a valid grid location
+and marks the square with \texttt{'X'} or \texttt{'O'} as appropriate 
+\item \texttt{GetSquare(Row, Column) : CHAR} - takes as parameter a valid
+grid location and returns the grid value for that square from the
+\texttt{IslandClass} object 
+\item \texttt{DisplayGrid()} - shows the current grid data. \texttt{DisplayGrid}
+should make use of the getter method \texttt{GetSquare} of the \texttt{IslandClass}
+class
+\end{itemize}
+
+\subsection*{Task 1.1 }
+
+Write program code for the class \texttt{IslandClass} including the
+\texttt{Constructor}, \texttt{GetSquare} and \texttt{DisplayGrid}
+methods. The code should follow the specification given. 
+
+The value to represent sand should be declared as a constant. Do not
+attempt to write the methods \texttt{HideTreasure} or \texttt{DigHole}
+at this stage.
+
+\subsection*{Evidence 1}
+
+Program code for Task 1.1\hfill{} {[}5{]}
+
+\subsection*{Task 1.2 }
+
+Write program code for the \texttt{HideTreasure} method. Your method
+should check that the random location generated does not already contain
+treasure. The value to represent treasure should be declared as a
+constant. 
+
+\subsection*{Evidence 2 }
+
+Your program code for Task 1.2\hfill{} {[}3{]}
+
+\subsection*{Task 1.3 }
+
+Write a main program to: 
+\begin{itemize}
+\item create an IslandClass object 
+\item generate three random locations where treasures will be buried
+\item your program will then call the DisplayGrid method. 
+\end{itemize}
+
+\subsection*{Evidence 3 }
+
+The program code for Task 1.3 \hfill{}{[}3{]}
+
+\subsection*{Evidence 4}
+
+Screenshot showing the output from running the program in Task 1.3\hfill{}
+{[}1{]}
+
+\subsection*{Task 1.4 }
+
+Write program code for the \texttt{DigHole} method. This method takes
+two integers as parameters. These parameters form a valid grid location.
+The location is marked with \texttt{'X'} or \texttt{'O'} as appropriate. 
+
+The values to represent treasure, found treasure and hole should be
+declared as constants. 
+
+\subsection*{Evidence 5}
+
+Program code for Task 1.4. \hfill{}{[}3{]}
+
+\subsection*{Task 1.5 }
+
+Add code to the main program in Task 1.3. The program is to: 
+\begin{itemize}
+\item prompt the player for a location to dig 
+\item validate the user input
+\item call the \texttt{DigHole} method and then the \texttt{DisplayGrid}
+method. 
+\end{itemize}
+
+\subsection*{Evidence 6 }
+
+The program code.\hfill{} {[}3{]}
+
+\subsection*{Task 1.6}
+
+Run the program by inputting a location where: 
+\begin{itemize}
+\item the treasure is not found
+\item the treasure is found. 
+\end{itemize}
+
+\subsection*{Evidence 7}
+
+Screenshot evidence similar to that shown which shows: 
+\begin{itemize}
+\item The player has chosen to dig at location {[}2, 25{]} where no treasure
+was found 
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{.............................. }
+
+\texttt{....T......................... }
+
+\texttt{.........................O.... }
+
+\texttt{..............................}
+
+\texttt{..........T................... }
+
+\texttt{.............................. }
+
+\texttt{..................T........... }
+
+\texttt{.............................. }
+
+\texttt{.............................. }
+
+\texttt{..............................}%
+\end{minipage}
+\item The player has chosen to dig at location {[}5, 3{]} where treasure
+was found 
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\texttt{.............................. }
+
+\texttt{..............................}
+
+\texttt{...............T..............}
+
+\texttt{.............................. }
+
+\texttt{.........................T.... }
+
+\texttt{...X.......................... }
+
+\texttt{.............................. }
+
+\texttt{..............................}
+
+\texttt{.............................. }
+
+\texttt{..............................}%
+\end{minipage}
+
+\hfill{} {[}2{]}
+\end{itemize}

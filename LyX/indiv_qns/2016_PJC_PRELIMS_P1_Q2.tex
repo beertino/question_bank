@@ -1,0 +1,99 @@
+\item \textbf{{[}PJC/PRELIM/9597/2016/P1/Q2{]} }
+
+Write a program to encrypt and decrypt user passwords. 
+
+\subsection*{Task 2.1}
+
+A set of encryption key is given in the data file \texttt{ENCRYPT\_KEY.txt}.
+The encryption key will map each alphabet and number according to
+the table below.
+\noindent \begin{center}
+\texttt{}%
+\begin{tabular}{ccc}
+\texttt{a \textrightarrow{} m} & \texttt{m \textrightarrow{} q} & \texttt{y \textrightarrow{} c}\tabularnewline
+\texttt{b \textrightarrow{} h} & \texttt{n \textrightarrow{} s} & \texttt{z \textrightarrow{} a}\tabularnewline
+\texttt{c \textrightarrow{} t} & \texttt{o \textrightarrow{} l} & \texttt{0 \textrightarrow{} 7}\tabularnewline
+\texttt{d \textrightarrow{} f} & \texttt{p \textrightarrow{} n} & \texttt{1 \textrightarrow{} 3}\tabularnewline
+\texttt{e \textrightarrow{} g} & \texttt{q \textrightarrow{} i} & \texttt{2 \textrightarrow{} 8}\tabularnewline
+\texttt{f \textrightarrow{} k} & \texttt{r \textrightarrow{} u} & \texttt{3 \textrightarrow{} 9}\tabularnewline
+\texttt{g \textrightarrow{} b} & \texttt{s \textrightarrow{} o} & \texttt{4 \textrightarrow{} 5}\tabularnewline
+\texttt{h \textrightarrow{} p} & \texttt{t \textrightarrow{} x} & \texttt{5 \textrightarrow{} 6}\tabularnewline
+\texttt{i \textrightarrow{} j} & \texttt{u \textrightarrow{} z} & \texttt{6 \textrightarrow{} 0}\tabularnewline
+\texttt{j \textrightarrow{} w} & \texttt{v \textrightarrow{} y} & \texttt{7 \textrightarrow{} 1}\tabularnewline
+\texttt{k \textrightarrow{} e} & \texttt{w \textrightarrow{} v} & \texttt{8 \textrightarrow{} 4}\tabularnewline
+\texttt{l \textrightarrow{} r} & \texttt{x \textrightarrow{} d} & \texttt{9 \textrightarrow{} 2}\tabularnewline
+\end{tabular}
+\par\end{center}
+
+For example, \texttt{a} is mapped to \texttt{m}, \texttt{b} mapped
+to \texttt{h}, m mapped to \texttt{q}, \texttt{9} mapped to \texttt{2},
+etc. The mapping is case-sensitive for alphabets. Therefore a password
+\texttt{WhizKid123} will be encrypted to \texttt{VpjaEjf389}.
+
+Conversely, decryption works in the opposite way. Hence the password
+\texttt{VpjaEjf389} will be decrypted to \texttt{WhizKid123}. 
+
+There is no mapping for symbols. Some examples of symbols are \texttt{!},\texttt{
+@}, \texttt{\#}, \texttt{\$}, \texttt{\%}, \texttt{\textasciicircum}.
+Hence, a password \texttt{Extr@123} will be encrypted to \texttt{Gdxu@389},
+where the symbol remains the same. 
+
+\textbf{\emph{Copy and paste}} the encryption key (from data file
+\texttt{ENCRYPT\_KEY.txt})\textbf{\emph{ into your program code}}
+and \textbf{\emph{make use of it}} to write a program that 
+\begin{itemize}
+\item Allows a user to select option to \textbf{\emph{encrypt}} or \textbf{\emph{decrypt}}
+a user password
+\item Gets user input of the password,
+\item Encrypts (or decrypts) the password according to user\textquoteright s
+option, 
+\item Displays the encrypted or decrypted password 
+\end{itemize}
+
+\subsection*{Evidence 5: }
+
+Your program code for task 2.1.\hfill{} {[}8{]}
+
+\subsection*{Evidence 6:}
+
+Screenshot of running program by encrypting \texttt{WhizKid123} and
+decrypting \texttt{XgteV\textasciicircum cg84}.\hfill{} {[}1{]}
+
+\subsection*{Task 2.2 }
+
+Amend your program code into a function that accepts two parameters
+-- \textquotedbl\texttt{password}\textquotedbl{} and \textquotedbl\texttt{encrypt}\textquotedbl ,
+and returns the encrypted or decrypted password. 
+
+\texttt{FUNCTION Cryptograph(password:STRING, encrypt:BOOLEAN):RETURN
+STRING }
+
+\subsection*{Evidence 7: }
+
+Your program code for task 2.2.\hfill{} {[}4{]}
+
+\subsection*{Task 2.3 }
+
+Write program code that makes use of the function \texttt{Cryptograph}
+from task 2.2 that reads all the passwords in data file \texttt{PASSWORDS.txt},
+encrypts and writes them into another file \texttt{CONVERTED.txt}. 
+
+\begin{tabular}{l|l|l}
+\cline{2-2} 
+Sample input file:  & \texttt{WhizKid123 } & \tabularnewline
+ & \texttt{Extr@123} & \tabularnewline
+\cline{2-2} 
+\multicolumn{1}{l}{} & \multicolumn{1}{l}{~~~~~~~~~~~$\downarrow$} & Encrypt and write\tabularnewline
+\cline{2-2} 
+Sample output file: & \texttt{VpjaEjf389} & \tabularnewline
+ & \texttt{Gdxu@389} & \tabularnewline
+\cline{2-2} 
+\end{tabular}
+
+\subsection*{Evidence 8: }
+
+Program code for task 2.3. \hfill{}{[}3{]}
+
+\subsection*{Evidence 9: }
+
+Screenshot of output file \texttt{CONVERTED.txt}. \hfill{}{[}1{]}

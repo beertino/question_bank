@@ -1,0 +1,159 @@
+\item \textbf{{[}ALVL/9569/2020/P1/Q6{]} }
+
+A college is designing a database to store data about:
+\begin{itemize}
+\begin{singlespace}
+\item students
+\item courses
+\item subjects
+\item teachers
+\item classrooms.
+\end{singlespace}
+\end{itemize}
+The designers are told that:
+\begin{itemize}
+\begin{singlespace}
+\item each student takes four courses
+\item each teacher delivers all their lessons in one room 
+\item each room may be used by more than one teacher 
+\item each teacher may teach more than one course
+\item a course can only be taught by one teacher
+\item a subject may be taught by more than one teacher. 
+\end{singlespace}
+\end{itemize}
+A first attempt is represented by the following table:
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline 
+\multirow{2}{*}{\textbf{Student ID}} & \multirow{2}{*}{\textbf{First Name}} & \multirow{2}{*}{\textbf{Last Name}} & \textbf{Course} & \multirow{2}{*}{\textbf{Subject}} & \textbf{Teacher} & \textbf{Teacher} & \textbf{Room}\tabularnewline
+ &  &  & \textbf{ID} &  & \textbf{ID} & \textbf{Name} & \textbf{Number}\tabularnewline
+\hline 
+\hline 
+1279 & Joe & Smith & 934 & Geography & 334 & Mansoor & 12\tabularnewline
+\hline 
+ &  &  & 926 & Maths & 451 & Yang & 16\tabularnewline
+\hline 
+ &  &  & 882 & Physics & 628 & Lee & 12\tabularnewline
+\hline 
+ &  &  & 425 & Computing & 329 & James & 14\tabularnewline
+\hline 
+1395 & Muhammad & Hilmi & 934 & Geography & 334 & Mansoor & 12\tabularnewline
+\hline 
+ &  &  & 927 & Maths & 723 & Morris & 8\tabularnewline
+\hline 
+ &  &  & 883 & Physics & 534 & Weston & 10\tabularnewline
+\hline 
+ &  &  & 586 & French & 271 & Dubois & 16\tabularnewline
+\hline 
+2883 & Sumiko & Chong & 425 & Computing & 329 & James & 14\tabularnewline
+\hline 
+ &  &  & 882 & Physics & 628 & Lee & 12\tabularnewline
+\hline 
+ &  &  & 934 & Geography & 334 & Mansoor & 12\tabularnewline
+\hline 
+ &  &  & 586 & French & 271 & Dubois & 16\tabularnewline
+\hline 
+\end{tabular}
+\begin{enumerate}
+\item Explain why this table is not in first normal form (1NF). \hfill{}{[}2{]}
+\end{enumerate}
+The following is an attempt to reduce data redundancy. 
+
+Student
+
+\begin{tabular}{|c|c|c|}
+\hline 
+\textbf{Student ID} & \textbf{First Name} & \textbf{Last Name}\tabularnewline
+\hline 
+\hline 
+1279 & Joe & Smith\tabularnewline
+\hline 
+1395 & Muhammad & Hilmi\tabularnewline
+\hline 
+2883 & Sumiko & Chong\tabularnewline
+\hline 
+\end{tabular}
+
+Course
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+\textbf{Course ID} & \textbf{Subject} & \textbf{Teacher ID} & \textbf{Teacher Name} & \textbf{Room Number}\tabularnewline
+\hline 
+\hline 
+934 & Geography & 334 & Mansoor & 12\tabularnewline
+\hline 
+926 & Maths & 451 & Yang & 16\tabularnewline
+\hline 
+882 & Physics & 628 & Lee & 12\tabularnewline
+\hline 
+425 & Computing & 329 & James & 14\tabularnewline
+\hline 
+927 & Maths & 723 & Morris & 8\tabularnewline
+\hline 
+883 & Physics & 534 & Weston & 10\tabularnewline
+\hline 
+586 & French & 271 & Dubois & 16\tabularnewline
+\hline 
+\end{tabular}
+
+IsTaking
+
+\begin{tabular}{|c|c|}
+\hline 
+\textbf{Student ID} & \textbf{Course ID}\tabularnewline
+\hline 
+\hline 
+1279 & 934\tabularnewline
+\hline 
+1279 & 926\tabularnewline
+\hline 
+1279 & 882\tabularnewline
+\hline 
+1279 & 425\tabularnewline
+\hline 
+1395 & 934\tabularnewline
+\hline 
+1395 & 927\tabularnewline
+\hline 
+1395 & 883\tabularnewline
+\hline 
+1395 & 586\tabularnewline
+\hline 
+2883 & 425\tabularnewline
+\hline 
+2883 & 882\tabularnewline
+\hline 
+2883 & 934\tabularnewline
+\hline 
+2883 & 586\tabularnewline
+\hline 
+\end{tabular}
+
+\newpage
+\begin{enumerate}
+\item[\textbf{(b)}] Give suitable primary keys for each of the following three tables. 
+\begin{enumerate}
+\item Student \hfill{}{[}1{]}
+\item Course \hfill{} {[}1{]}
+\item lsTaking \hfill{}{[}1{]}
+\end{enumerate}
+\item[\textbf{(c)}] Create an entity-relationship (ER) diagram showing the degree of
+all relations. \hfill{} {[}3{]}
+\item[\textbf{(d)}] Explain why table Course is not in third normal form (3NF). \hfill{}
+{[}2{]}
+\item[\textbf{(e)}] A table description can be expressed as: 
+
+\texttt{TableName (Attributel, Attribute2, Attribute3 , ...) }
+
+The primary key is indicated by underlining one or more attributes.
+Foreign keys are indicated by using a dashed underline. Write table
+descriptions for the required tables in the database so they are in
+third nennai form (3NF). \hfill{}{[}7{]}
+\item[\textbf{(e)}] Explain the reasons for reducing data redundancy in a relational
+database. \hfill{} {[}2{]}
+\item[\textbf{(f)}] Write an SQL query to output the subjects, teacher names and room
+numbers for the courses taken by the student with Student ID of 1395. 
+
+The output is to be in alphabetical order of subject. \hfill{}{[}5{]}
+\end{enumerate}
