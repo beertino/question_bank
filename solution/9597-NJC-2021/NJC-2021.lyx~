@@ -2734,24 +2734,64 @@ The E–R diagram looks like
 
 \end_deeper
 \begin_layout Enumerate
-Customer (CustID, Name,Contact,CreditCardNumber, Tier*)
+
+\family typewriter
+Customer (
+\bar under
+CustID
+\bar default
+, Name,Contact,CreditCardNumber, Tier*)
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-Bike (SerialNumber, ModelNumber, YOM, ServiceDate,Mileage, eBike: BOOLEAN)
+
+\family typewriter
+Bike (
+\bar under
+SerialNumber
+\bar default
+*, ModelNumber, YOM, ServiceDate,Mileage)
 \end_layout
 
 \begin_layout Standard
-eBike (SerialNumber*, Power,BatteryCapacity,Charge)
+
+\family typewriter
+BikeRental (
+\bar under
+RentalID
+\bar default
+, CustID*, SerialNumber, Time, CheckInOut, Booth)
 \end_layout
 
 \begin_layout Standard
-Booth (BoothID, Address) 
+
+\family typewriter
+eBike (
+\bar under
+SerialNumber
+\bar default
+*, Power, BatteryCapacity, Charge)
 \end_layout
 
 \begin_layout Standard
-Membership (Tier, MonthlySubscription, RentalRate) 
+
+\family typewriter
+Booth (
+\bar under
+BoothID
+\bar default
+, Address) 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Membership (
+\bar under
+Tier
+\bar default
+, MonthlySubscription, RentalRate) 
 \end_layout
 
 \end_deeper
