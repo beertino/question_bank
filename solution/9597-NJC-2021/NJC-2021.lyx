@@ -29,6 +29,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -44,10 +45,11 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
-\suppress_date false
+\suppress_date true
 \justification true
 \use_refstyle 1
 \use_minted 0
@@ -74,6 +76,10 @@
 \end_header
 
 \begin_body
+
+\begin_layout Title
+NJC/P1/2021 Suggested Answers
+\end_layout
 
 \begin_layout Enumerate
 \begin_inset ERT
@@ -2736,32 +2742,62 @@ The E–R diagram looks like
 \begin_layout Enumerate
 
 \family typewriter
-Customer (CustID, Name,Contact,CreditCardNumber, Tier*)
+Customer (
+\bar under
+CustID
+\bar default
+, Name,Contact,CreditCardNumber, Tier*)
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
 
 \family typewriter
-Bike (SerialNumber, ModelNumber, YOM, ServiceDate,Mileage, eBike: BOOLEAN)
+Bike (
+\bar under
+SerialNumber
+\bar default
+*, ModelNumber, YOM, ServiceDate,Mileage)
 \end_layout
 
 \begin_layout Standard
 
 \family typewriter
-eBike (SerialNumber*, Power,BatteryCapacity,Charge)
+BikeRental (
+\bar under
+RentalID
+\bar default
+, CustID*, SerialNumber, Time, CheckInOut, Booth)
 \end_layout
 
 \begin_layout Standard
 
 \family typewriter
-Booth (BoothID, Address) 
+eBike (
+\bar under
+SerialNumber
+\bar default
+*, Power, BatteryCapacity, Charge)
 \end_layout
 
 \begin_layout Standard
 
 \family typewriter
-Membership (Tier, MonthlySubscription, RentalRate) 
+Booth (
+\bar under
+BoothID
+\bar default
+, Address) 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Membership (
+\bar under
+Tier
+\bar default
+, MonthlySubscription, RentalRate) 
 \end_layout
 
 \end_deeper
