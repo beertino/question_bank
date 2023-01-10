@@ -4,80 +4,8 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass amsart
-\begin_preamble
-\renewcommand{\familydefault}{\sfdefault}
-\usepackage[T1]{fontenc}
-\usepackage[latin9]{inputenc}
-\usepackage{geometry}
-\geometry{verbose,tmargin=1.8cm,bmargin=4cm,lmargin=1.5cm,rmargin=2cm}
-\usepackage{enumitem}
-\usepackage{amstext}
-\usepackage{amsthm}
-\usepackage{amssymb}
-\usepackage{setspace}
-\usepackage{graphicx}
-\doublespacing
-
-\usepackage{enumitem}
-\setenumerate[1]{label=\textbf{\arabic*}}
-\setenumerate[2]{label=\textbf{(\alph*)}}
-\setenumerate[3]{label=\textbf{(\roman*)}}
-\setlist[enumerate]{align=right}
-
-\setcounter{page}{2}
-
-% For Computing, use Helvetica, For Math, use Times New Roman
-\usepackage{helvet}
-%\usepackage{newtxtext,newtxmath}
-
-
-%for upright integrals
-\usepackage[integrals]{wasysym}
-
-%for upright pi, in math environment use \uppi, instead of \pi
-%\usepackage{upgreek}
-
-%to be used in conjunction with fancyfoot for last page
-\usepackage{zref-totpages}
-
-%fancyhrd settings
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
-
-\fancypagestyle{laststyle}
-{
-   \fancyhf{}
-   \chead{\thepage}
-   \fancyfoot[L]{\copyright NJC }
-   \fancyfoot[R]{\textbf{END}} %Put \thispagestyle{laststyle} in the last page
-}
-
-%%centering page number
-\chead{\thepage}
-
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-%%footer settings, different footer for ODD and EVEN pages, also for the LASTPAGE
-\fancyfoot[LO]{Generated with Python Script by BRW\hfill \textbf{[Turn Over}}
-\fancyfoot[LE]{Generated with Python Script by BRW }
-
-%%shameless self-plug BRW
-
-\makeatother
-
-\usepackage{babel}
-
-\usepackage[parfill]{parskip}
-\end_preamble
+\textclass article
 \use_default_options true
-\begin_modules
-theorems-ams
-eqs-within-sections
-figs-within-sections
-\end_modules
 \maintain_unincluded_children false
 \language english
 \language_package none
@@ -238,7 +166,6 @@ Hence solve the inequality
 
 \begin_deeper
 \begin_layout Standard
-\noindent
 A curve 
 \begin_inset Formula $C$
 \end_inset
@@ -1836,7 +1763,6 @@ Find the amount of
 \end_layout
 
 \begin_layout Enumerate
-\noindent
 \begin_inset Argument item:1
 status collapsed
 
