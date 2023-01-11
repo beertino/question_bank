@@ -1324,7 +1324,7 @@ Name your Jupyter Notebook as:
 \begin_layout Standard
 
 \family typewriter
-TASKl_<your name>_<centre number>~<index number>.ipynb
+TASKl_<your name>_<centre number>_<index number>.ipynb
 \end_layout
 
 \begin_layout Standard
@@ -1348,19 +1348,19 @@ The letter ‘A' has the ASCII value 65.
 \end_layout
 
 \begin_layout Itemize
-When an uppercase letter's code goes beyond ‘2' it returns to ‘A'.
+When an uppercase letter's code goes beyond ‘Z' it returns to ‘A'.
  For example.
- the character ‘2' will be encrypted as 'J'.
+ the character ‘Z' will be encrypted as 'J'.
 \end_layout
 
 \begin_layout Itemize
-When a lowercase letter's code goes beyond ‘2' it returns to ‘a'.
+When a lowercase letter's code goes beyond ‘Z' it returns to ‘a'.
  For example.
  the character 'x' will be encrypted as ‘h'.
 \end_layout
 
 \begin_layout Itemize
-Spaces ' ' are replaced with the character 'I'.
+Spaces ' ' are replaced with the character '!'.
 \end_layout
 
 \begin_layout Standard
@@ -2254,8 +2254,8 @@ Task 1.1
 \begin_layout Standard
 This program will encrypt each letter by adding the number 10 to its ASCII
  value.
- Spaces will be replaced with T.
- If the character Is invalid, -1 is returned.
+ Spaces will be replaced with '!'.
+ If the character is invalid, -1 is returned.
 \end_layout
 
 \begin_layout Standard
@@ -2298,8 +2298,7 @@ output its encrypted character or an appropriate message if the character
 \end_layout
 
 \begin_layout Standard
-Test your program four times.
- with the following test data:
+Test your program four times, with the following test data:
 \end_layout
 
 \begin_layout Standard
@@ -2398,12 +2397,17 @@ Do not append invalid characters to the encrypted message.
 \end_layout
 
 \begin_layout Standard
-Test your program with DATATOENCRYPT.txt
+Test your program with 
+\family typewriter
+DATATOENCRYPT.txt
 \end_layout
 
 \begin_layout Standard
-Show the contents of EI'ICRYPTEDMESSAGE.
- txt after you have run the program.
+Show the contents of 
+\family typewriter
+ENCRYPTEDMESSAGE.txt
+\family default
+ after you have run the program.
 \begin_inset space \hfill{}
 \end_inset
 
@@ -3166,7 +3170,7 @@ generate 100 random integers between 1 and 100 (inclusive)
 \end_layout
 
 \begin_layout Itemize
-store each Integer in the list 
+store each integer in the list 
 \end_layout
 
 \begin_layout Itemize
@@ -3177,7 +3181,7 @@ output the contents of the list.
  [2]
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 Test your program and show the output.
  
 \begin_inset space \hfill{}
@@ -3312,15 +3316,14 @@ take an integer value as one of its parameters
 \end_layout
 
 \begin_layout Itemize
-implement a recursive blnary search on the list from 
+implement a recursive binary search on the list from 
 \series bold
 Task 2.1
 \end_layout
 
 \begin_layout Itemize
 return the position of the integer in the list (if the integer appears more
- than once.
- then only one position needs to be returned)
+ than once, then only one position needs to be returned)
 \end_layout
 
 \begin_layout Itemize
