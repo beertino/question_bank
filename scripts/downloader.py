@@ -5,7 +5,7 @@ url = "<INSERT_API_ENDPOINT>"
 
 payload = json.dumps({
     "collection": "questions",
-    "database": "alvl",
+    "database": "h2_mathematics",
     "dataSource": "Cluster0",
 
     # change the filter parameters below as fit
@@ -18,6 +18,7 @@ payload = json.dumps({
     # remove unnecessary parameters if the information is not needed
     "projection": {
         "paper_no": 1,
+        "source": 1,
         "paper_type": 1,
         "qn_no": 1,
         "year": 1,

@@ -16,6 +16,8 @@ The attributes in the documents are assumed to be the following:
 Given a `.tex` file, run `question_separator.py` to extract each questions in the file and put in the `question_to_upload` folder categorized in 
 different `year` folders.
 
+Check the example file at `question_to_split\test.tex` for the format of the file.
+
 ## Uploading Questions with Python Script
 
 The assumption is that:
