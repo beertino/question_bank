@@ -40,3 +40,5 @@ The database will be called `subject_name` and the questions will be inserted in
 ## Retrieving Questions with MongoDB Data API
 
 Go to `scripts` folder and run `downloader.py`. 
+
+`qn_dict` is a list of Python dictionary objects which represents the questions queried.

@@ -3,13 +3,15 @@ import json
 
 url = "<INSERT_API_ENDPOINT>"
 
+subject_name = '<INSERT_SUBJECT_NAME>'
+
 payload = json.dumps({
     "collection": "questions",
-    "database": "h2_mathematics",
+    "database": f"{subject_name}",
     "dataSource": "Cluster0",
 
     # change the filter parameters below as fit
-    # filter parameters : 'paper_no', 'paper_type', 'qn_no', 'year'
+    # filter parameters : 'paper_no', 'source', 'paper_type', 'qn_no', 'year'
     "filter": {
 
     },
