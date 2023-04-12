@@ -1,1 +1,0 @@
-CREATE TABLE IF NOT EXISTS 'Member' ('MemberID' TEXT PRIMARY KEY, 'FirstName' TEXT,'Surname' TEXT, 'ContactNo' TEXT, 'LastVisit' TEXT, 'MemberType' TEXT);

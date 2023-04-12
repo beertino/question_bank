@@ -13,21 +13,21 @@ The attributes in the documents are assumed to be the following:
 
 
 ## Question Separator
+Given a `.tex` file, run `question_separator.py` to extract each questions in the file and put in the `question_to_upload` folder categorized in 
+different `year` folders.
 
 ## Uploading Questions with Python Script
 
 The assumption is that:
 - the questions are located in `questions_to_upload` directory of the project. 
-- each question are located each `year` folder with the format `<year>_<source>_<optional_paper_type>_<paper_number>_<question_number>.tex` 
+- the questions have the format `<year>_<source>_<optional_paper_type>_P<paper_number>_Q<question_number>.tex` 
 
 Example of the folder and file structure
 
 >```
 >root
 >   |--questions_to_upload
->       |--<year_one>
->       |  |---<year>_<paper_type>_P<paper_number>_Q<question_number>.tex
->       |--<year_two>
+>       |--<year>_<source>_<optional_paper_type>_P<paper_number>_Q<question_number>.tex
 >   |--scripts
 >```
 
