@@ -9,8 +9,8 @@ The attributes in the documents are assumed to be the following:
 - `paper_no`
 - `qn_content`
 
-## Setting up a MongoDB on GCP
-
+## Setting up a MongoDB Atlas
+Head to <a href = https://www.mongodb.com/cloud/atlas/register> to sign up with your Google Account.
 
 ## Question Separator
 Given a `.tex` file, run `question_separator.py` to extract each questions in the file and put in the `question_to_upload` folder categorized in 
