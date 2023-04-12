@@ -1,9 +1,10 @@
 # Question Bank
 
-This is a documentation simple project that uses MongoDB running on Google Cloud Platform (GCP) to store questions as documents.
+This is a documentation simple project that uses MongoDB Atlas to store questions as documents.
 
 The attributes in the documents are assumed to be the following:
 - `year`
+- `source`
 - `qn_no`
 - `paper_type`
 - `paper_no`
