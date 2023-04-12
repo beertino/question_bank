@@ -35,6 +35,8 @@ Example of the folder and file structure
 
 Go to `scripts` folder and run `uploader.py`. 
 
+The database will be called `subject_name` and the questions will be inserted into the `questions` collection.
+
 ## Retrieving Questions with MongoDB Data API
 
 Go to `scripts` folder and run `downloader.py`. 
