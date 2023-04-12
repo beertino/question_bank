@@ -17,17 +17,21 @@ end_year = 2023
 for yr in range(start_year, end_year):
     qn_list = os.listdir(f'../questions_to_upload/{yr}')
     for qn in qn_list:
-        year, paper_type, paper_no, qn_no = qn[:-4].split('_')
+        if qn.count('_') == 3:
+            year, source, paper_no, qn_no = qn[:-4].split('_')
+        if qn.count('_') == 4:
+            year, source, paper_type, paper_no, qn_no = qn[:-4].split('_')
         paper_no = paper_no[1:]
         qn_no = qn_no[1:]
-        print(year, paper_type, paper_no, qn_no)
         with open(f'../questions_to_upload/{yr}/{qn}') as f:
             qn_content = f.read()
-        qn = {
+        qn_json = {
             'year': year,
-            'paper_type': paper_type,
+            'source': source,
             'paper_no': int(paper_no),
             'qn_no': int(qn_no),
             'qn_content': qn_content
         }
-        col.insert_one(qn)
+        if qn.count('_') == 4:
+            qn_json['paper_type'] = paper_type
+        col.insert_one(qn_json)

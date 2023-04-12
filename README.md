@@ -18,7 +18,7 @@ The attributes in the documents are assumed to be the following:
 
 The assumption is that:
 - the questions are located in `questions_to_upload` directory of the project. 
-- each question are located each folder with the format `<year>_<paper_type>_<paper_number>_<question_number>.tex` 
+- each question are located each `year` folder with the format `<year>_<source>_<optional_paper_type>_<paper_number>_<question_number>.tex` 
 
 Example of the folder and file structure
 
