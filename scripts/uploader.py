@@ -5,7 +5,7 @@ import os
 client = MongoClient(
     'mongodb+srv://<USER_NAME>:<USER_PASSWORD>@<CLUSTER_LOCATION>')
 
-subject_name = 'h2_mathematics'
+subject_name = '<INSERT_SUBJECT_NAME>'
 
 db = client[subject_name]
 
