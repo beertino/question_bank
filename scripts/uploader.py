@@ -5,7 +5,9 @@ import os
 client = MongoClient(
     'mongodb+srv://<USER_NAME>:<USER_PASSWORD>@<CLUSTER_LOCATION>')
 
-db = client['alvl']
+subject_name = 'h2_mathematics'
+
+db = client[subject_name]
 
 col = db['questions']
 
